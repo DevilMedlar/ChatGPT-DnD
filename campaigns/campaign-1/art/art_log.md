@@ -31,4 +31,4 @@ For each future scene, record:
 - sensuality/nudity presentation when relevant
 - continuity changes introduced by the image
 
-Generated art must remain non-explicit: intimate anatomy is obscured by composition, fabric, armor, sheets, steam, fog, shadows, hair, water, or framing where needed.
+Generated art when explicit: intimate anatomy when needed.
