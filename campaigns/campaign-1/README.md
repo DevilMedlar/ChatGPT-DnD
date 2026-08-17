@@ -14,6 +14,7 @@ Persistent save folder for the first ChatGPT-DnD campaign.
 - `GAME_MASTER_RULES.md` — Campaign 1 mechanics, continuity rules, and content boundaries.
 - `saves/active_game.json` — compact machine-readable campaign state.
 - `saves/character_sheet.md` — player character record.
+- `saves/inventory.md` — item record.
 - `saves/world_state.md` — locations, NPCs, factions, relationships, quests, and unresolved threads.
 - `saves/session_log.md` — chronological checkpoints.
 - `art/art_log.md` — visual continuity for generated art.
