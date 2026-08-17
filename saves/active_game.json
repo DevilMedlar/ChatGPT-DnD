@@ -1,0 +1,52 @@
+{
+  "save_version": 1,
+  "campaign_name": null,
+  "phase": "character_creation",
+  "session_number": 0,
+  "player_character": {
+    "name": null,
+    "age": null,
+    "pronouns": null,
+    "ancestry": null,
+    "class": null,
+    "background": null,
+    "level": 1,
+    "xp": 0,
+    "abilities": {
+      "strength": null,
+      "dexterity": null,
+      "constitution": null,
+      "intelligence": null,
+      "wisdom": null,
+      "charisma": null
+    },
+    "hp": null,
+    "max_hp": null,
+    "armor_class": null,
+    "initiative": null,
+    "speed": null,
+    "proficiency_bonus": 2,
+    "skills": {},
+    "features": [],
+    "conditions": [],
+    "equipment": [],
+    "currency": {},
+    "appearance": {},
+    "personality": {},
+    "romance_preferences": {}
+  },
+  "world": {
+    "current_location": null,
+    "current_time": null,
+    "active_quests": [],
+    "known_npcs": [],
+    "factions": [],
+    "flags": []
+  },
+  "creation": {
+    "completed_steps": [],
+    "current_step": "campaign_tone",
+    "standard_array": [15, 14, 13, 12, 10, 8]
+  },
+  "last_checkpoint": "Campaign initialized; character creation has not begun."
+}
