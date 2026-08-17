@@ -1,6 +1,6 @@
 # Inventory — Campaign 1
 
-## DevilMedlar
+## (Name)
 
 No starting equipment finalized yet.
 
