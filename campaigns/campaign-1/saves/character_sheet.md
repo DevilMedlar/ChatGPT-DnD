@@ -9,9 +9,9 @@
 
 ## Identity
 
-- **Name:** TBD
-- **Age:** TBD; must be 21+ for any romantic/sexual content
-- **Pronouns:** TBD
+- **Name:** DevilMedlar
+- **Age:** 20
+- **Pronouns:** He/Him, Male
 - **Ancestry:** TBD
 - **Class:** TBD
 - **Background:** TBD
