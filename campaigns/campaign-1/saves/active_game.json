@@ -1,1 +1,49 @@
-{}
+{
+  "schema_version": 1,
+  "campaign_id": "campaign-1",
+  "campaign_number": 1,
+  "phase": "character_creation",
+  "session_number": 0,
+  "tone": "Anything Goes Sandbox",
+  "current_step": "character_identity",
+  "player_character": {
+    "name": null,
+    "age": null,
+    "gender_pronouns": null,
+    "species_race": null,
+    "level": 1,
+    "archetype_path": null
+  },
+  "scene": {
+    "location": null,
+    "situation": "character_creation",
+    "combat_active": false
+  },
+  "pending": {
+    "choice": null,
+    "roll": null,
+    "image_offer": false
+  },
+  "play_preferences": {
+    "rolls": "open",
+    "player_agency": "major_player_character_decisions_are_player_only",
+    "image_generation": {
+      "frequency": "only_when_the_scene_deserves_it",
+      "ask_at_end_of_narration": true,
+      "prompt": "Make image? Yes / No",
+      "on_yes": "generate_image_before_the_player_makes_or_resolves_gameplay_choices",
+      "on_no": "skip_image_and_parse_the_rest_of_the_message_as_choices_or_freeform_action",
+      "continuity_source": "art/art_log.md",
+      "adult_nudity": "explicitly_adult_characters_only_and_within_platform_limits"
+    }
+  },
+  "canonical_files": {
+    "rules": "GAME_MASTER_RULES.md",
+    "character": "saves/character_sheet.md",
+    "inventory": "saves/inventory.md",
+    "world": "saves/world_state.md",
+    "session_log": "saves/session_log.md",
+    "art_log": "art/art_log.md"
+  },
+  "last_checkpoint": "repository_initialized"
+}
