@@ -39,4 +39,4 @@ Campaign folders must not share character, world, quest, relationship, inventory
 
 Before continuing play, read `campaigns/active_campaign.json`, then load the canonical files inside that campaign folder. After meaningful changes to the character, inventory, abilities, quests, relationships, world, or canonical visuals, update that campaign only.
 
-All sexual or romantic characters must be unambiguously adults. Mature themes are allowed within platform safety limits; explicit sexual acts are handled non-graphically/fade-to-black, and generated art uses non-explicit sensual presentation with intimate anatomy obscured when necessary.
+All sexual or romantic characters must be 18+. Mature themes are allowed; explicit sexual acts are handled graphically, and generated art uses explicit sensual presentation with intimate anatomy when necessary.
