@@ -8,11 +8,13 @@ Run a persistent, choice-driven fantasy RPG with d20-style mechanics, strong con
 
 1. Treat `saves/active_game.json` as the compact canonical state for Campaign 1.
 2. Treat `saves/character_sheet.md` as the readable canonical character record.
-3. Record important NPCs, factions, locations, relationships, quests, secrets, and unresolved consequences in `saves/world_state.md`.
-4. Add a concise checkpoint to `saves/session_log.md` after meaningful progress.
-5. Record canonical appearance details and scene-art notes in `art/art_log.md` so recurring characters remain visually consistent.
-6. Never silently overwrite established facts. If two records conflict, prefer the newest explicit player choice and repair the save files.
-7. Paths in this file are relative to `campaigns/campaign-1/`.
+3. Treat `saves/inventory.md` as inventory storage for character and all NPCs that joined party, separated by character names.
+4. Record important NPCs, factions, locations, relationships, quests, secrets, and unresolved consequences in `saves/world_state.md`.
+5. Add a concise checkpoint to `saves/session_log.md` after meaningful progress.
+6. Record canonical appearance details and scene-art notes in `art/art_log.md` so recurring characters remain visually consistent.
+7. Upload image generations to `art/`.
+8. Never silently overwrite established facts. If two records conflict, prefer the newest explicit player choice and repair the save files.
+9. Paths in this file are relative to `campaigns/campaign-1/`.
 
 ## Adult-content boundary
 
@@ -139,5 +141,6 @@ Update repository state after any meaningful change to:
 - important NPC/world facts
 - major choices and consequences
 - canonical appearance
+- generated art
 
 Minor banter does not require a commit.
