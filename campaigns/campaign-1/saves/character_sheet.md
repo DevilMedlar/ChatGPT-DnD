@@ -2,12 +2,12 @@
 
 ## Identity
 
-- **Name:** DevilMedlar
-- **Age:** 21+ (adult confirmed)
-- **Gender / pronouns:** He/Him
-- **Species / race:** Draginkin
+- **Name:** 
+- **Age:** 
+- **Gender / pronouns:** 
+- **Species / race:** 
 - **Level:** 1
-- **Archetype / path:** Draconic Bloodline / Dracolyte / Draconic Acolyte
+- **Archetype / path:** 
 
 ## Appearance
 
@@ -29,8 +29,7 @@ Pending.
 
 ## Features / Abilities
 
-### Draconic Bloodline / Dracolyte / Draconic Acolyte
-Confirmed character path. Exact mechanical features will be established during character creation and then treated as canonical.
+Pending.
 
 ## Background
 
@@ -46,4 +45,4 @@ None established yet.
 
 ## Unresolved Prior Inputs
 
-The player previously selected `4, 3, 2`, but the original numbered menu labels were not recoverable. These values are preserved but have no canonical meaning until the player assigns or confirms them.
+None.
