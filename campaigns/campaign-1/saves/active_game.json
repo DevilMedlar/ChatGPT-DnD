@@ -1,0 +1,21 @@
+{
+  "campaign": 1,
+  "session_number": 0,
+  "phase": "character_creation",
+  "current_step": "lineage_appearance_and_remaining_build",
+  "player_character": {
+    "name": "DevilMedlar",
+    "age": "21+",
+    "adult_confirmed": true,
+    "gender_pronouns": "He/Him",
+    "species": "Draginkin",
+    "archetype": "Draconic Bloodline / Dracolyte / Draconic Acolyte",
+    "level": 1
+  },
+  "unresolved_prior_selections": [4, 3, 2],
+  "notes": [
+    "The numeric selections 4, 3, 2 were preserved from the prior character-creation turn, but their original menu labels were not recoverable. Do not assign meanings to them without new player confirmation.",
+    "Player controls major decisions. Custom actions are always allowed.",
+    "When a scene merits generated art, ask at the end: Make image? If the player answers yes, generate the image before advancing choices. If no, continue using choices included in that response."
+  ]
+}
