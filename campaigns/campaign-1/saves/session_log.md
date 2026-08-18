@@ -146,12 +146,28 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - **Initiative:** carver `8 + 2 = 10`; DevilMedlar `9 + 0 = 9`; Nyxara `2 + 3 = 5`.
 - Nyxara's prepared disruption attack: `8 + 4 = 12` vs AC 13, miss.
 - Carver's crossbow attack: `3 + 3 = 6` vs DevilMedlar's effective AC 14 with corner cover, miss.
-- DevilMedlar closed according to the preauthorized nonlethal plan.
-- Dawnclaw attack: `11 + 4 = 15` vs AC 13, hit.
-- Damage: `5 + 2 = 7` bludgeoning, explicitly nonlethal.
-- The lightly armored carver had 7 HP and dropped to 0. He is **unconscious and stable, captured alive**.
-- Combat ended after the opening exchange. DevilMedlar and Nyxara are uninjured.
-- The compact crossbow lies in the chamber. The carving chisel and satchel remain on the captive. The thick leather-bound object has **not yet been opened or verified as the ledger**.
-- No spell slots, Golden Breath, Golden Ascendant, consumables, or inventory items were spent.
-- **XP:** +25 for successful nonlethal capture. **Current XP: 200/300**.
-- **Current objective:** Secure/search the captive and chamber, verify the probable ledger, decide how to wake/question the captive, and follow through on the promised conversation with Nyxara when appropriate.
+- Dawnclaw attack: `11 + 4 = 15` vs AC 13, hit; damage `5 + 2 = 7` bludgeoning, explicitly nonlethal.
+- Carver dropped to 0 HP and became **unconscious and stable, captured alive**.
+- DevilMedlar and Nyxara remained uninjured; no limited resources spent.
+- **XP:** +25. Total 200/300.
+
+### Checkpoint 1.11 - The book is real
+
+- DevilMedlar thoroughly searched/disarmed the captive while Nyxara used DevilMedlar's 50-ft hempen rope to secure the captive's wrists, ankles, and torso.
+- **Investigation:** `19 - 1 = 18` vs DC 14, success.
+- Recovered from captive: compact crossbow plus six bolts, stone-carving chisel, narrow boot knife, pouch with **8 gp and 6 sp**, small brass key with a **three-coil notch pattern**, and dark satchel.
+- Enemy valuables/gear are secured but not automatically added to DevilMedlar's personal inventory/currency pending player disposition.
+- DevilMedlar swept the chamber for accomplices, exits, threats, and useful supplies.
+- **Perception:** `17 + 3 = 20` vs DC 13, success.
+- No current accomplice found and no additional fresh track set found in/immediately beyond the chamber.
+- Two routes identified beyond the return path: an **eastward deeper drainage passage** and a **rusted vertical service shaft to a grated surface exit**. Surface grate appears usable but noisy.
+- Recovered near the firing position: **hooded lantern** and **one flask of lamp oil**.
+- DevilMedlar opened the book and confirmed, with Nyxara's recognition, that it is the stolen **Velvet Coil ledger**.
+- Ledger contains names, dates, payments, routes, and coded marks tied to watched/selected people.
+- Nyxara confirmed the entry concerning the woman she loves is present, but still withheld the woman's name and exact relationship.
+- Repeated ledger notation: **`Vespergate / Silken Cup / cellar delivery`**, establishing a new Vespergate lead.
+- DevilMedlar asked Nyxara whether the ledger was what she wanted/expected while flirting lightly. Nyxara answered with dry amusement and said it is what she was after, but **worse than she expected**.
+- Captive remains unconscious, stable, bound, and alive.
+- **XP:** +25 for resolving the chamber/captive search and confirming the major ledger lead. **Current XP: 225/300**.
+- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, no conditions. Rope temporarily committed to restraint.
+- **Current objective:** Decide how/when to wake and interrogate the captive, interpret ledger codes, investigate the Silken Cup lead/three-coil key, and choose the next route.
