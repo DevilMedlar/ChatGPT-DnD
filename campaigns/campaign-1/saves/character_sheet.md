@@ -17,6 +17,7 @@
 - **XP to Level 2:** 150
 - **Progression:** Numeric XP.
 - **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger.
+- **Turn 7:** No XP awarded yet. The Arcana, Stealth, and Perception checks all failed and created an immediate alerted-presence complication rather than a completed accomplishment.
 
 ## Appearance
 
@@ -72,6 +73,8 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 - **Survival:** Proficient, +3 total.
 - **Insight:** +1 total, not proficient.
 - **Investigation:** -1 total, not proficient.
+- **Arcana:** -1 total, not proficient.
+- **Stealth:** +0 total, not proficient.
 - **Dawnclaws:** Proficient through Dracolyte training.
 - **Light armor:** Proficient.
 
@@ -79,7 +82,7 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 - **Dawnclaws - Bonded Draconic Gauntlets:** Matched paired gauntlets functioning as one simple melee weapon set and as DevilMedlar's draconic/spellcasting focus. Attack and damage use Charisma through the Dracolyte bond: **+4 to hit**, `1d6 + 2` bludgeoning. Wearing two gauntlets does not grant a free extra attack. While Golden Ascendant is active, a hit may deal fire or radiant instead of bludgeoning without adding damage.
 - **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather; current AC 12.
-- **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin; remains warm since the Lantern Road Velvet Coil mark discovery.
+- **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin. It remains unusually warm since the Lantern Road Velvet Coil mark discovery. During Turn 7 it gave a brief stronger heat pulse when oriented deeper into the old culvert, but a failed Arcana check left the cause and meaning unknown.
 - Full carried gear and currency are tracked in `inventory.md`.
 
 ## Features / Abilities
@@ -113,7 +116,7 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 - DevilMedlar survived the pleasure cult now identified as **the Velvet Coil**.
 - A Temple-Bound Acolyte brought him into temple life afterward.
 - He eventually chose to leave that life and become a Wandering Mystic.
-- **Turn 4 disclosure:** DevilMedlar told Nyxara Veyl directly, "I survived the Velvet Coil."
+- DevilMedlar has told Nyxara directly that he survived the Velvet Coil.
 - Exact circumstances, the Acolyte's identity, and the temple/order remain unresolved.
 
 ## Personality / Social Style
@@ -123,7 +126,7 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
-- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance and told her she is beautiful and has a nice figure; Nyxara accepted the compliment with dry amusement. Nyxara clarified that she was not personally a Velvet Coil initiate; she survived what the Coil did to someone she loves. In Turn 6 DevilMedlar asked whether that person was the name in the stolen ledger. Nyxara confirmed **yes**, and confirmed the person is **female**, but still withheld her identity and exact relationship. DevilMedlar and Nyxara then quietly bypassed the known culvert alarm together and entered the culvert. Cooperation and light flirtatious tension continue, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance, told her she is beautiful and has a nice figure, and in Turn 7 looked her up and down and made another quick comment that she looked lovely/sexy while they advanced through the culvert. Nyxara continues to answer with dry amusement rather than hostility. She has confirmed that the woman she loves is the protected name in the stolen Velvet Coil ledger, but still withholds the woman's identity and exact relationship. Cooperation and light flirtatious tension continue, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
 
 ## Conditions / Transformations
 
@@ -136,11 +139,12 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 
 - Exact circumstances of DevilMedlar's survival/departure from the Velvet Coil.
 - Identity and motives of the Temple-Bound Acolyte and temple/order.
-- Sunscale Shard's true origin and any hidden property.
+- Sunscale Shard's true origin, hidden property, and the meaning of its stronger heat pulse deeper inside the culvert.
 - Identity and motive of the Velvet Coil carver.
 - Identity and exact relationship of the woman Nyxara loves whose name appears in the stolen ledger.
+- Identity, number, and exact position of the likely alerted presence beyond the first culvert bend.
 - Whether Nyxara becomes a supporting companion.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 6:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 150/300. Culvert alarm bypassed without triggering; no resources spent.
+- **Session 1 Turn 7:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 150/300. Arcana 1 vs DC 12 failed; Stealth 10 vs DC 12 failed; Perception 4 vs DC 13 failed. No resources spent. A likely presence beyond the bend is now alerted.
