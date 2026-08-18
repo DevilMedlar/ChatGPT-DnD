@@ -3,63 +3,42 @@
 ## Identity
 
 - **Name:** DevilMedlar
-- **Age:** 20
-- **Gender / pronouns:** Male, he/him
-- **Species / race:** Draginkin
-- **Draginkin heritage:** Gold Dragon - fire/radiance affinity
-- **Level:** 1
-- **Archetype / path:** Dracolyte / Draconic Acolyte
-- **Dracolyte focus:** Golden Ascendant
+- **Age:** 20, adult.
+- **Gender / pronouns:** Male, he/him.
+- **Species / race:** Draginkin.
+- **Heritage:** Gold Dragon - fire/radiance affinity.
+- **Level:** 1.
+- **Archetype / path:** Dracolyte / Draconic Acolyte.
+- **Focus:** Golden Ascendant.
 
 ## Advancement
 
-- **XP:** 250 / 300
-- **XP to Level 2:** 50
+- **XP:** 250 / 300.
+- **XP to Level 2:** 50.
 - **Progression:** Numeric XP.
-- **Recent awards:** +25 XP Turn 10 for nonlethal capture; +25 XP Turn 11 for clearing the chamber and confirming the ledger; +25 XP Turn 12 for the successful major trust/personal-history breakthrough with Nyxara and learning Mara Veyl's identity/relationship.
+- Recent awards: +25 Turn 10 for nonlethal capture; +25 Turn 11 for clearing the chamber and confirming the ledger; +25 Turn 12 for the major reciprocal trust breakthrough with Nyxara and learning Mara Veyl's identity/relationship.
 
 ## Appearance
 
-### Baseline form
-
 - Lean athletic build, 5'10", light tan skin, short neat red hair, gold eyes.
-- Mostly human face with subtle draconic eyes/fangs.
-- Barely noticeable crimson-red scale patches, especially collarbone, ribs, and hips.
-- No visible horns, wings, or tail at rest.
-
-### Battle / power-up manifestation
-
-- Short swept-back horns, wings, and tail manifest only while empowered.
-- Gold eye glow becomes continuous while transformed.
-- Transformation aesthetic: radiant crimson-and-gold draconic power.
+- Mostly human face with subtle draconic eyes/fangs and barely noticeable crimson-red scale patches at collarbone/ribs/hips.
+- No horns, wings, or tail at rest.
+- While Golden Ascendant is active: short swept-back horns, wings, tail, continuous gold eye glow, radiant crimson-and-gold draconic aura.
 
 ## Ability Scores
 
-- **Strength:** 12 (+1)
-- **Dexterity:** 10 (+0)
-- **Constitution:** 14 (+2)
-- **Intelligence:** 8 (-1)
-- **Wisdom:** 13 (+1)
-- **Charisma:** 15 (+2)
+- STR 12 (+1), DEX 10 (+0), CON 14 (+2), INT 8 (-1), WIS 13 (+1), CHA 15 (+2).
 
 ## Derived Statistics
 
-- **HP / Max HP:** 10 / 10
-- **Armor Class:** 12
-- **Initiative:** +0
-- **Speed:** 30 ft
-- **Proficiency bonus:** +2
-- **Passive Perception:** 13
-- **Spellcasting ability:** Charisma
-- **Spell attack bonus:** +4
-- **Spell save DC:** 12
-- **Level-1 spell slots:** 2 / 2
-- **Golden Breath:** 1 / 1
-- **Golden Ascendant:** 1 / 1
-- **Conditions:** None
-- **Temporary effects:** None
+- HP 10/10; AC 12; Initiative +0; Speed 30 ft; Proficiency +2; Passive Perception 13.
+- Spell attack +4; Spell save DC 12.
+- Level-1 spell slots 2/2.
+- Golden Breath 1/1.
+- Golden Ascendant 1/1.
+- Conditions: none.
 
-## Skills & Proficiencies
+## Skills
 
 - Perception +3, proficient.
 - Survival +3, proficient.
@@ -69,32 +48,20 @@
 - Stealth +0.
 - Intimidation +2.
 - Persuasion +2.
-- Dawnclaws and light armor proficient.
 
 ## Equipment Summary
 
-- **Dawnclaws - Bonded Draconic Gauntlets:** +4 to hit, `1d6 + 2` bludgeoning, Charisma-based, spellcasting focus. No free extra attack.
+- **Dawnclaws:** +4 to hit, `1d6 + 2` bludgeoning, Charisma-based, spellcasting focus, no free extra attack.
 - **Reinforced Wanderer's Vestments:** AC 12.
-- **Sunscale Shard:** Unidentified gold-dragon relic. Unusually warm since the Lantern Road mark; Turn 7 produced a brief stronger heat pulse deeper into the culvert.
-- **Rope status:** 50-ft hempen rope currently restrains the captured carver and is unavailable until recovered.
-- Full carried gear and secured loot are tracked in `inventory.md`.
+- **Sunscale Shard:** Unidentified gold-dragon relic; unusually warm since the Lantern Road mark; produced one stronger heat pulse deeper in the culvert during Turn 7.
+- **50-ft hempen rope:** Currently restraining the captive and unavailable until recovered.
+- Full secured loot is tracked in `inventory.md`.
 
 ## Features / Abilities
 
-### Gold Dragon Heritage
-
-- Fire Resistance.
+- **Fire Resistance.**
 - **Golden Breath:** Action, 15-ft cone, Dex save DC 12, `2d6` fire or radiant, half on success, 1/long rest.
-
-### Golden Ascendant
-
-- Bonus action, 1/long rest, up to 1 minute.
-- Horns/wings/tail manifest; level-1 wings do not grant sustained flight.
-- Dawnclaw hits may become fire or radiant damage without extra damage.
-- Ascendant Vitality: 4 temporary HP on transformation; once during transformation, bonus action heal 2 HP.
-
-### Dracolyte Spellcasting
-
+- **Golden Ascendant:** Bonus action, 1/long rest, up to 1 minute. No sustained flight at level 1. Dawnclaw hits may become fire or radiant. Ascendant Vitality grants 4 temporary HP on transformation and one bonus-action 2 HP heal during that transformation.
 - **Solar Lance:** Action, 60 ft, +4 ranged spell attack, `1d8` fire or radiant.
 - **Sunclaw Channel:** Action, one Dawnclaw attack, `1d6 + 2` magical bludgeoning/fire/radiant.
 - **Restorative Flame:** Action, touch, spend one level-1 slot, heal `1d8 + 2`.
@@ -102,15 +69,13 @@
 
 ## Background
 
-- **Composite background:** Velvet Coil Survivor -> Temple-Bound Acolyte influence -> Wandering Mystic.
-- DevilMedlar has now told Nyxara the following Turn 12 details, established with player authorization:
-  - He entered the Velvet Coil voluntarily at **age 18**, explicitly as an adult, after being promised freedom from shame and judgment.
-  - The early experience felt like consensual adult revelry, acceptance, and community.
-  - He gradually recognized that the Coil converted affection into leverage, secrets into debt, and intimacy into obedience.
-  - He refused a binding oath that would have required helping recruit others.
-  - During a storm-night disruption he escaped through a service route with only the Sunscale Shard and what he could carry.
-  - He hid until dawn and was found exhausted by the still-unnamed Temple-Bound Acolyte, who brought him into temple life.
-- Exact identity of that Acolyte, the temple/order, and later details remain unresolved.
+- **Composite background:** Born into the Velvet Coil -> escaped at age 7 -> later Temple-Bound Acolyte influence -> Wandering Mystic.
+- **Corrected Turn 12 canon:** DevilMedlar was **born inside the Velvet Coil**, rather than joining as an adult.
+- The Velvet Coil is an adult pleasure cult, but DevilMedlar's childhood history is tracked non-graphically. As a child, he was kept outside the cult's adult sexual rites and raised under its secrecy, isolation, loyalty conditioning, and coercive control.
+- He was taught that leaving was betrayal and that outsiders were dangerous.
+- At **age 7**, during a violent storm, floodwater jammed a maintenance sluice partly open. DevilMedlar crawled through the service channel and ran until the compound was out of sight.
+- In Turn 12 he told Nyxara only the story up to the escape. **He revealed nothing to her about what happened afterward.**
+- The broad historical Temple-Bound Acolyte connection remains canon from character creation, but its timing, identity, and exact relationship are unresolved and were not disclosed in this Turn 12 conversation.
 
 ## Personality / Social Style
 
@@ -120,25 +85,21 @@
 
 ## Relationships
 
-- **Unnamed Temple-Bound Acolyte:** Historical rescuer/connection after DevilMedlar's Velvet Coil escape. Exact identity and relationship remain unresolved.
-- **Nyxara Veyl:** Adult tiefling, age 24, Veilblade/occult tracker. Cooperation and trust have grown through shared pursuit, boundary-respecting flirtation, the nonlethal capture, and ledger investigation. In Turn 12, Persuasion `17 + 2 = 19` vs DC 14 succeeded on an explicit info-for-info exchange. Nyxara learned DevilMedlar's escape history and reciprocated with her own family/past. She revealed that the woman in the ledger is **Mara Veyl**, her **21-year-old adult younger sister**. Mara is not known to be a Velvet Coil member; Nyxara believes she is a target. Nyxara grew up in Vespergate, worked first as a courier and later became a tracker/Veilblade. Light flirtation remains part of their rapport, but romance, intimacy, formal party membership, and mutual attraction remain unconfirmed. Established consent boundaries remain intact.
+- **Unnamed Temple-Bound Acolyte:** Historical connection after DevilMedlar's Velvet Coil childhood; exact timing, identity, and relationship remain unresolved.
+- **Nyxara Veyl:** Adult tiefling, age 24. Cooperation and trust have grown through shared pursuit, boundary-aware flirtation, nonlethal capture, and ledger investigation. Turn 12 Persuasion `17 + 2 = 19` vs DC 14 succeeded on an info-for-info exchange. Nyxara learned that DevilMedlar was born inside the Velvet Coil and escaped at age 7. In return she revealed that the woman in the ledger is **Mara Veyl**, her **21-year-old adult younger sister**. Mara is not known to be a Velvet Coil member; Nyxara believes she is a target. Nyxara grew up in Vespergate, worked as a courier, then became a tracker/Veilblade. Personal trust increased substantially; mutual attraction, romance, intimacy, formal party membership, and debt remain unconfirmed. Consent boundaries remain intact.
 
 ## Confirmed Investigation Leads
 
-- **Velvet Coil ledger:** Genuine. Contains names, dates, payments, routes, and coded marks.
-- **Turn 12 ledger study:** Investigation `4 - 1 = 3` vs DC 14 failed; no additional shorthand or code was decoded.
-- **Mara Veyl:** Nyxara's 21-year-old younger sister and a confirmed ledger entry; believed by Nyxara to be a target rather than member.
-- **Silken Cup:** Nyxara identifies it as an upscale winehouse/performance salon in Vespergate's Lantern Quarter with private rooms and a rear cellar-delivery entrance. She has watched discreet late-night couriers use that cellar route and suspects covert activity, but this is not yet proven.
-- **Three-coil brass key:** Turn 12 Investigation `5 - 1 = 4` vs DC 13 failed; no matching lock found and obvious chamber/service-shaft fittings do not match.
-
-## Conditions / Transformations
-
-- No lasting adverse conditions.
-- Golden Ascendant unused and available.
+- **Velvet Coil ledger:** Genuine. Names, dates, payments, routes, coded marks.
+- **Turn 12 ledger study:** Investigation `4 - 1 = 3` vs DC 14 failed; no additional shorthand/code decoded.
+- **Mara Veyl:** Nyxara's adult 21-year-old younger sister; confirmed ledger entry; believed by Nyxara to be a target rather than a member.
+- **Silken Cup:** Upscale winehouse/performance salon in Vespergate's Lantern Quarter with private rooms and a rear cellar-delivery entrance. Nyxara has seen discreet late-night couriers use that entrance and suspects covert activity, not yet proven.
+- **Three-coil brass key:** Investigation `5 - 1 = 4` vs DC 13 failed; matching lock still unknown.
 
 ## Unresolved Threads
 
 - Full Velvet Coil history and leadership.
+- DevilMedlar's parentage/guardians inside the Coil and details not yet established.
 - Why the fresh cult mark appeared outside Vespergate.
 - Identity and motives of the Temple-Bound Acolyte and temple/order.
 - Sunscale Shard origin and hidden properties.
@@ -150,4 +111,4 @@
 
 ## Last Turn Sync
 
-- **Session 1 Turn 12:** XP 250/300. HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions. Ledger Investigation 3 failed; key/lock Investigation 4 failed; Persuasion 19 succeeded. Captive naturally woke after 3 hours at 1 HP, still bound and disarmed. No limited resources spent.
+- **Session 1 Turn 12:** XP 250/300. HP 10/10, slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1. Ledger Investigation 3 failed; key Investigation 4 failed; info-for-info Persuasion 19 succeeded. Captive naturally woke after 3 hours at 1 HP, still bound and disarmed. Childhood canon corrected to born into the Velvet Coil and escaped at age 7; no post-escape details were revealed to Nyxara.
