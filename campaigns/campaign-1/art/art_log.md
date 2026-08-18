@@ -121,7 +121,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ### Session 1 Turn 2 — Nyxara Veyl First Contact
 
-- **Repository path:** `art/session-1-turn-2-nyxara-first-contact.webp`
+- **Repository path:** `art/session-1-turn-2-nyxara-first-contact.png`
 - **Scene:** DevilMedlar encounters Nyxara Veyl in the north drainage gully after losing the clean trail; Nyxara is perched on the upper ledge with her compact crossbow held low.
 - **Characters shown:** DevilMedlar, adult age 20; Nyxara Veyl, adult age 24.
 - **DevilMedlar form:** Baseline form, no horns, wings, or tail. Red hair, dark travel vestments, Dawnclaws, faintly glowing Sunscale Shard.
