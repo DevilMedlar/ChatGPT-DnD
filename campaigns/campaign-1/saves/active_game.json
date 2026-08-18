@@ -5,14 +5,15 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "archetype_path",
+  "current_step": "ability_scores",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
     "gender_pronouns": "Male, he/him",
     "species_race": "Draginkin",
+    "heritage": "Gold Dragon — fire/radiance affinity",
     "level": 1,
-    "archetype_path": null
+    "archetype_path": "Dracolyte / Draconic Acolyte"
   },
   "scene": {
     "location": null,
@@ -20,7 +21,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "archetype_path",
+    "choice": "ability_scores",
     "roll": null,
     "image_offer": false
   },
@@ -46,5 +47,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "character_identity_gender_species_set"
+  "last_checkpoint": "archetype_and_gold_heritage_set"
 }
