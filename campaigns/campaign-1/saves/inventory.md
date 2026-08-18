@@ -52,6 +52,11 @@
 
 - **Type:** Small gold-dragon relic of unknown origin; personal keepsake.
 - **Appearance:** A thumb-length fragment resembling a naturally shed gold-dragon scale, held in a simple old wire cage. Its surface catches light with a faint sunburst pattern.
-- **Known properties:** It is slightly warm to the touch. No mechanical power or origin is currently known to DevilMedlar.
-- **Status:** Unidentified. Any hidden property must be discovered through play rather than assumed during character creation.
+- **Known properties:** It is slightly warm to the touch under normal circumstances. Since DevilMedlar discovered the fresh cult mark on Lantern Road, it has remained noticeably warmer than its normal baseline.
+- **Current state:** Warm and unexamined while DevilMedlar pursues the trails into the drainage gully.
+- **Status:** Unidentified. Any hidden property must be discovered through play rather than assumed.
 - **Curse:** None known.
+
+## Last Turn Sync
+
+- **Session 1 Turn 2:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. Sunscale Shard remains warm.
