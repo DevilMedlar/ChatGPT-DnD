@@ -5,7 +5,7 @@
   "phase": "setup",
   "session_number": 0,
   "turn_number": 0,
-  "current_step": "campaign_setup",
+  "current_step": "character_creation",
   "xp_current": 0,
   "xp_next_level": 300,
   "last_sync_note": "Fresh Campaign 1 framework initialized. No character, NPC, item, location, relationship, quest, or story canon has been established."
