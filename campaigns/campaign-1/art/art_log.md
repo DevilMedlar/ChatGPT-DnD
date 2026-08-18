@@ -5,43 +5,38 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 ## Image Workflow
 
 - Do not offer image generation for every scene. Offer it only when the scene genuinely benefits from a visual or when the player asks.
-- When an image is worth offering, ask at the end of the narration: `Make image? Yes / No`.
-- `Yes` means generate the image before the player makes or resolves gameplay choices for that scene.
-- `No` means skip generation; any remaining text in the same reply is treated as the player's choices or freeform action.
-- Reference this log before generating any recurring character, equipment, location, transformation, scar, tattoo, or other established visual.
-- **Manual persistence policy:** ChatGPT must not commit, upload, create, replace, or rename generated image files in the repository. The player will add generated images to the Campaign 1 `art/` root manually.
-- ChatGPT may still record scene-art continuity details here immediately after generation, but must not invent a repository filename/path for a not-yet-uploaded image.
-- After the player manually adds an image to `art/`, ChatGPT may verify its actual repository path and update this log to reference it.
-- Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
-- Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
+- When an image is worth offering, ask at the end of narration: `Make image? Yes / No`.
+- `Yes` means generate before the player makes/resolves gameplay choices for that scene.
+- `No` means skip generation and treat remaining text as gameplay input.
+- Reference this log before generating recurring characters, equipment, locations, transformations, scars, tattoos, or other established visuals.
+- **Manual persistence policy:** ChatGPT must not commit, upload, create, replace, or rename generated image files in the repository. The player manages generated image binaries manually in the Campaign 1 `art/` root.
+- ChatGPT may record textual scene-art continuity immediately after generation but must not invent a repository path before the player uploads the file.
+- After the player manually uploads an image, ChatGPT may verify its exact repository path and then record it here.
+- Textual campaign canon wins if generated art conflicts with established facts unless the player explicitly adopts the visual detail.
+- Sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
-## Player Character - Canonical Appearance
+## Player Character - DevilMedlar
 
-- **Name:** DevilMedlar
-- **Confirmed adult age:** 20
-- **Gender / pronouns:** Male, he/him
-- **Species / race:** Draginkin
-- **Heritage:** Gold Dragon - fire/radiance affinity
-- **Archetype / path:** Dracolyte / Draconic Acolyte
-- **Dracolyte focus:** Golden Ascendant
-- **Build:** Lean and athletic.
-- **Height:** 5'10".
-- **Skin tone:** Light tan.
+- **Confirmed adult age:** 20.
+- **Gender / pronouns:** Male, he/him.
+- **Species / race:** Draginkin.
+- **Heritage:** Gold Dragon, fire/radiance affinity.
+- **Archetype / path:** Dracolyte / Draconic Acolyte.
+- **Focus:** Golden Ascendant.
+- **Build / height:** Lean athletic, 5'10".
+- **Skin:** Light tan.
 - **Hair:** Red, short and neat.
-- **Eyes:** Gold. They glow while abilities are used; during battle/power-up transformation the glow remains continuous until the transformation ends.
-- **Face:** Mostly human, with subtle draconic eyes/fangs.
-- **Baseline scales:** Barely noticeable crimson-red scale patches, especially around the collarbone, ribs, and hips.
-- **Baseline silhouette:** Mostly human; horns, wings, and tail are not visible at rest.
-- **Battle/power-up horns:** Short, swept-back horns manifest only while empowered.
-- **Battle/power-up wings:** Manifest only while empowered.
-- **Battle/power-up tail:** Manifests only while empowered.
-- **Transformation aesthetic:** Radiant and dramatic with crimson-and-gold draconic power surrounding the humanoid form, following the player-provided reference image for overall vibe.
-- **Continuity caution:** The player-provided picture is an aesthetic reference for transformation vibe. Do not silently adopt incidental image details that contradict textual canon.
+- **Eyes:** Gold; glow while abilities are used and continuously while Golden Ascendant is active.
+- **Face:** Mostly human with subtle draconic eyes/fangs.
+- **Baseline scales:** Barely noticeable crimson-red scale patches, especially collarbone, ribs, hips; minor cheek/neck hints are acceptable if subtle.
+- **Baseline silhouette:** Mostly human. No visible horns, wings, or tail at rest.
+- **Empowered form:** Short swept-back horns, wings, and tail manifest while empowered. Aura is radiant crimson-and-gold draconic power.
+- **Continuity caution:** Player-provided transformation art is an aesthetic anchor, not permission to overwrite textual canon.
 
 ## Player-Provided Reference Art
 
-- **Reference 1:** DevilMedlar battle/power-up transformation vibe, supplied during Session 0.
-- Repository image present in this `art/` root: `5456eaa1-dcca-4bbf-ac3c-1c028af82b0d.png`.
+- **Reference 1:** DevilMedlar battle/power-up transformation vibe from Session 0.
+- Repository image: `art/5456eaa1-dcca-4bbf-ac3c-1c028af82b0d.png`.
 
 ## Recurring NPCs
 
@@ -51,146 +46,137 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Gender / pronouns:** Female, she/her.
 - **Species:** Tiefling.
 - **Role:** Veilblade / occult tracker; potential assistant-controlled supporting companion.
-- **Build:** Slender, athletic, compact rather than heavily muscular.
-- **Height:** About 5'6".
+- **Build / height:** Slender athletic, compact, about 5'6".
 - **Skin:** Muted ash-lavender.
-- **Hair:** Black, shoulder-length, slightly tousled, with a narrow wine-red streak near the front.
-- **Eyes:** Amber-violet with a subtle reflective glow in low light.
+- **Hair:** Black, shoulder-length, slightly tousled, narrow wine-red streak near the front.
+- **Eyes:** Amber-violet with subtle low-light reflectivity.
 - **Horns:** Smooth obsidian-black horns sweeping backward close to the head, elegant rather than massive.
-- **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
-- **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
-- **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
-- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and complimented her repeatedly. Nyxara answers with dry amusement rather than hostility. Turn 8 included brief accidental intimate contact against her chest/hip while DevilMedlar squeezed past her in the cramped culvert; he immediately withdrew and apologized, and she accepted the apology. In Turn 9 he apologized again and admitted he liked the accidental contact; Nyxara remained amused but explicitly maintained that accidental contact is not permission for intentional repetition. Any future intimate body language must follow established consent rather than treating the accident as permission. **Mutual attraction, romance, intimacy, and party familiarity remain unconfirmed.**
-- **Personal-story visual caution:** Nyxara has confirmed that a woman she loves is the personally important name in the stolen Velvet Coil ledger, but that woman's identity and appearance are not established. Do not invent or depict her until canon establishes her.
+- **Face / expression:** Sharp expressive features; alert, self-possessed, often the beginning of a knowing smirk.
+- **Clothing:** Dark charcoal travel leathers beneath a short hooded mantle, practical stealth gear, muted brass buckles, minimal ornament.
+- **Weapons:** Slim shortblade at hip; compact hand crossbow.
+- **Relationship visual rule:** DevilMedlar repeatedly compliments Nyxara and she generally answers with dry amusement. Turn 8's brief chest/hip contact was an accidental cramped-space bump, immediately apologized for, not deliberate sexual touching. Later apologies and flirtatious comments do not alter the consent rule. Light teasing and close tactical body language are appropriate; **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
+- **Turn 10 visual note:** Before combat DevilMedlar again complimented her attractiveness, apologized, wished her luck, and suggested they talk after. Nyxara accepted the apology, maintained her boundary, and returned dry flirtatious banter. This changes relationship tone only, not physical canon.
+- **Personal-story caution:** A woman Nyxara loves is the important name in the Velvet Coil ledger, but the woman's identity and appearance remain unestablished. Do not depict her yet.
 
-### Likely Velvet Coil Carver - identity unrevealed
+### Captured Likely Velvet Coil Carver
 
 - **Confirmed adult:** Yes.
 - **Gender presentation:** Male.
-- **Face / ancestry / age details:** Not established; do not invent permanent facial or ancestry details before a clearer reveal.
-- **Turn 8 silhouette:** Hooded figure crouched behind broken masonry in the culvert maintenance chamber.
-- **Weapon:** Compact crossbow trained toward the first bend.
-- **Evidence details:** Pale shrine-stone dust packed into boots; stone-carving chisel at belt.
-- **Carried object:** Dark cross-body satchel containing or revealing the edge of a thick leather-bound book-sized object that may be the stolen ledger.
-- **Lighting:** His previous amber light source was extinguished after Turn 7's noise, so Turn 8 observation is primarily dim silhouette and reflected low light.
+- **Permanent face / ancestry / exact age:** Unestablished. Do not lock these details until revealed in play.
+- **Turn 8 silhouette:** Hooded figure behind broken masonry.
+- **Weapon:** Compact crossbow.
+- **Evidence:** Pale shrine-stone dust on boots; stone-carving chisel at belt.
+- **Carried object:** Dark cross-body satchel with the edge of a thick leather-bound book-sized object visible, likely but not yet confirmed to be the stolen ledger.
+- **Turn 10 state:** Unconscious and stable after one nonlethal Dawnclaw strike. Compact crossbow dropped nearby; chisel and satchel remain on his body unless removed in later play.
 
 ## Signature Equipment & Visual Effects
 
 ### Dawnclaws - Bonded Draconic Gauntlets
 
-- **Worn on:** Both forearms and hands as a matched pair.
-- **Silhouette:** Close-fitting articulated gauntlets rather than oversized armored fists; fingers remain fully articulated.
-- **Materials:** Dark bronze-gold plates with fine sunburst filigree.
-- **Accents:** Narrow crimson inlays that echo DevilMedlar's subtle crimson-red scales.
-- **Inactive appearance:** Elegant and restrained, no constant glow.
-- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when magic or draconic power is routed through them.
-- **Golden Ascendant interaction:** Fire/radiant damage may be depicted through the striking gauntlet without altering its physical design.
-- **Combat presentation:** Art may show punches, guards, parries, spell gestures, or both fists lit, but should not imply an unearned extra attack.
+- Worn on both forearms/hands as a matched pair.
+- Close-fitting articulated design, not oversized fists; fingers remain usable.
+- Dark bronze-gold plates, fine sunburst filigree, narrow crimson inlays.
+- Inactive: elegant, restrained, no constant glow.
+- Power-channel: seams kindle gold-white with crimson edges.
+- Golden Ascendant may depict fire/radiance through the striking gauntlet without changing its physical design.
+- Combat art may show punches, guards, parries, or spell gestures, but must not imply an unearned extra attack.
 
 ### Reinforced Wanderer's Vestments
 
-- Dark flexible travel layers with discreet bronze-gold scale-shaped reinforcement beneath the cloth.
+- Dark flexible travel layers with discreet bronze-gold scale-shaped reinforcement beneath cloth.
 - Preserve DevilMedlar's lean, mostly human baseline silhouette.
 
 ### Sunscale Shard
 
-- Thumb-length gold-dragon-scale-like fragment held in a simple old wire cage.
-- Catches light in a faint sunburst pattern and appears slightly warm or softly luminous only when appropriate.
-- True origin/power remain unknown and must not be visually spoiled.
-- **Current visual state:** Unusually warm since the Lantern Road Velvet Coil mark discovery. In Turn 7 it gave one brief stronger heat pulse when oriented deeper into the old culvert. The cause and significance remain unknown because the Arcana check failed. If shown, the pulse should be subtle and should not visually reveal hidden lore.
+- Thumb-length fragment resembling a shed gold-dragon scale in an old wire cage.
+- Faint sunburst in reflected light.
+- Unusually warm since the Lantern Road Velvet Coil mark discovery.
+- Turn 7: one brief stronger heat pulse when oriented deeper into the culvert.
+- If shown, use only restrained warm gold light. Do not visually reveal hidden lore or powers.
 
 ### Draconic Effects
 
-- **Gold Dragon affinity:** fire/radiance.
-- **Golden Ascendant transformation:** crimson-and-gold radiant draconic manifestation.
+- Gold Dragon affinity: fire/radiance.
+- Golden Ascendant: crimson-and-gold radiant draconic manifestation.
 
 ## Locations
 
-### Lantern Road shrine outside Vespergate
+### Lantern Road Shrine Outside Vespergate
 
-- Weathered roadside shrine beneath a crooked tree.
-- Dirt road leads toward distant Vespergate.
-- Copper-orange dusk with long shadows and quiet tension.
-- Fresh Velvet Coil sigil carved into the shrine stone.
+- Weathered roadside shrine beneath crooked tree.
+- Dirt road toward distant Vespergate.
+- Copper-orange dusk, long shadows, quiet tension.
+- Fresh Velvet Coil sigil carved into stone.
 
-### North drainage gully
+### North Drainage Gully
 
 - Dry narrow drainage cut north of Lantern Road.
-- Loose gravel and pale hard runoff stone, irregular elevated shelves and bends.
-- Dusk light reaches the upper edges while the gully floor falls into cooler shadow.
-- Nyxara Veyl first appears on an upper shelf overlooking DevilMedlar.
+- Loose gravel, pale hard runoff stone, elevated shelves and bends.
+- Dusk reaches upper edges; floor falls into cool shadow.
+- Nyxara first appeared on an upper shelf overlooking DevilMedlar.
 
-### Old culvert approach
+### Old Culvert Approach
 
-- Narrow rubble-strewn upper shelf reached in Session 1 Turn 4.
-- Old stone culvert mouth lies ahead in deepening dusk.
-- A thin black tripline stretches ankle-high across the approach.
-- The tripline connects to a concealed hooked brass pin, spring arm, and small striker positioned against a hollow iron drainpipe running deeper into the culvert.
-- **Turn 6 state:** DevilMedlar and Nyxara stepped over the tripline without triggering it and deliberately left it intact and armed behind them.
+- Narrow rubble-strewn upper shelf.
+- Old stone culvert mouth in deepening dusk.
+- Thin black tripline at ankle height connected to concealed brass pin, spring arm, striker, and hollow iron warning pipe.
+- DevilMedlar and Nyxara left the alarm intact and armed behind them.
 
-### Old culvert interior
+### Old Culvert Interior
 
-- Entered in Session 1 Turn 6.
-- Narrow old stone drainage tunnel with damp, worn masonry and a mineral-dark floor.
-- Fading dusk remains visible behind the entrance while the passage ahead bends into deeper darkness.
-- A hollow iron warning pipe runs along one wall from the entrance mechanism deeper into the tunnel.
-- **Turn 7:** A faint amber light was briefly visible beyond the first bend. After loose gravel struck old iron with a small metallic tick, the amber light was extinguished and previously audible soft movement stopped.
-- **Turn 8:** DevilMedlar successfully peeked around the bend while Nyxara covered him from behind.
+- Narrow damp stone drainage tunnel, mineral-dark floor, worn masonry.
+- Fading dusk behind entrance; deeper passage dark.
+- Hollow iron warning pipe along one wall.
+- Turn 7: amber light beyond bend extinguished after noise.
+- Turn 8: DevilMedlar peeked first bend while Nyxara covered from behind.
 
-### Culvert maintenance chamber
+### Culvert Maintenance Chamber
 
-- Small stone service chamber beyond the first bend, first clearly observed in Turn 8.
-- Broken masonry creates chest-high or crouching cover.
-- Dim, damp, mineral-dark environment; the likely carver's amber light source is extinguished.
-- One hooded armed figure is visible behind cover; possible unseen exits or deeper passage remain unestablished.
-- Mood: held-breath ambush tension, with DevilMedlar possessing fresh reconnaissance while the target believes only that someone is somewhere back around the bend.
+- Small stone service chamber beyond first bend.
+- Broken masonry creates crouching/chest-high cover.
+- Damp reflective floor, dark stone, nearby iron pipe, low amber light against cooler tunnel shadow.
+- Turn 10 aftermath: likely carver unconscious/stable in chamber; compact crossbow dropped nearby; DevilMedlar and Nyxara uninjured.
 
 ## Generated Scene Art
 
 ### Session 1 - Fresh Mark on Lantern Road
 
 - **Repository path:** `art/session-1-lantern-road-shrine.png.png`
-- **Scene:** DevilMedlar discovers a freshly carved Velvet Coil sigil while the Sunscale Shard reacts.
-- **Character shown:** DevilMedlar, adult age 20, baseline form.
-- **Equipment:** Dawnclaws and Sunscale Shard.
-- **Location / lighting:** Lantern Road near Vespergate at sunset.
-- **Continuity note:** Illustrative; textual canon remains authoritative.
-- **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
+- DevilMedlar, adult 20, baseline form at freshly marked shrine while Sunscale Shard reacts.
+- Dawnclaws and shard visible; sunset near Vespergate.
+- Full-resolution PNG already present from before manual-persistence policy change.
+- Text canon authoritative.
 
 ### Session 1 Turn 2 - Nyxara Veyl First Contact
 
 - **Repository path:** `art/session-1-turn-2-nyxara-first-contact.png`
-- **Scene:** DevilMedlar encounters Nyxara Veyl in the north drainage gully after losing the clean trail; Nyxara is perched on the upper ledge with her compact crossbow held low.
-- **Characters shown:** DevilMedlar, adult age 20; Nyxara Veyl, adult age 24.
-- **DevilMedlar form:** Baseline form, no horns, wings, or tail. Red hair, dark travel vestments, Dawnclaws, faintly glowing Sunscale Shard.
-- **Nyxara appearance used:** Tiefling with ash-lavender skin, dark swept-back horns, dark hair with wine-red accents, dark tracker leathers, compact crossbow.
-- **Location / lighting:** Rocky drainage gully and old culvert approach at copper-orange dusk.
-- **Mood:** Suspicion, wary intrigue, first-contact tension, not combat or established intimacy.
-- **Continuity caution:** The generated image depicts Nyxara's hair somewhat longer/wavier than textual canon. Keep **shoulder-length, slightly tousled black hair with a narrow wine-red streak** as authoritative unless the player adopts the image variation.
-- **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
+- DevilMedlar, adult 20; Nyxara, adult 24.
+- DevilMedlar baseline form; Nyxara as ash-lavender tiefling tracker with compact crossbow.
+- Rocky gully / old culvert approach, copper-orange dusk.
+- Generated Nyxara hair may appear somewhat longer/wavier; textual canon remains shoulder-length, slightly tousled black hair with narrow wine-red streak.
+- Full-resolution PNG already present from before manual-persistence policy change.
 
 ### Session 1 Turn 8 - Wet Stone Tunnel Stealthy Ambush
 
 - **Repository path:** `art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`
-- **Persistence:** Player manually uploaded the corrected generated image. Repository metadata verified the exact path and file presence during Turn 9. ChatGPT did not upload or commit the image.
-- **Scene:** DevilMedlar peeks around the first bend of the damp old culvert after recovering his stealth advantage; Nyxara provides cover from behind him; the likely Velvet Coil carver waits behind broken masonry in the maintenance chamber.
-- **Characters shown:** DevilMedlar, adult age 20; Nyxara Veyl, adult age 24; one hooded adult male-presenting likely carver whose permanent face/ancestry remain unestablished.
-- **Blocking canon:** DevilMedlar is the forward figure at the corner. Nyxara is **behind DevilMedlar**, partially concealed and covering past/over him with her compact hand crossbow. The player specifically corrected the first generated composition to establish this arrangement.
-- **DevilMedlar form:** Baseline only, no manifested horns, wings, or tail; short red hair, gold eyes, subtle crimson-red draconic markings, dark vestments, Dawnclaws, softly warm caged Sunscale Shard.
-- **Nyxara appearance:** Ash-lavender tiefling with swept-back black horns, dark shoulder-length hair with wine-red accent, amber-violet eyes, charcoal tracker leathers, compact hand crossbow.
-- **Likely carver:** Hooded, behind broken masonry, compact crossbow ready. Shrine-stone dust/chisel/possible ledger are canonical evidence even if individual tiny details are not perfectly readable in the image.
-- **Location / lighting:** Wet dark stone culvert with reflective floor, iron pipe, and warm amber chamber light against cool foreground shadows.
+- **Persistence:** Player manually uploaded the corrected generated image. Repository metadata verified exact path during Turn 9. ChatGPT did not upload or commit it.
+- **Scene:** DevilMedlar peeks around first culvert bend; Nyxara covers from behind; likely Velvet Coil carver waits behind masonry.
+- **Characters:** DevilMedlar adult 20; Nyxara adult 24; hooded adult male-presenting likely carver with permanent identity details unestablished.
+- **Blocking canon:** DevilMedlar is forward at the corner. Nyxara is **behind DevilMedlar**, partially concealed, covering past/over him with compact crossbow. Player specifically corrected the first generated composition to establish this arrangement.
+- **DevilMedlar:** Baseline only, no manifested horns/wings/tail; red hair, gold eyes, subtle crimson draconic markings, dark vestments, Dawnclaws, warm caged Sunscale Shard.
+- **Nyxara:** Ash-lavender tiefling, swept-back black horns, shoulder-length dark hair with wine-red accent, amber-violet eyes, charcoal tracker leathers, compact hand crossbow.
+- **Carver:** Hooded behind masonry, compact crossbow ready. Shrine-dust/chisel/possible ledger are canonical even if not perfectly readable in image.
+- **Environment:** Wet dark stone culvert, reflective floor, iron pipe, warm amber chamber light against cool shadows.
 - **Mood:** Stealth, held-breath tension, regained tactical advantage.
-- **Continuity caution:** Text canon remains authoritative for exact equipment, target evidence, and character features. The corrected **Nyxara-behind-DevilMedlar** blocking is adopted as the canonical composition for this illustrated moment.
 
 ## Persistence Policy Change
 
 - After Session 1 Turn 3, the player explicitly chose to manage all future generated image files manually.
-- ChatGPT will continue generating images when requested and maintaining textual visual continuity, but will not commit image binaries to GitHub going forward.
+- ChatGPT may generate requested images and maintain textual continuity but must not commit image binaries to GitHub.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 9:** The player's manually uploaded corrected Turn 8 image was verified at `art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png` and recorded above. No new image was generated during Turn 9. The corrected visual blocking places Nyxara behind DevilMedlar while he peeks the corner. Turn 9 relationship dialogue does not change either character's physical appearance.
+- **Session 1 Turn 10:** No new image generated. Existing Turn 8 corrected art remains the latest scene image and its verified path is unchanged. Visual continuity now includes the Turn 10 aftermath: the likely carver is unconscious/stable in the maintenance chamber, his compact crossbow is dropped nearby, and DevilMedlar and Nyxara are uninjured. DevilMedlar's additional apology/flirtatious compliment changes no physical canon and does not alter consent boundaries.
 
 For each future scene, record:
 - scene/session identifier
