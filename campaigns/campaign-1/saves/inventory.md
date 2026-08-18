@@ -53,11 +53,11 @@
 - **Type:** Small gold-dragon relic of unknown origin; personal keepsake.
 - **Appearance:** Thumb-length fragment resembling a naturally shed gold-dragon scale, held in a simple old wire cage; faint sunburst pattern in reflected light.
 - **Known properties:** Slightly warm under normal circumstances. Since DevilMedlar discovered the fresh Velvet Coil mark on Lantern Road, it has remained noticeably warmer than its normal baseline.
-- **Turn 7 quick examination:** DevilMedlar examined the shard inside the old culvert. Arcana `2 - 1 = 1` vs DC 12 failed, so no hidden property or mechanism was identified. The shard remained unusually warm and gave one brief stronger heat pulse when oriented deeper into the culvert. The cause and meaning remain unknown.
+- **Turn 7 quick examination:** Arcana `2 - 1 = 1` vs DC 12 failed. No hidden property or mechanism was identified. The shard gave one brief stronger heat pulse when oriented deeper into the culvert; cause and meaning remain unknown.
 - **Current state:** In DevilMedlar's possession, intact, unusually warm, no charge or use expended.
 - **Status:** Unidentified. Hidden properties must be discovered through play.
 - **Curse:** None known.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 7:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. The entrance alarm remains intact and armed behind the party.
+- **Session 1 Turn 8:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. Dawnclaws are ready at the first culvert bend. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
