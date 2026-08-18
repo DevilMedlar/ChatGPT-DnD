@@ -88,7 +88,7 @@ None yet.
 
 ### Session 1 — Fresh Mark on Lantern Road
 
-- **Repository path:** `art/session-1-lantern-road-shrine.webp`
+- **Repository path:** `art/session-1-lantern-road-shrine.png`
 - **Scene:** DevilMedlar discovers a freshly carved pleasure-cult sigil at a roadside shrine while the Sunscale Shard reacts with heat and golden light.
 - **Character shown:** DevilMedlar, adult age 20.
 - **Form:** Baseline form, no horns, wings, or tail.
