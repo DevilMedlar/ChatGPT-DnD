@@ -2,8 +2,8 @@
 
 ## Identity
 
-- **Name:** 
-- **Age:** 
+- **Name:** DevilMedlar
+- **Age:** 20
 - **Gender / pronouns:** 
 - **Species / race:** 
 - **Level:** 1
