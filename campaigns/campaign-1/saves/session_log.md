@@ -101,3 +101,17 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
   - **Ascendant Smite** level 1: after a Dawnclaw hit, spend a slot for `+2d6` fire or radiant, once per turn.
 - Character creation is complete enough to begin play. Unnamed cult/temple/Acolyte details and the Sunscale Shard's true nature remain intentional story hooks.
 - Campaign phase advanced to **ready to begin**; next step is the opening scene.
+
+## Session 1 — Fresh Mark on Lantern Road
+
+### Checkpoint 1.0 — The past scratches back
+
+- Player delegated the opening-scene choice to the DM.
+- DM selected the former-pleasure-cult hook, with the Sunscale Shard reacting as a secondary mystery.
+- Session 1 begins at **dusk on Lantern Road**, just outside the western approach to **Vespergate**.
+- DevilMedlar notices a **freshly carved symbol from his former pleasure cult** on a roadside shrine.
+- The **Sunscale Shard becomes noticeably warm** at the same moment, its first established reaction during play.
+- No attacker is visible yet; the marking appears recent enough that whoever left it may still be nearby.
+- Private adult-homebrew rules expanded: explicitly adult consenting fertility/pregnancy themes, cross-species reproduction, hybrid offspring, inherited traits, and persistent lineage consequences are allowed within platform limits.
+- An assistant-controlled adult supporting companion is enabled and may enter naturally during play; she never overrides DevilMedlar's agency.
+- Current objective: decide how DevilMedlar investigates the shrine, tracks, cult mark, or reacting Sunscale Shard.
