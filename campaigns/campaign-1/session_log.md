@@ -160,3 +160,46 @@ When DevilMedlar and Senpai asked for Seraphine Vale, Dessa said Vale had left w
 **XP award:** DevilMedlar gains **30 XP** and Senpai gains **30 XP** for useful route-record investigation, confirming the Cinderwash overlap, meaningful social/relationship development, and continued exploration. Both are now at **80 / 300 XP** toward level 2.
 
 **Turn result:** No formal quest was accepted. Mutual attraction between DevilMedlar and Senpai is now explicitly established, without creating a committed relationship or sexual consent. The Cinderwash/caravan connection is stronger but unproven. Seraphine Vale is immediately available for further questioning, and lodging remains undecided.
+
+### Session 1, Turn 3 — Senpai Questions Seraphine Vale
+
+**Starting location:** Brasshaven — Three Lanterns Inn, Seraphine Vale's upstairs private parlor.
+
+DevilMedlar chose to trust Senpai to lead the questioning of Seraphine Vale and explicitly wanted Senpai to obtain as much useful information as possible without revealing too much about either companion. Before yielding the conversation, DevilMedlar challenged Seraphine's comment that Senpai was "pretending this afternoon was entirely a date" and checked that Senpai was not about to lose her temper and attack Seraphine over the remark.
+
+Seraphine clarified that she was **not** implying the date was false and was not claiming knowledge of anything private that occurred at Steam & Stone Baths. She meant that the pair had plainly mixed personal time with active investigation. She had seen them leave Merchants' Compact Hall after reviewing route information and inferred correctly that they were still following the Cinderwash and missing-caravan leads.
+
+Senpai confirmed, by her own choice and without requiring a roll, that she was irritated by Seraphine's smugness but had no intention of attacking or killing her over a verbal jab. She kept her weapon sheathed and took over the conversation calmly.
+
+#### Senpai's information-control rolls
+
+- **Senpai Deception:** d20 = 17, Deception +4, total **21** against DC 15. Success. Senpai steered the discussion toward Seraphine's knowledge while revealing almost nothing new about DevilMedlar's childhood, Dawnscale Sanctum, Senpai's Moonmirror Shrine history, their available resources, or what they planned to do next. When Seraphine tried to draw out whether DevilMedlar was personally connected to Clan Aurivane beyond possession of the signet, Senpai limited her answer to facts Seraphine already had reason to suspect and did not volunteer DevilMedlar's status as the lost heir.
+- **Senpai Insight:** d20 = 14, Wisdom +1, total **15** against DC 14. Success. Senpai recognized that Seraphine's strongest hesitation concerned her employer and an internal security problem rather than fear of Clan Aurivane itself.
+
+Seraphine did **not** refuse to talk to Senpai. Because of that, DevilMedlar's stated contingency of romantically taking Senpai's hand and insisting that she was his most trusted companion did not need to be invoked. However, DevilMedlar's decision to entrust Senpai with control of the questioning is established as a meaningful act of trust between them.
+
+#### Information Seraphine revealed
+
+Seraphine identified her current institutional backer as the **Meridian Archive**, a privately funded scholarly organization that collects, preserves, copies, and studies records concerning old roads, ruins, seals, shrines, and premodern magical infrastructure.
+
+Seraphine said she had withheld the Archive's name because she has reason to believe that **protected ruin locations have been leaking from internal Archive field reports**. She does not yet know who is responsible, whether the leak is deliberate espionage, commercial corruption, or careless handling of copied records, and she does not know whether anyone in Brasshaven is connected to it.
+
+Seraphine explained that the dragon-curled-around-a-sun emblem found in the Cinderwash stones appears in older records as part of a broader **Suncoil** road-shrine tradition. Her evidence indicates that this tradition predates Clan Aurivane by centuries. She does **not** believe the Cinderwash emblem is an Aurivane crest. However, some Aurivane radial design conventions resemble later descendants or adaptations of the same older visual tradition, which could explain why Cinderwash geometry felt familiar to DevilMedlar without proving that the Cinderwash site belongs to his clan.
+
+The additional dragon-and-sun mark on Seraphine's private map identifies **Suncoil Watch**, the ruins of an old dragon-road waystation approximately seven miles east of Cinderwash Turnoff and off the modern maintained road. The location does not appear on the ordinary public Merchants' Compact map. Seraphine found it in an older survey and has a rubbing from the site whose central dragon-sun design strongly resembles the Cinderwash stones.
+
+Seraphine also possesses an old notation associated with Suncoil Watch describing a **sealed descent** beneath or adjacent to the waystation. She cannot confirm whether that descent still exists, is accessible, or connects physically to Cinderwash Cut. The similarity to Gravelark Salvage's report of a sealed lower stair at Cinderwash is therefore suggestive but still unproven.
+
+Seraphine revealed a direct personal reason for caring about the newest caravan disappearance: a sealed **Meridian Archive dispatch case** containing copies of some of Seraphine's field rubbings, route notes, and comparative shrine sketches had been placed aboard **Copper Finch Courier**, the most recently missing caravan. The case contained copies rather than her only originals, but its disappearance means someone who found the caravan could gain access to research that was not intended for public circulation.
+
+Seraphine said she does not currently know whether the three caravans vanished because of the ruins, ordinary raiders, a creature or magical hazard, deliberate interception of Archive material, or multiple unrelated causes. She considers the overlap between Cinderwash Turnoff, the Suncoil network, and the missing Copper Finch dispatch case serious enough that she no longer regards the events as comfortably separate.
+
+Seraphine offered DevilMedlar and Senpai **access to a copy of the relevant section of her private route map**, including Suncoil Watch and the old road alignment, if they decide they want it. No map was taken during this turn, no promise of secrecy was made, and Seraphine did not demand that they accept the Merchants' Compact contract or work for the Meridian Archive.
+
+**Ending location:** Brasshaven — Three Lanterns Inn, Seraphine Vale's upstairs private parlor.
+
+**Resources:** No HP, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, Veilstep uses, consumables, or currency were spent.
+
+**XP award:** No XP awarded yet. The Seraphine conversation remains part of the ongoing Cinderwash/Emberglass investigation and has not yet resulted in a formal commitment, recovery, completed objective, or concluded social agreement. DevilMedlar and Senpai remain at **80 / 300 XP**.
+
+**Turn result:** Seraphine cooperated with Senpai, the Meridian Archive and its suspected internal leak are now established, Suncoil Watch is identified as a new private-map location, and Copper Finch Courier is directly tied to Seraphine through the missing Archive dispatch case. No quest, map transfer, secrecy promise, lodging choice, or contract has yet been accepted. DevilMedlar retains control over the next decision.
