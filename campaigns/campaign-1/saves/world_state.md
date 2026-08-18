@@ -4,11 +4,13 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 ## Current Scene
 
-- **Location:** Inside the old culvert at the first bend, looking into a small maintenance chamber in the north drainage gully outside Vespergate.
+- **Location:** Culvert maintenance chamber beyond the first bend, north drainage gully outside Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1 Turn 9. DevilMedlar remains hidden behind the first bend after successfully identifying the likely carver in Turn 8. He asked Nyxara what she wanted to do and stated that he wants the man kept alive for questioning. Nyxara agreed that capture is preferable and proposed a nonlethal plan: DevilMedlar speaks from cover first and orders the man to lower the crossbow, show his hands, and leave the satchel in place while Nyxara covers his weapon side. If he attacks, Nyxara disrupts his weapon/arm and DevilMedlar closes for a nonlethal Dawnclaw takedown; if he runs, they pursue.
-- **Immediate danger / pressure:** One hooded adult man remains behind broken masonry with a compact crossbow trained toward the bend. Pale shrine-stone dust in his boots and a stone-carving chisel at his belt strongly identify him as the likely Lantern Road carver. A thick leather-bound book-sized object remains visible in his cross-body satchel and is consistent with the stolen Velvet Coil ledger, but it has not been seized or verified. The man was alerted by earlier noise but does not appear to know that DevilMedlar has already identified his exact position.
+- **Situation:** Session 1 Turn 10. DevilMedlar and Nyxara executed their agreed nonlethal capture plan. DevilMedlar first demanded surrender from cover: **"Crossbow down. Hands where I can see them. Don't touch the satchel."** Intimidation `3 + 2 = 5` vs DC 13 failed, and the likely carver chose to attack instead of surrendering.
+- **Combat result:** Initiative was carver 10, DevilMedlar 9, Nyxara 5. Nyxara's prepared disruption shot missed with `8 + 4 = 12` vs AC 13. The carver's crossbow attack missed DevilMedlar with `3 + 3 = 6` vs effective AC 14 from corner cover. DevilMedlar closed immediately and hit with a Dawnclaw at `11 + 4 = 15` vs AC 13 for `5 + 2 = 7` bludgeoning damage, explicitly declared nonlethal. The target dropped from 7 HP to 0 and is **unconscious and stable, captured alive**.
+- **Immediate danger / pressure:** No combat is currently active. The captured man is alive but unconscious. His compact crossbow lies in the chamber. His carving chisel remains at his belt unless removed, and his dark satchel remains worn. The thick leather-bound book-sized object inside the satchel has still not been opened or verified as the stolen Velvet Coil ledger.
 - **Rear security:** The culvert entrance alarm remains intact and armed behind DevilMedlar and Nyxara and has not triggered.
+- **Player resources:** DevilMedlar remains uninjured at 10/10 HP with 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, and no conditions.
 
 ## Known Locations
 
@@ -38,25 +40,26 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - The line connects to a hooked brass pin, spring arm, and striker hidden in the rubble.
 - Triggering the line snaps the striker against a hollow iron drainpipe, producing a warning knock deeper in the culvert.
 - The mechanism appears recently armed or reset; setter remains unknown.
-- DevilMedlar and Nyxara stepped over it without triggering it and left it intact and armed.
+- DevilMedlar and Nyxara stepped over it without triggering it and deliberately left it intact and armed as rear warning.
 
 ### Old Culvert Interior
 
 - Entered in Session 1 Turn 6.
 - Narrow old stone drainage tunnel with damp mineral smell, worn masonry, mineral-dark floor, and a hollow iron warning pipe along one wall.
-- The first passage bends into a small maintenance chamber.
-- **Turn 7:** A faint amber light beyond the bend was extinguished after DevilMedlar accidentally made a metallic noise. A presence ahead became likely alerted.
+- **Turn 7:** A faint amber light beyond the first bend was extinguished after DevilMedlar accidentally made a metallic noise. The presence ahead became alerted.
 - **Turn 8:** DevilMedlar successfully peeked the bend without being detected and identified one armed hooded man in the chamber.
-- **Turn 9:** DevilMedlar and Nyxara stayed behind the bend to coordinate a nonlethal capture rather than immediately attacking.
+- **Turn 9:** DevilMedlar and Nyxara coordinated a nonlethal capture plan behind cover.
+- **Turn 10:** The surrender demand failed, a brief fight occurred, and the likely carver was captured alive.
 
 ### Culvert Maintenance Chamber
 
 - First clearly observed in Session 1 Turn 8.
 - Small old stone service chamber beyond the first bend.
 - Broken masonry provides partial cover.
-- One visible hooded adult man is crouched behind the broken masonry with a compact crossbow aimed toward the bend.
-- A previously extinguished amber lantern or light source is near his position.
-- No second person is currently visible, but the successful peek does not prove that no one else exists beyond unseen exits or cover.
+- A previously extinguished amber lantern or light source is near the captured man's former firing position.
+- The hooded man is now unconscious and stable on the chamber floor after DevilMedlar's nonlethal Dawnclaw strike.
+- His compact crossbow lies nearby.
+- Possible unseen exits, deeper passages, or concealed compartments remain unestablished.
 
 ## Important NPCs
 
@@ -74,32 +77,33 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Species:** Tiefling.
 - **Role:** Veilblade / occult tracker; potential assistant-controlled supporting companion.
 - **First appearance:** Session 1 Turn 2, north drainage gully off Lantern Road.
-- **Current disposition:** Wary, dryly confident, increasingly candid, comfortable with light flirtatious banter, and mission-focused.
+- **Current disposition:** Dryly confident, increasingly candid, comfortable with flirtatious banter, mission-focused, and presently cooperative with DevilMedlar.
 - **Verified core claim:** She was independently tracking the person who carved the Velvet Coil symbol and was not traveling with or allied to that person.
 - **Reason shared:** The carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
 - **Personal stake:** The woman Nyxara loves is the personally important name in the stolen ledger. Nyxara still withholds her identity and exact relationship.
 - **Current knowledge:** Nyxara knows DevilMedlar is a Velvet Coil survivor.
-- **Turn 8 cover:** Nyxara covered DevilMedlar while he peeked the bend.
-- **Turn 8 accidental contact:** While DevilMedlar moved past her in the cramped tunnel, a footing shift caused brief accidental intimate contact against her chest/hip. He immediately withdrew and apologized quietly. Nyxara accepted the apology and remained focused on providing cover.
-- **Turn 9 relationship beat:** DevilMedlar apologized again and admitted he had liked the accidental contact despite not intending it. Nyxara accepted the apology with dry amusement and explicitly maintained that enjoying an accident is not permission for future touching.
-- **Turn 9 tactical position:** Nyxara prefers taking the likely carver alive for questioning. She proposed verbal surrender from cover first while she covers the man's weapon side, followed by a nonlethal melee capture if he attacks or pursuit if he flees.
+- **Turn 8:** Covered DevilMedlar while he peeked the first bend. A cramped-space footing shift caused brief accidental intimate contact against Nyxara's chest/hip; DevilMedlar immediately withdrew and apologized. Nyxara accepted the apology.
+- **Turn 9:** DevilMedlar apologized again and admitted he had liked the accidental contact despite not intending it. Nyxara accepted the apology with dry amusement and made clear that enjoying an accident is not permission to repeat it intentionally. She proposed the nonlethal capture plan.
+- **Turn 10 relationship beat:** Before the confrontation, DevilMedlar again gave a sincere apology, made another openly sexual/flirtatious compliment about Nyxara's attractiveness while focused for the fight, wished her luck, said he hoped they both survived, and suggested they talk afterward regardless of whether the carver lived or died. Nyxara accepted the apology, maintained her consent boundary, returned dry flirtatious banter, and agreed they could talk afterward if both were standing.
+- **Turn 10 combat:** Nyxara attempted the planned covering disruption shot but missed. She remains uninjured and did not expend any established limited resource.
 - **Party status:** Not a party member yet.
-- **Relationship status:** Provisional cooperation with growing personal candor and light flirtatious tension. Mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+- **Relationship status:** Provisional cooperation with growing personal candor and flirtatious ease. Clear consent boundaries remain intact. Mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
 - **Agency rule:** If she becomes the assistant-controlled companion, she remains supporting cast and never overrides DevilMedlar's player agency.
 
-### Likely Velvet Coil Carver
+### Captured Likely Velvet Coil Carver
 
 - **Identity:** Unknown.
 - **Adult:** Yes.
 - **Gender presentation:** Male.
 - **First clearly observed:** Session 1 Turn 8, culvert maintenance chamber.
-- **Current position:** Behind broken masonry beyond the first culvert bend.
-- **Weapon:** Compact crossbow trained toward the bend.
 - **Evidence linking him to the shrine:** Pale shrine-stone dust packed in his boot tread and a stone-carving chisel at his belt.
-- **Possible ledger:** A thick leather-bound book-sized object is visible inside or protruding from his cross-body satchel; likely but not yet confirmed to be the stolen Velvet Coil ledger.
-- **Awareness:** Alerted generally by Turn 7's noise, but Turn 8's successful Stealth peek did not visibly reveal DevilMedlar's position to him. Turn 9 planning occurred fully behind cover.
-- **Capture intent:** DevilMedlar and Nyxara currently prefer to take him alive for questioning.
-- **Exact allegiance, motive, name, abilities, and relationship to the Velvet Coil remain unknown.**
+- **Possible ledger:** Thick leather-bound book-sized object visible in his cross-body satchel; likely but still not confirmed to be the stolen Velvet Coil ledger.
+- **Combat profile established in Turn 10:** AC 13; 7 max HP; crossbow attack +3; initiative +2.
+- **Turn 10 surrender response:** Refused DevilMedlar's surrender command after Intimidation 5 vs DC 13 and fired instead.
+- **Current status:** **Unconscious and stable at 0 HP, captured alive.**
+- **Weapon:** Compact crossbow dropped in the maintenance chamber.
+- **Satchel:** Still on his body and unopened.
+- **Exact allegiance, motive, name, ancestry, abilities beyond the established combat profile, relationship to the Velvet Coil, and knowledge of the ledger remain unknown.**
 
 ## Factions
 
@@ -108,7 +112,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Type:** Pleasure cult from DevilMedlar's past.
 - DevilMedlar identifies as a survivor of the Velvet Coil.
 - A Velvet Coil symbol appeared freshly carved on a roadside shrine outside Vespergate.
-- Nyxara knows the group and says the likely carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
+- Nyxara knows the group and says the captured likely carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
 - Nyxara confirms the Velvet Coil harmed or endangered a woman she loves, and that woman's name appears in the stolen ledger.
 - Exact beliefs, leadership, practices, current status, locations, recruitment methods, and the circumstances of DevilMedlar's survival/departure remain unresolved.
 
@@ -121,7 +125,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
-- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert, survivor disclosure, compliments, trap inspection, respect for her stated boundaries, immediate apology after Turn 8's accidental contact, and second apology in Turn 9 have preserved and gradually increased ease of interaction. Nyxara remains receptive to flirtatious banter while maintaining clear consent boundaries. Mutual attraction and romance remain unconfirmed.
+- **Nyxara Veyl:** Provisional cooperation. Her main story passed DevilMedlar's Insight read. DevilMedlar's warnings, survivor disclosure, repeated compliments, trap work, respect for stated boundaries, apologies after the accidental Turn 8 contact, willingness to follow her tactical advice, and successful shared capture have increased ease of interaction. Nyxara remains receptive to flirtatious banter while maintaining clear consent boundaries. Mutual attraction and romance remain unconfirmed. Both agreed to talk after the confrontation if they survived.
 
 ## Active Quests
 
@@ -129,22 +133,24 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 - **Hook:** A symbol from DevilMedlar's former pleasure cult, now identified as the **Velvet Coil**, was carved freshly into a roadside shrine outside Vespergate.
 - **Complication:** The Sunscale Shard reacted by becoming noticeably warm.
-- **Investigation result:** Perception `15 + 3 = 18` vs DC 13 succeeded and revealed two separate trail signatures.
+- **Investigation:** Perception `15 + 3 = 18` vs DC 13 revealed two separate trail signatures.
 - **Trail A:** Recent boot trail with fresh pale shrine-stone dust, strongly indicating the likely carver.
 - **Trail B:** Lighter soft-soled trail later revealed as Nyxara Veyl.
-- **Pursuit result:** Survival `4 + 3 = 7` vs DC 12 failed, leading to Nyxara's reveal.
+- **Pursuit:** Survival `4 + 3 = 7` vs DC 12 failed, leading to Nyxara's reveal.
 - **Nyxara verification:** Insight `14 + 1 = 15` vs DC 13 succeeded; her claim that she independently followed the carver is credible.
 - **Ledger lead:** Nyxara says the carver stole a ledger in Vespergate containing names tied to the Velvet Coil. The woman Nyxara loves is named in it.
-- **Culvert alarm:** Perception `12 + 3 = 15` vs DC 13 spotted the tripline; Investigation `13 - 1 = 12` vs DC 12 identified it as a warning alarm. It was later bypassed and left armed behind the pair.
-- **Turn 7 Sunscale check:** Arcana `2 - 1 = 1` vs DC 12 failed. The relic remains unidentified, but produced a brief stronger heat pulse when oriented deeper into the culvert.
-- **Turn 7 advance:** Stealth `10 + 0 = 10` vs DC 12 failed, alerting a likely presence beyond the first bend. Perception natural `1 + 3 = 4` vs DC 13 failed to identify it.
-- **Turn 8 reconnaissance:** Stealth `15 + 0 = 15` vs DC 13 succeeded and Perception `14 + 3 = 17` vs DC 14 succeeded. DevilMedlar identified one hooded armed man as the likely shrine carver from the shrine-stone dust and carving chisel. A leather-bound book-sized object in the man's satchel is likely the ledger but remains unverified.
-- **Turn 9 plan:** DevilMedlar and Nyxara agreed on the goal of taking the likely carver alive. Nyxara proposed surrender from cover first, weapon-side cover from her crossbow, a nonlethal Dawnclaw takedown if he attacks, and pursuit if he flees.
-- **Immediate objective:** Execute, modify, or abandon the proposed nonlethal capture plan while retaining the current tactical information advantage.
+- **Culvert alarm:** Perception `12 + 3 = 15` vs DC 13 spotted the tripline; Investigation `13 - 1 = 12` vs DC 12 identified it as a warning alarm. It was bypassed and left armed behind the pair.
+- **Sunscale check:** Arcana `2 - 1 = 1` vs DC 12 failed. The relic remains unidentified, but produced a brief stronger heat pulse when oriented deeper into the culvert.
+- **Alerted approach:** Stealth `10 + 0 = 10` vs DC 12 failed; Perception natural `1 + 3 = 4` vs DC 13 failed, alerting the presence without identifying it.
+- **Turn 8 reconnaissance:** Stealth `15 + 0 = 15` vs DC 13 and Perception `14 + 3 = 17` vs DC 14 succeeded, identifying the likely shrine carver and probable ledger container without revealing DevilMedlar's exact position.
+- **Turn 9 plan:** DevilMedlar and Nyxara agreed on nonlethal capture.
+- **Turn 10 surrender attempt:** Intimidation `3 + 2 = 5` vs DC 13 failed; target attacked.
+- **Turn 10 combat:** Nyxara disruption `12` vs AC 13 missed; carver crossbow `6` vs effective AC 14 missed; DevilMedlar Dawnclaw `15` vs AC 13 hit for `7` nonlethal bludgeoning and knocked the target unconscious and stable.
+- **Current objective:** Secure the chamber, search/disarm the captured man, verify whether the satchel contains the stolen Velvet Coil ledger, and decide how to revive/question the captive.
 
 ## Completed / Failed Quests
 
-None established yet.
+None fully completed yet.
 
 ## Known Secrets & Player Knowledge
 
@@ -155,10 +161,8 @@ None established yet.
 - Nyxara's core account of independently following the carver is credible.
 - The woman Nyxara loves is the personally important name in the stolen ledger; identity and exact relationship remain undisclosed.
 - The culvert entrance alarm remains armed behind the pair.
-- One hooded adult man beyond the first bend is strongly identified as the likely shrine carver by shrine-stone dust and a carving chisel.
-- The likely carver has a book-sized leather-bound object in his satchel that may be the stolen ledger.
-- He is armed with a compact crossbow and is generally alert, but does not appear to know DevilMedlar already observed his exact position.
-- Nyxara's preferred capture approach is verbal surrender under cover, with disruption and nonlethal melee only if necessary.
+- The likely shrine carver has been captured alive and is unconscious/stable.
+- His satchel contains a thick leather-bound book-sized object that may be the stolen ledger, but it remains unopened.
 - The player manually uploaded the corrected Turn 8 scene image to `art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`; repository metadata verified the path in Turn 9.
 
 ## Consequences & World Changes
@@ -170,26 +174,29 @@ None established yet.
 - A stolen Velvet Coil ledger is a major investigation lead.
 - DevilMedlar and Nyxara entered the old culvert without triggering its entrance alarm and left it armed behind them.
 - Turn 7's failed Stealth check warned the presence beyond the first bend.
-- Turn 8 recovered tactical information: DevilMedlar located the likely carver and a probable ledger container while remaining unseen during the peek.
-- Turn 8's accidental close contact with Nyxara was immediately followed by an apology and did not damage cooperation.
-- Turn 9 established a shared preference for nonlethal capture and a concrete capture plan.
-- No HP, spell slots, consumables, Golden Breath, or Golden Ascendant uses were spent in Turn 9.
+- Turn 8 recovered tactical information and located the likely carver and probable ledger container.
+- Turn 9 established a shared preference for nonlethal capture and a concrete plan.
+- Turn 10's surrender demand failed, causing the campaign's first combat exchange.
+- DevilMedlar and Nyxara completed the capture objective without taking damage or spending limited resources.
+- The likely carver remains alive for possible questioning.
+- DevilMedlar earned +25 XP for the successful nonlethal capture, bringing him to 200/300 XP.
 
 ## Unresolved Threads
 
 - Exact circumstances of DevilMedlar's survival/departure from the Velvet Coil.
-- Why the Velvet Coil symbol is freshly present outside Vespergate.
-- Exact identity, motive, allegiance, and capabilities of the likely carver.
-- Whether the book-sized object in his satchel is the stolen Velvet Coil ledger.
+- Why the Velvet Coil symbol was freshly carved outside Vespergate.
+- Exact identity, motive, allegiance, and knowledge of the captured carver.
+- Whether the leather-bound object in his satchel is the stolen Velvet Coil ledger.
 - Contents and purpose of the stolen Velvet Coil ledger.
 - Identity and exact relationship of the woman Nyxara loves whose name appears in the ledger.
 - What the Velvet Coil did to or threatened to do to that woman.
 - Who set or reset the culvert alarm.
-- Whether anyone else is hidden beyond the visible maintenance chamber.
+- Whether anyone else is hidden beyond the maintenance chamber or deeper in the culvert.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
 - Origin and true properties of the Sunscale Shard and meaning of its directional heat pulse.
 - Whether Nyxara becomes the assistant-controlled supporting companion.
+- What DevilMedlar and Nyxara discuss after the confrontation.
 
 ## Persistent World Flags
 
@@ -230,6 +237,11 @@ None established yet.
 - `turn8_scene_art_manual_upload_verified = true`
 - `nonlethal_capture_preferred = true`
 - `nyxara_nonlethal_capture_plan_proposed = true`
+- `turn10_surrender_demand_failed = true`
+- `first_combat_started_and_resolved = true`
+- `likely_carver_captured_alive = true`
+- `likely_carver_unconscious_stable = true`
+- `devilmedlar_nyxara_talk_after_confrontation_agreed = true`
 
 ## Continuity Notes
 
@@ -240,4 +252,4 @@ None established yet.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 9:** World state synchronized after DevilMedlar and Nyxara chose nonlethal capture as the preferred objective, Nyxara proposed a concrete plan, DevilMedlar gave a second apology and admitted he liked the accidental Turn 8 contact, and the manually uploaded corrected Turn 8 art path was verified. No roll, combat, damage, or resource expenditure occurred.
+- **Session 1 Turn 10:** World state synchronized after DevilMedlar's final pre-fight apology/compliment and promise to talk with Nyxara afterward, failed surrender demand, first combat exchange, and successful nonlethal capture of the likely shrine carver. DevilMedlar and Nyxara remain uninjured. The captive is unconscious and stable. The probable ledger remains unopened and unverified. XP is 200/300.
