@@ -60,7 +60,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
 - **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
-- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and complimented her repeatedly. Nyxara answers with dry amusement rather than hostility. Turn 8 included brief accidental intimate contact against her chest/hip while DevilMedlar squeezed past her in the cramped culvert; he immediately withdrew and apologized, and she accepted the apology. This may be shown only as an awkward cramped-space accident, not as deliberate sexual touching. **Mutual attraction, romance, intimacy, and party familiarity remain unconfirmed.**
+- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and complimented her repeatedly. Nyxara answers with dry amusement rather than hostility. Turn 8 included brief accidental intimate contact against her chest/hip while DevilMedlar squeezed past her in the cramped culvert; he immediately withdrew and apologized, and she accepted the apology. In Turn 9 he apologized again and admitted he liked the accidental contact; Nyxara remained amused but explicitly maintained that accidental contact is not permission for intentional repetition. Any future intimate body language must follow established consent rather than treating the accident as permission. **Mutual attraction, romance, intimacy, and party familiarity remain unconfirmed.**
 - **Personal-story visual caution:** Nyxara has confirmed that a woman she loves is the personally important name in the stolen Velvet Coil ledger, but that woman's identity and appearance are not established. Do not invent or depict her until canon establishes her.
 
 ### Likely Velvet Coil Carver - identity unrevealed
@@ -135,7 +135,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Fading dusk remains visible behind the entrance while the passage ahead bends into deeper darkness.
 - A hollow iron warning pipe runs along one wall from the entrance mechanism deeper into the tunnel.
 - **Turn 7:** A faint amber light was briefly visible beyond the first bend. After loose gravel struck old iron with a small metallic tick, the amber light was extinguished and previously audible soft movement stopped.
-- **Turn 8:** DevilMedlar successfully peeked around the bend while Nyxara covered him.
+- **Turn 8:** DevilMedlar successfully peeked around the bend while Nyxara covered him from behind.
 
 ### Culvert maintenance chamber
 
@@ -169,6 +169,20 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Continuity caution:** The generated image depicts Nyxara's hair somewhat longer/wavier than textual canon. Keep **shoulder-length, slightly tousled black hair with a narrow wine-red streak** as authoritative unless the player adopts the image variation.
 - **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
 
+### Session 1 Turn 8 - Wet Stone Tunnel Stealthy Ambush
+
+- **Repository path:** `art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`
+- **Persistence:** Player manually uploaded the corrected generated image. Repository metadata verified the exact path and file presence during Turn 9. ChatGPT did not upload or commit the image.
+- **Scene:** DevilMedlar peeks around the first bend of the damp old culvert after recovering his stealth advantage; Nyxara provides cover from behind him; the likely Velvet Coil carver waits behind broken masonry in the maintenance chamber.
+- **Characters shown:** DevilMedlar, adult age 20; Nyxara Veyl, adult age 24; one hooded adult male-presenting likely carver whose permanent face/ancestry remain unestablished.
+- **Blocking canon:** DevilMedlar is the forward figure at the corner. Nyxara is **behind DevilMedlar**, partially concealed and covering past/over him with her compact hand crossbow. The player specifically corrected the first generated composition to establish this arrangement.
+- **DevilMedlar form:** Baseline only, no manifested horns, wings, or tail; short red hair, gold eyes, subtle crimson-red draconic markings, dark vestments, Dawnclaws, softly warm caged Sunscale Shard.
+- **Nyxara appearance:** Ash-lavender tiefling with swept-back black horns, dark shoulder-length hair with wine-red accent, amber-violet eyes, charcoal tracker leathers, compact hand crossbow.
+- **Likely carver:** Hooded, behind broken masonry, compact crossbow ready. Shrine-stone dust/chisel/possible ledger are canonical evidence even if individual tiny details are not perfectly readable in the image.
+- **Location / lighting:** Wet dark stone culvert with reflective floor, iron pipe, and warm amber chamber light against cool foreground shadows.
+- **Mood:** Stealth, held-breath tension, regained tactical advantage.
+- **Continuity caution:** Text canon remains authoritative for exact equipment, target evidence, and character features. The corrected **Nyxara-behind-DevilMedlar** blocking is adopted as the canonical composition for this illustrated moment.
+
 ## Persistence Policy Change
 
 - After Session 1 Turn 3, the player explicitly chose to manage all future generated image files manually.
@@ -176,7 +190,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 8:** No image generated yet. Visual continuity now includes DevilMedlar peeking the first bend while Nyxara covers him, the dim culvert maintenance chamber, and the hooded likely carver behind broken masonry with crossbow, shrine-dusted boots, carving chisel, and a possible ledger in his satchel. The accidental contact with Nyxara is canonically an immediately-apologized cramped-space accident, not deliberate touching. No image file was committed.
+- **Session 1 Turn 9:** The player's manually uploaded corrected Turn 8 image was verified at `art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png` and recorded above. No new image was generated during Turn 9. The corrected visual blocking places Nyxara behind DevilMedlar while he peeks the corner. Turn 9 relationship dialogue does not change either character's physical appearance.
 
 For each future scene, record:
 - scene/session identifier
