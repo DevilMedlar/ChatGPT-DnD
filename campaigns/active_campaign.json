@@ -4,8 +4,8 @@
   "path": "campaigns/campaign-1",
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 3,
-  "current_step": "nyxara_questioned_insight_success",
-  "xp_current": 75,
+  "turn_number": 4,
+  "current_step": "culvert_tripwire_found_nyxara_cooperating",
+  "xp_current": 100,
   "xp_next_level": 300
 }
