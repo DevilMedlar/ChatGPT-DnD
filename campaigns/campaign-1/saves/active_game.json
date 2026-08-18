@@ -57,7 +57,11 @@
       "social_style": "smooth, flirtatious, and teasing"
     },
     "equipment": {
-      "weapon": "Dawnclaw — Bonded Draconic Gauntlet",
+      "weapon": "Dawnclaws — Bonded Draconic Gauntlets",
+      "weapon_attack_bonus": 4,
+      "weapon_damage": "1d6 + 2 bludgeoning",
+      "weapon_attack_ability": "Charisma",
+      "weapon_notes": "Paired gauntlets function as one weapon set; no free extra attack. While Golden Ascendant is active, damage may be fire or radiant instead of bludgeoning.",
       "armor": "Reinforced Wanderer's Vestments",
       "armor_class": 12,
       "relic": "Sunscale Shard",
@@ -96,5 +100,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "custom_gauntlet_and_sunscale_relic_set"
+  "last_checkpoint": "paired_dawnclaws_and_sunscale_relic_set"
 }
