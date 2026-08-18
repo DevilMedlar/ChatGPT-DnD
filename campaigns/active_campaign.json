@@ -2,6 +2,10 @@
   "active_campaign": "campaign-1",
   "campaign_number": 1,
   "path": "campaigns/campaign-1",
-  "phase": "character_creation",
-  "session_number": 0
+  "phase": "in_play",
+  "session_number": 1,
+  "turn_number": 2,
+  "current_step": "gully_first_contact",
+  "xp_current": 50,
+  "xp_next_level": 300
 }
