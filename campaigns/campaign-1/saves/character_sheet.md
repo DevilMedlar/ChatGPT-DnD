@@ -13,12 +13,13 @@
 
 ## Advancement
 
-- **XP:** 200 / 300
-- **XP to Level 2:** 100
+- **XP:** 225 / 300
+- **XP to Level 2:** 75
 - **Progression:** Numeric XP.
-- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger; 25 XP for successfully peeking the alerted culvert bend, identifying the likely carver, and spotting the likely ledger container without being detected; 25 XP for successfully capturing the likely carver alive after the failed surrender attempt.
-- **Turn 9:** No XP awarded. The turn established a nonlethal capture plan and relationship dialogue but did not yet resolve a new obstacle or objective.
+- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger; 25 XP for successfully peeking the alerted culvert bend, identifying the likely carver, and spotting the likely ledger container without being detected; 25 XP for successfully capturing the likely carver alive; 25 XP for clearing the chamber, thoroughly searching the captive, and confirming the stolen Velvet Coil ledger and its new Vespergate lead.
+- **Turn 9:** No XP awarded; planning/dialogue only.
 - **Turn 10:** +25 XP for completing the nonlethal capture objective while taking no damage and spending no limited resources.
+- **Turn 11:** +25 XP for Perception 20 and Investigation 18 resolving the chamber/captive sweep and confirming the ledger.
 
 ## Appearance
 
@@ -85,7 +86,8 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 - **Dawnclaws - Bonded Draconic Gauntlets:** Matched paired gauntlets functioning as one simple melee weapon set and as DevilMedlar's draconic/spellcasting focus. Attack and damage use Charisma through the Dracolyte bond: **+4 to hit**, `1d6 + 2` bludgeoning. Wearing two gauntlets does not grant a free extra attack. While Golden Ascendant is active, a hit may deal fire or radiant instead of bludgeoning without adding damage.
 - **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather; current AC 12.
 - **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin. It remains unusually warm since the Lantern Road Velvet Coil mark discovery. During Turn 7 it gave a brief stronger heat pulse when oriented deeper into the old culvert, but a failed Arcana check left the cause and meaning unknown.
-- Full carried gear and currency are tracked in `inventory.md`.
+- **Rope status:** DevilMedlar's 50-ft hempen rope is currently in use securing the captured carver and is not freely available until the captive is untied or the rope is recovered.
+- Full carried gear, secured loot, and currency are tracked in `inventory.md`.
 
 ## Features / Abilities
 
@@ -125,12 +127,20 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 
 - Smooth, flirtatious, and teasing.
 - Prefers to keep useful hostile targets alive for questioning when practical rather than defaulting to lethal force.
-- In Turn 10, DevilMedlar followed through on that preference by declaring his Dawnclaw strike nonlethal and capturing the likely carver alive.
+- Turn 10 proved that preference in combat through a successful declared-nonlethal Dawnclaw takedown.
+- Turn 11 continued the cautious-investigative approach by securing the captive before opening the ledger.
 
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
-- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance and complimented her repeatedly; Nyxara generally answers with dry amusement rather than hostility. She has confirmed that the woman she loves is the protected name in the stolen Velvet Coil ledger, but still withholds the woman's identity and exact relationship. In Turn 8, while DevilMedlar moved past Nyxara in the cramped culvert to peek the corner, a footing shift caused brief accidental intimate contact against her chest/hip. DevilMedlar immediately withdrew and apologized quietly. In Turn 9 he apologized again and admitted that, although the contact was accidental, he liked the brief contact. Nyxara accepted the apology, responded with dry amusement, and explicitly maintained that an accident is not permission for future touching. In Turn 10 DevilMedlar again offered a sincere apology, gave her an openly sexual/flirtatious compliment, wished her luck, said he hoped they both lived, and suggested they talk after the confrontation regardless of what happened to the carver. Nyxara accepted the apology, maintained her boundary, returned dry flirtatious banter, and agreed to talk afterward if both were standing. They then successfully executed the nonlethal capture plan. Cooperation and flirtatious ease are growing, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her core claim remains credible. DevilMedlar repeatedly compliments and flirts with her; Nyxara usually answers with dry amusement while maintaining clear consent boundaries. Turn 8's accidental chest/hip contact was immediately apologized for and did not grant permission for future touching. Turns 9-10 included further apologies, flirtation, tactical cooperation, and an agreement to talk after the confrontation. In Turn 11 they followed through on that conversation while reviewing the confirmed ledger. DevilMedlar flirted lightly while asking whether the book was what she expected; Nyxara answered with dry amusement and confirmed the ledger is genuine and worse than she expected. Cooperation and personal ease continue to grow, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+
+## Confirmed Investigation Leads
+
+- **Velvet Coil ledger:** Confirmed genuine in Turn 11. Contains names, dates, payments, movement routes, and coded marks associated with watched or selected people.
+- **Nyxara's protected entry:** The woman Nyxara loves is confirmed present in the ledger. Name and exact relationship remain withheld.
+- **Silken Cup:** Repeated ledger notation `Vespergate / Silken Cup / cellar delivery` establishes a new Vespergate lead. Exact significance unknown.
+- **Three-coil brass key:** Recovered from the captive; matching lock remains unknown.
 
 ## Conditions / Transformations
 
@@ -144,11 +154,12 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 - Exact circumstances of DevilMedlar's survival/departure from the Velvet Coil.
 - Identity and motives of the Temple-Bound Acolyte and temple/order.
 - Sunscale Shard's true origin, hidden property, and the meaning of its stronger heat pulse deeper inside the culvert.
-- Exact identity and motive of the captured likely Velvet Coil carver.
-- Whether the thick leather-bound object in his satchel is the stolen ledger.
-- Identity and exact relationship of the woman Nyxara loves whose name appears in the ledger.
+- Exact identity, allegiance, and motive of the captured likely Velvet Coil carver.
+- Meaning of the ledger's coded marks and the `Vespergate / Silken Cup / cellar delivery` route.
+- Identity and exact relationship of the woman Nyxara loves whose entry is present in the ledger.
+- Matching lock for the three-coil brass key.
 - Whether Nyxara becomes a supporting companion.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 10:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 200/300. Intimidation 5 vs DC 13 failed. Combat began and ended in the opening exchange: Nyxara's disruption shot missed, the carver's crossbow shot missed, and DevilMedlar hit with a Dawnclaw for 7 nonlethal bludgeoning damage, knocking the target unconscious and stable. No limited resources were spent.
+- **Session 1 Turn 11:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 225/300. Perception `17 + 3 = 20` vs DC 13 and Investigation `19 - 1 = 18` vs DC 14 both succeeded. Captive secured/disarmed; chamber cleared; two exits identified; Velvet Coil ledger confirmed; Silken Cup lead and three-coil key discovered. No limited resources spent. Rope is temporarily committed to restraining the captive.
