@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance and primary reference art are established below. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance is established below, but no Senpai reference-art repository path exists yet. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -37,6 +37,26 @@ DevilMedlar's player-character appearance and primary reference art are establis
 
 These details are stable textual visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit player revision.
 
+## Companion Visual Canon
+
+### Senpai
+
+- **Age / sex:** 20, female.
+- **Species / affinity:** Kitsune, Moonfire affinity.
+- **Height / build:** 5 ft. 6 in.; lithe, athletic, graceful, with soft feminine curves and a build suited to stealth and agile movement.
+- **Skin:** Warm ivory with a faint rosy undertone.
+- **Eyes:** Deep amethyst irises ringed in silver. Moonveil magic brightens the silver rings and creates tiny foxfire reflections across the pupils.
+- **Hair:** Long midnight-black hair reaching the lower back, usually loose or partly tied for travel, with lower lengths fading subtly into smoky violet-silver.
+- **Kitsune ears:** Physical black fox ears with soft silver-gray inner fur, rising through her hair and moving expressively unless concealed by Veiled Form.
+- **Tail:** One large physical fox tail, midnight black near the base and fading to a silver-white tip. The tip takes on a faint violet sheen during Moonfire magic. Additional tails are not present at level 1.
+- **Face:** Adult and youthful with fine expressive features, a confident mouth, and slightly pointed upper canines.
+- **Hands:** Humanlike hands with neat dark-violet nails; no natural claw attack.
+- **Persistent mark:** Small silver crescent-shaped birthmark high on the right shoulder blade. No mechanical effect is established.
+- **Typical clothing / armor:** Practical layered travel clothing in charcoal, deep plum, black, and silver. Moonweave Leather is worn beneath a short shrine-inspired traveling coat with wide sleeves that can be tied back. Silver cords and crescent motifs are decorative unless later established as magical.
+- **Moonfire manifestation:** Cool silver-violet foxfire, thin luminous threads, drifting sparks, brighter silver eye-rings, a faint glow at the tail tip, and briefly softened shadow edges during stronger magic.
+
+These details are stable textual visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit character revision.
+
 ## Recurring NPC Visual Canon
 
 None established.
@@ -48,11 +68,14 @@ None established.
 ## Equipment / Important Objects
 
 - **Aurivane Dawnscale Signet:** Genuine Clan Aurivane heirloom. It reacts to deliberately channeled radiant draconic power by warming and giving off a faint golden-white glow from its crest. Exact physical design beyond this has not yet been fixed.
+- **Moonmirror Charm:** Senpai's personal shrine token from Moonmirror Shrine. Its exact physical design and any deeper function are not yet fixed; current canon establishes only that it is small enough to carry personally and has story significance without a level-1 combat bonus.
 
 ## Transformations / Scars / Tattoos / Persistent Changes
 
 - DevilMedlar's pale-gold left-collarbone scar is persistent visual canon and tied to the Shattering of Dawnscale.
 - DevilMedlar has no functional wings at level 1; any later wing awakening must be recorded as a transformation when it occurs.
+- Senpai begins with one fox tail at level 1; any additional tail awakening must be recorded as a transformation or progression event when it occurs.
+- Senpai's silver crescent birthmark high on the right shoulder blade is persistent visual canon.
 
 ## Reference Art
 
@@ -66,6 +89,10 @@ None established.
 - **Aurivane Dawnscale Signet:** The image does not lock the signet's exact physical design. Its established function and radiant reaction remain textual canon until its appearance is explicitly fixed.
 
 Future images of DevilMedlar should consult this reference together with the textual visual canon above. If the two differ, textual canon wins unless the player explicitly adopts the image variation.
+
+### Senpai — Reference Status
+
+No repository reference image has been established yet. If a Senpai character image is generated and later uploaded, verify the repository path before recording it here. Until then, the textual companion visual canon above is authoritative.
 
 When additional reference art is added:
 
