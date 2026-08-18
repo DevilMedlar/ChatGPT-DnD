@@ -53,10 +53,10 @@
 - **Type:** Small gold-dragon relic of unknown origin; personal keepsake.
 - **Appearance:** Thumb-length fragment resembling a naturally shed gold-dragon scale, held in a simple old wire cage; faint sunburst pattern in reflected light.
 - **Known properties:** Slightly warm under normal circumstances. Since DevilMedlar discovered the fresh Velvet Coil mark on Lantern Road, it has remained noticeably warmer than its normal baseline.
-- **Current state:** Warm and unexamined at the old culvert approach while DevilMedlar and Nyxara assess the now-identified alarm tripline.
+- **Current state:** Warm and unexamined while DevilMedlar and Nyxara move inside the old culvert beyond the intact alarm.
 - **Status:** Unidentified. Hidden properties must be discovered through play.
 - **Curse:** None known.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 5:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. Sunscale Shard remains warm. The culvert alarm mechanism was inspected without using or damaging any inventory item.
+- **Session 1 Turn 6:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. Sunscale Shard remains warm. The identified culvert alarm was stepped over and left intact; no inventory item was used to alter it.
