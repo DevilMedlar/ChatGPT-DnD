@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, and draconic affinity. Senpai has established name, age, gender, and pronouns. Class, background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, and class. Senpai has established name, age, gender, and pronouns. Background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -11,7 +11,7 @@ Partial character identity canon has been established. DevilMedlar has establish
 - **Gender / pronouns:** Male, He/Him
 - **Species / ancestry:** Draginkin
 - **Draconic affinity:** Radiant
-- **Class / homebrew class:** Not established
+- **Class / homebrew class:** Dragon Ascendant
 - **Background:** Not established
 - **Level:** Not established
 
@@ -46,6 +46,7 @@ No proficiencies or expertise established.
 ## Features / Abilities / Spells
 
 - **Radiant Draconic Affinity:** Established. This affinity anchors DevilMedlar's Draginkin radiant resistance, radiant breath-weapon theme, and future radiant draconic evolution. Exact numerical mechanics and progression remain to be finalized during character creation.
+- **Dragon Ascendant:** Established homebrew class. It combines the body-focused draconic martial discipline of a Dragon Monk with the radiant/draconic mystical path of a Dragon Apostle. Exact starting features, resource mechanics, and level progression remain to be finalized during character creation.
 
 ## Conditions / Ongoing Effects
 
