@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** DevilMedlar character creation complete. Senpai character creation complete pending final review. Session 1 has not begun.
+**Status:** DevilMedlar and Senpai character creation complete. Ready for campaign play. Session 1 has not begun.
 
-DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has chosen to join as an active ChatGPT-controlled companion and now has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, and appearance.
+DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, appearance, and primary reference art.
 
 ## DevilMedlar (player)
 
@@ -210,7 +210,7 @@ No expertise established.
 - **Darkvision:** Senpai can see in darkness out to 60 feet, treating darkness as dim light and dim light as bright light. Color is not discerned in darkness.
 - **Keen Hearing and Smell:** Senpai has advantage on Wisdom (Perception) checks that rely primarily on hearing or smell.
 - **Foxfire:** Senpai may create or extinguish a small harmless wisp of silver-violet foxfire within 30 feet as an action. A wisp sheds dim light in a 10-foot radius, produces no heat, deals no damage, and lasts until Senpai dismisses it, creates another, or completes a long rest.
-- **Veiled Form:** As an action, Senpai may magically conceal her obvious kitsune ears and tail for up to 1 hour. This is cosmetic illusion magic only: it does not change her size, voice, clothing, statistics, scent, or physical body and grants no automatic bonus to Deception. She can use Veiled Form a number of times equal to her proficiency bonus per long rest. Current uses: 2.
+- **Veiled Form:** As an action, Senpai may magically conceal her obvious kitsune ears and tail for up to 1 hour. This is cosmetic illusion magic only: it does not change her size, voice, clothing, statistics, scent, or physical body and grants no automatic bonus to Deception. She can use Veiled Form a number of times equal to her proficiency bonus per long rest. Current uses: 2 of 2.
 - **Tail:** Senpai begins with one physical fox tail. It is expressive and aids ordinary balance but provides no separate attack or mechanical bonus beyond established traits. Additional tails, if they ever awaken, are future progression rather than starting canon.
 - **Languages:** Common and Sylvan.
 - **Moonfire Affinity:** Senpai's kitsune magic manifests as cool silver-violet foxfire and anchors future illusion, spirit, and lunar-magic development. Moonfire is a magical aesthetic and affinity, not a new damage type by itself.
@@ -227,20 +227,20 @@ The Moonveil Oracle is an agile Charisma-based mystical class built around decep
 - **Spell Save DC:** 12 (`8 + proficiency bonus + Charisma modifier`).
 - **Spell Attack Bonus:** +4 (`proficiency bonus + Charisma modifier`).
 - **Cantrips Known:** 2.
-- **1st-level Spell Slots:** 2 per long rest.
+- **1st-level Spell Slots:** 2 per long rest. Current slots: 2 of 2.
 - **1st-level Spells Known:** 3.
-- **Veilstep:** Once per long rest as a bonus action, Senpai may teleport up to 15 feet to an unoccupied space she can see. She disappears and reappears in a brief curl of silver-violet foxfire. Veilstep cannot pass through an opaque barrier or reach a location she cannot see.
+- **Veilstep:** Once per long rest as a bonus action, Senpai may teleport up to 15 feet to an unoccupied space she can see. She disappears and reappears in a brief curl of silver-violet foxfire. Veilstep cannot pass through an opaque barrier or reach a location she cannot see. Current uses: 1 of 1.
 
 ### Cantrips
 
-- **Minor Illusion:** Creates a small harmless visual image or sound within normal cantrip limits; used for distraction, concealment, signaling, and trickery.
-- **Moonfire Bolt:** Ranged spell attack, 60 ft. On a hit, the target takes `1d8` psychic damage as silver-violet foxfire flashes across its senses. The damage die increases with class progression when later defined.
+- **Minor Illusion:** Action; range 30 ft.; duration up to 1 minute. Senpai creates either a harmless sound or one static visual image no larger than a 5-foot cube. The illusion produces no damage, light, heat, smell, or physical substance. Physical interaction reveals it as unreal. A creature that uses its action to examine the illusion may make an Intelligence (Investigation) check against Senpai's spell save DC 12; on a success, it recognizes the illusion. Senpai can maintain only one Minor Illusion at a time; creating another ends the previous one.
+- **Moonfire Bolt:** Action; ranged spell attack against one creature within 60 ft. On a hit, the target takes `1d8` psychic damage as silver-violet foxfire flashes across its senses. The damage die increases with class progression when later defined.
 
 ### 1st-level Spells Known
 
-- **Healing Word:** Ranged emergency healing using Moonveil spellcasting.
-- **Disguise Self:** Illusory alteration of Senpai's visible appearance within the spell's normal limits.
-- **Faerie Fire:** Outlines creatures or objects in magical light, supporting detection and coordinated attacks when the spell succeeds.
+- **Healing Word:** Bonus action; range 60 ft.; instantaneous. Spend one 1st-level spell slot to restore `1d4 + Charisma modifier` HP to one living creature Senpai can see within range. Current level-1 healing: `1d4 + 2`. Healing Word cannot restore a dead creature to life.
+- **Disguise Self:** Action; self; duration 1 hour; no concentration. Spend one 1st-level spell slot to create a visual illusion that changes Senpai's apparent clothing, equipment, facial details, hair, coloration, and similar visible traits. She may appear up to about 1 foot shorter or taller and somewhat thinner or heavier, but the spell does not change her actual body, voice, scent, statistics, touch, or equipment. Physical interaction can reveal the disguise. A creature that uses its action to inspect the disguise may make an Intelligence (Investigation) check against spell save DC 12; on a success, it recognizes the illusion.
+- **Faerie Fire:** Action; range 60 ft.; concentration up to 1 minute. Spend one 1st-level spell slot to fill a 20-foot cube with silver-violet light. Each creature in the area when cast makes a Dexterity saving throw against DC 12. On a failure, a creature is outlined in magical light for the duration while Senpai maintains concentration. Attack rolls against an outlined creature have advantage if the attacker can see it, and an outlined creature cannot benefit from being invisible. On a successful save, that creature is unaffected.
 
 ## Features / Abilities / Spells
 
