@@ -4,9 +4,9 @@
 
 No character identity, ancestry, class, background, abilities, equipment, appearance, relationships, history, or other personal canon has been established yet.
 
-## Identity
+## DevilMedlar (player)
 
-- **Name:** Not established
+- **Name:** DevilMedlar
 - **Age:** 20
 - **Gender / pronouns:** Male, He/Him
 - **Species / ancestry:** Not established
