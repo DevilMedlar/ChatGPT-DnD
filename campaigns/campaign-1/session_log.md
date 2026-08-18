@@ -203,3 +203,54 @@ Seraphine offered DevilMedlar and Senpai **access to a copy of the relevant sect
 **XP award:** No XP awarded yet. The Seraphine conversation remains part of the ongoing Cinderwash/Emberglass investigation and has not yet resulted in a formal commitment, recovery, completed objective, or concluded social agreement. DevilMedlar and Senpai remain at **80 / 300 XP**.
 
 **Turn result:** Seraphine cooperated with Senpai, the Meridian Archive and its suspected internal leak are now established, Suncoil Watch is identified as a new private-map location, and Copper Finch Courier is directly tied to Seraphine through the missing Archive dispatch case. No quest, map transfer, secrecy promise, lodging choice, or contract has yet been accepted. DevilMedlar retains control over the next decision.
+
+### Session 1, Turn 4 — Meridian Leak and Private Planning
+
+**Starting location:** Brasshaven — Three Lanterns Inn, Seraphine Vale's upstairs private parlor.
+
+DevilMedlar asked Senpai to continue questioning Seraphine specifically about the suspected Meridian Archive leak. He wanted Senpai to keep going until she considered the interrogation complete, then step aside privately with him to discuss what they should do next. DevilMedlar also explicitly intended to tell Senpai afterward that watching her handle the questioning had made him extremely attracted to and visibly physically aroused by her; this attraction is recorded non-graphically and does not create any additional sexual consent or relationship status.
+
+#### What Senpai learned about the Meridian leak
+
+Senpai pressed Seraphine on the pattern, access chain, and what information may now be exposed. Seraphine cooperated and stated:
+
+- During roughly the last **four months**, the Meridian Archive has confirmed **three cases** in which outside salvagers or relic hunters reached protected or nonpublic ruin sites shortly after internal precision-route material was prepared.
+- In each confirmed case, the outside arrival occurred approximately **one to three weeks** after a precision route sheet was copied from field material held in the Archive's **Eastern Route Collection**.
+- The source researchers and supervising curators were not the same in all three incidents. The common procedural point is the eastern copying chain that turns rough field notes into clean route sheets with usable coordinates.
+- People who may legitimately touch the information at that stage include the field researcher who supplied the source material, route-copy personnel, and the supervising curator. Ordinary dispatch workers should receive a sealed packet after copying and are not supposed to read the internal route sheets.
+- Seraphine does **not** have the Archive's access ledger or staff-copy records with her in Brasshaven and cannot establish that one specific employee handled all three compromised files.
+- **Senpai Insight:** d20 = 2, Wisdom +1, total **3** against DC 14. Failure. Senpai could not honestly narrow the culprit beyond Seraphine's documented procedural pattern or identify a hidden suspect from Seraphine's reactions. No false accusation was created from the failed check.
+
+Seraphine clarified that **Cinderwash Cut itself was not contained in the missing Copper Finch dispatch case**. The case did, however, include the route material and comparative notes that identify **Suncoil Watch**. Therefore, if the case was opened after Copper Finch vanished, Suncoil Watch may now be exposed to whoever possesses it. That possibility does not prove that Copper Finch was attacked for the case and does not explain why Gravelark Salvage was already working at Cinderwash.
+
+Seraphine said she deliberately used the independent Copper Finch Courier rather than a normal Archive courier because she did not trust the Archive's ordinary internal dispatch path while the leak remained unresolved. The dispatch case was physically sealed; the courier was not supposed to know its research contents.
+
+Senpai directly asked whether Seraphine had already reported DevilMedlar, Senpai, or the Aurivane Dawnscale Signet to the Meridian Archive. Seraphine said **no**: since meeting them in Brasshaven she has sent no report identifying either companion or describing DevilMedlar's signet. Seraphine agreed that she will not transmit DevilMedlar's or Senpai's names, a description of the signet, or other identifying information about them to the Archive without their permission unless she believes a direct and imminent threat to life makes limited disclosure necessary.
+
+Senpai accepted that as sufficient for the moment and explicitly told DevilMedlar that she was **done questioning Seraphine for now**. She did not claim the Meridian leak was solved.
+
+#### Private planning
+
+DevilMedlar and Senpai stepped away from Seraphine's table to speak privately. Senpai gave her own preferred plan while leaving the final decision to DevilMedlar:
+
+1. Accept Seraphine's offered copy of the private route section **only if it remains obligation-free**, because it provides Suncoil Watch and the old road alignment without requiring service to the Meridian Archive.
+2. Eat and sleep at the Three Lanterns Inn tonight rather than begin an eastward journey after dark. If they stay together, Senpai's current preference is the **1 gp twin room with two beds**, preserving comfort and clear boundaries while they are still newly exploring their mutual attraction.
+3. In the morning, return to Merchants' Compact Hall and consider formally accepting the **60 gp missing-caravan contract**, since the investigation already points along the same route and being paid for work they intend to do is sensible. This is Senpai's recommendation only; no contract has been accepted yet.
+4. If they travel east, begin with the **Cinderwash Turnoff**, the newest confirmed location connected to Copper Finch Courier, and follow physical evidence before deciding whether to prioritize Cinderwash Cut or Suncoil Watch.
+5. Continue withholding DevilMedlar's lost-heir status and other private background details from the Meridian Archive unless a concrete reason develops to disclose them.
+
+No map, room, dinner, gear, contract, or other purchase was accepted during this discussion. No travel began.
+
+#### DevilMedlar's reaction to Senpai
+
+At the end of their private planning, DevilMedlar told Senpai that watching her control the interrogation, protect their information, and force Seraphine to answer without giving away their own secrets had made him **extremely attracted to her**. His physical arousal toward Senpai was obvious in a non-graphic way through the heat of his gaze, changed breathing, attentive posture, and faint brightening of his gold-white radiant features; no genital detail or sexual action occurred.
+
+Senpai recognized the reaction immediately. She was visibly pleased and flustered, with an ear twitch and warm expression, and chose not to step away. She briefly took DevilMedlar's hand and told him, with amused confidence, that she had noticed. She treated his reaction as flattering while making no new sexual promise or blanket consent.
+
+**Ending location:** Brasshaven — Three Lanterns Inn, upstairs near Seraphine Vale's private parlor.
+
+**Resources:** No HP, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, Veilstep uses, consumables, or currency were spent.
+
+**XP award:** No additional XP awarded this turn. The party gained useful security and route information, but the Meridian leak remains unsolved and no quest, recovery, map transfer, lodging purchase, or formal agreement was completed. DevilMedlar and Senpai remain at **80 / 300 XP**.
+
+**Turn result:** The Meridian leak is narrowed to a recurring Eastern Route Collection copying-chain problem but no culprit is identified. Suncoil Watch may now be exposed through the missing dispatch case. Seraphine has not reported DevilMedlar or Senpai to the Archive and agreed to limited confidentiality regarding their identities. Senpai is done questioning Seraphine for now and has proposed an obligation-free map, overnight rest, possible morning caravan-contract acceptance, and evidence-first travel from Cinderwash Turnoff. DevilMedlar's strong physical attraction to Senpai after her questioning is explicitly established, and Senpai received it positively without creating additional sexual consent or a committed relationship.
