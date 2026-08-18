@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. The Session 1 opening scene at Brasshaven's Wayfarer Gate now has verified reference art below. No other recurring NPC appearance, location appearance, transformation, or visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. The Session 1 opening scene at Brasshaven's Wayfarer Gate and the Session 1 Turn 2 private-bath scene now have verified reference art below. No other recurring NPC appearance, location appearance, transformation, or visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -113,6 +113,16 @@ Future images of Senpai should consult this reference together with the textual 
 - **Textual canon still controls:** Character anatomy, exact equipment, exact clothing details, exactly one tail for Senpai, no functional wings for DevilMedlar, the exact wording and significance of the dragon-sun motif, exact reward notice wording, distances, dialogue, NPC identity, and all hidden story facts.
 - **Inspiration only unless later adopted:** Exact gate banners and heraldry, precise market architecture, background buildings, crowd composition, staff ornamentation, incidental jewelry, exact tea-stall furniture, lighting, poses, and any scenery not explicitly established by narration.
 - This reference captures a moment in time. Scene-specific objects or people may move, leave, break further, be repaired, or otherwise change as gameplay advances.
+
+### Session 1, Turn 2 — Private Bath
+
+- **Repository path:** `campaigns/campaign-1/art/Private-Bath.png`
+- **Status:** Verified present in the repository and established as the scene reference for DevilMedlar and Senpai sharing a private two-person mineral pool at Steam & Stone Baths during their first Brasshaven date outing.
+- **Canonical from the image:** The warm private stone bathhouse atmosphere; DevilMedlar and Senpai sharing the mineral pool together; modest linen bathing wraps; their established radiant gold-white and silver-violet visual contrast; relaxed closeness and mutual attraction; DevilMedlar's horns, scales, bronze complexion, and dark hair; Senpai's black fox ears, dark-to-violet-silver hair, and exactly one black-to-silver fox tail.
+- **Senpai's crescent birthmark:** The persistent silver crescent-shaped birthmark high on Senpai's right shoulder blade is **not visible in this composition** because her right shoulder-blade area is obscured by pose, hair, angle, and proximity to DevilMedlar. Its absence from view is normal occlusion and does not remove, change, relocate, or contradict the mark's textual canon.
+- **Textual canon still controls:** Senpai's exact birthmark placement, DevilMedlar's pale-gold left-collarbone scar, exact scale placement, exact anatomy, exactly one tail for Senpai, no functional wings for DevilMedlar, the characters' established boundaries and relationship state, and all mechanical or narrative facts.
+- **Inspiration only unless later adopted:** Exact jewelry, pendant shapes, bathhouse signage and decorative banners, precise pool layout, folded-clothing arrangement, lantern placement, poses, lighting, incidental ornamentation, and any details not explicitly established by narration.
+- The image depicts affectionate mutual attraction and shared bathing only; it does not establish sexual activity, blanket consent, marriage, or a committed relationship beyond the relationship state recorded in campaign text.
 
 When additional reference art is added:
 
