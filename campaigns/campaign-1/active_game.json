@@ -2,12 +2,12 @@
   "campaign": "campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 4,
-  "current_scene": "Three Lanterns Inn — Seraphine Vale's private parlor after Senpai's questioning",
+  "turn_number": 5,
+  "current_scene": "Three Lanterns Inn — private planning after Meridian leak questioning",
   "current_step": "awaiting_player_action",
   "current_location": "Brasshaven — Three Lanterns Inn",
   "character_created": true,
   "xp_current": 80,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 3 is resolved. DevilMedlar challenged Seraphine Vale's comment about the afternoon and then trusted Senpai to lead the questioning while revealing as little as possible about the pair. Senpai remained calm and nonviolent, succeeded on Deception 21 and Insight 15, and learned that Seraphine is funded by the Meridian Archive, suspects an internal leak of protected ruin locations, and came to Brasshaven partly because a sealed Archive dispatch case containing copies of her field notes was aboard the missing Copper Finch Courier. Seraphine identified the private-map mark as Suncoil Watch, an old dragon-road waystation east of Cinderwash Turnoff, and said the dragon-sun motif predates Clan Aurivane though some Aurivane radial design may descend from the same older tradition. Seraphine offered access to a copy of the relevant private route map but no quest or agreement has been accepted. No resources were spent and both characters remain at 80 / 300 XP."
+  "last_sync_note": "Session 1, Turn 4 is resolved. Senpai continued questioning Seraphine Vale about the Meridian Archive leak and learned that three protected-site exposures in roughly four months share the Eastern Route Collection copying chain, though no culprit can be identified. Cinderwash Cut was not in the lost Copper Finch dispatch case, but Suncoil Watch was and may now be exposed. Seraphine has not reported DevilMedlar, Senpai, or the Aurivane signet to the Archive and agreed to limited confidentiality about their identities. Senpai is done questioning Seraphine for now and recommends accepting the obligation-free private map, resting at the Three Lanterns in a twin room, considering the 60 gp caravan contract in the morning, and beginning eastward investigation at Cinderwash Turnoff. No map, room, dinner, contract, purchase, or travel has been committed yet. DevilMedlar's strong physical attraction to Senpai after her questioning is established and Senpai received it positively. Both remain at 80 / 300 XP."
 }
