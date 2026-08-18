@@ -13,10 +13,10 @@
 
 ## Advancement
 
-- **XP:** 50 / 300
-- **XP to Level 2:** 250
+- **XP:** 75 / 300
+- **XP to Level 2:** 225
 - **Progression:** Numeric XP.
-- **Backfilled Session 1 XP:** 25 XP for discovering the fresh cult-mark hook and Sunscale reaction; 25 XP for the successful trail investigation that revealed two separate travelers.
+- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara that verified her core claim and revealed the Velvet Coil ledger lead.
 
 ## Appearance
 
@@ -51,12 +51,11 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 ## Derived Statistics
 
-- **Level:** 1
-- **Proficiency bonus:** +2
 - **HP / Max HP:** 10 / 10 (`d8` Dracolyte hit die + CON +2 at level 1).
 - **Armor Class:** 12 in Reinforced Wanderer's Vestments (`12 + DEX 0`).
 - **Initiative:** +0
 - **Speed:** 30 ft
+- **Proficiency bonus:** +2
 - **Passive Perception:** 13
 - **Spellcasting ability:** Charisma
 - **Spell attack bonus:** +4
@@ -69,8 +68,9 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 ## Skills & Proficiencies
 
-- **Perception:** Proficient, +3 total (Wisdom +1, proficiency +2).
-- **Survival:** Proficient, +3 total (Wisdom +1, proficiency +2).
+- **Perception:** Proficient, +3 total.
+- **Survival:** Proficient, +3 total.
+- **Insight:** +1 total, not proficient.
 - **Dawnclaws:** Proficient through Dracolyte training.
 - **Light armor:** Proficient.
 
@@ -85,60 +85,34 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 ### Gold Dragon Heritage
 
-- **Fire Resistance:** DevilMedlar has resistance to fire damage.
-- **Golden Breath:** As an action, exhale draconic power in a 15-ft cone. Creatures in the cone make a Dexterity save against **DC 12**. On a failure they take `2d6` damage; on a success they take half. Choose **fire or radiant** each time the breath is used. Usable **once per long rest** at level 1.
+- **Fire Resistance:** Resistance to fire damage.
+- **Golden Breath:** Action, 15-ft cone, Dexterity save DC 12, `2d6` fire or radiant damage, half on successful save, once per long rest.
 
 ### Golden Ascendant
 
 - **Activation:** Bonus action.
 - **Uses:** Once per long rest at level 1.
-- **Duration:** Up to 1 minute; ends early if DevilMedlar dismisses it or becomes incapacitated.
-- **Manifestation:** Short swept-back horns, wings, tail, and continuous golden eye-glow appear for the duration. The wings are a visual/latent manifestation at level 1 and do **not** grant sustained flight yet.
-- **Ascendant Conduction:** While transformed, Dawnclaw hits may deal fire or radiant damage instead of bludgeoning, with no extra damage merely from changing the type.
-- **Ascendant Vitality:** On transforming, gain **4 temporary HP**. Once during that transformation, as a bonus action, DevilMedlar may regain **2 HP**.
+- **Duration:** Up to 1 minute; ends early if dismissed or DevilMedlar becomes incapacitated.
+- **Manifestation:** Short swept-back horns, wings, tail, and continuous golden eye-glow. Level-1 wings do not grant sustained flight.
+- **Ascendant Conduction:** Dawnclaw hits may deal fire or radiant instead of bludgeoning while transformed.
+- **Ascendant Vitality:** Gain 4 temporary HP on transformation; once during that transformation, as a bonus action, regain 2 HP.
 
 ### Dracolyte Spellcasting
 
 The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellcasting ability.
 
-#### Solar Lance — Cantrip
-
-- **Use:** Action, 60-ft range.
-- **Attack:** Ranged spell attack, currently **+4 to hit**.
-- **Effect:** On a hit, deal `1d8` **fire or radiant** damage, chosen when cast.
-- **Cost:** No spell slot; cantrips may be used repeatedly.
-- **Visual:** A narrow bolt or lance of gold-white energy edged in crimson, usually projected through a Dawnclaw.
-
-#### Sunclaw Channel — Cantrip
-
-- **Use:** Action; make one Dawnclaw melee attack.
-- **Attack:** Uses the normal Dawnclaw attack, currently **+4 to hit**.
-- **Effect:** On a hit, deal the Dawnclaw's normal `1d6 + 2` damage. For this attack, the strike counts as **magical** and its damage may be **bludgeoning, fire, or radiant**.
-- **Balance:** At level 1 this adds no bonus damage and grants no extra attack. It is the basic magic-imbued physical strike.
-- **Cost:** No spell slot.
-
-#### Restorative Flame — Level 1
-
-- **Use:** Action, touch.
-- **Cost:** Expend one level-1 spell slot.
-- **Effect:** Restore `1d8 + 2` HP to DevilMedlar or a creature he touches.
-- **Visual:** Warm gold-white fire flows through the Dawnclaw without burning the recipient.
-
-#### Ascendant Smite — Level 1
-
-- **Trigger:** After DevilMedlar hits a creature with a Dawnclaw attack.
-- **Cost:** Expend one level-1 spell slot; no separate action required.
-- **Effect:** Add `2d6` **fire or radiant** damage to that hit, chosen when used.
-- **Limit:** Once per turn.
-- **Miss protection:** The spell slot is spent only after a hit is confirmed.
+- **Solar Lance — Cantrip:** Action, 60 ft, +4 ranged spell attack, `1d8` fire or radiant damage.
+- **Sunclaw Channel — Cantrip:** Action, make one Dawnclaw melee attack; `1d6 + 2`, counts as magical, choose bludgeoning/fire/radiant, no bonus damage at level 1.
+- **Restorative Flame — Level 1:** Action, touch, expend one level-1 spell slot, restore `1d8 + 2` HP.
+- **Ascendant Smite — Level 1:** After a Dawnclaw hit, expend one level-1 spell slot, add `2d6` fire or radiant damage, once per turn.
 
 ## Background
 
 - **Composite background:** Pleasure Cult Survivor → Temple-Bound Acolyte influence → Wandering Mystic.
-- DevilMedlar survived a pleasure cult.
+- DevilMedlar survived the pleasure cult now identified in current play as **the Velvet Coil**.
 - A Temple-Bound Acolyte brought him into temple life afterward.
 - He eventually chose to leave that life and become a Wandering Mystic.
-- Names, organizations, exact circumstances, and current relationships connected to this history remain to be established during play or later character creation.
+- Exact circumstances, the Acolyte's identity, and the temple/order remain unresolved.
 
 ## Personality / Social Style
 
@@ -147,7 +121,7 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
-- **Nyxara Veyl:** First contact in Session 1 Turn 2. Adult female tiefling, age 24. Wary but not openly hostile. She claims she was independently following the cult-mark carver. Trust, friendship, attraction, romance, and party status are not established.
+- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Met in Session 1 Turn 2. In Turn 3 DevilMedlar questioned her while reading her body language. Insight `14 + 1 = 15` vs DC 13 succeeded. Her core claim that she was independently tracking the cult-mark carver and is not allied with him appears truthful. She is still withholding the identity of someone personally important whose name appears in the stolen Velvet Coil ledger. No party membership, romance, attraction, debt, or formal trust is established yet.
 
 ## Conditions / Transformations
 
@@ -156,12 +130,15 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 - Ascendant Vitality is the selected level-1 transformation boon.
 - No lasting adverse conditions established.
 
-## Unresolved Prior Inputs
+## Unresolved Threads
 
-- Names/details of the pleasure cult, temple/order, and Temple-Bound Acolyte may be established naturally during play.
-- The Sunscale Shard's true origin and any hidden property remain unknown and must be discovered in play.
-- Nyxara Veyl's claim about independently tracking the cult carver is not yet verified.
+- Exact circumstances of DevilMedlar's survival/departure from the Velvet Coil.
+- Identity and motives of the Temple-Bound Acolyte and temple/order.
+- Sunscale Shard's true origin and any hidden property.
+- Identity and motive of the Velvet Coil carver.
+- Identity of the person Nyxara cares about whose name is in the stolen ledger.
+- Whether Nyxara becomes a supporting companion.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 2:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 50/300.
+- **Session 1 Turn 3:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 75/300.
