@@ -4,7 +4,7 @@ Each campaign lives in its own numbered folder and keeps its own rules, characte
 
 ## Active campaign
 
-`active_campaign.json` points to the campaign currently in play.
+`active_campaign.json` points to the campaign currently in play and stores only a compact live pointer such as phase, session, turn, step, and XP summary.
 
 ## Folder convention
 
@@ -19,4 +19,27 @@ Campaigns do not share canon unless the player explicitly imports or connects so
 
 ## Fresh-campaign rule
 
-A newly created campaign begins with only the facts written into that campaign's current files or established by the player during play. Do not import facts from another campaign, deleted material, unrelated chats, or repository history unless the player explicitly requests it.
+A newly created campaign begins only with facts written into that campaign's current files or established by the player during current play.
+
+Do not import or reconstruct character data, NPCs, items, locations, relationships, quests, story events, secrets, or other campaign canon from another campaign, deleted material, prior chats, or repository history.
+
+Repository history may be used only for reusable framework, mechanics, file structure, or operating instructions when the player explicitly requests that use. Framework recovery never makes historical campaign content canon.
+
+## Campaign structure
+
+Each campaign should contain:
+
+```text
+README.md
+GAME_MASTER_RULES.md
+saves/
+  active_game.json
+  character_sheet.md
+  inventory.md
+  world_state.md
+  session_log.md
+art/
+  art_log.md
+```
+
+The campaign's `GAME_MASTER_RULES.md` defines its mechanics, save cadence, image workflow, adult-content boundaries, and continuity behavior.
