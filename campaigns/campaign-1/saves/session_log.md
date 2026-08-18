@@ -115,3 +115,14 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Private adult-homebrew rules expanded: explicitly adult consenting fertility/pregnancy themes, cross-species reproduction, hybrid offspring, inherited traits, and persistent lineage consequences are allowed within platform limits.
 - An assistant-controlled adult supporting companion is enabled and may enter naturally during play; she never overrides DevilMedlar's agency.
 - Current objective: decide how DevilMedlar investigates the shrine, tracks, cult mark, or reacting Sunscale Shard.
+
+### Checkpoint 1.1 — Two trails from the shrine
+
+- DevilMedlar chose to ignore the shrine and Sunscale Shard temporarily and search the surrounding area for whoever carved the mark.
+- Open Perception check: **15 + 3 = 18** against **DC 13**, success.
+- A recent boot trail approaches the shrine with fresh pale stone dust caught in the tread, strongly identifying it as the likely carver's trail.
+- A second lighter, soft-soled trail crosses the first afterward, pauses behind the crooked tree with a clear view of the shrine, then follows the likely carver.
+- The second person appears more likely to have been observing or following the carver than simply traveling beside them, though motive and allegiance remain unknown.
+- Both trails leave Lantern Road heading north into a dry drainage cut/shallow gully.
+- No resources, HP, spell slots, breath use, or Golden Ascendant use were consumed.
+- Current decision: pursue the trails, investigate the two trail patterns more carefully, set an ambush, head for Vespergate, or take another action.
