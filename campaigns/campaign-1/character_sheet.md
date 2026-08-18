@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, and starting equipment. Senpai has established name, age, gender, and pronouns. Appearance, relationships, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance. Senpai has established name, age, gender, and pronouns. Relationships and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -110,7 +110,21 @@ None established.
 
 ## Appearance
 
-No appearance canon established. Record stable visual traits here and mirror continuity-sensitive details into `art/art_log.md` after they become canon.
+- **Height / build:** 6 ft. 2 in. Tall, lean-athletic, flexible rather than bulky, with the balanced posture of a trained martial artist.
+- **Skin:** Warm bronze with a subtle sunlit undertone.
+- **Scales:** Fine ivory-gold scales frame the temples, cheekbones, shoulders, outer forearms, upper spine, hips, and tail. At rest they look pearlescent; under radiant power they glow from beneath with warm gold-white light.
+- **Horns:** A matched pair of swept-back horns beginning above the temples. They are pale ivory near the base, gradually deepening toward polished gold at the tips.
+- **Eyes:** Molten-gold irises with narrow draconic pupils. Strong emotion or active radiant power causes the pupils to brighten and a faint halo to form around the iris.
+- **Hair:** Thick black hair, medium length, slightly tousled, with a natural pale-gold streak near the front that becomes more luminous when his radiant power surges.
+- **Face:** Youthful but sharply defined, clean-shaven, with slightly pronounced upper canines visible when he grins or bares his teeth.
+- **Tail:** A long, muscular, fully functional draconic tail, bronze-skinned at the base and increasingly scaled toward the tip. It is expressive and helps with balance but grants no separate mechanical attack beyond established features unless a future feature says otherwise.
+- **Wings:** No functional wings at level 1. Two subtle ridges beneath the upper-back scales mark where a future draconic wing awakening may occur.
+- **Hands / claws:** Humanlike hands with retractable-looking dark-gold claws that are mechanically represented by Natural Claws.
+- **Mark / scar:** A thin pale-gold scar crosses the left collarbone, left by the Shattering of Dawnscale. It glows faintly when exposed to powerful radiant draconic magic.
+- **Clothing:** Favors sleeveless or loose-shouldered travel clothing that does not restrict martial movement, usually cream, charcoal, and muted gold. Ascendant handwraps cover the palms and wrists. The Clan Aurivane travel cloak is worn when weather or discretion calls for it.
+- **Radiant manifestation:** When channeling Dragon Ki, Radiant Fang, or Radiant Breath, light runs in narrow gold-white lines beneath his scales, his eyes brighten, the pale-gold hair streak glows, and the air around his mouth and claws shimmers with clean radiant light rather than flame.
+
+These are stable visual-canon traits for continuity-sensitive narration and art unless later transformed, injured, disguised, or explicitly changed.
 
 ## Personal / Relationship Continuity
 
