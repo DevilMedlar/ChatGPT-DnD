@@ -4,8 +4,8 @@
   "path": "campaigns/campaign-1",
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 9,
-  "current_step": "nonlethal_capture_plan_with_nyxara",
-  "xp_current": 175,
+  "turn_number": 10,
+  "current_step": "likely_carver_captured_alive_in_maintenance_chamber",
+  "xp_current": 200,
   "xp_next_level": 300
 }
