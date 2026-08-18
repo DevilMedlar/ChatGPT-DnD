@@ -1,44 +1,59 @@
 # ChatGPT-DnD
 
-A persistent, choice-driven adult fantasy tabletop campaign run through ChatGPT with D&D-style mechanics, campaign saves, relationship continuity, and optional generated scene art.
+A persistent, choice-driven adult fantasy RPG repository for D&D-style campaigns played through ChatGPT, with d20 mechanics, persistent saves, relationship continuity, and optional generated scene art.
 
-## Campaign style
+## Core canon rule
 
-- Fantasy adventure with d20-style checks, combat, exploration, social play, consequences, leveling, equipment, quests, and persistent world state.
-- Adult sexual themes, romance, flirting, erotic situations, and consensual sexual content may be part of play.
-- Every character involved in romance, sexual content, nudity, fertility, pregnancy, or reproduction must be explicitly **18+**.
-- Generated images may include adult sensuality or nudity when allowed by the image system.
-- The campaign should never force sexual content into every scene. Adventure, danger, mystery, humor, combat, exploration, and ordinary character moments remain part of the game.
+The files on the repository's current branch are the campaign source of truth.
+
+- Each numbered campaign is isolated from every other campaign unless the player explicitly requests a crossover or import.
+- A fresh campaign begins only with facts established in its current files or established by the player during play.
+- Do **not** recover character data, NPC data, items, locations, quests, relationships, story events, secrets, or other campaign canon from deleted material, prior chats, or repository history.
+- Repository history may be consulted only for reusable **framework, file structure, mechanics, and operating instructions** when the player explicitly allows it.
+- Prior chats are non-canonical unless the player explicitly imports information from them.
 
 ## Repository layout
 
 ```text
 campaigns/
+  README.md
   active_campaign.json
   campaign-1/
     README.md
     GAME_MASTER_RULES.md
-    active_game.json
-    character_sheet.md
-    inventory.md
-    world_state.md
-    session_log.md
+    saves/
+      active_game.json
+      character_sheet.md
+      inventory.md
+      world_state.md
+      session_log.md
     art/
       art_log.md
 ```
 
-Each campaign is self-contained. Future games should use sibling folders such as `campaign-2`, `campaign-3`, and so on.
+Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, world, quest, relationship, inventory, session, or art-continuity state unless the player explicitly requests it.
 
-## Image workflow
+## Adult campaign style
 
-Scene art is optional rather than automatic.
+- Fantasy adventure may include combat, exploration, danger, mystery, humor, social play, romance, flirting, sexual tension, consensual sexual situations, and nudity.
+- Sexual material can be a meaningful part of the campaign without being forced into every scene.
+- Every character involved in romance, sexual content, nudity, fertility, pregnancy, or reproduction must be explicitly **18+**.
+- Sexual and reproductive content must be consensual.
+- Generated images may include adult sensuality or nudity when allowed by the image system.
 
-1. ChatGPT narrates the scene and presents any relevant choices.
-2. If the scene genuinely deserves an image, ChatGPT ends with `Make image? Yes / No`.
-3. `Yes` means generate the image first. Gameplay choices wait until after the image is shown.
-4. `No` means skip the image. Any remaining text in the same reply is immediately treated as the player's gameplay choice or freeform action, including compact replies such as `No, A, 1, E) ...`.
-5. Before generating recurring characters, equipment, transformations, locations, or other established visuals, consult `campaigns/campaign-1/art/art_log.md`.
+## Image play loop
 
-## Source of truth
+Not every scene needs an image.
 
-The current campaign files on the repository's current branch are canonical. Established facts should be preserved unless the player explicitly changes them or a correction is required for consistency.
+1. ChatGPT narrates the scene normally and presents any relevant choices.
+2. If the scene genuinely deserves an image, ChatGPT ends the text with `Make image? Yes / No`.
+3. If the player replies `Yes`, ChatGPT generates the image before resolving any gameplay choice for that scene. After the image is shown, the player makes the choices.
+4. If the player replies `No`, ChatGPT skips image generation and immediately parses anything after `No` as the player's choices or freeform action, including compact replies such as `No, A, 1, E) ...`.
+5. Before generating recurring characters, equipment, locations, transformations, scars, tattoos, or other established visuals, consult that campaign's `art/art_log.md`.
+6. Textual campaign canon overrides conflicting generated-art details unless the player explicitly adopts the variation.
+
+## Persistence
+
+Before continuing a campaign, read `campaigns/active_campaign.json` and the active campaign's canonical files needed for the scene.
+
+After gameplay turns, synchronize the persistent state according to that campaign's `GAME_MASTER_RULES.md`. Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.
