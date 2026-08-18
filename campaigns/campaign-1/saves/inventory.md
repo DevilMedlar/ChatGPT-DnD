@@ -20,7 +20,7 @@
 - **Ascendant Conduction:** While Golden Ascendant is active, a Dawnclaw hit may deal fire or radiant damage instead of bludgeoning. This changes the damage type only and adds no extra damage.
 - **Appearance:** Close-fitting dark bronze-gold articulated plates with fine sunburst filigree and narrow crimson inlays. When power is channeled, seams kindle gold-white with crimson edges.
 - **Bond:** Personal starting weapon set; not a +1 weapon and no hidden numerical bonus is assumed.
-- **Turn 10 use:** DevilMedlar struck the likely carver with one Dawnclaw attack for `5 + 2 = 7` bludgeoning damage and explicitly declared it nonlethal, knocking the target unconscious and stable. The Dawnclaws were not damaged and no charge or limited resource was spent.
+- **Turn 10 use:** One nonlethal Dawnclaw hit dealt `5 + 2 = 7` bludgeoning and captured the likely carver alive. No damage or charge was incurred by the Dawnclaws.
 
 #### Reinforced Wanderer's Vestments
 
@@ -38,14 +38,15 @@
 - 5 days of trail rations.
 - Healer's kit (10 uses).
 - Tinderbox.
-- 50 ft hempen rope.
+- **50 ft hempen rope - currently in use restraining the captured carver; unavailable as free gear until recovered.**
 - Small journal, charcoal sticks, and loose parchment.
 - 5 sticks of temple incense.
 - Small pouch of ritual salt.
 
 ### Currency
 
-- **12 gp**
+- **Personal currency:** 12 gp.
+- **Secured enemy coin pouch:** 8 gp, 6 sp. Recovered from the captive in Turn 11 but not yet added to DevilMedlar's personal currency or divided with Nyxara.
 
 ### Special / Bound / Cursed Items
 
@@ -59,14 +60,25 @@
 - **Status:** Unidentified. Hidden properties must be discovered through play.
 - **Curse:** None known.
 
-### Nearby Unclaimed / Secured Scene Items
+### Secured Scene / Captive Items
 
-These are **not yet part of DevilMedlar's inventory** and remain scene objects until explicitly taken, searched, or assigned.
+These items were removed from the captured carver or recovered from the maintenance chamber in Session 1 Turn 11. They are secured away from the captive but are not automatically counted as DevilMedlar's personal property until the player decides ownership/distribution.
 
-- Captured carver's compact crossbow, dropped in the maintenance chamber.
-- Captured carver's stone-carving chisel, still on his belt unless removed next turn.
-- Captured carver's dark cross-body satchel, still worn. A thick leather-bound book-sized object is visible within; it is likely the stolen Velvet Coil ledger but remains unverified and unlooted.
+- **Compact crossbow x1:** Captive's weapon; intact.
+- **Compact crossbow bolts x6:** Recovered from belt/bolt case.
+- **Stone-carving chisel x1:** The tool strongly linking the captive to the Lantern Road shrine mark.
+- **Narrow boot knife x1:** Hidden weapon found during the thorough search.
+- **Small brass key x1:** Three-coil notch pattern; matching lock unknown.
+- **Hooded lantern x1:** Recovered near the captive's former firing position.
+- **Lamp oil x1 flask:** Usable with the hooded lantern.
+- **Velvet Coil ledger x1:** Confirmed genuine in Turn 11. Currently secured and being reviewed by DevilMedlar and Nyxara. Contains names, dates, payments, routes, and coded marks; includes the repeated notation `Vespergate / Silken Cup / cellar delivery`.
+- **Enemy coin pouch:** 8 gp, 6 sp; secured pending disposition.
+
+## Captive Restraint Status
+
+- Captured likely Velvet Coil carver is unconscious, stable, fully disarmed, and bound with DevilMedlar's 50-ft hempen rope around wrists, ankles, and torso.
+- The rope is not consumed but remains committed to restraint until recovered.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 10:** No equipment was lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. DevilMedlar took no damage. Enemy equipment remains unclaimed scene property pending the player's next action. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
+- **Session 1 Turn 11:** No personal equipment was lost or damaged. Personal currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. Rope is temporarily committed to the captive. Captive gear, 8 gp 6 sp, the three-coil key, lantern/oil, and the confirmed Velvet Coil ledger are secured scene items pending player disposition.
