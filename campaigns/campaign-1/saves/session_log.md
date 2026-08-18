@@ -6,27 +6,16 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 
 ### Checkpoint 0.0 - Repository initialized
 
-- Campaign 1 is active.
-- Phase: character creation.
-- Current step: character identity.
-- Persistent active-game schema initialized.
-- World-state save initialized with no established locations, NPCs, factions, relationships, quests, or consequences yet.
-- Generated-art continuity is tracked in `../art/art_log.md`.
-- Scene art is optional and should only be offered when the scene genuinely benefits from it.
-- When art is offered, ask at the end of the narration: `Make image? Yes / No`.
-- `Yes` means generate the image before the player makes or resolves gameplay choices.
-- `No` means skip image generation; any remaining text in that same reply is treated as the player's choices or freeform action.
+- Campaign 1 activated; persistent save, world-state, session-log, and art-continuity workflow established.
+- Scene art is optional; when offered use `Make image? Yes / No`.
 
 ### Checkpoint 0.1 - Identity begun
 
-- Player character name: **DevilMedlar**.
-- Age: **20**, adult.
-- Level 1.
+- Player character: **DevilMedlar**, age **20**, adult, level 1.
 
 ### Checkpoint 0.2 - Core identity established
 
-- Male, he/him.
-- Species: **Draginkin**.
+- Male, he/him; species **Draginkin**.
 
 ### Checkpoint 0.3 - Path and heritage established
 
@@ -35,8 +24,7 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 
 ### Checkpoint 0.4 - Ability scores and focus established
 
-- Standard-array preset: **Sacred Flame**.
-- STR 12, DEX 10, CON 14, INT 8, WIS 13, CHA 15.
+- Sacred Flame standard array: STR 12, DEX 10, CON 14, INT 8, WIS 13, CHA 15.
 - Dracolyte focus: **Golden Ascendant**.
 
 ### Checkpoint 0.5 - Appearance and background established
@@ -50,129 +38,120 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 ### Checkpoint 0.6 - Ascendant boon and skills established
 
 - **Ascendant Vitality** selected.
-- Perception and Survival proficient, both +3.
-- Passive Perception 13.
+- Perception and Survival proficient at +3; Passive Perception 13.
 
 ### Checkpoint 0.7 - Starting equipment established
 
-- **Dawnclaws - Bonded Draconic Gauntlets**: +4 to hit, `1d6 + 2` bludgeoning, Charisma-based, spellcasting focus.
+- **Dawnclaws - Bonded Draconic Gauntlets:** +4 to hit, `1d6 + 2` bludgeoning, Charisma-based, spellcasting focus.
 - Reinforced Wanderer's Vestments, AC 12.
-- Sunscale Shard selected as unidentified gold-dragon relic.
-- Starting currency 12 gp and standard travel/survival supplies.
+- Unidentified **Sunscale Shard** keepsake.
+- Starting currency 12 gp plus standard travel/survival supplies.
 
 ### Checkpoint 0.8 - Level 1 character creation complete
 
 - HP 10/10, AC 12, speed 30 ft, initiative +0, proficiency +2.
-- Spell attack +4, spell save DC 12, 2 level-1 spell slots.
-- Fire resistance and Golden Breath established.
-- Golden Ascendant established with Ascendant Vitality.
-- Combat magic: Solar Lance, Sunclaw Channel, Restorative Flame, Ascendant Smite.
+- Spell attack +4, save DC 12, 2 level-1 spell slots.
+- Fire resistance, Golden Breath, Golden Ascendant + Ascendant Vitality finalized.
+- Magic: Solar Lance, Sunclaw Channel, Restorative Flame, Ascendant Smite.
 
 ## Session 1 - Fresh Mark on Lantern Road
 
 ### Checkpoint 1.0 - The past scratches back
 
-- Session begins at dusk on Lantern Road outside Vespergate.
-- Fresh symbol from DevilMedlar's former pleasure cult found on roadside shrine.
+- Dusk on Lantern Road outside Vespergate.
+- Fresh symbol from DevilMedlar's former pleasure cult discovered on roadside shrine.
 - Sunscale Shard becomes noticeably warm.
-- **XP:** +25, later backfilled, for the opening discovery and Sunscale reaction.
+- **XP:** +25, later backfilled.
 
 ### Checkpoint 1.1 - Two trails from the shrine
 
 - Perception `15 + 3 = 18` vs DC 13, success.
-- Found likely carver's boot trail and a second lighter observer/follower trail.
+- Found likely carver's boot trail with shrine-stone dust plus a second lighter observer/follower trail.
 - Both lead north into drainage gully.
-- **XP:** +25 for successful investigation and two-trail discovery.
+- **XP:** +25. Total 50/300.
 
 ### Checkpoint 1.2 - The trail bites back
 
 - Survival `4 + 3 = 7` vs DC 12, failure with forward consequence.
-- Lost clean trail in gully gravel.
-- Met **Nyxara Veyl**, age 24, adult female tiefling Veilblade/occult tracker.
+- Lost clean trail and met **Nyxara Veyl**, age 24, adult female tiefling Veilblade/occult tracker.
 - Nyxara claims she independently followed the carver toward an old culvert.
-- No XP for failed roll itself.
+- No XP for the failed roll itself.
 
 ### Checkpoint 1.3 - Nyxara under the lens
 
-- DevilMedlar asked why Nyxara was following the carver while studying her for deception.
-- Insight `14 + 1 = 15` vs DC 13, success.
-- Nyxara's core claim appears truthful.
-- Cult identified as **the Velvet Coil**.
-- Nyxara revealed a stolen ledger in Vespergate containing names tied to the Velvet Coil.
-- One personally important name in the ledger is connected to Nyxara.
+- Insight `14 + 1 = 15` vs DC 13, success while asking why Nyxara followed the carver.
+- Her core claim appears truthful.
+- Cult named **the Velvet Coil**.
+- Nyxara revealed a stolen Vespergate ledger containing names tied to the cult; one personally important name matters to her.
 - **XP:** +25. Total 75/300.
 
 ### Checkpoint 1.4 - Eyes up, dragon
 
-- Nyxara took point toward the old culvert.
-- Perception `12 + 3 = 15` vs DC 13, success.
-- DevilMedlar spotted concealed ankle-high black tripline before Nyxara triggered it.
-- DevilMedlar told Nyxara, **"I survived the Velvet Coil."**
-- Nyxara took the disclosure seriously; provisional cooperation increased.
+- Nyxara took point.
+- Perception `12 + 3 = 15` vs DC 13 spotted a concealed ankle-high tripline before activation.
+- DevilMedlar revealed: **"I survived the Velvet Coil."**
+- Nyxara treated the disclosure seriously; provisional cooperation increased.
 - **XP:** +25. Total 100/300.
 
 ### Checkpoint 1.5 - Compliments and tripwires
 
-- DevilMedlar inspected the tripline while complimenting Nyxara's beauty and figure and asking about her connection to the Velvet Coil.
-- Nyxara accepted the compliment with dry amusement.
+- DevilMedlar complimented Nyxara while examining the mechanism.
 - Nyxara clarified she was not a Velvet Coil initiate; she survived what the Coil did to **someone she loves**.
 - Investigation `13 - 1 = 12` vs DC 12, success.
-- Tripline identified as nonlethal alarm using a spring striker against a hollow iron drainpipe.
-- Mechanism appears recently armed/reset; setter unknown.
+- Tripline identified as a nonlethal warning alarm using a spring striker and hollow iron drainpipe.
 - **XP:** +25. Total 125/300.
 
 ### Checkpoint 1.6 - The woman in the ledger
 
-- DevilMedlar asked whether the man or woman Nyxara loves is the personally important name in the stolen Velvet Coil ledger.
-- Nyxara answered **yes** and confirmed the person is **female**.
-- Nyxara still withholds the woman's identity and their exact relationship.
-- DevilMedlar and Nyxara deliberately stepped over the already-identified tripline; no roll was required.
-- The alarm was left **intact and armed behind them** as a potential rear warning.
-- DevilMedlar and Nyxara entered the old culvert quietly without triggering the alarm.
-- **XP:** +25 for the tactical bypass and new ledger-person confirmation.
-- **Current XP:** 150/300.
+- Nyxara confirmed the person she loves is **female** and **is the personally important name in the stolen ledger**; identity and exact relationship remain withheld.
+- DevilMedlar and Nyxara stepped over the known alarm with no roll and left it armed behind them.
+- Entered the old culvert without triggering it.
+- **XP:** +25. Total 150/300.
 
 ### Checkpoint 1.7 - The tunnel hears you
 
-- DevilMedlar combined several actions inside the culvert: a quick Sunscale Shard examination, a quiet armed advance toward the first bend with Nyxara, an active search of the interior, and another appreciative comment about Nyxara's appearance.
-- **Arcana:** `2 - 1 = 1` vs DC 12, failure. DevilMedlar could not identify the Sunscale Shard's nature or mechanism. He did observe that it remained unusually warm and gave one brief stronger heat pulse when oriented deeper into the culvert; significance remains unknown.
-- DevilMedlar looked Nyxara up and down and made a quick comment that she looked lovely/sexy. Nyxara answered with dry amusement about his timing. This continues light flirtatious tension but does not establish mutual attraction or romance.
-- **Stealth:** `10 + 0 = 10` vs DC 12, failure. Loose gravel skittered into old iron and produced a small metallic tick that carried around the bend.
-- **Perception:** natural `1 + 3 = 4` vs DC 13, failure. DevilMedlar failed to identify the hidden details, number, or exact position of whatever lay ahead.
-- Immediately after the Stealth failure, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead became likely alerted.
-- The intact entrance alarm behind DevilMedlar and Nyxara did **not** trigger and remained armed.
-- No combat started. No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
-- **XP:** No new XP. The failed checks created a live complication rather than resolving an accomplishment.
-- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 150/300.
+- Arcana `2 - 1 = 1` vs DC 12 failed to identify the Sunscale Shard; it nevertheless gave one stronger heat pulse when oriented deeper into the culvert.
+- DevilMedlar again flirted with Nyxara; she answered with dry amusement.
+- Stealth `10 + 0 = 10` vs DC 12 failed; gravel struck old iron and alerted a presence beyond the first bend.
+- Perception natural `1 + 3 = 4` vs DC 13 failed to identify the threat.
+- No resources spent; XP stayed 150/300.
 
 ### Checkpoint 1.8 - Eyes around the bend
 
-- DevilMedlar asked Nyxara to cover him and moved to peek around the first culvert bend himself.
-- While passing her in the cramped tunnel, his footing shifted and caused brief accidental intimate contact against Nyxara's chest/hip. DevilMedlar immediately withdrew and apologized quietly. Nyxara accepted the apology and remained focused on covering the bend. The accident did not establish consent to future touching or alter their relationship into romance.
-- **Stealth:** `15 + 0 = 15` vs DC 13, success. DevilMedlar exposed very little of himself and was not visibly detected during the peek.
-- **Perception:** `14 + 3 = 17` vs DC 14, success.
-- Beyond the bend is a small old maintenance chamber with broken masonry providing cover.
-- One hooded adult man is visible behind the masonry with a compact crossbow trained toward the bend.
-- Pale shrine-stone dust is packed into his boot tread and a stone-carving chisel hangs at his belt, strongly identifying him as the likely Lantern Road shrine carver.
-- A thick leather-bound book-sized object is visible in his cross-body satchel. It is strongly consistent with the stolen Velvet Coil ledger but has not yet been seized or verified.
-- The likely carver was alerted by Turn 7's noise but does not appear to have detected DevilMedlar's successful Turn 8 peek.
-- No second person is visible in the currently exposed chamber, though unseen exits/cover remain possible.
-- **XP:** +25 for recovering the lost tactical advantage, identifying the likely carver, and locating the probable ledger container without being detected.
-- **Current XP:** **175/300**.
-- No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
-- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 175/300.
-- **Current objective:** Decide how to engage, capture, challenge, ambush, or continue observing the likely carver while Nyxara provides cover.
+- Nyxara covered DevilMedlar while he peeked around the first bend.
+- Brief accidental intimate contact occurred in the cramped passage when DevilMedlar's footing shifted against Nyxara's chest/hip; he immediately withdrew and apologized. Nyxara accepted the apology. This did not establish permission for future touching.
+- Stealth `15 + 0 = 15` vs DC 13, success.
+- Perception `14 + 3 = 17` vs DC 14, success.
+- Identified one hooded adult man behind broken masonry with compact crossbow, shrine-stone dust on his boots, and carving chisel at belt, strongly linking him to the Lantern Road mark.
+- Saw a thick leather-bound book-sized object in his satchel, likely but not confirmed to be the stolen ledger.
+- **XP:** +25. Total 175/300.
 
 ### Checkpoint 1.9 - Alive if possible
 
-- The player manually uploaded the corrected Turn 8 scene art to `../art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`. Repository metadata verified the exact file path during Turn 9; ChatGPT did not upload or commit the image.
-- DevilMedlar stayed behind the first bend and asked Nyxara what she wanted to do.
-- DevilMedlar explicitly stated that he wants to **keep the likely carver alive for questioning** if possible.
-- DevilMedlar apologized a second time for Turn 8's accidental close contact and admitted that, although it was unintended, he had liked the brief contact.
-- Nyxara accepted the apology with dry amusement and maintained a clear boundary: enjoying an accident does not grant permission to repeat the contact intentionally.
-- Nyxara agreed that capture is preferable to killing the likely carver because they need answers and the probable ledger intact.
-- Nyxara proposed a nonlethal plan: DevilMedlar speaks from cover and orders the target to lower the crossbow, show his hands, and leave the satchel in place while she covers his weapon side. If the target attacks, Nyxara attempts to disrupt his weapon/arm and DevilMedlar closes for a nonlethal Dawnclaw takedown. If he flees deeper, they pursue and track.
-- No roll was required; no surrender demand, attack, or influence attempt has happened yet.
-- **XP:** No new XP this turn because planning and dialogue did not yet resolve an obstacle or objective.
-- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 175/300.
-- **Current objective:** Execute or modify Nyxara's nonlethal capture plan.
+- Player manually uploaded corrected Turn 8 scene art to `../art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`; repository metadata verified the exact path. ChatGPT did not upload or commit it.
+- DevilMedlar stated he wants the likely carver alive for questioning.
+- He apologized again for the Turn 8 accident and admitted he liked the brief accidental contact.
+- Nyxara accepted the apology, answered with dry amusement, and maintained the consent boundary that an accident is not permission for intentional repetition.
+- Nyxara proposed a nonlethal plan: surrender demand from cover; she covers the weapon side; if he attacks she disrupts and DevilMedlar closes for a nonlethal takedown; if he runs they pursue.
+- No roll, attack, damage, or resource use.
+- **XP:** unchanged at 175/300.
+
+### Checkpoint 1.10 - Bad choice, clean capture
+
+- Before acting, DevilMedlar suggested that he and Nyxara talk after the confrontation regardless of whether the carver lived or died.
+- DevilMedlar made another sincere apology for the Turn 8 accident, gave Nyxara another openly sexual/flirtatious compliment about how attractive she looked while focused for the fight, wished her luck, and said he hoped they both survived.
+- Nyxara accepted the apology, maintained her existing consent boundary, returned dry flirtatious banter, and agreed they could talk afterward if both were standing.
+- DevilMedlar followed Nyxara's plan exactly and called from cover: **"Crossbow down. Hands where I can see them. Don't touch the satchel."**
+- **Intimidation:** `3 + 2 = 5` vs DC 13, failure. The likely carver refused surrender and attacked.
+- **Initiative:** carver `8 + 2 = 10`; DevilMedlar `9 + 0 = 9`; Nyxara `2 + 3 = 5`.
+- Nyxara's prepared disruption attack: `8 + 4 = 12` vs AC 13, miss.
+- Carver's crossbow attack: `3 + 3 = 6` vs DevilMedlar's effective AC 14 with corner cover, miss.
+- DevilMedlar closed according to the preauthorized nonlethal plan.
+- Dawnclaw attack: `11 + 4 = 15` vs AC 13, hit.
+- Damage: `5 + 2 = 7` bludgeoning, explicitly nonlethal.
+- The lightly armored carver had 7 HP and dropped to 0. He is **unconscious and stable, captured alive**.
+- Combat ended after the opening exchange. DevilMedlar and Nyxara are uninjured.
+- The compact crossbow lies in the chamber. The carving chisel and satchel remain on the captive. The thick leather-bound object has **not yet been opened or verified as the ledger**.
+- No spell slots, Golden Breath, Golden Ascendant, consumables, or inventory items were spent.
+- **XP:** +25 for successful nonlethal capture. **Current XP: 200/300**.
+- **Current objective:** Secure/search the captive and chamber, verify the probable ledger, decide how to wake/question the captive, and follow through on the promised conversation with Nyxara when appropriate.
