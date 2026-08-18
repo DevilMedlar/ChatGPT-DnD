@@ -50,3 +50,16 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Dracolyte focus selected: **Golden Ascendant**.
 - Golden Ascendant emphasizes balanced draconic magic and gradual draconic transformation; exact level-1 mechanical expression remains pending.
 - Current creation step: detailed appearance.
+
+### Checkpoint 0.5 — Appearance and background established
+
+- Baseline build: **lean and athletic**, **5'10"**, **light tan skin**.
+- Hair: **red, short and neat**.
+- Eyes: **gold**; glow during ability use and remain continuously lit throughout battle/power-up transformation.
+- Baseline form is mostly human with subtle draconic eyes/fangs and barely noticeable **crimson-red** scales, including patches around the collarbone, ribs, and hips.
+- Short swept-back horns, wings, and tail are latent and appear only during battle/power-up states.
+- Transformation aesthetic uses the player-provided reference image as a vibe anchor: radiant, dramatic, crimson-and-gold draconic power around a humanoid form.
+- Background arc: **Pleasure Cult Survivor → brought into temple life by a Temple-Bound Acolyte → eventually left to become a Wandering Mystic**.
+- Social style: **smooth, flirtatious, and teasing**.
+- Names and exact details for the pleasure cult, temple/order, and Temple-Bound Acolyte remain unresolved.
+- Current creation step: level-1 features and skill proficiencies.
