@@ -54,8 +54,9 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Face / expression:** Sharp expressive features; alert, self-possessed, often the beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers beneath a short hooded mantle, practical stealth gear, muted brass buckles, minimal ornament.
 - **Weapons:** Slim shortblade at hip; compact hand crossbow.
-- **Relationship visual rule:** DevilMedlar repeatedly compliments Nyxara and she generally answers with dry amusement. Turn 8's brief chest/hip contact was an accidental cramped-space bump, immediately apologized for, not deliberate sexual touching. Later apologies and flirtatious comments do not alter the consent rule. Light teasing and close tactical body language are appropriate; **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
-- **Turn 10 visual note:** Before combat DevilMedlar again complimented her attractiveness, apologized, wished her luck, and suggested they talk after. Nyxara accepted the apology, maintained her boundary, and returned dry flirtatious banter. This changes relationship tone only, not physical canon.
+- **Relationship visual rule:** DevilMedlar repeatedly compliments Nyxara and she generally answers with dry amusement. Turn 8's brief chest/hip contact was an accidental cramped-space bump, immediately apologized for, not deliberate sexual touching. Later apologies/flirting do not alter the consent rule. Light teasing and close tactical body language are appropriate; **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
+- **Turn 10 visual note:** Before combat DevilMedlar again complimented her attractiveness, apologized, wished her luck, and suggested they talk after. Nyxara accepted the apology, maintained her boundary, and returned dry flirtatious banter.
+- **Turn 11 visual note:** Nyxara may be shown kneeling/crouching while securing the unconscious captive with rope or standing beside DevilMedlar while reviewing the ledger. Their body language can be more relaxed after the fight with light teasing eye contact, but no established romance or intimacy.
 - **Personal-story caution:** A woman Nyxara loves is the important name in the Velvet Coil ledger, but the woman's identity and appearance remain unestablished. Do not depict her yet.
 
 ### Captured Likely Velvet Coil Carver
@@ -66,8 +67,8 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Turn 8 silhouette:** Hooded figure behind broken masonry.
 - **Weapon:** Compact crossbow.
 - **Evidence:** Pale shrine-stone dust on boots; stone-carving chisel at belt.
-- **Carried object:** Dark cross-body satchel with the edge of a thick leather-bound book-sized object visible, likely but not yet confirmed to be the stolen ledger.
-- **Turn 10 state:** Unconscious and stable after one nonlethal Dawnclaw strike. Compact crossbow dropped nearby; chisel and satchel remain on his body unless removed in later play.
+- **Turn 10 state:** Unconscious and stable after one nonlethal Dawnclaw strike.
+- **Turn 11 state:** Fully disarmed and securely bound with DevilMedlar's hempen rope around wrists, ankles, and torso. Satchel and weapons removed. He remains unconscious/stable.
 
 ## Signature Equipment & Visual Effects
 
@@ -93,6 +94,14 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Unusually warm since the Lantern Road Velvet Coil mark discovery.
 - Turn 7: one brief stronger heat pulse when oriented deeper into the culvert.
 - If shown, use only restrained warm gold light. Do not visually reveal hidden lore or powers.
+
+### Confirmed Velvet Coil Ledger
+
+- Thick, worn, leather-bound book of practical ledger size.
+- Exterior should be understated rather than obviously magical.
+- Inner pages contain dense names, dates, payment marks, routes, and coded symbols.
+- A subtle black spiral/coil notation may appear inside as a recognition mark.
+- Turn 11 confirmed the book is genuine. Do not visually reveal the undisclosed woman's name.
 
 ### Draconic Effects
 
@@ -135,7 +144,8 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Small stone service chamber beyond first bend.
 - Broken masonry creates crouching/chest-high cover.
 - Damp reflective floor, dark stone, nearby iron pipe, low amber light against cooler tunnel shadow.
-- Turn 10 aftermath: likely carver unconscious/stable in chamber; compact crossbow dropped nearby; DevilMedlar and Nyxara uninjured.
+- Turn 10 aftermath: likely carver unconscious/stable in chamber; DevilMedlar and Nyxara uninjured.
+- Turn 11: captive bound/disarmed; hooded lantern and one oil flask recovered; a narrow eastward drainage passage continues deeper; a rusted vertical shaft rises to a grated surface exit. The shaft/grate should look old and noisy rather than secretly pristine.
 
 ## Generated Scene Art
 
@@ -176,7 +186,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 10:** No new image generated. Existing Turn 8 corrected art remains the latest scene image and its verified path is unchanged. Visual continuity now includes the Turn 10 aftermath: the likely carver is unconscious/stable in the maintenance chamber, his compact crossbow is dropped nearby, and DevilMedlar and Nyxara are uninjured. DevilMedlar's additional apology/flirtatious compliment changes no physical canon and does not alter consent boundaries.
+- **Session 1 Turn 11:** No new image generated. Existing Turn 8 corrected art remains the latest scene image and its verified path is unchanged. Visual continuity now includes the bound/disarmed captive, confirmed leather Velvet Coil ledger, hooded lantern/oil, eastward deeper passage, and rusted surface-service shaft. DevilMedlar and Nyxara remain uninjured; their post-fight flirtation changes relationship tone only and does not establish romance or alter consent boundaries.
 
 For each future scene, record:
 - scene/session identifier
