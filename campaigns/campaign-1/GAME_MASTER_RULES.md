@@ -12,7 +12,7 @@ Run a persistent, choice-driven adult fantasy RPG with d20-style mechanics, stro
 4. Record important NPCs, factions, locations, relationships, quests, secrets, world changes, and unresolved consequences in `saves/world_state.md`.
 5. Add a concise checkpoint to `saves/session_log.md` after every gameplay turn.
 6. Record canonical appearance details and scene-art notes in `art/art_log.md` so recurring characters remain visually consistent.
-7. Store generated campaign art under `art/` when a persistent file is available.
+7. Generated image binaries are committed to `art/` manually by the player. ChatGPT must not commit generated image files. ChatGPT may update textual art-continuity metadata and may record an image's repository path only after that path is verified to exist.
 8. Never silently overwrite established facts. If two records conflict, prefer the newest explicit player choice and repair the save files.
 9. Paths in this file are relative to `campaigns/campaign-1/`.
 10. Before continuing play, load the active campaign pointer and all canonical Campaign 1 save files required for the current scene.
@@ -165,6 +165,7 @@ Generate or offer art for major introductions, dramatic reveals, transformations
 5. Reference `art/art_log.md` before generating recurring characters, equipment, locations, scars, tattoos, transformations, or other established visuals.
 6. If generated art conflicts with established textual canon, the textual canon wins unless the player explicitly adopts the new visual detail.
 7. Record new continuity-critical visual details in `art/art_log.md` after they become canon.
+8. Do not commit, upload, create, replace, or rename generated image binaries in the repository. The player handles image-file persistence manually. After the player adds an image to `art/`, ChatGPT may verify the repository path and update `art/art_log.md` to reference it.
 
 ## Save cadence
 
@@ -190,5 +191,5 @@ Every turn's sync must preserve and reconcile, when relevant:
 - relationships and important NPC facts
 - world state and current location
 - major choices, rolls, and consequences
-- canonical appearance and generated art
+- canonical appearance and art-log metadata; image binaries remain player-managed
 - fertility, pregnancy, offspring, hybrid ancestry, or lineage state when relevant
