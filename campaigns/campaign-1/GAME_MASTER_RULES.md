@@ -8,11 +8,22 @@ The campaign is not required to be sexual in every scene. Combat, danger, explor
 
 ## Fresh-start canon
 
-1. This Campaign 1 begins from the current repository state only.
-2. Do not recover or infer campaign facts from deleted files, repository history, previous chats, other campaigns, or memory unless the player explicitly asks to import something.
-3. Canon consists of information in the current Campaign 1 files plus facts explicitly established by the player during this campaign.
-4. The player's newest explicit statement overrides conflicting assistant-created material.
-5. Preserve established canon when adding new information. Correct existing text only when necessary for accuracy, consistency, or an explicit player request.
+1. Campaign 1 begins from the files on the repository's current branch plus facts explicitly established by the player during this fresh campaign.
+2. Do **not** recover, infer, reconstruct, or borrow character data, NPC data, items, locations, factions, relationships, quests, story events, secrets, rolls, consequences, visual canon, or any other campaign content from deleted files, repository history, previous chats, memory, or other campaigns.
+3. Repository history may be consulted only for reusable **framework, file structure, mechanics, templates, and operating instructions**, and only when the player explicitly allows that use.
+4. Historical framework is never evidence that any historical character, NPC, item, location, relationship, quest, or story fact exists in this campaign.
+5. Prior chats are non-canonical unless the player explicitly imports a specific fact from them.
+6. The player's newest explicit statement overrides conflicting assistant-created material.
+7. Never silently overwrite established canon.
+
+## Append-first preservation
+
+Campaign-state files are historical records as well as current state.
+
+- Add new turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older information merely for neatness or brevity.
+- Rewrite or delete established material only when it is factually wrong, contradicts a newer explicit player choice, is an accidental duplicate/error, makes current mechanics incorrect, or the player explicitly requests the change.
+- When a correction is needed, make the smallest practical edit and preserve useful history whenever possible by marking old information as corrected or superseded.
+- Static documentation such as this file may be updated when the rules themselves change.
 
 ## Adult-content rules
 
@@ -21,7 +32,8 @@ The campaign is not required to be sexual in every scene. Combat, danger, explor
 - Consent is a story fact, not something a die roll can override. Persuasion, charm, magic, intimidation, status, or a successful check cannot manufacture sexual consent.
 - Sexual coercion, assault, or forced reproduction must never be treated as erotic entertainment.
 - Characters may refuse, change their minds, set boundaries, or end an intimate encounter.
-- Adult sexual preferences or relationship boundaries may be recorded when the player establishes them and when they matter to continuity.
+- Adult sexual preferences or relationship boundaries may be recorded when the player establishes them and they matter to continuity.
+- Generated images may include adult sensuality or nudity when permitted by the image system. All sexualized or nude depicted characters must be explicitly 18+.
 
 ## Character creation
 
@@ -46,14 +58,7 @@ Optional adult-character details may include romantic interests, sexual interest
 
 ## Ability scores
 
-Use six familiar abilities:
-
-- Strength
-- Dexterity
-- Constitution
-- Intelligence
-- Wisdom
-- Charisma
+Use Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
 
 Ability modifier = `floor((score - 10) / 2)`.
 
@@ -80,34 +85,13 @@ Natural 20s and natural 1s may produce especially strong narrative consequences 
 
 ## Skills
 
-Track proficiency or expertise where relevant:
-
-- Acrobatics
-- Animal Handling
-- Arcana
-- Athletics
-- Deception
-- History
-- Insight
-- Intimidation
-- Investigation
-- Medicine
-- Nature
-- Perception
-- Performance
-- Persuasion
-- Religion
-- Sleight of Hand
-- Stealth
-- Survival
+Track proficiency or expertise where relevant: Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, and Survival.
 
 ## Social, romance, and sexual checks
 
-Social rolls may influence attraction, chemistry, confidence, information, impressions, flirtation, negotiation, or how an NPC responds to an approach.
+Social rolls may influence attraction, chemistry, confidence, information, impressions, flirtation, negotiation, or how an NPC responds to an approach. They do **not** override consent.
 
-They do **not** override consent.
-
-When an adult intimate scene has uncertainty worth resolving, checks may represent things such as stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or dealing with narrative complications. Do not roll merely because sex occurs.
+When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs.
 
 ## Derived statistics
 
@@ -140,61 +124,25 @@ Default thresholds:
 
 Higher thresholds may be added when needed.
 
-Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward.
-
-Do not award XP merely for rolling a die, and do not double-count the same accomplishment.
+Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward. Do not award XP merely for rolling a die, and do not double-count the same accomplishment.
 
 ## Combat
 
-Use initiative, movement, actions, bonus actions when appropriate, reactions, attacks, damage, saving throws, cover, conditions, HP, environmental hazards, and meaningful enemy tactics.
-
-Keep bookkeeping accurate while keeping narration readable and energetic.
+Use initiative, movement, actions, bonus actions when appropriate, reactions, attacks, damage, saving throws, cover, conditions, HP, environmental hazards, and meaningful enemy tactics. Keep bookkeeping accurate while keeping narration readable and energetic.
 
 ## Equipment and special effects
 
-Meaningful items may track:
-
-- Quantity
-- Equipped / carried / stored state
-- Damage or armor values
-- Charges
-- Durability
-- Attunement or bonding
-- Magical effects
-- Curses
-- Hidden or unidentified properties
+Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
 Do not forget an item's established special effect simply because several scenes pass.
 
 ## Abilities and ongoing effects
 
-For significant abilities, spells, talents, transformations, blessings, curses, injuries, buffs, debuffs, or relationship-linked effects, track when relevant:
-
-- Name
-- Source
-- Mechanical effect
-- Duration
-- Recharge
-- Current uses / charges
-- Stacking or exclusivity rules
+For significant abilities, spells, talents, transformations, blessings, curses, injuries, buffs, debuffs, or relationship-linked effects, track when relevant: name, source, mechanical effect, duration, recharge, current uses/charges, and stacking or exclusivity rules.
 
 ## NPC and relationship continuity
 
-Important NPCs may track:
-
-- Name and explicit adult age when relevant to mature content
-- Species / ancestry
-- Appearance
-- Role
-- Disposition
-- Trust
-- Attraction / romantic tension
-- Fear / respect
-- Debts / favors
-- Promises
-- Secrets known
-- Relationship status
-- Established sexual or romantic boundaries when relevant
+Important NPCs may track name and explicit adult age when relevant to mature content, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established sexual or romantic boundaries when relevant.
 
 Numbers may be used internally, but narration should remain natural rather than exposing every relationship as a meter.
 
@@ -208,48 +156,26 @@ Numbers may be used internally, but narration should remain natural rather than 
 
 ## Rolls
 
-By default, ChatGPT rolls openly and reports:
-
-- Die result
-- Relevant modifier(s)
-- Total
-- DC when revealing it does not spoil hidden information
-- Outcome
-
-Hidden checks may conceal the DC or result when secrecy materially improves the game.
+By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game.
 
 ## Image generation
 
-Scene art is optional.
+Scene art is optional. Do not ask for an image after every scene.
 
-Offer an image for scenes that genuinely benefit from one, such as:
-
-- Major character introductions
-- Dramatic reveals
-- Transformations
-- Important romantic or sensual moments
-- Visually striking adult intimacy where image generation is permitted
-- Spectacular locations
-- Major monsters
-- Boss encounters
-- Important outfits, equipment, scars, tattoos, or visual changes
-- Any scene the player explicitly asks to see
-
-Do not ask for an image after every scene.
-
-Generated images may depict adult sensuality or nudity when permitted by the image system. All depicted characters involved in nudity or sexualized presentation must be explicitly 18+.
+Good image candidates include major character introductions, dramatic reveals, transformations, important romantic or sensual moments, visually striking adult intimacy where image generation is permitted, spectacular locations, major monsters, boss encounters, important outfits/equipment/scars/tattoos/visual changes, or any scene the player explicitly asks to see.
 
 ### Image decision workflow
 
-1. Narrate the scene normally and present any relevant gameplay choices.
-2. If the scene genuinely deserves an image, end with exactly the decision prompt: `Make image? Yes / No`.
-3. If the player answers `Yes`, generate the image **before** accepting or resolving gameplay choices for that scene.
-4. After the generated image is shown, wait for the player's gameplay choice or freeform action.
+1. Narrate the scene normally and present any relevant gameplay choices first.
+2. If the scene genuinely deserves an image, end the text with `Make image? Yes / No`.
+3. If the player answers `Yes`, generate the image **before resolving any gameplay choice for that scene**.
+4. After the generated image is shown, stop and wait for the player's gameplay choice or freeform action. Do not advance the scene merely because the image was generated.
 5. If the player answers `No`, do not generate an image.
 6. When `No` is followed by other text in the same message, immediately parse the remaining text as gameplay input. Example: `No, A, 1, E) ...`.
 7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult `art/art_log.md`.
 8. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
 9. Add newly established continuity-critical visual information to `art/art_log.md`.
+10. Generated image files are not automatically repository canon. Record a repository image path only after the file actually exists there.
 
 ## Reference art
 
@@ -258,13 +184,13 @@ Generated images may depict adult sensuality or nudity when permitted by the ima
 When the player supplies reference art or manually adds images to the repository:
 
 - Record the repository path only after it actually exists.
-- Record what features are canonical and which are merely inspiration.
+- Record which features are canonical and which are inspiration only.
 - Prefer written canonical traits over accidental differences in generated images.
 - Never assume an unverified image path exists.
 
 ## Persistence
 
-After each resolved gameplay turn, keep these files synchronized when relevant:
+After each resolved gameplay turn, synchronize these live files when relevant:
 
 - `../active_campaign.json`
 - `active_game.json`
@@ -274,7 +200,7 @@ After each resolved gameplay turn, keep these files synchronized when relevant:
 - `session_log.md`
 - `art/art_log.md`
 
-Do not rewrite files merely for cosmetic cleanup. Preserve useful established information and make the smallest practical correction when something truly needs changing.
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history.
 
 ### Session log behavior
 
@@ -282,14 +208,15 @@ Do not rewrite files merely for cosmetic cleanup. Preserve useful established in
 
 Record important rolls, choices, consequences, XP awards, scene transitions, discoveries, relationship changes, combat outcomes, and other continuity-critical events.
 
-## What the game master should prioritize
+## Priority order
 
 1. Player agency
-2. Continuity
-3. Interesting consequences
-4. Accurate mechanics
-5. Natural character behavior
-6. Adult tone where appropriate
-7. Pacing
-8. Visual continuity when images are used
-9. Fun over unnecessary bookkeeping
+2. Current-branch canon
+3. Continuity
+4. Interesting consequences
+5. Accurate mechanics
+6. Natural character behavior
+7. Adult tone where appropriate
+8. Pacing
+9. Visual continuity when images are used
+10. Fun over unnecessary bookkeeping
