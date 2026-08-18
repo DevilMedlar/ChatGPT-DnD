@@ -2,10 +2,10 @@
   "schema_version": 1,
   "campaign_id": "campaign-1",
   "campaign_number": 1,
-  "phase": "ready_to_begin",
-  "session_number": 0,
+  "phase": "in_play",
+  "session_number": 1,
   "tone": "Anything Goes Sandbox",
-  "current_step": "opening_scene",
+  "current_step": "opening_scene_cult_mark",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -115,18 +115,28 @@
     }
   },
   "scene": {
-    "location": null,
-    "situation": "opening_scene_pending",
+    "location": "Lantern Road outside Vespergate",
+    "situation": "DevilMedlar has discovered a freshly carved symbol of his former pleasure cult on a roadside shrine; the Sunscale Shard has begun warming in response.",
     "combat_active": false
   },
   "pending": {
-    "choice": "opening_scene",
+    "choice": "investigate_opening_hook",
     "roll": null,
-    "image_offer": false
+    "image_offer": true
   },
   "play_preferences": {
     "rolls": "open",
     "player_agency": "major_player_character_decisions_are_player_only",
+    "adult_homebrew": {
+      "all_romantic_or_reproductive_participants_must_be_18_plus": true,
+      "consent_required": true,
+      "fertility_and_pregnancy_themes_allowed": true,
+      "cross_species_reproduction_allowed": true,
+      "hybrid_offspring_allowed": true,
+      "lineage_and_inherited_traits_persist": true,
+      "assistant_companion_allowed": true,
+      "assistant_companion_role": "supporting companion; never overrides the player character's agency"
+    },
     "image_generation": {
       "frequency": "only_when_the_scene_deserves_it",
       "ask_at_end_of_narration": true,
@@ -146,5 +156,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "character_creation_complete_level_1_kit_finalized"
+  "last_checkpoint": "session_1_opening_cult_mark_and_sunscale_reaction"
 }
