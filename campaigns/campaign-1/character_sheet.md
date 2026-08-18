@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, and base ability scores. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, and skill proficiencies. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -53,7 +53,14 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Skills
 
-No proficiencies or expertise established.
+Established proficiencies:
+
+- **Acrobatics** — Dragon Ascendant training; mobility, balance, aerial/body control, and evasive martial movement.
+- **Insight** — Dragon Ascendant discipline; reading intent, emotional control, and meditative awareness.
+- **History** — Lost Dragon Clan Heir background; Clan Aurivane lineage, draconic houses, inherited traditions, and historical context.
+- **Persuasion** — Lost Dragon Clan Heir background; heir education, formal presence, negotiation, and representing a bloodline claim.
+
+No expertise established.
 
 ## Features / Abilities / Spells
 
