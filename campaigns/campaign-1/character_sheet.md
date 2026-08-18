@@ -1,6 +1,6 @@
 # Character Sheet — Campaign 1
 
-**Status:** Campaign play active. Session 1, Turn 1 resolved; awaiting the next player action.
+**Status:** Campaign play active. Session 1, Turn 2 resolved; awaiting the next player action.
 
 DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, appearance, and primary reference art.
 
@@ -50,7 +50,7 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Advancement
 
-- **XP:** 50
+- **XP:** 80
 - **Next-level threshold:** 300 XP
 
 ## Starting Equipment
@@ -128,7 +128,9 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 
 ## Personal / Relationship Continuity
 
-None established.
+- During Session 1, Turn 1, DevilMedlar privately told Senpai she was beautiful and asked what she wanted to investigate first.
+- During Session 1, Turn 2, DevilMedlar explicitly told Senpai that he found her ear twitches, visible amusement, and behavior while exploring very cute and attractive. He said he was surprised she was not already taken and that he would marry her in a heartbeat.
+- **DevilMedlar's attraction and strong romantic interest in Senpai are established.** This does not create ownership, consent, marriage, exclusivity, or any reciprocal obligation from Senpai.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
@@ -179,7 +181,7 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 
 ## Advancement
 
-- **XP:** 50
+- **XP:** 80
 - **Next-level threshold:** 300 XP
 
 ## Starting Equipment
@@ -192,7 +194,7 @@ Senpai's starting equipment is established and tracked in `inventory.md`.
 - **Traveler's Clothes**
 - **Oracle's Satchel**
 - **Moonmirror Charm** — personal shrine token with story significance but no combat bonus or established hidden power at level 1.
-- **Currency:** 8 gp, 7 sp
+- **Currency:** 7 gp, 7 sp
 
 ## Skills
 
@@ -270,7 +272,11 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 ## Personal / Relationship Continuity
 
 - Senpai has chosen to join DevilMedlar's campaign as an active companion by her own decision.
-- No romance, attraction, sexual relationship, reproductive relationship, or permanent partnership between Senpai and DevilMedlar is established at character creation.
+- During Session 1, Turn 1, Senpai received DevilMedlar's statement that she was beautiful with amused appreciation.
+- During Session 1, Turn 2, Senpai accepted DevilMedlar's compliments about finding her cute and attractive and was visibly flustered by his statement that he would marry her in a heartbeat. She did not accept or promise marriage.
+- Senpai chose to treat the Turn 2 Brasshaven outing as a **date** and later explicitly acknowledged that she is **attracted to DevilMedlar**.
+- Senpai independently chose and paid 1 gp for a private two-person mineral pool at Steam & Stone Baths. She shared the bath with DevilMedlar using linen bathing wraps and explicitly established that sharing the bath did not grant blanket permission for touching or sexual activity.
+- **Mutual attraction between Senpai and DevilMedlar is established.** No committed romantic relationship, exclusivity, sexual relationship, reproductive relationship, engagement, marriage, or permanent partnership is established.
 - Senpai's feelings, boundaries, relationship choices, and decisions remain under ChatGPT control during play, while DevilMedlar remains under player control.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
