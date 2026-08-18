@@ -20,7 +20,7 @@
 - **Ascendant Conduction:** While Golden Ascendant is active, a Dawnclaw hit may deal fire or radiant damage instead of bludgeoning. This changes the damage type only and adds no extra damage.
 - **Appearance:** Close-fitting dark bronze-gold articulated plates with fine sunburst filigree and narrow crimson inlays. When power is channeled, seams kindle gold-white with crimson edges.
 - **Bond:** Personal starting weapon set; not a +1 weapon and no hidden numerical bonus is assumed.
-- **Turn 9 tactical intent:** If the likely carver attacks and DevilMedlar closes to melee, DevilMedlar intends to use the Dawnclaws for a nonlethal takedown rather than killing him if possible.
+- **Turn 10 use:** DevilMedlar struck the likely carver with one Dawnclaw attack for `5 + 2 = 7` bludgeoning damage and explicitly declared it nonlethal, knocking the target unconscious and stable. The Dawnclaws were not damaged and no charge or limited resource was spent.
 
 #### Reinforced Wanderer's Vestments
 
@@ -59,6 +59,14 @@
 - **Status:** Unidentified. Hidden properties must be discovered through play.
 - **Curse:** None known.
 
+### Nearby Unclaimed / Secured Scene Items
+
+These are **not yet part of DevilMedlar's inventory** and remain scene objects until explicitly taken, searched, or assigned.
+
+- Captured carver's compact crossbow, dropped in the maintenance chamber.
+- Captured carver's stone-carving chisel, still on his belt unless removed next turn.
+- Captured carver's dark cross-body satchel, still worn. A thick leather-bound book-sized object is visible within; it is likely the stolen Velvet Coil ledger but remains unverified and unlooted.
+
 ## Last Turn Sync
 
-- **Session 1 Turn 9:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. Dawnclaws remain ready for a possible nonlethal capture. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
+- **Session 1 Turn 10:** No equipment was lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. DevilMedlar took no damage. Enemy equipment remains unclaimed scene property pending the player's next action. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
