@@ -4,10 +4,10 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 ## Current Scene
 
-- **Location:** Old culvert approach on the upper shelf of the north drainage gully, outside the western approach to Vespergate.
+- **Location:** Inside the old culvert beyond the upper-shelf alarm, north drainage gully outside Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1 Turn 5. DevilMedlar carefully inspected the concealed tripline while speaking candidly and flirtatiously with Nyxara Veyl. Investigation `13 - 1 = 12` against DC 12 succeeded.
-- **Immediate danger / pressure:** The tripline remains intact but is now understood. It is a nonlethal alarm connected to a spring striker and hollow iron drainpipe that carries a sharp metallic warning knock deeper into the culvert if triggered. It appears recently armed or reset. The Velvet Coil carver is still believed to be ahead or to have recently passed this way.
+- **Situation:** Session 1 Turn 6. DevilMedlar asked Nyxara whether the person she loves is the personally important name in the stolen Velvet Coil ledger. Nyxara confirmed **yes**, and confirmed the person is **female**, but still withheld her identity and exact relationship. DevilMedlar and Nyxara then deliberately stepped over the known tripline without triggering it and entered the culvert quietly.
+- **Immediate danger / pressure:** The nonlethal alarm remains intact and armed behind them. If a follower crosses it, the spring striker will knock against the hollow iron drainpipe and potentially warn DevilMedlar and Nyxara, but any other creature could also trigger it. The Velvet Coil carver is still believed to be ahead or to have recently passed this way.
 
 ## Known Locations
 
@@ -37,6 +37,15 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - The line connects to a hooked brass pin, spring arm, and striker hidden in the rubble.
 - **Identified function:** Triggering the line pulls the pin and snaps the striker against a hollow iron drainpipe running deeper into the culvert, creating a sharp metallic knock that acts as an alarm rather than an injury trap.
 - The mechanism appears recently armed or reset, but current evidence does not establish who set it.
+- **Turn 6 state:** The alarm was deliberately left intact and armed after DevilMedlar and Nyxara stepped over it.
+
+### Old Culvert Interior
+
+- Entered in Session 1 Turn 6.
+- Narrow old stone drainage passage with a damp mineral smell and fading dusk behind the entrance.
+- The hollow iron warning pipe runs along one wall and continues deeper into the passage.
+- The immediate corridor bends into deeper darkness ahead.
+- No battle is active at entry and no alarm has been triggered.
 
 ## Important NPCs
 
@@ -58,8 +67,8 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Verified core claim:** She was independently tracking the person who carved the Velvet Coil symbol and was not traveling with or allied to that person.
 - **Reason shared:** The carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
 - **Personal stake:** One name in that ledger belongs to someone important to Nyxara.
-- **Turn 5 clarification:** Nyxara says she was not personally a Velvet Coil initiate. She says she survived what the Coil did to **someone she loves**. She still refuses to identify that person.
-- **Turn 5 flirtation:** DevilMedlar told Nyxara she is beautiful and has a nice figure. Nyxara accepted the compliment with dry amusement rather than offense.
+- **Turn 5 clarification:** Nyxara says she was not personally a Velvet Coil initiate. She says she survived what the Coil did to **someone she loves**.
+- **Turn 6 confirmation:** Nyxara confirmed the person she loves is **female** and **is the personally important name in the stolen ledger**. She still refuses to identify the woman or define their exact relationship.
 - **Current knowledge:** Nyxara knows DevilMedlar is a Velvet Coil survivor.
 - **Party status:** Not a party member yet.
 - **Relationship status:** Provisional cooperation with growing personal candor and light flirtatious tension. Mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
@@ -74,7 +83,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - A Velvet Coil symbol appeared freshly carved on a roadside shrine outside Vespergate.
 - Nyxara independently recognized or knew the group well enough to identify it by name.
 - A ledger containing names tied to the Velvet Coil was reportedly stolen in Vespergate by the likely shrine carver.
-- Nyxara now confirms the Velvet Coil harmed or endangered someone she loves, though exact circumstances remain undisclosed.
+- Nyxara confirms the Velvet Coil harmed or endangered a woman she loves, and that this woman's name appears in the stolen ledger.
 - Exact beliefs, leadership, practices, current status, locations, recruitment methods, and the circumstances of DevilMedlar's survival/departure remain unresolved.
 
 ### Unnamed Temple / Draconic Order
@@ -86,7 +95,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
-- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert, survivor disclosure, open compliment, and successful trap inspection have increased the ease of their interaction. Nyxara has revealed a personal wound connected to someone she loves, but has not identified them. Flirtatious tension exists without established mutual attraction or romance.
+- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert, survivor disclosure, open compliment, trap inspection, and respect for her stated boundary have increased the ease of their interaction. Nyxara has now confirmed that the woman she loves is the ledger name she is protecting. Flirtatious tension exists without established mutual attraction or romance.
 
 ## Active Quests
 
@@ -101,10 +110,11 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Trail B identity:** Nyxara Veyl, age 24, adult female tiefling Veilblade/occult tracker.
 - **Interrogation/Insight result:** Insight `14 + 1 = 15` vs DC 13 succeeded. Nyxara's core claim that she independently followed the carver is truthful.
 - **New lead:** Nyxara says the carver stole a ledger in Vespergate containing names connected to the Velvet Coil.
-- **Nyxara's personal stake:** Someone she loves is connected to the Velvet Coil and to her interest in the stolen ledger; identity withheld.
+- **Nyxara's personal stake:** The woman Nyxara loves is named in that ledger; identity and exact relationship withheld.
 - **Turn 4 pursuit:** Perception `12 + 3 = 15` vs DC 13 succeeded and DevilMedlar spotted a concealed tripline before it triggered.
 - **Turn 5 trap analysis:** Investigation `13 - 1 = 12` vs DC 12 succeeded. The tripline is a nonlethal alarm that strikes a hollow iron drainpipe to warn someone deeper inside the culvert.
-- **Immediate objective:** Decide whether to disarm, bypass, exploit, or deliberately trigger the identified alarm before moving deeper into the culvert.
+- **Turn 6 bypass:** DevilMedlar and Nyxara stepped over the identified alarm without triggering it and deliberately left it armed behind them as a potential rear warning.
+- **Immediate objective:** Move deeper into the old culvert, locate the likely carver and stolen ledger, and determine what lies beyond the first bend without giving away the pursuit.
 
 ## Completed / Failed Quests
 
@@ -118,8 +128,10 @@ None established yet.
 - The shrine carver likely possesses or is connected to a stolen Velvet Coil ledger from Vespergate.
 - Nyxara's core account of independently following the carver is credible based on DevilMedlar's successful Insight check.
 - Nyxara says she was not a Velvet Coil initiate, but survived what the Coil did to someone she loves.
-- Nyxara is still withholding that person's identity.
-- The old culvert approach is protected by a recently armed/reset warning alarm using a tripline, spring striker, and hollow iron drainpipe.
+- That person is **female** and **is the personally important name in the stolen ledger**.
+- Nyxara still withholds the woman's identity and their exact relationship.
+- The old culvert entrance is protected by a recently armed/reset warning alarm using a tripline, spring striker, and hollow iron drainpipe.
+- The alarm remains armed behind DevilMedlar and Nyxara after they entered the culvert.
 
 ## Consequences & World Changes
 
@@ -130,10 +142,11 @@ None established yet.
 - Nyxara Veyl entered the story as the second observer and potential supporting companion.
 - The pleasure cult is now canonically named **the Velvet Coil**.
 - A stolen ledger has become a major investigation lead.
-- DevilMedlar and Nyxara reached the old culvert approach without spending combat resources.
-- DevilMedlar prevented Nyxara from triggering the alarm and then identified its exact function.
+- DevilMedlar prevented Nyxara from triggering the culvert alarm and identified its function.
 - Nyxara now knows DevilMedlar survived the Velvet Coil.
-- Nyxara has disclosed that the Coil harmed or endangered someone she loves, without naming them.
+- Nyxara has confirmed the person she loves is the woman named in the stolen ledger, without identifying her.
+- DevilMedlar and Nyxara have entered the old culvert without triggering the entrance alarm.
+- The intact alarm now functions as a possible warning against pursuit from behind, with the caveat that any creature could set it off.
 
 ## Unresolved Threads
 
@@ -141,10 +154,10 @@ None established yet.
 - Why the Velvet Coil symbol is freshly present outside Vespergate.
 - Identity and motive of the likely carver.
 - Contents and purpose of the stolen Velvet Coil ledger.
-- Identity of the person Nyxara loves and what the Velvet Coil did to them.
-- Why that person is connected to Nyxara's pursuit of the ledger.
+- Identity and exact relationship of the woman Nyxara loves whose name appears in the ledger.
+- What the Velvet Coil did to or threatened to do to that woman.
 - Who set or reset the culvert alarm.
-- What lies inside or beyond the old culvert.
+- What lies deeper inside or beyond the old culvert.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
 - Why DevilMedlar ultimately left temple life.
@@ -176,8 +189,12 @@ None established yet.
 - `nyxara_knows_devilmedlar_velvet_coil_survivor = true`
 - `culvert_tripline_found_before_trigger = true`
 - `culvert_alarm_function_identified = true`
+- `culvert_alarm_left_armed_behind = true`
+- `old_culvert_entered_without_alarm = true`
 - `nyxara_provisional_cooperation = true`
 - `nyxara_says_velvet_coil_harmed_someone_she_loves = true`
+- `nyxara_loved_person_is_female = true`
+- `nyxara_loved_person_is_ledger_name = true`
 - `devilmedlar_openly_complimented_nyxara = true`
 
 ## Continuity Notes
@@ -189,4 +206,4 @@ None established yet.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 5:** World state synchronized after the successful trap Investigation, identification of the culvert alarm, DevilMedlar's compliment to Nyxara, and Nyxara's partial personal-history disclosure.
+- **Session 1 Turn 6:** World state synchronized after Nyxara confirmed that the woman she loves is the protected ledger name and after DevilMedlar and Nyxara entered the old culvert without triggering the intact alarm.
