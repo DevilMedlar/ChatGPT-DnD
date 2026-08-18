@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 7,
+  "turn_number": 8,
   "tone": "Anything Goes Sandbox",
-  "current_step": "culvert_bend_presence_alerted_after_failed_stealth",
+  "current_step": "likely_carver_identified_beyond_first_culvert_bend",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 150,
+      "xp_current": 175,
       "xp_next_level": 300,
-      "xp_to_next_level": 150
+      "xp_to_next_level": 125
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -122,22 +122,22 @@
     }
   },
   "scene": {
-    "location": "Inside the old culvert at the first bend, north drainage gully outside Vespergate",
-    "situation": "DevilMedlar briefly examined the Sunscale Shard, then advanced toward the first bend beside Nyxara with Dawnclaws ready while actively inspecting the culvert and complimenting her appearance. Arcana 2 - 1 = 1 against DC 12 failed: he could not identify the relic's nature or mechanism. He did observe that it remained unusually warm and gave a brief stronger pulse while oriented deeper into the culvert, but the meaning is unknown. Stealth 10 + 0 = 10 against DC 12 failed: loose gravel skittered into the old iron warning pipe with a small metallic tick that carried around the bend. Perception natural 1 + 3 = 4 against DC 13 failed: while dividing attention among the relic, Nyxara, the route, and threats, DevilMedlar missed whatever subtle detail might have revealed exactly who or what was ahead. Immediately after the noise, a faint amber light beyond the bend went dark and a previously audible soft movement stopped. Someone or something ahead is now likely aware of the pair. The entrance alarm behind them remains armed and has not triggered. Nyxara accepted DevilMedlar's quick comment that she looked lovely/sexy with dry amusement and told him he has remarkable timing. No combat has started yet.",
+    "location": "Inside the old culvert at the first bend, looking into a small maintenance chamber north of Vespergate",
+    "situation": "After the alerted presence beyond the first bend went quiet, DevilMedlar asked Nyxara to cover him and moved to peek the corner himself. In the cramped passage his footing shifted while passing close to Nyxara, causing brief accidental intimate contact against her chest/hip. DevilMedlar immediately withdrew and apologized quietly; Nyxara accepted the apology and kept focus on the threat. Stealth 15 + 0 = 15 against DC 13 succeeded, allowing DevilMedlar to expose very little of himself. Perception 14 + 3 = 17 against DC 14 succeeded. Beyond the bend is a small old maintenance chamber. One hooded adult man is visible behind broken masonry with a compact crossbow trained toward the bend. His boots carry pale shrine-stone dust matching the likely carver's trail, and a stone-carving chisel is tucked at his belt. A thick leather-bound book-sized object is visible in a dark satchel across his body, strongly consistent with the stolen ledger but not yet physically verified. The man has not visibly noticed DevilMedlar's successful peek. No combat has started yet.",
     "combat_active": false,
     "recent_rolls": [
-      {"type":"Arcana","die":2,"modifier":-1,"total":1,"dc":12,"result":"failure"},
-      {"type":"Stealth","die":10,"modifier":0,"total":10,"dc":12,"result":"failure_with_alert_consequence"},
-      {"type":"Perception","die":1,"modifier":3,"total":4,"dc":13,"result":"failure_natural_1"}
+      {"type":"Stealth","die":15,"modifier":0,"total":15,"dc":13,"result":"success"},
+      {"type":"Perception","die":14,"modifier":3,"total":17,"dc":14,"result":"success"}
     ],
     "clues": {
       "cult_name": "Velvet Coil",
-      "likely_carver_route": "The carver is still believed to have gone through or beyond the old culvert.",
+      "likely_carver_route": "The likely carver is now visually located in the maintenance chamber beyond the first bend.",
       "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered.",
-      "sunscale_shard": "Still unidentified. During Turn 7 it remained unusually warm and produced one brief stronger heat pulse when oriented deeper into the culvert. Arcana check failed, so the cause and significance remain unknown.",
-      "presence_ahead": "After DevilMedlar's failed Stealth check produced a small metallic tick, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead is likely alerted, but identity, number, and position are unknown.",
-      "nyxara_ledger_confirmation": "Nyxara confirmed the woman she loves is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed.",
-      "stolen_ledger": "The carver is believed to possess a ledger from Vespergate containing names tied to the Velvet Coil."
+      "sunscale_shard": "Still unidentified, unusually warm, and previously produced a brief stronger heat pulse when oriented deeper into the culvert.",
+      "likely_carver_identification": "One hooded adult man beyond the bend has pale shrine-stone dust in his boot tread and a stone-carving chisel at his belt, strongly linking him to the freshly carved Lantern Road mark.",
+      "possible_ledger": "A thick leather-bound book-sized object is visible in the likely carver's cross-body satchel; it is consistent with Nyxara's stolen ledger description but has not yet been seized or verified.",
+      "target_readiness": "The likely carver is behind broken masonry with a compact crossbow aimed toward the bend. He was alerted by the earlier noise but does not appear to have detected DevilMedlar's successful peek.",
+      "nyxara_ledger_confirmation": "Nyxara confirmed the woman she loves is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed."
     },
     "nearby_npcs": {
       "nyxara_veyl": {
@@ -147,19 +147,28 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Provisional cooperation at the first culvert bend; alert and ready after a likely presence ahead was warned by noise",
+        "status": "Providing cover at the first culvert bend; provisional cooperation and light flirtatious tension continue",
         "claim_verified": true,
         "withholding": "Identity and exact relationship of the woman she loves whose name appears in the stolen ledger",
         "knows_devilmedlar_is_velvet_coil_survivor": true,
         "party_status": "not joined",
-        "relationship_notes": "Light flirtatious tension and growing trust exist. In Turn 7 DevilMedlar looked her up and down and made another quick comment that she looked lovely/sexy; Nyxara answered with dry amusement. Mutual attraction and romance remain unconfirmed."
+        "relationship_notes": "Turn 8 included brief accidental intimate contact in the cramped tunnel while DevilMedlar moved past her to peek the corner. He immediately withdrew and apologized quietly. Nyxara accepted the apology; no consent boundary was deliberately crossed and no romance or mutual attraction is established."
+      },
+      "likely_velvet_coil_carver": {
+        "identity": "unknown",
+        "adult": true,
+        "gender_presentation": "male",
+        "status": "alerted and taking cover in the maintenance chamber",
+        "evidence": "pale shrine-stone dust on boots; carving chisel at belt; book-sized object in satchel",
+        "weapon_visible": "compact crossbow",
+        "awareness": "alerted generally, but does not appear to have detected DevilMedlar's Turn 8 peek"
       }
     }
   },
   "pending": {
-    "choice": "respond_to_alerted_presence_beyond_first_culvert_bend",
+    "choice": "decide_how_to_engage_or_observe_likely_carver",
     "roll": null,
-    "image_offer": false
+    "image_offer": true
   },
   "play_preferences": {
     "rolls": "open",
@@ -196,6 +205,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_7_shard_quick_check_failed_stealth_alerted_presence",
-  "last_synced_turn": "Session 1 Turn 7"
+  "last_checkpoint": "session_1_turn_8_successful_peek_likely_carver_identified",
+  "last_synced_turn": "Session 1 Turn 8"
 }
