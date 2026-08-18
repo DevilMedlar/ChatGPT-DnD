@@ -4,10 +4,10 @@
   "session_number": 0,
   "turn_number": 0,
   "current_scene": null,
-  "current_step": "class_selection",
+  "current_step": "background_selection",
   "current_location": null,
   "character_created": false,
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "Character creation is in progress. DevilMedlar (20, male, he/him) is established as a Radiant-affinity Draginkin. Senpai (20, female, she/her) has partial identity canon established but no ancestry yet. No NPC, item, location, relationship, quest, or story canon has been established."
+  "last_sync_note": "Character creation is in progress. DevilMedlar (20, male, he/him) is established as a Radiant-affinity Draginkin with the Dragon Ascendant homebrew class. Senpai (20, female, she/her) has partial identity canon established but no ancestry yet. No NPC, item, location, relationship, quest, or story canon has been established."
 }
