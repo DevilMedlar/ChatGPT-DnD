@@ -5,7 +5,7 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "ability_scores",
+  "current_step": "appearance",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -13,7 +13,16 @@
     "species_race": "Draginkin",
     "heritage": "Gold Dragon — fire/radiance affinity",
     "level": 1,
-    "archetype_path": "Dracolyte / Draconic Acolyte"
+    "archetype_path": "Dracolyte / Draconic Acolyte",
+    "dracolyte_focus": "Golden Ascendant",
+    "ability_scores": {
+      "strength": 12,
+      "dexterity": 10,
+      "constitution": 14,
+      "intelligence": 8,
+      "wisdom": 13,
+      "charisma": 15
+    }
   },
   "scene": {
     "location": null,
@@ -21,7 +30,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "ability_scores",
+    "choice": "appearance",
     "roll": null,
     "image_offer": false
   },
@@ -47,5 +56,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "archetype_and_gold_heritage_set"
+  "last_checkpoint": "ability_scores_and_golden_ascendant_set"
 }
