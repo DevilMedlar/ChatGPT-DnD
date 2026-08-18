@@ -139,9 +139,26 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - DevilMedlar looked Nyxara up and down and made a quick comment that she looked lovely/sexy. Nyxara answered with dry amusement about his timing. This continues light flirtatious tension but does not establish mutual attraction or romance.
 - **Stealth:** `10 + 0 = 10` vs DC 12, failure. Loose gravel skittered into old iron and produced a small metallic tick that carried around the bend.
 - **Perception:** natural `1 + 3 = 4` vs DC 13, failure. DevilMedlar failed to identify the hidden details, number, or exact position of whatever lay ahead.
-- Immediately after the Stealth failure, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead is now likely alerted.
-- The intact entrance alarm behind DevilMedlar and Nyxara did **not** trigger and remains armed.
-- No combat has started yet. No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
-- **XP:** No new XP yet. The failed checks created a live complication rather than resolving an accomplishment.
+- Immediately after the Stealth failure, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead became likely alerted.
+- The intact entrance alarm behind DevilMedlar and Nyxara did **not** trigger and remained armed.
+- No combat started. No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
+- **XP:** No new XP. The failed checks created a live complication rather than resolving an accomplishment.
 - **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 150/300.
-- **Current objective:** Respond to the likely alerted presence beyond the first culvert bend while continuing the pursuit of the carver and stolen ledger.
+
+### Checkpoint 1.8 - Eyes around the bend
+
+- DevilMedlar asked Nyxara to cover him and moved to peek around the first culvert bend himself.
+- While passing her in the cramped tunnel, his footing shifted and caused brief accidental intimate contact against Nyxara's chest/hip. DevilMedlar immediately withdrew and apologized quietly. Nyxara accepted the apology and remained focused on covering the bend. The accident did not establish consent to future touching or alter their relationship into romance.
+- **Stealth:** `15 + 0 = 15` vs DC 13, success. DevilMedlar exposed very little of himself and was not visibly detected during the peek.
+- **Perception:** `14 + 3 = 17` vs DC 14, success.
+- Beyond the bend is a small old maintenance chamber with broken masonry providing cover.
+- One hooded adult man is visible behind the masonry with a compact crossbow trained toward the bend.
+- Pale shrine-stone dust is packed into his boot tread and a stone-carving chisel hangs at his belt, strongly identifying him as the likely Lantern Road shrine carver.
+- A thick leather-bound book-sized object is visible in his cross-body satchel. It is strongly consistent with the stolen Velvet Coil ledger but has not yet been seized or verified.
+- The likely carver was alerted by Turn 7's noise but does not appear to have detected DevilMedlar's successful Turn 8 peek.
+- No second person is visible in the currently exposed chamber, though unseen exits/cover remain possible.
+- **XP:** +25 for recovering the lost tactical advantage, identifying the likely carver, and locating the probable ledger container without being detected.
+- **Current XP:** **175/300**.
+- No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
+- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 175/300.
+- **Current objective:** Decide how to engage, capture, challenge, ambush, or continue observing the likely carver while Nyxara provides cover.
