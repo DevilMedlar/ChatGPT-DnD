@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 6,
+  "turn_number": 7,
   "tone": "Anything Goes Sandbox",
-  "current_step": "culvert_entered_alarm_left_armed_nyxara_ledger_confirmed",
+  "current_step": "culvert_bend_presence_alerted_after_failed_stealth",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -48,7 +48,9 @@
       "perception": 3,
       "survival": 3,
       "insight": 1,
-      "investigation": -1
+      "investigation": -1,
+      "arcana": -1,
+      "stealth": 0
     },
     "heritage_features": {
       "fire_resistance": true,
@@ -120,19 +122,22 @@
     }
   },
   "scene": {
-    "location": "Inside the old culvert beyond the upper-shelf alarm, north drainage gully outside Vespergate",
-    "situation": "DevilMedlar asked Nyxara one final personal question for now: whether the man or woman she loves is the name in the stolen Velvet Coil ledger. Nyxara answered that yes, she is: the person is female and is the personally important name Nyxara has been protecting, but Nyxara still has not revealed her identity or exact relationship. DevilMedlar and Nyxara then carefully stepped over the already-identified alarm without triggering or altering it, leaving it armed behind them as a potential warning if someone follows. No roll was required because the tripline's exact position and function were already known and both characters moved deliberately. They entered the old culvert quietly. Inside, the passage is narrow old stone with damp mineral smell, the hollow iron warning pipe running along one wall, and fading dusk behind them. The immediate passage ahead bends into deeper darkness; the likely carver remains ahead or recently passed this route.",
+    "location": "Inside the old culvert at the first bend, north drainage gully outside Vespergate",
+    "situation": "DevilMedlar briefly examined the Sunscale Shard, then advanced toward the first bend beside Nyxara with Dawnclaws ready while actively inspecting the culvert and complimenting her appearance. Arcana 2 - 1 = 1 against DC 12 failed: he could not identify the relic's nature or mechanism. He did observe that it remained unusually warm and gave a brief stronger pulse while oriented deeper into the culvert, but the meaning is unknown. Stealth 10 + 0 = 10 against DC 12 failed: loose gravel skittered into the old iron warning pipe with a small metallic tick that carried around the bend. Perception natural 1 + 3 = 4 against DC 13 failed: while dividing attention among the relic, Nyxara, the route, and threats, DevilMedlar missed whatever subtle detail might have revealed exactly who or what was ahead. Immediately after the noise, a faint amber light beyond the bend went dark and a previously audible soft movement stopped. Someone or something ahead is now likely aware of the pair. The entrance alarm behind them remains armed and has not triggered. Nyxara accepted DevilMedlar's quick comment that she looked lovely/sexy with dry amusement and told him he has remarkable timing. No combat has started yet.",
     "combat_active": false,
-    "recent_roll": null,
+    "recent_rolls": [
+      {"type":"Arcana","die":2,"modifier":-1,"total":1,"dc":12,"result":"failure"},
+      {"type":"Stealth","die":10,"modifier":0,"total":10,"dc":12,"result":"failure_with_alert_consequence"},
+      {"type":"Perception","die":1,"modifier":3,"total":4,"dc":13,"result":"failure_natural_1"}
+    ],
     "clues": {
       "cult_name": "Velvet Coil",
       "likely_carver_route": "The carver is still believed to have gone through or beyond the old culvert.",
-      "culvert_alarm": "Known nonlethal warning alarm was left intact and armed behind DevilMedlar and Nyxara. It can warn them if a follower triggers it, but it may also be triggered by any creature crossing it.",
-      "nyxara_truth": "Her core claim that she independently followed the carver remains credible.",
-      "nyxara_personal_history": "Nyxara was not a Velvet Coil initiate herself; she survived what the Coil did to someone she loves.",
-      "nyxara_ledger_confirmation": "Nyxara confirmed the person she loves is female and is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed.",
-      "stolen_ledger": "The carver is believed to possess a ledger from Vespergate containing names tied to the Velvet Coil.",
-      "sunscale_shard": "Still warm; not yet examined further."
+      "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered.",
+      "sunscale_shard": "Still unidentified. During Turn 7 it remained unusually warm and produced one brief stronger heat pulse when oriented deeper into the culvert. Arcana check failed, so the cause and significance remain unknown.",
+      "presence_ahead": "After DevilMedlar's failed Stealth check produced a small metallic tick, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead is likely alerted, but identity, number, and position are unknown.",
+      "nyxara_ledger_confirmation": "Nyxara confirmed the woman she loves is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed.",
+      "stolen_ledger": "The carver is believed to possess a ledger from Vespergate containing names tied to the Velvet Coil."
     },
     "nearby_npcs": {
       "nyxara_veyl": {
@@ -142,18 +147,17 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Provisional cooperation inside the culvert; increasingly candid but maintaining a boundary around the identity of the woman she loves",
-        "claim": "Independently tracking the Velvet Coil carver; not allied with him.",
+        "status": "Provisional cooperation at the first culvert bend; alert and ready after a likely presence ahead was warned by noise",
         "claim_verified": true,
         "withholding": "Identity and exact relationship of the woman she loves whose name appears in the stolen ledger",
         "knows_devilmedlar_is_velvet_coil_survivor": true,
         "party_status": "not joined",
-        "relationship_notes": "Light flirtatious tension and growing trust exist. Nyxara has accepted DevilMedlar's compliments with teasing, but mutual attraction and romance remain unconfirmed."
+        "relationship_notes": "Light flirtatious tension and growing trust exist. In Turn 7 DevilMedlar looked her up and down and made another quick comment that she looked lovely/sexy; Nyxara answered with dry amusement. Mutual attraction and romance remain unconfirmed."
       }
     }
   },
   "pending": {
-    "choice": "advance_deeper_into_culvert_or_investigate_interior",
+    "choice": "respond_to_alerted_presence_beyond_first_culvert_bend",
     "roll": null,
     "image_offer": false
   },
@@ -192,6 +196,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_6_alarm_bypassed_nyxara_ledger_person_confirmed_female",
-  "last_synced_turn": "Session 1 Turn 6"
+  "last_checkpoint": "session_1_turn_7_shard_quick_check_failed_stealth_alerted_presence",
+  "last_synced_turn": "Session 1 Turn 7"
 }
