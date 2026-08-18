@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 9,
+  "turn_number": 10,
   "tone": "Anything Goes Sandbox",
-  "current_step": "nonlethal_capture_plan_with_nyxara",
+  "current_step": "likely_carver_captured_alive_in_maintenance_chamber",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 175,
+      "xp_current": 200,
       "xp_next_level": 300,
-      "xp_to_next_level": 125
+      "xp_to_next_level": 100
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -50,7 +50,8 @@
       "insight": 1,
       "investigation": -1,
       "arcana": -1,
-      "stealth": 0
+      "stealth": 0,
+      "intimidation": 2
     },
     "heritage_features": {
       "fire_resistance": true,
@@ -122,20 +123,27 @@
     }
   },
   "scene": {
-    "location": "Inside the old culvert at the first bend, looking into the maintenance chamber north of Vespergate",
-    "situation": "Session 1 Turn 9. After identifying the likely carver and probable ledger in Turn 8, DevilMedlar withdrew fully behind the bend and quietly asked Nyxara what she wanted to do, stating that he preferred to keep the man alive for questioning. He apologized a second time for the accidental close contact from Turn 8 and admitted that, although it was unintended, he had liked the brief contact. Nyxara accepted the apology, answered with dry amusement, and made clear that enjoying an accident does not grant permission to repeat it. She remained comfortable and mission-focused rather than offended. Nyxara agreed that taking the carver alive is the smarter objective and proposed a nonlethal capture plan: DevilMedlar speaks from cover first and orders the man to lower the crossbow, show his hands, and leave the satchel in place; Nyxara keeps her crossbow trained on his weapon side. If he fires or rushes, Nyxara attempts to disrupt his weapon/arm while DevilMedlar closes for a nonlethal Dawnclaw takedown. If he runs deeper, Nyxara tracks while DevilMedlar pursues. No roll was required because this turn was tactical consultation and relationship dialogue rather than an attempted influence check or attack. The target remains generally alerted but does not appear to know that DevilMedlar already saw his exact position. No combat has started yet.",
+    "location": "Culvert maintenance chamber beyond the first bend, north drainage gully outside Vespergate",
+    "situation": "Session 1 Turn 10. Before executing Nyxara's plan, DevilMedlar told her he wanted to talk after the confrontation regardless of whether the carver survived, sincerely apologized again for the accidental Turn 8 contact, gave Nyxara another openly sexual/flirtatious compliment about how attractive she looked while focused for a fight, wished her luck, and said he hoped they both lived through the next few moments. Nyxara accepted the apology, maintained the same consent boundary, returned dry flirtatious banter, and agreed they could talk afterward if both were standing. DevilMedlar then followed her capture plan exactly and called from cover: 'Crossbow down. Hands where I can see them. Don't touch the satchel.' Intimidation 3 + 2 = 5 against DC 13 failed. The likely carver chose to attack instead of surrendering. Initiative was carver 10, DevilMedlar 9, Nyxara 5. Nyxara's prearranged covering reaction attempted to disrupt the carver's weapon side, but 8 + 4 = 12 missed AC 13. The carver fired toward DevilMedlar as he moved from the bend; attack 3 + 3 = 6 missed DevilMedlar's effective AC 14 with corner cover. DevilMedlar immediately closed the distance according to the preauthorized nonlethal plan. Dawnclaw attack 11 + 4 = 15 hit AC 13; damage 5 + 2 = 7 bludgeoning, declared nonlethal. The blow reduced the lightly armored carver from 7 HP to 0. He is unconscious and stable, not dead. His compact crossbow fell within the chamber. The satchel remains on his body and has not yet been opened, so the probable ledger is still unverified. Combat ended after the opening exchange. DevilMedlar took no damage and spent no spell slot, Golden Breath use, Golden Ascendant use, or consumable.",
     "combat_active": false,
-    "recent_rolls": [],
+    "recent_rolls": [
+      {"type":"Intimidation","die":3,"modifier":2,"total":5,"dc":13,"result":"failure"},
+      {"type":"Initiative - carver","die":8,"modifier":2,"total":10,"result":"order"},
+      {"type":"Initiative - DevilMedlar","die":9,"modifier":0,"total":9,"result":"order"},
+      {"type":"Initiative - Nyxara","die":2,"modifier":3,"total":5,"result":"order"},
+      {"type":"Nyxara disruption shot","die":8,"modifier":4,"total":12,"dc":13,"result":"miss"},
+      {"type":"Carver crossbow attack","die":3,"modifier":3,"total":6,"dc":14,"result":"miss_against_corner_cover"},
+      {"type":"Dawnclaw nonlethal attack","die":11,"modifier":4,"total":15,"dc":13,"result":"hit"},
+      {"type":"Dawnclaw damage","die":5,"modifier":2,"total":7,"result":"nonlethal_knockout"}
+    ],
     "clues": {
       "cult_name": "Velvet Coil",
-      "likely_carver_route": "The likely carver is visually located in the maintenance chamber beyond the first bend.",
       "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered.",
       "sunscale_shard": "Still unidentified, unusually warm, and previously produced a brief stronger heat pulse when oriented deeper into the culvert.",
-      "likely_carver_identification": "One hooded adult man beyond the bend has pale shrine-stone dust in his boot tread and a stone-carving chisel at his belt, strongly linking him to the freshly carved Lantern Road mark.",
-      "possible_ledger": "A thick leather-bound book-sized object is visible in the likely carver's cross-body satchel; it is consistent with Nyxara's stolen ledger description but has not yet been seized or verified.",
-      "target_readiness": "The likely carver is behind broken masonry with a compact crossbow aimed toward the bend. He was alerted by earlier noise but does not appear to know that DevilMedlar successfully identified his exact position.",
-      "nonlethal_capture_plan": "Nyxara recommends verbal surrender from cover first while she covers the target's weapon side; if he attacks, she disrupts and DevilMedlar closes for a nonlethal melee takedown; if he flees, they pursue and track.",
-      "turn8_art_verified": "Player manually uploaded art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png; repository listing verified the exact path in Turn 9.",
+      "likely_carver_identification": "The hooded adult man with shrine-stone dust and a carving chisel has now been captured alive but remains unidentified by name, exact allegiance, and motive.",
+      "possible_ledger": "The thick leather-bound book-sized object remains in the unconscious carver's cross-body satchel. It is consistent with Nyxara's stolen ledger description but has not yet been opened or verified.",
+      "nonlethal_capture_result": "Capture succeeded after failed surrender demand. Carver is unconscious and stable at 0 HP after 7 nonlethal Dawnclaw damage; DevilMedlar and Nyxara are uninjured.",
+      "turn8_art_verified": "Player manually uploaded art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png; repository path remains verified.",
       "nyxara_ledger_confirmation": "Nyxara confirmed the woman she loves is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed."
     },
     "nearby_npcs": {
@@ -146,26 +154,29 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Providing cover at the first culvert bend and actively planning a nonlethal capture with DevilMedlar",
+        "status": "Uninjured in the maintenance chamber after helping execute the nonlethal capture plan",
+        "combat_notes": "Prepared covering disruption attack was +4 and missed with total 12 against AC 13; no resource expenditure established.",
         "claim_verified": true,
         "withholding": "Identity and exact relationship of the woman she loves whose name appears in the stolen ledger",
         "knows_devilmedlar_is_velvet_coil_survivor": true,
         "party_status": "not joined",
-        "relationship_notes": "Turn 9: DevilMedlar apologized again for Turn 8's accidental close contact and admitted he liked the brief contact despite it being unintended. Nyxara accepted the apology and responded with dry amusement while explicitly maintaining that an accident is not permission for future touching. Light flirtatious tension and growing ease remain, but mutual attraction and romance are still unconfirmed."
+        "relationship_notes": "Turn 10: DevilMedlar sincerely apologized again, complimented Nyxara in openly sexual/flirtatious terms, wished her luck, said he hoped they both survived, and suggested they talk after the confrontation. Nyxara accepted the apology, kept her consent boundary intact, returned dry flirtatious banter, and agreed to talk afterward if both were standing. Mutual attraction and romance remain unconfirmed."
       },
       "likely_velvet_coil_carver": {
         "identity": "unknown",
         "adult": true,
         "gender_presentation": "male",
-        "status": "alerted and taking cover in the maintenance chamber",
+        "combat_profile": {"armor_class":13,"hp_max":7,"hp_current":0,"crossbow_attack_bonus":3,"initiative_bonus":2},
+        "status": "unconscious_stable_captured_alive",
         "evidence": "pale shrine-stone dust on boots; carving chisel at belt; book-sized object in satchel",
-        "weapon_visible": "compact crossbow",
-        "awareness": "alerted generally, but does not appear to know that DevilMedlar identified his exact position during the Turn 8 peek"
+        "weapon_visible": "compact crossbow dropped in maintenance chamber",
+        "awareness": "unconscious",
+        "satchel_status": "still worn; not yet opened"
       }
     }
   },
   "pending": {
-    "choice": "execute_or_modify_nyxara_nonlethal_capture_plan",
+    "choice": "secure_search_and_prepare_to_interrogate_captured_carver",
     "roll": null,
     "image_offer": false
   },
@@ -204,6 +215,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_9_nonlethal_capture_plan_and_second_apology",
-  "last_synced_turn": "Session 1 Turn 9"
+  "last_checkpoint": "session_1_turn_10_failed_surrender_successful_nonlethal_capture",
+  "last_synced_turn": "Session 1 Turn 10"
 }
