@@ -123,13 +123,25 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 
 ### Checkpoint 1.6 - The woman in the ledger
 
-- DevilMedlar asked one final personal question for now: whether the man or woman Nyxara loves is the personally important name in the stolen Velvet Coil ledger.
+- DevilMedlar asked whether the man or woman Nyxara loves is the personally important name in the stolen Velvet Coil ledger.
 - Nyxara answered **yes** and confirmed the person is **female**.
 - Nyxara still withholds the woman's identity and their exact relationship.
-- DevilMedlar and Nyxara deliberately stepped over the already-identified tripline. No roll was required because its exact position and function were known and both moved cautiously.
-- The alarm was left **intact and armed behind them** as a potential warning if someone follows. Any creature crossing it could still trigger it.
-- DevilMedlar and Nyxara entered the old culvert quietly without alerting whoever may be deeper inside.
-- **XP:** +25 for the quiet tactical bypass and new ledger-person confirmation.
-- **Current XP:** **150 / 300** toward Level 2.
-- Current state: **10/10 HP**, **2/2 spell slots**, **Golden Breath 1/1**, **Golden Ascendant 1/1**, no conditions.
-- Current objective: investigate or advance deeper into the old culvert while keeping the intact rear alarm in mind.
+- DevilMedlar and Nyxara deliberately stepped over the already-identified tripline; no roll was required.
+- The alarm was left **intact and armed behind them** as a potential rear warning.
+- DevilMedlar and Nyxara entered the old culvert quietly without triggering the alarm.
+- **XP:** +25 for the tactical bypass and new ledger-person confirmation.
+- **Current XP:** 150/300.
+
+### Checkpoint 1.7 - The tunnel hears you
+
+- DevilMedlar combined several actions inside the culvert: a quick Sunscale Shard examination, a quiet armed advance toward the first bend with Nyxara, an active search of the interior, and another appreciative comment about Nyxara's appearance.
+- **Arcana:** `2 - 1 = 1` vs DC 12, failure. DevilMedlar could not identify the Sunscale Shard's nature or mechanism. He did observe that it remained unusually warm and gave one brief stronger heat pulse when oriented deeper into the culvert; significance remains unknown.
+- DevilMedlar looked Nyxara up and down and made a quick comment that she looked lovely/sexy. Nyxara answered with dry amusement about his timing. This continues light flirtatious tension but does not establish mutual attraction or romance.
+- **Stealth:** `10 + 0 = 10` vs DC 12, failure. Loose gravel skittered into old iron and produced a small metallic tick that carried around the bend.
+- **Perception:** natural `1 + 3 = 4` vs DC 13, failure. DevilMedlar failed to identify the hidden details, number, or exact position of whatever lay ahead.
+- Immediately after the Stealth failure, a faint amber light beyond the bend was extinguished and soft movement stopped. A presence ahead is now likely alerted.
+- The intact entrance alarm behind DevilMedlar and Nyxara did **not** trigger and remains armed.
+- No combat has started yet. No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
+- **XP:** No new XP yet. The failed checks created a live complication rather than resolving an accomplishment.
+- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 150/300.
+- **Current objective:** Respond to the likely alerted presence beyond the first culvert bend while continuing the pursuit of the carver and stolen ledger.
