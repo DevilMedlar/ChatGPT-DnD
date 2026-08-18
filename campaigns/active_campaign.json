@@ -4,8 +4,8 @@
   "path": "campaigns/campaign-1",
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 10,
-  "current_step": "likely_carver_captured_alive_in_maintenance_chamber",
-  "xp_current": 200,
+  "turn_number": 11,
+  "current_step": "ledger_confirmed_captive_secured_chamber_cleared",
+  "xp_current": 225,
   "xp_next_level": 300
 }
