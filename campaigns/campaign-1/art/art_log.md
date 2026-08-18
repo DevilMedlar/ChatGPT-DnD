@@ -9,7 +9,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - `Yes` means generate the image before the player makes or resolves gameplay choices for that scene.
 - `No` means skip generation; any remaining text in the same reply is treated as the player's choices or freeform action.
 - Reference this log before generating any recurring character, equipment, location, transformation, scar, tattoo, or other established visual.
-- When a generated image is available as a persistent file, store a compressed repository copy in the Campaign 1 `art/` root and record it below.
+- When a generated image is available as a persistent file, store it in the Campaign 1 `art/` root and record its actual repository path below.
 - Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
 - Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
@@ -112,12 +112,13 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ### Session 1 — Fresh Mark on Lantern Road
 
-- **Repository path:** `art/session-1-lantern-road-shrine.webp`
+- **Repository path:** `art/session-1-lantern-road-shrine.png.png`
 - **Scene:** DevilMedlar discovers a freshly carved Velvet Coil sigil while the Sunscale Shard reacts.
 - **Character shown:** DevilMedlar, adult age 20, baseline form.
 - **Equipment:** Dawnclaws and Sunscale Shard.
 - **Location / lighting:** Lantern Road near Vespergate at sunset.
 - **Continuity note:** Illustrative; textual canon remains authoritative.
+- **Stored format:** Full-resolution PNG present in the repository.
 
 ### Session 1 Turn 2 — Nyxara Veyl First Contact
 
@@ -129,11 +130,11 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Location / lighting:** Rocky drainage gully and old culvert approach at copper-orange dusk.
 - **Mood:** Suspicion, wary intrigue, first-contact tension, not combat or established intimacy.
 - **Continuity caution:** The generated image depicts Nyxara's hair somewhat longer/wavier than textual canon. Keep **shoulder-length, slightly tousled black hair with a narrow wine-red streak** as authoritative unless the player adopts the image variation.
-- **Stored format:** Compressed WebP repository derivative for reliable GitHub persistence.
+- **Stored format:** Full-resolution PNG present in the repository.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 3:** First-contact image committed and logged. No new image generated for Turn 3's Insight conversation. No canonical appearance changes occurred during the turn.
+- **Session 1 Turn 3:** Generated-image paths verified against the actual repository files. No new image generated for Turn 3's Insight conversation. No canonical appearance changes occurred during the turn.
 
 For each future scene, record:
 - scene/session identifier
