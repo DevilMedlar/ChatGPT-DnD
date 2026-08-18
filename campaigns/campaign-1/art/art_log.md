@@ -43,7 +43,23 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Recurring NPCs
 
-None yet.
+### Nyxara Veyl
+
+- **Confirmed adult age:** 24.
+- **Gender / pronouns:** Female, she/her.
+- **Species:** Tiefling.
+- **Role:** Veilblade / occult tracker; potential assistant-controlled supporting companion.
+- **Build:** Slender, athletic, compact rather than heavily muscular.
+- **Height:** About 5'6".
+- **Skin:** Muted ash-lavender.
+- **Hair:** Black, shoulder-length, slightly tousled, with a narrow wine-red streak near the front.
+- **Eyes:** Amber-violet with a subtle reflective glow in low light.
+- **Horns:** Smooth obsidian-black horns sweeping backward close to the head, elegant rather than massive.
+- **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
+- **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
+- **Weapons visible at first meeting:** Slim shortblade at the hip and a compact hand crossbow; exact mechanics remain unfinalized until needed.
+- **First-scene posture:** Perched or crouched on an upper gully shelf before dropping down to speak with DevilMedlar.
+- **Current relationship visual rule:** First meeting only. Do not depict established intimacy, romance, or party familiarity unless later canon establishes it.
 
 ## Signature Equipment & Visual Effects
 
@@ -69,6 +85,7 @@ None yet.
 - Thumb-length gold-dragon-scale-like fragment held in a simple old wire cage.
 - Catches light in a faint sunburst pattern and appears slightly warm or softly luminous only when appropriate to the scene.
 - Its origin and any true power are unknown; do not visually reveal hidden lore before it becomes canon in play.
+- **Current visual state:** Noticeably warm since the Lantern Road cult-mark discovery; may show a restrained gold glow if visible in a scene.
 
 ### Draconic Effects
 
@@ -84,11 +101,18 @@ None yet.
 - Scene 1 lighting: copper-orange dusk with long shadows and a quiet, tense atmosphere.
 - Fresh cult sigil carved into the shrine stone.
 
+### North drainage gully
+
+- Dry, narrow drainage cut north of Lantern Road.
+- Loose gravel and pale hard runoff stone underfoot, with irregular elevated shelves and bends.
+- Dusk light reaches the upper edges while the gully floor falls into cooler shadow.
+- Nyxara Veyl first appears on an upper shelf overlooking DevilMedlar.
+
 ## Generated Scene Art
 
 ### Session 1 — Fresh Mark on Lantern Road
 
-- **Repository path:** `art/session-1-lantern-road-shrine.png`
+- **Repository path:** `art/session-1-lantern-road-shrine.webp`
 - **Scene:** DevilMedlar discovers a freshly carved pleasure-cult sigil at a roadside shrine while the Sunscale Shard reacts with heat and golden light.
 - **Character shown:** DevilMedlar, adult age 20.
 - **Form:** Baseline form, no horns, wings, or tail.
@@ -97,6 +121,10 @@ None yet.
 - **Location / lighting:** Lantern Road near Vespergate at sunset, shrine under a crooked tree, distant city silhouette.
 - **Continuity note:** The generated image is illustrative. Textual canon remains authoritative if incidental visual details differ.
 - **Stored format note:** The persistent repository copy is a compressed WebP derivative of the generated scene image for reliable GitHub storage through the connector.
+
+## Last Turn Sync
+
+- **Session 1 Turn 2:** Nyxara Veyl's first visual canon established. No new image generated this turn yet. Existing Session 1 shrine-art repository path reconciled to the actual `.webp` file.
 
 For each future scene, record:
 - scene/session identifier
