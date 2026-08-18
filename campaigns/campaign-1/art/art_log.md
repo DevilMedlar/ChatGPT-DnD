@@ -9,12 +9,15 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - `Yes` means generate the image before the player makes or resolves gameplay choices for that scene.
 - `No` means skip generation; any remaining text in the same reply is treated as the player's choices or freeform action.
 - Reference this log before generating any recurring character, equipment, location, transformation, scar, tattoo, or other established visual.
+- When a generated image is available as a persistent file, store it in the Campaign 1 `art/` root and record it below.
 - Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
 - Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
 ## Player Character — Canonical Appearance
 
-Not established yet.
+- **Name:** DevilMedlar
+- **Confirmed adult age:** 20
+- **Appearance:** Not established yet.
 
 ## Recurring NPCs
 
