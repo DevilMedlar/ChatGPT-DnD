@@ -5,8 +5,8 @@
   "phase": "setup",
   "session_number": 0,
   "turn_number": 0,
-  "current_step": "character_creation",
+  "current_step": "ancestry_details",
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "Character creation is in progress. DevilMedlar (20, male, he/him) and Senpai (20, female, she/her) have partial identity canon established. No NPC, item, location, relationship, quest, or story canon has been established."
+  "last_sync_note": "Character creation is in progress. DevilMedlar (20, male, he/him) is established as Draginkin. Senpai (20, female, she/her) has partial identity canon established but no ancestry yet. No NPC, item, location, relationship, quest, or story canon has been established."
 }
