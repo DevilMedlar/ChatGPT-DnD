@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 10,
+  "turn_number": 11,
   "tone": "Anything Goes Sandbox",
-  "current_step": "likely_carver_captured_alive_in_maintenance_chamber",
+  "current_step": "ledger_confirmed_captive_secured_chamber_cleared",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 200,
+      "xp_current": 225,
       "xp_next_level": 300,
-      "xp_to_next_level": 100
+      "xp_to_next_level": 75
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -88,7 +88,7 @@
       },
       "level_1_abilities": {
         "Restorative Flame": "Action, touch, expend 1 slot, heal 1d8+2 HP",
-        "Ascendant Smite": "After Dawnclaw hit, expend 1 slot, +2d6 fire or radiant, once per turn"
+        "Ascendant Smite": "After Dawnclaw hit, expend 1 slot, +2d6 fire or radiant damage, once per turn"
       }
     },
     "appearance": {
@@ -124,27 +124,35 @@
   },
   "scene": {
     "location": "Culvert maintenance chamber beyond the first bend, north drainage gully outside Vespergate",
-    "situation": "Session 1 Turn 10. Before executing Nyxara's plan, DevilMedlar told her he wanted to talk after the confrontation regardless of whether the carver survived, sincerely apologized again for the accidental Turn 8 contact, gave Nyxara another openly sexual/flirtatious compliment about how attractive she looked while focused for a fight, wished her luck, and said he hoped they both lived through the next few moments. Nyxara accepted the apology, maintained the same consent boundary, returned dry flirtatious banter, and agreed they could talk afterward if both were standing. DevilMedlar then followed her capture plan exactly and called from cover: 'Crossbow down. Hands where I can see them. Don't touch the satchel.' Intimidation 3 + 2 = 5 against DC 13 failed. The likely carver chose to attack instead of surrendering. Initiative was carver 10, DevilMedlar 9, Nyxara 5. Nyxara's prearranged covering reaction attempted to disrupt the carver's weapon side, but 8 + 4 = 12 missed AC 13. The carver fired toward DevilMedlar as he moved from the bend; attack 3 + 3 = 6 missed DevilMedlar's effective AC 14 with corner cover. DevilMedlar immediately closed the distance according to the preauthorized nonlethal plan. Dawnclaw attack 11 + 4 = 15 hit AC 13; damage 5 + 2 = 7 bludgeoning, declared nonlethal. The blow reduced the lightly armored carver from 7 HP to 0. He is unconscious and stable, not dead. His compact crossbow fell within the chamber. The satchel remains on his body and has not yet been opened, so the probable ledger is still unverified. Combat ended after the opening exchange. DevilMedlar took no damage and spent no spell slot, Golden Breath use, Golden Ascendant use, or consumable.",
+    "situation": "Session 1 Turn 11. DevilMedlar disarmed and thoroughly searched the unconscious captured carver while Nyxara used DevilMedlar's 50-ft hempen rope to bind the captive's wrists, ankles, and torso securely. Investigation 19 - 1 = 18 against DC 14 succeeded. The captive carried a stone-carving chisel, a narrow boot knife, six compact-crossbow bolts, a small pouch containing 8 gp and 6 sp, a small brass key with a three-coil notch pattern, and the dark cross-body satchel. His dropped compact crossbow was secured away from him. DevilMedlar then swept the maintenance chamber for accomplices, exits, threats, and useful items. Perception 17 + 3 = 20 against DC 13 succeeded. No accomplice is currently present and no second fresh set of tracks was found beyond Nyxara's known trail; the captive appears to have occupied the chamber alone. Two routes leave the chamber besides the way back: a narrow drainage passage continues east/deeper into the culvert, and a rusted vertical service shaft climbs to a grated surface exit above the gully. The surface grate appears usable but noisy. A hooded lantern and one flask of lamp oil were also recovered near the captive's firing position. DevilMedlar then opened the leather-bound book. The Investigation success and Nyxara's recognition confirmed it is the stolen Velvet Coil ledger. It contains names, dates, payments, movement routes, and coded marks identifying watched or selected people. A repeated route notation references 'Vespergate / Silken Cup / cellar delivery', establishing a new Vespergate lead. Nyxara found the entry tied to the woman she loves and confirmed the ledger is genuine, saying it is what she was after but worse than she expected. She still withheld the woman's name and exact relationship. DevilMedlar flirted lightly while asking whether the ledger matched what Nyxara expected; she answered with dry amusement and remained focused. The captive remains unconscious, stable, bound, and alive. No combat or resource-limited ability use occurred.",
     "combat_active": false,
     "recent_rolls": [
-      {"type":"Intimidation","die":3,"modifier":2,"total":5,"dc":13,"result":"failure"},
-      {"type":"Initiative - carver","die":8,"modifier":2,"total":10,"result":"order"},
-      {"type":"Initiative - DevilMedlar","die":9,"modifier":0,"total":9,"result":"order"},
-      {"type":"Initiative - Nyxara","die":2,"modifier":3,"total":5,"result":"order"},
-      {"type":"Nyxara disruption shot","die":8,"modifier":4,"total":12,"dc":13,"result":"miss"},
-      {"type":"Carver crossbow attack","die":3,"modifier":3,"total":6,"dc":14,"result":"miss_against_corner_cover"},
-      {"type":"Dawnclaw nonlethal attack","die":11,"modifier":4,"total":15,"dc":13,"result":"hit"},
-      {"type":"Dawnclaw damage","die":5,"modifier":2,"total":7,"result":"nonlethal_knockout"}
+      {"type":"Perception","die":17,"modifier":3,"total":20,"dc":13,"result":"success"},
+      {"type":"Investigation","die":19,"modifier":-1,"total":18,"dc":14,"result":"success"}
     ],
     "clues": {
       "cult_name": "Velvet Coil",
       "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered.",
       "sunscale_shard": "Still unidentified, unusually warm, and previously produced a brief stronger heat pulse when oriented deeper into the culvert.",
-      "likely_carver_identification": "The hooded adult man with shrine-stone dust and a carving chisel has now been captured alive but remains unidentified by name, exact allegiance, and motive.",
-      "possible_ledger": "The thick leather-bound book-sized object remains in the unconscious carver's cross-body satchel. It is consistent with Nyxara's stolen ledger description but has not yet been opened or verified.",
-      "nonlethal_capture_result": "Capture succeeded after failed surrender demand. Carver is unconscious and stable at 0 HP after 7 nonlethal Dawnclaw damage; DevilMedlar and Nyxara are uninjured.",
-      "turn8_art_verified": "Player manually uploaded art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png; repository path remains verified.",
-      "nyxara_ledger_confirmation": "Nyxara confirmed the woman she loves is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed."
+      "captured_carver": "Unconscious, stable, securely bound with DevilMedlar's rope, fully disarmed, and still unidentified by name/allegiance/motive.",
+      "ledger_confirmed": "The leather-bound book is confirmed as the stolen Velvet Coil ledger. It records names, dates, payments, routes, and coded marks tied to watched/selected people.",
+      "nyxara_ledger_entry": "Nyxara confirmed the entry concerning the woman she loves is present. The woman's name and exact relationship remain undisclosed.",
+      "silken_cup_lead": "A repeated ledger route notation reads 'Vespergate / Silken Cup / cellar delivery'. Exact significance remains unresolved.",
+      "chamber_routes": "Beyond the return route, an eastward deeper drainage passage and a noisy rusted vertical service shaft to a surface grate leave the maintenance chamber.",
+      "accomplice_sweep": "Perception 20 found no current accomplice and no additional fresh track set in or beyond the chamber.",
+      "carver_key": "Small brass key with a three-coil notch pattern recovered from the captive; matching lock unknown.",
+      "turn8_art_verified": "Player manually uploaded art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png; repository path remains verified."
+    },
+    "secured_scene_items": {
+      "compact_crossbow": 1,
+      "crossbow_bolts": 6,
+      "stone_carving_chisel": 1,
+      "boot_knife": 1,
+      "coin_pouch": "8 gp, 6 sp; secured but not yet added to DevilMedlar's personal currency",
+      "brass_three_coil_key": 1,
+      "hooded_lantern": 1,
+      "lamp_oil_flasks": 1,
+      "velvet_coil_ledger": 1
     },
     "nearby_npcs": {
       "nyxara_veyl": {
@@ -154,29 +162,27 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Uninjured in the maintenance chamber after helping execute the nonlethal capture plan",
-        "combat_notes": "Prepared covering disruption attack was +4 and missed with total 12 against AC 13; no resource expenditure established.",
+        "status": "Uninjured, helping secure the captive and reviewing the confirmed Velvet Coil ledger with DevilMedlar",
         "claim_verified": true,
-        "withholding": "Identity and exact relationship of the woman she loves whose name appears in the stolen ledger",
+        "withholding": "Identity and exact relationship of the woman she loves whose entry appears in the ledger",
         "knows_devilmedlar_is_velvet_coil_survivor": true,
         "party_status": "not joined",
-        "relationship_notes": "Turn 10: DevilMedlar sincerely apologized again, complimented Nyxara in openly sexual/flirtatious terms, wished her luck, said he hoped they both survived, and suggested they talk after the confrontation. Nyxara accepted the apology, kept her consent boundary intact, returned dry flirtatious banter, and agreed to talk afterward if both were standing. Mutual attraction and romance remain unconfirmed."
+        "relationship_notes": "Turn 11: DevilMedlar and Nyxara followed through on their promised post-fight conversation while reviewing the ledger. DevilMedlar flirted lightly; Nyxara answered with dry amusement. Cooperation and ease continue to grow, but mutual attraction and romance remain unconfirmed and prior consent boundaries remain intact."
       },
-      "likely_velvet_coil_carver": {
+      "captured_likely_velvet_coil_carver": {
         "identity": "unknown",
         "adult": true,
         "gender_presentation": "male",
         "combat_profile": {"armor_class":13,"hp_max":7,"hp_current":0,"crossbow_attack_bonus":3,"initiative_bonus":2},
-        "status": "unconscious_stable_captured_alive",
-        "evidence": "pale shrine-stone dust on boots; carving chisel at belt; book-sized object in satchel",
-        "weapon_visible": "compact crossbow dropped in maintenance chamber",
+        "status": "unconscious_stable_bound_disarmed",
+        "restraint": "DevilMedlar's 50-ft hempen rope currently secures wrists, ankles, and torso",
         "awareness": "unconscious",
-        "satchel_status": "still worn; not yet opened"
+        "possessions_removed": true
       }
     }
   },
   "pending": {
-    "choice": "secure_search_and_prepare_to_interrogate_captured_carver",
+    "choice": "decide_interrogation_and_next_move_after_ledger_confirmation",
     "roll": null,
     "image_offer": false
   },
@@ -215,6 +221,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_10_failed_surrender_successful_nonlethal_capture",
-  "last_synced_turn": "Session 1 Turn 10"
+  "last_checkpoint": "session_1_turn_11_ledger_confirmed_chamber_cleared",
+  "last_synced_turn": "Session 1 Turn 11"
 }
