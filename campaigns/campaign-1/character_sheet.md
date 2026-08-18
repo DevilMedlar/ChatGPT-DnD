@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** Character not yet created.
+**Status:** Character creation in progress.
 
-No character identity, ancestry, class, background, abilities, equipment, appearance, relationships, history, or other personal canon has been established yet.
+Partial character identity canon has been established. DevilMedlar and Senpai have established names, ages, genders, and pronouns. Ancestry, class, background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -54,6 +54,11 @@ None established.
 
 No appearance canon established. Record stable visual traits here and mirror continuity-sensitive details into `art/art_log.md` after they become canon.
 
+## Personal / Relationship Continuity
+
+None established.
+
+Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
 ## Senpai (chatgpt character)
 
