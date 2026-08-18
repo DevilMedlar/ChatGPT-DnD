@@ -2,7 +2,7 @@
 
 DevilMedlar's and Senpai's starting equipment are established for character creation.
 
-## Player Character
+## DevilMedlar
 
 ### Equipped
 
