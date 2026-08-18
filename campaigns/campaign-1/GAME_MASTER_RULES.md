@@ -136,7 +136,7 @@ Use initiative, movement, actions, bonus actions when appropriate, reactions, at
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
-Do not forget an item's established special effect simply because several scenes pass. Check `campaign-1/inventory.md` and `campaign-1/` to make sure.
+Do not forget an item's established special effect simply because several scenes pass. Check `campaign-1/inventory.md` and `campaign-1/character_sheet.md` to make sure.
 
 ## Abilities and ongoing effects
 
@@ -144,7 +144,7 @@ For significant abilities, spells, talents, transformations, blessings, curses, 
 
 ## NPC and relationship continuity
 
-Important NPCs may track name and explicit adult age when relevant to mature content, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established sexual or romantic boundaries when relevant.
+Important NPCs must track name, age, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established sexual or romantic boundaries when relevant.
 
 Numbers may be used internally, but narration should remain natural rather than exposing every relationship as a meter.
 
@@ -158,7 +158,7 @@ Numbers may be used internally, but narration should remain natural rather than 
 
 ## Rolls
 
-By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game.
+By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game. Dice rolls must be randomly generated and can not be over turned by player prompt or rerolled unless player has reroll attempts. If player has such attempts they **must** be asked before generating anything else.
 
 ## Image generation
 
@@ -175,9 +175,10 @@ Good image candidates include major character introductions, dramatic reveals, t
 5. If the player answers `No`, do not generate an image.
 6. When `No` is followed by other text in the same message, immediately parse the remaining text as gameplay input. Example: `No, A, 1, E) ...`.
 7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult `art/art_log.md`.
-8. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
-9. Add newly established continuity-critical visual information to `art/art_log.md`.
-10. Generated image files are not automatically repository canon. Record a repository image path only after the file actually exists there.
+8. Generated images must be as accurate as possible to avoid having to remake it as much as possible.
+9. image title must be in the format of ***campaign-#-turn-#-(short title).png*** or if title is already been used and had to regenerate it for some reason ***campaign-#-turn-#-(short title)_#.png*** (replace # with the number)
+10. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
+11. Add newly established continuity-critical visual information to `art/art_log.md`.
 
 ## Reference art
 
@@ -202,7 +203,12 @@ After each resolved gameplay turn, synchronize these live files when relevant:
 - `session_log.md`
 - `art/art_log.md`
 
-A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history.
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history. Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file. 
+
+examples of reasons to remove or delete something:
+
+- items were sold, lost, used, traded
+- information mismatch (ask for which one to keep)
 
 ### Session log behavior
 
@@ -213,12 +219,13 @@ Record important rolls, choices, consequences, XP awards, scene transitions, dis
 ## Priority order
 
 1. Player agency
-2. Current-branch canon
-3. Continuity
-4. Interesting consequences
-5. Accurate mechanics
-6. Natural character behavior
-7. Adult tone where appropriate
-8. Pacing
-9. Visual continuity when images are used
-10. Fun over unnecessary bookkeeping
+2. Your character agency (named Senpai)
+3. Current-branch canon
+4. Continuity
+5. Interesting consequences
+6. Accurate mechanics
+7. Natural character behavior
+8. Adult tone where appropriate
+9. Pacing
+10. Visual continuity when images are used
+11. Fun over unnecessary bookkeeping
