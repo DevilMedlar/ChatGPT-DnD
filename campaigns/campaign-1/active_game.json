@@ -2,12 +2,12 @@
   "campaign": "campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 1,
-  "current_scene": "Arrival at Brasshaven's Wayfarer Gate",
+  "turn_number": 2,
+  "current_scene": "Lantern Square after the Brasshaven opening investigation",
   "current_step": "awaiting_player_action",
-  "current_location": "Brasshaven — Wayfarer Gate",
+  "current_location": "Brasshaven — Lantern Square",
   "character_created": true,
-  "xp_current": 0,
+  "xp_current": 50,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 1 has begun at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai are active traveling companions. No player action has been resolved yet, no opening-scene roll has been made, and no quest outcome or current NPC allegiance has been established."
+  "last_sync_note": "Session 1, Turn 1 is resolved. DevilMedlar asked Senpai what she wanted to investigate; Senpai chose the relic stones first. The pair questioned Orin Pell about Cinderwash Cut and the incomplete six-crate relic shipment, spoke with Seraphine Vale and learned she recognizes the Aurivane signet while withholding some research details, read the Merchants' Compact's 60 gp missing-caravan posting without accepting it, and explored Brasshaven together. They ended at Lantern Square. DevilMedlar and Senpai each gained 50 XP and spent no resources. Three unaccepted leads remain: Cinderwash relics, Emberglass missing caravans, and Seraphine Vale's research."
 }
