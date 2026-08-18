@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, and skill proficiencies. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, and level-1 ancestry/class chassis. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -13,7 +13,7 @@ Partial character identity canon has been established. DevilMedlar has establish
 - **Draconic affinity:** Radiant
 - **Class / homebrew class:** Dragon Ascendant
 - **Background:** Lost Dragon Clan Heir
-- **Level:** Not established
+- **Level:** 1
 
 ## Background History
 
@@ -38,34 +38,59 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Combat Statistics
 
-- **HP / Max HP:** Not established
+- **HP / Max HP:** 9 / 9
+- **Hit Die:** 1d8
 - **Temporary HP:** 0
-- **Armor Class:** Not established
-- **Initiative:** Not established
-- **Speed:** Not established
-- **Proficiency Bonus:** Not established
-- **Passive Perception:** Not established
+- **Armor Class:** 14 while unarmored and not using a shield, from Ascendant Defense (`10 + Dexterity modifier + Wisdom modifier`)
+- **Initiative:** +2
+- **Speed:** 30 ft.
+- **Proficiency Bonus:** +2
+- **Passive Perception:** 12
+- **Saving Throw Proficiencies:** Dexterity, Wisdom
 
 ## Advancement
 
 - **XP:** 0
-- **Next-level threshold:** 300 XP unless character creation establishes a different starting level or advancement rule
+- **Next-level threshold:** 300 XP
 
 ## Skills
 
 Established proficiencies:
 
-- **Acrobatics** — Dragon Ascendant training; mobility, balance, aerial/body control, and evasive martial movement.
-- **Insight** — Dragon Ascendant discipline; reading intent, emotional control, and meditative awareness.
-- **History** — Lost Dragon Clan Heir background; Clan Aurivane lineage, draconic houses, inherited traditions, and historical context.
-- **Persuasion** — Lost Dragon Clan Heir background; heir education, formal presence, negotiation, and representing a bloodline claim.
+- **Acrobatics:** +4 - Dragon Ascendant training; mobility, balance, aerial/body control, and evasive martial movement.
+- **Insight:** +4 - Dragon Ascendant discipline; reading intent, emotional control, and meditative awareness.
+- **History:** +1 - Lost Dragon Clan Heir background; Clan Aurivane lineage, draconic houses, inherited traditions, and historical context.
+- **Persuasion:** +3 - Lost Dragon Clan Heir background; heir education, formal presence, negotiation, and representing a bloodline claim.
 
 No expertise established.
 
+## Level-1 Draginkin Traits
+
+- **Radiant Resistance:** DevilMedlar has resistance to radiant damage.
+- **Darkvision:** DevilMedlar can see in darkness out to 60 feet, treating darkness as dim light and dim light as bright light. Color is not discerned in darkness.
+- **Natural Claws:** DevilMedlar's claws are natural melee weapons. They deal `1d4` slashing damage on a hit and count as unarmed strikes for Dragon Ascendant features.
+- **Radiant Breath:** As an action, DevilMedlar exhales radiant draconic energy in a 15-foot cone. Creatures in the area make a Dexterity saving throw against DC 11 (`8 + proficiency bonus + Constitution modifier`). On a failure, a creature takes `1d10` radiant damage; on a success, it takes half damage. DevilMedlar can use Radiant Breath a number of times equal to his proficiency bonus and regains all uses after a long rest. Current uses per long rest: 2.
+- **Languages:** Common and Draconic.
+
+## Level-1 Dragon Ascendant Chassis
+
+The Dragon Ascendant combines Dragon Monk body discipline with Dragon Apostle radiant mysticism. At level 1, it is intentionally a mobile unarmored martial-mystic rather than a full martial class plus a full caster stacked together.
+
+- **Hit Die:** `d8` per Dragon Ascendant level.
+- **Armor Training:** None. The class is designed around Ascendant Defense rather than armor.
+- **Weapon Training:** Simple weapons, natural weapons, and unarmed strikes.
+- **Saving Throws:** Dexterity and Wisdom.
+- **Ascendant Defense:** While wearing no armor and using no shield, AC equals `10 + Dexterity modifier + Wisdom modifier`. Current AC: 14.
+- **Draconic Martial Arts:** DevilMedlar may use Dexterity instead of Strength for attack and damage rolls with unarmed strikes, natural weapons, and simple melee weapons that lack the heavy or two-handed properties. His unarmed strikes and natural claws use a `d4` damage die unless a larger die already applies. After taking the Attack action with one of those attacks, he may make one unarmed strike as a bonus action.
+- **Dragon Ki:** DevilMedlar has a small level-1 pool of 2 Dragon Ki points. All spent Dragon Ki returns after a long rest. This resource will expand and gain additional recovery options as the class advances.
+- **Radiant Fang:** When DevilMedlar hits with an unarmed strike or natural weapon, he may spend 1 Dragon Ki to deal an additional `1d4` radiant damage to that target.
+- **Wyrmstep:** As a bonus action, DevilMedlar may spend 1 Dragon Ki to take the Dash or Disengage action and increase his jump distance for that turn by an amount appropriate to the movement attempted. Wyrmstep represents a short burst of draconic body control rather than teleportation.
+- **Ascendant Spellcasting:** Full spellcasting is not active at level 1. The Apostle side begins as internal radiant techniques and will develop into broader draconic mystical abilities with later Dragon Ascendant levels.
+
 ## Features / Abilities / Spells
 
-- **Radiant Draconic Affinity:** Established. This affinity anchors DevilMedlar's Draginkin radiant resistance, radiant breath-weapon theme, and future radiant draconic evolution. Exact numerical mechanics and progression remain to be finalized during character creation.
-- **Dragon Ascendant:** Established homebrew class. It combines the body-focused draconic martial discipline of a Dragon Monk with the radiant/draconic mystical path of a Dragon Apostle. Exact starting features, resource mechanics, and level progression remain to be finalized during character creation.
+- **Radiant Draconic Affinity:** Established and mechanically active through Radiant Resistance and Radiant Breath. It also anchors future radiant draconic evolution.
+- **Dragon Ascendant:** Established homebrew class and mechanically active at level 1 through Ascendant Defense, Draconic Martial Arts, Dragon Ki, Radiant Fang, and Wyrmstep.
 
 ## Conditions / Ongoing Effects
 
