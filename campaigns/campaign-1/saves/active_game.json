@@ -1,11 +1,12 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "campaign_id": "campaign-1",
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
+  "turn_number": 2,
   "tone": "Anything Goes Sandbox",
-  "current_step": "lantern_road_two_trails_found",
+  "current_step": "gully_first_contact_nyxara",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -13,6 +14,12 @@
     "species_race": "Draginkin",
     "heritage": "Gold Dragon — fire/radiance affinity",
     "level": 1,
+    "advancement": {
+      "system": "numeric_xp",
+      "xp_current": 50,
+      "xp_next_level": 300,
+      "xp_to_next_level": 250
+    },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
     "ability_scores": {
@@ -115,23 +122,45 @@
     }
   },
   "scene": {
-    "location": "Lantern Road outside Vespergate",
-    "situation": "DevilMedlar ignored the shrine and reacting Sunscale Shard temporarily to search for whoever carved the cult mark. A successful Perception check found two recent trails: a likely carver with fresh shrine-stone dust in the boot tread, and a lighter soft-soled observer/follower trail that arrived afterward. Both head north into a dry drainage cut.",
+    "location": "North drainage gully off Lantern Road outside Vespergate",
+    "situation": "DevilMedlar followed the two recent trails north into the drainage gully. A Survival check of 4 + 3 = 7 against DC 12 failed. Loose gravel and hard runoff stone caused him to lose the clean trail and enter a narrow bend below an upper shelf. The lighter second observer then revealed herself from the ledge as Nyxara Veyl, a 24-year-old adult female tiefling Veilblade/occult tracker. She claims she was independently following the cult-mark carver and indicates the carver took the upper shelf toward an old culvert. Her claim is not yet verified.",
     "combat_active": false,
+    "recent_roll": {
+      "type": "Survival",
+      "die": 4,
+      "modifier": 3,
+      "total": 7,
+      "dc": 12,
+      "result": "failure_with_forward_consequence"
+    },
     "clues": {
-      "likely_carver_trail": "Recent bootprints with pale fresh stone dust in the tread; heads north into the drainage cut.",
-      "second_observer_trail": "Lighter soft-soled prints crossed afterward, paused behind the crooked tree with line of sight to the shrine, then followed the likely carver north.",
+      "likely_carver_trail": "The exact ground trail was temporarily lost in gravel, but Nyxara claims the carver moved along the upper shelf toward an old culvert.",
+      "second_observer_trail": "Revealed as Nyxara Veyl, who says she was following the carver rather than traveling with them.",
       "sunscale_shard": "Still warm; not yet examined further."
+    },
+    "nearby_npcs": {
+      "nyxara_veyl": {
+        "name": "Nyxara Veyl",
+        "age": 24,
+        "adult": true,
+        "gender_pronouns": "Female, she/her",
+        "species_race": "Tiefling",
+        "role": "Veilblade / occult tracker",
+        "status": "First contact; wary but not openly hostile; potential assistant-controlled supporting companion",
+        "claim": "She was independently following the cult-mark carver and is not allied with the carver.",
+        "claim_verified": false
+      }
     }
   },
   "pending": {
-    "choice": "decide_whether_to_follow_or_investigate_trails",
+    "choice": "respond_to_nyxara_first_contact",
     "roll": null,
-    "image_offer": false
+    "image_offer": true
   },
   "play_preferences": {
     "rolls": "open",
     "player_agency": "major_player_character_decisions_are_player_only",
+    "save_sync": "all live campaign-state files every gameplay turn",
     "adult_homebrew": {
       "all_romantic_or_reproductive_participants_must_be_18_plus": true,
       "consent_required": true,
@@ -161,5 +190,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_perception_found_two_trails"
+  "last_checkpoint": "session_1_turn_2_tracking_failure_nyxara_first_contact",
+  "last_synced_turn": "Session 1 Turn 2"
 }
