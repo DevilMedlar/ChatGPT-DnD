@@ -4,9 +4,9 @@
   "path": "campaigns/campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 4,
+  "turn_number": 5,
   "current_step": "awaiting_player_action",
   "xp_current": 80,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 3 is resolved at the Three Lanterns Inn. DevilMedlar trusted Senpai to lead the questioning of Seraphine Vale while protecting the pair's private information. Senpai remained calm, succeeded on Deception 21 and Insight 15, and learned that Seraphine is funded by the Meridian Archive, suspects an internal leak of protected ruin locations, and has a direct stake in the missing Copper Finch Courier because a sealed Archive dispatch case containing copies of her field notes was aboard it. Seraphine identified Suncoil Watch east of Cinderwash Turnoff and said the dragon-sun motif predates Clan Aurivane, though some Aurivane radial design may derive from the same older tradition. No quest, map transfer, lodging, or new agreement has been accepted. Both characters remain at 80 / 300 XP."
+  "last_sync_note": "Session 1, Turn 4 is resolved at the Three Lanterns Inn. Senpai finished questioning Seraphine Vale about the Meridian Archive leak, narrowing the exposure pattern to the Eastern Route Collection copying chain without identifying a culprit. Suncoil Watch may be exposed through the missing Copper Finch dispatch case; Cinderwash Cut itself was not in that case. Seraphine has not reported DevilMedlar, Senpai, or the Aurivane signet to the Archive and agreed to limited confidentiality. Senpai recommends an obligation-free private map, overnight rest in a twin room, possible morning acceptance of the 60 gp caravan contract, and evidence-first travel from Cinderwash Turnoff. No map, room, dinner, contract, purchase, or travel has yet been committed. Both characters remain at 80 / 300 XP."
 }
