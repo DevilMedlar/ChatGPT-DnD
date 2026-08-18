@@ -1,13 +1,13 @@
-# World State — Campaign 1
+# World State - Campaign 1
 
 Canonical record for persistent world, NPC, faction, relationship, quest, consequence, and unresolved-thread state.
 
 ## Current Scene
 
-- **Location:** North drainage gully off Lantern Road, outside the western approach to Vespergate.
+- **Location:** Old culvert approach on the upper shelf of the north drainage gully, outside the western approach to Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1 Turn 3. DevilMedlar questioned Nyxara Veyl while deliberately studying her for deception. Insight check `14 + 1 = 15` against DC 13 succeeded.
-- **Immediate danger / pressure:** The cult-mark carver is still ahead toward an old culvert. Nyxara is not openly hostile and her core claim now appears truthful, but she is withholding one personal detail.
+- **Situation:** Session 1 Turn 4. Nyxara Veyl is taking point while DevilMedlar follows, watching both her and the route. Perception check `12 + 3 = 15` against DC 13 succeeded. DevilMedlar spotted a concealed ankle-high black tripline before Nyxara stepped into it and warned her in time.
+- **Immediate danger / pressure:** The tripline is still intact and connected to a concealed tension mechanism in the rubble near the culvert. Its exact effect is unknown. The Velvet Coil carver is still believed to be ahead or to have recently passed this way.
 
 ## Known Locations
 
@@ -28,7 +28,14 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - Dry drainage cut running north from Lantern Road.
 - Loose gravel, hard runoff stone, narrow bends, and elevated shelves make tracking difficult.
 - The two shrine trails entered this gully.
-- Nyxara says the likely carver continued along an upper shelf toward an old culvert.
+- Nyxara guided DevilMedlar onto the upper shelf toward an old culvert.
+
+### Old Culvert Approach
+
+- Reached in Session 1 Turn 4 by DevilMedlar and Nyxara.
+- Narrow stone-and-rubble approach along the upper shelf.
+- A thin black tripline stretches ankle-high across the route near the culvert mouth.
+- The line connects to a small concealed tension mechanism hidden in rubble; exact function remains unknown because it has not been triggered or inspected closely yet.
 
 ## Important NPCs
 
@@ -46,14 +53,15 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Species:** Tiefling.
 - **Role:** Veilblade / occult tracker; potential assistant-controlled supporting companion.
 - **First appearance:** Session 1 Turn 2, north drainage gully off Lantern Road.
-- **Current disposition:** Wary, alert, dryly confident; somewhat more candid after DevilMedlar challenged her story.
+- **Current disposition:** Wary, dryly confident, and increasingly respectful of DevilMedlar.
 - **Verified core claim:** She was independently tracking the person who carved the Velvet Coil symbol and was not traveling with or allied to that person.
 - **Reason shared:** The carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
-- **Personal stake:** One name in that ledger belongs to someone important to Nyxara. She refuses to identify that person yet.
-- **Deception read:** DevilMedlar's successful Insight check indicates her main story is truthful; the omission is deliberate privacy rather than evidence that she is secretly allied with the carver.
-- **Current knowledge shared:** She says the carver moved along the upper shelf toward an old culvert.
+- **Personal stake:** One name in that ledger belongs to someone important to Nyxara. She still refuses to identify that person.
+- **Turn 4 cooperation:** Nyxara accepted DevilMedlar's instruction to take point. DevilMedlar spotted a concealed tripline before she triggered it and warned her.
+- **Turn 4 disclosure received:** DevilMedlar told her directly, **"I survived the Velvet Coil."** Her teasing demeanor briefly dropped and she treated the disclosure seriously.
+- **Current knowledge:** Nyxara now knows DevilMedlar is personally connected to the Velvet Coil as a survivor.
 - **Party status:** Not a party member yet.
-- **Relationship status:** First-contact tension only. No formal trust, friendship, attraction, romance, debt, or promise established.
+- **Relationship status:** Provisional cooperation with a small increase in respect. DevilMedlar is openly attentive to her appearance; Nyxara noticed and answered with dry teasing rather than hostility. Mutual attraction, romance, debt, and formal trust remain unestablished.
 - **Agency rule:** If she becomes the assistant-controlled companion, she remains supporting cast and never overrides DevilMedlar's player agency.
 
 ## Factions
@@ -76,7 +84,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
-- **Nyxara Veyl:** Her central claim has passed DevilMedlar's Insight read. This creates a small factual basis for cooperation but does not equal full trust or alliance.
+- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert and survivor disclosure increased her respect, but she has not joined him formally and mutual attraction is not yet established.
 
 ## Active Quests
 
@@ -89,11 +97,12 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Trail B:** Lighter soft-soled trail that arrived afterward, watched from behind the crooked tree, then followed Trail A.
 - **Pursuit result:** Survival `4 + 3 = 7` vs DC 12 failed. DevilMedlar lost the clean ground trail in gully gravel and entered a narrow bend.
 - **Trail B identity:** Nyxara Veyl, age 24, adult female tiefling Veilblade/occult tracker.
-- **Interrogation/Insight result:** DevilMedlar questioned Nyxara while reading her. Insight `14 + 1 = 15` vs DC 13 succeeded. Her core claim that she independently followed the carver is truthful.
+- **Interrogation/Insight result:** Insight `14 + 1 = 15` vs DC 13 succeeded. Nyxara's core claim that she independently followed the carver is truthful.
 - **New lead:** Nyxara says the carver stole a ledger in Vespergate containing names connected to the Velvet Coil.
 - **Nyxara's personal stake:** Someone important to her is named in that ledger; identity withheld.
-- **Direction:** The likely carver is believed to have continued toward an old culvert on the upper shelf.
-- **Immediate objective:** Decide whether to pursue the culvert with Nyxara, press her about the ledger/person, separate from her, or take another approach.
+- **Turn 4 pursuit:** Nyxara took point and led DevilMedlar toward the old culvert. Perception `12 + 3 = 15` vs DC 13 succeeded and DevilMedlar spotted a concealed tripline before it triggered.
+- **Turn 4 disclosure:** DevilMedlar revealed to Nyxara that he survived the Velvet Coil.
+- **Immediate objective:** Decide how to handle, inspect, bypass, or exploit the concealed tripline before entering or approaching the culvert further.
 
 ## Completed / Failed Quests
 
@@ -107,7 +116,8 @@ None established yet.
 - The shrine carver likely possesses or is connected to a stolen Velvet Coil ledger from Vespergate.
 - Nyxara's core account of independently following the carver is credible based on DevilMedlar's successful Insight check.
 - Nyxara is deliberately withholding the identity of someone important to her whose name appears in the ledger.
-- The likely carver continued toward an old culvert, according to Nyxara.
+- Nyxara knows DevilMedlar is a Velvet Coil survivor.
+- A concealed tripline guards or alarms the old culvert approach; exact function is unknown.
 
 ## Consequences & World Changes
 
@@ -117,8 +127,11 @@ None established yet.
 - The failed Survival pursuit cost positional certainty and led to Nyxara's reveal rather than ending the investigation.
 - Nyxara Veyl entered the story as the second observer and potential supporting companion.
 - The pleasure cult is now canonically named **the Velvet Coil**.
-- Nyxara's main claim has been partially verified through Insight, narrowing the immediate uncertainty around her allegiance.
-- A stolen ledger has become a new major investigation lead.
+- Nyxara's main claim has been partially verified through Insight, narrowing uncertainty around her allegiance.
+- A stolen ledger has become a major investigation lead.
+- DevilMedlar and Nyxara reached the old culvert approach without spending combat resources.
+- DevilMedlar prevented Nyxara from triggering a concealed line, giving their provisional cooperation a concrete success.
+- Nyxara now knows DevilMedlar survived the Velvet Coil.
 
 ## Unresolved Threads
 
@@ -128,7 +141,8 @@ None established yet.
 - Contents and purpose of the stolen Velvet Coil ledger.
 - Identity of the person Nyxara cares about whose name appears in the ledger.
 - Why Nyxara is sufficiently involved to risk pursuing the carver alone.
-- What lies at the old culvert.
+- Exact function and maker of the culvert tripline.
+- What lies inside or beyond the old culvert.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
 - Why DevilMedlar ultimately left temple life.
@@ -157,6 +171,9 @@ None established yet.
 - `nyxara_core_claim_verified = true`
 - `velvet_coil_ledger_lead_known = true`
 - `nyxara_personal_ledger_connection_known = true`
+- `nyxara_knows_devilmedlar_velvet_coil_survivor = true`
+- `culvert_tripline_found_before_trigger = true`
+- `nyxara_provisional_cooperation = true`
 
 ## Continuity Notes
 
@@ -167,4 +184,4 @@ None established yet.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 3:** World state synchronized after DevilMedlar's successful Insight check and Nyxara's Velvet Coil ledger revelation.
+- **Session 1 Turn 4:** World state synchronized after the successful culvert Perception check, concealed-tripline discovery, provisional cooperation, and DevilMedlar's Velvet Coil survivor disclosure to Nyxara.
