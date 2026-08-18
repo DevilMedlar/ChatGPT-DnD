@@ -13,11 +13,10 @@
 
 ## Advancement
 
-- **XP:** 150 / 300
-- **XP to Level 2:** 150
+- **XP:** 175 / 300
+- **XP to Level 2:** 125
 - **Progression:** Numeric XP.
-- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger.
-- **Turn 7:** No XP awarded yet. The Arcana, Stealth, and Perception checks all failed and created an immediate alerted-presence complication rather than a completed accomplishment.
+- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger; 25 XP for successfully peeking the alerted culvert bend, identifying the likely carver, and spotting the likely ledger container without being detected.
 
 ## Appearance
 
@@ -126,7 +125,7 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
-- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance, told her she is beautiful and has a nice figure, and in Turn 7 looked her up and down and made another quick comment that she looked lovely/sexy while they advanced through the culvert. Nyxara continues to answer with dry amusement rather than hostility. She has confirmed that the woman she loves is the protected name in the stolen Velvet Coil ledger, but still withholds the woman's identity and exact relationship. Cooperation and light flirtatious tension continue, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance and complimented her repeatedly; Nyxara generally answers with dry amusement rather than hostility. She has confirmed that the woman she loves is the protected name in the stolen Velvet Coil ledger, but still withholds the woman's identity and exact relationship. In Turn 8, while DevilMedlar moved past Nyxara in the cramped culvert to peek the corner, a footing shift caused brief accidental intimate contact against her chest/hip. DevilMedlar immediately withdrew and apologized quietly. Nyxara accepted the apology and maintained cover. The event does not establish consent to future touching, mutual attraction, romance, debt, formal trust, or party membership.
 
 ## Conditions / Transformations
 
@@ -140,11 +139,11 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 - Exact circumstances of DevilMedlar's survival/departure from the Velvet Coil.
 - Identity and motives of the Temple-Bound Acolyte and temple/order.
 - Sunscale Shard's true origin, hidden property, and the meaning of its stronger heat pulse deeper inside the culvert.
-- Identity and motive of the Velvet Coil carver.
-- Identity and exact relationship of the woman Nyxara loves whose name appears in the stolen ledger.
-- Identity, number, and exact position of the likely alerted presence beyond the first culvert bend.
+- Exact identity and motive of the likely Velvet Coil carver now visible beyond the first bend.
+- Whether the thick leather-bound object in his satchel is the stolen ledger.
+- Identity and exact relationship of the woman Nyxara loves whose name appears in the ledger.
 - Whether Nyxara becomes a supporting companion.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 7:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 150/300. Arcana 1 vs DC 12 failed; Stealth 10 vs DC 12 failed; Perception 4 vs DC 13 failed. No resources spent. A likely presence beyond the bend is now alerted.
+- **Session 1 Turn 8:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 175/300. Stealth 15 vs DC 13 succeeded; Perception 17 vs DC 14 succeeded. No resources spent. Likely carver identified in the chamber beyond the bend without detecting DevilMedlar's peek.
