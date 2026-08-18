@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 2,
+  "turn_number": 3,
   "tone": "Anything Goes Sandbox",
-  "current_step": "gully_first_contact_nyxara",
+  "current_step": "nyxara_questioned_insight_success",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 50,
+      "xp_current": 75,
       "xp_next_level": 300,
-      "xp_to_next_level": 250
+      "xp_to_next_level": 225
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -43,18 +43,15 @@
       "level_1_spell_slots": 2,
       "level_1_spell_slots_max": 2
     },
-    "skill_proficiencies": [
-      "Perception",
-      "Survival"
-    ],
+    "skill_proficiencies": ["Perception", "Survival"],
     "skill_totals": {
       "perception": 3,
-      "survival": 3
+      "survival": 3,
+      "insight": 1
     },
     "heritage_features": {
       "fire_resistance": true,
       "golden_breath": {
-        "action": true,
         "area": "15-ft cone",
         "save": "Dexterity DC 12",
         "damage": "2d6 fire or radiant; half on successful save",
@@ -83,11 +80,11 @@
       "focus": "Dawnclaws — Bonded Draconic Gauntlets",
       "cantrips": {
         "Solar Lance": "Action, 60 ft, +4 ranged spell attack, 1d8 fire or radiant damage",
-        "Sunclaw Channel": "Action, make one Dawnclaw attack; normal 1d6+2 damage, counts as magical, choose bludgeoning/fire/radiant"
+        "Sunclaw Channel": "Action, one Dawnclaw attack; 1d6+2 magical bludgeoning/fire/radiant"
       },
       "level_1_abilities": {
-        "Restorative Flame": "Action, touch, expend 1 level-1 slot, heal 1d8+2 HP",
-        "Ascendant Smite": "After a Dawnclaw hit, expend 1 level-1 slot, add 2d6 fire or radiant damage, once per turn"
+        "Restorative Flame": "Action, touch, expend 1 slot, heal 1d8+2 HP",
+        "Ascendant Smite": "After Dawnclaw hit, expend 1 slot, +2d6 fire or radiant, once per turn"
       }
     },
     "appearance": {
@@ -114,7 +111,6 @@
       "weapon_attack_bonus": 4,
       "weapon_damage": "1d6 + 2 bludgeoning",
       "weapon_attack_ability": "Charisma",
-      "weapon_notes": "Paired gauntlets function as one weapon set; no free extra attack. While Golden Ascendant is active, damage may be fire or radiant instead of bludgeoning.",
       "armor": "Reinforced Wanderer's Vestments",
       "armor_class": 12,
       "relic": "Sunscale Shard",
@@ -123,19 +119,22 @@
   },
   "scene": {
     "location": "North drainage gully off Lantern Road outside Vespergate",
-    "situation": "DevilMedlar followed the two recent trails north into the drainage gully. A Survival check of 4 + 3 = 7 against DC 12 failed. Loose gravel and hard runoff stone caused him to lose the clean trail and enter a narrow bend below an upper shelf. The lighter second observer then revealed herself from the ledge as Nyxara Veyl, a 24-year-old adult female tiefling Veilblade/occult tracker. She claims she was independently following the cult-mark carver and indicates the carver took the upper shelf toward an old culvert. Her claim is not yet verified.",
+    "situation": "DevilMedlar questioned Nyxara Veyl while studying her for deception. Insight 14 + 1 = 15 against DC 13 succeeded. Nyxara is truthful that she was independently following the cult-mark carver and is not allied with him. She identifies the cult as the Velvet Coil and says the carver stole a ledger in Vespergate containing names connected to the cult. One name in the ledger matters personally to her, but she refuses to identify that person yet. She says the carver continued toward the old culvert.",
     "combat_active": false,
     "recent_roll": {
-      "type": "Survival",
-      "die": 4,
-      "modifier": 3,
-      "total": 7,
-      "dc": 12,
-      "result": "failure_with_forward_consequence"
+      "type": "Insight",
+      "die": 14,
+      "modifier": 1,
+      "total": 15,
+      "dc": 13,
+      "result": "success"
     },
     "clues": {
-      "likely_carver_trail": "The exact ground trail was temporarily lost in gravel, but Nyxara claims the carver moved along the upper shelf toward an old culvert.",
-      "second_observer_trail": "Revealed as Nyxara Veyl, who says she was following the carver rather than traveling with them.",
+      "cult_name": "Velvet Coil",
+      "likely_carver_trail": "Carver is believed to have continued along the upper shelf toward an old culvert.",
+      "nyxara_truth": "Her core claim that she was independently following the carver is truthful.",
+      "nyxara_withholding": "She is withholding the identity of someone personally important whose name appears in the stolen ledger.",
+      "stolen_ledger": "Nyxara says the carver stole a ledger in Vespergate containing names tied to the Velvet Coil.",
       "sunscale_shard": "Still warm; not yet examined further."
     },
     "nearby_npcs": {
@@ -146,16 +145,18 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "First contact; wary but not openly hostile; potential assistant-controlled supporting companion",
-        "claim": "She was independently following the cult-mark carver and is not allied with the carver.",
-        "claim_verified": false
+        "status": "First-contact conversation; wary but increasingly candid",
+        "claim": "Independently tracking the cult-mark carver; not allied with him.",
+        "claim_verified": true,
+        "withholding": "Identity of the personally important name in the stolen ledger",
+        "party_status": "not joined"
       }
     }
   },
   "pending": {
-    "choice": "respond_to_nyxara_first_contact",
+    "choice": "respond_to_nyxara_revelation_or_pursue_culvert",
     "roll": null,
-    "image_offer": true
+    "image_offer": false
   },
   "play_preferences": {
     "rolls": "open",
@@ -175,11 +176,10 @@
       "frequency": "only_when_the_scene_deserves_it",
       "ask_at_end_of_narration": true,
       "prompt": "Make image? Yes / No",
-      "on_yes": "generate_image_before_the_player_makes_or_resolves_gameplay_choices",
-      "on_no": "skip_image_and_parse_the_rest_of_the_message_as_choices_or_freeform_action",
+      "on_yes": "generate image before resolving gameplay choices",
+      "on_no": "skip image and parse remaining text as choices/freeform action",
       "continuity_source": "art/art_log.md",
-      "store_generated_file": "campaigns/campaign-1/art/ when a persistent image file is available",
-      "adult_nudity": "explicitly_adult_characters_only_and_within_platform_limits"
+      "store_generated_file": "campaigns/campaign-1/art/ when a persistent image file is available"
     }
   },
   "canonical_files": {
@@ -190,6 +190,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_2_tracking_failure_nyxara_first_contact",
-  "last_synced_turn": "Session 1 Turn 2"
+  "last_checkpoint": "session_1_turn_3_nyxara_insight_success",
+  "last_synced_turn": "Session 1 Turn 3"
 }
