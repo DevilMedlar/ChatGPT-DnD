@@ -4,9 +4,9 @@
   "path": "campaigns/campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 2,
+  "turn_number": 3,
   "current_step": "awaiting_player_action",
-  "xp_current": 50,
+  "xp_current": 80,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 1 is resolved in Brasshaven. DevilMedlar and Senpai investigated Orin Pell's Cinderwash relic shipment, questioned Seraphine Vale, read but did not accept the 60 gp Emberglass caravan contract, and explored Brasshaven together before stopping at Lantern Square. DevilMedlar and Senpai each have 50 XP. No resources were spent. The campaign is awaiting the player's next action."
+  "last_sync_note": "Session 1, Turn 2 is resolved in Brasshaven. DevilMedlar and Senpai completed a date-like outing through Mooncup Apothecary, Brass Nail Smithy, Merchants' Compact Hall, and Steam & Stone Baths. They bought no shop gear, did not accept the caravan contract, and learned Copper Finch Courier last checked in at Cinderwash Turnoff. Senpai paid 1 gp for a private shared bath, and mutual attraction between DevilMedlar and Senpai is now explicitly established without a committed relationship. They are now at the Three Lanterns Inn near sunset, about to speak with Seraphine Vale. Both have 80 / 300 XP."
 }
