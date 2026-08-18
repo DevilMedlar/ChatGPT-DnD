@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, and background. Senpai has established name, age, gender, and pronouns. Abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, and base ability scores. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -15,14 +15,26 @@ Partial character identity canon has been established. DevilMedlar has establish
 - **Background:** Lost Dragon Clan Heir
 - **Level:** Not established
 
+## Background History
+
+DevilMedlar was born as the heir of **Clan Aurivane**, an old Radiant Draginkin bloodline whose ancestral seat was **Dawnscale Sanctum**, a secluded draconic sanctuary tied to radiant dragon rites and lineage traditions.
+
+When DevilMedlar was still a child, a catastrophe remembered as **the Shattering of Dawnscale** struck during an important clan rite. The sanctuary was breached amid violence, internal confusion, and uncontrolled radiant draconic power. An unnamed clan guardian forced DevilMedlar through an emergency one-way dragon gate meant to preserve the heir if the sanctuary ever fell. He emerged alone far from home, and the gate collapsed behind him before he could return.
+
+What truly happened at Dawnscale Sanctum remains unresolved. Conflicting stories claim the clan was destroyed, scattered, betrayed from within, or sealed away when the sanctuary became inaccessible. DevilMedlar remembers enough of his childhood and bloodline to know who he is and that he is the legitimate lost heir, but he does not know which relatives or clan members survived, who caused the Shattering, or what became of the sanctuary.
+
+This background establishes future hooks without resolving them in advance: the fate of Clan Aurivane, the cause of the Shattering, possible survivors or rivals, the status of Dawnscale Sanctum, and DevilMedlar's eventual claim to his inheritance.
+
 ## Ability Scores
 
-- **Strength:** Not established
-- **Dexterity:** Not established
-- **Constitution:** Not established
-- **Intelligence:** Not established
-- **Wisdom:** Not established
-- **Charisma:** Not established
+Standard array assigned to support the Dragon Ascendant's mobile martial and radiant mystical roles. These are base scores before any later feature explicitly modifies them.
+
+- **Strength:** 10 (+0)
+- **Dexterity:** 15 (+2)
+- **Constitution:** 13 (+1)
+- **Intelligence:** 8 (-1)
+- **Wisdom:** 14 (+2)
+- **Charisma:** 12 (+1)
 
 ## Combat Statistics
 
