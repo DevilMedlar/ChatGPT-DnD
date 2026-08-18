@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 11,
+  "turn_number": 12,
   "tone": "Anything Goes Sandbox",
-  "current_step": "ledger_confirmed_captive_secured_chamber_cleared",
+  "current_step": "captive_awake_after_nyxara_info_exchange",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 225,
+      "xp_current": 250,
       "xp_next_level": 300,
-      "xp_to_next_level": 75
+      "xp_to_next_level": 50
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -51,7 +51,8 @@
       "investigation": -1,
       "arcana": -1,
       "stealth": 0,
-      "intimidation": 2
+      "intimidation": 2,
+      "persuasion": 2
     },
     "heritage_features": {
       "fire_resistance": true,
@@ -109,7 +110,8 @@
         "eventually left to become a Wandering Mystic"
       ],
       "social_style": "smooth, flirtatious, and teasing",
-      "velvet_coil_survivor_revealed_to_nyxara": true
+      "velvet_coil_survivor_revealed_to_nyxara": true,
+      "turn12_escape_history": "DevilMedlar told Nyxara he entered the Velvet Coil voluntarily at age 18 after being promised adult freedom from shame and judgment. What began as consensual adult revelry and community became a system of affection-as-leverage, secrets-as-debt, and pressure to obey. He refused a binding oath that would have required helping recruit others. During a storm-night disruption he escaped through a service route with only the Sunscale Shard and what he could carry. He hid until dawn and was found exhausted by the still-unnamed Temple-Bound Acolyte, who brought him into temple life."
     },
     "equipment": {
       "weapon": "Dawnclaws - Bonded Draconic Gauntlets",
@@ -124,24 +126,25 @@
   },
   "scene": {
     "location": "Culvert maintenance chamber beyond the first bend, north drainage gully outside Vespergate",
-    "situation": "Session 1 Turn 11. DevilMedlar disarmed and thoroughly searched the unconscious captured carver while Nyxara used DevilMedlar's 50-ft hempen rope to bind the captive's wrists, ankles, and torso securely. Investigation 19 - 1 = 18 against DC 14 succeeded. The captive carried a stone-carving chisel, a narrow boot knife, six compact-crossbow bolts, a small pouch containing 8 gp and 6 sp, a small brass key with a three-coil notch pattern, and the dark cross-body satchel. His dropped compact crossbow was secured away from him. DevilMedlar then swept the maintenance chamber for accomplices, exits, threats, and useful items. Perception 17 + 3 = 20 against DC 13 succeeded. No accomplice is currently present and no second fresh set of tracks was found beyond Nyxara's known trail; the captive appears to have occupied the chamber alone. Two routes leave the chamber besides the way back: a narrow drainage passage continues east/deeper into the culvert, and a rusted vertical service shaft climbs to a grated surface exit above the gully. The surface grate appears usable but noisy. A hooded lantern and one flask of lamp oil were also recovered near the captive's firing position. DevilMedlar then opened the leather-bound book. The Investigation success and Nyxara's recognition confirmed it is the stolen Velvet Coil ledger. It contains names, dates, payments, movement routes, and coded marks identifying watched or selected people. A repeated route notation references 'Vespergate / Silken Cup / cellar delivery', establishing a new Vespergate lead. Nyxara found the entry tied to the woman she loves and confirmed the ledger is genuine, saying it is what she was after but worse than she expected. She still withheld the woman's name and exact relationship. DevilMedlar flirted lightly while asking whether the ledger matched what Nyxara expected; she answered with dry amusement and remained focused. The captive remains unconscious, stable, bound, and alive. No combat or resource-limited ability use occurred.",
+    "time": "Night, roughly three hours after dusk",
+    "situation": "Session 1 Turn 12. DevilMedlar chose not to force the bound captive awake and instead waited for natural recovery. Recovery roll 1d4 = 3 hours. During the wait he studied the confirmed Velvet Coil ledger more deeply, examined the three-coil brass key and searched for a matching lock, asked Nyxara what she knew about the Silken Cup, and traded personal history with her. Ledger Investigation 4 - 1 = 3 vs DC 14 failed: no deeper Coil shorthand or coded pattern was decoded beyond the already-established names, payments, routes, and Silken Cup cellar-delivery lead. Key/chamber Investigation 5 - 1 = 4 vs DC 13 failed: the key fits none of the obvious chamber hardware, lantern fittings, service-shaft grate, or visible mechanisms, and no matching lock was found. Persuasion 17 + 2 = 19 vs DC 14 succeeded on the info-for-info exchange. Nyxara explained that the Silken Cup is an upscale winehouse and performance salon in Vespergate's Lantern Quarter with private rooms and a rear cellar-delivery entrance; she has previously watched discreet late-night couriers use that cellar route and suspects the ledger notation refers to covert movement rather than normal stock, though that remains her inference. Nyxara asked what DevilMedlar meant by surviving the Velvet Coil. With the player's authorization to establish his past, DevilMedlar revealed that he entered the Coil voluntarily at age 18, before recognizing its coercive control, refused a binding oath requiring him to help recruit others, escaped during a storm-night disruption through a service route, and was found the next morning by the still-unnamed Temple-Bound Acolyte. In return Nyxara revealed that the woman in the ledger is her younger sister, Mara Veyl, age 21, explicitly adult. Mara is not known to be a Velvet Coil member; Nyxara believes she is a target. Nyxara grew up in Vespergate and became a courier, then tracker and Veilblade, while Mara remained the steadier sibling. Nyxara began hunting the Coil after noticing a watcher following Mara and eventually traced one of those watchers toward the Silken Cup. The exchange substantially increased personal trust, while romance and party membership remain unconfirmed. At the end of the three-hour wait, the captive naturally regained consciousness at 1 HP. He is awake, groggy, bound, fully disarmed, and sees DevilMedlar and Nyxara with the ledger in hand. No combat is active.",
     "combat_active": false,
     "recent_rolls": [
-      {"type":"Perception","die":17,"modifier":3,"total":20,"dc":13,"result":"success"},
-      {"type":"Investigation","die":19,"modifier":-1,"total":18,"dc":14,"result":"success"}
+      {"type":"Investigation - ledger study","die":4,"modifier":-1,"total":3,"dc":14,"result":"failure"},
+      {"type":"Investigation - key and lock search","die":5,"modifier":-1,"total":4,"dc":13,"result":"failure"},
+      {"type":"Persuasion - info for info","die":17,"modifier":2,"total":19,"dc":14,"result":"success"},
+      {"type":"Natural recovery","die":"1d4","total":3,"result":"captive_wakes_after_3_hours_at_1_hp"}
     ],
     "clues": {
       "cult_name": "Velvet Coil",
-      "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered.",
-      "sunscale_shard": "Still unidentified, unusually warm, and previously produced a brief stronger heat pulse when oriented deeper into the culvert.",
-      "captured_carver": "Unconscious, stable, securely bound with DevilMedlar's rope, fully disarmed, and still unidentified by name/allegiance/motive.",
-      "ledger_confirmed": "The leather-bound book is confirmed as the stolen Velvet Coil ledger. It records names, dates, payments, routes, and coded marks tied to watched/selected people.",
-      "nyxara_ledger_entry": "Nyxara confirmed the entry concerning the woman she loves is present. The woman's name and exact relationship remain undisclosed.",
-      "silken_cup_lead": "A repeated ledger route notation reads 'Vespergate / Silken Cup / cellar delivery'. Exact significance remains unresolved.",
-      "chamber_routes": "Beyond the return route, an eastward deeper drainage passage and a noisy rusted vertical service shaft to a surface grate leave the maintenance chamber.",
-      "accomplice_sweep": "Perception 20 found no current accomplice and no additional fresh track set in or beyond the chamber.",
-      "carver_key": "Small brass key with a three-coil notch pattern recovered from the captive; matching lock unknown.",
-      "turn8_art_verified": "Player manually uploaded art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png; repository path remains verified."
+      "culvert_alarm": "Known nonlethal warning alarm remains intact and armed behind DevilMedlar and Nyxara. It has not triggered during the three-hour wait.",
+      "sunscale_shard": "Still unidentified and unusually warm; prior deeper-culvert heat pulse remains unexplained.",
+      "ledger_confirmed": "Confirmed Velvet Coil ledger remains secured. Turn 12 deeper study failed to decode additional shorthand.",
+      "silken_cup_lead": "Nyxara identifies the Silken Cup as an upscale Vespergate Lantern Quarter winehouse/performance salon with private rooms and a rear cellar-delivery entrance. She has observed discreet late-night couriers using that route and suspects covert Velvet Coil movement, but that suspicion is not yet proven.",
+      "three_coil_key": "Matching lock remains unknown after failed Turn 12 search. It fits none of the obvious chamber hardware or visible service-shaft fittings.",
+      "nyxara_family_reveal": "The woman in the ledger is Mara Veyl, Nyxara's younger sister, age 21 and explicitly adult. Mara is not known to be a Velvet Coil member; Nyxara believes she is being watched/selected as a target.",
+      "devilmedlar_escape_reveal": "DevilMedlar entered the Velvet Coil at age 18, later recognized its coercive control, refused a binding recruitment oath, escaped during a storm-night disruption through a service route, and was found exhausted the next morning by the unnamed Temple-Bound Acolyte.",
+      "captive_awake": "Captured shrine carver naturally regained consciousness after three hours and is awake at 1 HP, bound and disarmed."
     },
     "secured_scene_items": {
       "compact_crossbow": 1,
@@ -162,27 +165,34 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Uninjured, helping secure the captive and reviewing the confirmed Velvet Coil ledger with DevilMedlar",
+        "status": "Uninjured; sharing watch and personal history with DevilMedlar while preparing to interrogate the now-awake captive",
         "claim_verified": true,
-        "withholding": "Identity and exact relationship of the woman she loves whose entry appears in the ledger",
-        "knows_devilmedlar_is_velvet_coil_survivor": true,
+        "family": {
+          "mara_veyl": {
+            "name": "Mara Veyl",
+            "age": 21,
+            "adult": true,
+            "relationship": "younger sister",
+            "ledger_status": "listed in the Velvet Coil ledger; Nyxara believes she is a target, not a member"
+          }
+        },
         "party_status": "not joined",
-        "relationship_notes": "Turn 11: DevilMedlar and Nyxara followed through on their promised post-fight conversation while reviewing the ledger. DevilMedlar flirted lightly; Nyxara answered with dry amusement. Cooperation and ease continue to grow, but mutual attraction and romance remain unconfirmed and prior consent boundaries remain intact."
+        "relationship_notes": "Turn 12 Persuasion 19 produced a genuine info-for-info exchange. Nyxara learned DevilMedlar's escape history and reciprocated by revealing Mara's name and sister relationship plus more of her own Vespergate past. Personal trust increased substantially. Light flirtation remains welcome in their conversation, but mutual romance, intimacy, and party membership remain unconfirmed and established consent boundaries remain intact."
       },
       "captured_likely_velvet_coil_carver": {
         "identity": "unknown",
         "adult": true,
         "gender_presentation": "male",
-        "combat_profile": {"armor_class":13,"hp_max":7,"hp_current":0,"crossbow_attack_bonus":3,"initiative_bonus":2},
-        "status": "unconscious_stable_bound_disarmed",
-        "restraint": "DevilMedlar's 50-ft hempen rope currently secures wrists, ankles, and torso",
-        "awareness": "unconscious",
+        "combat_profile": {"armor_class":13,"hp_max":7,"hp_current":1,"crossbow_attack_bonus":3,"initiative_bonus":2},
+        "status": "awake_bound_disarmed_at_1_hp",
+        "restraint": "DevilMedlar's 50-ft hempen rope secures wrists, ankles, and torso",
+        "awareness": "awake, groggy, aware that DevilMedlar and Nyxara possess the ledger",
         "possessions_removed": true
       }
     }
   },
   "pending": {
-    "choice": "decide_interrogation_and_next_move_after_ledger_confirmation",
+    "choice": "interrogate_awake_captive",
     "roll": null,
     "image_offer": false
   },
@@ -221,6 +231,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_11_ledger_confirmed_chamber_cleared",
-  "last_synced_turn": "Session 1 Turn 11"
+  "last_checkpoint": "session_1_turn_12_info_for_info_and_captive_wakes",
+  "last_synced_turn": "Session 1 Turn 12"
 }
