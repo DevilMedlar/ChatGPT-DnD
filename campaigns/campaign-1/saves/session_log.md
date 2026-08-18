@@ -33,3 +33,11 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Draginkin lineage/heritage details remain unresolved.
 - Archetype/path, appearance, abilities, background, and equipment remain unresolved.
 - Current creation step: archetype/path.
+
+### Checkpoint 0.3 — Path and heritage established
+
+- Archetype/path: **Dracolyte / Draconic Acolyte**.
+- Draginkin heritage: **Gold Dragon — fire/radiance affinity**.
+- Detailed mechanical expressions of the Gold heritage and Dracolyte path remain pending level-1 feature selection.
+- Appearance remains unresolved; Gold heritage does not by itself force scale color, horn shape, eyes, or other physical traits.
+- Current creation step: ability-score assignment.
