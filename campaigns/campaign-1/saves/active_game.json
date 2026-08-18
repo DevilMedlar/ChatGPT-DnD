@@ -5,10 +5,10 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "character_identity",
+  "current_step": "gender_pronouns",
   "player_character": {
-    "name": null,
-    "age": null,
+    "name": "DevilMedlar",
+    "age": 20,
     "gender_pronouns": null,
     "species_race": null,
     "level": 1,
@@ -20,7 +20,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": null,
+    "choice": "gender_pronouns",
     "roll": null,
     "image_offer": false
   },
@@ -34,6 +34,7 @@
       "on_yes": "generate_image_before_the_player_makes_or_resolves_gameplay_choices",
       "on_no": "skip_image_and_parse_the_rest_of_the_message_as_choices_or_freeform_action",
       "continuity_source": "art/art_log.md",
+      "store_generated_file": "campaigns/campaign-1/art/ when a persistent image file is available",
       "adult_nudity": "explicitly_adult_characters_only_and_within_platform_limits"
     }
   },
@@ -45,5 +46,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "repository_initialized"
+  "last_checkpoint": "character_identity_name_age_set"
 }
