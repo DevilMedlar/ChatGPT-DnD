@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** Character creation in progress.
+**Status:** DevilMedlar character creation complete. Ready for campaign play.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance. Senpai has established name, age, gender, and pronouns. Relationships and other personal canon remain unestablished unless listed below.
+DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has established name, age, gender, and pronouns only and remains an available but not automatically active ChatGPT-controlled campaign character.
 
 ## DevilMedlar (player)
 
