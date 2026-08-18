@@ -179,7 +179,10 @@
       "on_yes": "generate image before resolving gameplay choices",
       "on_no": "skip image and parse remaining text as choices/freeform action",
       "continuity_source": "art/art_log.md",
-      "store_generated_file": "campaigns/campaign-1/art/ when a persistent image file is available"
+      "repository_image_persistence": "manual_by_player",
+      "assistant_must_not_commit_image_binaries": true,
+      "assistant_may_update_textual_art_continuity": true,
+      "record_repo_path_only_after_verified": true
     }
   },
   "canonical_files": {
