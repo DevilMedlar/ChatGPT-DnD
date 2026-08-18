@@ -7,8 +7,8 @@ No character identity, ancestry, class, background, abilities, equipment, appear
 ## Identity
 
 - **Name:** Not established
-- **Age:** Not established; must be explicitly 18+
-- **Gender / pronouns:** Not established
+- **Age:** 20
+- **Gender / pronouns:** Male, He/Him
 - **Species / ancestry:** Not established
 - **Class / homebrew class:** Not established
 - **Background:** Not established
@@ -58,8 +58,8 @@ No appearance canon established. Record stable visual traits here and mirror con
 ## Senpai (chatgpt character)
 
 - **Name:** Senpai
-- **Age:** Not established; must be explicitly 18+
-- **Gender / pronouns:** Not established
+- **Age:** 20
+- **Gender / pronouns:** Female, She/Her
 - **Species / ancestry:** Not established
 - **Class / homebrew class:** Not established
 - **Background:** Not established
