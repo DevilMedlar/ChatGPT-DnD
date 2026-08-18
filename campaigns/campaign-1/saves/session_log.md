@@ -73,3 +73,14 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Perception total: **+3**; Survival total: **+3**.
 - Passive Perception: **13**.
 - Current creation step: starting equipment.
+
+### Checkpoint 0.7 — Starting equipment established
+
+- Custom starting weapon chosen: **Dawnclaw — Bonded Draconic Gauntlet**.
+- Dawnclaw is a `1d6` bludgeoning simple melee weapon using Strength and also serves as DevilMedlar's draconic/spellcasting focus.
+- During Golden Ascendant, Dawnclaw may deal fire or radiant instead of bludgeoning without adding damage.
+- Starting armor: **Reinforced Wanderer's Vestments**, light armor equivalent to studded leather; current AC **12** with Dexterity +0.
+- Personal keepsake: **Sunscale Shard**, a small unidentified gold-dragon relic of unknown origin with no known mechanical property yet.
+- Standard travel, survival, ritual, and healer supplies established; starting currency **12 gp**.
+- Dawnclaw, armor, and Sunscale visual continuity are recorded in `../art/art_log.md`.
+- Current creation step: final level-1 Dracolyte/Draginkin mechanics.
