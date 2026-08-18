@@ -76,11 +76,13 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 
 ### Checkpoint 0.7 — Starting equipment established
 
-- Custom starting weapon chosen: **Dawnclaw — Bonded Draconic Gauntlet**.
-- Dawnclaw is a `1d6` bludgeoning simple melee weapon using Strength and also serves as DevilMedlar's draconic/spellcasting focus.
-- During Golden Ascendant, Dawnclaw may deal fire or radiant instead of bludgeoning without adding damage.
+- Custom starting weapon chosen: **Dawnclaws — Bonded Draconic Gauntlets**, a matched pair worn on both forearms/hands.
+- The paired Dawnclaws function as **one weapon set**, not two independent attacks; wearing both does not grant a free off-hand/bonus-action strike.
+- Dracolyte bond allows DevilMedlar to use **Charisma** for Dawnclaw attack and damage rolls: **+4 to hit**, `1d6 + 2` bludgeoning at level 1.
+- The Dawnclaws also serve as his draconic/spellcasting focus.
+- During Golden Ascendant, a Dawnclaw hit may deal fire or radiant instead of bludgeoning without adding damage.
 - Starting armor: **Reinforced Wanderer's Vestments**, light armor equivalent to studded leather; current AC **12** with Dexterity +0.
 - Personal keepsake: **Sunscale Shard**, a small unidentified gold-dragon relic of unknown origin with no known mechanical property yet.
 - Standard travel, survival, ritual, and healer supplies established; starting currency **12 gp**.
-- Dawnclaw, armor, and Sunscale visual continuity are recorded in `../art/art_log.md`.
+- Dawnclaws, armor, and Sunscale visual continuity are recorded in `../art/art_log.md`.
 - Current creation step: final level-1 Dracolyte/Draginkin mechanics.
