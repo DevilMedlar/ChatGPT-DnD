@@ -9,7 +9,9 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - `Yes` means generate the image before the player makes or resolves gameplay choices for that scene.
 - `No` means skip generation; any remaining text in the same reply is treated as the player's choices or freeform action.
 - Reference this log before generating any recurring character, equipment, location, transformation, scar, tattoo, or other established visual.
-- When a generated image is available as a persistent file, store it in the Campaign 1 `art/` root and record its actual repository path below.
+- **Manual persistence policy:** ChatGPT must not commit, upload, create, replace, or rename generated image files in the repository. The player will add generated images to the Campaign 1 `art/` root manually.
+- ChatGPT may still record scene-art continuity details here immediately after generation, but must not invent a repository filename/path for a not-yet-uploaded image.
+- After the player manually adds an image to `art/`, ChatGPT may verify its actual repository path and update this log to reference it.
 - Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
 - Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
@@ -118,7 +120,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Equipment:** Dawnclaws and Sunscale Shard.
 - **Location / lighting:** Lantern Road near Vespergate at sunset.
 - **Continuity note:** Illustrative; textual canon remains authoritative.
-- **Stored format:** Full-resolution PNG present in the repository.
+- **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
 
 ### Session 1 Turn 2 — Nyxara Veyl First Contact
 
@@ -130,7 +132,12 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Location / lighting:** Rocky drainage gully and old culvert approach at copper-orange dusk.
 - **Mood:** Suspicion, wary intrigue, first-contact tension, not combat or established intimacy.
 - **Continuity caution:** The generated image depicts Nyxara's hair somewhat longer/wavier than textual canon. Keep **shoulder-length, slightly tousled black hair with a narrow wine-red streak** as authoritative unless the player adopts the image variation.
-- **Stored format:** Full-resolution PNG present in the repository.
+- **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
+
+## Persistence Policy Change
+
+- After Session 1 Turn 3, the player explicitly chose to manage all future generated image files manually.
+- ChatGPT will continue generating images when requested and maintaining textual visual continuity, but will not commit image binaries to GitHub going forward.
 
 ## Last Turn Sync
 
@@ -145,4 +152,4 @@ For each future scene, record:
 - sensuality/nudity presentation when relevant
 - continuity changes introduced by the image
 - whether the player adopted any newly introduced visual detail as canon
-- persistent repository image path when available
+- persistent repository image path only after the player manually uploads/commits it and the path is verified
