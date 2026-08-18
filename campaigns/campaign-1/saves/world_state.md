@@ -6,8 +6,8 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 - **Location:** Not established yet.
 - **Time / date:** Not established yet.
-- **Situation:** Character creation, Session 0.
-- **Immediate danger / pressure:** None.
+- **Situation:** Character creation is complete; opening scene is pending.
+- **Immediate danger / pressure:** Not established yet.
 
 ## Known Locations
 
@@ -50,6 +50,7 @@ None established yet.
 ## Known Secrets & Player Knowledge
 
 - DevilMedlar's personal history includes survival of a pleasure cult, a period of temple life under the influence/help of a Temple-Bound Acolyte, and an eventual departure to become a Wandering Mystic.
+- DevilMedlar carries an unidentified **Sunscale Shard**, a small gold-dragon-scale-like relic whose origin and true properties are unknown.
 
 ## Consequences & World Changes
 
@@ -63,12 +64,16 @@ None established yet.
 - Name and nature of the temple/order.
 - Why DevilMedlar ultimately left temple life.
 - Whether the cult, acolyte, or temple/order remain active forces in DevilMedlar's present life.
+- Origin and true properties of the Sunscale Shard.
+- Opening location and immediate situation.
 
 ## Persistent World Flags
 
 - `devilmedlar_background_pleasure_cult_survivor = true`
 - `devilmedlar_background_temple_acolyte_connection = true`
 - `devilmedlar_background_wandering_mystic = true`
+- `devilmedlar_character_creation_complete = true`
+- `sunscale_shard_unidentified = true`
 
 ## Continuity Notes
 
