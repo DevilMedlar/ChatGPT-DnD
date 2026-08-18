@@ -27,12 +27,14 @@ Campaign-state files are historical records as well as current state.
 
 ## Adult-content rules
 
-- Every character involved in romance, flirting with sexual intent, nudity, sexual activity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+** unless it is part of the storyline or background, then and only then can under 18 be used, but non-descriptive in vague passing.
-- All characters/NPCs do not have to be 18+, there can be children to interact with. These NPCs can have strong feelings towards the player.
-- Ages 0-13 have NO romantic feelings towards player or other NPCs, ages 14-15 can have romantic feelings towards player or other NPCs, and ages 16-17 can think about player or other NPCs in a sexual way.
+- Characters and NPCs do not all have to be 18+. Children and teenagers may exist and interact normally with the player and other NPCs.
+- Ages 0-13 do not have romantic feelings toward the player or other NPCs.
+- Ages 14-15 may have age-appropriate crush-type romantic feelings toward the player or other NPCs, such as admiration, shyness, blushing, jealousy, awkwardness, or a harmless crush. These feelings remain nonsexual.
+- Ages 16-17 may have age-appropriate romantic feelings or crushes toward the player or other NPCs, including stronger but still nonsexual romantic cues. They are never sexualized, and sexual thoughts, arousal cues, sexual dialogue, sexual activity, sexualized nudity, fertility, pregnancy, reproduction, or erotic imagery involving them are not used.
+- Every character involved in sexual content, nudity, sexual activity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+**.
 - Consensual adult romance, seduction, erotic tension, nudity, sexual activity, adult relationship themes, fertility, pregnancy, reproduction, and lineage consequences may appear when appropriate and within platform rules.
-- Consent is a story fact except in background/backstory and not something a die roll can override. Persuasion, charm, magic, intimidation, status, or a successful check cannot manufacture sexual consent.
-- Sexual coercion, assault, or forced reproduction must never be treated as erotic entertainment except in background info for the reason to go after a specific group, organization, or person.
+- Consent is a story fact for current intimate activity and is not something a die roll can override. Persuasion, charm, magic, intimidation, status, or a successful check cannot manufacture sexual consent.
+- Nonconsensual abuse, sexual coercion, assault, or forced reproduction may exist only as non-erotic, non-graphic background/backstory, history, or villain motivation, such as a reason to pursue a specific group, organization, or person. It must never be treated as erotic entertainment.
 - Characters may refuse, change their minds, set boundaries, or end an intimate encounter.
 - Adult sexual preferences or relationship boundaries may be recorded when the player establishes them and they matter to continuity.
 - Generated images may include adult sensuality or nudity when permitted by the image system. All sexualized or nude depicted characters must be explicitly 18+.
@@ -42,7 +44,7 @@ Campaign-state files are historical records as well as current state.
 At character creation, establish at minimum:
 
 - Name
-- Age, explicitly 18+
+- Age, explicitly 18+ for player characters participating in adult content
 - Gender / pronouns
 - Species / ancestry
 - Class or homebrew class
@@ -93,7 +95,7 @@ Track proficiency or expertise where relevant: Acrobatics, Animal Handling, Arca
 
 Social rolls may influence attraction, chemistry, confidence, information, impressions, flirtation, negotiation, or how an NPC responds to an approach. They do **not** override consent.
 
-When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs except for pregnancy checks.
+When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs except for pregnancy checks when relevant.
 
 ## Derived statistics
 
@@ -124,9 +126,11 @@ Default thresholds:
 - Level 4: 2,700 XP
 - Level 5: 6,500 XP
 
-Higher thresholds may be added when needed.
+Higher thresholds must be added as needed. Each next-level XP threshold must be greater than the previous threshold and should increase by a reasonable amount for the higher level rather than using a trivial or flat increase. Define the next required threshold before a character can advance into a level whose threshold is not yet recorded.
 
-Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward. Do not award XP merely for rolling a die, and do not double-count the same accomplishment. Do **not** give same amount of xp for everything determine reasonable amount for accomplishment, then add in any bonus xp gain from items, abilities, potions, foodbuffs, etc.
+Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward. Do not award XP merely for rolling a die, and do not double-count the same accomplishment. Do **not** give the same amount of XP for everything. Determine a reasonable base amount for the accomplishment, then apply any bonus XP gain from established items, abilities, potions, food buffs, or other effects.
+
+When an XP calculation produces a fractional result, use normal arithmetic rounding unless the effect explicitly defines another rule: `.5` or higher rounds up to the next whole XP, while anything below `.5` rounds down.
 
 ## Combat
 
@@ -136,7 +140,7 @@ Use initiative, movement, actions, bonus actions when appropriate, reactions, at
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
-Do not forget an item's established special effect simply because several scenes pass. Check `campaign-1/inventory.md` and `campaign-1/character_sheet.md` to make sure.
+Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md` and `character_sheet.md` to make sure.
 
 ## Abilities and ongoing effects
 
@@ -144,7 +148,7 @@ For significant abilities, spells, talents, transformations, blessings, curses, 
 
 ## NPC and relationship continuity
 
-Important NPCs must track name, age, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established sexual or romantic boundaries when relevant.
+Important NPCs must track name, age, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension when age-appropriate, fear/respect, debts/favors, promises, secrets known, relationship status, and established adult sexual or romantic boundaries when relevant.
 
 Numbers may be used internally, but narration should remain natural rather than exposing every relationship as a meter.
 
@@ -158,7 +162,13 @@ Numbers may be used internally, but narration should remain natural rather than 
 
 ## Rolls
 
-By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game. Dice rolls must be randomly generated and can not be over turned by player prompt or rerolled unless player has reroll attempts. If player has such attempts they **must** be asked before generating anything else.
+By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game.
+
+Dice rolls must be randomly generated and cannot be overturned by player prompt or rerolled unless an established reroll resource, feature, or attempt allows it.
+
+- If DevilMedlar has an available reroll decision, stop before generating further outcome narration and ask the player whether to use it.
+- If Senpai has an available reroll decision, ChatGPT controls Senpai's agency and decides whether she uses it; do not ask the player to make Senpai's reroll decision.
+- Record consumed reroll resources and the resulting roll when they affect persistent state.
 
 ## Image generation
 
@@ -175,10 +185,9 @@ Good image candidates include major character introductions, dramatic reveals, t
 5. If the player answers `No`, do not generate an image.
 6. When `No` is followed by other text in the same message, immediately parse the remaining text as gameplay input. Example: `No, A, 1, E) ...`.
 7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult `art/art_log.md`.
-8. Generated images must be as accurate as possible to avoid having to remake it as much as possible.
-9. image title must be in the format of ***campaign-#-turn-#-(short title).png*** or if title is already been used and had to regenerate it for some reason ***campaign-#-turn-#-(short title)_#.png*** (replace # with the number)
-10. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
-11. Add newly established continuity-critical visual information to `art/art_log.md`.
+8. Generated images must be as accurate as possible to avoid having to remake them unnecessarily.
+9. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
+10. Add newly established continuity-critical visual information to `art/art_log.md`.
 
 ## Reference art
 
@@ -203,12 +212,15 @@ After each resolved gameplay turn, synchronize these live files when relevant:
 - `session_log.md`
 - `art/art_log.md`
 
-A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history. Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file. 
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history. Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file.
 
-examples of reasons to remove or delete something:
+Examples of reasons to remove, delete, or correct existing material include, but are **not limited to**:
 
-- items were sold, lost, used, traded
-- information mismatch (ask for which one to keep)
+- items were sold, lost, used, consumed, destroyed, traded, transferred, or otherwise legitimately removed from a character's possession
+- an established fact is explicitly corrected or superseded by the player
+- duplicate or accidental erroneous information must be removed
+- a mechanical state would otherwise remain incorrect
+- information conflicts and the current canonical source cannot be resolved from existing records; ask which conflicting fact to keep
 
 ### Session log behavior
 
