@@ -1,10 +1,10 @@
 # World State — Campaign 1
 
-Fresh campaign state. Limited pre-game background canon is established below. No current gameplay location, active quest, present-day NPC relationship, or resolved story event has been established yet.
+Campaign 1 is now active. Pre-game background canon remains established below, and Session 1 begins at Brasshaven's Wayfarer Gate. No active quest or resolved gameplay consequence has been established yet.
 
 ## Current Location
 
-Not established.
+**Brasshaven — Wayfarer Gate.** DevilMedlar and Senpai begin Session 1 entering the frontier trade settlement of Brasshaven through its old stone Wayfarer Gate, where three traveled roads meet.
 
 ## Important NPCs
 
@@ -13,7 +13,7 @@ Not established.
 
 ## Relationships
 
-None established in the present day beyond Senpai's own decision to join DevilMedlar as an active traveling companion before Session 1. This does not establish romance, attraction, sexual involvement, reproductive involvement, or permanent partnership.
+None established in the present day beyond Senpai's own decision to join DevilMedlar as an active traveling companion before Session 1. This does not establish romance, attraction, sexual involvement, reproductive involvement, or permanent partnership. The circumstances of DevilMedlar and Senpai's first meeting have not been established.
 
 ## Locations
 
@@ -24,6 +24,10 @@ The ancestral seat of Clan Aurivane and a secluded sanctuary associated with Rad
 ### Moonmirror Shrine
 
 A secluded kitsune sanctuary where Senpai was raised and trained in spirit lore, lunar omens, illusion craft, and interpretation of a ceremonial moon-mirror maintained by generations of shrine keepers. Senpai left the shrine by her own choice at age 18 after refusing a fixed lifetime role selected for her by tradition. The shrine's current condition, leadership decisions since her departure, and attitude toward her return are not established.
+
+### Brasshaven
+
+A frontier trade settlement built around the meeting of three traveled roads. Its most recognizable entrance is the **Wayfarer Gate**, an old weathered stone arch broad enough for wagons and foot traffic. Brasshaven is an active present-day location beginning with Session 1. Further districts, businesses, residents, politics, dangers, and history are established only as they appear in play.
 
 ## Factions / Organizations
 
