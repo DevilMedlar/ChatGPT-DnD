@@ -17,3 +17,11 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - `Yes` means generate the image before the player makes or resolves gameplay choices.
 - `No` means skip the image; any remaining text in that same reply is treated as the player's choices or freeform action.
 - Next step: finish player-character identity and character creation.
+
+### Checkpoint 0.1 — Identity begun
+
+- Player character name established: **DevilMedlar**.
+- Player character age established: **20** (adult).
+- Character remains level 1.
+- Gender/pronouns, species/race, archetype/path, appearance, abilities, background, and equipment remain unresolved.
+- Current creation step: gender/pronouns.
