@@ -1,23 +1,34 @@
 # World State — Campaign 1
 
-Campaign 1 is active. Pre-game background canon remains established below. Session 1 began at Brasshaven's Wayfarer Gate, and DevilMedlar and Senpai have now investigated the opening leads and explored enough of Brasshaven to reach Lantern Square. No formal quest has been accepted yet.
+Campaign 1 is active. Pre-game background canon remains established below. Session 1 began at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai have investigated the opening leads, explored Brasshaven, completed a date-like afternoon around several local businesses, and reached the Three Lanterns Inn near sunset. No formal quest has been accepted yet.
 
 ## Current Location
 
-**Brasshaven — Lantern Square.** After entering through the Wayfarer Gate, DevilMedlar and Senpai questioned the relic merchant, spoke with the silver-haired observer, checked the missing-caravan posting, and explored the settlement together. They are currently in Brasshaven's central Lantern Square before choosing their next direction.
+**Brasshaven — Three Lanterns Inn.** DevilMedlar and Senpai arrived near sunset after visiting Mooncup Apothecary, Brass Nail Smithy, Merchants' Compact Hall, and Steam & Stone Baths. They asked for Seraphine Vale. The inn staff confirmed that Vale is present and directed them to an upstairs private parlor where she is waiting. No room has been booked yet.
 
 ## Important NPCs
 
 - An unnamed Clan Aurivane guardian existed in DevilMedlar's childhood and sent him through an emergency dragon gate during the Shattering of Dawnscale; the guardian's identity and fate are not established.
 - An unnamed elder at Moonmirror Shrine helped train Senpai and quietly gave her the Moonmirror Charm when she chose to leave at age 18. The elder's identity, current status, and present relationship with the shrine are not established.
 - **Orin Pell** — human male, age 46; Brasshaven stone-and-antiquities broker. Irritable over his damaged shipment but cooperative when questioned. Orin purchased six crates of carved stone from Gravelark Salvage at Cinderwash Cut, but only four reached him. He has no established allegiance to DevilMedlar or Senpai.
-- **Seraphine Vale** — half-elf female, age 34; silver-haired traveling antiquarian and researcher by her own account. Calm, observant, and deliberately guarded. She recognized the Aurivane Dawnscale Signet from historical seal research and believes the Cinderwash relics may use architectural symbolism related to old eastern dragon-road shrines. DevilMedlar's successful Insight check established that Seraphine was truthful about recognizing the signet and about her concern over the relic/caravan connection, but she deliberately withheld who is financing her current research and some details of why she is in Brasshaven. No alliance, debt, trust bond, attraction, or hostility is established.
+- **Seraphine Vale** — half-elf female, age 34; silver-haired traveling antiquarian and researcher by her own account. Calm, observant, and deliberately guarded. She recognized the Aurivane Dawnscale Signet from historical seal research and believes the Cinderwash relics may use architectural symbolism related to old eastern dragon-road shrines. DevilMedlar's successful Insight check established that Seraphine was truthful about recognizing the signet and about her concern over the relic/caravan connection, but she deliberately withheld who is financing her current research and some details of why she is in Brasshaven. No alliance, debt, trust bond, attraction, or hostility is established. She is currently waiting in an upstairs private parlor at the Three Lanterns Inn after leaving word that DevilMedlar and Senpai may be sent up if they ask for her.
+- **Mira Mooncup** — halfling female, age 41; proprietor of Mooncup Apothecary. Friendly, observant, and businesslike. No relationship beyond ordinary customer contact is established.
+- **Bram Veller** — dwarf male, age 62; smith and proprietor of Brass Nail Smithy. Direct, practical, and proud of durable work. No relationship beyond ordinary customer contact is established.
+- **Elira Voss** — human female, age 29; records clerk at Merchants' Compact Hall. She provided public route and caravan information without requiring DevilMedlar or Senpai to accept the missing-caravan contract.
+- **Brinna Stone** — dwarf female, age 55; attendant at Steam & Stone Baths. She rented Senpai a private two-person mineral pool for 1 gp.
+- **Dessa Thorne** — human female, age 48; innkeeper at the Three Lanterns Inn. She confirmed Seraphine Vale was present and provided the inn's current room rates. No room has been purchased yet.
 
 ## Relationships
 
-None established in the present day beyond Senpai's own decision to join DevilMedlar as an active traveling companion before Session 1. This does not establish romance, attraction, sexual involvement, reproductive involvement, or permanent partnership. The circumstances of DevilMedlar and Senpai's first meeting have not been established.
+Senpai chose before Session 1 to join DevilMedlar as an active traveling companion. The circumstances of their first meeting remain unestablished.
 
-During Session 1, Turn 1, DevilMedlar privately told Senpai that she was beautiful and asked what she wanted to investigate first. Senpai received the compliment with amused appreciation and independently chose to investigate the relic stones first. This interaction does not by itself establish a romantic or sexual relationship status.
+During Session 1, Turn 1, DevilMedlar privately told Senpai that she was beautiful and asked what she wanted to investigate first. Senpai received the compliment with amused appreciation and independently chose to investigate the relic stones first.
+
+During Session 1, Turn 2, DevilMedlar laughed with Senpai and explicitly told her that he found her ear twitches, visible amusement, and behavior while exploring very cute and attractive. He also said he was surprised she was not already taken and that he would marry her in a heartbeat. This establishes **DevilMedlar's attraction and strong romantic interest in Senpai**.
+
+Senpai was visibly flustered but responded positively rather than rejecting the attraction. She said that marriage was moving far faster than she was prepared to promise, but she accepted the outing as a date and later explicitly acknowledged that she is **attracted to DevilMedlar as well**. Senpai's attraction does not establish romance, exclusivity, sexual consent, marriage, reproductive intent, or permanent partnership. She continues to control her own boundaries and relationship choices.
+
+At Steam & Stone Baths, Senpai independently chose and paid for a private two-person mineral pool for herself and DevilMedlar. They bathed together using the bathhouse's linen bathing wraps. Senpai explicitly established that sharing the bath was not blanket permission for touching or sexual activity. The shared bath was affectionate and flirtatious but no sexual activity occurred.
 
 ## Locations
 
@@ -33,15 +44,15 @@ A secluded kitsune sanctuary where Senpai was raised and trained in spirit lore,
 
 A frontier trade settlement built around the meeting of three traveled roads. Its most recognizable entrance is the **Wayfarer Gate**, an old weathered stone arch broad enough for wagons and foot traffic. Brasshaven is an active present-day location beginning with Session 1.
 
-Known parts of Brasshaven established through exploration:
+Known parts of Brasshaven established through play:
 
 - **Wayfarer Gate:** Main road entrance where DevilMedlar and Senpai first entered Brasshaven and encountered Orin Pell's broken wagon, the carved relic shipment, the caravan notice, and Seraphine Vale.
-- **Lantern Square:** Central public square where Brasshaven's three principal roads split. Current location at the end of Session 1, Turn 1.
-- **Three Lanterns Inn:** Reputable, moderately priced inn near Lantern Square. Seraphine Vale said she can be found or contacted there if needed.
-- **Merchants' Compact Hall:** Local trade and caravan office where contracts, route maps, caravan records, and the missing-caravan posting can be formally taken or investigated.
-- **Brass Nail Smithy:** Weapon, tool, and equipment repair shop identified during exploration.
-- **Mooncup Apothecary:** Apothecary selling ordinary medicines, herbs, and adventuring remedies; exact stock and prices are not yet established.
-- **Steam & Stone Baths:** Public bathhouse in Brasshaven; services, prices, staff, and clientele are not yet established.
+- **Lantern Square:** Central public square where Brasshaven's three principal roads split.
+- **Three Lanterns Inn:** Reputable, moderately priced inn near Lantern Square. Current room rates are 2 sp per person for a common bunk, 6 sp for a modest single room, 1 gp for a twin room with two beds, and 1 gp 2 sp for a private double room. Dinner is 3 sp per person. Seraphine Vale is currently present in an upstairs private parlor. No room or meal has yet been purchased by DevilMedlar or Senpai.
+- **Merchants' Compact Hall:** Local trade and caravan office where contracts, route maps, caravan records, and the missing-caravan posting can be formally taken or investigated. A basic copy of the relevant Emberglass Road map costs 5 sp. DevilMedlar and Senpai examined public route records without purchasing a map or accepting the contract.
+- **Brass Nail Smithy:** Weapon, armor, tool, and repair shop operated by Bram Veller. Current observed prices include dagger 2 gp, spear 1 gp, shortsword 10 gp, light crossbow 25 gp, shield 10 gp, leather armor 10 gp, studded leather 45 gp, chain shirt 50 gp, nonmagical horn guards 8 sp per pair, nonmagical tail guard wrap 6 sp, basic weapon maintenance from 5 sp, and armor fitting/repair from about 1 gp depending on work. DevilMedlar and Senpai purchased nothing during Turn 2.
+- **Mooncup Apothecary:** Apothecary operated by Mira Mooncup. Current observed prices include healer's kit 5 gp, potion of healing 50 gp, antitoxin 50 gp, nonmagical traveler's salve 5 sp, scented mineral bath salts 3 sp per sachet, incense 1 sp per stick, and simple herbal tea packets 2 sp. Nonmagical comforts do not restore HP or provide combat bonuses unless later explicitly established. DevilMedlar and Senpai purchased nothing during Turn 2.
+- **Steam & Stone Baths:** Brasshaven bathhouse with public pools for 2 sp per person and private two-person mineral pools for 1 gp total. Towels, soap, and linen bathing wraps are included. During Turn 2 Senpai paid 1 gp from her own currency for a private two-person mineral pool shared with DevilMedlar.
 
 ### Cinderwash Cut
 
@@ -50,6 +61,15 @@ A salvage excavation approximately two days east of Brasshaven along Emberglass 
 ### Emberglass Road
 
 An eastern trade road leaving Brasshaven. Three caravans have disappeared along the same general stretch of Emberglass Road over the last twelve days. The most recent disappearance occurred three days before Session 1 began. The relevant stretch lies around the approach toward Cinderwash Cut.
+
+Public route records inspected at Merchants' Compact Hall establish:
+
+- **Red Fern Provisions:** three-wagon caravan; disappeared 12 days before Session 1 began; last recorded at **Ashmile Marker 14**.
+- **Blue Lark Textiles:** four-wagon caravan; disappeared 7 days before Session 1 began; last reported passing **Glasswind Fork**.
+- **Copper Finch Courier:** two-wagon caravan; disappeared 3 days before Session 1 began; last checked in at the **Cinderwash Turnoff**.
+- No ransom demand, recovered wreckage, confirmed survivors, or verified bodies are recorded in the public Compact file as of Turn 2.
+
+The latest disappearance at Cinderwash Turnoff strengthens the possibility of a connection between the caravan disappearances and the Cinderwash relic site, but does not prove one.
 
 ## Factions / Organizations
 
@@ -63,7 +83,7 @@ The traditional leadership body associated with Moonmirror Shrine. When Senpai r
 
 ### Merchants' Compact
 
-A Brasshaven trade association that coordinates caravan contracts, route information, and merchant interests. It has posted a **60 gp base reward** for locating the three missing caravans on Emberglass Road and returning reliable proof of what happened. Rescue, recovery, or exceptional-hazard compensation may be negotiated separately if circumstances justify it. DevilMedlar and Senpai have read the posting but have not accepted the contract.
+A Brasshaven trade association that coordinates caravan contracts, route information, and merchant interests. It has posted a **60 gp base reward** for locating the three missing caravans on Emberglass Road and returning reliable proof of what happened. Rescue, recovery, or exceptional-hazard compensation may be negotiated separately if circumstances justify it. DevilMedlar and Senpai have reviewed the public records but have not accepted the contract.
 
 ### Gravelark Salvage
 
@@ -75,7 +95,7 @@ No formal quest has been accepted.
 
 ### Available Lead — Missing Emberglass Caravans
 
-The Merchants' Compact is offering 60 gp base pay for locating three caravans that vanished along Emberglass Road during the last twelve days and returning reliable proof of their fate. The most recent vanished three days ago. The contract can be formally pursued through Merchants' Compact Hall.
+The Merchants' Compact is offering 60 gp base pay for locating three caravans that vanished along Emberglass Road during the last twelve days and returning reliable proof of their fate. The latest, Copper Finch Courier, last checked in at Cinderwash Turnoff three days before Session 1 began. The contract can be formally pursued through Merchants' Compact Hall.
 
 ### Available Lead — Cinderwash Relics
 
@@ -83,7 +103,7 @@ Orin Pell's shipment of ancient carved stone came from a collapsed roadside shri
 
 ### Available Lead — Seraphine Vale
 
-Seraphine Vale recognizes Clan Aurivane's signet style from historical research and believes the Cinderwash relics may share symbolic structure with old eastern dragon-road shrines. She is withholding some details of her employer and current research purpose. She can be contacted at the Three Lanterns Inn.
+Seraphine Vale recognizes Clan Aurivane's signet style from historical research and believes the Cinderwash relics may share symbolic structure with old eastern dragon-road shrines. She is withholding some details of her employer and current research purpose. DevilMedlar and Senpai have now returned to the Three Lanterns Inn and are about to speak with her again.
 
 ## Clues / Discoveries
 
@@ -100,6 +120,8 @@ Seraphine Vale recognizes Clan Aurivane's signet style from historical research 
 - DevilMedlar's Insight check on Seraphine totaled 22. She was truthful about recognizing the signet and her concern over the relic/caravan connection, while intentionally withholding who finances her research and some details of her purpose in Brasshaven.
 - The Merchants' Compact posting concerns three caravans missing along Emberglass Road over twelve days, with the latest disappearance three days ago. The posted base reward is 60 gp for locating them and returning reliable proof of their fate.
 - Senpai's Perception check while exploring Brasshaven totaled 22. She quickly learned the useful layout around Lantern Square, identified the Three Lanterns Inn, Merchants' Compact Hall, Brass Nail Smithy, Mooncup Apothecary, and Steam & Stone Baths, and detected no one consistently following the pair during their walk.
+- Public Compact records identify the missing caravans as Red Fern Provisions, Blue Lark Textiles, and Copper Finch Courier. Copper Finch's last confirmed check-in was at Cinderwash Turnoff, strengthening but not proving a connection to the relic site.
+- DevilMedlar and Senpai now know the observed stock and prices at Mooncup Apothecary and Brass Nail Smithy and the current room rates at Three Lanterns Inn.
 
 ## Known Secrets
 
@@ -130,9 +152,11 @@ At age 18, Senpai refused the fixed lifetime role selected for her by shrine tra
 - Who built the dragon-and-sun shrine at Cinderwash Cut, and why does its geometry feel familiar to DevilMedlar?
 - What lies below the sealed stair or chamber discovered by Gravelark Salvage?
 - Why did only four of Orin Pell's six purchased relic crates arrive?
-- What happened to the three caravans missing along Emberglass Road?
+- What happened to Red Fern Provisions, Blue Lark Textiles, and Copper Finch Courier?
+- Why did Copper Finch Courier vanish after checking in at Cinderwash Turnoff?
 - Is there a real connection between the Cinderwash relic site and the caravan disappearances?
 - Who is financing Seraphine Vale's research, and what part of her purpose in Brasshaven is she withholding?
+- Where will DevilMedlar and Senpai stay tonight if they remain in Brasshaven?
 
 ## Continuity Rule
 
