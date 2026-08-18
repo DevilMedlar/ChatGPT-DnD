@@ -9,7 +9,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - `Yes` means generate the image before the player makes or resolves gameplay choices for that scene.
 - `No` means skip generation; any remaining text in the same reply is treated as the player's choices or freeform action.
 - Reference this log before generating any recurring character, equipment, location, transformation, scar, tattoo, or other established visual.
-- When a generated image is available as a persistent file, store it in the Campaign 1 `art/` root and record it below.
+- When a generated image is available as a persistent file, store a compressed repository copy in the Campaign 1 `art/` root and record it below.
 - Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
 - Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
@@ -34,11 +34,11 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Battle/power-up wings:** Manifest only while empowered.
 - **Battle/power-up tail:** Manifests only while empowered.
 - **Transformation aesthetic:** Radiant and dramatic with crimson-and-gold draconic power surrounding the humanoid form, following the player-provided reference image for overall vibe.
-- **Continuity caution:** The player-provided picture is an aesthetic reference for the transformation vibe. Do not silently adopt incidental image details that contradict or go beyond the textual canon above.
+- **Continuity caution:** The player-provided picture is an aesthetic reference for transformation vibe. Do not silently adopt incidental image details that contradict textual canon.
 
 ## Player-Provided Reference Art
 
-- **Reference 1:** DevilMedlar battle/power-up transformation vibe, supplied by the player during Session 0 character creation.
+- **Reference 1:** DevilMedlar battle/power-up transformation vibe, supplied during Session 0.
 - Repository image present in this `art/` root: `5456eaa1-dcca-4bbf-ac3c-1c028af82b0d.png`.
 
 ## Recurring NPCs
@@ -57,7 +57,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Horns:** Smooth obsidian-black horns sweeping backward close to the head, elegant rather than massive.
 - **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
-- **Weapons visible at first meeting:** Slim shortblade at the hip and a compact hand crossbow; exact mechanics remain unfinalized until needed.
+- **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
 - **First-scene posture:** Perched or crouched on an upper gully shelf before dropping down to speak with DevilMedlar.
 - **Current relationship visual rule:** First meeting only. Do not depict established intimacy, romance, or party familiarity unless later canon establishes it.
 
@@ -68,24 +68,23 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Worn on:** Both forearms and hands as a matched pair.
 - **Silhouette:** Close-fitting articulated gauntlets rather than oversized armored fists; fingers remain fully articulated.
 - **Materials:** Dark bronze-gold plates with fine sunburst filigree.
-- **Accents:** Narrow crimson inlays that visually echo DevilMedlar's subtle crimson-red scales.
-- **Symmetry:** The pair should clearly belong together, but small mirrored filigree differences may distinguish left from right.
-- **Inactive appearance:** Elegant, restrained, and suitable for travel; no constant glow.
-- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when spells, draconic power, or Golden Ascendant energy are routed through them.
-- **Golden Ascendant interaction:** When the Dawnclaws deal fire or radiant damage during transformation, depict the chosen damage type through the striking gauntlet without changing the established physical design.
-- **Combat presentation:** The pair functions as one weapon set mechanically. Art may show punches, guards, parries, spell gestures, or both fists lit at once, but should not imply an unearned extra attack mechanic.
+- **Accents:** Narrow crimson inlays that echo DevilMedlar's subtle crimson-red scales.
+- **Inactive appearance:** Elegant and restrained, no constant glow.
+- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when magic or draconic power is routed through them.
+- **Golden Ascendant interaction:** Fire/radiant damage may be depicted through the striking gauntlet without altering its physical design.
+- **Combat presentation:** Art may show punches, guards, parries, spell gestures, or both fists lit, but should not imply an unearned extra attack.
 
 ### Reinforced Wanderer's Vestments
 
-- Dark, flexible travel layers with discreet bronze-gold scale-shaped reinforcement beneath the cloth.
-- The armor should preserve DevilMedlar's lean, mostly human baseline silhouette rather than making him appear heavily armored.
+- Dark flexible travel layers with discreet bronze-gold scale-shaped reinforcement beneath the cloth.
+- Preserve DevilMedlar's lean, mostly human baseline silhouette.
 
 ### Sunscale Shard
 
 - Thumb-length gold-dragon-scale-like fragment held in a simple old wire cage.
-- Catches light in a faint sunburst pattern and appears slightly warm or softly luminous only when appropriate to the scene.
-- Its origin and any true power are unknown; do not visually reveal hidden lore before it becomes canon in play.
-- **Current visual state:** Noticeably warm since the Lantern Road cult-mark discovery; may show a restrained gold glow if visible in a scene.
+- Catches light in a faint sunburst pattern and appears slightly warm or softly luminous only when appropriate.
+- True origin/power remain unknown and must not be visually spoiled.
+- **Current visual state:** Noticeably warm since the Lantern Road Velvet Coil mark discovery; restrained gold glow is acceptable if visible.
 
 ### Draconic Effects
 
@@ -97,15 +96,16 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 ### Lantern Road shrine outside Vespergate
 
 - Weathered roadside shrine beneath a crooked tree.
-- Dirt road leads toward the distant walled city of Vespergate.
-- Scene 1 lighting: copper-orange dusk with long shadows and a quiet, tense atmosphere.
-- Fresh cult sigil carved into the shrine stone.
+- Dirt road leads toward distant Vespergate.
+- Copper-orange dusk with long shadows and quiet tension.
+- Fresh Velvet Coil sigil carved into the shrine stone.
 
 ### North drainage gully
 
-- Dry, narrow drainage cut north of Lantern Road.
-- Loose gravel and pale hard runoff stone underfoot, with irregular elevated shelves and bends.
+- Dry narrow drainage cut north of Lantern Road.
+- Loose gravel and pale hard runoff stone, irregular elevated shelves and bends.
 - Dusk light reaches the upper edges while the gully floor falls into cooler shadow.
+- An old culvert lies farther along the upper route.
 - Nyxara Veyl first appears on an upper shelf overlooking DevilMedlar.
 
 ## Generated Scene Art
@@ -113,18 +113,27 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 ### Session 1 — Fresh Mark on Lantern Road
 
 - **Repository path:** `art/session-1-lantern-road-shrine.webp`
-- **Scene:** DevilMedlar discovers a freshly carved pleasure-cult sigil at a roadside shrine while the Sunscale Shard reacts with heat and golden light.
-- **Character shown:** DevilMedlar, adult age 20.
-- **Form:** Baseline form, no horns, wings, or tail.
-- **Appearance used:** Red hair, gold eyes with faint magical glow, subtle crimson scale traces, dark reinforced wanderer's vestments.
-- **Equipment shown:** Dawnclaws on both arms/hands; Sunscale Shard glowing at the chest.
-- **Location / lighting:** Lantern Road near Vespergate at sunset, shrine under a crooked tree, distant city silhouette.
-- **Continuity note:** The generated image is illustrative. Textual canon remains authoritative if incidental visual details differ.
-- **Stored format note:** The persistent repository copy is a compressed WebP derivative of the generated scene image for reliable GitHub storage through the connector.
+- **Scene:** DevilMedlar discovers a freshly carved Velvet Coil sigil while the Sunscale Shard reacts.
+- **Character shown:** DevilMedlar, adult age 20, baseline form.
+- **Equipment:** Dawnclaws and Sunscale Shard.
+- **Location / lighting:** Lantern Road near Vespergate at sunset.
+- **Continuity note:** Illustrative; textual canon remains authoritative.
+
+### Session 1 Turn 2 — Nyxara Veyl First Contact
+
+- **Repository path:** `art/session-1-turn-2-nyxara-first-contact.webp`
+- **Scene:** DevilMedlar encounters Nyxara Veyl in the north drainage gully after losing the clean trail; Nyxara is perched on the upper ledge with her compact crossbow held low.
+- **Characters shown:** DevilMedlar, adult age 20; Nyxara Veyl, adult age 24.
+- **DevilMedlar form:** Baseline form, no horns, wings, or tail. Red hair, dark travel vestments, Dawnclaws, faintly glowing Sunscale Shard.
+- **Nyxara appearance used:** Tiefling with ash-lavender skin, dark swept-back horns, dark hair with wine-red accents, dark tracker leathers, compact crossbow.
+- **Location / lighting:** Rocky drainage gully and old culvert approach at copper-orange dusk.
+- **Mood:** Suspicion, wary intrigue, first-contact tension, not combat or established intimacy.
+- **Continuity caution:** The generated image depicts Nyxara's hair somewhat longer/wavier than textual canon. Keep **shoulder-length, slightly tousled black hair with a narrow wine-red streak** as authoritative unless the player adopts the image variation.
+- **Stored format:** Compressed WebP repository derivative for reliable GitHub persistence.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 2:** Nyxara Veyl's first visual canon established. No new image generated this turn yet. Existing Session 1 shrine-art repository path reconciled to the actual `.webp` file.
+- **Session 1 Turn 3:** First-contact image committed and logged. No new image generated for Turn 3's Insight conversation. No canonical appearance changes occurred during the turn.
 
 For each future scene, record:
 - scene/session identifier
