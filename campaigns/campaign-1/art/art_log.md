@@ -47,9 +47,31 @@ None yet.
 
 ## Signature Equipment & Visual Effects
 
+### Dawnclaw — Bonded Draconic Gauntlet
+
+- **Worn on:** Right forearm and hand.
+- **Silhouette:** Close-fitting articulated gauntlet rather than an oversized armored fist; fingers remain fully articulated.
+- **Materials:** Dark bronze-gold plates with fine sunburst filigree.
+- **Accents:** Narrow crimson inlays that visually echo DevilMedlar's subtle crimson-red scales.
+- **Inactive appearance:** Elegant, restrained, and suitable for travel; no constant glow.
+- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when spells, draconic power, or Golden Ascendant energy are routed through it.
+- **Golden Ascendant interaction:** When Dawnclaw deals fire or radiant damage during transformation, depict the chosen damage type through the gauntlet without changing its established physical design.
+
+### Reinforced Wanderer's Vestments
+
+- Dark, flexible travel layers with discreet bronze-gold scale-shaped reinforcement beneath the cloth.
+- The armor should preserve DevilMedlar's lean, mostly human baseline silhouette rather than making him appear heavily armored.
+
+### Sunscale Shard
+
+- Thumb-length gold-dragon-scale-like fragment held in a simple old wire cage.
+- Catches light in a faint sunburst pattern and appears slightly warm or softly luminous only when appropriate to the scene.
+- Its origin and any true power are unknown; do not visually reveal hidden lore before it becomes canon in play.
+
+### Draconic Effects
+
 - **Gold Dragon affinity:** fire/radiance.
 - **Golden Ascendant transformation:** crimson-and-gold radiant draconic manifestation.
-- Exact spell, breath, aura, and equipment visuals remain to be established.
 
 ## Locations
 
