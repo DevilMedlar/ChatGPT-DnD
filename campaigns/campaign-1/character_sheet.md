@@ -2,14 +2,14 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar and Senpai have established names, ages, genders, and pronouns. Ancestry, class, background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, and species/ancestry. Senpai has established name, age, gender, and pronouns. Class, background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
 - **Name:** DevilMedlar
 - **Age:** 20
 - **Gender / pronouns:** Male, He/Him
-- **Species / ancestry:** Not established
+- **Species / ancestry:** Draginkin
 - **Class / homebrew class:** Not established
 - **Background:** Not established
 - **Level:** Not established
