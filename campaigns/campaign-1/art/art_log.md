@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance is established below, but no Senpai reference-art repository path exists yet. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -90,9 +90,16 @@ None established.
 
 Future images of DevilMedlar should consult this reference together with the textual visual canon above. If the two differ, textual canon wins unless the player explicitly adopts the image variation.
 
-### Senpai — Reference Status
+### Senpai — Primary Level-1 Reference
 
-No repository reference image has been established yet. If a Senpai character image is generated and later uploaded, verify the repository path before recording it here. Until then, the textual companion visual canon above is authoritative.
+- **Repository path:** `campaigns/campaign-1/art/Moonlit-Foxfire-Shrine-Guardian.png`
+- **Status:** Verified present in the repository and established as Senpai's primary level-1 visual reference.
+- **Canonical from the image:** Overall facial impression; adult feminine appearance; lithe athletic build; warm ivory complexion; long midnight-black hair fading into violet-silver; amethyst eyes; black fox ears; one black fox tail fading to silver-white; charcoal, deep-plum, black, and silver travel/armor palette; agile light-armor silhouette; shortsword and dagger styling in broad terms; satchel; and the overall cool silver-violet Moonfire aesthetic.
+- **Textual canon still controls:** Exact height, exact eye-ring effect, exact hair length and fade, exactly one physical fox tail at level 1, silver crescent birthmark on the right shoulder blade, Veiled Form behavior, equipment mechanics, Moonmirror Charm properties, and all other written character details.
+- **Inspiration only unless later adopted:** Exact garment cuts, exposed-skin amount, jewelry, belts, buckles, tassels, sword and dagger ornamentation, precise Moonmirror Charm design, background moon, shrine architecture, torii gates, blossoms, pose, lighting, scenery, and incidental magical flourishes.
+- **Moonmirror Charm:** The image does not lock the charm's exact physical design or establish any hidden function. Its written level-1 story significance remains authoritative.
+
+Future images of Senpai should consult this reference together with the textual companion visual canon above. If the two differ, textual canon wins unless Senpai or the player explicitly adopts the image variation through play.
 
 When additional reference art is added:
 
