@@ -63,3 +63,13 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Social style: **smooth, flirtatious, and teasing**.
 - Names and exact details for the pleasure cult, temple/order, and Temple-Bound Acolyte remain unresolved.
 - Current creation step: level-1 features and skill proficiencies.
+
+### Checkpoint 0.6 — Ascendant boon and skills established
+
+- Golden Ascendant level-1 boon selected: **Ascendant Vitality**.
+- On transformation, Ascendant Vitality grants **4 temporary HP**.
+- Once during that transformation, DevilMedlar may regain **2 HP**; exact activation/recharge remains tied to the finalized transformation rules.
+- Skill proficiencies selected: **Perception** and **Survival**.
+- Perception total: **+3**; Survival total: **+3**.
+- Passive Perception: **13**.
+- Current creation step: starting equipment.
