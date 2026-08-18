@@ -4,8 +4,8 @@
 
 - **Name:** DevilMedlar
 - **Age:** 20
-- **Gender / pronouns:** 
-- **Species / race:** 
+- **Gender / pronouns:** Male, he/him
+- **Species / race:** Draginkin
 - **Level:** 1
 - **Archetype / path:** 
 
@@ -45,4 +45,4 @@ None established yet.
 
 ## Unresolved Prior Inputs
 
-None.
+- Draginkin lineage/heritage details not established yet.
