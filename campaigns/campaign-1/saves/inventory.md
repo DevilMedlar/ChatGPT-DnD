@@ -20,6 +20,7 @@
 - **Ascendant Conduction:** While Golden Ascendant is active, a Dawnclaw hit may deal fire or radiant damage instead of bludgeoning. This changes the damage type only and adds no extra damage.
 - **Appearance:** Close-fitting dark bronze-gold articulated plates with fine sunburst filigree and narrow crimson inlays. When power is channeled, seams kindle gold-white with crimson edges.
 - **Bond:** Personal starting weapon set; not a +1 weapon and no hidden numerical bonus is assumed.
+- **Turn 9 tactical intent:** If the likely carver attacks and DevilMedlar closes to melee, DevilMedlar intends to use the Dawnclaws for a nonlethal takedown rather than killing him if possible.
 
 #### Reinforced Wanderer's Vestments
 
@@ -60,4 +61,4 @@
 
 ## Last Turn Sync
 
-- **Session 1 Turn 8:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. Dawnclaws are ready at the first culvert bend. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
+- **Session 1 Turn 9:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. No spell slot, Golden Breath, Golden Ascendant, or consumable was used. Dawnclaws remain ready for a possible nonlethal capture. The entrance alarm remains intact and armed behind DevilMedlar and Nyxara.
