@@ -2,12 +2,12 @@
   "campaign": "campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 2,
-  "current_scene": "Lantern Square after the Brasshaven opening investigation",
+  "turn_number": 3,
+  "current_scene": "Three Lanterns Inn — about to speak with Seraphine Vale",
   "current_step": "awaiting_player_action",
-  "current_location": "Brasshaven — Lantern Square",
+  "current_location": "Brasshaven — Three Lanterns Inn",
   "character_created": true,
-  "xp_current": 50,
+  "xp_current": 80,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 1 is resolved. DevilMedlar asked Senpai what she wanted to investigate; Senpai chose the relic stones first. The pair questioned Orin Pell about Cinderwash Cut and the incomplete six-crate relic shipment, spoke with Seraphine Vale and learned she recognizes the Aurivane signet while withholding some research details, read the Merchants' Compact's 60 gp missing-caravan posting without accepting it, and explored Brasshaven together. They ended at Lantern Square. DevilMedlar and Senpai each gained 50 XP and spent no resources. Three unaccepted leads remain: Cinderwash relics, Emberglass missing caravans, and Seraphine Vale's research."
+  "last_sync_note": "Session 1, Turn 2 is resolved. DevilMedlar and Senpai treated their Brasshaven outing as a date, browsed Mooncup Apothecary and Brass Nail Smithy without buying, inspected public Merchants' Compact records without accepting the caravan contract, and learned Copper Finch Courier last checked in at Cinderwash Turnoff. Senpai chose and paid 1 gp for a private two-person bath at Steam & Stone Baths; mutual attraction between DevilMedlar and Senpai is now explicitly established with no committed relationship or sexual consent implied. They reached the Three Lanterns Inn near sunset and asked for Seraphine Vale, who is waiting in an upstairs private parlor. No room has been booked. Both characters are at 80 / 300 XP."
 }
