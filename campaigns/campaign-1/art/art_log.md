@@ -1,4 +1,4 @@
-# Art Continuity Log — Campaign 1
+# Art Continuity Log - Campaign 1
 
 Use this file to keep recurring characters, equipment, locations, scars, tattoos, transformations, and other visual details consistent across generated images.
 
@@ -15,13 +15,13 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Textual campaign canon wins if generated art accidentally conflicts with an established fact unless the player explicitly adopts the new visual detail.
 - Nudity or sensual presentation is limited to explicitly adult characters and whatever the image system permits.
 
-## Player Character — Canonical Appearance
+## Player Character - Canonical Appearance
 
 - **Name:** DevilMedlar
 - **Confirmed adult age:** 20
 - **Gender / pronouns:** Male, he/him
 - **Species / race:** Draginkin
-- **Heritage:** Gold Dragon — fire/radiance affinity
+- **Heritage:** Gold Dragon - fire/radiance affinity
 - **Archetype / path:** Dracolyte / Draconic Acolyte
 - **Dracolyte focus:** Golden Ascendant
 - **Build:** Lean and athletic.
@@ -61,11 +61,11 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
 - **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
 - **First-scene posture:** Perched or crouched on an upper gully shelf before dropping down to speak with DevilMedlar.
-- **Current relationship visual rule:** First meeting only. Do not depict established intimacy, romance, or party familiarity unless later canon establishes it.
+- **Current relationship visual rule:** DevilMedlar has shown obvious appreciative attention to Nyxara's appearance while she takes point. Nyxara noticed and answered with dry teasing rather than hostility. This does **not** establish mutual attraction, romance, intimacy, or party familiarity.
 
 ## Signature Equipment & Visual Effects
 
-### Dawnclaws — Bonded Draconic Gauntlets
+### Dawnclaws - Bonded Draconic Gauntlets
 
 - **Worn on:** Both forearms and hands as a matched pair.
 - **Silhouette:** Close-fitting articulated gauntlets rather than oversized armored fists; fingers remain fully articulated.
@@ -107,12 +107,18 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Dry narrow drainage cut north of Lantern Road.
 - Loose gravel and pale hard runoff stone, irregular elevated shelves and bends.
 - Dusk light reaches the upper edges while the gully floor falls into cooler shadow.
-- An old culvert lies farther along the upper route.
 - Nyxara Veyl first appears on an upper shelf overlooking DevilMedlar.
+
+### Old culvert approach
+
+- Narrow rubble-strewn upper shelf reached in Session 1 Turn 4.
+- Old stone culvert mouth lies ahead in deepening dusk.
+- A thin black tripline stretches ankle-high across the approach, attached to a concealed tension mechanism in rubble.
+- The tripline has not been triggered; exact purpose is not yet visually or mechanically established.
 
 ## Generated Scene Art
 
-### Session 1 — Fresh Mark on Lantern Road
+### Session 1 - Fresh Mark on Lantern Road
 
 - **Repository path:** `art/session-1-lantern-road-shrine.png.png`
 - **Scene:** DevilMedlar discovers a freshly carved Velvet Coil sigil while the Sunscale Shard reacts.
@@ -122,7 +128,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Continuity note:** Illustrative; textual canon remains authoritative.
 - **Stored format:** Full-resolution PNG already present in the repository from before the manual-persistence policy change.
 
-### Session 1 Turn 2 — Nyxara Veyl First Contact
+### Session 1 Turn 2 - Nyxara Veyl First Contact
 
 - **Repository path:** `art/session-1-turn-2-nyxara-first-contact.png`
 - **Scene:** DevilMedlar encounters Nyxara Veyl in the north drainage gully after losing the clean trail; Nyxara is perched on the upper ledge with her compact crossbow held low.
@@ -141,7 +147,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 3:** Generated-image paths verified against the actual repository files. No new image generated for Turn 3's Insight conversation. No canonical appearance changes occurred during the turn.
+- **Session 1 Turn 4:** No image generated this turn. Nyxara's established appearance remains unchanged. The culvert approach and untriggered black tripline were added to location continuity. DevilMedlar's appreciative attention to Nyxara is a relationship beat only and does not alter either character's canonical physical appearance.
 
 For each future scene, record:
 - scene/session identifier
