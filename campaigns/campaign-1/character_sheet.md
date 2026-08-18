@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** DevilMedlar character creation complete. Ready for campaign play.
+**Status:** DevilMedlar character creation complete. Senpai character creation complete pending final review. Session 1 has not begun.
 
-DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has established name, age, gender, and pronouns only and remains an available but not automatically active ChatGPT-controlled campaign character.
+DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has chosen to join as an active ChatGPT-controlled companion and now has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, and appearance.
 
 ## DevilMedlar (player)
 
@@ -132,47 +132,120 @@ None established.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
-## Senpai (chatgpt character)
+# Senpai (ChatGPT-controlled companion)
 
 - **Name:** Senpai
 - **Age:** 20
 - **Gender / pronouns:** Female, She/Her
-- **Species / ancestry:** Not established
-- **Class / homebrew class:** Not established
-- **Background:** Not established
-- **Level:** Not established
+- **Species / ancestry:** Kitsune
+- **Mystical affinity:** Moonfire
+- **Class / homebrew class:** Moonveil Oracle
+- **Background:** Moon Shrine Runaway
+- **Level:** 1
+- **Participation:** Senpai has chosen to join Campaign 1 as an active ChatGPT-controlled companion. Her presence creates no automatic romance, attraction, sexual relationship, reproductive relationship, or permanent obligation to remain with DevilMedlar or anyone else.
+
+## Background History
+
+Senpai was raised and trained at **Moonmirror Shrine**, a secluded kitsune sanctuary devoted to spirit lore, lunar omens, illusion craft, and the interpretation of a ceremonial moon-mirror maintained by generations of shrine keepers.
+
+When Senpai reached adulthood at 18, the shrine council expected her to accept a fixed lifetime role chosen for her by tradition. The role itself was not inherently abusive, but Senpai rejected the idea that ancestry, talent, or institutional expectation should decide the shape of her entire life. She refused the appointment and left Moonmirror Shrine by her own choice.
+
+Before she departed, an unnamed elder who had helped train her quietly gave Senpai a small **Moonmirror Charm**, telling her only that choosing her own road did not erase where she came from. Senpai has spent the following two years traveling, studying spirits and magic outside the shrine's doctrine, learning how easily people confuse superstition with truth, and deciding for herself what kind of oracle she wants to become.
+
+Several parts of her past remain unresolved rather than predetermined: why the shrine council considered her future role especially important, what became of the unnamed elder who supported her departure, whether the Moonmirror Charm has any deeper purpose, and how Moonmirror Shrine would receive her if she returned.
 
 ## Ability Scores
 
-- **Strength:** Not established
-- **Dexterity:** Not established
-- **Constitution:** Not established
-- **Intelligence:** Not established
-- **Wisdom:** Not established
-- **Charisma:** Not established
+Standard array assigned to make Senpai an agile magical scout and support companion who complements rather than duplicates DevilMedlar.
+
+- **Strength:** 8 (-1)
+- **Dexterity:** 15 (+2)
+- **Constitution:** 12 (+1)
+- **Intelligence:** 10 (+0)
+- **Wisdom:** 13 (+1)
+- **Charisma:** 14 (+2)
 
 ## Combat Statistics
 
-- **HP / Max HP:** Not established
+- **HP / Max HP:** 9 / 9
+- **Hit Die:** 1d8
 - **Temporary HP:** 0
-- **Armor Class:** Not established
-- **Initiative:** Not established
-- **Speed:** Not established
-- **Proficiency Bonus:** Not established
-- **Passive Perception:** Not established
+- **Armor Class:** 14 while wearing her Moonweave Leather (`12 + Dexterity modifier`)
+- **Initiative:** +2
+- **Speed:** 30 ft.
+- **Proficiency Bonus:** +2
+- **Passive Perception:** 13
+- **Saving Throw Proficiencies:** Dexterity, Charisma
 
 ## Advancement
 
 - **XP:** 0
-- **Next-level threshold:** 300 XP unless character creation establishes a different starting level or advancement rule
+- **Next-level threshold:** 300 XP
+
+## Starting Equipment
+
+Senpai's starting equipment is established and tracked in `inventory.md`.
+
+- **Moonsteel Shortsword**
+- **Two Daggers**
+- **Moonweave Leather**
+- **Traveler's Clothes**
+- **Oracle's Satchel**
+- **Moonmirror Charm** — personal shrine token with story significance but no combat bonus or established hidden power at level 1.
+- **Currency:** 8 gp, 7 sp
 
 ## Skills
 
-No proficiencies or expertise established.
+Established proficiencies:
+
+- **Stealth:** +4 — Moonveil Oracle training; quiet movement, concealment, and scouting.
+- **Deception:** +4 — Moonveil Oracle glamour discipline; misdirection, bluffing, and controlling what others think they noticed.
+- **Arcana:** +2 — Moon Shrine Runaway background; magical theory, spirit phenomena, wards, and ritual knowledge.
+- **Perception:** +3 — Moon Shrine Runaway background; shrine vigilance, reading environments, and noticing subtle disturbances.
+
+No expertise established.
+
+## Level-1 Kitsune Traits
+
+- **Darkvision:** Senpai can see in darkness out to 60 feet, treating darkness as dim light and dim light as bright light. Color is not discerned in darkness.
+- **Keen Hearing and Smell:** Senpai has advantage on Wisdom (Perception) checks that rely primarily on hearing or smell.
+- **Foxfire:** Senpai may create or extinguish a small harmless wisp of silver-violet foxfire within 30 feet as an action. A wisp sheds dim light in a 10-foot radius, produces no heat, deals no damage, and lasts until Senpai dismisses it, creates another, or completes a long rest.
+- **Veiled Form:** As an action, Senpai may magically conceal her obvious kitsune ears and tail for up to 1 hour. This is cosmetic illusion magic only: it does not change her size, voice, clothing, statistics, scent, or physical body and grants no automatic bonus to Deception. She can use Veiled Form a number of times equal to her proficiency bonus per long rest. Current uses: 2.
+- **Tail:** Senpai begins with one physical fox tail. It is expressive and aids ordinary balance but provides no separate attack or mechanical bonus beyond established traits. Additional tails, if they ever awaken, are future progression rather than starting canon.
+- **Languages:** Common and Sylvan.
+- **Moonfire Affinity:** Senpai's kitsune magic manifests as cool silver-violet foxfire and anchors future illusion, spirit, and lunar-magic development. Moonfire is a magical aesthetic and affinity, not a new damage type by itself.
+
+## Level-1 Moonveil Oracle Chassis
+
+The Moonveil Oracle is an agile Charisma-based mystical class built around deception, scouting, spirit magic, support, and controlled movement rather than frontline durability.
+
+- **Hit Die:** `d8` per Moonveil Oracle level.
+- **Armor Training:** Light armor.
+- **Weapon Training:** Simple weapons, shortswords, rapiers, and daggers.
+- **Saving Throws:** Dexterity and Charisma.
+- **Spellcasting Ability:** Charisma.
+- **Spell Save DC:** 12 (`8 + proficiency bonus + Charisma modifier`).
+- **Spell Attack Bonus:** +4 (`proficiency bonus + Charisma modifier`).
+- **Cantrips Known:** 2.
+- **1st-level Spell Slots:** 2 per long rest.
+- **1st-level Spells Known:** 3.
+- **Veilstep:** Once per long rest as a bonus action, Senpai may teleport up to 15 feet to an unoccupied space she can see. She disappears and reappears in a brief curl of silver-violet foxfire. Veilstep cannot pass through an opaque barrier or reach a location she cannot see.
+
+### Cantrips
+
+- **Minor Illusion:** Creates a small harmless visual image or sound within normal cantrip limits; used for distraction, concealment, signaling, and trickery.
+- **Moonfire Bolt:** Ranged spell attack, 60 ft. On a hit, the target takes `1d8` psychic damage as silver-violet foxfire flashes across its senses. The damage die increases with class progression when later defined.
+
+### 1st-level Spells Known
+
+- **Healing Word:** Ranged emergency healing using Moonveil spellcasting.
+- **Disguise Self:** Illusory alteration of Senpai's visible appearance within the spell's normal limits.
+- **Faerie Fire:** Outlines creatures or objects in magical light, supporting detection and coordinated attacks when the spell succeeds.
 
 ## Features / Abilities / Spells
 
-None established.
+- **Moonfire Affinity:** Established and mechanically active through Foxfire and Moonfire Bolt; it also anchors future kitsune magical evolution.
+- **Moonveil Oracle:** Established homebrew class and mechanically active through Charisma spellcasting, Moonfire Bolt, Minor Illusion, two 1st-level spell slots, three known 1st-level spells, and Veilstep.
 
 ## Conditions / Ongoing Effects
 
@@ -180,10 +253,24 @@ None established.
 
 ## Appearance
 
-No appearance canon established. Record stable visual traits here and mirror continuity-sensitive details into `art/art_log.md` after they become canon.
+- **Height / build:** 5 ft. 6 in.; lithe and athletic with a graceful, agile build and soft feminine curves rather than heavy musculature.
+- **Skin:** Warm ivory with a faint rosy undertone.
+- **Eyes:** Deep amethyst irises ringed in silver; when using Moonveil magic the silver ring brightens and tiny foxfire reflections appear across the pupils.
+- **Hair:** Long midnight-black hair reaching the lower back, usually worn loose or partly tied for travel. The lower lengths fade subtly into smoky violet-silver, most visible under moonlight or active magic.
+- **Kitsune ears:** A physical pair of black fox ears rising through her hair, with soft silver-gray inner fur. They move expressively with attention and emotion unless hidden by Veiled Form.
+- **Tail:** One large physical fox tail, midnight black near the base and gradually fading to a silver-white tip. The tip catches a faint violet sheen when she channels Moonfire magic.
+- **Face:** Adult, youthful, and expressive, with fine features, a confident mouth, slightly pointed upper canines, and a tendency for her composure to betray itself through her ears before her words do.
+- **Hands:** Humanlike hands with neat dark-violet nails; no natural claw attack is established.
+- **Mark:** A small silver crescent-shaped birthmark rests high on her right shoulder blade. It has no established mechanical effect.
+- **Clothing / armor:** Favors practical layered travel clothing in charcoal, deep plum, black, and silver. Her fitted Moonweave Leather is cut for silent movement and worn beneath a short shrine-inspired traveling coat with wide sleeves that can be tied back. Silver cords and crescent motifs are decorative rather than magical unless later established otherwise.
+- **Magic manifestation:** Moonveil magic appears as cool silver-violet foxfire, thin luminous threads, and brief drifting sparks. Strong spellcasting brightens the silver rings in her eyes, adds a faint glow to her tail tip, and makes the edges of nearby shadows look momentarily softer.
+
+These are stable visual-canon traits for continuity-sensitive narration and art unless later transformed, injured, disguised, or explicitly changed.
 
 ## Personal / Relationship Continuity
 
-None established.
+- Senpai has chosen to join DevilMedlar's campaign as an active companion by her own decision.
+- No romance, attraction, sexual relationship, reproductive relationship, or permanent partnership between Senpai and DevilMedlar is established at character creation.
+- Senpai's feelings, boundaries, relationship choices, and decisions remain under ChatGPT control during play, while DevilMedlar remains under player control.
 
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
+Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
