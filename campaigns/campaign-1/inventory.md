@@ -46,7 +46,7 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 
 #### Currency
 
-- **Gold:** 8 gp
+- **Gold:** 7 gp
 - **Silver:** 7 sp
 
 #### Consumables / Charges
