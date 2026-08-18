@@ -2,10 +2,10 @@
   "schema_version": 1,
   "campaign_id": "campaign-1",
   "campaign_number": 1,
-  "phase": "character_creation",
+  "phase": "ready_to_begin",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "final_level_1_mechanics",
+  "current_step": "opening_scene",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -23,6 +23,19 @@
       "wisdom": 13,
       "charisma": 15
     },
+    "derived": {
+      "hp": 10,
+      "max_hp": 10,
+      "armor_class": 12,
+      "initiative": 0,
+      "speed_ft": 30,
+      "proficiency_bonus": 2,
+      "passive_perception": 13,
+      "spell_attack_bonus": 4,
+      "spell_save_dc": 12,
+      "level_1_spell_slots": 2,
+      "level_1_spell_slots_max": 2
+    },
     "skill_proficiencies": [
       "Perception",
       "Survival"
@@ -31,11 +44,44 @@
       "perception": 3,
       "survival": 3
     },
-    "passive_perception": 13,
-    "golden_ascendant_boon": {
-      "name": "Ascendant Vitality",
-      "on_transform_temp_hp": 4,
-      "once_per_transformation_heal": 2
+    "heritage_features": {
+      "fire_resistance": true,
+      "golden_breath": {
+        "action": true,
+        "area": "15-ft cone",
+        "save": "Dexterity DC 12",
+        "damage": "2d6 fire or radiant; half on successful save",
+        "uses": 1,
+        "uses_max": 1,
+        "recharge": "long_rest"
+      }
+    },
+    "golden_ascendant": {
+      "activation": "bonus_action",
+      "duration": "up to 1 minute",
+      "uses": 1,
+      "uses_max": 1,
+      "recharge": "long_rest",
+      "level_1_flight": false,
+      "ascendant_conduction": "Dawnclaw hits may change damage type to fire or radiant while transformed",
+      "boon": {
+        "name": "Ascendant Vitality",
+        "on_transform_temp_hp": 4,
+        "once_per_transformation_heal": 2,
+        "heal_activation": "bonus_action"
+      }
+    },
+    "spellcasting": {
+      "ability": "Charisma",
+      "focus": "Dawnclaws — Bonded Draconic Gauntlets",
+      "cantrips": {
+        "Solar Lance": "Action, 60 ft, +4 ranged spell attack, 1d8 fire or radiant damage",
+        "Sunclaw Channel": "Action, make one Dawnclaw attack; normal 1d6+2 damage, counts as magical, choose bludgeoning/fire/radiant"
+      },
+      "level_1_abilities": {
+        "Restorative Flame": "Action, touch, expend 1 level-1 slot, heal 1d8+2 HP",
+        "Ascendant Smite": "After a Dawnclaw hit, expend 1 level-1 slot, add 2d6 fire or radiant damage, once per turn"
+      }
     },
     "appearance": {
       "build": "lean and athletic",
@@ -70,11 +116,11 @@
   },
   "scene": {
     "location": null,
-    "situation": "character_creation",
+    "situation": "opening_scene_pending",
     "combat_active": false
   },
   "pending": {
-    "choice": "final_level_1_mechanics",
+    "choice": "opening_scene",
     "roll": null,
     "image_offer": false
   },
@@ -100,5 +146,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "paired_dawnclaws_and_sunscale_relic_set"
+  "last_checkpoint": "character_creation_complete_level_1_kit_finalized"
 }
