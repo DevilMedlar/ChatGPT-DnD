@@ -4,9 +4,9 @@
   "campaign_number": 1,
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 5,
+  "turn_number": 6,
   "tone": "Anything Goes Sandbox",
-  "current_step": "culvert_alarm_identified_nyxara_personal_history_hint",
+  "current_step": "culvert_entered_alarm_left_armed_nyxara_ledger_confirmed",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -16,9 +16,9 @@
     "level": 1,
     "advancement": {
       "system": "numeric_xp",
-      "xp_current": 125,
+      "xp_current": 150,
       "xp_next_level": 300,
-      "xp_to_next_level": 175
+      "xp_to_next_level": 150
     },
     "archetype_path": "Dracolyte / Draconic Acolyte",
     "dracolyte_focus": "Golden Ascendant",
@@ -120,24 +120,17 @@
     }
   },
   "scene": {
-    "location": "Old culvert approach on the upper shelf of the north drainage gully outside Vespergate",
-    "situation": "DevilMedlar crouched to inspect the concealed tripline mechanism while telling Nyxara that her reaction suggested she had survived the Velvet Coil or something similar. He also openly complimented her beauty and figure. Investigation 13 - 1 = 12 against DC 12 succeeded. The device is a nonlethal warning alarm: pulling the black tripline yanks a hooked brass pin from a spring arm, causing a small striker to snap against a hollow iron drainpipe that runs deeper into the culvert, sending a sharp metallic knock down the tunnel. The mechanism appears recently armed or reset, but the inspection does not prove who set it. Nyxara accepted the compliment with dry amusement and clarified that she was not personally a Velvet Coil initiate; she survived what the Coil did to someone she loves. She still refuses to name that person. Cooperation and flirtatious tension increased slightly, but no romance, formal trust, or party membership is established.",
+    "location": "Inside the old culvert beyond the upper-shelf alarm, north drainage gully outside Vespergate",
+    "situation": "DevilMedlar asked Nyxara one final personal question for now: whether the man or woman she loves is the name in the stolen Velvet Coil ledger. Nyxara answered that yes, she is: the person is female and is the personally important name Nyxara has been protecting, but Nyxara still has not revealed her identity or exact relationship. DevilMedlar and Nyxara then carefully stepped over the already-identified alarm without triggering or altering it, leaving it armed behind them as a potential warning if someone follows. No roll was required because the tripline's exact position and function were already known and both characters moved deliberately. They entered the old culvert quietly. Inside, the passage is narrow old stone with damp mineral smell, the hollow iron warning pipe running along one wall, and fading dusk behind them. The immediate passage ahead bends into deeper darkness; the likely carver remains ahead or recently passed this route.",
     "combat_active": false,
-    "recent_roll": {
-      "type": "Investigation",
-      "die": 13,
-      "modifier": -1,
-      "total": 12,
-      "dc": 12,
-      "result": "success"
-    },
+    "recent_roll": null,
     "clues": {
       "cult_name": "Velvet Coil",
-      "likely_carver_route": "The route reaches an old culvert on the upper shelf.",
-      "culvert_tripline": "Identified as a nonlethal alarm. Triggering it releases a spring striker against a hollow iron drainpipe, sending a sharp metallic knock deeper into the culvert. It appears recently armed/reset; setter remains unknown.",
+      "likely_carver_route": "The carver is still believed to have gone through or beyond the old culvert.",
+      "culvert_alarm": "Known nonlethal warning alarm was left intact and armed behind DevilMedlar and Nyxara. It can warn them if a follower triggers it, but it may also be triggered by any creature crossing it.",
       "nyxara_truth": "Her core claim that she independently followed the carver remains credible.",
-      "nyxara_personal_history": "Nyxara says she was not a Velvet Coil initiate herself; she survived what the Coil did to someone she loves. She has not named that person.",
-      "nyxara_withholding": "Identity of the person she loves whose connection to the Velvet Coil and/or stolen ledger remains personal and undisclosed.",
+      "nyxara_personal_history": "Nyxara was not a Velvet Coil initiate herself; she survived what the Coil did to someone she loves.",
+      "nyxara_ledger_confirmation": "Nyxara confirmed the person she loves is female and is the personally important name in the stolen Velvet Coil ledger. Identity and exact relationship remain undisclosed.",
       "stolen_ledger": "The carver is believed to possess a ledger from Vespergate containing names tied to the Velvet Coil.",
       "sunscale_shard": "Still warm; not yet examined further."
     },
@@ -149,18 +142,18 @@
         "gender_pronouns": "Female, she/her",
         "species_race": "Tiefling",
         "role": "Veilblade / occult tracker",
-        "status": "Provisional cooperation at the culvert approach; increasingly candid and comfortable with DevilMedlar's teasing/flirtation",
+        "status": "Provisional cooperation inside the culvert; increasingly candid but maintaining a boundary around the identity of the woman she loves",
         "claim": "Independently tracking the Velvet Coil carver; not allied with him.",
         "claim_verified": true,
-        "withholding": "Identity of the person she loves who was harmed or endangered by the Velvet Coil and whose connection to the ledger remains undisclosed",
+        "withholding": "Identity and exact relationship of the woman she loves whose name appears in the stolen ledger",
         "knows_devilmedlar_is_velvet_coil_survivor": true,
         "party_status": "not joined",
-        "relationship_notes": "DevilMedlar openly told Nyxara she is beautiful and has a nice figure. She accepted the compliment with dry amusement rather than hostility. Flirtatious tension exists, but mutual attraction and romance are not yet confirmed."
+        "relationship_notes": "Light flirtatious tension and growing trust exist. Nyxara has accepted DevilMedlar's compliments with teasing, but mutual attraction and romance remain unconfirmed."
       }
     }
   },
   "pending": {
-    "choice": "decide_how_to_handle_identified_culvert_alarm_and_continue",
+    "choice": "advance_deeper_into_culvert_or_investigate_interior",
     "roll": null,
     "image_offer": false
   },
@@ -199,6 +192,6 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_turn_5_alarm_identified_nyxara_personal_history_hint",
-  "last_synced_turn": "Session 1 Turn 5"
+  "last_checkpoint": "session_1_turn_6_alarm_bypassed_nyxara_ledger_person_confirmed_female",
+  "last_synced_turn": "Session 1 Turn 6"
 }
