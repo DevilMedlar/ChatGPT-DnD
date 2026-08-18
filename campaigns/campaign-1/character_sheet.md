@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, and level-1 ancestry/class chassis. Senpai has established name, age, gender, and pronouns. Equipment, appearance, relationships, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, background, background history, base ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, and starting equipment. Senpai has established name, age, gender, and pronouns. Appearance, relationships, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -52,6 +52,18 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 - **XP:** 0
 - **Next-level threshold:** 300 XP
+
+## Starting Equipment
+
+DevilMedlar's starting equipment is established and tracked in `inventory.md`.
+
+- **Sunwood Quarterstaff**
+- **Ascendant Handwraps**
+- **Traveler's Clothes**
+- **Explorer's Pack**
+- **Clan Aurivane travel cloak**
+- **Aurivane Dawnscale Signet** — genuine Clan Aurivane heirloom; provides lineage/story utility and a subtle radiant reaction but no combat bonus at level 1. Any deeper function remains undiscovered.
+- **Currency:** 10 gp, 5 sp
 
 ## Skills
 
