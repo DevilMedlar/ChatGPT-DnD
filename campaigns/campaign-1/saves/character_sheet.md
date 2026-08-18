@@ -13,10 +13,10 @@
 
 ## Advancement
 
-- **XP:** 125 / 300
-- **XP to Level 2:** 175
+- **XP:** 150 / 300
+- **XP to Level 2:** 150
 - **Progression:** Numeric XP.
-- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara.
+- **Awards:** 25 XP for the fresh cult-mark/Sunscale discovery; 25 XP for uncovering the two-trail pattern; 25 XP for the successful Insight/social breakthrough with Nyxara; 25 XP for spotting the culvert tripline before it triggered; 25 XP for identifying the culvert alarm mechanism and gaining a further personal-history clue from Nyxara; 25 XP for quietly bypassing the armed culvert alarm while confirming that the woman Nyxara loves is the personally important name in the stolen ledger.
 
 ## Appearance
 
@@ -123,7 +123,7 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
-- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance and in Turn 5 told her that she is beautiful and has a nice figure. Nyxara accepted the compliment with dry amusement rather than hostility. DevilMedlar also inferred from her earlier reaction that she had survived the Velvet Coil or something similar. Nyxara clarified that she was not personally a Velvet Coil initiate; she says she survived what the Coil did to someone she loves, but still withholds that person's identity. Their cooperation is provisional and flirtatious tension exists, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
+- **Nyxara Veyl:** Adult female tiefling, age 24, Veilblade/occult tracker. Her central claim that she is independently tracking the carver remains credible. DevilMedlar has openly admired her appearance and told her she is beautiful and has a nice figure; Nyxara accepted the compliment with dry amusement. Nyxara clarified that she was not personally a Velvet Coil initiate; she survived what the Coil did to someone she loves. In Turn 6 DevilMedlar asked whether that person was the name in the stolen ledger. Nyxara confirmed **yes**, and confirmed the person is **female**, but still withheld her identity and exact relationship. DevilMedlar and Nyxara then quietly bypassed the known culvert alarm together and entered the culvert. Cooperation and light flirtatious tension continue, but mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
 
 ## Conditions / Transformations
 
@@ -138,9 +138,9 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 - Identity and motives of the Temple-Bound Acolyte and temple/order.
 - Sunscale Shard's true origin and any hidden property.
 - Identity and motive of the Velvet Coil carver.
-- Identity of the person Nyxara loves who was harmed or endangered by the Velvet Coil and whose connection to the stolen ledger remains undisclosed.
+- Identity and exact relationship of the woman Nyxara loves whose name appears in the stolen ledger.
 - Whether Nyxara becomes a supporting companion.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 5:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 125/300.
+- **Session 1 Turn 6:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 150/300. Culvert alarm bypassed without triggering; no resources spent.
