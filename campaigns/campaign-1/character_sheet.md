@@ -1,6 +1,6 @@
 # Character Sheet — Campaign 1
 
-**Status:** DevilMedlar and Senpai character creation complete. Ready for campaign play. Session 1 has not begun.
+**Status:** Campaign play active. Session 1, Turn 1 resolved; awaiting the next player action.
 
 DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, and appearance are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, appearance, and primary reference art.
 
@@ -50,7 +50,7 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Advancement
 
-- **XP:** 0
+- **XP:** 50
 - **Next-level threshold:** 300 XP
 
 ## Starting Equipment
@@ -179,7 +179,7 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 
 ## Advancement
 
-- **XP:** 0
+- **XP:** 50
 - **Next-level threshold:** 300 XP
 
 ## Starting Equipment
