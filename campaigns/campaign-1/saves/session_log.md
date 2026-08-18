@@ -144,3 +144,19 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - No new XP awarded for the failed roll itself; the consequence has not yet resolved into a separate accomplishment.
 - Current state: **10/10 HP**, **2/2 spell slots**, **Golden Breath 1/1**, **Golden Ascendant 1/1**, **XP 50/300**.
 - Current decision: respond to Nyxara and decide whether to cooperate, question her, distrust her, or continue toward the culvert independently.
+
+### Checkpoint 1.3 — Nyxara under the lens
+
+- DevilMedlar combined two approaches: he studied Nyxara carefully for deception while asking, **“Not yet. Why are you following him?”**
+- Open Insight check: **14 + 1 = 15** against **DC 13**, success.
+- DevilMedlar judges Nyxara's core claim truthful: she was independently following the cult-mark carver and is not allied with him.
+- Nyxara identifies DevilMedlar's former pleasure cult by name: **the Velvet Coil**.
+- Nyxara says the carver stole a **ledger in Vespergate containing names connected to the Velvet Coil**.
+- She admits one name in that ledger belongs to **someone personally important to her**, but she refuses to identify that person yet.
+- Insight indicates this omission is deliberate privacy rather than evidence that her central account is fabricated.
+- The carver is still believed to have continued along the upper shelf toward an **old culvert**.
+- **XP awarded:** +25 XP for the successful social/Insight breakthrough and new Velvet Coil ledger lead.
+- **Current XP:** **75 / 300** toward Level 2.
+- No HP, spell slots, Golden Breath uses, Golden Ascendant uses, inventory, currency, or consumables changed.
+- The generated first-contact image of DevilMedlar and Nyxara was stored as `../art/session-1-turn-2-nyxara-first-contact.webp` and recorded in the art log.
+- Current decision: pursue the culvert with Nyxara, press her for more about the ledger/person, separate from her, or take another action.
