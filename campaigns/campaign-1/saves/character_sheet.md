@@ -47,7 +47,7 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 - **Level:** 1
 - **Proficiency bonus:** +2
 - HP / Max HP: Pending final level-1 Dracolyte mechanics.
-- Armor Class: Pending equipment and final level-1 mechanics.
+- **Armor Class:** 12 in Reinforced Wanderer's Vestments (`12 + DEX 0`).
 - Initiative: +0
 - Speed: Pending Draginkin movement traits.
 - **Passive Perception:** 13
@@ -58,6 +58,13 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 - **Perception:** Proficient, +3 total (Wisdom +1, proficiency +2).
 - **Survival:** Proficient, +3 total (Wisdom +1, proficiency +2).
+
+## Equipment Summary
+
+- **Dawnclaw — Bonded Draconic Gauntlet:** `1d6` bludgeoning simple melee weapon using Strength; also functions as DevilMedlar's draconic/spellcasting focus. While Golden Ascendant is active, its damage may be fire or radiant instead of bludgeoning without increasing the damage die.
+- **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather.
+- **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin; slightly warm, with no known mechanical property yet.
+- Full carried gear and currency are tracked in `inventory.md`.
 
 ## Features / Abilities
 
@@ -93,5 +100,4 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 ## Unresolved Prior Inputs
 
 - Remaining exact level-1 Dracolyte/Draginkin mechanics not yet explicitly chosen or confirmed.
-- Starting equipment.
 - Names/details of the pleasure cult, temple/order, and Temple-Bound Acolyte.
