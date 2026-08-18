@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-No character appearance, NPC appearance, location appearance, equipment appearance, transformation, scar, tattoo, outfit, or reference-art canon has been established yet.
+DevilMedlar's player-character appearance is established below. No recurring NPC appearance, location appearance, transformation, reference-art path, or other visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -17,7 +17,25 @@ No character appearance, NPC appearance, location appearance, equipment appearan
 
 ## Player Character Visual Canon
 
-Not established.
+### DevilMedlar
+
+- **Age / sex:** 20, male.
+- **Species / affinity:** Radiant Draginkin.
+- **Height / build:** 6 ft. 2 in.; tall, lean-athletic, flexible martial build.
+- **Skin:** Warm bronze with a subtle sunlit undertone.
+- **Scales:** Fine ivory-gold scales at temples, cheekbones, shoulders, outer forearms, upper spine, hips, and tail; pearlescent at rest and gold-white from beneath when radiant power activates.
+- **Horns:** Paired swept-back horns, ivory at the base grading to polished gold tips.
+- **Eyes:** Molten-gold irises, narrow draconic pupils; brighter with a faint iris halo during strong emotion or radiant power use.
+- **Hair:** Thick black, medium length, slightly tousled, with a natural pale-gold front streak that becomes more luminous during radiant surges.
+- **Face:** Youthful, sharply defined, clean-shaven; slightly pronounced upper canines.
+- **Tail:** Long, muscular, functional draconic tail; bronze-skinned near base and increasingly scaled toward tip. Expressive and useful for balance.
+- **Wings:** No functional wings at level 1. Two subtle ridges beneath upper-back scales indicate possible future wing awakening.
+- **Hands / claws:** Humanlike hands with dark-gold claws matching the established Natural Claws trait.
+- **Persistent scar:** Thin pale-gold scar across left collarbone from the Shattering of Dawnscale; faintly glows near powerful radiant draconic magic.
+- **Typical clothing:** Sleeveless or loose-shouldered martial travel wear in cream, charcoal, and muted gold; Ascendant handwraps; Clan Aurivane travel cloak when appropriate.
+- **Radiant manifestation:** Narrow gold-white light-lines beneath scales, brighter eyes, glowing pale-gold hair streak, and clean radiant shimmer around mouth and claws when channeling Dragon Ki, Radiant Fang, or Radiant Breath. The effect resembles sacred sunlight rather than flame.
+
+These details are stable textual visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit player revision.
 
 ## Recurring NPC Visual Canon
 
@@ -29,11 +47,12 @@ None established.
 
 ## Equipment / Important Objects
 
-None established.
+- **Aurivane Dawnscale Signet:** Genuine Clan Aurivane heirloom. It reacts to deliberately channeled radiant draconic power by warming and giving off a faint golden-white glow from its crest. Exact physical design beyond this has not yet been fixed.
 
 ## Transformations / Scars / Tattoos / Persistent Changes
 
-None established.
+- DevilMedlar's pale-gold left-collarbone scar is persistent visual canon and tied to the Shattering of Dawnscale.
+- DevilMedlar has no functional wings at level 1; any later wing awakening must be recorded as a transformation when it occurs.
 
 ## Reference Art
 
