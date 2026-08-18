@@ -25,3 +25,11 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Character remains level 1.
 - Gender/pronouns, species/race, archetype/path, appearance, abilities, background, and equipment remain unresolved.
 - Current creation step: gender/pronouns.
+
+### Checkpoint 0.2 — Core identity established
+
+- Gender/pronouns: **Male, he/him**.
+- Species/race: **Draginkin**.
+- Draginkin lineage/heritage details remain unresolved.
+- Archetype/path, appearance, abilities, background, and equipment remain unresolved.
+- Current creation step: archetype/path.
