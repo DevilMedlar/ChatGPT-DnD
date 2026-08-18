@@ -5,7 +5,7 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "starting_equipment",
+  "current_step": "final_level_1_mechanics",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -55,6 +55,13 @@
         "eventually left to become a Wandering Mystic"
       ],
       "social_style": "smooth, flirtatious, and teasing"
+    },
+    "equipment": {
+      "weapon": "Dawnclaw — Bonded Draconic Gauntlet",
+      "armor": "Reinforced Wanderer's Vestments",
+      "armor_class": 12,
+      "relic": "Sunscale Shard",
+      "currency_gp": 12
     }
   },
   "scene": {
@@ -63,7 +70,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "starting_equipment",
+    "choice": "final_level_1_mechanics",
     "roll": null,
     "image_offer": false
   },
@@ -89,5 +96,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "ascendant_vitality_and_skills_set"
+  "last_checkpoint": "custom_gauntlet_and_sunscale_relic_set"
 }
