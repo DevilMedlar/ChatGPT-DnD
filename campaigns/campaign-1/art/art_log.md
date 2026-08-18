@@ -73,7 +73,12 @@ None yet.
 ### Draconic Effects
 
 - **Gold Dragon affinity:** fire/radiance.
-- **Golden Ascendant transformation:** crimson-and-gold radiant draconic manifestation.
+- **Golden Breath:** A short cone of concentrated gold-white draconic flame or radiant brilliance, with faint crimson edging that ties it visually to DevilMedlar's scales.
+- **Golden Ascendant transformation:** Crimson-and-gold radiant draconic manifestation. Horns, wings, and tail appear; eyes remain continuously luminous. At level 1, wings should not be depicted as granting sustained flight unless the scene is purely a visual leap/fall pose that does not contradict mechanics.
+- **Solar Lance:** A narrow short-to-medium-range lance of gold-white fire/radiance, usually projected from an outstretched Dawnclaw, with fine crimson edging.
+- **Sunclaw Channel:** The striking gauntlet becomes visibly charged. Fire should read as contained dragonfire along the knuckles/plates; radiant should read as gold-white light concentrated around the fist. The effect is an imbued physical blow, not a separate projectile.
+- **Restorative Flame:** Soft gold-white flame wraps the Dawnclaw and flows into the touched creature without burning them; calmer and warmer than offensive effects.
+- **Ascendant Smite:** On impact, the Dawnclaw strike erupts in a compact burst of fire or radiant force centered on the point of contact. It should look heavier and more explosive than Sunclaw Channel.
 
 ## Locations
 
