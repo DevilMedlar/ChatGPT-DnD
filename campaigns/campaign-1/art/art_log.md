@@ -60,8 +60,19 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
 - **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
-- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and directly told her she is beautiful and has a nice figure. In Turn 7 he again looked her up and down and called her lovely/sexy while they advanced through the culvert; Nyxara answered with dry amusement about his timing rather than hostility. Light teasing and growing cooperation may appear in body language, but **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
+- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and complimented her repeatedly. Nyxara answers with dry amusement rather than hostility. Turn 8 included brief accidental intimate contact against her chest/hip while DevilMedlar squeezed past her in the cramped culvert; he immediately withdrew and apologized, and she accepted the apology. This may be shown only as an awkward cramped-space accident, not as deliberate sexual touching. **Mutual attraction, romance, intimacy, and party familiarity remain unconfirmed.**
 - **Personal-story visual caution:** Nyxara has confirmed that a woman she loves is the personally important name in the stolen Velvet Coil ledger, but that woman's identity and appearance are not established. Do not invent or depict her until canon establishes her.
+
+### Likely Velvet Coil Carver - identity unrevealed
+
+- **Confirmed adult:** Yes.
+- **Gender presentation:** Male.
+- **Face / ancestry / age details:** Not established; do not invent permanent facial or ancestry details before a clearer reveal.
+- **Turn 8 silhouette:** Hooded figure crouched behind broken masonry in the culvert maintenance chamber.
+- **Weapon:** Compact crossbow trained toward the first bend.
+- **Evidence details:** Pale shrine-stone dust packed into boots; stone-carving chisel at belt.
+- **Carried object:** Dark cross-body satchel containing or revealing the edge of a thick leather-bound book-sized object that may be the stolen ledger.
+- **Lighting:** His previous amber light source was extinguished after Turn 7's noise, so Turn 8 observation is primarily dim silhouette and reflected low light.
 
 ## Signature Equipment & Visual Effects
 
@@ -123,8 +134,16 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Narrow old stone drainage tunnel with damp, worn masonry and a mineral-dark floor.
 - Fading dusk remains visible behind the entrance while the passage ahead bends into deeper darkness.
 - A hollow iron warning pipe runs along one wall from the entrance mechanism deeper into the tunnel.
-- **Turn 7:** A faint amber light was briefly visible beyond the first bend. After loose gravel struck old iron with a small metallic tick, the amber light was extinguished and previously audible soft movement stopped. A presence ahead is likely alerted, but its identity, number, and exact position remain unknown.
-- Mood: cramped, watchful, pursuit tension with the approach advantage now compromised; no combat has begun yet.
+- **Turn 7:** A faint amber light was briefly visible beyond the first bend. After loose gravel struck old iron with a small metallic tick, the amber light was extinguished and previously audible soft movement stopped.
+- **Turn 8:** DevilMedlar successfully peeked around the bend while Nyxara covered him.
+
+### Culvert maintenance chamber
+
+- Small stone service chamber beyond the first bend, first clearly observed in Turn 8.
+- Broken masonry creates chest-high or crouching cover.
+- Dim, damp, mineral-dark environment; the likely carver's amber light source is extinguished.
+- One hooded armed figure is visible behind cover; possible unseen exits or deeper passage remain unestablished.
+- Mood: held-breath ambush tension, with DevilMedlar possessing fresh reconnaissance while the target believes only that someone is somewhere back around the bend.
 
 ## Generated Scene Art
 
@@ -157,7 +176,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 7:** No image generated this turn. Nyxara's canonical physical appearance remains unchanged. Visual continuity now includes the Sunscale Shard's brief stronger heat pulse deeper in the culvert, the extinguished amber light beyond the first bend after the failed Stealth approach, and Nyxara's continued amused acceptance of DevilMedlar's flirtatious compliments. No new image file was committed.
+- **Session 1 Turn 8:** No image generated yet. Visual continuity now includes DevilMedlar peeking the first bend while Nyxara covers him, the dim culvert maintenance chamber, and the hooded likely carver behind broken masonry with crossbow, shrine-dusted boots, carving chisel, and a possible ledger in his satchel. The accidental contact with Nyxara is canonically an immediately-apologized cramped-space accident, not deliberate touching. No image file was committed.
 
 For each future scene, record:
 - scene/session identifier
