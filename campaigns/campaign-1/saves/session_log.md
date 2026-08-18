@@ -12,7 +12,7 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - Persistent active-game schema initialized.
 - World-state save initialized with no established locations, NPCs, factions, relationships, quests, or consequences yet.
 - Generated-art continuity is tracked in `../art/art_log.md`.
-- Scene art is optional and should only be offered when a scene genuinely benefits from it.
+- Scene art is optional and should only be offered when the scene genuinely benefits from it.
 - When art is offered, ask at the end of the narration: `Make image? Yes / No`.
 - `Yes` means generate the image before the player makes or resolves gameplay choices.
 - `No` means skip image generation; any remaining text in that same reply is treated as the player's choices or freeform action.
@@ -162,3 +162,17 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - No HP, spell slots, Golden Breath, Golden Ascendant, inventory, currency, or consumables changed.
 - **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 175/300.
 - **Current objective:** Decide how to engage, capture, challenge, ambush, or continue observing the likely carver while Nyxara provides cover.
+
+### Checkpoint 1.9 - Alive if possible
+
+- The player manually uploaded the corrected Turn 8 scene art to `../art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`. Repository metadata verified the exact file path during Turn 9; ChatGPT did not upload or commit the image.
+- DevilMedlar stayed behind the first bend and asked Nyxara what she wanted to do.
+- DevilMedlar explicitly stated that he wants to **keep the likely carver alive for questioning** if possible.
+- DevilMedlar apologized a second time for Turn 8's accidental close contact and admitted that, although it was unintended, he had liked the brief contact.
+- Nyxara accepted the apology with dry amusement and maintained a clear boundary: enjoying an accident does not grant permission to repeat the contact intentionally.
+- Nyxara agreed that capture is preferable to killing the likely carver because they need answers and the probable ledger intact.
+- Nyxara proposed a nonlethal plan: DevilMedlar speaks from cover and orders the target to lower the crossbow, show his hands, and leave the satchel in place while she covers his weapon side. If the target attacks, Nyxara attempts to disrupt his weapon/arm and DevilMedlar closes for a nonlethal Dawnclaw takedown. If he flees deeper, they pursue and track.
+- No roll was required; no surrender demand, attack, or influence attempt has happened yet.
+- **XP:** No new XP this turn because planning and dialogue did not yet resolve an obstacle or objective.
+- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, XP 175/300.
+- **Current objective:** Execute or modify Nyxara's nonlethal capture plan.
