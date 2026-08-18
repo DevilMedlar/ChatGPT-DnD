@@ -5,7 +5,7 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "level_1_features_and_skills",
+  "current_step": "starting_equipment",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -22,6 +22,20 @@
       "intelligence": 8,
       "wisdom": 13,
       "charisma": 15
+    },
+    "skill_proficiencies": [
+      "Perception",
+      "Survival"
+    ],
+    "skill_totals": {
+      "perception": 3,
+      "survival": 3
+    },
+    "passive_perception": 13,
+    "golden_ascendant_boon": {
+      "name": "Ascendant Vitality",
+      "on_transform_temp_hp": 4,
+      "once_per_transformation_heal": 2
     },
     "appearance": {
       "build": "lean and athletic",
@@ -49,7 +63,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "level_1_features_and_skills",
+    "choice": "starting_equipment",
     "roll": null,
     "image_offer": false
   },
@@ -75,5 +89,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "appearance_and_background_set"
+  "last_checkpoint": "ascendant_vitality_and_skills_set"
 }
