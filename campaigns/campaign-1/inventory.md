@@ -1,6 +1,6 @@
 # Inventory — Campaign 1
 
-DevilMedlar's starting equipment is established for character creation.
+DevilMedlar's and Senpai's starting equipment are established for character creation.
 
 ## Player Character
 
@@ -31,7 +31,32 @@ DevilMedlar's starting equipment is established for character creation.
 
 ## Party Members
 
-No party-member inventories established.
+### Senpai
+
+#### Equipped
+
+- **Moonsteel Shortsword** — Finely made but nonmagical shortsword with a pale polished finish. `1d6` piercing damage; finesse and light. It provides no bonus to attack or damage.
+- **Moonweave Leather** — Nonmagical light armor built for quiet travel and flexible movement. Base AC 12 + Dexterity modifier; current AC 14 while worn.
+- **Traveler's Clothes** — Practical layered travel clothing worn beneath or with the Moonweave Leather.
+
+#### Carried / Stored
+
+- **Two Daggers** — Simple melee/thrown weapons. `1d4` piercing damage; finesse, light, thrown (20/60).
+- **Oracle's Satchel** containing a bedroll, blanket, tinderbox, small polished hand mirror, chalk, five sticks of incense, five days of rations, waterskin, 50 feet of hempen rope, writing charcoal, and a small bundle of blank paper.
+
+#### Currency
+
+- **Gold:** 8 gp
+- **Silver:** 7 sp
+
+#### Consumables / Charges
+
+- **Rations:** 5 days
+- **Incense:** 5 sticks
+
+#### Important / Quest Items
+
+- **Moonmirror Charm** — A small personal shrine token given to Senpai by an unnamed elder before she left Moonmirror Shrine. It has emotional and story significance but grants no combat bonus, has no charges, and has no confirmed hidden function at level 1. Any deeper connection to Moonmirror Shrine, its ceremonial moon-mirror, or future spirit phenomena must be discovered or established through play.
 
 ## Continuity Rule
 
