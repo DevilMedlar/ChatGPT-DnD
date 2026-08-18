@@ -1,0 +1,8 @@
+{
+  "active_campaign": "campaign-1",
+  "path": "campaigns/campaign-1",
+  "phase": "setup",
+  "session_number": 0,
+  "turn_number": 0,
+  "current_step": "character_creation"
+}
