@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** Campaign play active. Session 1, Turn 4 resolved; awaiting the next player action.
+**Status:** Campaign play active. Session 1, Turn 5 resolved; awaiting the next player action.
 
-DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, starting equipment, appearance, and current relationship continuity are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, starting equipment, appearance, primary reference art, and current relationship continuity.
+DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, equipment summary, appearance, primary reference art, and current relationship continuity.
 
 ## DevilMedlar (player)
 
@@ -50,20 +50,22 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Advancement
 
-- **XP:** 80
+- **XP:** 150
 - **Next-level threshold:** 300 XP
 
-## Starting Equipment
+## Equipment Summary
 
-DevilMedlar's starting equipment is established and tracked in `inventory.md`.
+DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 
 - **Sunwood Quarterstaff**
 - **Ascendant Handwraps**
 - **Traveler's Clothes**
 - **Explorer's Pack**
 - **Clan Aurivane travel cloak**
+- **Healer's kit** — 10 uses at the end of Turn 5.
+- **Merchants' Compact Missing-Caravan Contract Copy**
 - **Aurivane Dawnscale Signet** — genuine Clan Aurivane heirloom; provides lineage/story utility and a subtle radiant reaction but no combat bonus at level 1. Any deeper function remains undiscovered.
-- **Currency:** 10 gp, 5 sp
+- **Currency:** 2 gp, 7 sp
 
 ## Skills
 
@@ -133,6 +135,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 - **DevilMedlar's attraction and strong romantic interest in Senpai are established.** This does not create ownership, consent, marriage, exclusivity, or any reciprocal obligation from Senpai.
 - During Session 1, Turn 3, DevilMedlar explicitly trusted Senpai to lead the questioning of Seraphine Vale and to control what information the pair revealed. This is established as a meaningful act of trust in Senpai's judgment.
 - During Session 1, Turn 4, DevilMedlar told Senpai that watching her control the interrogation and protect their information made him **extremely attracted to her**. His physical arousal toward Senpai was visibly apparent in a non-graphic way. This establishes a stronger immediate physical/romantic reaction but does not create any new consent, ownership, engagement, marriage, or relationship status.
+- During Session 1, Turn 5, DevilMedlar chose a private double room because he wanted privacy for dinner and conversation and explicitly offered Senpai sole use of the bed while he slept elsewhere if she did not want to share it. Senpai independently chose to share the bed on opposite sides beneath separate blankets. DevilMedlar respected the arrangement and no sexual activity occurred. He woke before Senpai and watched her sleep peacefully for a short time in an affectionate, nonsexual way without touching or disturbing her.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
@@ -183,18 +186,19 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 
 ## Advancement
 
-- **XP:** 80
+- **XP:** 150
 - **Next-level threshold:** 300 XP
 
-## Starting Equipment
+## Equipment Summary
 
-Senpai's starting equipment is established and tracked in `inventory.md`.
+Senpai's authoritative current inventory is tracked in `inventory.md`.
 
 - **Moonsteel Shortsword**
 - **Two Daggers**
 - **Moonweave Leather**
 - **Traveler's Clothes**
 - **Oracle's Satchel**
+- **Seraphine Vale's Private Route Copy**
 - **Moonmirror Charm** — personal shrine token with story significance but no combat bonus or established hidden power at level 1.
 - **Currency:** 7 gp, 7 sp
 
@@ -281,7 +285,8 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 - **Mutual attraction between Senpai and DevilMedlar is established.** No committed romantic relationship, exclusivity, sexual relationship, reproductive relationship, engagement, marriage, or permanent partnership is established.
 - During Session 1, Turn 3, DevilMedlar entrusted Senpai with control of the Seraphine Vale questioning. Senpai recognized this as meaningful trust and successfully protected the pair's private information.
 - During Session 1, Turn 4, Senpai finished questioning Seraphine about the Meridian Archive leak and then privately proposed an evidence-first plan for the next day. When DevilMedlar told her that her performance had made him extremely attracted to and visibly physically aroused by her, Senpai recognized the reaction, was pleased and flustered, chose not to step away, briefly took his hand, and treated his reaction as flattering. This does not establish sexual consent beyond already established boundaries or create a committed relationship.
-- If DevilMedlar and Senpai stay at the Three Lanterns Inn tonight, Senpai's current lodging preference is the **twin room with two beds**, reflecting both mutual attraction and her preference for clear boundaries while the relationship is still new. No room has yet been booked.
+- During Session 1, Turn 5, Senpai initially objected when DevilMedlar chose a private double room instead of her preferred twin. After he explained that he wanted privacy to eat and talk and explicitly offered her sole use of the bed, she independently chose to share the double bed on **opposite sides beneath separate blankets**. She refused to make him sleep on furniture merely to prove respect. No sexual activity occurred, and the arrangement did not create permission for unconscious touching or future bed-sharing.
+- Senpai's light personal preferences established during the private evening include enjoying quiet high places, rain against a roof, and sweet plum pastries. These are nonmechanical character preferences.
 - Senpai's feelings, boundaries, relationship choices, and decisions remain under ChatGPT control during play, while DevilMedlar remains under player control.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
