@@ -17,6 +17,7 @@ Run a persistent, choice-driven adult fantasy RPG with d20-style mechanics, stro
 9. Paths in this file are relative to `campaigns/campaign-1/`.
 10. Before continuing play, load the active campaign pointer and all canonical Campaign 1 save files required for the current scene.
 11. `../active_campaign.json` must remain synchronized with the current phase, session, turn, step, and XP summary.
+12. **Append-first preservation rule:** Preserve existing historical content and prior checkpoints by default. Add new turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older information merely for style, neatness, brevity, or normalization. Rewrite or delete existing content only when it is genuinely necessary because the prior text is factually wrong, contradicts a newer explicit player choice, contains an accidental duplicate/error, would make current state mechanically incorrect, or the player explicitly asks for the change. When a correction is required, make the smallest surgical edit practical and preserve the historical record whenever possible by marking the older fact as corrected/superseded rather than erasing useful history.
 
 ## Adult-content boundary
 
@@ -180,6 +181,8 @@ Every gameplay turn must synchronize all live campaign-state files, not only the
 - `art/art_log.md`
 
 If a file has no substantive change on a turn, update its last-sync marker or status note rather than inventing a fictional change. Static documentation such as `README.md`, `GAME_MASTER_RULES.md`, or `LICENSE` does not need a meaningless rewrite every turn; update static docs only when their rules or documented status actually changes.
+
+**Preservation during sync:** Synchronizing a file does not authorize rewriting its history. Prefer appending a new checkpoint, current-state note, or turn-specific delta. Existing historical text should remain untouched unless the append-first preservation rule in Continuity requires a genuine correction.
 
 Every turn's sync must preserve and reconcile, when relevant:
 - XP and level progress
