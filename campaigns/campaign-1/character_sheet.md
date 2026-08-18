@@ -2,7 +2,7 @@
 
 **Status:** Character creation in progress.
 
-Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, and class. Senpai has established name, age, gender, and pronouns. Background, abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
+Partial character identity canon has been established. DevilMedlar has established name, age, gender, pronouns, species/ancestry, draconic affinity, class, and background. Senpai has established name, age, gender, and pronouns. Abilities, equipment, appearance, relationships, history, and other personal canon remain unestablished unless listed below.
 
 ## DevilMedlar (player)
 
@@ -12,7 +12,7 @@ Partial character identity canon has been established. DevilMedlar has establish
 - **Species / ancestry:** Draginkin
 - **Draconic affinity:** Radiant
 - **Class / homebrew class:** Dragon Ascendant
-- **Background:** Not established
+- **Background:** Lost Dragon Clan Heir
 - **Level:** Not established
 
 ## Ability Scores
