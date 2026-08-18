@@ -25,7 +25,8 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Baseline scales:** Barely noticeable crimson-red patches, especially collarbone/ribs/hips; subtle cheek/neck hints acceptable.
 - **Baseline silhouette:** No visible horns, wings, or tail.
 - **Empowered form:** Short swept-back horns, wings, tail, radiant crimson-and-gold draconic aura.
-- **Turn 12 history note:** DevilMedlar has now told Nyxara he entered the Velvet Coil at adult age 18 and later escaped. This changes story canon only; no new scar, tattoo, costume, or physical feature was established.
+- **Turn 12 story correction:** DevilMedlar told Nyxara he was **born inside the Velvet Coil and escaped at age 7**. The childhood disclosure is non-graphic and establishes no new scars, tattoos, costume details, or other physical markers. Any prior art-log statement that he joined at age 18 is superseded.
+- **Childhood-depiction caution:** If childhood flashback art is ever requested, depict only non-sexual childhood material such as isolation, indoctrination, guarded corridors, storm, maintenance sluice, or escape. Do not depict a child in sexualized circumstances or adult cult rites.
 
 ## Player-Provided Reference Art
 
@@ -47,7 +48,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Expression:** Alert, self-possessed, often beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers, short hooded mantle, muted brass fittings.
 - **Weapons:** Slim shortblade and compact hand crossbow.
-- **Relationship visual rule:** Light teasing, comfortable eye contact, and close tactical body language are appropriate. Turn 8 accidental contact remains canonically accidental and does not authorize future touching. Turn 12 substantially increased personal trust through reciprocal disclosure, but **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
+- **Relationship visual rule:** Light teasing, comfortable eye contact, and close tactical body language are appropriate. Turn 8 accidental contact remains canonically accidental and does not authorize future touching. Turn 12 substantially increased personal trust through reciprocal disclosure, but mutual attraction, romance, intimacy, and party familiarity remain unconfirmed.
 
 ### Mara Veyl
 
@@ -55,7 +56,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Gender / pronouns:** Female, she/her.
 - **Relationship:** Nyxara's younger sister.
 - **Story status:** Listed in the Velvet Coil ledger; Nyxara believes she is a target rather than a member.
-- **Appearance:** **Not established. Do not invent or depict Mara yet** unless the player later establishes her visual canon or she appears in play.
+- **Appearance:** Not established. Do not invent or depict Mara yet unless the player later establishes her visual canon or she appears in play.
 
 ### Captured Likely Velvet Coil Carver
 
@@ -109,13 +110,19 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Small damp stone service chamber, broken masonry cover, reflective floor, low amber lantern light.
 - Eastward drainage passage continues deeper.
 - Rusted vertical service shaft rises to grated surface exit.
-- Turn 12 spans roughly three hours into night. A quiet watch/conversation scene may show DevilMedlar and Nyxara seated or crouched near the ledger/lantern while the bound captive rests nearby, but no such image has been generated yet.
+- Turn 12 spans roughly three hours into night. A quiet watch/conversation scene may show DevilMedlar and Nyxara near the ledger/lantern while the bound captive rests nearby, but no such image has been generated.
 
 ### Silken Cup
 
-- **New Turn 12 location canon from Nyxara's knowledge:** Upscale winehouse and performance salon in Vespergate's Lantern Quarter.
+- Upscale winehouse and performance salon in Vespergate's Lantern Quarter.
 - Has private rooms and a rear cellar-delivery entrance used by discreet late-night couriers.
-- Exact façade, interior décor, staff appearance, heraldry, and cellar layout are not yet visually established. Do not invent permanent visual details before arrival unless needed for a generated establishing shot.
+- Exact façade, interior décor, staff appearance, heraldry, and cellar layout are not yet visually established.
+
+### Velvet Coil Childhood Escape - visual-only continuity
+
+- If ever depicted, the only established visual setting is a **violent storm and a maintenance sluice/service channel jammed partly open by floodwater**, through which seven-year-old DevilMedlar escaped.
+- Exact compound architecture, clothing, caregivers, parentage, and interior design remain unestablished.
+- Childhood imagery must remain non-sexual and must not depict adult pleasure-cult rites involving or around the child in a sexualized way.
 
 ## Generated Scene Art
 
@@ -144,4 +151,4 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 12:** No new image generated. Visual canon adds no new physical changes to DevilMedlar or Nyxara. Mara Veyl is now known by name/relationship but her appearance remains intentionally unestablished. The captive is now awake, bound, and disarmed. Silken Cup exists in the Lantern Quarter but detailed visual design remains open. Existing Turn 8 corrected art remains the latest verified scene image.
+- **Session 1 Turn 12:** No new image generated. Childhood story canon corrected to born inside the Velvet Coil and escaped at age 7; this creates no new adult DevilMedlar physical features. Mara Veyl is known by name/relationship but her appearance remains intentionally unestablished. Captive is awake, bound, and disarmed. Silken Cup visual design remains open. Existing Turn 8 corrected art remains the latest verified scene image.
