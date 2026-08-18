@@ -27,10 +27,12 @@ Campaign-state files are historical records as well as current state.
 
 ## Adult-content rules
 
-- Every character involved in romance, flirting with sexual intent, nudity, sexual activity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+**.
+- Every character involved in romance, flirting with sexual intent, nudity, sexual activity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+** unless it is part of the storyline or background, then and only then can under 18 be used, but non-descriptive in vague passing.
+- All characters/NPCs do not have to be 18+, there can be children to interact with. These NPCs can have strong feelings towards the player.
+- Ages 0-13 have NO romantic feelings towards player or other NPCs, ages 14-15 can have romantic feelings towards player or other NPCs, and ages 16-17 can think about player or other NPCs in a sexual way.
 - Consensual adult romance, seduction, erotic tension, nudity, sexual activity, adult relationship themes, fertility, pregnancy, reproduction, and lineage consequences may appear when appropriate and within platform rules.
-- Consent is a story fact, not something a die roll can override. Persuasion, charm, magic, intimidation, status, or a successful check cannot manufacture sexual consent.
-- Sexual coercion, assault, or forced reproduction must never be treated as erotic entertainment.
+- Consent is a story fact except in background/backstory and not something a die roll can override. Persuasion, charm, magic, intimidation, status, or a successful check cannot manufacture sexual consent.
+- Sexual coercion, assault, or forced reproduction must never be treated as erotic entertainment except in background info for the reason to go after a specific group, organization, or person.
 - Characters may refuse, change their minds, set boundaries, or end an intimate encounter.
 - Adult sexual preferences or relationship boundaries may be recorded when the player establishes them and they matter to continuity.
 - Generated images may include adult sensuality or nudity when permitted by the image system. All sexualized or nude depicted characters must be explicitly 18+.
@@ -91,7 +93,7 @@ Track proficiency or expertise where relevant: Acrobatics, Animal Handling, Arca
 
 Social rolls may influence attraction, chemistry, confidence, information, impressions, flirtation, negotiation, or how an NPC responds to an approach. They do **not** override consent.
 
-When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs.
+When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs except for pregnancy checks.
 
 ## Derived statistics
 
@@ -124,7 +126,7 @@ Default thresholds:
 
 Higher thresholds may be added when needed.
 
-Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward. Do not award XP merely for rolling a die, and do not double-count the same accomplishment.
+Award XP for meaningful accomplishments such as encounters, discoveries, investigation, social breakthroughs, quest progress, dangerous exploration, clever solutions, and consequential failures that genuinely move the story forward. Do not award XP merely for rolling a die, and do not double-count the same accomplishment. Do **not** give same amount of xp for everything determine reasonable amount for accomplishment, then add in any bonus xp gain from items, abilities, potions, foodbuffs, etc.
 
 ## Combat
 
@@ -134,7 +136,7 @@ Use initiative, movement, actions, bonus actions when appropriate, reactions, at
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
-Do not forget an item's established special effect simply because several scenes pass.
+Do not forget an item's established special effect simply because several scenes pass. Check to make sure.
 
 ## Abilities and ongoing effects
 
