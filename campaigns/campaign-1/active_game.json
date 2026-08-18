@@ -2,12 +2,12 @@
   "campaign": "campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 3,
-  "current_scene": "Three Lanterns Inn — about to speak with Seraphine Vale",
+  "turn_number": 4,
+  "current_scene": "Three Lanterns Inn — Seraphine Vale's private parlor after Senpai's questioning",
   "current_step": "awaiting_player_action",
   "current_location": "Brasshaven — Three Lanterns Inn",
   "character_created": true,
   "xp_current": 80,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 2 is resolved. DevilMedlar and Senpai treated their Brasshaven outing as a date, browsed Mooncup Apothecary and Brass Nail Smithy without buying, inspected public Merchants' Compact records without accepting the caravan contract, and learned Copper Finch Courier last checked in at Cinderwash Turnoff. Senpai chose and paid 1 gp for a private two-person bath at Steam & Stone Baths; mutual attraction between DevilMedlar and Senpai is now explicitly established with no committed relationship or sexual consent implied. They reached the Three Lanterns Inn near sunset and asked for Seraphine Vale, who is waiting in an upstairs private parlor. No room has been booked. Both characters are at 80 / 300 XP."
+  "last_sync_note": "Session 1, Turn 3 is resolved. DevilMedlar challenged Seraphine Vale's comment about the afternoon and then trusted Senpai to lead the questioning while revealing as little as possible about the pair. Senpai remained calm and nonviolent, succeeded on Deception 21 and Insight 15, and learned that Seraphine is funded by the Meridian Archive, suspects an internal leak of protected ruin locations, and came to Brasshaven partly because a sealed Archive dispatch case containing copies of her field notes was aboard the missing Copper Finch Courier. Seraphine identified the private-map mark as Suncoil Watch, an old dragon-road waystation east of Cinderwash Turnoff, and said the dragon-sun motif predates Clan Aurivane though some Aurivane radial design may descend from the same older tradition. Seraphine offered access to a copy of the relevant private route map but no quest or agreement has been accepted. No resources were spent and both characters remain at 80 / 300 XP."
 }
