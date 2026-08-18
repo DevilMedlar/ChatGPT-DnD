@@ -4,23 +4,28 @@
 
 ### Equipped
 
-#### Dawnclaw — Bonded Draconic Gauntlet
+#### Dawnclaws — Bonded Draconic Gauntlets
 
-- **Type:** Articulated ritual combat gauntlet; simple melee weapon; draconic/spellcasting focus.
-- **Worn on:** Right forearm and hand.
+- **Type:** Matched pair of articulated ritual combat gauntlets; simple melee weapon set; draconic/spellcasting focus.
+- **Worn on:** Both forearms and hands.
+- **Weapon profile:** The pair functions as one weapon set for attacks; choosing which fist strikes is narrative unless another feature later says otherwise.
 - **Damage:** `1d6` bludgeoning.
-- **Attack ability:** Strength.
-- **Proficiency:** DevilMedlar is proficient with Dawnclaw through Dracolyte training.
-- **Hand use:** The articulated fingers leave the hand usable for touch, gestures, spell components, and small objects. Wielding another weapon in that hand prevents Dawnclaw attacks until the hand is free.
-- **Focus Channel:** Dawnclaw can serve as DevilMedlar's draconic/spellcasting focus.
+- **Attack ability:** Charisma through the Dracolyte bond. DevilMedlar may use Charisma for attack and damage rolls made with the Dawnclaws.
+- **Current attack bonus:** `+4` (`CHA +2`, proficiency `+2`).
+- **Current damage:** `1d6 + 2` bludgeoning.
+- **Proficiency:** DevilMedlar is proficient with the Dawnclaws through Dracolyte training.
+- **No free extra attack:** Wearing two gauntlets does not by itself grant an off-hand or bonus-action attack.
+- **Hand use:** The articulated fingers leave both hands usable for touch, gestures, spell components, climbing, and small objects. A hand holding another weapon or bulky object cannot make a Dawnclaw strike until freed.
+- **Focus Channel:** The Dawnclaws serve as DevilMedlar's draconic/spellcasting focus.
 - **Ascendant Conduction:** While Golden Ascendant is active, a Dawnclaw hit may deal **fire** or **radiant** damage instead of bludgeoning. This changes the damage type only and adds no extra damage.
-- **Appearance:** Dark bronze-gold articulated plates fitted close to the forearm and hand, with fine sunburst filigree and narrow crimson inlays that echo DevilMedlar's subtle scales. When power is channeled, the seams kindle gold-white with crimson at the edges.
-- **Bond:** Personal starting weapon; not a +1 weapon and no hidden numerical bonus is assumed.
+- **Appearance:** Close-fitting dark bronze-gold articulated plates on both forearms and hands, etched with fine sunburst filigree and narrow crimson inlays echoing DevilMedlar's subtle scales. When power is channeled, the seams kindle gold-white with crimson at the edges.
+- **Bond:** Personal starting weapon set; not a +1 weapon and no hidden numerical bonus is assumed.
 
 #### Reinforced Wanderer's Vestments
 
 - **Type:** Light armor, mechanically equivalent to studded leather.
 - **Armor Class:** `12 + Dexterity modifier`.
+- **Current AC:** `12`.
 - **Appearance:** Flexible dark travel layers reinforced with discreet bronze-gold scale-shaped plates beneath the cloth, designed not to obscure DevilMedlar's mostly human baseline silhouette.
 
 ### Carried / Stowed
