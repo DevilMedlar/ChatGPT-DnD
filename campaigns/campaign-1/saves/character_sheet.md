@@ -61,8 +61,8 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 ## Equipment Summary
 
-- **Dawnclaw — Bonded Draconic Gauntlet:** `1d6` bludgeoning simple melee weapon using Strength; also functions as DevilMedlar's draconic/spellcasting focus. While Golden Ascendant is active, its damage may be fire or radiant instead of bludgeoning without increasing the damage die.
-- **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather.
+- **Dawnclaws — Bonded Draconic Gauntlets:** Matched paired gauntlets functioning as one simple melee weapon set and as DevilMedlar's draconic/spellcasting focus. Attack and damage use Charisma through the Dracolyte bond: **+4 to hit**, `1d6 + 2` bludgeoning. Wearing two gauntlets does not grant a free extra attack. While Golden Ascendant is active, a hit may deal fire or radiant instead of bludgeoning without adding damage.
+- **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather; current AC 12.
 - **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin; slightly warm, with no known mechanical property yet.
 - Full carried gear and currency are tracked in `inventory.md`.
 
