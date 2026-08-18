@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. The Session 1 opening scene at Brasshaven's Wayfarer Gate now has verified reference art below. No other recurring NPC appearance, location appearance, transformation, or visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -59,11 +59,15 @@ These details are stable textual visual canon unless later changed by transforma
 
 ## Recurring NPC Visual Canon
 
-None established.
+None established. The silver-haired woman visible in the Session 1 opening-scene reference is a scene-specific visual impression only until her appearance becomes established through play.
 
 ## Locations
 
-None established.
+### Brasshaven — Wayfarer Gate
+
+- **Established visual identity:** A frontier trade-settlement entrance centered on a massive weathered stone arch. Beyond the gate lies a busy market/trade street with canvas awnings, wagons, merchants, guards, horses, smoke, and dense travel traffic.
+- **Scene-specific details:** The broken merchant wagon, spilled carved stones, reward notice, and tea-stall arrangement belong to the Session 1 opening moment and are not permanent fixtures of the location.
+- Exact architecture, street layout, heraldry, stall placement, and background buildings beyond what narration establishes remain flexible unless later fixed through play.
 
 ## Equipment / Important Objects
 
@@ -100,6 +104,15 @@ Future images of DevilMedlar should consult this reference together with the tex
 - **Moonmirror Charm:** The image does not lock the charm's exact physical design or establish any hidden function. Its written level-1 story significance remains authoritative.
 
 Future images of Senpai should consult this reference together with the textual companion visual canon above. If the two differ, textual canon wins unless Senpai or the player explicitly adopts the image variation through play.
+
+### Session 1, Turn 1 — Brasshaven Arrival
+
+- **Repository path:** `campaigns/campaign-1/art/Fantasy-Gate-Market-Adventurers.png`
+- **Status:** Verified present in the repository and established as the opening-scene reference for DevilMedlar and Senpai arriving at Brasshaven's Wayfarer Gate.
+- **Canonical from the image:** The overall visual contrast of DevilMedlar's radiant gold-white presence beside Senpai's dark plum and silver-violet Moonfire aesthetic; both characters arriving together beneath a large weathered stone gate; the busy frontier-market atmosphere; the broken wagon and spilled carved stones; the visible dragon-around-sun stone motif as a scene clue; the reward notice for three missing caravans along Emberglass Road; and the silver-haired woman observing from a nearby tea stall.
+- **Textual canon still controls:** Character anatomy, exact equipment, exact clothing details, exactly one tail for Senpai, no functional wings for DevilMedlar, the exact wording and significance of the dragon-sun motif, exact reward notice wording, distances, dialogue, NPC identity, and all hidden story facts.
+- **Inspiration only unless later adopted:** Exact gate banners and heraldry, precise market architecture, background buildings, crowd composition, staff ornamentation, incidental jewelry, exact tea-stall furniture, lighting, poses, and any scenery not explicitly established by narration.
+- This reference captures a moment in time. Scene-specific objects or people may move, leave, break further, be repaired, or otherwise change as gameplay advances.
 
 When additional reference art is added:
 
