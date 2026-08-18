@@ -47,15 +47,17 @@ None yet.
 
 ## Signature Equipment & Visual Effects
 
-### Dawnclaw — Bonded Draconic Gauntlet
+### Dawnclaws — Bonded Draconic Gauntlets
 
-- **Worn on:** Right forearm and hand.
-- **Silhouette:** Close-fitting articulated gauntlet rather than an oversized armored fist; fingers remain fully articulated.
+- **Worn on:** Both forearms and hands as a matched pair.
+- **Silhouette:** Close-fitting articulated gauntlets rather than oversized armored fists; fingers remain fully articulated.
 - **Materials:** Dark bronze-gold plates with fine sunburst filigree.
 - **Accents:** Narrow crimson inlays that visually echo DevilMedlar's subtle crimson-red scales.
+- **Symmetry:** The pair should clearly belong together, but small mirrored filigree differences may distinguish left from right.
 - **Inactive appearance:** Elegant, restrained, and suitable for travel; no constant glow.
-- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when spells, draconic power, or Golden Ascendant energy are routed through it.
-- **Golden Ascendant interaction:** When Dawnclaw deals fire or radiant damage during transformation, depict the chosen damage type through the gauntlet without changing its established physical design.
+- **Power-channel appearance:** Plate seams kindle gold-white with crimson at the edges when spells, draconic power, or Golden Ascendant energy are routed through them.
+- **Golden Ascendant interaction:** When the Dawnclaws deal fire or radiant damage during transformation, depict the chosen damage type through the striking gauntlet without changing the established physical design.
+- **Combat presentation:** The pair functions as one weapon set mechanically. Art may show punches, guards, parries, spell gestures, or both fists lit at once, but should not imply an unearned extra attack mechanic.
 
 ### Reinforced Wanderer's Vestments
 
