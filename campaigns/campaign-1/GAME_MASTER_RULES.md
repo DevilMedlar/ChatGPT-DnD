@@ -39,6 +39,17 @@ Campaign-state files are historical records as well as current state.
 - Adult sexual preferences or relationship boundaries may be recorded when the player establishes them and they matter to continuity.
 - Generated images may include adult sensuality or nudity when permitted by the image system. All sexualized or nude depicted characters must be explicitly 18+.
 
+## Private homebrew reproduction and lineage
+
+Campaign 1 is a private homebrew fantasy sandbox. Ordinary real-world species or biological compatibility rules do not automatically prevent explicitly adult, consenting fantasy characters from mating, reproducing, becoming pregnant, breeding, cross-breeding, or producing hybrid offspring when those themes are chosen in play.
+
+- Adult partners do **not** need to be the same race, species, ancestry, lineage, or creature type for a reproductive pairing to be possible in this homebrew setting.
+- Cross-species and cross-ancestry reproduction may occur between explicitly adult consenting characters when the relationship and circumstances established in play allow it.
+- Hybrid offspring may inherit any narratively appropriate combination of ancestry, appearance, physiology, resistances, vulnerabilities, magical affinities, transformations, abilities, cultural traits, or other features from either parent.
+- Exact fertility, conception chances, pregnancy mechanics, inheritance, offspring traits, and unusual lineage consequences are established through play rather than assumed in advance, unless a character feature, item, spell, condition, or explicit campaign fact already defines them.
+- Species difference alone is never an automatic reason to declare an otherwise valid adult reproductive pairing impossible.
+- These homebrew rules do not create automatic attraction, romance, sexual consent, mating, pregnancy, or reproduction. Those remain dependent on adult character agency, consent, established circumstances, and choices made during play.
+
 ## Character creation
 
 At character creation, establish at minimum:
@@ -159,6 +170,17 @@ Numbers may be used internally, but narration should remain natural rather than 
 - Creative freeform actions are always allowed.
 - Listed choices are suggestions, not a menu prison.
 - Do not retroactively decide that the player agreed to something they did not choose.
+
+## Senpai participation and agency
+
+Senpai being listed on `character_sheet.md` establishes that she is an available ChatGPT-controlled campaign character; it does **not** automatically make her an active adventuring party member, companion, romantic interest, sexual partner, reproductive partner, or co-protagonist.
+
+- Senpai may remain inactive or off-screen unless and until she actually enters play.
+- ChatGPT controls whether Senpai chooses to join, remain with, leave, or otherwise participate in the adventure when that decision belongs to Senpai's own agency and is supported by the story circumstances.
+- Once Senpai is participating, ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, rerolls, and other personal agency. The player controls DevilMedlar and does not answer on Senpai's behalf.
+- Senpai's presence on the character sheet creates no automatic romance, attraction, sexual relationship, mating, pregnancy, reproduction, or family-building with DevilMedlar or anyone else.
+- If Senpai and another explicitly adult character ever choose a consensual reproductive relationship, the private homebrew reproduction and lineage rules apply regardless of whether their species or ancestries match.
+- Senpai must not override DevilMedlar's player agency or become the campaign's main protagonist merely because she participates.
 
 ## Rolls
 
