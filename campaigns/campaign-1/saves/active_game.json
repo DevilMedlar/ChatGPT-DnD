@@ -5,7 +5,7 @@
   "phase": "in_play",
   "session_number": 1,
   "tone": "Anything Goes Sandbox",
-  "current_step": "opening_scene_cult_mark",
+  "current_step": "lantern_road_two_trails_found",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -116,13 +116,18 @@
   },
   "scene": {
     "location": "Lantern Road outside Vespergate",
-    "situation": "DevilMedlar has discovered a freshly carved symbol of his former pleasure cult on a roadside shrine; the Sunscale Shard has begun warming in response.",
-    "combat_active": false
+    "situation": "DevilMedlar ignored the shrine and reacting Sunscale Shard temporarily to search for whoever carved the cult mark. A successful Perception check found two recent trails: a likely carver with fresh shrine-stone dust in the boot tread, and a lighter soft-soled observer/follower trail that arrived afterward. Both head north into a dry drainage cut.",
+    "combat_active": false,
+    "clues": {
+      "likely_carver_trail": "Recent bootprints with pale fresh stone dust in the tread; heads north into the drainage cut.",
+      "second_observer_trail": "Lighter soft-soled prints crossed afterward, paused behind the crooked tree with line of sight to the shrine, then followed the likely carver north.",
+      "sunscale_shard": "Still warm; not yet examined further."
+    }
   },
   "pending": {
-    "choice": "investigate_opening_hook",
+    "choice": "decide_whether_to_follow_or_investigate_trails",
     "roll": null,
-    "image_offer": true
+    "image_offer": false
   },
   "play_preferences": {
     "rolls": "open",
@@ -156,5 +161,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "session_1_opening_cult_mark_and_sunscale_reaction"
+  "last_checkpoint": "session_1_perception_found_two_trails"
 }
