@@ -4,10 +4,10 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 ## Current Scene
 
-- **Location:** Lantern Road, just outside the western approach to Vespergate.
+- **Location:** North drainage gully off Lantern Road, outside the western approach to Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1. DevilMedlar has discovered a freshly carved symbol associated with his former pleasure cult on a weathered roadside shrine. The unidentified Sunscale Shard remains warm against his chest. DevilMedlar chose to ignore the shrine and relic temporarily and search the surroundings for whoever carved the mark.
-- **Immediate danger / pressure:** No visible attacker yet, but a successful search has revealed two very recent trail signatures leaving the shrine area and heading north into a dry drainage cut. Whoever carved the mark may still be nearby.
+- **Situation:** Session 1 Turn 2. DevilMedlar followed the two recent trails north into the gully. A Survival check failed, causing him to lose the clean trail on loose gravel and enter a narrow bend below an upper shelf. The second observer then revealed herself as Nyxara Veyl, an adult 24-year-old female tiefling Veilblade/occult tracker.
+- **Immediate danger / pressure:** Nyxara is wary but not openly hostile. She claims the cult-mark carver took the upper shelf toward an old culvert and that she was following the carver independently. Her claim is not yet verified, and the likely carver is still somewhere ahead.
 
 ## Known Locations
 
@@ -20,8 +20,14 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 - Western road leading into Vespergate.
 - Scattered traveler shrines and old stone markers line the approach.
-- Current opening-scene shrine has been freshly marked with a symbol DevilMedlar recognizes from his former pleasure cult.
-- A dry drainage cut or shallow gully runs north from the shrine area and now contains two recent sets of tracks.
+- The opening-scene shrine was freshly marked with a symbol DevilMedlar recognizes from his former pleasure cult.
+
+### North Drainage Gully
+
+- Dry drainage cut running north from Lantern Road.
+- Loose gravel, hard runoff stone, narrow bends, and elevated shelves make tracking difficult.
+- The two shrine trails entered this gully.
+- Nyxara claims the likely carver continued along an upper shelf toward an old culvert.
 
 ## Important NPCs
 
@@ -32,19 +38,27 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - Name, age, species/ancestry, appearance, motives, current location, current status, and exact relationship with DevilMedlar are not established yet.
 - Do not assume romance or sexual history unless the player establishes it.
 
-### Future Assistant-Controlled Companion
+### Nyxara Veyl
 
-- A second adventuring character may enter naturally during play.
-- She must be explicitly adult before any romance, sexuality, fertility, pregnancy, or reproductive storyline is possible.
-- Species, name, appearance, class, personality, and relationship to DevilMedlar are not yet established.
-- She is a supporting companion and never overrides DevilMedlar's player agency.
+- **Age:** 24, explicitly adult.
+- **Gender / pronouns:** Female, she/her.
+- **Species:** Tiefling.
+- **Role:** Veilblade / occult tracker; potential assistant-controlled supporting companion.
+- **First appearance:** Session 1 Turn 2, north drainage gully off Lantern Road.
+- **Current disposition:** Wary, alert, dryly confident, not openly hostile.
+- **Current claim:** She was independently tracking the person who carved the cult symbol and was not traveling with them.
+- **Claim status:** Unverified.
+- **Current knowledge shared:** She says the carver moved along the upper shelf toward an old culvert after the ground trail became difficult to read.
+- **Party status:** Not a party member yet.
+- **Relationship status:** First contact only; no established trust, friendship, attraction, romance, debt, or promise.
+- **Agency rule:** If she becomes the assistant-controlled companion, she remains supporting cast and never overrides DevilMedlar's player agency.
 
 ## Factions
 
 ### Unnamed Pleasure Cult
 
 - Part of DevilMedlar's past; he identifies as a **Pleasure Cult Survivor**.
-- A symbol associated with the cult has now appeared freshly carved on a roadside shrine outside Vespergate.
+- A symbol associated with the cult appeared freshly carved on a roadside shrine outside Vespergate.
 - Name, beliefs, leadership, practices, current status, and exact circumstances of DevilMedlar's survival/departure remain unresolved.
 
 ### Unnamed Temple / Draconic Order
@@ -55,20 +69,22 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 ## Relationships
 
-- **Unnamed Temple-Bound Acolyte:** historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
-- **Future Assistant-Controlled Companion:** not yet met.
+- **Unnamed Temple-Bound Acolyte:** Historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
+- **Nyxara Veyl:** First contact; wary but not openly hostile. She has offered information about the likely carver's route. No trust or alliance established yet.
 
 ## Active Quests
 
 ### Fresh Mark on Lantern Road
 
-- **Hook:** A symbol from DevilMedlar's former pleasure cult has been carved freshly into a roadside shrine outside Vespergate.
+- **Hook:** A symbol from DevilMedlar's former pleasure cult was carved freshly into a roadside shrine outside Vespergate.
 - **Complication:** The Sunscale Shard reacted by becoming noticeably warm.
-- **Investigation result:** DevilMedlar searched the surrounding area rather than touching the shrine or relic. Perception check: `15 + 3 = 18` against DC 13, success.
-- **Trail A:** A recent boot trail approaches the shrine. Pale fresh stone dust is caught in the tread, strongly indicating this is the person who carved the mark.
-- **Trail B:** A second, lighter soft-soled trail crosses Trail A afterward, pauses behind the crooked tree with a clear view of the shrine, then follows Trail A away. The tracks suggest this second person may have been observing or following the carver rather than simply walking beside them.
-- **Direction:** Both trails head north away from Lantern Road into a dry drainage cut/shallow gully.
-- **Immediate objective:** Decide whether to follow the trails, investigate their relationship more carefully, set an ambush, or abandon the immediate pursuit for Vespergate.
+- **Investigation result:** Perception check `15 + 3 = 18` against DC 13 succeeded and revealed two separate trail signatures.
+- **Trail A:** Recent boot trail with fresh pale shrine-stone dust, strongly indicating the likely carver.
+- **Trail B:** Lighter soft-soled trail that arrived afterward, watched from behind the crooked tree, then followed Trail A.
+- **Pursuit result:** DevilMedlar followed the trails immediately. Survival check `4 + 3 = 7` against DC 12 failed. He lost the clean trail in gully gravel and entered a narrow bend.
+- **Trail B identity revealed:** Nyxara Veyl, age 24, adult female tiefling Veilblade/occult tracker.
+- **Nyxara's claim:** She was independently following the cult-mark carver and says the target took an upper shelf toward an old culvert. This is not yet verified.
+- **Immediate objective:** Decide how to respond to Nyxara and whether to cooperate, question her, distrust her, or continue toward the culvert independently.
 
 ## Completed / Failed Quests
 
@@ -78,33 +94,37 @@ None established yet.
 
 - DevilMedlar's personal history includes survival of a pleasure cult, a period of temple life under the influence/help of a Temple-Bound Acolyte, and an eventual departure to become a Wandering Mystic.
 - DevilMedlar carries an unidentified **Sunscale Shard**, a small gold-dragon-scale-like relic whose origin and true properties are unknown.
-- The cult symbol on Lantern Road appears fresh rather than ancient or weathered.
+- The cult symbol on Lantern Road is fresh rather than ancient or weathered.
 - A boot trail with fresh shrine-stone dust almost certainly belongs to the person who carved the cult mark.
-- A second lighter trail arrived after the likely carver, watched the shrine from behind the crooked tree, and then followed the first trail north.
-- Both trails currently lead into a dry drainage cut north of Lantern Road.
+- The second lighter trail belonged to Nyxara Veyl, who says she was following the likely carver.
+- Nyxara says the likely carver continued toward an old culvert along the gully's upper shelf.
+- Nyxara's allegiance and truthfulness are not yet established.
 
 ## Consequences & World Changes
 
 - Session 1 has begun.
-- DevilMedlar's past has surfaced immediately outside Vespergate.
-- The Sunscale Shard has reacted for the first time in established play.
-- DevilMedlar's first investigation succeeded and established that at least two recent travelers were involved around the marked shrine, though their identities and allegiance remain unknown.
+- DevilMedlar's past surfaced immediately outside Vespergate.
+- The Sunscale Shard reacted for the first time in established play.
+- DevilMedlar's first investigation succeeded and established at least two recent travelers around the marked shrine.
+- The immediate pursuit produced a failed Survival check, costing DevilMedlar positional certainty rather than ending the investigation.
+- Nyxara Veyl has entered the story as the second observer and a potential assistant-controlled companion.
 
 ## Unresolved Threads
 
 - Name and nature of the pleasure cult.
 - Exact circumstances of DevilMedlar's survival/departure from the pleasure cult.
 - Why the cult's symbol is freshly present outside Vespergate.
-- Identity and motive of the likely carver represented by Trail A.
-- Identity and motive of the second observer/follower represented by Trail B.
-- Whether Trail B is ally, enemy, rival, victim, investigator, or something else.
+- Identity and motive of the likely carver.
+- Whether Nyxara Veyl is truthful about independently following the carver.
+- Why Nyxara is investigating the cult or carver.
+- What lies at the old culvert.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
 - Why DevilMedlar ultimately left temple life.
 - Whether the cult, acolyte, or temple/order remain active forces in DevilMedlar's present life.
 - Origin and true properties of the Sunscale Shard.
 - Why the Sunscale Shard reacted to the cult marking.
-- Identity and entrance point of the future assistant-controlled companion.
+- Whether Nyxara becomes the assistant-controlled supporting companion.
 
 ## Persistent World Flags
 
@@ -121,6 +141,9 @@ None established yet.
 - `lantern_road_perception_search_success = true`
 - `likely_cult_carver_trail_found = true`
 - `second_observer_trail_found = true`
+- `gully_survival_tracking_failed = true`
+- `nyxara_veyl_met = true`
+- `nyxara_claim_unverified = true`
 
 ## Continuity Notes
 
@@ -128,3 +151,7 @@ None established yet.
 - Visual canon for recurring characters, equipment, locations, scars, tattoos, transformations, and generated scenes belongs in `../art/art_log.md`.
 - Never erase an unresolved consequence merely because several scenes or sessions have passed.
 - All romance, sexual activity, fertility, pregnancy, breeding, cross-species reproduction, and hybrid-offspring storylines involve explicitly adult consenting characters only and remain within platform limits.
+
+## Last Turn Sync
+
+- **Session 1 Turn 2:** World state synchronized after the failed gully tracking check and Nyxara Veyl's first appearance.
