@@ -4,10 +4,11 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 ## Current Scene
 
-- **Location:** Inside the old culvert beyond the upper-shelf alarm, north drainage gully outside Vespergate.
+- **Location:** Inside the old culvert at the first bend, north drainage gully outside Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1 Turn 6. DevilMedlar asked Nyxara whether the person she loves is the personally important name in the stolen Velvet Coil ledger. Nyxara confirmed **yes**, and confirmed the person is **female**, but still withheld her identity and exact relationship. DevilMedlar and Nyxara then deliberately stepped over the known tripline without triggering it and entered the culvert quietly.
-- **Immediate danger / pressure:** The nonlethal alarm remains intact and armed behind them. If a follower crosses it, the spring striker will knock against the hollow iron drainpipe and potentially warn DevilMedlar and Nyxara, but any other creature could also trigger it. The Velvet Coil carver is still believed to be ahead or to have recently passed this way.
+- **Situation:** Session 1 Turn 7. DevilMedlar briefly examined the Sunscale Shard, advanced beside Nyxara with Dawnclaws ready, actively searched the tunnel, and made another appreciative comment about Nyxara's appearance. Arcana `2 - 1 = 1` vs DC 12 failed; Stealth `10 + 0 = 10` vs DC 12 failed; Perception natural `1 + 3 = 4` vs DC 13 failed.
+- **Immediate danger / pressure:** The failed Stealth check caused loose gravel to skitter into old iron with a small metallic tick that carried around the bend. Immediately afterward, a faint amber light ahead was extinguished and soft movement stopped. Someone or something beyond the bend is now likely aware that the pair is approaching. DevilMedlar's failed Perception check did not reveal identity, number, exact position, or any concealed threat. No combat is active yet.
+- **Rear security:** The culvert entrance alarm remains intact and armed behind DevilMedlar and Nyxara and has not triggered.
 
 ## Known Locations
 
@@ -35,17 +36,17 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - Narrow stone-and-rubble approach along the upper shelf.
 - A thin black tripline stretches ankle-high across the route near the culvert mouth.
 - The line connects to a hooked brass pin, spring arm, and striker hidden in the rubble.
-- **Identified function:** Triggering the line pulls the pin and snaps the striker against a hollow iron drainpipe running deeper into the culvert, creating a sharp metallic knock that acts as an alarm rather than an injury trap.
-- The mechanism appears recently armed or reset, but current evidence does not establish who set it.
-- **Turn 6 state:** The alarm was deliberately left intact and armed after DevilMedlar and Nyxara stepped over it.
+- Triggering the line snaps the striker against a hollow iron drainpipe, producing a warning knock deeper in the culvert.
+- The mechanism appears recently armed or reset; setter remains unknown.
+- DevilMedlar and Nyxara stepped over it without triggering it and left it intact and armed.
 
 ### Old Culvert Interior
 
 - Entered in Session 1 Turn 6.
-- Narrow old stone drainage passage with a damp mineral smell and fading dusk behind the entrance.
-- The hollow iron warning pipe runs along one wall and continues deeper into the passage.
-- The immediate corridor bends into deeper darkness ahead.
-- No battle is active at entry and no alarm has been triggered.
+- Narrow old stone drainage tunnel with damp mineral smell, worn masonry, mineral-dark floor, and a hollow iron warning pipe along one wall.
+- The first passage bends deeper into darkness.
+- **Turn 7:** A faint amber light was visible briefly beyond the bend before the failed Stealth check produced a metallic tick; the light was immediately extinguished and soft movement stopped.
+- A presence ahead is likely alerted, but identity, number, and exact position are unknown.
 
 ## Important NPCs
 
@@ -66,10 +67,9 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Current disposition:** Wary, dryly confident, increasingly candid, and comfortable enough to answer DevilMedlar's flirtation with teasing rather than hostility.
 - **Verified core claim:** She was independently tracking the person who carved the Velvet Coil symbol and was not traveling with or allied to that person.
 - **Reason shared:** The carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
-- **Personal stake:** One name in that ledger belongs to someone important to Nyxara.
-- **Turn 5 clarification:** Nyxara says she was not personally a Velvet Coil initiate. She says she survived what the Coil did to **someone she loves**.
-- **Turn 6 confirmation:** Nyxara confirmed the person she loves is **female** and **is the personally important name in the stolen ledger**. She still refuses to identify the woman or define their exact relationship.
+- **Personal stake:** The woman Nyxara loves is the personally important name in the stolen ledger. Nyxara still withholds her identity and exact relationship.
 - **Current knowledge:** Nyxara knows DevilMedlar is a Velvet Coil survivor.
+- **Turn 7 flirtation:** DevilMedlar looked her up and down and made another quick comment that she looked lovely/sexy while they advanced. Nyxara answered with dry amusement about his timing rather than hostility.
 - **Party status:** Not a party member yet.
 - **Relationship status:** Provisional cooperation with growing personal candor and light flirtatious tension. Mutual attraction, romance, debt, formal trust, and party membership remain unestablished.
 - **Agency rule:** If she becomes the assistant-controlled companion, she remains supporting cast and never overrides DevilMedlar's player agency.
@@ -81,9 +81,8 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Type:** Pleasure cult from DevilMedlar's past.
 - DevilMedlar identifies as a survivor of the Velvet Coil.
 - A Velvet Coil symbol appeared freshly carved on a roadside shrine outside Vespergate.
-- Nyxara independently recognized or knew the group well enough to identify it by name.
-- A ledger containing names tied to the Velvet Coil was reportedly stolen in Vespergate by the likely shrine carver.
-- Nyxara confirms the Velvet Coil harmed or endangered a woman she loves, and that this woman's name appears in the stolen ledger.
+- Nyxara knows the group and says the likely carver stole a ledger in Vespergate containing names tied to the Velvet Coil.
+- Nyxara confirms the Velvet Coil harmed or endangered a woman she loves, and that woman's name appears in the stolen ledger.
 - Exact beliefs, leadership, practices, current status, locations, recruitment methods, and the circumstances of DevilMedlar's survival/departure remain unresolved.
 
 ### Unnamed Temple / Draconic Order
@@ -95,7 +94,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 ## Relationships
 
 - **Unnamed Temple-Bound Acolyte:** Historical connection; exact disposition, trust, affection, debts, favors, promises, and current contact status remain unresolved.
-- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert, survivor disclosure, open compliment, trap inspection, and respect for her stated boundary have increased the ease of their interaction. Nyxara has now confirmed that the woman she loves is the ledger name she is protecting. Flirtatious tension exists without established mutual attraction or romance.
+- **Nyxara Veyl:** Provisional cooperation. Her main story has passed DevilMedlar's Insight read. DevilMedlar's warning at the culvert, survivor disclosure, compliments, trap inspection, and respect for her stated boundary have increased ease of interaction. Flirtatious tension exists without established mutual attraction or romance.
 
 ## Active Quests
 
@@ -105,16 +104,14 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - **Complication:** The Sunscale Shard reacted by becoming noticeably warm.
 - **Investigation result:** Perception `15 + 3 = 18` vs DC 13 succeeded and revealed two separate trail signatures.
 - **Trail A:** Recent boot trail with fresh pale shrine-stone dust, strongly indicating the likely carver.
-- **Trail B:** Lighter soft-soled trail that arrived afterward, watched from behind the crooked tree, then followed Trail A.
-- **Pursuit result:** Survival `4 + 3 = 7` vs DC 12 failed. DevilMedlar lost the clean ground trail in gully gravel and entered a narrow bend.
-- **Trail B identity:** Nyxara Veyl, age 24, adult female tiefling Veilblade/occult tracker.
-- **Interrogation/Insight result:** Insight `14 + 1 = 15` vs DC 13 succeeded. Nyxara's core claim that she independently followed the carver is truthful.
-- **New lead:** Nyxara says the carver stole a ledger in Vespergate containing names connected to the Velvet Coil.
-- **Nyxara's personal stake:** The woman Nyxara loves is named in that ledger; identity and exact relationship withheld.
-- **Turn 4 pursuit:** Perception `12 + 3 = 15` vs DC 13 succeeded and DevilMedlar spotted a concealed tripline before it triggered.
-- **Turn 5 trap analysis:** Investigation `13 - 1 = 12` vs DC 12 succeeded. The tripline is a nonlethal alarm that strikes a hollow iron drainpipe to warn someone deeper inside the culvert.
-- **Turn 6 bypass:** DevilMedlar and Nyxara stepped over the identified alarm without triggering it and deliberately left it armed behind them as a potential rear warning.
-- **Immediate objective:** Move deeper into the old culvert, locate the likely carver and stolen ledger, and determine what lies beyond the first bend without giving away the pursuit.
+- **Trail B:** Lighter soft-soled trail later revealed as Nyxara Veyl.
+- **Pursuit result:** Survival `4 + 3 = 7` vs DC 12 failed, leading to Nyxara's reveal.
+- **Nyxara verification:** Insight `14 + 1 = 15` vs DC 13 succeeded; her claim that she independently followed the carver is credible.
+- **Ledger lead:** Nyxara says the carver stole a ledger in Vespergate containing names tied to the Velvet Coil. The woman Nyxara loves is named in it.
+- **Culvert alarm:** Perception `12 + 3 = 15` vs DC 13 spotted the tripline; Investigation `13 - 1 = 12` vs DC 12 identified it as a warning alarm. It was later bypassed and left armed behind the pair.
+- **Turn 7 Sunscale check:** Arcana `2 - 1 = 1` vs DC 12 failed. The relic remains unidentified, but it produced a brief stronger heat pulse when oriented deeper into the culvert.
+- **Turn 7 advance:** Stealth `10 + 0 = 10` vs DC 12 failed, alerting a likely presence beyond the first bend. Perception natural `1 + 3 = 4` vs DC 13 failed to identify the threat or hidden details.
+- **Immediate objective:** Decide how to respond to the likely alerted presence beyond the first bend while preserving the intact rear alarm and pursuing the carver/ledger.
 
 ## Completed / Failed Quests
 
@@ -124,29 +121,24 @@ None established yet.
 
 - DevilMedlar survived the **Velvet Coil**.
 - He later lived under the influence/help of a Temple-Bound Acolyte before becoming a Wandering Mystic.
-- DevilMedlar carries the unidentified Sunscale Shard, which reacted to the fresh Velvet Coil mark and remains warm.
+- The Sunscale Shard reacted to the fresh Velvet Coil mark and remains unusually warm.
+- In Turn 7 the shard gave a brief stronger heat pulse when oriented deeper into the culvert, but a failed Arcana check left its meaning unknown.
 - The shrine carver likely possesses or is connected to a stolen Velvet Coil ledger from Vespergate.
-- Nyxara's core account of independently following the carver is credible based on DevilMedlar's successful Insight check.
-- Nyxara says she was not a Velvet Coil initiate, but survived what the Coil did to someone she loves.
-- That person is **female** and **is the personally important name in the stolen ledger**.
-- Nyxara still withholds the woman's identity and their exact relationship.
-- The old culvert entrance is protected by a recently armed/reset warning alarm using a tripline, spring striker, and hollow iron drainpipe.
-- The alarm remains armed behind DevilMedlar and Nyxara after they entered the culvert.
+- Nyxara's core account of independently following the carver is credible.
+- The woman Nyxara loves is the personally important name in the stolen ledger; identity and exact relationship remain undisclosed.
+- The culvert entrance alarm remains armed behind the pair.
+- A likely presence beyond the first bend was alerted by a small metallic noise during the failed Stealth check.
 
 ## Consequences & World Changes
 
-- Session 1 has begun and DevilMedlar's past surfaced immediately outside Vespergate.
+- Session 1 began with DevilMedlar's past surfacing outside Vespergate.
 - The Sunscale Shard reacted for the first time in established play.
-- The two-trail investigation established the likely carver and a separate observer.
-- The failed Survival pursuit cost positional certainty and led to Nyxara's reveal rather than ending the investigation.
-- Nyxara Veyl entered the story as the second observer and potential supporting companion.
-- The pleasure cult is now canonically named **the Velvet Coil**.
-- A stolen ledger has become a major investigation lead.
-- DevilMedlar prevented Nyxara from triggering the culvert alarm and identified its function.
-- Nyxara now knows DevilMedlar survived the Velvet Coil.
-- Nyxara has confirmed the person she loves is the woman named in the stolen ledger, without identifying her.
-- DevilMedlar and Nyxara have entered the old culvert without triggering the entrance alarm.
-- The intact alarm now functions as a possible warning against pursuit from behind, with the caveat that any creature could set it off.
+- Nyxara Veyl entered the story as a separate tracker and potential supporting companion.
+- The pleasure cult is canonically named **the Velvet Coil**.
+- A stolen Velvet Coil ledger is a major investigation lead.
+- DevilMedlar and Nyxara entered the old culvert without triggering its entrance alarm and left the alarm armed behind them.
+- Turn 7's failed Stealth check likely warned a presence beyond the first bend; the pair no longer have a clean approach advantage.
+- No HP, spell slots, consumables, Golden Breath, or Golden Ascendant uses were spent in Turn 7.
 
 ## Unresolved Threads
 
@@ -157,12 +149,11 @@ None established yet.
 - Identity and exact relationship of the woman Nyxara loves whose name appears in the ledger.
 - What the Velvet Coil did to or threatened to do to that woman.
 - Who set or reset the culvert alarm.
-- What lies deeper inside or beyond the old culvert.
+- Identity, number, motives, and exact position of the alerted presence beyond the first bend.
+- Whether the alerted presence is the carver, an ally, another pursuer, or something unrelated.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
-- Why DevilMedlar ultimately left temple life.
-- Origin and true properties of the Sunscale Shard.
-- Why the Sunscale Shard reacted to the Velvet Coil mark.
+- Origin and true properties of the Sunscale Shard and meaning of its directional heat pulse.
 - Whether Nyxara becomes the assistant-controlled supporting companion.
 
 ## Persistent World Flags
@@ -173,6 +164,7 @@ None established yet.
 - `devilmedlar_character_creation_complete = true`
 - `sunscale_shard_unidentified = true`
 - `sunscale_shard_has_reacted = true`
+- `sunscale_shard_deeper_culvert_heat_pulse_observed = true`
 - `cult_symbol_found_outside_vespergate = true`
 - `velvet_coil_name_known = true`
 - `session_1_started = true`
@@ -196,6 +188,7 @@ None established yet.
 - `nyxara_loved_person_is_female = true`
 - `nyxara_loved_person_is_ledger_name = true`
 - `devilmedlar_openly_complimented_nyxara = true`
+- `culvert_first_bend_presence_likely_alerted = true`
 
 ## Continuity Notes
 
@@ -206,4 +199,4 @@ None established yet.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 6:** World state synchronized after Nyxara confirmed that the woman she loves is the protected ledger name and after DevilMedlar and Nyxara entered the old culvert without triggering the intact alarm.
+- **Session 1 Turn 7:** World state synchronized after the failed Sunscale Arcana check, failed quiet advance, natural-1 Perception search, continued flirtatious banter with Nyxara, and likely alerted presence beyond the first culvert bend.
