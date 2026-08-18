@@ -17,7 +17,9 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 - **Name:** DevilMedlar
 - **Confirmed adult age:** 20
-- **Appearance:** Not established yet.
+- **Gender / pronouns:** Male, he/him
+- **Species / race:** Draginkin
+- **Appearance:** Detailed physical appearance not established yet.
 
 ## Recurring NPCs
 
