@@ -1,22 +1,22 @@
 # World State — Campaign 1
 
-Campaign 1 is active. Pre-game background canon remains established below. Session 1 began at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai have investigated the opening leads, explored Brasshaven, completed a date-like afternoon around several local businesses, and questioned Seraphine Vale at the Three Lanterns Inn. No formal quest has been accepted yet.
+Campaign 1 is active. Pre-game background canon remains established below. Session 1 began at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai investigated the opening leads, explored Brasshaven, completed a date-like afternoon around several local businesses, questioned Seraphine Vale at the Three Lanterns Inn, accepted the missing-caravan contract the next morning, and have now traveled east to investigate Copper Finch Courier's trail.
 
 ## Current Location
 
-**Brasshaven — Three Lanterns Inn.** DevilMedlar and Senpai are upstairs near Seraphine Vale's private parlor after Senpai finished questioning her about the Meridian Archive, Suncoil Watch, the missing Copper Finch dispatch case, and the suspected internal Archive leak. They have stepped aside for private planning. No room, dinner, contract, or map transfer has been completed yet.
+**Emberglass region — concealed Copper Finch wagon east of Cinderwash Turnoff.** DevilMedlar and Senpai followed evidence approximately three miles from Cinderwash Turnoff along the overgrown old Suncoil road alignment and found one deliberately concealed Copper Finch Courier wagon in a shallow basalt wash. No bodies are immediately present. The second Copper Finch wagon and the Meridian Archive dispatch case remain missing. Continuing evidence leads farther east along the old alignment in the general direction of Suncoil Watch.
 
 ## Important NPCs
 
 - An unnamed Clan Aurivane guardian existed in DevilMedlar's childhood and sent him through an emergency dragon gate during the Shattering of Dawnscale; the guardian's identity and fate are not established.
 - An unnamed elder at Moonmirror Shrine helped train Senpai and quietly gave her the Moonmirror Charm when she chose to leave at age 18. The elder's identity, current status, and present relationship with the shrine are not established.
 - **Orin Pell** — human male, age 46; Brasshaven stone-and-antiquities broker. Irritable over his damaged shipment but cooperative when questioned. Orin purchased six crates of carved stone from Gravelark Salvage at Cinderwash Cut, but only four reached him. He has no established allegiance to DevilMedlar or Senpai.
-- **Seraphine Vale** — half-elf female, age 34; silver-haired traveling antiquarian and researcher funded by the Meridian Archive. Calm, observant, guarded, and currently cooperative with DevilMedlar and Senpai. She recognized the Aurivane Dawnscale Signet from historical seal research, identified the Cinderwash motif as part of an older Suncoil road-shrine tradition rather than an Aurivane crest, and disclosed that a Meridian Archive dispatch case containing copies of her Suncoil research vanished aboard Copper Finch Courier. She suspects an internal Archive leak of protected ruin locations but cannot identify a culprit. She has not reported DevilMedlar, Senpai, or the signet to the Archive since meeting them and agreed not to transmit their names, a signet description, or other identifying information without permission unless she believes an imminent threat to life makes limited disclosure necessary. No alliance, debt, attraction, hostility, or formal employment relationship with Seraphine is established.
-- **Mira Mooncup** — halfling female, age 41; proprietor of Mooncup Apothecary. Friendly, observant, and businesslike. No relationship beyond ordinary customer contact is established.
+- **Seraphine Vale** — half-elf female, age 34; silver-haired traveling antiquarian and researcher funded by the Meridian Archive. Calm, observant, guarded, and currently cooperative with DevilMedlar and Senpai. She recognized the Aurivane Dawnscale Signet from historical seal research, identified the Cinderwash motif as part of an older Suncoil road-shrine tradition rather than an Aurivane crest, and disclosed that a Meridian Archive dispatch case containing copies of her Suncoil research vanished aboard Copper Finch Courier. She suspects an internal Archive leak of protected ruin locations but cannot identify a culprit. She has not reported DevilMedlar, Senpai, or the signet to the Archive since meeting them and agreed not to transmit their names, a signet description, or other identifying information without permission unless she believes an imminent threat to life makes limited disclosure necessary. She gave the pair an obligation-free copy of the relevant private route section. No alliance, debt, attraction, hostility, or formal employment relationship with Seraphine is established.
+- **Mira Mooncup** — halfling female, age 41; proprietor of Mooncup Apothecary. Friendly, observant, and businesslike. DevilMedlar later purchased one healer's kit from her before leaving Brasshaven.
 - **Bram Veller** — dwarf male, age 62; smith and proprietor of Brass Nail Smithy. Direct, practical, and proud of durable work. No relationship beyond ordinary customer contact is established.
-- **Elira Voss** — human female, age 29; records clerk at Merchants' Compact Hall. She provided public route and caravan information without requiring DevilMedlar or Senpai to accept the missing-caravan contract.
+- **Elira Voss** — human female, age 29; records clerk at Merchants' Compact Hall. She first provided public route and caravan information without requiring a contract and later handled DevilMedlar and Senpai's formal acceptance of the Missing Emberglass Caravans contract.
 - **Brinna Stone** — dwarf female, age 55; attendant at Steam & Stone Baths. She rented Senpai a private two-person mineral pool for 1 gp.
-- **Dessa Thorne** — human female, age 48; innkeeper at the Three Lanterns Inn. She confirmed Seraphine Vale was present and provided the inn's current room rates. No room has been purchased yet.
+- **Dessa Thorne** — human female, age 48; innkeeper at the Three Lanterns Inn. She provided the room rates and later rented DevilMedlar and Senpai a private double room with private in-room supper service.
 
 ## Relationships
 
@@ -34,6 +34,8 @@ During Session 1, Turn 3, DevilMedlar explicitly trusted Senpai to lead the ques
 
 During Session 1, Turn 4, after Senpai finished the Meridian Archive questioning, DevilMedlar explicitly told her that watching her protect their information and control the interrogation made him **extremely attracted to her**. His physical arousal was obvious in a non-graphic way. Senpai recognized the reaction, was visibly pleased and flustered, chose not to step away, briefly took DevilMedlar's hand, and treated the reaction as flattering. This does not create new sexual consent, exclusivity, engagement, marriage, or a committed relationship.
 
+During Session 1, Turn 5, DevilMedlar chose a private double room rather than Senpai's previously preferred twin room because he wanted privacy while they ate and talked. He made clear that Senpai could have the bed and that he would sleep elsewhere if she did not want to share it. Senpai independently chose to share the bed on **opposite sides under separate blankets** and refused to make DevilMedlar sleep on the floor or a chair merely to prove respect. Sharing the bed did not grant permission for sexual activity or unconscious touching. No sexual activity occurred. DevilMedlar woke first and watched Senpai sleep peacefully for a short time in an affectionate, nonsexual way without touching or disturbing her.
+
 ## Locations
 
 ### Dawnscale Sanctum
@@ -46,16 +48,16 @@ A secluded kitsune sanctuary where Senpai was raised and trained in spirit lore,
 
 ### Brasshaven
 
-A frontier trade settlement built around the meeting of three traveled roads. Its most recognizable entrance is the **Wayfarer Gate**, an old weathered stone arch broad enough for wagons and foot traffic. Brasshaven is an active present-day location beginning with Session 1.
+A frontier trade settlement built around the meeting of three traveled roads. Its most recognizable entrance is the **Wayfarer Gate**, an old weathered stone arch broad enough for wagons and foot traffic. Brasshaven became the first active present-day settlement of Session 1.
 
 Known parts of Brasshaven established through play:
 
 - **Wayfarer Gate:** Main road entrance where DevilMedlar and Senpai first entered Brasshaven and encountered Orin Pell's broken wagon, the carved relic shipment, the caravan notice, and Seraphine Vale.
 - **Lantern Square:** Central public square where Brasshaven's three principal roads split.
-- **Three Lanterns Inn:** Reputable, moderately priced inn near Lantern Square. Current room rates are 2 sp per person for a common bunk, 6 sp for a modest single room, 1 gp for a twin room with two beds, and 1 gp 2 sp for a private double room. Dinner is 3 sp per person. Seraphine Vale is currently present in an upstairs private parlor. No room or meal has yet been purchased by DevilMedlar or Senpai.
-- **Merchants' Compact Hall:** Local trade and caravan office where contracts, route maps, caravan records, and the missing-caravan posting can be formally taken or investigated. A basic copy of the relevant Emberglass Road map costs 5 sp. DevilMedlar and Senpai examined public route records without purchasing a map or accepting the contract.
-- **Brass Nail Smithy:** Weapon, armor, tool, and repair shop operated by Bram Veller. Current observed prices include dagger 2 gp, spear 1 gp, shortsword 10 gp, light crossbow 25 gp, shield 10 gp, leather armor 10 gp, studded leather 45 gp, chain shirt 50 gp, nonmagical horn guards 8 sp per pair, nonmagical tail guard wrap 6 sp, basic weapon maintenance from 5 sp, and armor fitting/repair from about 1 gp depending on work. DevilMedlar and Senpai purchased nothing during Turn 2.
-- **Mooncup Apothecary:** Apothecary operated by Mira Mooncup. Current observed prices include healer's kit 5 gp, potion of healing 50 gp, antitoxin 50 gp, nonmagical traveler's salve 5 sp, scented mineral bath salts 3 sp per sachet, incense 1 sp per stick, and simple herbal tea packets 2 sp. Nonmagical comforts do not restore HP or provide combat bonuses unless later explicitly established. DevilMedlar and Senpai purchased nothing during Turn 2.
+- **Three Lanterns Inn:** Reputable, moderately priced inn near Lantern Square. Current base room rates are 2 sp per person for a common bunk, 6 sp for a modest single room, 1 gp for a twin room with two beds, and 1 gp 2 sp for a private double room. Dinner is 3 sp per person. During Turn 5 DevilMedlar paid 2 gp 8 sp total for a private double room, two dinners, and premium private in-room supper service. DevilMedlar and Senpai shared the bed on opposite sides with separate blankets by Senpai's choice and completed a long rest.
+- **Merchants' Compact Hall:** Local trade and caravan office where contracts, route maps, caravan records, and the missing-caravan posting are handled. A basic copy of the relevant Emberglass Road map costs 5 sp. DevilMedlar and Senpai later formally accepted the 60 gp Missing Emberglass Caravans contract here.
+- **Brass Nail Smithy:** Weapon, armor, tool, and repair shop operated by Bram Veller. Current observed prices include dagger 2 gp, spear 1 gp, shortsword 10 gp, light crossbow 25 gp, shield 10 gp, leather armor 10 gp, studded leather 45 gp, chain shirt 50 gp, nonmagical horn guards 8 sp per pair, nonmagical tail guard wrap 6 sp, basic weapon maintenance from 5 sp, and armor fitting/repair from about 1 gp depending on work. DevilMedlar and Senpai purchased nothing there.
+- **Mooncup Apothecary:** Apothecary operated by Mira Mooncup. Current observed prices include healer's kit 5 gp, potion of healing 50 gp, antitoxin 50 gp, nonmagical traveler's salve 5 sp, scented mineral bath salts 3 sp per sachet, incense 1 sp per stick, and simple herbal tea packets 2 sp. Before leaving Brasshaven in Turn 5, DevilMedlar purchased one healer's kit for 5 gp.
 - **Steam & Stone Baths:** Brasshaven bathhouse with public pools for 2 sp per person and private two-person mineral pools for 1 gp total. Towels, soap, and linen bathing wraps are included. During Turn 2 Senpai paid 1 gp from her own currency for a private two-person mineral pool shared with DevilMedlar.
 
 ### Cinderwash Cut
@@ -64,20 +66,40 @@ A salvage excavation approximately two days east of Brasshaven along Emberglass 
 
 ### Emberglass Road
 
-An eastern trade road leaving Brasshaven. Three caravans have disappeared along the same general stretch of Emberglass Road over the last twelve days. The most recent disappearance occurred three days before Session 1 began. The relevant stretch lies around the approach toward Cinderwash Cut.
+An eastern trade road leaving Brasshaven. Three caravans disappeared along the same general stretch of Emberglass Road during the twelve days before Session 1 began.
 
-Public route records inspected at Merchants' Compact Hall establish:
+Public route records inspected at Merchants' Compact Hall established:
 
 - **Red Fern Provisions:** three-wagon caravan; disappeared 12 days before Session 1 began; last recorded at **Ashmile Marker 14**.
 - **Blue Lark Textiles:** four-wagon caravan; disappeared 7 days before Session 1 began; last reported passing **Glasswind Fork**.
 - **Copper Finch Courier:** two-wagon caravan; disappeared 3 days before Session 1 began; last checked in at the **Cinderwash Turnoff**.
-- No ransom demand, recovered wreckage, confirmed survivors, or verified bodies are recorded in the public Compact file as of Turn 2.
 
-The latest disappearance at Cinderwash Turnoff strengthens the possibility of a connection between the caravan disappearances and the Cinderwash relic site, but does not prove one.
+The pair later confirmed physical Copper Finch evidence at Cinderwash Turnoff and located one of its two wagons concealed east of the turnoff.
+
+### Cinderwash Turnoff
+
+A junction on Emberglass Road leading toward the Cinderwash area. Senpai's strong scent-based Perception check during Turn 5 found dried blood off the maintained road, recent horse and axle-grease traces, a bent brass harness badge shaped like a finch, and recent wagon movement leaving the modern route onto the overgrown old Suncoil alignment. These findings strongly support that Copper Finch Courier passed this point and was diverted or moved onto the old route.
+
+### Concealed Copper Finch Wagon Site
+
+A shallow basalt wash roughly three miles east of Cinderwash Turnoff along the old Suncoil alignment. One Copper Finch Courier wagon is concealed below the normal sightline from the road.
+
+Established at the site:
+
+- No bodies were immediately present.
+- The horses were gone.
+- The second Copper Finch wagon was not present.
+- DevilMedlar's Investigation 17 determined that the found wagon's rear axle damage was consistent with a deliberate tool strike rather than ordinary road failure.
+- Cargo compartments and many ordinary parcels had been systematically opened and searched.
+- Small dried blood traces were present, but no corpse was found at the wagon.
+- The Meridian Archive dispatch case Seraphine described was not present.
+- Boot impressions and the continuing track of the missing second wagon leave farther east along the old Suncoil road alignment, generally toward Suncoil Watch.
+
+The site establishes deliberate interference with Copper Finch but does not yet identify the attackers, explain the motive, prove the dispatch case was the target, or confirm whether any courier survived.
 
 ### Suncoil Watch
 
-An old dragon-road waystation approximately seven miles east of Cinderwash Turnoff and off the modern maintained road. It does not appear on the ordinary public Merchants' Compact map. Seraphine Vale identified it from an older survey and possesses a rubbing whose central dragon-and-sun design strongly resembles the Cinderwash stones. An old notation describes a **sealed descent** beneath or beside the waystation. Whether that descent still exists, can be entered, or connects to Cinderwash Cut is unknown.
+An old dragon-road waystation approximately seven miles east of Cinderwash Turnoff and off the modern maintained road. It does not appear on ordinary public Merchants' Compact maps. Seraphine Vale identified it from an older survey and possesses a rubbing whose central dragon-and-sun design strongly resembles the Cinderwash stones. An old notation describes a **sealed descent** beneath or beside the waystation. Whether that descent still exists, can be entered, or connects to Cinderwash Cut is unknown.
 
 ## Factions / Organizations
 
@@ -91,7 +113,7 @@ The traditional leadership body associated with Moonmirror Shrine. When Senpai r
 
 ### Merchants' Compact
 
-A Brasshaven trade association that coordinates caravan contracts, route information, and merchant interests. It has posted a **60 gp base reward** for locating the three missing caravans on Emberglass Road and returning reliable proof of what happened. Rescue, recovery, or exceptional-hazard compensation may be negotiated separately if circumstances justify it. DevilMedlar and Senpai have reviewed the public records but have not accepted the contract.
+A Brasshaven trade association that coordinates caravan contracts, route information, and merchant interests. DevilMedlar and Senpai formally accepted the Compact's **60 gp base-reward Missing Emberglass Caravans contract** during Turn 5. The 60 gp is total party compensation for locating the three missing caravans and returning reliable proof of their fate. Rescue, cargo recovery, or exceptional danger may justify additional negotiated compensation. No advance was paid and no reward has yet been collected.
 
 ### Gravelark Salvage
 
@@ -107,11 +129,17 @@ No culprit is established. Seraphine does not have the Archive's access ledger o
 
 ## Active Quests / Goals
 
-No formal quest has been accepted.
+### Active Quest — Missing Emberglass Caravans
 
-### Available Lead — Missing Emberglass Caravans
+DevilMedlar and Senpai accepted the Merchants' Compact contract for the three missing caravans. The contract offers **60 gp base pay total** for locating the caravans and returning reliable proof of their fate, with possible additional negotiated compensation for rescue, cargo recovery, or exceptional danger.
 
-The Merchants' Compact is offering 60 gp base pay for locating three caravans that vanished along Emberglass Road during the last twelve days and returning reliable proof of their fate. The latest, Copper Finch Courier, last checked in at Cinderwash Turnoff three days before Session 1 began. The contract can be formally pursued through Merchants' Compact Hall.
+Current progress:
+
+- Copper Finch Courier's route through Cinderwash Turnoff has been physically confirmed.
+- One of Copper Finch's two wagons has been located concealed and deliberately damaged approximately three miles east along the old Suncoil alignment.
+- No bodies are present at the found wagon.
+- The second Copper Finch wagon, the courier personnel, and Seraphine's Archive dispatch case remain missing.
+- The strongest continuing physical trail currently leads farther east along the old Suncoil alignment toward Suncoil Watch.
 
 ### Available Lead — Cinderwash Relics
 
@@ -119,7 +147,7 @@ Orin Pell's shipment of ancient carved stone came from a collapsed roadside shri
 
 ### Available Lead — Seraphine Vale / Suncoil Watch
 
-Seraphine Vale recognizes Clan Aurivane's signet style from historical research and identified the Cinderwash dragon-sun imagery as part of an older Suncoil road-shrine tradition that predates Clan Aurivane by centuries. She has offered DevilMedlar and Senpai an obligation-free copy of the relevant private route section showing Suncoil Watch and the old road alignment. The map has **not** yet been accepted.
+Seraphine Vale recognizes Clan Aurivane's signet style from historical research and identified the Cinderwash dragon-sun imagery as part of an older Suncoil road-shrine tradition that predates Clan Aurivane by centuries. DevilMedlar and Senpai accepted her obligation-free private route copy showing Cinderwash Turnoff, the old road alignment, and Suncoil Watch. The continuing Copper Finch trail now points generally along that old alignment.
 
 ### Available Lead — Meridian Archive Leak
 
@@ -138,10 +166,9 @@ Three protected-site exposures in roughly four months share the Eastern Route Co
 - Orin Pell purchased six crates from Gravelark Salvage at Cinderwash Cut but received only four. He was told workers uncovered a sealed lower stair or chamber and refused to continue deeper work.
 - Seraphine Vale recognized the Aurivane Dawnscale Signet from historical seal research. She stated that the Cinderwash carvings resemble symbolic conventions found in old eastern dragon-road shrines without claiming they are Aurivane.
 - DevilMedlar's Insight check on Seraphine totaled 22. She was truthful about recognizing the signet and her concern over the relic/caravan connection, while intentionally withholding who financed her research and some details of her purpose in Brasshaven. Those withheld employer details were later disclosed as the Meridian Archive and its suspected internal leak.
-- The Merchants' Compact posting concerns three caravans missing along Emberglass Road over twelve days, with the latest disappearance three days ago. The posted base reward is 60 gp for locating them and returning reliable proof of their fate.
+- The Merchants' Compact posting concerns three caravans missing along Emberglass Road over twelve days, with the posted base reward now accepted at 60 gp total for the party.
 - Senpai's Perception check while exploring Brasshaven totaled 22. She quickly learned the useful layout around Lantern Square, identified the Three Lanterns Inn, Merchants' Compact Hall, Brass Nail Smithy, Mooncup Apothecary, and Steam & Stone Baths, and detected no one consistently following the pair during their walk.
-- Public Compact records identify the missing caravans as Red Fern Provisions, Blue Lark Textiles, and Copper Finch Courier. Copper Finch's last confirmed check-in was at Cinderwash Turnoff, strengthening but not proving a connection to the relic site.
-- DevilMedlar and Senpai now know the observed stock and prices at Mooncup Apothecary and Brass Nail Smithy and the current room rates at Three Lanterns Inn.
+- Public Compact records identify the missing caravans as Red Fern Provisions, Blue Lark Textiles, and Copper Finch Courier.
 - Seraphine Vale is funded by the Meridian Archive and suspects a leak of protected ruin locations from internal records.
 - Senpai's Turn 3 Deception check totaled 21, successfully limiting what Seraphine learned about DevilMedlar, Senpai, their resources, and their plans.
 - Senpai's Turn 3 Insight check totaled 15, correctly identifying that Seraphine's strongest hesitation concerned her employer and an internal security problem.
@@ -152,6 +179,10 @@ Three protected-site exposures in roughly four months share the Eastern Route Co
 - Seraphine deliberately used independent Copper Finch Courier instead of the normal Archive courier route because she distrusted the Archive's internal dispatch path while the leak remained unresolved.
 - During Turn 4, Senpai learned that three confirmed protected-site exposures in roughly four months all followed precision route-sheet preparation through the Eastern Route Collection copying chain. Her Insight check of 3 failed to identify a specific culprit or hidden suspect, and no false accusation was created.
 - Seraphine has sent no report identifying DevilMedlar, Senpai, or the Aurivane signet since meeting them in Brasshaven and agreed to limited confidentiality regarding their identities unless an imminent threat to life requires limited disclosure.
+- Seraphine's private route map was accepted without obligation and is carried by Senpai.
+- At Cinderwash Turnoff, DevilMedlar's Survival 5 failed to separate the correct wagon trail visually. Senpai's Keen Hearing and Smell Perception check used advantage, rolled 12 and natural 20, and totaled **23**, revealing dried blood, fresh-enough horse/axle traces, a bent brass finch harness badge, and wagon movement onto the old Suncoil alignment.
+- One Copper Finch wagon was found hidden roughly three miles east of the turnoff. DevilMedlar's Investigation 17 established deliberate axle damage, systematic searching of parcels and cargo spaces, small blood traces, no body at the wagon, and the absence of Seraphine's Archive dispatch case.
+- The second Copper Finch wagon is still missing. Boot impressions and the continuing wagon trail head farther east along the old Suncoil route in the general direction of Suncoil Watch.
 
 ## Known Secrets
 
@@ -166,6 +197,10 @@ A past catastrophe that struck Dawnscale Sanctum during an important clan rite w
 ### Senpai's Departure from Moonmirror Shrine
 
 At age 18, Senpai refused the fixed lifetime role selected for her by shrine tradition and left Moonmirror Shrine by her own choice. An unnamed elder supported her enough to give her the Moonmirror Charm before her departure. No present-day consequence has yet been established.
+
+### Copper Finch Investigation
+
+The missing-caravan investigation is now active under a Merchants' Compact contract. One Copper Finch wagon has been found deliberately damaged and concealed east of Cinderwash Turnoff. This is the first confirmed physical discovery of one of the missing caravans during Session 1. The lack of bodies and the continuing trail mean the fate of the couriers remains unresolved.
 
 ## Unresolved Threads
 
@@ -182,13 +217,16 @@ At age 18, Senpai refused the fixed lifetime role selected for her by shrine tra
 - Who built the dragon-and-sun shrine at Cinderwash Cut, and why does its geometry feel familiar to DevilMedlar?
 - What lies below the sealed stair or chamber discovered by Gravelark Salvage?
 - Why did only four of Orin Pell's six purchased relic crates arrive?
-- What happened to Red Fern Provisions, Blue Lark Textiles, and Copper Finch Courier?
-- Why did Copper Finch Courier vanish after checking in at Cinderwash Turnoff?
-- Is there a real connection between the Cinderwash relic site and the caravan disappearances?
+- What happened to Red Fern Provisions, Blue Lark Textiles, and the remaining Copper Finch wagon and couriers?
+- Who deliberately damaged and concealed the found Copper Finch wagon?
+- Why were its cargo spaces and ordinary parcels systematically searched?
+- Where is Seraphine Vale's missing Meridian Archive dispatch case?
+- Are any Copper Finch personnel still alive?
+- Is there a real connection between Cinderwash Cut and the caravan disappearances?
 - Who or what is leaking protected Meridian Archive route information through the Eastern Route Collection copying chain?
 - Has anyone opened the missing Copper Finch Archive dispatch case, and if so, do they now know the location of Suncoil Watch?
 - What is the relationship, if any, between the sealed descent at Suncoil Watch and the sealed lower stair at Cinderwash Cut?
-- Where will DevilMedlar and Senpai stay tonight if they remain in Brasshaven?
+- Why does the continuing Copper Finch evidence lead onto the old Suncoil alignment toward Suncoil Watch?
 
 ## Continuity Rule
 
