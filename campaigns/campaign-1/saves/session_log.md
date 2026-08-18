@@ -154,13 +154,27 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 - While following, DevilMedlar deliberately watched Nyxara's movement and appearance while also scanning her hands, the terrain, and the trail for danger.
 - Open Perception check: **12 + 3 = 15** against **DC 13**, success.
 - DevilMedlar noticed a **thin black tripline stretched ankle-high across the culvert approach** before Nyxara stepped into it and warned her in time.
-- The line connects to a **concealed tension mechanism hidden in rubble**. Its exact effect remains unknown because it has not been triggered or closely inspected yet.
-- Nyxara noticed DevilMedlar's appreciative gaze and answered with dry teasing rather than hostility; mutual attraction is not established.
+- The line connects to a **concealed tension mechanism hidden in rubble**. Its exact effect remained unknown at the end of the turn.
+- Nyxara noticed DevilMedlar's appreciative gaze and answered with dry teasing rather than hostility; mutual attraction was not established.
 - During the approach DevilMedlar told Nyxara directly, **"I survived the Velvet Coil."**
 - Nyxara's teasing demeanor briefly disappeared. She treated the disclosure seriously, accepted that DevilMedlar's stake is personal, and showed increased respect.
-- Their cooperation is now **provisional**, but Nyxara has not joined the party.
+- Their cooperation became **provisional**, but Nyxara did not join the party.
 - **XP awarded:** +25 XP for successfully spotting the concealed culvert tripline before it triggered and advancing the pursuit safely.
 - **Current XP:** **100 / 300** toward Level 2.
 - No HP, spell slots, Golden Breath uses, Golden Ascendant uses, inventory, currency, or consumables changed.
-- Current state: **10/10 HP**, **2/2 spell slots**, **Golden Breath 1/1**, **Golden Ascendant 1/1**, **XP 100/300**.
-- Current decision: inspect, disable, bypass, trigger from safety, or otherwise exploit the concealed tripline before proceeding into the culvert.
+
+### Checkpoint 1.5 - Compliments and tripwires
+
+- DevilMedlar carefully examined the concealed tripline mechanism while telling Nyxara that her reaction suggested she had survived the Velvet Coil or something similar.
+- He also openly told her that she is **beautiful and has a nice figure**.
+- Nyxara accepted the compliment with dry amusement rather than hostility; light flirtatious tension increased, but mutual attraction or romance remains unconfirmed.
+- Nyxara clarified that she was **not personally a Velvet Coil initiate**. She says she survived what the Coil did to **someone she loves**, but still refuses to identify that person.
+- Open Investigation check: **13 - 1 = 12** against **DC 12**, success.
+- The tripline is a **nonlethal warning alarm**, not an injury trap. Pulling it yanks a hooked brass pin from a spring arm, causing a small striker to snap against a hollow iron drainpipe running deeper into the culvert.
+- Triggering the device would send a sharp metallic warning knock down the tunnel, likely alerting someone farther inside.
+- The mechanism appears **recently armed or reset**, but current evidence does not establish who set it.
+- **XP awarded:** +25 XP for identifying the alarm and advancing both the investigation and Nyxara's personal-history thread.
+- **Current XP:** **125 / 300** toward Level 2.
+- No HP, spell slots, Golden Breath uses, Golden Ascendant uses, inventory, currency, or consumables changed.
+- Current state: **10/10 HP**, **2/2 spell slots**, **Golden Breath 1/1**, **Golden Ascendant 1/1**, **XP 125/300**.
+- Current decision: disarm, bypass, exploit, or deliberately trigger the alarm before moving deeper into the culvert.
