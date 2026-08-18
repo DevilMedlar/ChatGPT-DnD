@@ -50,19 +50,21 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 - Armor Class: Pending equipment and final level-1 mechanics.
 - Initiative: +0
 - Speed: Pending Draginkin movement traits.
-- Passive Perception: Pending skill proficiency selection.
+- **Passive Perception:** 13
 - Conditions: None.
 - Temporary effects: None.
 
 ## Skills & Proficiencies
 
-Pending.
+- **Perception:** Proficient, +3 total (Wisdom +1, proficiency +2).
+- **Survival:** Proficient, +3 total (Wisdom +1, proficiency +2).
 
 ## Features / Abilities
 
-- **Gold Dragon Heritage:** Fire/radiance affinity established; exact level-1 mechanical traits pending character-creation choices.
+- **Gold Dragon Heritage:** Fire/radiance affinity established; remaining exact level-1 mechanical traits are finalized only when explicitly chosen or confirmed.
 - **Dracolyte / Draconic Acolyte:** Archetype established.
-- **Golden Ascendant:** Chosen Dracolyte focus. Emphasizes balanced draconic magic and gradual physical/spiritual draconic transformation; exact level-1 mechanical expression remains pending.
+- **Golden Ascendant:** Chosen Dracolyte focus. Emphasizes balanced draconic magic and gradual physical/spiritual draconic transformation.
+- **Ascendant Vitality:** Chosen Golden Ascendant level-1 boon. When DevilMedlar enters his battle/power-up transformation, he gains **4 temporary HP**. Once during that transformation, he may regain **2 HP**. Exact recharge and activation follow the finalized Golden Ascendant transformation rules.
 - **Battle Manifestation:** Horns, wings, and tail are latent in the baseline form and manifest during battle/power-up states. This visual manifestation does not itself grant unchosen mechanics.
 
 ## Background
@@ -85,11 +87,11 @@ Pending.
 
 - Golden Ascendant progression selected.
 - Battle/power-up visual transformation established: horns, wings, tail, and continuous eye glow appear while transformed.
+- Ascendant Vitality is the selected level-1 transformation boon.
 - No lasting adverse conditions established.
 
 ## Unresolved Prior Inputs
 
-- Exact level-1 Dracolyte feature configuration.
-- Skill proficiencies.
+- Remaining exact level-1 Dracolyte/Draginkin mechanics not yet explicitly chosen or confirmed.
 - Starting equipment.
 - Names/details of the pleasure cult, temple/order, and Temple-Bound Acolyte.
