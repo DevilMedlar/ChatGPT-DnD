@@ -136,7 +136,7 @@ Use initiative, movement, actions, bonus actions when appropriate, reactions, at
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
-Do not forget an item's established special effect simply because several scenes pass. Check `` and `` to make sure.
+Do not forget an item's established special effect simply because several scenes pass. Check `campaign-1/inventory.md` and `campaign-1/` to make sure.
 
 ## Abilities and ongoing effects
 
