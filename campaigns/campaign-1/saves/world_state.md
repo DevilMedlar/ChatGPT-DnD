@@ -6,8 +6,8 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 - **Location:** Lantern Road, just outside the western approach to Vespergate.
 - **Time / date:** Dusk; exact calendar date not yet established.
-- **Situation:** Session 1 opening. DevilMedlar has discovered a freshly carved symbol associated with his former pleasure cult on a weathered roadside shrine. At the same moment, the unidentified Sunscale Shard has begun warming against his chest.
-- **Immediate danger / pressure:** No visible attacker yet, but the cult marking appears recent and someone may have passed through shortly before DevilMedlar arrived.
+- **Situation:** Session 1. DevilMedlar has discovered a freshly carved symbol associated with his former pleasure cult on a weathered roadside shrine. The unidentified Sunscale Shard remains warm against his chest. DevilMedlar chose to ignore the shrine and relic temporarily and search the surroundings for whoever carved the mark.
+- **Immediate danger / pressure:** No visible attacker yet, but a successful search has revealed two very recent trail signatures leaving the shrine area and heading north into a dry drainage cut. Whoever carved the mark may still be nearby.
 
 ## Known Locations
 
@@ -21,6 +21,7 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 - Western road leading into Vespergate.
 - Scattered traveler shrines and old stone markers line the approach.
 - Current opening-scene shrine has been freshly marked with a symbol DevilMedlar recognizes from his former pleasure cult.
+- A dry drainage cut or shallow gully runs north from the shrine area and now contains two recent sets of tracks.
 
 ## Important NPCs
 
@@ -63,7 +64,11 @@ Canonical record for persistent world, NPC, faction, relationship, quest, conseq
 
 - **Hook:** A symbol from DevilMedlar's former pleasure cult has been carved freshly into a roadside shrine outside Vespergate.
 - **Complication:** The Sunscale Shard reacted by becoming noticeably warm.
-- **Immediate objective:** Decide whether and how to investigate the marking, the shrine, nearby tracks, or the Sunscale Shard's reaction.
+- **Investigation result:** DevilMedlar searched the surrounding area rather than touching the shrine or relic. Perception check: `15 + 3 = 18` against DC 13, success.
+- **Trail A:** A recent boot trail approaches the shrine. Pale fresh stone dust is caught in the tread, strongly indicating this is the person who carved the mark.
+- **Trail B:** A second, lighter soft-soled trail crosses Trail A afterward, pauses behind the crooked tree with a clear view of the shrine, then follows Trail A away. The tracks suggest this second person may have been observing or following the carver rather than simply walking beside them.
+- **Direction:** Both trails head north away from Lantern Road into a dry drainage cut/shallow gully.
+- **Immediate objective:** Decide whether to follow the trails, investigate their relationship more carefully, set an ambush, or abandon the immediate pursuit for Vespergate.
 
 ## Completed / Failed Quests
 
@@ -74,19 +79,25 @@ None established yet.
 - DevilMedlar's personal history includes survival of a pleasure cult, a period of temple life under the influence/help of a Temple-Bound Acolyte, and an eventual departure to become a Wandering Mystic.
 - DevilMedlar carries an unidentified **Sunscale Shard**, a small gold-dragon-scale-like relic whose origin and true properties are unknown.
 - The cult symbol on Lantern Road appears fresh rather than ancient or weathered.
+- A boot trail with fresh shrine-stone dust almost certainly belongs to the person who carved the cult mark.
+- A second lighter trail arrived after the likely carver, watched the shrine from behind the crooked tree, and then followed the first trail north.
+- Both trails currently lead into a dry drainage cut north of Lantern Road.
 
 ## Consequences & World Changes
 
 - Session 1 has begun.
 - DevilMedlar's past has surfaced immediately outside Vespergate.
 - The Sunscale Shard has reacted for the first time in established play.
+- DevilMedlar's first investigation succeeded and established that at least two recent travelers were involved around the marked shrine, though their identities and allegiance remain unknown.
 
 ## Unresolved Threads
 
 - Name and nature of the pleasure cult.
 - Exact circumstances of DevilMedlar's survival/departure from the pleasure cult.
 - Why the cult's symbol is freshly present outside Vespergate.
-- Who carved the symbol and how recently they were here.
+- Identity and motive of the likely carver represented by Trail A.
+- Identity and motive of the second observer/follower represented by Trail B.
+- Whether Trail B is ally, enemy, rival, victim, investigator, or something else.
 - Identity and motives of the Temple-Bound Acolyte.
 - Name and nature of the temple/order.
 - Why DevilMedlar ultimately left temple life.
@@ -107,6 +118,9 @@ None established yet.
 - `session_1_started = true`
 - `adult_cross_species_lineage_homebrew_enabled = true`
 - `assistant_companion_enabled = true`
+- `lantern_road_perception_search_success = true`
+- `likely_cult_carver_trail_found = true`
+- `second_observer_trail_found = true`
 
 ## Continuity Notes
 
