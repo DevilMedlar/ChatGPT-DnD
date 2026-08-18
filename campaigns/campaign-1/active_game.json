@@ -1,13 +1,13 @@
 {
   "campaign": "campaign-1",
-  "phase": "ready",
-  "session_number": 0,
-  "turn_number": 0,
-  "current_scene": null,
-  "current_step": "ready_to_begin",
-  "current_location": null,
+  "phase": "active",
+  "session_number": 1,
+  "turn_number": 1,
+  "current_scene": "Arrival at Brasshaven's Wayfarer Gate",
+  "current_step": "awaiting_player_action",
+  "current_location": "Brasshaven — Wayfarer Gate",
   "character_created": true,
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "DevilMedlar and Senpai character creation are complete and Campaign 1 is ready to begin. DevilMedlar is a level-1 Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. Senpai is a level-1 Moonfire-affinity Kitsune Moonveil Oracle with the Moon Shrine Runaway background and has chosen to join as an active ChatGPT-controlled companion. Both characters have complete level-1 statistics, skills, core ancestry/class mechanics, starting equipment, stable appearance canon, and verified primary reference art. Senpai's spell mechanics and current level-1 resources are explicitly defined on character_sheet.md. No opening scene or current location has been established yet."
+  "last_sync_note": "Session 1, Turn 1 has begun at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai are active traveling companions. No player action has been resolved yet, no opening-scene roll has been made, and no quest outcome or current NPC allegiance has been established."
 }
