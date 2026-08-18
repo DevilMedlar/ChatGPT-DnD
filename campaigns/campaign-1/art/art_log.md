@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance is established below. No recurring NPC appearance, location appearance, transformation, reference-art path, or other visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. No recurring NPC appearance, location appearance, transformation, or other visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -56,9 +56,18 @@ None established.
 
 ## Reference Art
 
-None established.
+### DevilMedlar — Primary Level-1 Reference
 
-When reference art is added:
+- **Repository path:** `campaigns/campaign-1/art/Radiant-Golden-Dragon-Warrior.png`
+- **Status:** Verified present in the repository and established as DevilMedlar's primary level-1 visual reference.
+- **Canonical from the image:** Overall facial impression; warm bronze complexion; lean-athletic build; black tousled hair with pale-gold front streak; molten-gold eyes; swept-back ivory-to-gold horns; ivory-gold draconic scales; dark-gold claws; long radiant-scaled tail; cream, charcoal, and muted-gold martial clothing; wrapped forearms/hands; Clan Aurivane-inspired cloak styling; and the overall sacred gold-white Radiant Draginkin aesthetic.
+- **Textual canon still controls:** Exact height, exact scale placement, pale-gold left-collarbone scar, lack of functional wings at level 1, hidden upper-back wing ridges, exact equipment mechanics, and all other written character details.
+- **Inspiration only unless later adopted:** Exact jewelry shapes, pendant/ring design, decorative embroidery and symbols, precise garment cuts, background halo/sunburst, pose, lighting, scenery, and any incidental ornamentation produced by the image.
+- **Aurivane Dawnscale Signet:** The image does not lock the signet's exact physical design. Its established function and radiant reaction remain textual canon until its appearance is explicitly fixed.
+
+Future images of DevilMedlar should consult this reference together with the textual visual canon above. If the two differ, textual canon wins unless the player explicitly adopts the image variation.
+
+When additional reference art is added:
 
 1. Verify the repository path actually exists before recording it.
 2. Record which visible features are canonical.
