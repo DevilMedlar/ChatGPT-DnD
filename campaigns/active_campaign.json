@@ -4,8 +4,8 @@
   "path": "campaigns/campaign-1",
   "phase": "in_play",
   "session_number": 1,
-  "turn_number": 7,
-  "current_step": "culvert_bend_presence_alerted_after_failed_stealth",
-  "xp_current": 150,
+  "turn_number": 8,
+  "current_step": "likely_carver_identified_beyond_first_culvert_bend",
+  "xp_current": 175,
   "xp_next_level": 300
 }
