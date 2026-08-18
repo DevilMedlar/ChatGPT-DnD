@@ -36,9 +36,10 @@ Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, 
 
 - Fantasy adventure may include combat, exploration, danger, mystery, humor, social play, romance, flirting, sexual tension, consensual sexual situations, and nudity.
 - Sexual material can be a meaningful part of the campaign without being forced into every scene.
-- Every character involved in romance, sexual content, nudity, fertility, pregnancy, or reproduction must be explicitly **18+**.
-- Sexual and reproductive content must be consensual.
-- Generated images may include adult sensuality or nudity when allowed by the image system.
+- Characters and NPCs may be under 18 for ordinary story roles. Under-18 characters may have age-appropriate crushes or romantic feelings, but they are never sexualized and never participate in sexual content, nudity, fertility, pregnancy, or reproduction.
+- Every character involved in sexual content, nudity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+**.
+- Current sexual and reproductive content must be consensual. Nonconsensual abuse may exist only as non-erotic, non-graphic background/backstory, history, or villain motivation and must never be presented as erotic entertainment.
+- Generated images may include adult sensuality or nudity when allowed by the image system. Nude or sexualized depicted characters must be explicitly 18+.
 
 ## Image play loop
 
