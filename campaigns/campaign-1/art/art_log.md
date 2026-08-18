@@ -60,8 +60,8 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Face:** Sharp expressive features; self-possessed, alert, often wearing the beginning of a knowing smirk.
 - **Clothing:** Dark charcoal travel leathers under a short hooded mantle; practical stealth gear with muted brass buckles and minimal ornament.
 - **Weapons visible at first meeting:** Slim shortblade at the hip and compact hand crossbow; exact mechanics remain unfinalized until needed.
-- **First-scene posture:** Perched or crouched on an upper gully shelf before dropping down to speak with DevilMedlar.
-- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and directly told her she is beautiful and has a nice figure. Nyxara accepted the compliment with dry amusement rather than hostility. This may support playful eye contact or teasing body language in future art, but does **not** establish mutual attraction, romance, intimacy, or party familiarity.
+- **Current relationship visual rule:** DevilMedlar has openly admired Nyxara's appearance and directly told her she is beautiful and has a nice figure. Nyxara accepted the compliment with dry amusement rather than hostility. Light teasing and growing cooperation may appear in body language, but **mutual attraction, romance, intimacy, and party familiarity remain unconfirmed**.
+- **Personal-story visual caution:** Nyxara has confirmed that a woman she loves is the personally important name in the stolen Velvet Coil ledger, but that woman's identity and appearance are not established. Do not invent or depict her until canon establishes her.
 
 ## Signature Equipment & Visual Effects
 
@@ -114,7 +114,16 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - Narrow rubble-strewn upper shelf reached in Session 1 Turn 4.
 - Old stone culvert mouth lies ahead in deepening dusk.
 - A thin black tripline stretches ankle-high across the approach.
-- **Turn 5 visual/mechanical clarification:** The tripline connects to a concealed hooked brass pin, spring arm, and small striker positioned against a hollow iron drainpipe running deeper into the culvert. If triggered, the striker produces a sharp metallic warning knock rather than causing direct injury.
+- The tripline connects to a concealed hooked brass pin, spring arm, and small striker positioned against a hollow iron drainpipe running deeper into the culvert.
+- **Turn 6 state:** DevilMedlar and Nyxara stepped over the tripline without triggering it and deliberately left it intact and armed behind them.
+
+### Old culvert interior
+
+- Entered in Session 1 Turn 6.
+- Narrow old stone drainage tunnel with damp, worn masonry and a mineral-dark floor.
+- Fading dusk remains visible behind the entrance while the passage ahead bends into deeper darkness.
+- A hollow iron warning pipe runs along one wall from the entrance mechanism deeper into the tunnel.
+- Mood: cramped, quiet, watchful, with pursuit tension rather than active combat.
 
 ## Generated Scene Art
 
@@ -147,7 +156,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 
 ## Last Turn Sync
 
-- **Session 1 Turn 5:** No image generated this turn. Nyxara's canonical physical appearance remains unchanged. Relationship visual guidance now includes her amused acceptance of DevilMedlar's direct compliment. The culvert alarm's visible components were clarified for future scene continuity.
+- **Session 1 Turn 6:** No image generated this turn. Nyxara's canonical appearance is unchanged. Visual continuity now includes the intact armed alarm behind the party and the initial old-culvert interior. The unidentified woman Nyxara loves must not be visually invented before her identity/appearance becomes canon.
 
 For each future scene, record:
 - scene/session identifier
