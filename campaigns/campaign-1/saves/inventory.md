@@ -46,8 +46,6 @@
 
 ### Secured Scene / Captive Items
 
-Removed from the captive or recovered from the maintenance chamber. Secured away from him but not automatically assigned as DevilMedlar's personal property.
-
 - Compact crossbow x1, intact.
 - Compact crossbow bolts x6.
 - Stone-carving chisel x1.
@@ -72,4 +70,4 @@ Removed from the captive or recovered from the maintenance chamber. Secured away
 
 ## Last Turn Sync
 
-- **Session 1 Turn 12:** Personal currency remains 12 gp; secured enemy money remains 8 gp 6 sp. No consumables or limited abilities spent. Rope remains committed to the captive. All recovered gear, ledger, key, lantern/oil, and enemy currency remain secured and unchanged.
+- **Session 1 Turn 12:** Personal currency remains 12 gp; secured enemy money remains 8 gp 6 sp. No consumables or limited abilities spent. Rope remains committed to the captive. All recovered gear, ledger, key, lantern/oil, and enemy currency remain secured and unchanged. Background continuity was corrected this turn, but no inventory facts changed.
