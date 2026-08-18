@@ -4,9 +4,9 @@
   "path": "campaigns/campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 5,
+  "turn_number": 6,
   "current_step": "awaiting_player_action",
-  "xp_current": 80,
+  "xp_current": 150,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 4 is resolved at the Three Lanterns Inn. Senpai finished questioning Seraphine Vale about the Meridian Archive leak, narrowing the exposure pattern to the Eastern Route Collection copying chain without identifying a culprit. Suncoil Watch may be exposed through the missing Copper Finch dispatch case; Cinderwash Cut itself was not in that case. Seraphine has not reported DevilMedlar, Senpai, or the Aurivane signet to the Archive and agreed to limited confidentiality. Senpai recommends an obligation-free private map, overnight rest in a twin room, possible morning acceptance of the 60 gp caravan contract, and evidence-first travel from Cinderwash Turnoff. No map, room, dinner, contract, purchase, or travel has yet been committed. Both characters remain at 80 / 300 XP."
+  "last_sync_note": "Session 1, Turn 5 is resolved. DevilMedlar and Senpai accepted Seraphine Vale's obligation-free private route map, stayed overnight at the Three Lanterns Inn, accepted the Merchants' Compact's 60 gp total missing-caravan contract the next morning, bought one healer's kit, and traveled east. At Cinderwash Turnoff, Senpai found Copper Finch evidence leading onto the old Suncoil route. One deliberately damaged and searched Copper Finch wagon is now located in a basalt wash roughly three miles east of the turnoff. No bodies or Archive dispatch case were found, and the strongest continuing trail leads farther east toward Suncoil Watch. Both characters are at 150 / 300 XP."
 }
