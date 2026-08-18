@@ -1,13 +1,13 @@
 {
   "campaign": "campaign-1",
-  "phase": "ready",
+  "phase": "setup",
   "session_number": 0,
   "turn_number": 0,
   "current_scene": null,
-  "current_step": "ready_to_begin",
+  "current_step": "senpai_character_creation",
   "current_location": null,
   "character_created": true,
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "DevilMedlar character creation is complete and Campaign 1 is ready to begin. DevilMedlar is level 1: a Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. His stats, skills, ancestry/class features, starting equipment, stable appearance canon, and primary reference art are established. No opening scene or current location has been established yet. Senpai (20, female, she/her) remains an available but not automatically active ChatGPT-controlled campaign character with no ancestry, class, background, mechanics, or appearance established."
+  "last_sync_note": "DevilMedlar character creation is complete. Senpai (20, female, she/her) has chosen to join Campaign 1 as an active ChatGPT-controlled companion. Her ancestry, class, background, mechanics, equipment, and appearance still need to be established before Session 1 begins. Senpai joining creates no automatic romance, attraction, sexual relationship, or reproductive relationship with DevilMedlar or anyone else; those develop only through character agency and play. No opening scene or current location has been established yet."
 }
