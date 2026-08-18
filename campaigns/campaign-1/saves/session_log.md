@@ -86,3 +86,18 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Standard travel, survival, ritual, and healer supplies established; starting currency **12 gp**.
 - Dawnclaws, armor, and Sunscale visual continuity are recorded in `../art/art_log.md`.
 - Current creation step: final level-1 Dracolyte/Draginkin mechanics.
+
+### Checkpoint 0.8 — Level 1 character creation complete
+
+- Final derived statistics: **10/10 HP**, **AC 12**, **speed 30 ft**, **initiative +0**, **proficiency +2**, **Passive Perception 13**.
+- Spellcasting uses **Charisma**: **+4 spell attack**, **DC 12**, **2 level-1 spell slots** per long rest.
+- Gold Dragon heritage finalized with **fire resistance** and **Golden Breath**: 15-ft cone, Dex DC 12, `2d6` fire or radiant, half on success, once per long rest.
+- Golden Ascendant finalized: bonus action, once per long rest, up to 1 minute. Horns, wings, tail, and continuous eye-glow manifest; level-1 wings do not grant sustained flight.
+- Ascendant Vitality: gain **4 temporary HP** on transformation; once during the transformation, spend a bonus action to regain **2 HP**.
+- Custom combat magic approved:
+  - **Solar Lance** cantrip: 60-ft ranged spell attack, `1d8` fire or radiant.
+  - **Sunclaw Channel** cantrip: one Dawnclaw strike, counts as magical, choose bludgeoning/fire/radiant, no bonus damage at level 1.
+  - **Restorative Flame** level 1: touch heal `1d8 + 2` HP.
+  - **Ascendant Smite** level 1: after a Dawnclaw hit, spend a slot for `+2d6` fire or radiant, once per turn.
+- Character creation is complete enough to begin play. Unnamed cult/temple/Acolyte details and the Sunscale Shard's true nature remain intentional story hooks.
+- Campaign phase advanced to **ready to begin**; next step is the opening scene.
