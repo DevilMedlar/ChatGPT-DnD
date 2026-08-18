@@ -5,12 +5,12 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "gender_pronouns",
+  "current_step": "archetype_path",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
-    "gender_pronouns": null,
-    "species_race": null,
+    "gender_pronouns": "Male, he/him",
+    "species_race": "Draginkin",
     "level": 1,
     "archetype_path": null
   },
@@ -20,7 +20,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "gender_pronouns",
+    "choice": "archetype_path",
     "roll": null,
     "image_offer": false
   },
@@ -46,5 +46,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "character_identity_name_age_set"
+  "last_checkpoint": "character_identity_gender_species_set"
 }
