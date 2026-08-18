@@ -5,8 +5,8 @@
   "phase": "setup",
   "session_number": 0,
   "turn_number": 0,
-  "current_step": "level_and_derived_stats",
+  "current_step": "starting_equipment",
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "Character creation is in progress. DevilMedlar (20, male, he/him) is a Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. Clan Aurivane, Dawnscale Sanctum, and the unresolved Shattering of Dawnscale are established background canon. Base ability scores are STR 10, DEX 15, CON 13, INT 8, WIS 14, CHA 12. Skill proficiencies are Acrobatics, Insight, History, and Persuasion. Senpai (20, female, she/her) has partial identity canon established but no ancestry yet."
+  "last_sync_note": "Character creation is in progress. DevilMedlar is level 1: a Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. Base ability scores are STR 10, DEX 15, CON 13, INT 8, WIS 14, CHA 12. Skill proficiencies are Acrobatics, Insight, History, and Persuasion. Derived stats are HP 9/9, AC 14 unarmored, initiative +2, speed 30 ft., proficiency bonus +2, passive Perception 12. Level-1 Draginkin traits and Dragon Ascendant chassis are established. Senpai (20, female, she/her) still has no ancestry, class, background, or mechanics established."
 }
