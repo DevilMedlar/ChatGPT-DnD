@@ -5,7 +5,7 @@
   "phase": "character_creation",
   "session_number": 0,
   "tone": "Anything Goes Sandbox",
-  "current_step": "appearance",
+  "current_step": "level_1_features_and_skills",
   "player_character": {
     "name": "DevilMedlar",
     "age": 20,
@@ -22,6 +22,25 @@
       "intelligence": 8,
       "wisdom": 13,
       "charisma": 15
+    },
+    "appearance": {
+      "build": "lean and athletic",
+      "height": "5'10\"",
+      "skin_tone": "light tan",
+      "hair": "red, short and neat",
+      "eyes": "gold; glow during ability use and continuously while transformed",
+      "face": "mostly human with subtle draconic eyes/fangs",
+      "scales": "barely noticeable crimson-red patches, including collarbone/ribs/hips",
+      "battle_manifestation": "short swept-back horns, wings, and tail manifest only during battle/power-up states",
+      "transformation_aesthetic": "radiant dramatic crimson-and-gold draconic power based on player-provided reference image"
+    },
+    "background": {
+      "arc": [
+        "Pleasure Cult Survivor",
+        "brought into temple life by a Temple-Bound Acolyte",
+        "eventually left to become a Wandering Mystic"
+      ],
+      "social_style": "smooth, flirtatious, and teasing"
     }
   },
   "scene": {
@@ -30,7 +49,7 @@
     "combat_active": false
   },
   "pending": {
-    "choice": "appearance",
+    "choice": "level_1_features_and_skills",
     "roll": null,
     "image_offer": false
   },
@@ -56,5 +75,5 @@
     "session_log": "saves/session_log.md",
     "art_log": "art/art_log.md"
   },
-  "last_checkpoint": "ability_scores_and_golden_ascendant_set"
+  "last_checkpoint": "appearance_and_background_set"
 }
