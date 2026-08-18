@@ -4,7 +4,7 @@
   "session_number": 0,
   "turn_number": 0,
   "current_scene": null,
-  "current_step": "campaign_setup",
+  "current_step": "character_creation",
   "current_location": null,
   "character_created": false,
   "xp_current": 0,
