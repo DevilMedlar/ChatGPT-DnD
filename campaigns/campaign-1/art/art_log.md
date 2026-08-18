@@ -39,7 +39,7 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 ## Player-Provided Reference Art
 
 - **Reference 1:** DevilMedlar battle/power-up transformation vibe, supplied by the player during Session 0 character creation.
-- The original image is available in the conversation context for this session. If a persistent binary upload becomes available, store a copy in this `art/` root and update this entry with the repository path.
+- Repository image present in this `art/` root: `5456eaa1-dcca-4bbf-ac3c-1c028af82b0d.png`.
 
 ## Recurring NPCs
 
@@ -73,20 +73,30 @@ None yet.
 ### Draconic Effects
 
 - **Gold Dragon affinity:** fire/radiance.
-- **Golden Breath:** A short cone of concentrated gold-white draconic flame or radiant brilliance, with faint crimson edging that ties it visually to DevilMedlar's scales.
-- **Golden Ascendant transformation:** Crimson-and-gold radiant draconic manifestation. Horns, wings, and tail appear; eyes remain continuously luminous. At level 1, wings should not be depicted as granting sustained flight unless the scene is purely a visual leap/fall pose that does not contradict mechanics.
-- **Solar Lance:** A narrow short-to-medium-range lance of gold-white fire/radiance, usually projected from an outstretched Dawnclaw, with fine crimson edging.
-- **Sunclaw Channel:** The striking gauntlet becomes visibly charged. Fire should read as contained dragonfire along the knuckles/plates; radiant should read as gold-white light concentrated around the fist. The effect is an imbued physical blow, not a separate projectile.
-- **Restorative Flame:** Soft gold-white flame wraps the Dawnclaw and flows into the touched creature without burning them; calmer and warmer than offensive effects.
-- **Ascendant Smite:** On impact, the Dawnclaw strike erupts in a compact burst of fire or radiant force centered on the point of contact. It should look heavier and more explosive than Sunclaw Channel.
+- **Golden Ascendant transformation:** crimson-and-gold radiant draconic manifestation.
 
 ## Locations
 
-None yet.
+### Lantern Road shrine outside Vespergate
+
+- Weathered roadside shrine beneath a crooked tree.
+- Dirt road leads toward the distant walled city of Vespergate.
+- Scene 1 lighting: copper-orange dusk with long shadows and a quiet, tense atmosphere.
+- Fresh cult sigil carved into the shrine stone.
 
 ## Generated Scene Art
 
-No generated campaign scenes yet.
+### Session 1 — Fresh Mark on Lantern Road
+
+- **Repository path:** `art/session-1-lantern-road-shrine.webp`
+- **Scene:** DevilMedlar discovers a freshly carved pleasure-cult sigil at a roadside shrine while the Sunscale Shard reacts with heat and golden light.
+- **Character shown:** DevilMedlar, adult age 20.
+- **Form:** Baseline form, no horns, wings, or tail.
+- **Appearance used:** Red hair, gold eyes with faint magical glow, subtle crimson scale traces, dark reinforced wanderer's vestments.
+- **Equipment shown:** Dawnclaws on both arms/hands; Sunscale Shard glowing at the chest.
+- **Location / lighting:** Lantern Road near Vespergate at sunset, shrine under a crooked tree, distant city silhouette.
+- **Continuity note:** The generated image is illustrative. Textual canon remains authoritative if incidental visual details differ.
+- **Stored format note:** The persistent repository copy is a compressed WebP derivative of the generated scene image for reliable GitHub storage through the connector.
 
 For each future scene, record:
 - scene/session identifier
