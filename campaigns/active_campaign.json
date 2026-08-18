@@ -2,11 +2,11 @@
   "active_campaign": "campaign-1",
   "campaign_number": 1,
   "path": "campaigns/campaign-1",
-  "phase": "setup",
+  "phase": "ready",
   "session_number": 0,
   "turn_number": 0,
-  "current_step": "character_creation_review",
+  "current_step": "ready_to_begin",
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "Character creation is in progress. DevilMedlar is level 1: a Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. Level-1 stats, skills, Draginkin traits, Dragon Ascendant chassis, starting equipment, and stable appearance canon are established. DevilMedlar is 6 ft. 2 in. with a lean-athletic build, warm bronze skin, ivory-gold scales, swept-back ivory-to-gold horns, molten-gold draconic eyes, black hair with a pale-gold streak, a functional draconic tail, no functional wings at level 1, and a pale-gold scar across the left collarbone from the Shattering of Dawnscale. Senpai (20, female, she/her) still has no ancestry, class, background, mechanics, or appearance established."
+  "last_sync_note": "DevilMedlar character creation is complete and Campaign 1 is ready to begin. DevilMedlar is level 1: a Radiant-affinity Draginkin Dragon Ascendant with the Lost Dragon Clan Heir background. His stats, skills, ancestry/class features, starting equipment, stable appearance canon, and primary reference art are established. No opening scene or current location has been established yet. Senpai (20, female, she/her) remains an available but not automatically active ChatGPT-controlled campaign character with no ancestry, class, background, mechanics, or appearance established."
 }
