@@ -21,12 +21,11 @@ campaigns/
   campaign-1/
     README.md
     GAME_MASTER_RULES.md
-    saves/
-      active_game.json
-      character_sheet.md
-      inventory.md
-      world_state.md
-      session_log.md
+    active_game.json
+    character_sheet.md
+    inventory.md
+    world_state.md
+    session_log.md
     art/
       art_log.md
 ```
