@@ -11,6 +11,13 @@
 - **Archetype / path:** Dracolyte / Draconic Acolyte
 - **Dracolyte focus:** Golden Ascendant
 
+## Advancement
+
+- **XP:** 50 / 300
+- **XP to Level 2:** 250
+- **Progression:** Numeric XP.
+- **Backfilled Session 1 XP:** 25 XP for discovering the fresh cult-mark hook and Sunscale reaction; 25 XP for the successful trail investigation that revealed two separate travelers.
+
 ## Appearance
 
 ### Baseline form
@@ -55,6 +62,8 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 - **Spell attack bonus:** +4
 - **Spell save DC:** 12
 - **Level-1 spell slots:** 2 / 2; recover on a long rest.
+- **Golden Breath:** 1 / 1 use.
+- **Golden Ascendant:** 1 / 1 use.
 - **Conditions:** None.
 - **Temporary effects:** None.
 
@@ -69,7 +78,7 @@ Standard array used: `15, 14, 13, 12, 10, 8`.
 
 - **Dawnclaws — Bonded Draconic Gauntlets:** Matched paired gauntlets functioning as one simple melee weapon set and as DevilMedlar's draconic/spellcasting focus. Attack and damage use Charisma through the Dracolyte bond: **+4 to hit**, `1d6 + 2` bludgeoning. Wearing two gauntlets does not grant a free extra attack. While Golden Ascendant is active, a hit may deal fire or radiant instead of bludgeoning without adding damage.
 - **Reinforced Wanderer's Vestments:** Light armor equivalent to studded leather; current AC 12.
-- **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin; slightly warm, with no known mechanical property yet.
+- **Sunscale Shard:** Small unidentified gold-dragon relic of unknown origin; currently warm since the Lantern Road cult-mark discovery.
 - Full carried gear and currency are tracked in `inventory.md`.
 
 ## Features / Abilities
@@ -137,7 +146,8 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 
 ## Relationships
 
-- Historical connection to an unnamed Temple-Bound Acolyte; exact relationship status remains unresolved.
+- **Unnamed Temple-Bound Acolyte:** Historical connection; exact relationship status remains unresolved.
+- **Nyxara Veyl:** First contact in Session 1 Turn 2. Adult female tiefling, age 24. Wary but not openly hostile. She claims she was independently following the cult-mark carver. Trust, friendship, attraction, romance, and party status are not established.
 
 ## Conditions / Transformations
 
@@ -150,3 +160,8 @@ The Dawnclaws serve as DevilMedlar's spellcasting focus. Charisma is his spellca
 
 - Names/details of the pleasure cult, temple/order, and Temple-Bound Acolyte may be established naturally during play.
 - The Sunscale Shard's true origin and any hidden property remain unknown and must be discovered in play.
+- Nyxara Veyl's claim about independently tracking the cult carver is not yet verified.
+
+## Last Turn Sync
+
+- **Session 1 Turn 2:** HP 10/10, spell slots 2/2, Golden Breath 1/1, Golden Ascendant 1/1, no conditions, XP 50/300.
