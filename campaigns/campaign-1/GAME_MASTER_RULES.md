@@ -10,12 +10,13 @@ Run a persistent, choice-driven adult fantasy RPG with d20-style mechanics, stro
 2. Treat `saves/character_sheet.md` as the readable canonical character record.
 3. Treat `saves/inventory.md` as inventory storage for the player character and all NPCs that join the party, separated by character names.
 4. Record important NPCs, factions, locations, relationships, quests, secrets, world changes, and unresolved consequences in `saves/world_state.md`.
-5. Add a concise checkpoint to `saves/session_log.md` after meaningful progress.
+5. Add a concise checkpoint to `saves/session_log.md` after every gameplay turn.
 6. Record canonical appearance details and scene-art notes in `art/art_log.md` so recurring characters remain visually consistent.
 7. Store generated campaign art under `art/` when a persistent file is available.
 8. Never silently overwrite established facts. If two records conflict, prefer the newest explicit player choice and repair the save files.
 9. Paths in this file are relative to `campaigns/campaign-1/`.
 10. Before continuing play, load the active campaign pointer and all canonical Campaign 1 save files required for the current scene.
+11. `../active_campaign.json` must remain synchronized with the current phase, session, turn, step, and XP summary.
 
 ## Adult-content boundary
 
@@ -67,7 +68,7 @@ Character creation defaults to the standard array `15, 14, 13, 12, 10, 8`, assig
 
 Track at minimum:
 - Level
-- XP or milestone progress
+- XP and XP required for the next level
 - HP / Max HP
 - Armor Class
 - Initiative
@@ -76,6 +77,23 @@ Track at minimum:
 - Passive Perception
 - Conditions
 - Temporary effects
+
+## Advancement and XP
+
+Campaign 1 uses numeric XP rather than milestone-only advancement.
+
+- Level 1 begins at **0 XP**.
+- Level 2 begins at **300 total XP**.
+- Level 3 begins at **900 total XP**.
+- Level 4 begins at **2,700 total XP**.
+- Level 5 begins at **6,500 total XP**.
+- Higher thresholds may be added when needed without changing already-earned XP.
+- Award XP for resolved encounters, meaningful discoveries, successful or consequential investigation, social breakthroughs, quest progress/completion, dangerous exploration, and other meaningful accomplishments.
+- Failure can still produce XP when it meaningfully advances the story, reveals information, or creates a consequential challenge; do not award XP merely for rolling a die.
+- Do not double-count the same accomplishment.
+- Track current XP and the next-level threshold in `saves/active_game.json` and `saves/character_sheet.md`.
+- Record each XP award and its reason in `saves/session_log.md`.
+- Keep the XP summary in `../active_campaign.json` synchronized every gameplay turn.
 
 ## Skills
 
@@ -150,17 +168,27 @@ Generate or offer art for major introductions, dramatic reveals, transformations
 
 ## Save cadence
 
-Update repository state after any meaningful change to:
-- character stats or level
-- inventory/equipment
-- abilities/spells/charges
-- conditions or lasting injuries
-- quests
-- relationships
-- important NPC/world facts
-- major choices and consequences
-- canonical appearance
-- generated art or adopted visual continuity
-- fertility, pregnancy, offspring, hybrid ancestry, or lineage state when those become relevant
+Every gameplay turn must synchronize all live campaign-state files, not only the file that obviously changed:
 
-Minor banter does not require a commit.
+- `../active_campaign.json`
+- `saves/active_game.json`
+- `saves/character_sheet.md`
+- `saves/inventory.md`
+- `saves/world_state.md`
+- `saves/session_log.md`
+- `art/art_log.md`
+
+If a file has no substantive change on a turn, update its last-sync marker or status note rather than inventing a fictional change. Static documentation such as `README.md`, `GAME_MASTER_RULES.md`, or `LICENSE` does not need a meaningless rewrite every turn; update static docs only when their rules or documented status actually changes.
+
+Every turn's sync must preserve and reconcile, when relevant:
+- XP and level progress
+- HP and temporary HP
+- spell slots, breath uses, transformation uses, and other charges
+- inventory/equipment/currency/consumables
+- conditions or lasting injuries
+- quests and clues
+- relationships and important NPC facts
+- world state and current location
+- major choices, rolls, and consequences
+- canonical appearance and generated art
+- fertility, pregnancy, offspring, hybrid ancestry, or lineage state when relevant
