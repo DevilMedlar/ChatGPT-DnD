@@ -40,7 +40,7 @@ She introduced herself as **Seraphine Vale**, half-elf female age 34, a travelin
 
 Seraphine also indicated that she believes the Cinderwash relic traffic and the Emberglass caravan disappearances may be related enough to deserve caution. She said she can be found through the **Three Lanterns Inn** if DevilMedlar and Senpai want to speak again.
 
-- **DevilMedlar Insight:** d20 = 18, Insight +4, total **22**. Strong success. DevilMedlar judged Seraphine truthful about recognizing the signet and about her concern over the relic/caravan connection. He also recognized that she was intentionally withholding who finances her current research and some details of why she is in Brasshaven.
+- **DevilMedlar Insight:** d20 = 18, Insight +4, total **22**. Strong success. DevilMedlar judged Seraphine truthful about recognizing the signet and about her concern over the relic/caravan connection. He also recognized that she was intentionally withholding who finances her research and some details of why she is in Brasshaven.
 
 No alliance, debt, trust bond, attraction, hostility, or quest agreement with Seraphine was established.
 
@@ -254,3 +254,68 @@ Senpai recognized the reaction immediately. She was visibly pleased and flustere
 **XP award:** No additional XP awarded this turn. The party gained useful security and route information, but the Meridian leak remains unsolved and no quest, recovery, map transfer, lodging purchase, or formal agreement was completed. DevilMedlar and Senpai remain at **80 / 300 XP**.
 
 **Turn result:** The Meridian leak is narrowed to a recurring Eastern Route Collection copying-chain problem but no culprit is identified. Suncoil Watch may now be exposed through the missing dispatch case. Seraphine has not reported DevilMedlar or Senpai to the Archive and agreed to limited confidentiality regarding their identities. Senpai is done questioning Seraphine for now and has proposed an obligation-free map, overnight rest, possible morning caravan-contract acceptance, and evidence-first travel from Cinderwash Turnoff. DevilMedlar's strong physical attraction to Senpai after her questioning is explicitly established, and Senpai received it positively without creating additional sexual consent or a committed relationship.
+
+### Session 1, Turn 5 — Private Night, Contract, and First Copper Finch Evidence
+
+**Starting location:** Brasshaven — Three Lanterns Inn, upstairs near Seraphine Vale's private parlor.
+
+DevilMedlar accepted Senpai's broad evidence-first plan with several explicit changes: he wanted Seraphine's obligation-free private route map that night; a private double room and two dinners served privately in the room; time to talk with Senpai before sleeping; formal acceptance of the 60 gp caravan contract the next morning; a supply review and sensible purchases before leaving Brasshaven; eastward travel to Cinderwash Turnoff; and investigation followed by the evidence from there.
+
+#### Seraphine's private route map
+
+DevilMedlar and Senpai returned to Seraphine and confirmed that her map offer created no employment, secrecy oath, debt, service requirement, or other Meridian Archive obligation. They then accepted **Seraphine Vale's Private Route Copy**, showing Cinderwash Turnoff, the old road alignment, and the nonpublic location of Suncoil Watch. Senpai carries the copy in her Oracle's Satchel.
+
+#### Three Lanterns private double room
+
+Senpai initially objected to DevilMedlar choosing a private double because she had explicitly preferred the twin room with two beds. DevilMedlar explained that his reason was privacy while they ate and talked, not an attempt to force physical closeness. He also made clear that Senpai would have the bed and that he would sleep somewhere else in the room if she did not want to share it in any arrangement.
+
+Senpai chose to accept the private double on her own terms. She refused to make DevilMedlar sleep on the floor or a chair simply to prove that he respected her boundary and chose to share the bed using **opposite sides and separate blankets**. She established that sharing the bed did not grant permission for sexual activity or unconscious touching and that either companion could ask for more space at any time.
+
+Dessa Thorne charged a total of **2 gp, 8 sp** for the private double room, two dinners, and a premium private in-room supper service that included delivery and no further staff entry until the pair called for tray removal. Senpai attempted to object to DevilMedlar paying again, but DevilMedlar told her, in substance, that she had paid earlier and it was only fair that he pay now. DevilMedlar paid the full amount. No alcohol or other separate purchase was established.
+
+DevilMedlar and Senpai spent the evening talking privately about ordinary preferences, travel, and lighter personal topics without forcing any new hidden backstory, relationship promise, or sexual agreement into canon. Senpai relaxed enough to share that she enjoys quiet high places, rain against a roof, and sweet plum pastries; these are personal preferences only and have no mechanical effect.
+
+The pair slept in the same bed on opposite sides beneath separate blankets by Senpai's choice. No sexual activity occurred. During the night both completed a long rest; all HP, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, and Veilstep uses were or remained fully restored.
+
+DevilMedlar woke before Senpai and spent a short while watching her sleep peacefully in an affectionate, nonsexual way without touching, disturbing, or exploiting her while she was asleep. Senpai's relaxed ears, calm breathing, and curled tail made the moment feel tender to DevilMedlar. This did not create any new consent or relationship status.
+
+#### Morning contract acceptance and supplies
+
+The next morning DevilMedlar and Senpai returned to Merchants' Compact Hall and formally accepted the **Missing Emberglass Caravans contract**. Elira Voss confirmed that the **60 gp base reward is total for the contracted party**, not 60 gp each. Reliable proof of the caravans' fate is required for the base reward; rescue, cargo recovery, or exceptional danger may justify additional negotiated compensation. No advance payment was issued.
+
+Before leaving Brasshaven, the pair reviewed their equipment. They already had two waterskins, 100 feet of rope between them, 10 torches, functional melee weapons, enough combined rations for more than a week of two-person travel, and Senpai's two Healing Word spell slots per long rest. The main weakness was that if Senpai became unconscious, DevilMedlar had no reliable nonmagical way to stabilize her.
+
+DevilMedlar therefore purchased **one healer's kit for 5 gp** from Mooncup Apothecary and carried it himself. No other shop purchases were made. They did not buy redundant weapons, armor, decorative horn/tail guards, the 5-sp public road map, antitoxin, or a 50-gp healing potion.
+
+#### Eastward travel
+
+DevilMedlar and Senpai left Brasshaven and traveled east along Emberglass Road. Based on the private map and public route information, Cinderwash Turnoff lies roughly a day and a half east under ordinary travel conditions, with Cinderwash Cut farther along its spur. The pair made one ordinary overnight camp without a combat encounter and reached the Cinderwash Turnoff area on the following day. Each consumed **2 days of rations** over the travel and initial tracking period.
+
+#### Cinderwash Turnoff investigation
+
+At the turnoff, old wagon traffic, hard ground, volcanic gravel, and overlapping tracks made ordinary visual tracking difficult.
+
+- **DevilMedlar Survival:** d20 = 3, Wisdom +2, total **5**. Failure. DevilMedlar could not reliably separate Copper Finch's recent wagon ruts from older commercial traffic and did not receive false tracking information.
+- **Senpai Perception with Keen Hearing and Smell:** advantage rolls d20 = 12 and **20**, Perception +3, total **23** using the natural 20. Strong success. By scent and close observation Senpai found a small patch of dried blood off the maintained road, traces of recent horse and axle-grease scent where ordinary road traffic had already faded, and a bent brass harness badge shaped like a finch. She also identified recent wagon movement leaving the modern route onto the overgrown old-road alignment shown on Seraphine's private map.
+
+The brass finch badge and the timing strongly support that Copper Finch Courier passed this exact point, although the badge alone does not identify which employee or wagon lost it.
+
+#### Following the evidence
+
+DevilMedlar and Senpai followed the old-road trace for roughly three miles through broken basalt and dry scrub. The trail led to a shallow stone wash where **one Copper Finch Courier wagon** had been deliberately concealed below normal sightline from the road.
+
+No bodies were immediately visible. The horses were gone. The second Copper Finch wagon was not present.
+
+DevilMedlar examined the wagon and surrounding debris.
+
+- **DevilMedlar Investigation:** d20 = 18, Intelligence -1, total **17**. Success. DevilMedlar determined that the found wagon's rear axle damage was consistent with a deliberate tool strike rather than ordinary road breakage; its cargo compartments and many ordinary parcels had been systematically opened and searched; the vehicle had then been moved or pushed into the wash to hide it. There were small dried blood traces but no corpse at the wagon. The Meridian Archive dispatch case Seraphine described was not present.
+
+Recent-enough boot impressions and the continuing track of the missing second wagon leave the wash toward the **old Suncoil road alignment farther east**, in the general direction of Suncoil Watch. The evidence does not yet prove who attacked Copper Finch, whether anyone survived, whether the dispatch case was the target, or whether Cinderwash Cut is involved. The trail is now materially stronger toward the old Suncoil alignment than it was at Brasshaven.
+
+**Ending location:** Emberglass region — concealed Copper Finch wagon in a basalt wash east of Cinderwash Turnoff.
+
+**Resources:** DevilMedlar spent 2 gp 8 sp on lodging/dinners/private service and 5 gp on a healer's kit, leaving **2 gp, 7 sp**. Senpai spent no new currency and remains at **7 gp, 7 sp**. DevilMedlar has 8 days of rations; Senpai has 3 days. The healer's kit has 10 uses. All HP, Dragon Ki, Radiant Breath uses, spell slots, Veiled Form uses, and Veilstep uses are full/unspent at the end of the turn.
+
+**XP award:** DevilMedlar gains **70 XP** and Senpai gains **70 XP** for formally taking responsibility for the missing-caravan investigation, following physical evidence from Cinderwash Turnoff, and locating the first confirmed Copper Finch wagon and evidence of deliberate interference. Both are now at **150 / 300 XP** toward level 2.
+
+**Turn result:** The 60 gp Merchants' Compact missing-caravan contract is now active. Seraphine's obligation-free private map has been accepted. One Copper Finch wagon has been found concealed and deliberately damaged; no bodies are present, the Archive dispatch case is missing, the second wagon is still missing, and the strongest continuing physical trail leads farther east along the old Suncoil alignment toward Suncoil Watch. The party has not yet determined who caused the disappearances or whether survivors remain.
