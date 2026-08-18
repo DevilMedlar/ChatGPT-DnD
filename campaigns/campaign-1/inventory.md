@@ -46,7 +46,7 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 
 #### Currency
 
-- **Gold:** 8 gp
+- **Gold:** 7 gp
 - **Silver:** 7 sp
 
 #### Consumables / Charges
@@ -57,6 +57,10 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 #### Important / Quest Items
 
 - **Moonmirror Charm** — A small personal shrine token given to Senpai by an unnamed elder before she left Moonmirror Shrine. It has emotional and story significance but grants no combat bonus, has no charges, and has no confirmed hidden function at level 1. Any deeper connection to Moonmirror Shrine, its ceremonial moon-mirror, or future spirit phenomena must be discovered or established through play.
+
+#### Expenditures
+
+- **Session 1, Turn 2:** Senpai paid **1 gp** for a private two-person mineral pool at Steam & Stone Baths. DevilMedlar spent no currency on the bath.
 
 ## Continuity Rule
 
