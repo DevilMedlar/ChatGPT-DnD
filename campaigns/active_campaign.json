@@ -4,9 +4,9 @@
   "path": "campaigns/campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 1,
+  "turn_number": 2,
   "current_step": "awaiting_player_action",
-  "xp_current": 0,
+  "xp_current": 50,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 1 has begun at Brasshaven's Wayfarer Gate. DevilMedlar and Senpai are active traveling companions. No player action has been resolved yet, no opening-scene roll has been made, and no quest outcome or current NPC allegiance has been established."
+  "last_sync_note": "Session 1, Turn 1 is resolved in Brasshaven. DevilMedlar and Senpai investigated Orin Pell's Cinderwash relic shipment, questioned Seraphine Vale, read but did not accept the 60 gp Emberglass caravan contract, and explored Brasshaven together before stopping at Lantern Square. DevilMedlar and Senpai each have 50 XP. No resources were spent. The campaign is awaiting the player's next action."
 }
