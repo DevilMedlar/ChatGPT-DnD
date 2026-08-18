@@ -4,10 +4,10 @@
   "session_number": 0,
   "turn_number": 0,
   "current_scene": null,
-  "current_step": "senpai_character_creation",
+  "current_step": "senpai_character_creation_review",
   "current_location": null,
   "character_created": true,
   "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "DevilMedlar character creation is complete. Senpai (20, female, she/her) has chosen to join Campaign 1 as an active ChatGPT-controlled companion. Her ancestry, class, background, mechanics, equipment, and appearance still need to be established before Session 1 begins. Senpai joining creates no automatic romance, attraction, sexual relationship, or reproductive relationship with DevilMedlar or anyone else; those develop only through character agency and play. No opening scene or current location has been established yet."
+  "last_sync_note": "DevilMedlar character creation remains complete. Senpai (20, female, she/her) has chosen to join as an active ChatGPT-controlled companion and now has a complete level-1 build pending final review: Kitsune with Moonfire affinity, Moonveil Oracle class, Moon Shrine Runaway background, STR 8, DEX 15, CON 12, INT 10, WIS 13, CHA 14, HP 9/9, AC 14, initiative +2, speed 30 ft., proficiency bonus +2, passive Perception 13, skills Stealth/Deception/Arcana/Perception, level-1 Kitsune traits, Moonveil Oracle spellcasting and Veilstep, starting equipment, background history, and stable appearance canon. No Senpai repository reference image exists yet. No opening scene or current location has been established."
 }
