@@ -59,115 +59,108 @@ Chronological checkpoints for gameplay progress. Keep entries concise enough to 
 ### Checkpoint 1.0 - The past scratches back
 
 - Dusk on Lantern Road outside Vespergate.
-- Fresh symbol from DevilMedlar's former pleasure cult discovered on roadside shrine.
-- Sunscale Shard becomes noticeably warm.
-- **XP:** +25, later backfilled.
+- Fresh Velvet Coil symbol discovered on roadside shrine; Sunscale Shard becomes noticeably warm.
+- **XP:** +25.
 
 ### Checkpoint 1.1 - Two trails from the shrine
 
 - Perception `15 + 3 = 18` vs DC 13, success.
-- Found likely carver's boot trail with shrine-stone dust plus a second lighter observer/follower trail.
-- Both lead north into drainage gully.
+- Found likely carver trail plus a second observer/follower trail, both into the north drainage gully.
 - **XP:** +25. Total 50/300.
 
 ### Checkpoint 1.2 - The trail bites back
 
 - Survival `4 + 3 = 7` vs DC 12, failure with forward consequence.
-- Lost clean trail and met **Nyxara Veyl**, age 24, adult female tiefling Veilblade/occult tracker.
-- Nyxara claims she independently followed the carver toward an old culvert.
-- No XP for the failed roll itself.
+- Lost clean trail and met **Nyxara Veyl**, adult age 24, tiefling Veilblade/occult tracker.
 
 ### Checkpoint 1.3 - Nyxara under the lens
 
-- Insight `14 + 1 = 15` vs DC 13, success while asking why Nyxara followed the carver.
-- Her core claim appears truthful.
-- Cult named **the Velvet Coil**.
-- Nyxara revealed a stolen Vespergate ledger containing names tied to the cult; one personally important name matters to her.
+- Insight `14 + 1 = 15` vs DC 13, success.
+- Nyxara's independent-tracker claim appears truthful.
+- Cult named **Velvet Coil**; stolen ledger lead revealed.
 - **XP:** +25. Total 75/300.
 
 ### Checkpoint 1.4 - Eyes up, dragon
 
-- Nyxara took point.
-- Perception `12 + 3 = 15` vs DC 13 spotted a concealed ankle-high tripline before activation.
-- DevilMedlar revealed: **"I survived the Velvet Coil."**
-- Nyxara treated the disclosure seriously; provisional cooperation increased.
+- Perception `12 + 3 = 15` vs DC 13 spotted concealed tripline.
+- DevilMedlar told Nyxara: **"I survived the Velvet Coil."**
 - **XP:** +25. Total 100/300.
 
 ### Checkpoint 1.5 - Compliments and tripwires
 
-- DevilMedlar complimented Nyxara while examining the mechanism.
-- Nyxara clarified she was not a Velvet Coil initiate; she survived what the Coil did to **someone she loves**.
-- Investigation `13 - 1 = 12` vs DC 12, success.
-- Tripline identified as a nonlethal warning alarm using a spring striker and hollow iron drainpipe.
+- Investigation `13 - 1 = 12` vs DC 12 identified tripline as nonlethal pipe-warning alarm.
+- Nyxara said the Coil harmed someone she loves.
 - **XP:** +25. Total 125/300.
 
 ### Checkpoint 1.6 - The woman in the ledger
 
-- Nyxara confirmed the person she loves is **female** and **is the personally important name in the stolen ledger**; identity and exact relationship remain withheld.
-- DevilMedlar and Nyxara stepped over the known alarm with no roll and left it armed behind them.
-- Entered the old culvert without triggering it.
+- Nyxara confirmed the person she loves is female and appears in the ledger, but withheld identity/relationship.
+- Alarm bypassed and left armed behind them.
 - **XP:** +25. Total 150/300.
 
 ### Checkpoint 1.7 - The tunnel hears you
 
-- Arcana `2 - 1 = 1` vs DC 12 failed to identify the Sunscale Shard; it nevertheless gave one stronger heat pulse when oriented deeper into the culvert.
-- DevilMedlar again flirted with Nyxara; she answered with dry amusement.
-- Stealth `10 + 0 = 10` vs DC 12 failed; gravel struck old iron and alerted a presence beyond the first bend.
-- Perception natural `1 + 3 = 4` vs DC 13 failed to identify the threat.
-- No resources spent; XP stayed 150/300.
+- Arcana `2 - 1 = 1` vs DC 12 failed to identify Sunscale Shard; shard gave one stronger heat pulse deeper in culvert.
+- Stealth `10` vs DC 12 failed and alerted presence.
+- Perception natural `1 + 3 = 4` vs DC 13 failed to identify it.
+- XP unchanged.
 
 ### Checkpoint 1.8 - Eyes around the bend
 
-- Nyxara covered DevilMedlar while he peeked around the first bend.
-- Brief accidental intimate contact occurred in the cramped passage when DevilMedlar's footing shifted against Nyxara's chest/hip; he immediately withdrew and apologized. Nyxara accepted the apology. This did not establish permission for future touching.
-- Stealth `15 + 0 = 15` vs DC 13, success.
-- Perception `14 + 3 = 17` vs DC 14, success.
-- Identified one hooded adult man behind broken masonry with compact crossbow, shrine-stone dust on his boots, and carving chisel at belt, strongly linking him to the Lantern Road mark.
-- Saw a thick leather-bound book-sized object in his satchel, likely but not confirmed to be the stolen ledger.
+- Nyxara covered DevilMedlar while he peeked the bend.
+- Brief accidental cramped-space contact occurred; DevilMedlar immediately apologized and Nyxara accepted. No permission for future touching established.
+- Stealth `15` vs DC 13 and Perception `17` vs DC 14 succeeded.
+- Identified likely shrine carver and probable ledger.
 - **XP:** +25. Total 175/300.
 
 ### Checkpoint 1.9 - Alive if possible
 
-- Player manually uploaded corrected Turn 8 scene art to `../art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`; repository metadata verified the exact path. ChatGPT did not upload or commit it.
-- DevilMedlar stated he wants the likely carver alive for questioning.
-- He apologized again for the Turn 8 accident and admitted he liked the brief accidental contact.
-- Nyxara accepted the apology, answered with dry amusement, and maintained the consent boundary that an accident is not permission for intentional repetition.
-- Nyxara proposed a nonlethal plan: surrender demand from cover; she covers the weapon side; if he attacks she disrupts and DevilMedlar closes for a nonlethal takedown; if he runs they pursue.
-- No roll, attack, damage, or resource use.
-- **XP:** unchanged at 175/300.
+- Player manually uploaded corrected Turn 8 art to `../art/sesion-1-turn-8-Wet-Stone-Tunnel-Stealthy-Ambush.png`; ChatGPT did not upload/commit it.
+- DevilMedlar and Nyxara agreed on nonlethal capture plan.
+- Relationship dialogue/apology continued; consent boundary maintained.
+- XP unchanged.
 
 ### Checkpoint 1.10 - Bad choice, clean capture
 
-- Before acting, DevilMedlar suggested that he and Nyxara talk after the confrontation regardless of whether the carver lived or died.
-- DevilMedlar made another sincere apology for the Turn 8 accident, gave Nyxara another openly sexual/flirtatious compliment about how attractive she looked while focused for the fight, wished her luck, and said he hoped they both survived.
-- Nyxara accepted the apology, maintained her existing consent boundary, returned dry flirtatious banter, and agreed they could talk afterward if both were standing.
-- DevilMedlar followed Nyxara's plan exactly and called from cover: **"Crossbow down. Hands where I can see them. Don't touch the satchel."**
-- **Intimidation:** `3 + 2 = 5` vs DC 13, failure. The likely carver refused surrender and attacked.
-- **Initiative:** carver `8 + 2 = 10`; DevilMedlar `9 + 0 = 9`; Nyxara `2 + 3 = 5`.
-- Nyxara's prepared disruption attack: `8 + 4 = 12` vs AC 13, miss.
-- Carver's crossbow attack: `3 + 3 = 6` vs DevilMedlar's effective AC 14 with corner cover, miss.
-- Dawnclaw attack: `11 + 4 = 15` vs AC 13, hit; damage `5 + 2 = 7` bludgeoning, explicitly nonlethal.
-- Carver dropped to 0 HP and became **unconscious and stable, captured alive**.
-- DevilMedlar and Nyxara remained uninjured; no limited resources spent.
+- DevilMedlar demanded surrender. Intimidation `3 + 2 = 5` vs DC 13 failed.
+- Carver attacked; Nyxara disruption missed; carver shot missed.
+- Dawnclaw `11 + 4 = 15` hit AC 13 for `5 + 2 = 7` nonlethal bludgeoning.
+- Carver captured alive, unconscious and stable; no player damage or limited resources spent.
 - **XP:** +25. Total 200/300.
 
 ### Checkpoint 1.11 - The book is real
 
-- DevilMedlar thoroughly searched/disarmed the captive while Nyxara used DevilMedlar's 50-ft hempen rope to secure the captive's wrists, ankles, and torso.
-- **Investigation:** `19 - 1 = 18` vs DC 14, success.
-- Recovered from captive: compact crossbow plus six bolts, stone-carving chisel, narrow boot knife, pouch with **8 gp and 6 sp**, small brass key with a **three-coil notch pattern**, and dark satchel.
-- Enemy valuables/gear are secured but not automatically added to DevilMedlar's personal inventory/currency pending player disposition.
-- DevilMedlar swept the chamber for accomplices, exits, threats, and useful supplies.
-- **Perception:** `17 + 3 = 20` vs DC 13, success.
-- No current accomplice found and no additional fresh track set found in/immediately beyond the chamber.
-- Two routes identified beyond the return path: an **eastward deeper drainage passage** and a **rusted vertical service shaft to a grated surface exit**. Surface grate appears usable but noisy.
-- Recovered near the firing position: **hooded lantern** and **one flask of lamp oil**.
-- DevilMedlar opened the book and confirmed, with Nyxara's recognition, that it is the stolen **Velvet Coil ledger**.
-- Ledger contains names, dates, payments, routes, and coded marks tied to watched/selected people.
-- Nyxara confirmed the entry concerning the woman she loves is present, but still withheld the woman's name and exact relationship.
-- Repeated ledger notation: **`Vespergate / Silken Cup / cellar delivery`**, establishing a new Vespergate lead.
-- DevilMedlar asked Nyxara whether the ledger was what she wanted/expected while flirting lightly. Nyxara answered with dry amusement and said it is what she was after, but **worse than she expected**.
-- Captive remains unconscious, stable, bound, and alive.
-- **XP:** +25 for resolving the chamber/captive search and confirming the major ledger lead. **Current XP: 225/300**.
-- **Current state:** 10/10 HP, 2/2 spell slots, Golden Breath 1/1, Golden Ascendant 1/1, no conditions. Rope temporarily committed to restraint.
-- **Current objective:** Decide how/when to wake and interrogate the captive, interpret ledger codes, investigate the Silken Cup lead/three-coil key, and choose the next route.
+- Investigation `19 - 1 = 18` vs DC 14 thoroughly searched captive; recovered crossbow/bolts, chisel, boot knife, 8 gp 6 sp, three-coil brass key, satchel.
+- Nyxara bound captive with DevilMedlar's rope.
+- Perception `17 + 3 = 20` vs DC 13 cleared chamber, found no accomplice, identified east passage and noisy surface shaft, recovered hooded lantern/oil.
+- Confirmed the stolen **Velvet Coil ledger**.
+- Repeated notation: **`Vespergate / Silken Cup / cellar delivery`**.
+- Nyxara confirmed the protected woman's entry exists but still withheld name/relationship.
+- **XP:** +25. Total 225/300.
+
+### Checkpoint 1.12 - Three quiet hours
+
+- DevilMedlar chose to let the captive wake naturally rather than force him conscious.
+- Natural recovery roll: `1d4 = 3 hours`. Scene advanced from dusk to night.
+- **Ledger Investigation:** `4 - 1 = 3` vs DC 14, failure. No additional Coil shorthand, code, or hidden pattern was decoded beyond the already-known ledger structure and Silken Cup route.
+- **Three-coil key/chamber Investigation:** `5 - 1 = 4` vs DC 13, failure. No matching lock was discovered; key does not fit obvious chamber hardware, lantern fittings, or visible service-shaft grate mechanism.
+- Nyxara explained that the **Silken Cup** is an upscale winehouse and performance salon in Vespergate's **Lantern Quarter**, with private rooms and a rear cellar-delivery entrance. She has watched discreet late-night couriers use that entrance and suspects covert Coil traffic, though this is not yet proven.
+- Nyxara asked DevilMedlar what surviving the Velvet Coil meant.
+- With explicit player authorization to establish the history, DevilMedlar revealed:
+  - He entered the Velvet Coil voluntarily at **age 18**, explicitly as an adult, after promises of freedom from shame/judgment.
+  - Early life there felt like consensual adult revelry, acceptance, and community.
+  - He later recognized a coercive system that turned affection into leverage, secrets into debt, and intimacy into obedience.
+  - He refused a binding oath that would have required helping recruit others.
+  - He escaped during a storm-night disruption through a service route with the Sunscale Shard and what he could carry.
+  - The still-unnamed Temple-Bound Acolyte found him exhausted the next morning and brought him into temple life.
+- **Info-for-info Persuasion:** `17 + 2 = 19` vs DC 14, success.
+- Nyxara reciprocated with personal history:
+  - She grew up in Vespergate, first working as a courier before becoming a tracker/Veilblade.
+  - The woman in the ledger is **Mara Veyl**, Nyxara's **21-year-old adult younger sister**.
+  - Mara is not known to be a Velvet Coil member; Nyxara believes she is being watched/selected as a target.
+  - Nyxara began actively hunting the Coil after noticing a watcher following Mara, eventually tracing one watcher toward the Silken Cup.
+- Personal trust between DevilMedlar and Nyxara increased substantially; light flirtation remained natural and consent boundaries stayed intact. Romance/party membership remain unconfirmed.
+- At the end of the three-hour wait, the captive naturally regained consciousness at **1 HP**, still bound and fully disarmed. He is groggy and sees DevilMedlar and Nyxara holding the ledger.
+- **XP:** +25 for the major successful trust/personal-history breakthrough and Mara identity reveal. **Current XP: 250/300**.
+- **Current state:** DevilMedlar 10/10 HP, 2/2 slots, Golden Breath 1/1, Golden Ascendant 1/1, no conditions. Rope still restrains captive.
+- **Current objective:** Interrogate the awake captive about his identity, shrine mark, Velvet Coil, ledger, Silken Cup, Mara Veyl, three-coil key, and deeper culvert activity.
