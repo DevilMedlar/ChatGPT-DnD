@@ -1,6 +1,6 @@
 # Inventory — Campaign 1
 
-DevilMedlar's and Senpai's starting equipment are established for character creation.
+DevilMedlar's and Senpai's current carried equipment and resources are tracked below.
 
 ## DevilMedlar
 
@@ -12,22 +12,30 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 
 ### Carried / Stored
 
-- **Explorer's Pack** containing a backpack, bedroll, mess kit, tinderbox, 10 torches, 10 days of rations, waterskin, and 50 feet of hempen rope.
+- **Explorer's Pack** containing a backpack, bedroll, mess kit, tinderbox, 8 days of rations, waterskin, 10 torches, and 50 feet of hempen rope.
 - **Clan Aurivane travel cloak** — A worn cloak carrying a subtle version of the clan's draconic motif. It provides no mechanical bonus.
+- **Healer's kit** — Purchased from Mooncup Apothecary before leaving Brasshaven. 10 uses. A use may stabilize a dying creature without requiring a Wisdom (Medicine) check; it does not restore HP by itself.
 
 ### Currency
 
-- **Gold:** 10 gp
-- **Silver:** 5 sp
+- **Gold:** 2 gp
+- **Silver:** 7 sp
 
 ### Consumables / Charges
 
-- **Rations:** 10 days
+- **Rations:** 8 days
 - **Torches:** 10
+- **Healer's kit:** 10 uses
 
 ### Important / Quest Items
 
 - **Aurivane Dawnscale Signet** — DevilMedlar's genuine heirloom signet from Clan Aurivane. The crest is recognizable to someone with appropriate knowledge of the clan or its history and can serve as evidence supporting DevilMedlar's claim as its lost heir. When DevilMedlar deliberately channels radiant draconic power, the signet grows faintly warm and its engraved crest gives off a subtle golden-white glow. It grants no combat bonus, has no charges, and does not automatically prove identity to someone unfamiliar with Clan Aurivane. Any deeper connection to Dawnscale Sanctum, clan wards, relics, or other hidden functions remains unknown until established through play.
+- **Merchants' Compact Missing-Caravan Contract Copy** — Contract accepted by DevilMedlar and Senpai in Brasshaven on the morning after their first night at the Three Lanterns Inn. It offers **60 gp base pay total** for locating the three missing Emberglass Road caravans and returning reliable proof of their fate; rescue, cargo recovery, or exceptional danger may justify additional negotiated compensation. No reward has been collected yet.
+
+### Expenditures
+
+- **Session 1, Turn 5:** DevilMedlar paid **2 gp, 8 sp** at the Three Lanterns Inn for one private double room, two dinners, and private in-room supper service.
+- **Session 1, Turn 5:** DevilMedlar paid **5 gp** at Mooncup Apothecary for one healer's kit before the party left Brasshaven.
 
 ## Party Members
 
@@ -42,7 +50,7 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 #### Carried / Stored
 
 - **Two Daggers** — Simple melee/thrown weapons. `1d4` piercing damage; finesse, light, thrown (20/60).
-- **Oracle's Satchel** containing a bedroll, blanket, tinderbox, small polished hand mirror, chalk, five sticks of incense, five days of rations, waterskin, 50 feet of hempen rope, writing charcoal, and a small bundle of blank paper.
+- **Oracle's Satchel** containing a bedroll, blanket, tinderbox, small polished hand mirror, chalk, five sticks of incense, 3 days of rations, waterskin, 50 feet of hempen rope, writing charcoal, and a small bundle of blank paper.
 
 #### Currency
 
@@ -51,16 +59,21 @@ DevilMedlar's and Senpai's starting equipment are established for character crea
 
 #### Consumables / Charges
 
-- **Rations:** 5 days
+- **Rations:** 3 days
 - **Incense:** 5 sticks
 
 #### Important / Quest Items
 
 - **Moonmirror Charm** — A small personal shrine token given to Senpai by an unnamed elder before she left Moonmirror Shrine. It has emotional and story significance but grants no combat bonus, has no charges, and has no confirmed hidden function at level 1. Any deeper connection to Moonmirror Shrine, its ceremonial moon-mirror, or future spirit phenomena must be discovered or established through play.
+- **Seraphine Vale's Private Route Copy** — An obligation-free copy of the relevant private route section Seraphine offered at the Three Lanterns Inn. It shows Cinderwash Turnoff, the old road alignment, and the nonpublic location of Suncoil Watch. Accepting the map created no employment, secrecy oath, debt, or Meridian Archive obligation.
 
 #### Expenditures
 
 - **Session 1, Turn 2:** Senpai paid **1 gp** for a private two-person mineral pool at Steam & Stone Baths. DevilMedlar spent no currency on the bath.
+
+## Travel Resource Use
+
+- **Session 1, Turn 5 eastward travel:** DevilMedlar and Senpai each consumed **2 days of rations** while traveling from Brasshaven to the Cinderwash Turnoff area and following the discovered trail. No torches, incense, healer's-kit uses, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, or Veilstep uses were consumed.
 
 ## Continuity Rule
 
