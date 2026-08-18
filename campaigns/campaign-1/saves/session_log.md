@@ -41,3 +41,12 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - Detailed mechanical expressions of the Gold heritage and Dracolyte path remain pending level-1 feature selection.
 - Appearance remains unresolved; Gold heritage does not by itself force scale color, horn shape, eyes, or other physical traits.
 - Current creation step: ability-score assignment.
+
+### Checkpoint 0.4 — Ability scores and focus established
+
+- Standard-array preset selected: **Sacred Flame**.
+- Ability scores: **STR 12, DEX 10, CON 14, INT 8, WIS 13, CHA 15**.
+- Modifiers: **STR +1, DEX +0, CON +2, INT -1, WIS +1, CHA +2**.
+- Dracolyte focus selected: **Golden Ascendant**.
+- Golden Ascendant emphasizes balanced draconic magic and gradual draconic transformation; exact level-1 mechanical expression remains pending.
+- Current creation step: detailed appearance.
