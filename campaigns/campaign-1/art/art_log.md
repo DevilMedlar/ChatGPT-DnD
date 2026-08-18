@@ -19,7 +19,10 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Confirmed adult age:** 20
 - **Gender / pronouns:** Male, he/him
 - **Species / race:** Draginkin
+- **Heritage:** Gold Dragon — fire/radiance affinity
+- **Archetype / path:** Dracolyte / Draconic Acolyte
 - **Appearance:** Detailed physical appearance not established yet.
+- **Continuity note:** Gold heritage establishes ancestry and elemental affinity only. Do not assume gold scales, horn shape, eye color, body build, wings, tail, markings, or other visible traits until the player establishes them.
 
 ## Recurring NPCs
 
@@ -27,7 +30,7 @@ None yet.
 
 ## Signature Equipment & Visual Effects
 
-None yet.
+- Gold Dragon fire/radiance visual effects are not yet aesthetically defined.
 
 ## Locations
 
