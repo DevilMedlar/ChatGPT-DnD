@@ -1,10 +1,10 @@
-# Inventory — Campaign 1
+# Inventory - Campaign 1
 
 ## DevilMedlar
 
 ### Equipped
 
-#### Dawnclaws — Bonded Draconic Gauntlets
+#### Dawnclaws - Bonded Draconic Gauntlets
 
 - **Type:** Matched pair of articulated ritual combat gauntlets; simple melee weapon set; draconic/spellcasting focus.
 - **Worn on:** Both forearms and hands.
@@ -53,10 +53,10 @@
 - **Type:** Small gold-dragon relic of unknown origin; personal keepsake.
 - **Appearance:** Thumb-length fragment resembling a naturally shed gold-dragon scale, held in a simple old wire cage; faint sunburst pattern in reflected light.
 - **Known properties:** Slightly warm under normal circumstances. Since DevilMedlar discovered the fresh Velvet Coil mark on Lantern Road, it has remained noticeably warmer than its normal baseline.
-- **Current state:** Warm and unexamined while DevilMedlar speaks with Nyxara in the north drainage gully.
+- **Current state:** Warm and unexamined at the old culvert approach while DevilMedlar and Nyxara assess a concealed tripline.
 - **Status:** Unidentified. Hidden properties must be discovered through play.
 - **Curse:** None known.
 
 ## Last Turn Sync
 
-- **Session 1 Turn 3:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. Sunscale Shard remains warm.
+- **Session 1 Turn 4:** No equipment lost, gained, damaged, consumed, or exchanged. Currency remains 12 gp; rations 5 days; healer's kit 10 uses; incense 5 sticks. Sunscale Shard remains warm.
