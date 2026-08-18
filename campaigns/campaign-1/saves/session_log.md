@@ -1,6 +1,6 @@
 # Session Log — Campaign 1
 
-Chronological checkpoints for meaningful campaign progress. Keep entries concise enough to reload quickly while preserving decisions, consequences, unresolved threads, and continuity-critical details.
+Chronological checkpoints for gameplay progress. Keep entries concise enough to reload quickly while preserving decisions, rolls, XP, consequences, unresolved threads, and continuity-critical details.
 
 ## Session 0 — Character Creation
 
@@ -114,6 +114,7 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - No attacker is visible yet; the marking appears recent enough that whoever left it may still be nearby.
 - Private adult-homebrew rules expanded: explicitly adult consenting fertility/pregnancy themes, cross-species reproduction, hybrid offspring, inherited traits, and persistent lineage consequences are allowed within platform limits.
 - An assistant-controlled adult supporting companion is enabled and may enter naturally during play; she never overrides DevilMedlar's agency.
+- **XP backfill established later:** +25 XP for this opening discovery and the Sunscale reaction.
 - Current objective: decide how DevilMedlar investigates the shrine, tracks, cult mark, or reacting Sunscale Shard.
 
 ### Checkpoint 1.1 — Two trails from the shrine
@@ -125,4 +126,21 @@ Chronological checkpoints for meaningful campaign progress. Keep entries concise
 - The second person appears more likely to have been observing or following the carver than simply traveling beside them, though motive and allegiance remain unknown.
 - Both trails leave Lantern Road heading north into a dry drainage cut/shallow gully.
 - No resources, HP, spell slots, breath use, or Golden Ascendant use were consumed.
+- **XP backfill established later:** +25 XP for the successful investigation and discovery of the two-trail pattern.
 - Current decision: pursue the trails, investigate the two trail patterns more carefully, set an ambush, head for Vespergate, or take another action.
+
+### Checkpoint 1.2 — The trail bites back
+
+- Persistence repair: numeric XP tracking is now mandatory and synchronized across the active pointer, active game, character sheet, and session log.
+- Current XP after backfill: **50 / 300** toward Level 2.
+- Per-turn persistence rule changed: all live campaign-state files are synchronized after every gameplay turn, including unchanged resource/inventory/art files via explicit sync markers.
+- DevilMedlar chose to follow the two trails immediately into the north drainage gully.
+- Open Survival check: **4 + 3 = 7** against **DC 12**, failure.
+- Fail-forward consequence: loose gravel and hard runoff stone erased the clean trail; DevilMedlar misread the route and entered a narrow bend below an upper shelf rather than catching the likely carver.
+- The second observer revealed herself from above as **Nyxara Veyl**, age **24**, an explicitly adult female tiefling **Veilblade / occult tracker**.
+- Nyxara is wary but not openly hostile. She claims she was independently following the cult-mark carver and says the target moved along the upper shelf toward an old culvert. Her claim is unverified.
+- Nyxara is the first concrete candidate for the enabled assistant-controlled supporting companion, but she has **not** joined the party.
+- No HP, spell slots, Golden Breath uses, Golden Ascendant uses, inventory, currency, or consumables changed.
+- No new XP awarded for the failed roll itself; the consequence has not yet resolved into a separate accomplishment.
+- Current state: **10/10 HP**, **2/2 spell slots**, **Golden Breath 1/1**, **Golden Ascendant 1/1**, **XP 50/300**.
+- Current decision: respond to Nyxara and decide whether to cooperate, question her, distrust her, or continue toward the culvert independently.
