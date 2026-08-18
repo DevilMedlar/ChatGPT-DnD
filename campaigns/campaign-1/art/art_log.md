@@ -21,8 +21,25 @@ Use this file to keep recurring characters, equipment, locations, scars, tattoos
 - **Species / race:** Draginkin
 - **Heritage:** Gold Dragon — fire/radiance affinity
 - **Archetype / path:** Dracolyte / Draconic Acolyte
-- **Appearance:** Detailed physical appearance not established yet.
-- **Continuity note:** Gold heritage establishes ancestry and elemental affinity only. Do not assume gold scales, horn shape, eye color, body build, wings, tail, markings, or other visible traits until the player establishes them.
+- **Dracolyte focus:** Golden Ascendant
+- **Build:** Lean and athletic.
+- **Height:** 5'10".
+- **Skin tone:** Light tan.
+- **Hair:** Red, short and neat.
+- **Eyes:** Gold. They glow while abilities are used; during battle/power-up transformation the glow remains continuous until the transformation ends.
+- **Face:** Mostly human, with subtle draconic eyes/fangs.
+- **Baseline scales:** Barely noticeable crimson-red scale patches, especially around the collarbone, ribs, and hips.
+- **Baseline silhouette:** Mostly human; horns, wings, and tail are not visible at rest.
+- **Battle/power-up horns:** Short, swept-back horns manifest only while empowered.
+- **Battle/power-up wings:** Manifest only while empowered.
+- **Battle/power-up tail:** Manifests only while empowered.
+- **Transformation aesthetic:** Radiant and dramatic with crimson-and-gold draconic power surrounding the humanoid form, following the player-provided reference image for overall vibe.
+- **Continuity caution:** The player-provided picture is an aesthetic reference for the transformation vibe. Do not silently adopt incidental image details that contradict or go beyond the textual canon above.
+
+## Player-Provided Reference Art
+
+- **Reference 1:** DevilMedlar battle/power-up transformation vibe, supplied by the player during Session 0 character creation.
+- The original image is available in the conversation context for this session. If a persistent binary upload becomes available, store a copy in this `art/` root and update this entry with the repository path.
 
 ## Recurring NPCs
 
@@ -30,7 +47,9 @@ None yet.
 
 ## Signature Equipment & Visual Effects
 
-- Gold Dragon fire/radiance visual effects are not yet aesthetically defined.
+- **Gold Dragon affinity:** fire/radiance.
+- **Golden Ascendant transformation:** crimson-and-gold radiant draconic manifestation.
+- Exact spell, breath, aura, and equipment visuals remain to be established.
 
 ## Locations
 
@@ -38,7 +57,7 @@ None yet.
 
 ## Generated Scene Art
 
-No scenes generated yet.
+No generated campaign scenes yet.
 
 For each future scene, record:
 - scene/session identifier
@@ -49,3 +68,4 @@ For each future scene, record:
 - sensuality/nudity presentation when relevant
 - continuity changes introduced by the image
 - whether the player adopted any newly introduced visual detail as canon
+- persistent repository image path when available
