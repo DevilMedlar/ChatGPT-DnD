@@ -31,6 +31,8 @@ DevilMedlar's and Senpai's current carried equipment and resources are tracked b
 
 - **Aurivane Dawnscale Signet** — DevilMedlar's genuine heirloom signet from Clan Aurivane. The crest is recognizable to someone with appropriate knowledge of the clan or its history and can serve as evidence supporting DevilMedlar's claim as its lost heir. When DevilMedlar deliberately channels radiant draconic power, the signet grows faintly warm and its engraved crest gives off a subtle golden-white glow. It grants no combat bonus, has no charges, and does not automatically prove identity to someone unfamiliar with Clan Aurivane. Any deeper connection to Dawnscale Sanctum, clan wards, relics, or other hidden functions remains unknown until established through play.
 - **Merchants' Compact Missing-Caravan Contract Copy** — Contract accepted by DevilMedlar and Senpai in Brasshaven on the morning after their first night at the Three Lanterns Inn. It offers **60 gp base pay total** for locating the three missing Emberglass Road caravans and returning reliable proof of their fate; rescue, cargo recovery, or exceptional danger may justify additional negotiated compensation. No reward has been collected yet.
+- **Bent Copper Finch harness badge** — Small brass badge shaped like a finch, found by Senpai near Cinderwash Turnoff while tracking the missing Copper Finch Courier. Retained as physical evidence linking the caravan to the turnoff and old Suncoil alignment.
+- **Meridian Archive sealing-wax fragment** — Small blue-gray wax fragment found by Senpai trapped beneath a cargo-board edge in the concealed Copper Finch wagon. A surviving partial Meridian Archive mark strongly supports that Seraphine Vale's sealed dispatch case was physically present in this wagon before being removed. The fragment does not identify who removed or opened the case.
 
 ### Expenditures
 
@@ -74,6 +76,7 @@ DevilMedlar's and Senpai's current carried equipment and resources are tracked b
 ## Travel Resource Use
 
 - **Session 1, Turn 5 eastward travel:** DevilMedlar and Senpai each consumed **2 days of rations** while traveling from Brasshaven to the Cinderwash Turnoff area and following the discovered trail. No torches, incense, healer's-kit uses, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, or Veilstep uses were consumed.
+- **Session 1, Turn 6 wagon search:** No tracked consumables or combat resources were spent. DevilMedlar and Senpai used Senpai's ordinary writing charcoal and one sheet from her small bundle of blank paper to leave a secured recovery note at the wagon; the paper bundle remains an uncounted ordinary supply rather than a precisely tracked consumable.
 
 ## Continuity Rule
 
