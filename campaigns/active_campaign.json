@@ -5,8 +5,8 @@
   "phase": "active",
   "session_number": 1,
   "turn_number": 7,
-  "current_step": "awaiting_player_action",
+  "current_step": "awaiting_encounter_decision",
   "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 6 is resolved at the concealed Copper Finch wagon. DevilMedlar and Senpai performed a deeper search, found evidence that the missing Meridian Archive dispatch case had been in this wagon, and found brief human-sized footprints leaving beside the second wagon trail. They documented the scene and left clear recovery markings and a secured note so the Merchants' Compact can later retrieve remaining cargo and the wagon. The strongest continuing trail still leads east toward Suncoil Watch. Both characters are at 180 / 300 XP."
+  "last_sync_note": "Session 1, Turn 7 is in progress at the outer approach to Suncoil Watch. DevilMedlar and Senpai followed the second Copper Finch wagon trail east and confirmed the second wagon inside the occupied ruin, at least one living bound Copper Finch courier, and the missing Meridian Archive dispatch case sitting open with papers removed. Their approach was detected after Stealth 4/12, though Senpai's Perception 15 prevented a completely blind approach. An armed lookout has a bow trained on them; no attack has occurred and the next decision determines negotiation, retreat, deception, or combat. Both remain at 180 / 300 XP with resources full."
 }
