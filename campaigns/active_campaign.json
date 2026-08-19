@@ -4,9 +4,9 @@
   "path": "campaigns/campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 6,
+  "turn_number": 7,
   "current_step": "awaiting_player_action",
-  "xp_current": 150,
+  "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 5 is resolved. DevilMedlar and Senpai accepted Seraphine Vale's obligation-free private route map, stayed overnight at the Three Lanterns Inn, accepted the Merchants' Compact's 60 gp total missing-caravan contract the next morning, bought one healer's kit, and traveled east. At Cinderwash Turnoff, Senpai found Copper Finch evidence leading onto the old Suncoil route. One deliberately damaged and searched Copper Finch wagon is now located in a basalt wash roughly three miles east of the turnoff. No bodies or Archive dispatch case were found, and the strongest continuing trail leads farther east toward Suncoil Watch. Both characters are at 150 / 300 XP."
+  "last_sync_note": "Session 1, Turn 6 is resolved at the concealed Copper Finch wagon. DevilMedlar and Senpai performed a deeper search, found evidence that the missing Meridian Archive dispatch case had been in this wagon, and found brief human-sized footprints leaving beside the second wagon trail. They documented the scene and left clear recovery markings and a secured note so the Merchants' Compact can later retrieve remaining cargo and the wagon. The strongest continuing trail still leads east toward Suncoil Watch. Both characters are at 180 / 300 XP."
 }
