@@ -4,7 +4,7 @@ Campaign 1 is active. Pre-game background canon remains established below. Sessi
 
 ## Current Location
 
-**Emberglass region — concealed Copper Finch wagon east of Cinderwash Turnoff.** DevilMedlar and Senpai followed evidence approximately three miles from Cinderwash Turnoff along the overgrown old Suncoil road alignment and found one deliberately concealed Copper Finch Courier wagon in a shallow basalt wash. No bodies are immediately present. The second Copper Finch wagon and the Meridian Archive dispatch case remain missing. Continuing evidence leads farther east along the old alignment in the general direction of Suncoil Watch.
+**Emberglass region — concealed Copper Finch wagon east of Cinderwash Turnoff.** DevilMedlar and Senpai followed evidence approximately three miles from Cinderwash Turnoff along the overgrown old Suncoil road alignment and found one deliberately concealed Copper Finch Courier wagon in a shallow basalt wash. No bodies are immediately present. The second Copper Finch wagon and the Meridian Archive dispatch case remain missing. A deeper Turn 6 search found evidence that the dispatch case had been physically present in this wagon and that at least one human-sized person left the site on foot. DevilMedlar and Senpai documented and marked the site for later recovery. Continuing evidence still leads farther east along the old alignment in the general direction of Suncoil Watch.
 
 ## Important NPCs
 
@@ -35,6 +35,8 @@ During Session 1, Turn 3, DevilMedlar explicitly trusted Senpai to lead the ques
 During Session 1, Turn 4, after Senpai finished the Meridian Archive questioning, DevilMedlar explicitly told her that watching her protect their information and control the interrogation made him **extremely attracted to her**. His physical arousal was obvious in a non-graphic way. Senpai recognized the reaction, was visibly pleased and flustered, chose not to step away, briefly took DevilMedlar's hand, and treated the reaction as flattering. This does not create new sexual consent, exclusivity, engagement, marriage, or a committed relationship.
 
 During Session 1, Turn 5, DevilMedlar chose a private double room rather than Senpai's previously preferred twin room because he wanted privacy while they ate and talked. He made clear that Senpai could have the bed and that he would sleep elsewhere if she did not want to share it. Senpai independently chose to share the bed on **opposite sides under separate blankets** and refused to make DevilMedlar sleep on the floor or a chair merely to prove respect. Sharing the bed did not grant permission for sexual activity or unconscious touching. No sexual activity occurred. DevilMedlar woke first and watched Senpai sleep peacefully for a short time in an affectionate, nonsexual way without touching or disturbing her.
+
+During Session 1, Turn 6, while searching the concealed Copper Finch wagon, DevilMedlar repeatedly took brief private glances at Senpai when she was focused elsewhere, thinking of her as beautiful and majestic and feeling quietly grateful that he gets to spend this part of his journey with her. This deepens DevilMedlar's already established affection but does not by itself change the pair's relationship status.
 
 ## Locations
 
@@ -94,8 +96,13 @@ Established at the site:
 - Small dried blood traces were present, but no corpse was found at the wagon.
 - The Meridian Archive dispatch case Seraphine described was not present.
 - Boot impressions and the continuing track of the missing second wagon leave farther east along the old Suncoil road alignment, generally toward Suncoil Watch.
+- During Turn 6, DevilMedlar's deeper Investigation check totaled **4** and produced no reliable new deduction or false information.
+- During Turn 6, Senpai's Perception check totaled **15**. She found a small fragment of blue-gray sealing wax bearing a partial Meridian Archive mark trapped beneath a cargo-board edge. This strongly supports that Seraphine's dispatch case had physically been in the recovered wagon before being removed, without identifying who removed or opened it.
+- Senpai also found brief **human-sized foot impressions** leaving the wash beside the second wagon's trail. The prints survive only briefly before hard basalt destroys them. They support that at least one person left the wagon site on foot but do not establish whether that person was a courier, attacker, prisoner, willing participant, or later survivor.
 
-The site establishes deliberate interference with Copper Finch but does not yet identify the attackers, explain the motive, prove the dispatch case was the target, or confirm whether any courier survived.
+DevilMedlar and Senpai deliberately prepared the wagon for later recovery without revealing Suncoil Watch's private location. Beside the old road they built a conspicuous **three-stone cairn**, tied a strip of Copper Finch wagon canvas to it, and scratched a directional arrow into exposed basalt pointing toward the wash. They secured a written recovery note inside the broken driver-box area recording the wagon identity, deliberate axle sabotage, searched cargo, blood traces, missing people, missing Meridian Archive case, and the fact that the continuing trail went east. The note intentionally does not name Suncoil Watch.
+
+The site establishes deliberate interference with Copper Finch but does not yet identify the attackers, explain the motive, prove the dispatch case was the target, or confirm whether any courier remains alive.
 
 ### Suncoil Watch
 
@@ -137,7 +144,9 @@ Current progress:
 
 - Copper Finch Courier's route through Cinderwash Turnoff has been physically confirmed.
 - One of Copper Finch's two wagons has been located concealed and deliberately damaged approximately three miles east along the old Suncoil alignment.
-- No bodies are present at the found wagon.
+- A Meridian Archive sealing-wax fragment now strongly supports that Seraphine's missing dispatch case was physically present in the recovered wagon before being removed.
+- Brief human-sized foot impressions support that at least one person left the recovered wagon site on foot, though identity and circumstances remain unknown.
+- The recovered wagon and remaining cargo have been documented and clearly marked for later Merchants' Compact or authorized recovery without exposing Suncoil Watch by name.
 - The second Copper Finch wagon, the courier personnel, and Seraphine's Archive dispatch case remain missing.
 - The strongest continuing physical trail currently leads farther east along the old Suncoil alignment toward Suncoil Watch.
 
@@ -151,7 +160,7 @@ Seraphine Vale recognizes Clan Aurivane's signet style from historical research 
 
 ### Available Lead — Meridian Archive Leak
 
-Three protected-site exposures in roughly four months share the Eastern Route Collection precision-copying process as a known procedural overlap. No culprit is established. The missing Copper Finch dispatch case contained Suncoil Watch route information but did **not** contain Cinderwash Cut, meaning whoever opens the case may learn Suncoil Watch's location without that fact alone explaining Gravelark Salvage's presence at Cinderwash.
+Three protected-site exposures in roughly four months share the Eastern Route Collection precision-copying process as a known procedural overlap. No culprit is established. The missing Copper Finch dispatch case contained Suncoil Watch route information but did **not** contain Cinderwash Cut. The sealing-wax fragment from the recovered wagon now strongly supports that the dispatch case was physically present there before being removed.
 
 ## Clues / Discoveries
 
@@ -183,6 +192,10 @@ Three protected-site exposures in roughly four months share the Eastern Route Co
 - At Cinderwash Turnoff, DevilMedlar's Survival 5 failed to separate the correct wagon trail visually. Senpai's Keen Hearing and Smell Perception check used advantage, rolled 12 and natural 20, and totaled **23**, revealing dried blood, fresh-enough horse/axle traces, a bent brass finch harness badge, and wagon movement onto the old Suncoil alignment.
 - One Copper Finch wagon was found hidden roughly three miles east of the turnoff. DevilMedlar's Investigation 17 established deliberate axle damage, systematic searching of parcels and cargo spaces, small blood traces, no body at the wagon, and the absence of Seraphine's Archive dispatch case.
 - The second Copper Finch wagon is still missing. Boot impressions and the continuing wagon trail head farther east along the old Suncoil route in the general direction of Suncoil Watch.
+- During Turn 6, DevilMedlar's deeper Investigation check totaled **4**. He produced no reliable new deduction and received no false information.
+- During Turn 6, Senpai's Perception check totaled **15**. She found a blue-gray Meridian Archive sealing-wax fragment beneath a cargo-board edge, strongly supporting that Seraphine's dispatch case had been physically present in the recovered wagon before being removed.
+- Senpai also found brief human-sized foot impressions leaving the wash beside the second wagon's trail. The prints support that at least one person left on foot but do not establish identity, survival status, willingness, captivity, or allegiance.
+- DevilMedlar and Senpai left a three-stone cairn, tied Copper Finch canvas strip, scratched basalt arrow, and secured written recovery note so later authorized recovery can relocate the wagon and remaining cargo. The note records the eastbound continuation but intentionally omits the private name and location of Suncoil Watch.
 
 ## Known Secrets
 
@@ -200,7 +213,7 @@ At age 18, Senpai refused the fixed lifetime role selected for her by shrine tra
 
 ### Copper Finch Investigation
 
-The missing-caravan investigation is now active under a Merchants' Compact contract. One Copper Finch wagon has been found deliberately damaged and concealed east of Cinderwash Turnoff. This is the first confirmed physical discovery of one of the missing caravans during Session 1. The lack of bodies and the continuing trail mean the fate of the couriers remains unresolved.
+The missing-caravan investigation is active under a Merchants' Compact contract. One Copper Finch wagon has been found deliberately damaged and concealed east of Cinderwash Turnoff. This is the first confirmed physical discovery of one of the missing caravans during Session 1. The lack of bodies, the human-sized foot impressions, and the continuing second-wagon trail leave the fate of the couriers unresolved. DevilMedlar and Senpai have documented and marked the recovered wagon so it can later be retrieved without abandoning the active trail.
 
 ## Unresolved Threads
 
@@ -220,7 +233,8 @@ The missing-caravan investigation is now active under a Merchants' Compact contr
 - What happened to Red Fern Provisions, Blue Lark Textiles, and the remaining Copper Finch wagon and couriers?
 - Who deliberately damaged and concealed the found Copper Finch wagon?
 - Why were its cargo spaces and ordinary parcels systematically searched?
-- Where is Seraphine Vale's missing Meridian Archive dispatch case?
+- Where is Seraphine Vale's missing Meridian Archive dispatch case, and who removed it from the recovered wagon?
+- Who left the recovered wagon site on foot, and were they free, captive, attacker, courier, or something else?
 - Are any Copper Finch personnel still alive?
 - Is there a real connection between Cinderwash Cut and the caravan disappearances?
 - Who or what is leaking protected Meridian Archive route information through the Eastern Route Collection copying chain?
