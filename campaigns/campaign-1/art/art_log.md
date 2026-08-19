@@ -2,7 +2,7 @@
 
 This file is the canonical visual index for Campaign 1.
 
-DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. The Session 1 opening scene at Brasshaven's Wayfarer Gate and the Session 1 Turn 2 private-bath scene now have verified reference art below. No other recurring NPC appearance, location appearance, transformation, or visual canon has been established unless listed below.
+DevilMedlar's player-character appearance and primary reference art are established below. Senpai's companion appearance and primary reference art are established below. Verified scene references now include Brasshaven's Wayfarer Gate, the Turn 2 private bath, and the concealed Copper Finch wagon along the old Suncoil alignment. No other recurring NPC appearance, location appearance, transformation, or visual canon has been established unless listed below.
 
 ## Image Workflow
 
@@ -123,6 +123,15 @@ Future images of Senpai should consult this reference together with the textual 
 - **Textual canon still controls:** Senpai's exact birthmark placement, DevilMedlar's pale-gold left-collarbone scar, exact scale placement, exact anatomy, exactly one tail for Senpai, no functional wings for DevilMedlar, the characters' established boundaries and relationship state, and all mechanical or narrative facts.
 - **Inspiration only unless later adopted:** Exact jewelry, pendant shapes, bathhouse signage and decorative banners, precise pool layout, folded-clothing arrangement, lantern placement, poses, lighting, incidental ornamentation, and any details not explicitly established by narration.
 - The image depicts affectionate mutual attraction and shared bathing only; it does not establish sexual activity, blanket consent, marriage, or a committed relationship beyond the relationship state recorded in campaign text.
+
+### Session 1, Turn 5 — Concealed Copper Finch Wagon
+
+- **Repository path:** `campaigns/campaign-1/art/Copper-Finch-wagon.png`
+- **Status:** Verified present in the repository and established as the scene reference for DevilMedlar and Senpai discovering the concealed Copper Finch Courier wagon along the old Suncoil alignment east of Cinderwash Turnoff.
+- **Canonical from the image:** The overall black-basalt volcanic-road atmosphere; DevilMedlar and Senpai standing together as investigators above or near a wrecked/concealed courier wagon; the wagon visibly damaged and surrounded by disturbed parcels and debris; the broad visual impression of a bleak old road continuing east through broken volcanic terrain; DevilMedlar's radiant gold-white visual identity beside Senpai's dark purple and silver-violet identity; and the sense that the pair are actively following evidence rather than casually traveling.
+- **Textual canon still controls:** The exact wagon position in the shallow wash, deliberate axle sabotage, exact cargo/search condition, exact blood evidence, exact direction and number of tracks, the missing second wagon, missing people, missing Meridian Archive dispatch case, the distance from Cinderwash Turnoff, the precise route toward Suncoil Watch, DevilMedlar's exact equipment, Senpai's exact equipment, exactly one tail for Senpai, no functional wings for DevilMedlar, and all investigation results.
+- **Inspiration only unless later adopted:** Exact distant volcanoes, towers or pillars, sunset/sunrise timing, staff ornamentation, clothing cuts, jewelry, wagon emblem rendering, amount and placement of visible blood, landscape geometry, precise crates/parcels, road surface, poses, and incidental scenery or magical effects.
+- The image captures the discovery moment before the deeper Turn 6 forensic search. Later written findings, recovery markings, and moved or collected evidence are governed by session and world-state text rather than frozen by the image.
 
 When additional reference art is added:
 
