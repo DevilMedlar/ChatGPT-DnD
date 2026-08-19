@@ -2,12 +2,12 @@
   "campaign": "campaign-1",
   "phase": "active",
   "session_number": 1,
-  "turn_number": 6,
-  "current_scene": "Concealed Copper Finch wagon on the old Suncoil alignment",
+  "turn_number": 7,
+  "current_scene": "Concealed Copper Finch wagon after thorough search and recovery marking",
   "current_step": "awaiting_player_action",
   "current_location": "Emberglass region — basalt wash east of Cinderwash Turnoff",
   "character_created": true,
-  "xp_current": 150,
+  "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 5 is resolved. DevilMedlar and Senpai accepted Seraphine Vale's obligation-free private route map, spent the night at the Three Lanterns Inn in a private double room with separate-blanket boundaries chosen by Senpai, and accepted the Merchants' Compact's 60 gp total missing-caravan contract the next morning. DevilMedlar purchased a healer's kit, and the pair traveled east. At Cinderwash Turnoff, Senpai's Keen Hearing and Smell Perception 23 found Copper Finch evidence leading onto the old Suncoil alignment. Roughly three miles east they located one Copper Finch wagon deliberately damaged, searched, and concealed in a basalt wash. No bodies or Archive dispatch case were found; the second wagon and continuing tracks lead farther east generally toward Suncoil Watch. Both characters are at 150 / 300 XP with combat resources full."
+  "last_sync_note": "Session 1, Turn 6 is resolved. DevilMedlar thoroughly searched the concealed Copper Finch wagon while Senpai assisted. DevilMedlar Investigation 4 produced no reliable new deduction; Senpai Perception 15 found a fragment of blue-gray Meridian Archive sealing wax beneath a cargo-board edge and brief human-sized foot impressions leaving the wash beside the second wagon trail, supporting that the missing dispatch case had been in this wagon and that at least one person left the site on foot, without proving whether willingly or under guard. DevilMedlar and Senpai documented the wagon, remaining cargo, blood, axle sabotage, missing case, and eastbound trail; they left a secured recovery note and marked a retrieval route from the old road with a cairn, tied wagon-canvas strip, and scratched directional mark. The strongest trail still leads east toward Suncoil Watch. Both characters are at 180 / 300 XP with combat resources full."
 }
