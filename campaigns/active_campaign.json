@@ -1,12 +1,12 @@
 {
-  "active_campaign": "campaign-1",
-  "campaign_number": 1,
-  "path": "campaigns/campaign-1",
-  "phase": "active",
-  "session_number": 1,
-  "turn_number": 7,
-  "current_step": "awaiting_encounter_decision",
-  "xp_current": 180,
+  "active_campaign": "campaign-2",
+  "campaign_number": 2,
+  "path": "campaigns/campaign-2",
+  "phase": "setup",
+  "session_number": 0,
+  "turn_number": 0,
+  "current_step": "awaiting_character_creation",
+  "xp_current": 0,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 7 is in progress at the outer approach to Suncoil Watch. DevilMedlar and Senpai followed the second Copper Finch wagon trail east and confirmed the second wagon inside the occupied ruin, at least one living bound Copper Finch courier, and the missing Meridian Archive dispatch case sitting open with papers removed. Their approach was detected after Stealth 4/12, though Senpai's Perception 15 prevented a completely blind approach. An armed lookout has a bow trained on them; no attack has occurred and the next decision determines negotiation, retreat, deception, or combat. Both remain at 180 / 300 XP with resources full."
+  "last_sync_note": "Campaign 2 is now active. It was created as a fresh isolated campaign using only reusable framework and mechanics; no Campaign 1 canon was imported. Character creation is awaiting player input."
 }
