@@ -1,6 +1,6 @@
 # Character Sheet — Campaign 1
 
-**Status:** Campaign play active. Session 1, Turn 5 resolved; awaiting the next player action.
+**Status:** Campaign play active. Session 1, Turn 6 resolved; awaiting the next player action.
 
 DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, level-1 ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, level-1 ancestry/class features, equipment summary, appearance, primary reference art, and current relationship continuity.
 
@@ -50,7 +50,7 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Advancement
 
-- **XP:** 150
+- **XP:** 180
 - **Next-level threshold:** 300 XP
 
 ## Equipment Summary
@@ -62,8 +62,10 @@ DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 - **Traveler's Clothes**
 - **Explorer's Pack**
 - **Clan Aurivane travel cloak**
-- **Healer's kit** — 10 uses at the end of Turn 5.
+- **Healer's kit** — 10 uses at the end of Turn 6.
 - **Merchants' Compact Missing-Caravan Contract Copy**
+- **Bent Copper Finch harness badge** — retained as physical evidence from Cinderwash Turnoff.
+- **Meridian Archive sealing-wax fragment** — retained as physical evidence from the concealed Copper Finch wagon.
 - **Aurivane Dawnscale Signet** — genuine Clan Aurivane heirloom; provides lineage/story utility and a subtle radiant reaction but no combat bonus at level 1. Any deeper function remains undiscovered.
 - **Currency:** 2 gp, 7 sp
 
@@ -136,6 +138,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 - During Session 1, Turn 3, DevilMedlar explicitly trusted Senpai to lead the questioning of Seraphine Vale and to control what information the pair revealed. This is established as a meaningful act of trust in Senpai's judgment.
 - During Session 1, Turn 4, DevilMedlar told Senpai that watching her control the interrogation and protect their information made him **extremely attracted to her**. His physical arousal toward Senpai was visibly apparent in a non-graphic way. This establishes a stronger immediate physical/romantic reaction but does not create any new consent, ownership, engagement, marriage, or relationship status.
 - During Session 1, Turn 5, DevilMedlar chose a private double room because he wanted privacy for dinner and conversation and explicitly offered Senpai sole use of the bed while he slept elsewhere if she did not want to share it. Senpai independently chose to share the bed on opposite sides beneath separate blankets. DevilMedlar respected the arrangement and no sexual activity occurred. He woke before Senpai and watched her sleep peacefully for a short time in an affectionate, nonsexual way without touching or disturbing her.
+- During Session 1, Turn 6, while searching the concealed Copper Finch wagon, DevilMedlar repeatedly took brief private glances at Senpai when she was focused elsewhere, thinking of her as beautiful and majestic and feeling quietly grateful that he gets to spend this part of his journey with her. This deepens the already established affection on DevilMedlar's side but does not by itself change the pair's relationship status.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
@@ -157,7 +160,7 @@ Senpai was raised and trained at **Moonmirror Shrine**, a secluded kitsune sanct
 
 When Senpai reached adulthood at 18, the shrine council expected her to accept a fixed lifetime role chosen for her by tradition. The role itself was not inherently abusive, but Senpai rejected the idea that ancestry, talent, or institutional expectation should decide the shape of her entire life. She refused the appointment and left Moonmirror Shrine by her own choice.
 
-Before she departed, an unnamed elder who had helped train her quietly gave Senpai a small **Moonmirror Charm**, telling her only that choosing her own road did not erase where she came from. Senpai has spent the following two years traveling, studying spirits and magic outside the shrine's doctrine, learning how easily people confuse superstition with truth, and deciding for herself what kind of oracle she wants to become.
+Before she departed, an unnamed elder who had helped train Senpai quietly gave her a small **Moonmirror Charm**, telling her only that choosing her own road did not erase where she came from. Senpai has spent the following two years traveling, studying spirits and magic outside the shrine's doctrine, learning how easily people confuse superstition with truth, and deciding for herself what kind of oracle she wants to become.
 
 Several parts of her past remain unresolved rather than predetermined: why the shrine council considered her future role especially important, what became of the unnamed elder who supported her departure, whether the Moonmirror Charm has any deeper purpose, and how Moonmirror Shrine would receive her if she returned.
 
@@ -186,7 +189,7 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 
 ## Advancement
 
-- **XP:** 150
+- **XP:** 180
 - **Next-level threshold:** 300 XP
 
 ## Equipment Summary
