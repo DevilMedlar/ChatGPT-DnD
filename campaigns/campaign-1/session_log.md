@@ -319,3 +319,43 @@ Recent-enough boot impressions and the continuing track of the missing second wa
 **XP award:** DevilMedlar gains **70 XP** and Senpai gains **70 XP** for formally taking responsibility for the missing-caravan investigation, following physical evidence from Cinderwash Turnoff, and locating the first confirmed Copper Finch wagon and evidence of deliberate interference. Both are now at **150 / 300 XP** toward level 2.
 
 **Turn result:** The 60 gp Merchants' Compact missing-caravan contract is now active. Seraphine's obligation-free private map has been accepted. One Copper Finch wagon has been found concealed and deliberately damaged; no bodies are present, the Archive dispatch case is missing, the second wagon is still missing, and the strongest continuing physical trail leads farther east along the old Suncoil alignment toward Suncoil Watch. The party has not yet determined who caused the disappearances or whether survivors remain.
+
+### Session 1, Turn 6 — Deep Search and Recovery Marking
+
+**Starting location:** Emberglass region — concealed Copper Finch wagon in a basalt wash east of Cinderwash Turnoff.
+
+DevilMedlar chose to search the wagon and surrounding wash more thoroughly before following the eastbound trail. While searching, he repeatedly took brief private glances at Senpai when she was focused elsewhere, admiring how beautiful and majestic she looked while working and feeling quietly grateful that he gets to spend this part of his journey with her. This deepens DevilMedlar's established affection but does not change the pair's relationship status or establish any new reciprocal feeling beyond what Senpai has already expressed.
+
+DevilMedlar also explicitly wanted the findings written down and the wagon marked so that a later recovery team could relocate it and retrieve remaining cargo or evidence rather than forcing the party to abandon the active trail.
+
+#### Deep search
+
+- **DevilMedlar Investigation:** d20 = 5, Intelligence -1, total **4**. Failure. DevilMedlar did not produce a reliable new deduction from his own deeper forensic search and received no false information.
+- **Senpai Perception:** d20 = 12, Perception +3, total **15**. Success. This search relied primarily on visual scene examination rather than hearing or smell, so Keen Hearing and Smell did not grant advantage.
+
+Senpai found a **small blue-gray fragment of sealing wax** trapped beneath the edge of a cargo board. A surviving portion bears part of the Meridian Archive's mark. The fragment strongly supports that Seraphine Vale's sealed dispatch case had physically been in this recovered wagon before being removed. The fragment does not prove who removed the case, whether it was opened here, or whether the case was the motive for the attack. DevilMedlar retained the wax fragment as physical evidence.
+
+Senpai also found brief **human-sized foot impressions** leaving the wash beside the continuing track of the second Copper Finch wagon. The prints persist only a short distance before the hard basalt destroys them. They support that at least one person left this wagon site on foot, but the evidence cannot establish whether the person was a Copper Finch courier, attacker, captive, willing participant, or later survivor, and it does not prove that anyone remains alive now.
+
+#### Recovery documentation and markings
+
+DevilMedlar and Senpai documented the wagon's identity, deliberate axle sabotage, searched cargo compartments, remaining parcels and cargo, blood traces, absent horses and people, missing Meridian Archive dispatch case, missing second wagon, and the continuing eastbound trail.
+
+To let a later Merchants' Compact or other authorized recovery team relocate the site without publicly revealing Suncoil Watch, they created the following retrieval markers:
+
+- A conspicuous **three-stone cairn** beside the old Suncoil road near the point where the wash becomes accessible.
+- A strip of Copper Finch wagon canvas tied visibly to the cairn.
+- A directional arrow scratched into exposed basalt pointing from the old road toward the concealed wash.
+- A written recovery note secured inside the wagon's broken driver-box area. The note identifies the Copper Finch wagon, records the known sabotage/search/blood/missing-person and missing-case findings, states that the continuing trail went east, and intentionally does **not** name Suncoil Watch or reproduce Seraphine's private route information.
+
+The pair used Senpai's ordinary writing charcoal and one sheet from her existing bundle of blank paper. The paper bundle remains an uncounted ordinary supply rather than a precisely tracked consumable.
+
+The previously found bent brass Copper Finch harness badge and the new Meridian Archive wax fragment are retained as compact physical evidence. Remaining cargo and the disabled wagon are left in place for later recovery rather than burdening the active pursuit.
+
+**Ending location:** Emberglass region — concealed Copper Finch wagon in a basalt wash east of Cinderwash Turnoff, with the site documented and marked for later recovery.
+
+**Resources:** No HP, spell slots, Dragon Ki, Radiant Breath uses, Veiled Form uses, Veilstep uses, healer's-kit uses, torches, incense, rations, or currency were spent. Ordinary charcoal and one sheet of uncounted blank paper were used for the recovery note. Combat resources remain full.
+
+**XP award:** DevilMedlar gains **30 XP** and Senpai gains **30 XP** for preserving recoverable evidence, tying the Archive dispatch case more firmly to the recovered wagon, identifying limited evidence that a person left the site on foot, and creating a responsible recovery record without exposing the private Suncoil location. Both are now at **180 / 300 XP** toward level 2.
+
+**Turn result:** The recovered Copper Finch wagon is fully documented and marked for later retrieval. Evidence now strongly supports that Seraphine's Meridian Archive dispatch case was in this wagon before being removed. At least one human-sized person left the wagon site on foot, but identity, allegiance, freedom, and survival remain unknown. The strongest continuing evidence remains the second wagon trail farther east along the old Suncoil alignment toward Suncoil Watch.
