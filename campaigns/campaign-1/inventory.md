@@ -73,7 +73,7 @@ DevilMedlar's and Senpai's current carried equipment and resources are tracked b
 
 #### Important / Quest Items
 
-- **Moonmirror Charm** — A small personal shrine token given to Senpai by an unnamed elder before she left Moonmirror Shrine. It has emotional and story significance but grants no combat bonus, has no charges, and has no confirmed hidden function at level 1. Any deeper connection to Moonmirror Shrine, its ceremonial moon-mirror, or future spirit phenomena must be discovered or established through play.
+- **Moonmirror Charm** — A small personal shrine token given to Senpai by an unnamed elder before she left Moonmirror Shrine. It has emotional and story significance but grants no combat bonus, has no charges, and has no confirmed hidden function at the current level. Any deeper connection to Moonmirror Shrine, its ceremonial moon-mirror, or future spirit phenomena must be discovered or established through play.
 - **Seraphine Vale's Private Route Copy** — An obligation-free copy of the relevant private route section Seraphine offered at the Three Lanterns Inn. It shows Cinderwash Turnoff, the old road alignment, and the nonpublic location of Suncoil Watch. Accepting the map created no employment, secrecy oath, debt, or Meridian Archive obligation.
 
 #### Expenditures
