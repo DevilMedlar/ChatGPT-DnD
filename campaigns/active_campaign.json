@@ -1,12 +1,12 @@
 {
-  "active_campaign": "campaign-2",
-  "campaign_number": 2,
-  "path": "campaigns/campaign-2",
-  "phase": "setup",
-  "session_number": 0,
-  "turn_number": 0,
-  "current_step": "awaiting_character_creation",
-  "xp_current": 0,
-  "xp_next_level": 300,
-  "last_sync_note": "Campaign 2 is now active. It was created as a fresh isolated campaign using only reusable framework and mechanics; no Campaign 1 canon was imported. Character creation is awaiting player input."
+  "active_campaign": "campaign-1",
+  "campaign_number": 1,
+  "path": "campaigns/campaign-1",
+  "phase": "active",
+  "session_number": 1,
+  "turn_number": 9,
+  "current_step": "level_2_resolved_awaiting_player_action",
+  "xp_current": 300,
+  "xp_next_level": 900,
+  "last_sync_note": "Campaign 1 is the campaign currently in play. Session 1, Turn 8 is resolved at Suncoil Watch. DevilMedlar and Senpai have completed level-2 advancement and are awaiting the next player action before exploring the opened Suncoil descent. DevilMedlar is 14/18 HP with 1/3 Dragon Ki and Radiant Breath 2/2; Senpai is 14/14 HP with 3/3 1st-level spell slots and 2/2 Veilstep uses. Four hostile prisoners remain bound, Rian Kest remains restrained and not yet cleared, recovered evidence is secured, and both characters are at 300 XP with the next threshold at 900. Campaign 2 remains isolated in its own folder and is not modified by this pointer change."
 }
