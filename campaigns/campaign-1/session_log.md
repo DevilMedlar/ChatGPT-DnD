@@ -6,7 +6,7 @@ Gameplay has begun.
 
 - Keep this file chronological.
 - Append a new checkpoint after each resolved gameplay turn.
-- Record important player choices, relevant rolls, consequences, XP awards, scene transitions, discoveries, combat outcomes, relationship changes, and other continuity-critical events.
+- Record important player choices, relevant rolls, consequences, XP awards, scene transitions, discoveries, relationship changes, combat outcomes, and other continuity-critical events.
 - Do not replace older checkpoints merely to make the file shorter or tidier.
 - If a prior checkpoint contains an actual error, make the smallest practical correction and preserve the fact that a correction occurred when useful.
 - Do not reconstruct missing gameplay history from deleted files, repository history, previous chats, memory, or other campaigns unless the player explicitly requests a specific import.
@@ -120,8 +120,8 @@ A basic copy of the relevant Emberglass Road map costs 5 sp; no map was purchase
 The public file identified the missing caravans:
 
 - **Red Fern Provisions:** three wagons; disappeared 12 days before Session 1 began; last recorded at **Ashmile Marker 14**.
-- **Blue Lark Textiles:** four wagons; disappeared 7 days before Session 1 began; last reported passing **Glasswind Fork**.
-- **Copper Finch Courier:** two wagons; disappeared 3 days before Session 1 began; last checked in at **Cinderwash Turnoff**.
+- **Blue Lark Textiles:** four-wagon caravan; disappeared 7 days before Session 1 began; last reported passing **Glasswind Fork**.
+- **Copper Finch Courier:** two-wagon caravan; disappeared 3 days before Session 1 began; last checked in at the **Cinderwash Turnoff**.
 
 The file contained no verified ransom demand, recovered wreckage, confirmed survivors, or bodies. Copper Finch's last check-in at Cinderwash Turnoff strengthened, but did not prove, a connection between the disappearances and Cinderwash Cut.
 
@@ -359,3 +359,145 @@ The previously found bent brass Copper Finch harness badge and the new Meridian 
 **XP award:** DevilMedlar gains **30 XP** and Senpai gains **30 XP** for preserving recoverable evidence, tying the Archive dispatch case more firmly to the recovered wagon, identifying limited evidence that a person left the site on foot, and creating a responsible recovery record without exposing the private Suncoil location. Both are now at **180 / 300 XP** toward level 2.
 
 **Turn result:** The recovered Copper Finch wagon is fully documented and marked for later retrieval. Evidence now strongly supports that Seraphine's Meridian Archive dispatch case was in this wagon before being removed. At least one human-sized person left the wagon site on foot, but identity, allegiance, freedom, and survival remain unknown. The strongest continuing evidence remains the second wagon trail farther east along the old Suncoil alignment toward Suncoil Watch.
+
+### Session 1, Turn 7 — Suncoil Watch Combat and Courier Rescue
+
+**Starting location:** Emberglass region — concealed Copper Finch wagon and the old Suncoil alignment eastward.
+
+DevilMedlar chose to follow the second wagon's trail immediately toward Suncoil Watch. The old road continued roughly four miles farther east from the concealed first wagon, climbing through black basalt and increasingly obvious ancient Suncoil masonry.
+
+Senpai detected horse, smoke, and fresh human scent before the site became fully visible.
+
+- **Senpai Perception with Keen Hearing and Smell:** advantage rolls d20 = 3 and 12, Perception +3, total **15**. Success. She detected signs of people ahead and warned DevilMedlar.
+- **DevilMedlar Stealth:** d20 = 2, Dexterity +2, total **4**.
+- **Senpai Stealth:** d20 = 8, Stealth +4, total **12**.
+
+The approach did not achieve surprise. A lookout on the ruined upper parapet spotted DevilMedlar and challenged the pair. Inside Suncoil Watch the party could see the second Copper Finch wagon, a living bound courier, an opened blue-gray Meridian Archive dispatch case with papers spread beside it, and three additional armed ground hostiles. Neither side was surprised.
+
+#### DevilMedlar's declaration and initiative
+
+Before attacking, DevilMedlar explicitly told Senpai **"I love you"** for the first time and then chose to go all out against the hostile group. The player chose to roll all of DevilMedlar's dice personally for this combat; ChatGPT rolled Senpai and enemy/NPC dice openly.
+
+DevilMedlar rolled a **natural 20** for initiative, +2, total **22**. By the player's explicit direction, initiative order placed **DevilMedlar first, Senpai second, then the hostiles**.
+
+#### Round 1
+
+DevilMedlar rushed the nearest ground hostile.
+
+- **Two-handed Sunwood Quarterstaff attack:** player roll d20 = 17, +4, total **21**. Hit.
+- **Damage:** d8 = 6, +2, total **8 bludgeoning**. The first ground hostile was dropped.
+- **Bonus-action claw attack:** player roll d20 = 19, +4, total **23**. Hit against the next reachable ground hostile.
+- **Claw damage:** d4 = 4, +2, total **6 slashing**.
+- DevilMedlar spent **1 Dragon Ki** on **Radiant Fang**, dealing d4 = 3 additional radiant damage. The second ground hostile was dropped. Dragon Ki fell from 2/2 to **1/2**.
+
+Senpai then attacked the lookout with **Moonfire Bolt** and hit for **7 psychic damage**, leaving the lookout wounded but active.
+
+The lookout fired at DevilMedlar and hit for **4 piercing damage**, reducing DevilMedlar from 9/9 to **5/9 HP**. Senpai remained unhurt at 9/9 HP.
+
+The final active ground hostile seized the living bound Copper Finch courier and threatened the captive with a knife.
+
+#### Round 2
+
+DevilMedlar pointed Senpai toward the wounded lookout and chose to rescue the hostage personally. He spent his final **1 Dragon Ki** on **Wyrmstep (Dash)** to cross the courtyard while preserving his Attack action.
+
+- **Two-handed Sunwood Quarterstaff attack:** player roll **natural 20**, +4. Critical hit.
+- **Critical damage:** 2d8 +2 = 8 + 7 + 2 = **17 bludgeoning**.
+
+The hostage-taker was dropped before the captive was harmed. Dragon Ki fell to **0/2**.
+
+Senpai attacked the lookout with Moonfire Bolt, rolling 2 + 4 = **6**, missing. The wounded lookout returned fire with 5 + 3 = **8**, missing.
+
+#### Round 3
+
+Rather than attack again, DevilMedlar used his movement to reach the still-bound courier, put his own body between the captive and the parapet, and guide the courier behind solid basalt cover.
+
+Senpai then finished the fight:
+
+- **Moonfire Bolt:** d20 = 13 +4 = **17**, hit.
+- **Damage:** d8 = **4 psychic**.
+
+The already-wounded lookout dropped behind the parapet. Combat ended.
+
+#### Immediate aftermath and relationship development
+
+DevilMedlar ended combat at **5/9 HP**, Dragon Ki **0/2**, Radiant Breath **2/2**. Senpai remained **9/9 HP** and had spent no 1st-level spell slots.
+
+The courier remained alive and bound behind cover. The opened Archive dispatch case and second Copper Finch wagon remained at the site.
+
+After combat, Senpai directly addressed DevilMedlar's pre-fight confession. She did **not** say "I love you" back merely because he had said it first. By her own agency, she took his hand, said that watching him risk himself in the fight had frightened her, and explicitly told him that she is **falling for him**. This deepens their mutual romantic development without establishing engagement, marriage, exclusivity, sexual consent, or permanent partnership.
+
+**XP award:** DevilMedlar gains **100 XP** and Senpai gains **100 XP** for following the Copper Finch trail into danger, defeating the hostile cell, protecting the captive, recovering the second wagon lead, and materially advancing the caravan investigation. Both reach **280 / 300 XP**.
+
+**Ending location:** Emberglass region — Suncoil Watch outer courtyard, immediately after combat.
+
+**Turn result:** All four visible hostiles are down, the living courier is safe from immediate harm, the second Copper Finch wagon is located, and the opened Meridian Archive case is at Suncoil Watch. The site has not yet been thoroughly searched and the courier's role remains unverified.
+
+### Session 1, Turn 8 — Securing Prisoners and Suncoil Watch Evidence Sweep
+
+**Starting location:** Emberglass region — Suncoil Watch outer courtyard immediately after combat.
+
+DevilMedlar explicitly refused to assume that the rescued courier was innocent merely because the hostile cell had held him captive. He kept the courier's existing wrist restraints in place and added leg restraints as a precaution against the possibility that the surviving courier might have participated in the interception or be the relevant traitor. DevilMedlar then ordered a complete post-combat security and evidence sweep: bind the defeated hostiles, search every person, search for additional people, thoroughly search the area, gather useful evidence, and decide what should be carried versus left for authorized recovery.
+
+#### Restraints and survival checks
+
+All four defeated hostiles were found **alive**. They were disarmed and securely restrained using hostile belts/cord and wagon/cargo tie-down material already present at the site. No party rope was consumed. They were spaced under cover away from their weapons.
+
+The rescued courier's Copper Finch employee tag identifies him as **Rian Kest**, human male age 28. Rian remained bound at wrists and ankles pending verification. An ordinary search found a routine Copper Finch route ledger, 4 sp, and an ordinary utility knife. It found **no hostile affiliation token, Archive correspondence, hidden route sheet, or other obvious incriminating item**. This reduces immediate suspicion somewhat but does not clear him.
+
+A methodical search of the hostiles found ordinary weapons and armor plus several important items:
+
+- All four carried matching **blackened-brass tokens** stamped with the same unidentified hooked three-line sigil.
+- The former hostage-taker carried a ring of four ordinary-looking keys.
+- A folded written order on the former hostage-taker directs the cell to take the Finch wagon off-road, search everything, prioritize the **blue case over coin**, keep one courier alive until the old stair is confirmed, and bring the case plus a stone crate to Suncoil Watch. It is signed only **K**.
+- Mixed coin totaling **3 gp, 9 sp** was recovered from the hostile group. Because it may include stolen caravan money or other evidentiary property, it was sealed as suspect property and **not added to party currency**.
+
+Senpai's detailed person-search Investigation roll was d20 = 8 +0 = **8**. She found the obvious carried items above but no reliable additional hidden compartment, secondary identity document, concealed correspondence, or other secret personal evidence.
+
+The written K order resolves the immediate reason Copper Finch's parcels and cargo spaces were systematically searched: this hostile cell was specifically looking for Seraphine's blue Meridian Archive dispatch case. It does not identify K or establish the wider organization.
+
+#### Search for additional people
+
+Senpai conducted a broader sensory sweep of the immediately accessible above-ground ruins.
+
+- **Keen Hearing and Smell Perception:** advantage rolls d20 = 3 and 12, +3, total **15**.
+
+No additional person was located above ground. Senpai did detect **recent human scent and lamp-oil traces leading toward the old Suncoil descent**. She could not establish from this check whether someone is still below, how many people may have passed there, or whether the trace belongs to hostile personnel, couriers, or someone else.
+
+#### Thorough site search
+
+- **Senpai Investigation:** d20 = 15 +0 = **15**. Success.
+
+The party found one Gravelark Salvage relic crate still bearing Orin Pell's shipment marking as **crate 5 of 6**. Its contents are Cinderwash-style dragon-sun stone fragments. This proves that at least one of the two crates that failed to reach Orin Pell was diverted to Suncoil Watch. Crate 6 remains missing.
+
+The opened Meridian Archive dispatch case was gathered and checked against its internal index. **Six of eight indexed folios remain.** Two are missing:
+
+- **Suncoil Watch lower-access survey**
+- **Comparative Suncoil seal-geometry notes**
+
+The missing selection is specifically useful for understanding or entering the lower portions of Suncoil Watch, strongly indicating selective removal rather than random looting. Who currently possesses the two folios remains unknown.
+
+The old Suncoil Watch **sealed descent exists and has been opened**.
+
+Senpai inspected the threshold and Cinderwash fragments magically:
+
+- **Senpai Arcana:** d20 = 19 +2 = **21**. Strong success.
+
+She established that the Watch descent and the Cinderwash relic fragments use the same broader **Suncoil ward architecture/magical tradition**. This strengthens their shared cultural and magical origin beyond mere visual similarity. It does **not** prove a physical underground tunnel connection between Cinderwash Cut and Suncoil Watch. The immediate Watch threshold's old active ward is currently **broken or dormant**, and Senpai did not identify an active magical trap at the immediate entrance.
+
+#### Evidence and property disposition
+
+DevilMedlar and Senpai deliberately separated proof from uncertain property rather than treating everything as personal loot.
+
+They retained as compact/sensitive evidence: the recovered Meridian Archive dispatch case with its six remaining folios, the written order signed K, all four matching hostile affiliation tokens, the hostile key ring, the Pell crate 5-of-6 shipping tag plus one representative Cinderwash fragment, the suspect-property coin pouch, and Rian Kest's route ledger temporarily while his role is assessed.
+
+They left secured for authorized recovery: the bulk of Pell crate 5/6 and its stone contents, the second Copper Finch wagon and remaining parcels/cargo, the two horses, ordinary hostile weapons and armor, and ordinary camp gear. Weapons were separated from prisoners and secured out of immediate reach. The party did not add recovered suspect money to spendable funds.
+
+No party rope, healer's-kit uses, spell slots, Radiant Breath uses, currency, rations, torches, or other tracked consumables were spent during the sweep.
+
+**Resources at end:** DevilMedlar **5/9 HP**, Dragon Ki **0/2**, Radiant Breath **2/2**. Senpai **9/9 HP**, 1st-level spell slots **2/2**.
+
+**XP award:** DevilMedlar gains **20 XP** and Senpai gains **20 XP** for securing the scene, preserving prisoners and evidence, resolving the reason for the Copper Finch cargo search, finding one diverted Pell crate, recovering the opened case, identifying its missing folios, and confirming the accessible Suncoil descent. Both reach **300 XP**, triggering **level-2 advancement** before further exploration. The next recorded XP threshold is 900.
+
+**Ending location:** Emberglass region — Suncoil Watch outer courtyard and opened descent.
+
+**Turn result:** The immediate Suncoil Watch surface is secured. Four hostile prisoners and one still-unverified Copper Finch survivor are restrained. The party has decisive evidence that Copper Finch was diverted and searched for the blue Archive case under orders signed K, one missing Pell relic crate is recovered at the Watch, and the opened case is recovered with two lower-access folios missing. No additional surface occupant was found, but recent human scent and lamp-oil traces lead toward the opened descent. Level-2 advancement is now pending before further exploration.
