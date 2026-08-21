@@ -1,8 +1,8 @@
 # Character Sheet — Campaign 1
 
-**Status:** Campaign play active. Session 1, Turn 8 resolved at Suncoil Watch. Both characters have reached 300 XP and **level-2 advancement is pending** before further exploration.
+**Status:** Campaign play active. Session 1, Turn 8 resolved at Suncoil Watch. Both characters have completed level-2 advancement and are awaiting the next player action before further exploration.
 
-DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level-1 derived combat statistics, ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level-1 derived statistics, ancestry/class features, equipment summary, appearance, primary reference art, and current relationship continuity. Neither character's level-2 HP increase or new level-2 class progression has been assigned yet.
+DevilMedlar's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established. Senpai has chosen to join as an active ChatGPT-controlled companion and has established ancestry, class, background, history, ability scores, skill proficiencies, level, derived statistics, ancestry/class features, equipment summary, appearance, primary reference art, and current relationship continuity.
 
 ## DevilMedlar (player)
 
@@ -13,7 +13,7 @@ DevilMedlar's player-character identity, ancestry, class, background, history, a
 - **Draconic affinity:** Radiant
 - **Class / homebrew class:** Dragon Ascendant
 - **Background:** Lost Dragon Clan Heir
-- **Level:** 1 — **level 2 pending advancement resolution**
+- **Level:** 2
 
 ## Background History
 
@@ -38,12 +38,12 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 
 ## Combat Statistics
 
-- **HP / Max HP:** 5 / 9 at the end of Turn 8
-- **Hit Die:** 1d8
+- **HP / Max HP:** 14 / 18 after level-2 advancement; DevilMedlar retained the existing Turn 7 wound rather than receiving a full heal from leveling.
+- **Hit Dice:** 2d8
 - **Temporary HP:** 0
 - **Armor Class:** 14 while unarmored and not using a shield, from Ascendant Defense (`10 + Dexterity modifier + Wisdom modifier`)
 - **Initiative:** +2
-- **Speed:** 30 ft.
+- **Speed:** 35 ft. while unarmored and not using a shield, from level-2 Ascendant Stride
 - **Proficiency Bonus:** +2
 - **Passive Perception:** 12
 - **Saving Throw Proficiencies:** Dexterity, Wisdom
@@ -51,9 +51,9 @@ Standard array assigned to support the Dragon Ascendant's mobile martial and rad
 ## Advancement
 
 - **XP:** 300
-- **Level-2 threshold:** reached
+- **Current level:** 2
 - **Next recorded threshold:** 900 XP for level 3
-- **Advancement state:** Level 2 is pending resolution; level-2 HP and class progression have not yet been assigned.
+- **Level-2 HP roll:** player rolled `d8 = 8`; Constitution +1 produced **+9 maximum HP**, increasing maximum HP from 9 to 18 and current HP from 5 to 14 without removing the preexisting wound.
 
 ## Equipment Summary
 
@@ -71,7 +71,7 @@ DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 - **Recovered Meridian Archive dispatch case and surviving folios** — sensitive recovered evidence; two indexed Suncoil-access folios are missing.
 - **Order signed K and hostile affiliation tokens** — retained as evidence from Suncoil Watch.
 - **Pell crate 5-of-6 tag and representative Cinderwash fragment** — retained as proof that one missing Pell crate reached Suncoil Watch.
-- **Aurivane Dawnscale Signet** — genuine Clan Aurivane heirloom; provides lineage/story utility and a subtle radiant reaction but no combat bonus at level 1. Any deeper function remains undiscovered.
+- **Aurivane Dawnscale Signet** — genuine Clan Aurivane heirloom; provides lineage/story utility and a subtle radiant reaction but no combat bonus. Any deeper function remains undiscovered.
 - **Currency:** 2 gp, 7 sp. Suspect-property money recovered from hostiles is tracked separately and is not spendable party currency.
 
 ## Skills
@@ -95,7 +95,7 @@ No expertise established.
 
 ## Level-1 Dragon Ascendant Chassis
 
-The Dragon Ascendant combines Dragon Monk body discipline with Dragon Apostle radiant mysticism. At level 1, it is intentionally a mobile unarmored martial-mystic rather than a full martial class plus a full caster stacked together.
+The Dragon Ascendant combines Dragon Monk body discipline with Dragon Apostle radiant mysticism. At level 1, it begins as a mobile unarmored martial-mystic rather than a full martial class plus a full caster stacked together.
 
 - **Hit Die:** `d8` per Dragon Ascendant level.
 - **Armor Training:** None. The class is designed around Ascendant Defense rather than armor.
@@ -103,19 +103,26 @@ The Dragon Ascendant combines Dragon Monk body discipline with Dragon Apostle ra
 - **Saving Throws:** Dexterity and Wisdom.
 - **Ascendant Defense:** While wearing no armor and using no shield, AC equals `10 + Dexterity modifier + Wisdom modifier`. Current AC: 14.
 - **Draconic Martial Arts:** DevilMedlar may use Dexterity instead of Strength for attack and damage rolls with unarmed strikes, natural weapons, and simple melee weapons that lack the heavy or two-handed properties. His unarmed strikes and natural claws use a `d4` damage die unless a larger die already applies. After taking the Attack action with one of those attacks, he may make one unarmed strike as a bonus action.
-- **Dragon Ki:** DevilMedlar has a level-1 pool of 2 Dragon Ki points. All spent Dragon Ki returns after a long rest. **Current Ki: 0 of 2** after Turn 7 combat. This resource will expand and gain additional recovery options as the class advances.
+- **Dragon Ki:** DevilMedlar began with a level-1 pool of 2 Dragon Ki points. All spent Dragon Ki returns after a long rest. Level-2 progression raises the maximum to 3 as recorded below.
 - **Radiant Fang:** When DevilMedlar hits with an unarmed strike or natural weapon, he may spend 1 Dragon Ki to deal an additional `1d4` radiant damage to that target.
 - **Wyrmstep:** As a bonus action, DevilMedlar may spend 1 Dragon Ki to take the Dash or Disengage action and increase his jump distance for that turn by an amount appropriate to the movement attempted. Wyrmstep represents a short burst of draconic body control rather than teleportation.
 - **Ascendant Spellcasting:** Full spellcasting is not active at level 1. The Apostle side begins as internal radiant techniques and will develop into broader draconic mystical abilities with later Dragon Ascendant levels.
 
+## Level-2 Dragon Ascendant Progression
+
+- **Dragon Ki Growth:** Maximum Dragon Ki increases from 2 to **3**. DevilMedlar had spent both of his original level-1 Ki before advancing; the +1 increase to capacity also adds that newly gained point to current capacity, leaving him at **1 of 3 Ki** until further recovery.
+- **Ascendant Stride:** While unarmored and not using a shield, DevilMedlar's walking speed increases by 5 feet. Current speed: **35 ft.**
+- **Radiant Guard:** When DevilMedlar or a creature within 5 feet of him takes damage from an attack, DevilMedlar may use his **reaction** and spend **1 Dragon Ki** to reduce that instance of damage by `1d6 + Wisdom modifier` (currently `1d6 + 2`), to a minimum of 0. Radiant Guard must be used after the attack hits and its damage is known, but before the reduced damage is finalized. The effect appears as a brief gold-white flare of draconic radiance or interposed radiant scales.
+
 ## Features / Abilities / Spells
 
 - **Radiant Draconic Affinity:** Established and mechanically active through Radiant Resistance and Radiant Breath. It also anchors future radiant draconic evolution.
-- **Dragon Ascendant:** Established homebrew class and mechanically active at level 1 through Ascendant Defense, Draconic Martial Arts, Dragon Ki, Radiant Fang, and Wyrmstep.
+- **Dragon Ascendant:** Established homebrew class and mechanically active through Ascendant Defense, Draconic Martial Arts, Dragon Ki, Radiant Fang, Wyrmstep, Ascendant Stride, and Radiant Guard.
+- **Current Dragon Ki:** 1 / 3.
 
 ## Conditions / Ongoing Effects
 
-None established beyond current HP/resource depletion from Turn 7 combat.
+- DevilMedlar is wounded from the Suncoil Watch fight but has no condition beyond current HP depletion. Current HP: **14 / 18** after level-2 advancement.
 
 ## Appearance
 
@@ -127,11 +134,11 @@ None established beyond current HP/resource depletion from Turn 7 combat.
 - **Hair:** Thick black hair, medium length, slightly tousled, with a natural pale-gold streak near the front that becomes more luminous when his radiant power surges.
 - **Face:** Youthful but sharply defined, clean-shaven, with slightly pronounced upper canines visible when he grins or bares his teeth.
 - **Tail:** A long, muscular, fully functional draconic tail, bronze-skinned at the base and increasingly scaled toward the tip. It is expressive and helps with balance but grants no separate mechanical attack beyond established features unless a future feature says otherwise.
-- **Wings:** No functional wings at level 1. Two subtle ridges beneath the upper-back scales mark where a future draconic wing awakening may occur.
+- **Wings:** No functional wings are established at level 2. Two subtle ridges beneath the upper-back scales mark where a future draconic wing awakening may occur.
 - **Hands / claws:** Humanlike hands with retractable-looking dark-gold claws that are mechanically represented by Natural Claws.
 - **Mark / scar:** A thin pale-gold scar crosses the left collarbone, left by the Shattering of Dawnscale. It glows faintly when exposed to powerful radiant draconic magic.
 - **Clothing:** Favors sleeveless or loose-shouldered travel clothing that does not restrict martial movement, usually cream, charcoal, and muted gold. Ascendant handwraps cover the palms and wrists. The Clan Aurivane travel cloak is worn when weather or discretion calls for it.
-- **Radiant manifestation:** When channeling Dragon Ki, Radiant Fang, or Radiant Breath, light runs in narrow gold-white lines beneath his scales, his eyes brighten, the pale-gold hair streak glows, and the air around his mouth and claws shimmers with clean radiant light rather than flame.
+- **Radiant manifestation:** When channeling Dragon Ki, Radiant Fang, Radiant Guard, or Radiant Breath, light runs in narrow gold-white lines beneath his scales, his eyes brighten, the pale-gold hair streak glows, and the air around his mouth and claws shimmers with clean radiant light rather than flame.
 
 These are stable visual-canon traits for continuity-sensitive narration and art unless later transformed, injured, disguised, or explicitly changed.
 
@@ -157,7 +164,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Mystical affinity:** Moonfire
 - **Class / homebrew class:** Moonveil Oracle
 - **Background:** Moon Shrine Runaway
-- **Level:** 1 — **level 2 pending advancement resolution**
+- **Level:** 2
 - **Participation:** Senpai has chosen to join Campaign 1 as an active ChatGPT-controlled companion. Her presence creates no automatic romance, attraction, sexual relationship, reproductive relationship, or permanent obligation to remain with DevilMedlar or anyone else.
 
 ## Background History
@@ -183,8 +190,8 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 
 ## Combat Statistics
 
-- **HP / Max HP:** 9 / 9 at the end of Turn 8
-- **Hit Die:** 1d8
+- **HP / Max HP:** 14 / 14 after level-2 advancement
+- **Hit Dice:** 2d8
 - **Temporary HP:** 0
 - **Armor Class:** 14 while wearing her Moonweave Leather (`12 + Dexterity modifier`)
 - **Initiative:** +2
@@ -196,9 +203,9 @@ Standard array assigned to make Senpai an agile magical scout and support compan
 ## Advancement
 
 - **XP:** 300
-- **Level-2 threshold:** reached
+- **Current level:** 2
 - **Next recorded threshold:** 900 XP for level 3
-- **Advancement state:** Level 2 is pending resolution; level-2 HP and class progression have not yet been assigned.
+- **Level-2 HP roll:** Senpai rolled `d8 = 4`; Constitution +1 produced **+5 maximum HP**, increasing her from 9 to 14 maximum HP. Because she was at full HP before advancing, she is now **14 / 14 HP**.
 
 ## Equipment Summary
 
@@ -210,7 +217,7 @@ Senpai's authoritative current inventory is tracked in `inventory.md`.
 - **Traveler's Clothes**
 - **Oracle's Satchel**
 - **Seraphine Vale's Private Route Copy**
-- **Moonmirror Charm** — personal shrine token with story significance but no combat bonus or established hidden power at level 1.
+- **Moonmirror Charm** — personal shrine token with story significance but no combat bonus or established hidden power.
 - **Currency:** 7 gp, 7 sp
 
 ## Skills
@@ -246,9 +253,9 @@ The Moonveil Oracle is an agile Charisma-based mystical class built around decep
 - **Spell Save DC:** 12 (`8 + proficiency bonus + Charisma modifier`).
 - **Spell Attack Bonus:** +4 (`proficiency bonus + Charisma modifier`).
 - **Cantrips Known:** 2.
-- **1st-level Spell Slots:** 2 per long rest. Current slots: **2 of 2**.
-- **1st-level Spells Known:** 3.
-- **Veilstep:** Once per long rest as a bonus action, Senpai may teleport up to 15 feet to an unoccupied space she can see. She disappears and reappears in a brief curl of silver-violet foxfire. Veilstep cannot pass through an opaque barrier or reach a location she cannot see. Current uses: **1 of 1**.
+- **1st-level Spell Slots:** Senpai began with 2 per long rest at level 1; level-2 progression raises this to 3 as recorded below.
+- **1st-level Spells Known:** Senpai began with 3 at level 1; level-2 progression raises this to 4 as recorded below.
+- **Veilstep:** At level 1, once per long rest as a bonus action, Senpai may teleport up to 15 feet to an unoccupied space she can see. She disappears and reappears in a brief curl of silver-violet foxfire. Veilstep cannot pass through an opaque barrier or reach a location she cannot see. Level-2 progression raises its uses as recorded below.
 
 ### Cantrips
 
@@ -257,18 +264,25 @@ The Moonveil Oracle is an agile Charisma-based mystical class built around decep
 
 ### 1st-level Spells Known
 
-- **Healing Word:** Bonus action; range 60 ft.; instantaneous. Spend one 1st-level spell slot to restore `1d4 + Charisma modifier` HP to one living creature Senpai can see within range. Current level-1 healing: `1d4 + 2`. Healing Word cannot restore a dead creature to life.
+- **Healing Word:** Bonus action; range 60 ft.; instantaneous. Spend one 1st-level spell slot to restore `1d4 + Charisma modifier` HP to one living creature Senpai can see within range. Current healing: `1d4 + 2`. Healing Word cannot restore a dead creature to life.
 - **Disguise Self:** Action; self; duration 1 hour; no concentration. Spend one 1st-level spell slot to create a visual illusion that changes Senpai's apparent clothing, equipment, facial details, hair, coloration, and similar visible traits. She may appear up to about 1 foot shorter or taller and somewhat thinner or heavier, but the spell does not change her actual body, voice, scent, statistics, touch, or equipment. Physical interaction can reveal the disguise. A creature that uses its action to inspect the disguise may make an Intelligence (Investigation) check against spell save DC 12; on a success, it recognizes the illusion.
 - **Faerie Fire:** Action; range 60 ft.; concentration up to 1 minute. Spend one 1st-level spell slot to fill a 20-foot cube with silver-violet light. Each creature in the area when cast makes a Dexterity saving throw against DC 12. On a failure, a creature is outlined in magical light for the duration while Senpai maintains concentration. Attack rolls against an outlined creature have advantage if the attacker can see it, and an outlined creature cannot benefit from being invisible. On a successful save, that creature is unaffected.
+- **Feather Fall:** Reaction when Senpai or a creature within 60 feet begins falling; spend one 1st-level spell slot to affect up to five falling creatures within range. An affected creature descends at 60 feet per round for up to 1 minute and takes no falling damage if it reaches the ground before the spell ends. The effect does not provide upward movement or ordinary flight.
+
+## Level-2 Moonveil Oracle Progression
+
+- **Spellcasting Growth:** Senpai now has **3 first-level spell slots per long rest**, currently **3 of 3**, and knows **4 first-level spells**, adding Feather Fall to Healing Word, Disguise Self, and Faerie Fire.
+- **Veilstep Growth:** Veilstep increases from 1 to **2 uses per long rest**, currently **2 of 2**. Each use remains a bonus-action teleport of up to 15 feet to an unoccupied space Senpai can see.
+- **Moonlit Premonition:** Once per long rest, after Senpai or an ally she can see within 30 feet makes an attack roll, ability check, or saving throw but before the outcome is resolved, Senpai may use her **reaction** to add `1d4` to that roll. Senpai controls whether to use this feature. If she uses it on a DevilMedlar roll, the player's original roll remains the base roll and Senpai's `1d4` is added separately. Current uses: **1 of 1**.
 
 ## Features / Abilities / Spells
 
 - **Moonfire Affinity:** Established and mechanically active through Foxfire and Moonfire Bolt; it also anchors future kitsune magical evolution.
-- **Moonveil Oracle:** Established homebrew class and mechanically active through Charisma spellcasting, Moonfire Bolt, Minor Illusion, two 1st-level spell slots, three known 1st-level spells, and Veilstep.
+- **Moonveil Oracle:** Established homebrew class and mechanically active through Charisma spellcasting, Moonfire Bolt, Minor Illusion, three 1st-level spell slots, four known 1st-level spells, Veilstep, and Moonlit Premonition.
 
 ## Conditions / Ongoing Effects
 
-None established.
+None established. Senpai is currently **14 / 14 HP**.
 
 ## Appearance
 
@@ -295,7 +309,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 - Senpai independently chose and paid 1 gp for a private two-person mineral pool at Steam & Stone Baths. She shared the bath with DevilMedlar using linen bathing wraps and explicitly established that sharing the bath did not grant blanket permission for touching or sexual activity.
 - **Mutual attraction between Senpai and DevilMedlar is established.** No committed romantic relationship, exclusivity, sexual relationship, reproductive relationship, engagement, marriage, or permanent partnership is established.
 - During Session 1, Turn 3, DevilMedlar entrusted Senpai with control of the Seraphine Vale questioning. Senpai recognized this as meaningful trust and successfully protected the pair's private information.
-- During Session 1, Turn 4, Senpai finished questioning Seraphine about the Meridian Archive leak and then privately proposed an evidence-first plan for the next day. When DevilMedlar told her that her performance had made him extremely attracted to and visibly physically aroused by her, Senpai recognized the reaction, was pleased and flustered, chose not to step away, briefly took his hand, and treated his reaction as flattering. This does not establish sexual consent beyond already established boundaries or create a committed relationship.
+- During Session 1, Turn 4, Senpai finished questioning Seraphine about the Meridian Archive leak and then privately proposed an evidence-first plan for the next day. When DevilMedlar told her that her performance had made him extremely attracted to and visibly physically aroused by her, Senpai recognized the reaction, was pleased and flustered, chose not to step away, briefly took his hand, and treated the reaction as flattering. This does not establish sexual consent beyond already established boundaries or create a committed relationship.
 - During Session 1, Turn 5, Senpai initially objected when DevilMedlar chose a private double room instead of her preferred twin. After he explained that he wanted privacy to eat and talk and explicitly offered her sole use of the bed, she independently chose to share the double bed on **opposite sides beneath separate blankets**. She refused to make him sleep on furniture merely to prove respect. No sexual activity occurred, and the arrangement did not create permission for unconscious touching or future bed-sharing.
 - Senpai's light personal preferences established during the private evening include enjoying quiet high places, rain against a roof, and sweet plum pastries. These are nonmechanical character preferences.
 - During Session 1, Turn 7, DevilMedlar told Senpai **"I love you"** immediately before the Suncoil Watch fight. Senpai did not reciprocate the exact words merely because he said them first. After the fight she took his hand, acknowledged that seeing him in danger had scared her, and explicitly told him **"I'm falling for you, DevilMedlar."** This is an established strengthening of Senpai's romantic feelings without creating engagement, marriage, sexual consent, exclusivity, or permanent partnership.
