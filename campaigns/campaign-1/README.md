@@ -4,19 +4,25 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 
 ## Status
 
-- **Phase:** Setup
-- **Session:** 0
-- **Turn:** 0
-- **Current step:** Campaign setup / character creation
+- **Phase:** Active
+- **Session:** 1
+- **Last resolved turn:** 8
+- **Next turn:** 9
+- **Current step:** Level 2 resolved / awaiting player action
+- **Current location:** Emberglass region — Suncoil Watch outer courtyard and opened sealed descent
+- **Party level:** DevilMedlar level 2; Senpai level 2
+- **XP:** 300 / 900 toward level 3
+
+The immediate Suncoil Watch surface is secured after the Copper Finch rescue, combat, prisoner restraint, and evidence sweep. Four hostile prisoners remain bound. Rian Kest, the rescued Copper Finch courier, remains restrained and not yet cleared. The recovered Meridian Archive case and other compact evidence are secured. The opened Suncoil descent remains unexplored.
 
 ## Canonical files
 
 - `GAME_MASTER_RULES.md` — campaign rules, mechanics, adult-content rules, image workflow, and persistence rules.
-- `active_game.json` — compact live campaign state.
-- `character_sheet.md` — player-character statistics, abilities, traits, appearance, and personal state.
-- `inventory.md` — equipment, currency, consumables, and important carried items.
-- `world_state.md` — NPCs, relationships, locations, factions, quests, clues, and unresolved consequences.
-- `session_log.md` — chronological gameplay checkpoints, rolls, choices, consequences, and XP awards.
+- `active_game.json` — compact live Campaign 1 state.
+- `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, and personal state.
+- `inventory.md` — equipment, currency, consumables, evidence, and important carried items.
+- `world_state.md` — NPCs, relationships, locations, factions, quests, clues, resolved discoveries, and unresolved consequences.
+- `session_log.md` — chronological gameplay checkpoints, rolls, choices, consequences, XP awards, and advancement checkpoints.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
 ## Fresh-start canon
