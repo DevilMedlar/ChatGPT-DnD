@@ -3,11 +3,11 @@
   "phase": "active",
   "session_number": 1,
   "turn_number": 7,
-  "current_scene": "Suncoil Watch outer approach — combat round 1",
-  "current_step": "combat_round_1_devilmedlar_turn",
+  "current_scene": "Suncoil Watch outer approach — combat round 2",
+  "current_step": "combat_round_2_devilmedlar_turn",
   "current_location": "Emberglass region — Suncoil Watch outer approach",
   "character_created": true,
   "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 7 remains in progress. DevilMedlar chose combat, told Senpai he loves her, and rolled a natural 20 for initiative: 20 + 2 = 22. Initiative order for this encounter is DevilMedlar first, Senpai second, then the lookout, enforcer, Raider B, and Raider A. The player is rolling all of DevilMedlar's own dice; ChatGPT rolls Senpai and enemy/NPC dice openly. DevilMedlar acts first in round 1, followed immediately by Senpai. No combat resources, HP, or XP have changed yet."
+  "last_sync_note": "Session 1, Turn 7 combat is in progress at Suncoil Watch. Initiative order is DevilMedlar first, Senpai second, then the lookout, enforcer, Raider B, and Raider A. Round 1: DevilMedlar used his movement to engage a ground raider, hit with a two-handed Sunwood Quarterstaff attack 21 for 8 bludgeoning and dropped Raider A. His bonus-action claw attack 23 hit the Enforcer for 6 slashing and he spent 1 Dragon Ki on Radiant Fang for 3 radiant, leaving 1/2 Dragon Ki. Senpai then hit the Enforcer with Moonfire Bolt 17 for 2 psychic. The lookout rolled a natural 1 and missed Senpai. The Enforcer hit DevilMedlar with 19 for 3 damage, leaving DevilMedlar at 6/9 HP. Raider B hit Senpai with 17 for 7 damage, leaving Senpai at 2/9 HP. Raider A is down, the Enforcer is badly wounded but standing, and the lookout and Raider B remain active. The bound Copper Finch courier remains alive, and the opened Meridian Archive dispatch case remains at the site. Round 2 begins with DevilMedlar. The player rolls all DevilMedlar dice; ChatGPT rolls Senpai and all enemy/NPC dice openly."
 }
