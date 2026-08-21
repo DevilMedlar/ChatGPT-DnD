@@ -3,11 +3,11 @@
   "phase": "active",
   "session_number": 1,
   "turn_number": 7,
-  "current_scene": "Suncoil Watch outer approach — combat round 2",
-  "current_step": "combat_round_2_devilmedlar_turn",
+  "current_scene": "Suncoil Watch outer approach — combat round 3",
+  "current_step": "combat_round_3_devilmedlar_turn",
   "current_location": "Emberglass region — Suncoil Watch outer approach",
   "character_created": true,
   "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 7 combat is in progress at Suncoil Watch. Initiative order is DevilMedlar first, Senpai second, then the lookout, enforcer, Raider B, and Raider A. Round 1: DevilMedlar used his movement to engage a ground raider, hit with a two-handed Sunwood Quarterstaff attack 21 for 8 bludgeoning and dropped Raider A. His bonus-action claw attack 23 hit the Enforcer for 6 slashing and he spent 1 Dragon Ki on Radiant Fang for 3 radiant, leaving 1/2 Dragon Ki. Senpai then hit the Enforcer with Moonfire Bolt 17 for 2 psychic. The lookout rolled a natural 1 and missed Senpai. The Enforcer hit DevilMedlar with 19 for 3 damage, leaving DevilMedlar at 6/9 HP. Raider B hit Senpai with 17 for 7 damage, leaving Senpai at 2/9 HP. Raider A is down, the Enforcer is badly wounded but standing, and the lookout and Raider B remain active. The bound Copper Finch courier remains alive, and the opened Meridian Archive dispatch case remains at the site. Round 2 begins with DevilMedlar. The player rolls all DevilMedlar dice; ChatGPT rolls Senpai and all enemy/NPC dice openly."
+  "last_sync_note": "Session 1, Turn 7 combat is in progress at Suncoil Watch. Current-branch combat state controls. Initiative order remains DevilMedlar first, Senpai second, then surviving enemies. Round 1 ended with DevilMedlar at 6/9 HP, Senpai at 2/9 HP, Raider A down, the Enforcer badly wounded, and the lookout plus Raider B active. Round 2: DevilMedlar pointed Senpai toward the lookout, spent his final Dragon Ki on Wyrmstep (Dash), closed on the hostage-holding Enforcer, and rolled a natural 20 with his two-handed Sunwood Quarterstaff. Critical damage was 2d8+2 = 8+7+2 = 17 bludgeoning, dropping the Enforcer out of the fight before he could harm the captive. Dragon Ki is now 0/2. The Copper Finch courier remains alive and bound but is no longer being held at knifepoint. Senpai attacked the lookout with Moonfire Bolt, rolling 2+4=6 and missing. The lookout then rolled 5+3=8 and missed, and Raider B rolled 4+3=7 and missed. DevilMedlar remains at 6/9 HP; Senpai remains at 2/9 HP. Raider A and the Enforcer are down; the wounded lookout and Raider B remain active. Radiant Breath remains 2/2, Senpai retains both 1st-level spell slots, and the opened Meridian Archive dispatch case remains at the site. Round 3 begins with DevilMedlar. The player rolls all DevilMedlar dice; ChatGPT rolls Senpai and all enemy/NPC dice openly."
 }
