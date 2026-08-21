@@ -22,7 +22,7 @@ The immediate Suncoil Watch surface is secured after the Copper Finch rescue, co
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, and personal state.
 - `inventory.md` — equipment, currency, consumables, evidence, and important carried items.
 - `world_state.md` — NPCs, relationships, locations, factions, quests, clues, resolved discoveries, and unresolved consequences.
-- `session_log.md` — chronological gameplay checkpoints, rolls, choices, consequences, XP awards, and advancement checkpoints.
+- `session_log.md` — chronological resolved-turn checkpoints, rolls, choices, consequences, and XP awards; historical turn-end states remain preserved even when later between-turn advancement changes the live state.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
 ## Fresh-start canon
