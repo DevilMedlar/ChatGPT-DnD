@@ -3,11 +3,11 @@
   "phase": "active",
   "session_number": 1,
   "turn_number": 7,
-  "current_scene": "Suncoil Watch outer approach — combat beginning",
-  "current_step": "combat_awaiting_devilmedlar_initiative",
+  "current_scene": "Suncoil Watch outer approach — combat round 1",
+  "current_step": "combat_round_1_devilmedlar_turn",
   "current_location": "Emberglass region — Suncoil Watch outer approach",
   "character_created": true,
   "xp_current": 180,
   "xp_next_level": 300,
-  "last_sync_note": "Session 1, Turn 7 remains in progress. DevilMedlar chose to attack the armed occupants of Suncoil Watch and explicitly told Senpai that he loves her immediately before combat. Senpai was visibly affected, did not reject him, and told him to survive so she could answer properly. DevilMedlar instructed that the player will roll all of DevilMedlar's own dice; ChatGPT continues to roll Senpai and NPC/enemy dice openly. Initiative already rolled for non-player combatants: lookout 20, enforcer 18, Senpai 12, Raider B 12 (Senpai wins Dexterity tie), Raider A 9. Awaiting DevilMedlar's 1d20+2 initiative roll before resolving combat. No combat resources, HP, or XP have changed yet."
+  "last_sync_note": "Session 1, Turn 7 remains in progress. DevilMedlar chose combat, told Senpai he loves her, and rolled a natural 20 for initiative: 20 + 2 = 22. Initiative order is DevilMedlar 22, lookout 20, enforcer 18, Senpai 12, Raider B 12 with Senpai winning the Dexterity tie, and Raider A 9. The player is rolling all of DevilMedlar's own dice; ChatGPT rolls Senpai and enemy/NPC dice openly. DevilMedlar acts first in round 1. No combat resources, HP, or XP have changed yet."
 }
