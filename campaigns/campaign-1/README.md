@@ -20,18 +20,18 @@ At initialization, Campaign 1 begins in character creation before the first Camp
 - `active_game.json` — authoritative last completed Campaign 1 live state, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, character-creation status, completed PC Level/XP advancement state, and save revision.
 - `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending transfers, final turn review, permanent-save verification, and reset approval. Character creation does not use this ledger before gameplay begins.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, synchronized human-readable Level/XP mirrors, appearance, personal state, and established PC relationship continuity.
-- `NPC-state.md` — authoritative master database for persistent NPC identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
+- `NPC-state.md` — authoritative master database for persistent NPC stable IDs, identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
-- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to NPCs where they matter to world state.
+- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to persistent NPCs by stable NPC ID and current name where they matter to world state.
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn checkpoints, including the completed save revision for each checkpoint.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
 ## NPC / Inventory / World ownership
 
-Persistent NPC information should be referenced rather than duplicated across multiple files.
+Persistent NPC information should be referenced rather than duplicated across multiple files. Every persistent Campaign 1 NPC receives one stable ID such as `NPC-0001` in `NPC-state.md`; the ID never changes or gets reused for another NPC. Cross-file references use that stable NPC ID plus the NPC's current name for readability rather than relying on name-derived Markdown headings or anchors.
 
-- `world_state.md` answers **where and why an NPC matters to the world** and points to `NPC-state.md` for the full record.
-- `NPC-state.md` answers **who the NPC is**, their persistent mechanical and relationship state, where they can be found when away from the party, what they own, their shop/services if applicable, and their personal role in quests or missions.
+- `world_state.md` answers **where and why an NPC matters to the world**, references persistent NPCs by stable NPC ID and current name, and points to `NPC-state.md` for the full record.
+- `NPC-state.md` answers **who the NPC is**, owns the NPC's stable ID, persistent mechanical and relationship state, where they can be found when away from the party, what they own, their shop/services if applicable, and their personal role in quests or missions.
 - `inventory.md` answers **what the active party is carrying and how those items currently work**, including expanded bookkeeping for current party NPC possessions.
 - Shop stock stays in the relevant NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
 - `world_state.md` owns the overall quest/mission state; `NPC-state.md` owns each NPC's involvement in that quest or mission.

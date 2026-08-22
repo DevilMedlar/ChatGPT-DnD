@@ -17,6 +17,8 @@ Campaign saves are isolated by folder:
 
 Changing campaigns changes the pointer in `active_campaign.json`; it does not move, merge, or copy campaign state.
 
+Each campaign assigns persistent NPCs stable campaign-local IDs such as `NPC-0001` in its own `NPC-state.md`. NPC IDs are never reused within that campaign, and cross-file references use the stable NPC ID plus the NPC's current name instead of relying on name-derived Markdown headings or anchors.
+
 ## Campaign Turn staging
 
 Each campaign also owns its own `turn_save.md`.

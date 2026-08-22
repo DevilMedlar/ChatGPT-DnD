@@ -330,6 +330,7 @@ Verify at minimum:
 - when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
 - expected inventory/resource changes landed correctly
 - required NPC master/detail records agree when applicable
+- when persistent NPCs are created or cross-referenced, stable NPC IDs are unique, unchanged, and agree across every affected file
 - required world/clue changes landed correctly
 - `session_log.md` contains the completed Campaign Turn checkpoint
 - `active_game.json` contains the completed `campaign_turn_number`
@@ -456,11 +457,13 @@ For significant abilities, spells, talents, transformations, blessings, curses, 
 
 ## NPC and relationship continuity
 
-`NPC-state.md` is authoritative for persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships and attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
+`NPC-state.md` is authoritative for persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships and attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
+
+Every persistent NPC receives one stable campaign-local ID in the form `NPC-0001`, `NPC-0002`, and so on when first added to `NPC-state.md`. The ID never changes or gets reused for another NPC. Cross-file references must use the stable NPC ID; the current NPC name may accompany it for readability. Names and name-derived Markdown headings or anchors are display/navigation aids, not identity keys.
 
 Important NPCs should track only fields that are relevant and established. When useful, this includes:
 
-- name, age, gender/pronouns, species/ancestry, role, occupation, faction, and status
+- stable NPC ID; name, age, gender/pronouns, species/ancestry, role, occupation, faction, and status
 - appearance and verified visual-continuity references
 - level/CR, class/archetype, XP or advancement state when used, HP, temporary HP, AC, initiative, speed, proficiency, hit dice/recovery resources, ability scores, saves, skills, attacks, features, spells, conditions, and limited resources
 - normal/current known location when not traveling with the party
@@ -522,7 +525,7 @@ Do not let possessions disappear merely because party membership changed.
 
 ### NPCs in world state and quests
 
-`world_state.md` may reference NPCs when they matter to locations, factions, quests, clues, discoveries, or consequences, but should not duplicate their full persistent NPC record.
+`world_state.md` may reference NPCs when they matter to locations, factions, quests, clues, discoveries, or consequences, but each persistent NPC reference must use the stable NPC ID and may include the current NPC name for readability. Do not rely on a name-derived Markdown heading or anchor as the identity key, and do not duplicate the full persistent NPC record.
 
 `world_state.md` owns overall quest/mission state. `NPC-state.md` owns the NPC's personal involvement, motives, promises, information, rewards offered, conditions, and related continuity.
 
@@ -664,9 +667,9 @@ Within Campaign 1, file ownership is:
 - `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
-- `NPC-state.md` — persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
+- `NPC-state.md` — persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
-- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to NPCs.
+- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn history.
 - `art/art_log.md` — visual continuity and verified reference-art information.
 - `README.md` — static campaign documentation; do not use it as a duplicate live save.
