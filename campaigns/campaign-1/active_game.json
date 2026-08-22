@@ -7,16 +7,18 @@
   "current_step": "character_creation",
   "current_location": "",
   "character_created": false,
-  "character_levels": {
-    "DevilMedlar": 1,
-    "Senpai": 1
-  },
   "xp_mode": "cumulative",
-  "character_xp": {
-    "DevilMedlar_current": 0,
-    "DevilMedlar_next_level": 100,
-    "Senpai_current": 0,
-    "Senpai_next_level": 100
+  "character_advancement": {
+    "DevilMedlar": {
+      "level": 1,
+      "xp_current": 0,
+      "xp_next_level": 100
+    },
+    "Senpai": {
+      "level": 1,
+      "xp_current": 0,
+      "xp_next_level": 100
+    }
   },
   "save_revision": 0,
   "last_sync_note": "Campaign initialized. Character creation is in progress."

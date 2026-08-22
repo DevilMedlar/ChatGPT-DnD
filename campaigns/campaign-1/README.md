@@ -6,7 +6,9 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 
 `active_game.json` is the authoritative **last completed live save** for Campaign 1.
 
-It owns the current completed session, Campaign Turn, scene, step, location, character-creation status, character levels, XP, save revision, and latest synchronization note. Do not duplicate changing completed live-state values in this README.
+It owns the current completed session, Campaign Turn, scene, step, location, character-creation status, PC advancement state, save revision, and latest synchronization note. Completed PC advancement is stored through `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`. Do not duplicate changing completed live-state values in this README.
+
+`character_sheet.md` displays each PC's Level and XP as synchronized human-readable mirrors of the authoritative completed advancement state in `active_game.json`. During an active Campaign Turn, staged advancement in `turn_save.md` overlays both permanent representations until approved reconciliation.
 
 `turn_save.md` is the authoritative temporary ledger for the **current unfinished Campaign Turn**. While it is `in_progress`, its recorded in-turn changes overlay the last completed state. A Campaign Turn may contain multiple combat rounds, every combatant's individual D&D combat turns, and post-combat or noncombat steps without resetting the ledger.
 
@@ -14,10 +16,10 @@ At initialization, Campaign 1 begins in character creation before the first Camp
 
 ## Canonical files
 
-- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, and persistence rules.
-- `active_game.json` — authoritative last completed Campaign 1 live state and save revision.
+- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, advancement rules, and persistence rules.
+- `active_game.json` — authoritative last completed Campaign 1 live state, including completed PC Level/XP advancement state and save revision.
 - `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: numbered steps, current in-turn state, pending transfers, final turn review, permanent-save verification, and reset approval.
-- `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, personal state, and established PC relationship continuity.
+- `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, synchronized human-readable Level/XP mirrors, appearance, personal state, and established PC relationship continuity.
 - `NPC-state.md` — authoritative master database for persistent NPC identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to NPCs where they matter to world state.

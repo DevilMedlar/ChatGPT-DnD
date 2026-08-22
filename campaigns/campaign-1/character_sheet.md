@@ -6,6 +6,8 @@ The blank fields below are intentional and remain undecided until DevilMedlar an
 
 Currently established canon includes their names, ages, pronouns, and shared relationship history.
 
+`active_game.json` is authoritative for completed PC advancement state through `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`. The Level and XP values shown in this file are synchronized human-readable mirrors and must match that completed state after every completed save. During an active Campaign Turn, staged Level/XP changes in `turn_save.md` temporarily overlay both permanent representations until approved reconciliation.
+
 ## Shared Relationship Canon
 
 - DevilMedlar and Senpai are both 20 years old.

@@ -148,6 +148,14 @@ Use numeric **cumulative XP** unless the player later chooses milestone advancem
 
 XP never resets when a character levels. `xp_current` means total XP earned during the campaign, and `xp_next_level` means the next cumulative total required to level up.
 
+### PC advancement authority
+
+- This rules file owns **how** PC advancement works: XP mode, thresholds, award logic, rounding, and level-up behavior.
+- `active_game.json` owns the authoritative **completed PC advancement state** through campaign-wide `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`.
+- `character_sheet.md` displays each PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
+- During an active Campaign Turn, staged XP awards, threshold changes, and level changes belong in `turn_save.md` and temporarily overlay the completed permanent representations until approved reconciliation.
+- After any completed save that changes PC advancement, the Level/XP mirrors in `character_sheet.md` must exactly match the authoritative values in `active_game.json`.
+
 Default cumulative thresholds:
 
 - Level 1: 0 total XP
@@ -288,11 +296,12 @@ After Confirmation Gate 1 is approved:
 
 1. transfer only the approved persistent, continuity-relevant, or historically important results to their proper permanent owners
 2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
-3. update shop business stock and acquired party inventory separately when a shop transaction occurred
-4. append the completed Campaign Turn checkpoint to `session_log.md`
-5. prepare `active_game.json` as the completed-state marker using `campaign_turn_number`
-6. increment `save_revision` exactly once for the completed permanent save
-7. do **not** reset the Turn ledger as part of this permanent save
+3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values that will be stored authoritatively in `active_game.json.character_advancement`
+4. update shop business stock and acquired party inventory separately when a shop transaction occurred
+5. append the completed Campaign Turn checkpoint to `session_log.md`
+6. prepare `active_game.json` as the completed-state marker using `campaign_turn_number` and the authoritative completed PC advancement state
+7. increment `save_revision` exactly once for the completed permanent save
+8. do **not** reset the Turn ledger as part of this permanent save
 
 Whenever tooling permits an atomic multi-file commit, commit the supporting permanent-state updates, `session_log.md`, and completed `active_game.json` revision together in one permanent-save commit. The complete temporary ledger remains intact.
 
@@ -307,6 +316,7 @@ Read/check the affected permanent files again and compare them with the player-a
 Verify at minimum:
 
 - expected character-state changes landed correctly
+- when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
 - expected inventory/resource changes landed correctly
 - required NPC master/detail records agree when applicable
 - required world/clue changes landed correctly
@@ -596,9 +606,9 @@ Campaign saves are isolated:
 
 Within Campaign 1, file ownership is:
 
-- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, scene, step, location, character-creation state, character levels, XP, save revision, and latest synchronization note.
+- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, scene, step, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note.
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
-- `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, and established relationship continuity.
+- `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to NPCs.
@@ -616,13 +626,13 @@ At approved Campaign Turn reconciliation, transfer only persistent, continuity-r
 
 Typical destinations include:
 
-- `character_sheet.md` — DevilMedlar/Senpai HP, conditions, abilities, character resources, advancement, lasting personal state
+- `character_sheet.md` — DevilMedlar/Senpai HP, conditions, abilities, character resources, synchronized human-readable Level/XP mirrors, and lasting personal state
 - `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
 - `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, and other possessions for DevilMedlar, Senpai, and current party NPCs
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
 - `session_log.md` — chronological completed Campaign Turn summary and continuity-critical events
 - `art/art_log.md` — newly established visual continuity when relevant
-- `active_game.json` — completed session/Campaign Turn/scene/step/location/levels/XP/save revision/latest sync state
+- `active_game.json` — completed session/Campaign Turn/scene/step/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
 
 For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
 
