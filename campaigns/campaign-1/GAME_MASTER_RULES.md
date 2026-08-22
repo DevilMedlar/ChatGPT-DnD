@@ -210,6 +210,15 @@ A **Combat Round** is one initiative cycle through the active combatants.
 
 Combat Turns and Combat Rounds exist inside a Campaign Turn and never cause `turn_save.md` to reset merely because they end.
 
+### Scene and Step authority
+
+- `active_game.json.campaign_turn_number` is the last completed Campaign Turn number. It is not the active unfinished Turn number.
+- `active_game.json.current_scene_name` is the scene-name label at the last completed save. Before Campaign Turn 1 begins, it may also describe the current pre-game character-creation context.
+- `active_game.json` does **not** store a live Campaign Turn Step.
+- `turn_save.md` owns the current/next Campaign Turn number, `Current Step`, and `Current Scene` for the unfinished Turn.
+- While a Campaign Turn is `in_progress`, its `Current Scene` and `Current Step` are the authoritative live gameplay position. They overlay the completed scene label in `active_game.json` until approved reconciliation.
+- `current_scene_name` is a compact scene label, not a duplicate scene record; detailed location/world facts remain in their owning files.
+
 ### Starting a Campaign Turn
 
 Before starting a Campaign Turn:
@@ -220,7 +229,8 @@ Before starting a Campaign Turn:
 4. Set `Campaign Turn` to the next Campaign Turn number.
 5. Set `Status` to `in_progress`.
 6. Set `Current Step` to `0`.
-7. Set `Base save revision` to the current `save_revision` in `active_game.json`.
+7. Set `Current Scene` to the completed `active_game.json.current_scene_name`, unless the opening gameplay explicitly establishes a different scene before Step 0 is recorded.
+8. Set `Base save revision` to the current `save_revision` in `active_game.json`.
 
 The effective state while the Campaign Turn is open is:
 
@@ -233,11 +243,12 @@ A Campaign Turn may contain as many numbered Steps as needed.
 After each resolved Step:
 
 1. append the relevant action/event, roll calculation when applicable, immediate result, and state deltas to `Turn Events`
-2. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
-3. update `Pending End-Turn Transfers` when a result may need persistent reconciliation
-4. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
-5. do not increment `save_revision`
-6. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
+2. update `Current Scene` whenever the effective scene changes
+3. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
+4. update `Pending End-Turn Transfers` when a result may need persistent reconciliation
+5. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
+6. do not increment `save_revision`
+7. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
@@ -257,13 +268,13 @@ When the gameplay flow explicitly means **end the full Campaign Turn**:
 4. do **not** write permanent campaign files yet
 5. do **not** reset `turn_save.md`
 
-At this point `Current In-Turn State` becomes the proposed **Final Turn State** for review.
+At this point `Current In-Turn State`, together with the final `Current Scene`, becomes the proposed **Final Turn State** for review.
 
 ### Confirmation Gate 1: save approval
 
 Before any permanent transfer:
 
-1. review every recorded Step and verify the proposed Final Turn State is fully consistent with the recorded actions, rolls, damage, healing, resource use, movement, discoveries, and results
+1. review every recorded Step and verify the proposed Final Turn State is fully consistent with the recorded actions, rolls, damage, healing, resource use, movement, scene changes, discoveries, and results
 2. resolve any missing, contradictory, uncertain, or unresolved state in the temporary ledger first
 3. determine the **Exact Planned Permanent Transfers** to the owning files
 4. show the player both the Final Turn State and Exact Planned Permanent Transfers
@@ -299,7 +310,7 @@ After Confirmation Gate 1 is approved:
 3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values that will be stored authoritatively in `active_game.json.character_advancement`
 4. update shop business stock and acquired party inventory separately when a shop transaction occurred
 5. append the completed Campaign Turn checkpoint to `session_log.md`
-6. prepare `active_game.json` as the completed-state marker using `campaign_turn_number` and the authoritative completed PC advancement state
+6. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, the approved final `Current Scene` as `current_scene_name`, the completed location, and the authoritative completed PC advancement state
 7. increment `save_revision` exactly once for the completed permanent save
 8. do **not** reset the Turn ledger as part of this permanent save
 
@@ -322,6 +333,7 @@ Verify at minimum:
 - required world/clue changes landed correctly
 - `session_log.md` contains the completed Campaign Turn checkpoint
 - `active_game.json` contains the completed `campaign_turn_number`
+- `active_game.json.current_scene_name` matches the approved final `Current Scene`
 - `save_revision` advanced exactly once
 - every approved planned transfer is accounted for
 - no unrelated campaign state was changed
@@ -356,7 +368,8 @@ If the player says **Yes**:
 3. prepare the next Campaign Turn number
 4. set `Status` to `ready`
 5. set `Current Step` to `0`
-6. set `Base save revision` to the newly completed `save_revision`
+6. set `Current Scene` to `None yet.`
+7. set `Base save revision` to the newly completed `save_revision`
 
 The reset is a cleanup/checkpoint operation. It does **not** increment `save_revision` because the permanent Campaign Turn save already completed.
 
@@ -365,7 +378,7 @@ The reset is a cleanup/checkpoint operation. It does **not** increment `save_rev
 Before beginning or continuing gameplay, read `turn_save.md` and use its status to determine recovery:
 
 - `ready` — no unfinished Campaign Turn exists; the next Campaign Turn may begin.
-- `in_progress` — resume the active Campaign Turn from the last completed permanent state plus the temporary overlay. Never start another Campaign Turn first.
+- `in_progress` — resume the active Campaign Turn from the last completed permanent state plus the temporary overlay. `Current Step` and `Current Scene` in `turn_save.md` are the live gameplay position. Never start another Campaign Turn first.
 - `ending_review` — the full Campaign Turn end was interpreted and the ledger is frozen. No permanent Campaign Turn write is authorized until the player confirms the final review.
 - `reconciling` — the player approved the final state and the permanent save may be partially or fully written. Check `active_game.json`, the affected permanent files, and the approved Final Turn State before taking any action. Never replay the Campaign Turn automatically.
 - `saved_awaiting_reset` — the permanent Campaign Turn save is complete and verified. Do not replay or resave it. Only the player's reset confirmation remains.
@@ -383,7 +396,7 @@ Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-res
 
 Character creation occurs before Campaign Turn 1.
 
-Each finalized character-creation step may update the appropriate permanent files and complete a normal save revision directly. Those finalized creation saves do not require an `in_progress` Campaign Turn unless actual gameplay has begun.
+Each finalized character-creation step may update the appropriate permanent files and complete a normal save revision directly. Those finalized creation saves do not require an `in_progress` Campaign Turn unless actual gameplay has begun. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
 
 ## Equipment and special effects
 
@@ -606,8 +619,8 @@ Campaign saves are isolated:
 
 Within Campaign 1, file ownership is:
 
-- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, scene, step, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note.
-- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
+- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
+- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
@@ -632,7 +645,7 @@ Typical destinations include:
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
 - `session_log.md` — chronological completed Campaign Turn summary and continuity-critical events
 - `art/art_log.md` — newly established visual continuity when relevant
-- `active_game.json` — completed session/Campaign Turn/scene/step/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
+- `active_game.json` — completed session/Campaign Turn/`current_scene_name`/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
 
 For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
 
