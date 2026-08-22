@@ -128,16 +128,16 @@ Record important expenditures when useful for continuity or reconciliation.
 3. Create or expand that NPC's section here with the carried items and resources that need active mechanical bookkeeping.
 4. Do not copy unrelated stored possessions into active party inventory merely because the NPC owns them.
 
-### During an unfinished turn
+### During an unfinished Campaign Turn
 
 Do not repeatedly rewrite this file after every small in-turn resource change.
 
-Stage item use, charges, ammunition, consumables, damage to equipment, transfers, currency spending, and similar turn-step changes in `turn_save.md`. The effective current state is the last completed inventory state plus the unfinished-turn overlay.
+Stage item use, charges, ammunition, consumables, damage to equipment, transfers, currency spending, and similar Campaign Turn Step changes in `turn_save.md`. The effective current state is the last completed inventory state plus the unfinished Campaign Turn overlay.
 
 ### When an NPC leaves the party
 
 1. Reconcile the NPC's final quantities, equipment, currency, charges, acquired items, lost items, and other relevant possessions into the master ownership list in `NPC-state.md`.
-2. Confirm the transfer is complete and any unfinished-turn state has been reconciled.
+2. Confirm the transfer is complete and any unfinished Campaign Turn state has been reconciled.
 3. Update the NPC's off-party location in `NPC-state.md` when known.
 4. Only then remove or collapse the NPC's expanded section here.
 

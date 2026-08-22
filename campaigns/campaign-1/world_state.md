@@ -28,7 +28,7 @@ Do not duplicate NPC stats, full appearance, full relationship state, personal i
 
 None established.
 
-This section records persistent world locations and their established details. It does **not** track the party's current live location. The authoritative completed current location belongs in `active_game.json`; during an unfinished turn, any temporary movement or position changes are staged in `turn_save.md` until end-turn reconciliation.
+This section records persistent world locations and their established details. It does **not** track the party's current live location. The authoritative completed current location belongs in `active_game.json`; during an unfinished Campaign Turn, any temporary movement or position changes are staged in `turn_save.md` until Campaign Turn reconciliation.
 
 Locations may reference relevant NPCs by name and point to their `NPC-state.md` records. A location record may include things such as ownership, services normally available there, faction control, known hazards, discovered features, access conditions, and important events without copying the NPC's full record.
 
@@ -92,7 +92,7 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 - This file should point to `NPC-state.md` rather than duplicating full NPC records.
 - A shop's **existence and location** may be referenced here. Its current stock, prices, services, and owner-specific business details belong in the relevant NPC record in `NPC-state.md`.
 - `active_game.json` owns the last completed current party location.
-- `turn_save.md` owns temporary in-turn movement and position changes until they are reconciled at end turn.
+- `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation.
 
 ## Continuity Rule
 
@@ -100,4 +100,4 @@ Add new world information only when it is established during this campaign. Keep
 
 `NPC-state.md` owns persistent NPC identity, statistics, condition, relationships, party membership, master possessions, and NPC-specific continuity. This file should reference NPCs only where they matter to locations, factions, quests, clues, discoveries, or world consequences rather than duplicating their full records.
 
-`active_game.json` owns the last completed current party location. `turn_save.md` owns temporary in-turn movement and position changes until they are reconciled at end turn. `world_state.md` owns the persistent facts about locations themselves.
+`active_game.json` owns the last completed current party location. `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation. `world_state.md` owns the persistent facts about locations themselves.
