@@ -75,8 +75,6 @@ Replace the placeholder NPC ID with the next unused stable ID when the persisten
 - **Age:**
 - **Gender / pronouns:**
 - **Species / ancestry:**
-- **Level / CR:**
-- **Class / archetype:**
 - **Role / occupation:**
 - **Faction / allegiance:**
 - **Status:** Alive / Dead / Missing / Unknown
@@ -186,7 +184,9 @@ Keep factual knowledge, beliefs, shared information, withheld information, and s
 
 Use when the NPC is mechanically relevant. A minor noncombat NPC does not need a complete combat block unless play establishes one.
 
-- **Level / CR:**
+`Level` and `Class / archetype` are mutable mechanical state and are tracked here rather than duplicated in Identity.
+
+- **Level:**
 - **Class / archetype:**
 - **XP / advancement state:** If this NPC uses individual advancement
 - **HP / Max HP:**

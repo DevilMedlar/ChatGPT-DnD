@@ -465,7 +465,7 @@ Important NPCs should track only fields that are relevant and established. When 
 
 - stable NPC ID; name, age, gender/pronouns, species/ancestry, role, occupation, faction, and status
 - appearance and verified visual-continuity references
-- level/CR, class/archetype, XP or advancement state when used, HP, temporary HP, AC, initiative, speed, proficiency, hit dice/recovery resources, ability scores, saves, skills, attacks, features, spells, conditions, and limited resources
+- level, class/archetype, XP or advancement state when used, HP, temporary HP, AC, initiative, speed, proficiency, hit dice/recovery resources, ability scores, saves, skills, attacks, features, spells, conditions, and limited resources
 - normal/current known location when not traveling with the party
 - party membership and the last known non-party location
 - personality, values, goals, wants, needs, fears, likes, dislikes, habits, and priorities
@@ -474,6 +474,17 @@ Important NPCs should track only fields that are relevant and established. When 
 - NPC-specific involvement in quests or missions
 - shop/services information, stock, prices, quantities, item mechanics, descriptions, and hidden properties when applicable
 - compact NPC-specific continuity history
+
+### NPC advancement
+
+NPC advancement is not universal.
+
+- Minor or background NPCs remain at their established mechanical state unless something in the fiction changes them.
+- Important persistent NPCs may gain or lose Level, abilities, spells, features, equipment, resources, class/archetype, resistances, weaknesses, transformations, or other mechanical traits when justified by training, experience, story events, consequences, or other established causes.
+- Long-term party NPCs should advance often enough to remain mechanically relevant, but they do **not** automatically use the PCs' XP system unless that has been explicitly established for the NPC.
+- NPC advancement may be level-based, ability-based, feature-based, or another established form appropriate to that NPC.
+- Existing NPCs do **not** automatically scale merely because DevilMedlar or Senpai became stronger. A previously established weaker NPC may remain weaker, while new or changed threats can become harder naturally through the world and story.
+- Any NPC advancement caused during an active Campaign Turn is staged in `turn_save.md` and transferred to `NPC-state.md` only through the normal confirmed Campaign Turn save process.
 
 ### Relationship and attraction state
 
