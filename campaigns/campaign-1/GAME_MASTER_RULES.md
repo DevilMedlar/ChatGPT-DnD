@@ -245,7 +245,7 @@ After each resolved Step:
 1. append the relevant action/event, roll calculation when applicable, immediate result, and state deltas to `Turn Events`
 2. update `Current Scene` whenever the effective scene changes
 3. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
-4. update `Pending End-Turn Transfers` when a result may need persistent reconciliation
+4. update `Pending Permanent Transfers` when a result may need persistent reconciliation
 5. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
 6. do not increment `save_revision`
 7. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
