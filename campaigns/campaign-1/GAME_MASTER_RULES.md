@@ -173,19 +173,83 @@ Meaningful items may track quantity, equipped/carried/stored state, damage or ar
 
 Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md`, `character_sheet.md`, `NPC-state.md`, and `world_state.md` as relevant before resolving an item-dependent effect.
 
+For persistent NPCs, `NPC-state.md` owns the master list of what the NPC owns. `inventory.md` expands mechanically relevant possessions only while that NPC is currently traveling with the party. Shop stock belongs in the shop NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
+
+Shop and inventory item descriptions should preserve established mechanics when relevant, including attack bonuses, damage dice and damage types, armor or defense changes, ability-score penalties or bonuses, triggered effects, proc chances, charges, cooldowns, requirements, attunement, durability, granted abilities, and their descriptions. Hidden or unidentified properties must not be revealed merely because they are stored for continuity.
+
 ## Abilities and ongoing effects
 
 For significant abilities, spells, talents, transformations, blessings, curses, injuries, buffs, debuffs, or relationship-linked effects, track when relevant: name, source, mechanical effect, duration, recharge, current uses/charges, and stacking or exclusivity rules.
 
 ## NPC and relationship continuity
 
-`NPC-state.md` is authoritative for persistent NPC identity, statistics, abilities, appearance, condition, relationships, and party membership.
+`NPC-state.md` is authoritative for persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships and attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
 
-Important NPCs must track when relevant: name, age, species/ancestry, appearance, role, disposition, trust, age-appropriate attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established adult sexual or romantic boundaries.
+Important NPCs should track only fields that are relevant and established. When useful, this includes:
 
-Numbers may be used internally, but narration should remain natural rather than exposing every relationship as a meter.
+- name, age, gender/pronouns, species/ancestry, role, occupation, faction, and status
+- appearance and verified visual-continuity references
+- level/CR, class/archetype, XP or advancement state when used, HP, temporary HP, AC, initiative, speed, proficiency, hit dice/recovery resources, ability scores, saves, skills, attacks, features, spells, conditions, and limited resources
+- normal/current known location when not traveling with the party
+- party membership and the last known non-party location
+- personality, values, goals, wants, needs, fears, likes, dislikes, habits, and priorities
+- factual knowledge, beliefs, information shared, information withheld, secrets known, secrets held, and false beliefs
+- master personal ownership list
+- NPC-specific involvement in quests or missions
+- shop/services information, stock, prices, quantities, item mechanics, descriptions, and hidden properties when applicable
+- compact NPC-specific continuity history
 
-`world_state.md` may reference NPCs when they matter to locations, factions, quests, clues, or consequences, but should not duplicate their full persistent NPC record.
+### Relationship and attraction state
+
+Relationship information is made of separate facts and must not be collapsed into one label.
+
+When relevant, track:
+
+- **relationship status** such as single, dating, married, widowed, complicated, or another established state
+- **current partner(s)**
+- **romantic interest(s)**
+- **sexual interest(s)** for explicitly adult NPCs only
+- **attraction toward DevilMedlar**
+- **attraction toward Senpai**
+- **other known attractions**
+- **jealousy / rivalry**
+- **established boundaries**
+- **consent / availability notes**
+- target-specific disposition, trust, respect/fear, attraction/tension, relationship role, debts/favors, promises/obligations, and important history
+
+`Single` does **not** imply romantic or sexual interest. `Married` does **not** automatically imply lack of attraction to everyone else. Friendship, gratitude, debt, party membership, attraction, partnership status, boundaries, and consent are separate state facts. Do not infer one from another.
+
+For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under the Adult-content rules.
+
+Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
+
+### NPC inventory and party-membership flow
+
+`NPC-state.md` keeps the master ownership list whether an NPC is in the party or not.
+
+When an NPC joins the party:
+
+1. mark party membership in `NPC-state.md`
+2. keep the master ownership list there
+3. add an expanded active inventory section in `inventory.md` for carried possessions that need detailed mechanical bookkeeping
+4. stage unfinished-turn item/resource changes in `turn_save.md`
+
+When an NPC leaves the party:
+
+1. reconcile their final quantities, currency, equipment, charges, acquired items, lost items, and other relevant possessions back into the master ownership list in `NPC-state.md`
+2. reconcile any unfinished-turn changes
+3. update the NPC's off-party location when known
+4. only then remove or collapse their expanded section from `inventory.md`
+
+Do not let possessions disappear merely because party membership changed.
+
+### NPCs in world state and quests
+
+`world_state.md` may reference NPCs when they matter to locations, factions, quests, clues, discoveries, or consequences, but should not duplicate their full persistent NPC record.
+
+`world_state.md` owns overall quest/mission state. `NPC-state.md` owns the NPC's personal involvement, motives, promises, information, rewards offered, conditions, and related continuity.
+
+A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns current shop stock, prices, services, and item details.
 
 ## Player agency
 
@@ -300,18 +364,44 @@ Campaign saves are isolated:
 
 Within Campaign 1, file ownership is:
 
-- `active_game.json` — authoritative live save: session, turn, scene, step, location, character-creation state, character levels, XP, save revision, and latest synchronization note.
+- `active_game.json` — authoritative **last completed live save**: session, turn, scene, step, location, character-creation state, character levels, XP, save revision, and latest synchronization note.
+- `turn_save.md` — temporary authoritative ledger for the current unfinished gameplay turn, including turn events, effective in-turn state, positions, HP/resource changes, conditions, pending end-turn transfers, and recovery state.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, and established relationship continuity.
-- `NPC-state.md` — persistent NPC identity, statistics, abilities, appearance, condition, relationships, and party membership.
-- `inventory.md` — tracked equipment, currency, consumables, charges, evidence, and other possessions for characters and tracked party NPCs.
-- `world_state.md` — locations, factions, quests, clues, discoveries, world consequences, and world-context references to NPCs.
+- `NPC-state.md` — persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
+- `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
+- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to NPCs.
 - `session_log.md` — chronological resolved-turn history.
 - `art/art_log.md` — visual continuity and verified reference-art information.
 - `README.md` — static campaign documentation; do not use it as a duplicate live save.
 
 ## Persistence
 
-After each resolved gameplay turn, synchronize the Campaign 1 files that actually changed.
+### During a gameplay turn
+
+Do not repeatedly rewrite permanent campaign files for every ordinary step.
+
+Use `turn_save.md` as the temporary authoritative ledger for the unfinished turn. Record step-by-step actions and results there, including relevant movement, HP changes, conditions, charges, ammunition, consumables, resources, temporary effects, discoveries, and other in-turn changes.
+
+While `turn_save.md` is `in_progress`, the effective current state is:
+
+`last completed permanent state + turn_save.md overlay`
+
+If an unfinished turn exists, resume or reconcile it before starting another gameplay turn.
+
+### End-turn reconciliation
+
+At end turn:
+
+1. freeze new gameplay actions while saving
+2. review the turn events, current in-turn state, and pending transfers
+3. transfer only persistent, continuity-relevant, or historically important results to their correct permanent owners
+4. update `session_log.md` with the completed-turn checkpoint
+5. prepare the new completed state in `active_game.json`
+6. verify required transfers
+7. increment `save_revision` exactly once
+8. reset `turn_save.md` for the next turn only as part of the successfully completed end-turn save
+
+Whenever Git tooling permits an atomic multi-file commit, the permanent state updates, `session_log.md` checkpoint, completed `active_game.json` revision, and `turn_save.md` reset should be committed together in **one Git commit**.
 
 A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it.
 
@@ -319,14 +409,18 @@ A file does not need fictional changes just to prove it was checked. If nothing 
 
 `active_game.json` contains `save_revision`.
 
-For a resolved turn or other persistent state change:
+For a completed turn or other completed persistent save revision:
 
-1. Determine all Campaign 1 files that need real changes.
-2. Update those canonical state/history files first.
-3. Update `active_game.json` **last** with the new authoritative live state.
-4. Increment `save_revision` by exactly 1 only after the related campaign-state updates are successfully synchronized.
-5. Set `last_sync_note` to a compact description of what that completed revision represents.
-6. If a required state-file update fails or remains unresolved, do not pretend the save completed and do not increment the revision until the state is reconciled.
+1. determine all Campaign 1 files that need real changes
+2. prepare the canonical state/history updates
+3. prepare `active_game.json` with the new completed authoritative state
+4. increment `save_revision` by exactly 1 only after the related campaign-state updates are synchronized as one completed save
+5. set `last_sync_note` to a compact description of what that completed revision represents
+6. if a required state-file update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the state is reconciled
+
+Individual turn-step checkpoints do **not** increment `save_revision`.
+
+If the environment cannot make one atomic multi-file commit and must write permanent files sequentially, update supporting permanent files first, update `active_game.json` last, and reset `turn_save.md` only after the completed revision has successfully landed.
 
 The revision marks a completed Campaign 1 save checkpoint. It does not permit old campaign history to become canon.
 
