@@ -25,6 +25,7 @@ Currently established canon includes their names, ages, pronouns, and shared rel
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
+- **XP** 0/100
 
 ## Background History
 
@@ -67,9 +68,8 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 
 ## Personal / Relationship Continuity
 
-- Loves Senpai.
-- Married to Senpai.
-- Current adult romantic and sexual relationship is consensual.
+- Married to Senpai and loves her. Current relationship is consensual, romantic, and sexual. 
+- No kids yet
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
@@ -83,6 +83,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
+- **XP** 0/100
 
 ## Background History
 
@@ -125,8 +126,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 
 ## Personal / Relationship Continuity
 
-- Loves DevilMedlar.
-- Married to DevilMedlar.
-- Current adult romantic and sexual relationship is consensual.
+- Married to DevilMedlar and loves him. Current relationship is consensual, romantic, and sexual. 
+- No kids yet
 
 Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
