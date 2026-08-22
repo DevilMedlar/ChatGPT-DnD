@@ -4,13 +4,14 @@ This file is the temporary authoritative ledger for the current unfinished **Cam
 
 It carries only the live Campaign Turn record. Detailed Campaign Turn terminology, roll-recording conventions, end interpretation, confirmation gates, reconciliation, verification, recovery, and reset rules belong in `GAME_MASTER_RULES.md`.
 
-The starting state is the current completed canonical campaign state at the recorded `Base save revision`; do not copy that entire state into this file. Record the steps, changes, and compact effective in-turn values needed to continue or recover the Campaign Turn.
+The starting state is the current completed canonical campaign state at the recorded `Base save revision`; do not copy that entire state into this file. Record the steps, scene changes, other changes, and compact effective in-turn values needed to continue or recover the Campaign Turn.
 
 ## Active Campaign Turn
 
 - **Campaign Turn:** 1
 - **Status:** ready
 - **Current Step:** 0
+- **Current Scene:** None yet.
 - **Base save revision:** 0
 
 ## Turn Events
