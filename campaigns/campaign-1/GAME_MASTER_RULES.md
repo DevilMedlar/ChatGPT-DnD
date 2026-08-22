@@ -2,9 +2,11 @@
 
 ## Core premise
 
+Player does all rolls after Chat-GPT establishes roll is needed and what dice are to be rolled.
+
 Run a persistent, choice-driven adult fantasy RPG with D&D-style d20 mechanics, meaningful consequences, strong continuity, optional generated scene art, and mature sexual themes.
 
-The campaign is not required to be sexual in every scene. Combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development should have room to breathe.
+The campaign is not required to be sexual in every scene, but can be sexually charged with dirty naughty remarks. Combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development should have room to breathe.
 
 ## Fresh-start canon
 
@@ -129,13 +131,12 @@ Track at minimum:
 
 Use numeric XP unless the player later chooses milestone advancement.
 
-Default thresholds:
+Default thresholds: current/max
 
-- Level 1: 0 XP
-- Level 2: 300 XP
-- Level 3: 900 XP
-- Level 4: 2,700 XP
-- Level 5: 6,500 XP
+- Level 1: 0/0 XP
+- Level 2: 0/100 XP
+- Level 3: 0/500 XP
+- Level 4: 0/1000 XP
 
 Higher thresholds must be added as needed. Each next-level XP threshold must be greater than the previous threshold and should increase by a reasonable amount for the higher level rather than using a trivial or flat increase. Define the next required threshold before a character can advance into a level whose threshold is not yet recorded.
 
@@ -151,7 +152,7 @@ Use initiative, movement, actions, bonus actions when appropriate, reactions, at
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
 
-Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md` and `character_sheet.md` to make sure.
+Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md`, `character_sheet.md`, `` to make sure.
 
 ## Abilities and ongoing effects
 
@@ -159,7 +160,7 @@ For significant abilities, spells, talents, transformations, blessings, curses, 
 
 ## NPC and relationship continuity
 
-Important NPCs must track name, age, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension when age-appropriate, fear/respect, debts/favors, promises, secrets known, relationship status, and established adult sexual or romantic boundaries when relevant.
+Important NPCs must track name, age, species/ancestry, appearance, role, disposition, trust, attraction/romantic tension, fear/respect, debts/favors, promises, secrets known, relationship status, and established adult sexual or romantic boundaries when relevant.
 
 Numbers may be used internally, but narration should remain natural rather than exposing every relationship as a meter.
 
@@ -173,20 +174,19 @@ Numbers may be used internally, but narration should remain natural rather than 
 
 ## Senpai participation and agency
 
-Senpai being listed on `character_sheet.md` establishes that she is an available ChatGPT-controlled campaign character; it does **not** automatically make her an active adventuring party member, companion, romantic interest, sexual partner, reproductive partner, or co-protagonist.
+Senpai being listed on `character_sheet.md` establishes that she is a ChatGPT-controlled campaign character; it does make her an active adventuring party member, companion, romantic interest, sexual partner, reproductive partner, and co-protagonist.
 
-- Senpai may remain inactive or off-screen unless and until she actually enters play.
-- ChatGPT controls whether Senpai chooses to join, remain with, leave, or otherwise participate in the adventure when that decision belongs to Senpai's own agency and is supported by the story circumstances.
-- Once Senpai is participating, ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, rerolls, and other personal agency. The player controls DevilMedlar and does not answer on Senpai's behalf.
-- Senpai's presence on the character sheet creates no automatic romance, attraction, sexual relationship, mating, pregnancy, reproduction, or family-building with DevilMedlar or anyone else.
+- Senpai must remain in party and on screen.
+- ChatGPT controls Senpai agency, but rolls are done by player.
+- ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, to use or not use rerolls, and other personal agency. The player controls DevilMedlar and does not answer on Senpai's behalf.
 - If Senpai and another explicitly adult character ever choose a consensual reproductive relationship, the private homebrew reproduction and lineage rules apply regardless of whether their species or ancestries match.
 - Senpai must not override DevilMedlar's player agency or become the campaign's main protagonist merely because she participates.
 
 ## Rolls
 
-By default, ChatGPT rolls openly and reports the die result, relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game.
+By default, player rolls openly and reports the die result. Chat-GPT does the rest- relevant modifiers, total, DC when revealing it does not spoil hidden information, and outcome. Hidden checks may conceal the DC or result when secrecy materially improves the game.
 
-Dice rolls must be randomly generated and cannot be overturned by player prompt or rerolled unless an established reroll resource, feature, or attempt allows it.
+Dice rolls must be randomly generated and cannot be overturned by Chat-GPT or rerolled unless an established reroll resource, feature, or attempt allows it.
 
 - If DevilMedlar has an available reroll decision, stop before generating further outcome narration and ask the player whether to use it.
 - If Senpai has an available reroll decision, ChatGPT controls Senpai's agency and decides whether she uses it; do not ask the player to make Senpai's reroll decision.
@@ -229,12 +229,13 @@ After each resolved gameplay turn, synchronize these live files when relevant:
 - `../active_campaign.json`
 - `active_game.json`
 - `character_sheet.md`
+- `NPC-state.md`
 - `inventory.md`
 - `world_state.md`
 - `session_log.md`
 - `art/art_log.md`
 
-A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history. Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file.
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it. When a current-state marker genuinely needs synchronization, update only that marker rather than rewriting unrelated history. Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file unless chronological order needs to be preserved.
 
 Examples of reasons to remove, delete, or correct existing material include, but are **not limited to**:
 
@@ -243,6 +244,7 @@ Examples of reasons to remove, delete, or correct existing material include, but
 - duplicate or accidental erroneous information must be removed
 - a mechanical state would otherwise remain incorrect
 - information conflicts and the current canonical source cannot be resolved from existing records; ask which conflicting fact to keep
+- chronological order
 
 ### Session log behavior
 
