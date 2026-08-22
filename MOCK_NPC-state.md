@@ -16,6 +16,24 @@ It owns NPC identity, appearance, mechanical state, personality, relationships, 
 
 `MOCK_turn_save.md` temporarily overlays HP, position, resources, conditions, and other in-turn changes until end-turn reconciliation.
 
+## Relationship / Attraction Field Convention
+
+Relationship information is split into separate facts so that one label does not silently imply another.
+
+- **Relationship status** records the NPC's general partnership state, such as single, dating, married, widowed, complicated, or another established status.
+- **Current partner(s)** records established current partners.
+- **Romantic interest(s)** records characters the NPC is romantically interested in when that interest has actually been established.
+- **Sexual interest(s)** records established sexual interest for explicitly adult NPCs only.
+- **Attraction toward DevilMedlar** and **Attraction toward Senpai** record target-specific attraction when relevant.
+- **Other known attractions** records established attraction toward other characters.
+- **Jealousy / rivalry** records relationship-linked jealousy, rivalry, or tension when established.
+- **Established boundaries** records important romantic, social, or intimate boundaries.
+- **Consent / availability notes** records relevant established facts without treating attraction, partnership status, or a successful social roll as automatic consent.
+
+`Single` does **not** mean romantically or sexually interested. `Married` does **not** mean uninterested in everyone else. Attraction, relationship status, boundaries, and consent are separate state facts and must not be inferred from one another.
+
+For an NPC below 18, omit sexual-interest fields entirely. Age-appropriate nonsexual crush/romantic information may be recorded when relevant.
+
 ## Current Party NPCs
 
 - **Mara Stonehand** — Temporary companion; see `#Mara-Stonehand`
@@ -85,30 +103,39 @@ When Mara leaves the party, replace `Current known location: With party` with th
 - **Habits / mannerisms:** Taps metal objects with one knuckle while thinking
 - **Current priorities:** Help recover the missing ore shipment and return home safely
 
-### Relationship State
+### Relationship / Attraction Overview
 
-#### DevilMedlar
+- **Relationship status:** Single
+- **Current partner(s):** None
+- **Romantic interest(s):** None established
+- **Sexual interest(s):** None established
+- **Attraction toward DevilMedlar:** None established
+- **Attraction toward Senpai:** None established
+- **Other known attractions:** None established
+- **Jealousy / rivalry:** None established
+- **Established boundaries:** Does not assume friendship, favors, or party membership imply romantic or sexual availability
+- **Consent / availability notes:** No romantic or sexual consent state is established
+
+#### Relationship with DevilMedlar
 
 - **Disposition:** Friendly
 - **Trust:** Moderate
 - **Respect / fear:** Respects competence
 - **Attraction / romantic tension:** None established
-- **Relationship status:** Ally / acquaintance
+- **Relationship role:** Ally / acquaintance
 - **Debts / favors:** Owes a small favor for recovered ore
 - **Promises / obligations:** Promised a discount if the caravan is recovered
-- **Important boundaries:** None established
 - **Important history:** First met at the smithy; later joined the party temporarily
 
-#### Senpai
+#### Relationship with Senpai
 
 - **Disposition:** Friendly
 - **Trust:** Moderate
 - **Respect / fear:** Respects Senpai's decisiveness
 - **Attraction / romantic tension:** None established
-- **Relationship status:** Ally / acquaintance
+- **Relationship role:** Ally / acquaintance
 - **Debts / favors:** None
 - **Promises / obligations:** None
-- **Important boundaries:** None established
 - **Important history:** First met at the smithy; now traveling together temporarily
 
 ### Knowledge / Secrets
@@ -422,19 +449,38 @@ Brass ring set with a crystal that remains pleasantly warm.
 - **Goals:** Keep Greyford safe and reopen the North Road
 - **Current priority:** Missing Caravan investigation
 
-### Relationship State
+### Relationship / Attraction Overview
 
-#### DevilMedlar
+- **Relationship status:** Divorced
+- **Current partner(s):** None
+- **Romantic interest(s):** None established
+- **Sexual interest(s):** None established
+- **Attraction toward DevilMedlar:** None established
+- **Attraction toward Senpai:** None established
+- **Other known attractions:** None established
+- **Jealousy / rivalry:** None established
+- **Established boundaries:** Keeps professional relationships separate from personal relationships unless that changes through play
+- **Consent / availability notes:** No romantic or sexual availability has been established
+
+#### Relationship with DevilMedlar
 
 - **Disposition:** Professional
 - **Trust:** Low to moderate
-- **Relationship status:** Hired adventurer / contact
+- **Respect / fear:** Evaluating competence
+- **Attraction / romantic tension:** None established
+- **Relationship role:** Hired adventurer / contact
+- **Debts / favors:** None
+- **Promises / obligations:** Payment if quest conditions are met
 
-#### Senpai
+#### Relationship with Senpai
 
 - **Disposition:** Professional
 - **Trust:** Moderate
-- **Relationship status:** Hired adventurer / contact
+- **Respect / fear:** Respects Senpai's focus
+- **Attraction / romantic tension:** None established
+- **Relationship role:** Hired adventurer / contact
+- **Debts / favors:** None
+- **Promises / obligations:** Payment if quest conditions are met
 
 ### Knowledge / Secrets
 
@@ -493,6 +539,19 @@ Brass ring set with a crystal that remains pleasantly warm.
 - **Current known location:** Unknown; last seen on North Road
 - **Last seen:** Departing northern checkpoint with caravan
 
+### Relationship / Attraction Overview
+
+- **Relationship status:** Married
+- **Current partner(s):** Mira Vale
+- **Romantic interest(s):** Mira Vale
+- **Sexual interest(s):** Mira Vale
+- **Attraction toward DevilMedlar:** None established
+- **Attraction toward Senpai:** None established
+- **Other known attractions:** None established
+- **Jealousy / rivalry:** None established
+- **Established boundaries:** None beyond established marriage information
+- **Consent / availability notes:** No interest or availability toward DevilMedlar or Senpai is established
+
 ### Personal / Owned Items
 
 - Trade ledger
@@ -537,6 +596,19 @@ Brass ring set with a crystal that remains pleasantly warm.
 - **Personality:** Quiet, cautious, dry humor
 - **Goals:** Keep outsiders from damaging Ironwood
 
+### Relationship / Attraction Overview
+
+- **Relationship status:** Single
+- **Current partner(s):** None
+- **Romantic interest(s):** None established
+- **Sexual interest(s):** None established
+- **Attraction toward DevilMedlar:** None established
+- **Attraction toward Senpai:** None established
+- **Other known attractions:** None established
+- **Jealousy / rivalry:** None established
+- **Established boundaries:** None established
+- **Consent / availability notes:** Single status does not imply romantic or sexual availability
+
 ### Personal / Owned Items
 
 - Longbow
@@ -553,7 +625,8 @@ Brass ring set with a crystal that remains pleasantly warm.
 
 ## Ownership Rule
 
-- This file owns NPC identity, stats, HP at last completed save, abilities, conditions, relationships, off-party location, party membership, and master personal possessions.
+- This file owns NPC identity, stats, HP at last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, and master personal possessions.
+- Relationship status, current partners, romantic interests, sexual interests, attraction, boundaries, jealousy, and consent/availability are separate facts and must not be inferred from one another.
 - `MOCK_inventory.md` owns expanded mechanical bookkeeping for possessions of current party NPCs.
 - Shop stock remains here as business inventory, separate from personal possessions.
 - `MOCK_world_state.md` may reference NPCs for locations, factions, quests, and world consequences without duplicating full records.
