@@ -8,7 +8,9 @@ It owns NPC identity, appearance, mechanical state, personality, relationship an
 
 `inventory.md` expands the possessions of NPCs currently traveling with the party.
 
-`turn_save.md` temporarily overlays NPC HP, position, resources, conditions, consumed items, charges, and other in-turn changes until Campaign Turn reconciliation.
+`turn_save.md` temporarily overlays NPC HP, position, resources, conditions, consumed items, charges, party-membership transitions, and other in-turn changes until Campaign Turn reconciliation.
+
+If an NPC joins or leaves during an active Campaign Turn, this file remains the last completed master state until Confirmation Gate 1 is approved and the transition is reconciled. Stage the temporary membership, location, condition, and possession effects in `turn_save.md` first.
 
 ## Relationship / Attraction Field Convention
 
@@ -99,7 +101,7 @@ If the NPC is currently traveling with the party:
 
 When `In party: Yes`, do not duplicate moment-to-moment movement here. The last completed party location belongs in `active_game.json`; unfinished Campaign Turn movement and combat position belong in `turn_save.md` until Campaign Turn reconciliation.
 
-When an NPC leaves the party, update this section with the place where they can later be found if known.
+When an NPC leaves during an active Campaign Turn, stage the departure and intended off-party location in `turn_save.md`. Update this permanent section only during approved Campaign Turn reconciliation, or through the normal completed-save workflow when no Campaign Turn is active.
 
 ### Personality / Motivations
 
@@ -367,16 +369,19 @@ Keep a compact NPC-specific history of events that explain the NPC's current sta
 
 ## NPC Inventory Transfer Rule
 
-When an NPC joins the party:
+If an NPC joins or leaves during an active Campaign Turn, stage the membership, location, and possession effects in `turn_save.md` first. The permanent steps below occur only after Confirmation Gate 1 during approved Campaign Turn reconciliation. They are not immediate mid-Turn writes.
 
-1. Keep the NPC's master ownership list in this file.
-2. Add an expanded active inventory section for that NPC in `inventory.md` when their carried possessions need detailed bookkeeping.
-3. During an unfinished Campaign Turn, stage HP, item use, charges, ammunition, conditions, movement, and similar changes in `turn_save.md`.
+### When an NPC joins the party
 
-When an NPC leaves the party:
+1. Mark the NPC as `In party: Yes` in this file.
+2. Keep the NPC's master ownership list in this file.
+3. Add an expanded active inventory section for that NPC in `inventory.md` when their carried possessions need detailed bookkeeping.
+4. Reconcile any staged carried-item, resource, charge, ammunition, condition, location, or other relevant changes from `turn_save.md`.
 
-1. Reconcile the NPC's final carried possessions and quantities from `inventory.md` and any unfinished Campaign Turn state into the master ownership list here.
-2. Confirm the transfer is complete.
+### When an NPC leaves the party
+
+1. Reconcile the NPC's final carried possessions and quantities from `inventory.md` and any staged Campaign Turn state into the master ownership list here.
+2. Mark the NPC as no longer in the party and confirm the transfer is complete.
 3. Update the NPC's off-party location when known.
 4. Only then remove or collapse that NPC's expanded party-inventory section from `inventory.md`.
 

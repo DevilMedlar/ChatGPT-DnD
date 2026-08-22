@@ -35,7 +35,9 @@ Persistent NPC information should be referenced rather than duplicated across mu
 - `world_state.md` owns the overall quest/mission state; `NPC-state.md` owns each NPC's involvement in that quest or mission.
 - `turn_save.md` temporarily overlays NPC HP, positions, item quantities, charges, ammunition, conditions, and similar changes during an unfinished Campaign Turn.
 
-When a current party NPC leaves, reconcile their final detailed party inventory back into that NPC's master ownership list in `NPC-state.md` before removing or collapsing the NPC's expanded inventory section.
+If an NPC joins or leaves during an active Campaign Turn, stage the party-membership, location, and inventory effects in `turn_save.md`; do not update the permanent NPC/inventory records merely because the transition occurred in the fiction.
+
+At approved Campaign Turn reconciliation, when a current party NPC leaves, reconcile their final detailed party inventory back into that NPC's master ownership list in `NPC-state.md` before removing or collapsing the NPC's expanded inventory section.
 
 ## Relationship-state separation
 
@@ -74,3 +76,4 @@ Not every scene needs an image. When a scene genuinely deserves one, narration a
 - `Yes` — generate the image first, then wait for the player's choice.
 - `No` — skip the image and parse anything after `No` as the player's gameplay input, including replies such as `No, A, 1, E) ...`.
 - Consult `art/art_log.md` before generating continuity-sensitive visuals.
+- Visual continuity established or adopted during an active Campaign Turn is staged in `turn_save.md` and transferred to `art/art_log.md` only after Confirmation Gate 1 and approved Campaign Turn reconciliation.

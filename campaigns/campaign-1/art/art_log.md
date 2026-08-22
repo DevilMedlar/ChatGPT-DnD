@@ -12,6 +12,7 @@ This file is the canonical visual index for Campaign 1.
 - Every character depicted nude or in sexualized presentation must be explicitly 18+.
 - Textual campaign canon wins over accidental image inconsistencies unless the player explicitly adopts the visual variation.
 - Generated image files are not automatically repository canon. Record a repository path only after the file actually exists there.
+- During an active Campaign Turn, newly established or adopted visual canon and reference-art metadata remain staged in `turn_save.md` until Confirmation Gate 1 is approved. Update this file only during approved Campaign Turn reconciliation; an image file already existing does not bypass the save gate.
 
 ## Player Character Visual Canon
 
@@ -58,6 +59,8 @@ When reference art is added:
 3. Record which features are inspiration only.
 4. Consult this log before generating the subject again.
 5. Prefer written canonical traits over accidental differences in generated images unless the variation is explicitly adopted.
+
+If reference art is supplied or adopted during an active Campaign Turn, stage the canonical path and trait notes in `turn_save.md` and apply them here only during approved Campaign Turn reconciliation.
 
 ## Fresh-Start Rule
 

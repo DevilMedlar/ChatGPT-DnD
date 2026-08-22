@@ -22,7 +22,7 @@ The campaign is not required to be sexual in every scene, but can be sexually ch
 
 Campaign-state files are historical records as well as current state.
 
-- Add new turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older information merely for neatness or brevity.
+- Add new Campaign Turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older information merely for neatness or brevity.
 - Rewrite or delete established material only when it is factually wrong, contradicts a newer explicit player choice, is an accidental duplicate/error, makes current mechanics incorrect, or the player explicitly requests the change.
 - When a correction is needed, make the smallest practical edit and preserve useful history whenever possible by marking old information as corrected or superseded.
 - Static documentation such as this file may be updated when the rules themselves change.
@@ -229,6 +229,7 @@ After each resolved Step:
 3. update `Pending End-Turn Transfers` when a result may need persistent reconciliation
 4. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
 5. do not increment `save_revision`
+6. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
@@ -434,17 +435,21 @@ Numbers may be used internally when helpful, but narration should remain natural
 
 `NPC-state.md` keeps the master ownership list whether an NPC is in the party or not.
 
+If an NPC joins or leaves during an active Campaign Turn, stage the party-membership change, location effect, and carried-possession bookkeeping in `turn_save.md`. Do **not** update `NPC-state.md` or `inventory.md` merely because the join or leave occurred in the fiction.
+
+At approved Campaign Turn reconciliation, or when the change is established outside an active Campaign Turn through the normal completed-save workflow:
+
 When an NPC joins the party:
 
 1. mark party membership in `NPC-state.md`
 2. keep the master ownership list there
 3. add an expanded active inventory section in `inventory.md` for carried possessions that need detailed mechanical bookkeeping
-4. stage unfinished-Campaign-Turn item/resource changes in `turn_save.md`
+4. reconcile any staged membership, location, item, resource, charge, ammunition, condition, or other relevant changes from `turn_save.md`
 
 When an NPC leaves the party:
 
 1. reconcile their final quantities, currency, equipment, charges, acquired items, lost items, and other relevant possessions back into the master ownership list in `NPC-state.md`
-2. reconcile any unfinished Campaign Turn changes
+2. reconcile any staged Campaign Turn membership, location, condition, and possession changes
 3. update the NPC's off-party location when known
 4. only then remove or collapse their expanded section from `inventory.md`
 
@@ -506,7 +511,7 @@ Workflow:
 1. ChatGPT decides when a roll is required based on the rules and current fiction.
 2. ChatGPT states exactly what dice the player should roll. When useful, ChatGPT also states which character or creature the roll belongs to using numbers or letters so rolls do not get matched to wrong actions or characters.
 3. The player rolls and reports the raw die result or results.
-4. ChatGPT applies established modifiers, proficiency, advantage/disadvantage or other mechanics when those mechanics exist, calculates totals, determines consequences, and records persistent changes when necessary.
+4. ChatGPT applies established modifiers, proficiency, advantage/disadvantage or other mechanics when those mechanics exist, calculates totals, determines consequences, and records the resulting state in `turn_save.md` during an active Campaign Turn or through the appropriate completed-save workflow outside one.
 
 ### Compact roll recording in `turn_save.md`
 
@@ -560,7 +565,7 @@ Good image candidates include major character introductions, dramatic reveals, t
 7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult `art/art_log.md`.
 8. Generated images must be as accurate as possible to avoid having to remake them unnecessarily.
 9. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
-10. Add newly established continuity-critical visual information to `art/art_log.md`.
+10. If newly established continuity-critical visual information occurs during an active Campaign Turn, stage it in `turn_save.md` and include `art/art_log.md` in the Exact Planned Permanent Transfers. Add it to `art/art_log.md` only during approved Campaign Turn reconciliation. Outside an active Campaign Turn, persist it through the normal completed-save workflow.
 
 ## Reference art
 
@@ -572,6 +577,8 @@ When the player supplies reference art or manually adds images to the repository
 - Record which features are canonical and which are inspiration only.
 - Prefer written canonical traits over accidental differences in generated images.
 - Never assume an unverified image path exists.
+
+If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical path/trait metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
 
 ## Campaign save routing and file ownership
 
