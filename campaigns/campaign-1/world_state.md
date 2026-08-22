@@ -6,13 +6,15 @@ Campaign 1 is active. Pre-game background canon remains established below.
 
 None established. Persistent NPC records belong in `NPC-state.md`.
 
-When an NPC matters to a location, faction, quest, clue, discovery, or world consequence, reference the NPC here with only enough context to explain why they matter and point to the full record in `NPC-state.md`.
+When an NPC matters to a location, faction, quest, clue, discovery, or world consequence, reference the NPC here with the stable NPC ID from `NPC-state.md`, the current NPC name for readability, and only enough context to explain why they matter.
 
 Reference format:
 
 ```text
-- **NPC Name** — role / world relevance; location if useful; see `NPC-state.md#NPC-Name`
+- **NPC-0001 — NPC Name** — role / world relevance; location if useful; see `NPC-0001` in `NPC-state.md`
 ```
+
+The stable NPC ID is the cross-file identity key. Do not rely on a name-derived Markdown heading or anchor, because an NPC's name may change while the NPC ID does not.
 
 Do not duplicate NPC stats, full appearance, full relationship state, personal inventory, shop stock, or full continuity history here.
 
@@ -30,13 +32,13 @@ None established.
 
 This section records persistent world locations and their established details. It does **not** track the party's current live location. The authoritative completed current location belongs in `active_game.json`; during an unfinished Campaign Turn, any temporary movement or position changes are staged in `turn_save.md` until Campaign Turn reconciliation.
 
-Locations may reference relevant NPCs by name and point to their `NPC-state.md` records. A location record may include things such as ownership, services normally available there, faction control, known hazards, discovered features, access conditions, and important events without copying the NPC's full record.
+Locations may reference relevant NPCs by stable NPC ID and current name and point to their `NPC-state.md` records. A location record may include things such as ownership, services normally available there, faction control, known hazards, discovered features, access conditions, and important events without copying the NPC's full record.
 
 ## Factions / Organizations
 
 None established.
 
-Faction records may reference important NPC members or leaders and point to `NPC-state.md`, while this file remains authoritative for the faction's world-level status, goals, alliances, enemies, territory, reputation, and consequences.
+Faction records may reference important NPC members or leaders by stable NPC ID and current name and point to `NPC-state.md`, while this file remains authoritative for the faction's world-level status, goals, alliances, enemies, territory, reputation, and consequences.
 
 ## Active Quests / Goals
 
@@ -47,7 +49,7 @@ This section owns the **overall state of quests, missions, goals, investigations
 When established, a quest or mission may track:
 
 - status
-- quest giver / relevant NPCs, with references to `NPC-state.md`
+- quest giver / relevant NPCs, using stable NPC IDs and current names with references to `NPC-state.md`
 - objective
 - current progress
 - known clues
@@ -65,7 +67,7 @@ When established, a quest or mission may track:
 
 None established.
 
-Clues and discoveries may reference the NPC who supplied, hid, misunderstood, or is affected by them, but the NPC's knowledge and beliefs remain in `NPC-state.md`.
+Clues and discoveries may reference the NPC who supplied, hid, misunderstood, or is affected by them by stable NPC ID and current name, but the NPC's knowledge and beliefs remain in `NPC-state.md`.
 
 ## Known Secrets
 
@@ -88,8 +90,8 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 ## NPC / World Ownership Rule
 
 - `world_state.md` owns locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, and world consequences.
-- `NPC-state.md` owns each persistent NPC's identity, appearance, stats, conditions, relationships and attractions, party membership, off-party location, master personal possessions, shop/services record, shop stock, knowledge/secrets, NPC-specific quest involvement, and continuity history.
-- This file should point to `NPC-state.md` rather than duplicating full NPC records.
+- `NPC-state.md` owns each persistent NPC's stable NPC ID, identity, appearance, stats, conditions, relationships and attractions, party membership, off-party location, master personal possessions, shop/services record, shop stock, knowledge/secrets, NPC-specific quest involvement, and continuity history.
+- This file should reference persistent NPCs by stable NPC ID and current name and point to `NPC-state.md` rather than duplicating full NPC records.
 - A shop's **existence and location** may be referenced here. Its current stock, prices, services, and owner-specific business details belong in the relevant NPC record in `NPC-state.md`.
 - `active_game.json` owns the last completed current party location.
 - `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation.
@@ -98,6 +100,6 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 
 Add new world information only when it is established during this campaign. Keep prior established facts unless they are explicitly corrected or superseded. Do not reconstruct world or story canon from deleted files, repository history, previous chats, memory, or other campaigns unless the player explicitly requests a specific import.
 
-`NPC-state.md` owns persistent NPC identity, statistics, condition, relationships, party membership, master possessions, and NPC-specific continuity. This file should reference NPCs only where they matter to locations, factions, quests, clues, discoveries, or world consequences rather than duplicating their full records.
+`NPC-state.md` owns persistent NPC identity, stable NPC IDs, statistics, condition, relationships, party membership, master possessions, and NPC-specific continuity. This file should reference NPCs by stable NPC ID and current name only where they matter to locations, factions, quests, clues, discoveries, or world consequences rather than duplicating their full records.
 
 `active_game.json` owns the last completed current party location. `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation. `world_state.md` owns the persistent facts about locations themselves.

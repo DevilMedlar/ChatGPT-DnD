@@ -12,6 +12,18 @@ It owns NPC identity, appearance, mechanical state, personality, relationship an
 
 If an NPC joins or leaves during an active Campaign Turn, this file remains the last completed master state until Confirmation Gate 1 is approved and the transition is reconciled. Stage the temporary membership, location, condition, and possession effects in `turn_save.md` first.
 
+## Stable NPC ID Convention
+
+Every persistent NPC receives one stable Campaign 1 ID when the NPC is first added to this file.
+
+- Use the form `NPC-0001`, `NPC-0002`, `NPC-0003`, and so on.
+- Assign the next unused numeric ID in sequence.
+- An NPC ID never changes because the NPC's name, title, role, location, relationship, party status, or life status changes.
+- Never reuse an old NPC ID for a different NPC, even if the original NPC later dies, disappears, is retired from active play, or has their record corrected.
+- Names and Markdown headings are human-readable display text; they are not the cross-file identity key.
+- Cross-file references to a persistent NPC must include the stable NPC ID. The current NPC name may be included beside it for readability.
+- If one NPC is ever found with multiple IDs, or two NPCs share one ID, stop and reconcile the identity conflict before completing another persistent save.
+
 ## Relationship / Attraction Field Convention
 
 Relationship information is split into separate facts so that one label does not silently imply another.
@@ -38,17 +50,19 @@ None established.
 
 None established.
 
-When NPCs become persistent, list them here with a short role and a link to their record below.
+When NPCs become persistent, list them here with their stable NPC ID, current name, and a short role or relevance note. Do not use a name-derived Markdown anchor as the NPC's identity.
 
 Example format only:
 
 ```text
-- **NPC Name** — role / relevance; see `#NPC-Name`
+- **NPC-0001 — NPC Name** — role / relevance
 ```
 
 ## NPC Record Template
 
 Use the sections below when an NPC becomes important enough to track persistently. Not every NPC needs every optional section. Populate what is relevant and established rather than inventing filler.
+
+Replace the placeholder NPC ID with the next unused stable ID when the persistent record is first created.
 
 ---
 
@@ -56,6 +70,7 @@ Use the sections below when an NPC becomes important enough to track persistentl
 
 ### Identity
 
+- **NPC ID:** NPC-0001
 - **Name:**
 - **Age:**
 - **Gender / pronouns:**
@@ -389,6 +404,7 @@ Do not let items disappear merely because party membership changed.
 
 ## Ownership Rule
 
+- `NPC-state.md` owns each persistent NPC's stable NPC ID as part of NPC identity. Cross-file references use that ID rather than relying on a name-derived Markdown anchor.
 - `NPC-state.md` owns NPC identity, appearance, stats, HP at the last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, master personal possessions, NPC-specific story involvement, shops, shop stock, services, and NPC-specific continuity.
 - Relationship status, current partners, romantic interests, sexual interests, attraction, boundaries, jealousy, and consent / availability are separate facts and must not be inferred from one another.
 - `inventory.md` owns expanded mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by **current party NPCs**. For NPCs, it does not replace the master ownership list here.
