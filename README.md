@@ -34,7 +34,7 @@ campaigns/
 
 Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, or art-continuity state unless the player explicitly requests it.
 
-`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, completed Campaign Turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
+`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, completed Campaign Turn, `current_scene_name`, location, completed PC advancement state, and save revision. During an unfinished Campaign Turn, the live Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
 
 A **Campaign Turn** is the campaign persistence/gameplay unit. One Campaign Turn may contain many numbered steps, including conversation, exploration, multiple combat rounds, and every combatant's individual D&D combat turns. Ending a creature's combat turn, ending a combat round, or even ending combat does not by itself end the Campaign Turn.
 
