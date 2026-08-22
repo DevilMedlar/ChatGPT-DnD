@@ -78,12 +78,23 @@ Do not copy trivial temporary details into permanent files merely because they a
 Typical destinations include:
 
 - `character_sheet.md` — DevilMedlar/Senpai HP, conditions, abilities, character resources, advancement, lasting personal state
-- `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, and other persistent NPC state
-- `inventory.md` — item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, or other possessions
+- `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, **master personal-possession ownership/quantities**, shop stock/services changes, and other persistent NPC state
+- `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, or other possessions for DevilMedlar, Senpai, and current party NPCs
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
 - `session_log.md` — chronological completed-turn summary and continuity-critical events
 - `art/art_log.md` — newly established visual continuity when relevant
 - `active_game.json` — completed session/turn/scene/step/location/levels/XP/save revision/latest sync state
+
+For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated at end turn:
+
+- update `NPC-state.md` so the NPC's master ownership list remains correct
+- update `inventory.md` so the NPC's expanded active mechanical bookkeeping remains correct
+
+Examples include consuming or gaining an item, spending or receiving currency, losing ammunition, transferring equipment, changing quantities, or permanently changing charges/uses.
+
+For a **shop transaction**, update the shop NPC's business stock in `NPC-state.md` and the acquiring party member's appropriate inventory record. Shop stock must not be treated as the shopkeeper's personal carried possessions.
+
+Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
 
 ### End-turn reconciliation
 
@@ -92,10 +103,10 @@ When the gameplay turn ends:
 1. Freeze this file. Do not add new gameplay actions while the end-turn save is being prepared.
 2. Review all `Turn Events`, `Current In-Turn State`, and `Pending End-Turn Transfers`.
 3. Determine which changes are persistent, continuity-relevant, or historically important.
-4. Prepare the necessary updates to the correct permanent campaign files.
+4. Prepare the necessary updates to the correct permanent campaign files. When one fact has both a master ownership record and an expanded active bookkeeping record, synchronize both representations in the same completed save.
 5. Add the completed-turn checkpoint to `session_log.md`.
 6. Prepare the new completed state in `active_game.json` and increment `save_revision` by exactly 1.
-7. Verify that every required transfer is represented in the prepared permanent state.
+7. Verify that every required transfer is represented in the prepared permanent state and that synchronized master/detail records agree.
 8. Reset this file for the next turn only as part of the successfully completed end-turn save.
 
 Whenever Git tooling permits an atomic multi-file commit, the permanent file updates, completed `active_game.json` revision, session-log checkpoint, and reset of this file should be committed together in **one Git commit**.
