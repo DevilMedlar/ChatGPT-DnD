@@ -11,6 +11,7 @@
     "DevilMedlar": 1,
     "Senpai": 1
   },
+  "xp_mode": "cumulative",
   "xp_current": 0,
   "xp_next_level": 100,
   "save_revision": 0,
