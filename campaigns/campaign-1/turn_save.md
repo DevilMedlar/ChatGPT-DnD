@@ -22,7 +22,7 @@ None yet.
 
 None yet.
 
-## Pending End-Turn Transfers
+## Pending Permanent Transfers
 
 None yet.
 
