@@ -17,13 +17,17 @@ This file is the canonical visual index for Campaign 1.
 
 ### DevilMedlar
 
-These details are stable textual visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit player revision.
+No visual details established yet. Character creation is in progress.
+
+Once established, these details remain stable visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit player revision.
 
 ## Companion Visual Canon
 
 ### Senpai
 
-These details are stable textual visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit character revision.
+No visual details established yet. Character creation is in progress.
+
+Once established, these details remain stable visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit character revision.
 
 ## NPC Visual Canon
 
@@ -31,24 +35,29 @@ None established.
 
 ## Locations
 
+None established.
+
 ## Equipment / Important Objects
+
+None established.
 
 ## Reference Art
 
-### DevilMedlar — Primary Character Reference (established at level 1)
+### DevilMedlar
 
-Future images of DevilMedlar should consult this reference together with the textual visual canon above. If the two differ, textual canon wins unless the player explicitly adopts the image variation.
+No primary reference established yet.
 
-### Senpai — Primary Character Reference (established at level 1)
+### Senpai
 
-Future images of Senpai should consult this reference together with the textual companion visual canon above. If the two differ, textual canon wins unless Senpai or the player explicitly adopts the image variation through play.
+No primary reference established yet.
 
-When additional reference art is added:
+When reference art is added:
 
 1. Verify the repository path actually exists before recording it.
 2. Record which visible features are canonical.
 3. Record which features are inspiration only.
 4. Consult this log before generating the subject again.
+5. Prefer written canonical traits over accidental differences in generated images unless the variation is explicitly adopted.
 
 ## Fresh-Start Rule
 
