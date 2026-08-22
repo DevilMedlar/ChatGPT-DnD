@@ -1,8 +1,19 @@
 # Character Sheet — Campaign 1
 
-**Status:**
+**Status:** Character creation is in progress.
 
-DevilMedlar's and Senpai's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established.
+The blank fields below are intentional and remain undecided until DevilMedlar and Senpai establish them during character creation. Do not infer, reconstruct, or import missing character details from deleted material, repository history, previous chats, memory, or another campaign.
+
+Currently established canon includes their names, ages, pronouns, and shared relationship history.
+
+## Shared Relationship Canon
+
+- DevilMedlar and Senpai are both 20 years old.
+- They have loved one another since childhood.
+- They married five years ago.
+- Their relationship before both were 18 remained romantic and nonsexual.
+- They are now consenting adult romantic and sexually active partners.
+- Additional history, relationship details, and their family name will be established together during character creation.
 
 ## DevilMedlar (player)
 
@@ -52,11 +63,13 @@ DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 
 ## Appearance
 
-These are stable visual-canon traits for continuity-sensitive narration and art unless later transformed, injured, disguised, or explicitly changed.
+These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
 ## Personal / Relationship Continuity
-- Loves Senpai
-- Married to Senpai
+
+- Loves Senpai.
+- Married to Senpai.
+- Current adult romantic and sexual relationship is consensual.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
@@ -69,7 +82,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Mystical affinity:**
 - **Class / homebrew class:**
 - **Background:**
-- **Level:** 
+- **Level:**
 
 ## Background History
 
@@ -108,8 +121,12 @@ Senpai's authoritative current inventory is tracked in `inventory.md`.
 
 ## Appearance
 
-## Personal / Relationship Continuity
-- Loves DevilMedlar
-- Married to DevilMedlar
+These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
+## Personal / Relationship Continuity
+
+- Loves DevilMedlar.
+- Married to DevilMedlar.
+- Current adult romantic and sexual relationship is consensual.
+
+Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
