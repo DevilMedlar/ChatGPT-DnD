@@ -34,9 +34,11 @@ campaigns/
 
 Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, or art-continuity state unless the player explicitly requests it.
 
-`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
+`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, completed Campaign Turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
 
-Each campaign's `turn_save.md` is the temporary authoritative ledger for an **unfinished gameplay turn**. While its status is `in_progress`, recorded in-turn changes overlay the last completed state in `active_game.json` and the permanent campaign files. An unfinished turn must be resumed or reconciled before a new gameplay turn begins.
+A **Campaign Turn** is the campaign persistence/gameplay unit. One Campaign Turn may contain many numbered steps, including conversation, exploration, multiple combat rounds, and every combatant's individual D&D combat turns. Ending a creature's combat turn, ending a combat round, or even ending combat does not by itself end the Campaign Turn.
+
+Each campaign's `turn_save.md` is the temporary authoritative ledger for the **current unfinished Campaign Turn**. While its status is `in_progress`, recorded in-turn changes overlay the last completed state in `active_game.json` and the permanent campaign files. The ledger remains intact through the full Campaign Turn instead of pushing unresolved mid-turn state into permanent files.
 
 ## Adult campaign style
 
@@ -62,6 +64,8 @@ Not every scene needs an image.
 
 Before continuing a campaign, read `campaigns/active_campaign.json`, follow its pointer to the active campaign, then read that campaign's `active_game.json`, `turn_save.md`, and any other canonical files needed for the scene.
 
-If `turn_save.md` is `in_progress`, resume or reconcile that unfinished turn before starting another gameplay turn. During the turn, stage step-by-step changes there. At end turn, transfer only the important, relevant, persistent results to their proper canonical files, verify the transfer, and complete the save according to that campaign's turn-save and `GAME_MASTER_RULES.md` workflow.
+If `turn_save.md` is not `ready`, follow that campaign's recovery rules before starting a new Campaign Turn. During an active Campaign Turn, stage step-by-step changes in `turn_save.md`; do not finalize permanent campaign state merely because a combatant turn, combat round, or combat encounter ends.
+
+When the **full Campaign Turn** ends, freeze the ledger and verify its final effective state and planned permanent transfers. Permanent reconciliation begins only after the player confirms the save review. After the permanent save is written, re-check the affected files and report that the save is complete while the temporary ledger is still intact. Reset `turn_save.md` only after a separate player confirmation.
 
 Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.

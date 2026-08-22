@@ -167,6 +167,213 @@ When an XP calculation produces a fractional result, use normal arithmetic round
 
 Use initiative, movement, actions, bonus actions when appropriate, reactions, attacks, damage, saving throws, cover, conditions, HP, environmental hazards, and meaningful enemy tactics. Keep bookkeeping accurate while keeping narration readable and energetic.
 
+## Campaign Turn terminology and lifecycle
+
+### Campaign Turn
+
+A **Campaign Turn** is Campaign 1's complete persistence/gameplay unit. It begins from one completed permanent save state and remains open until the whole connected gameplay unit is intentionally completed.
+
+A Campaign Turn may contain any number of numbered Steps, including:
+
+- scene setup and narration
+- dialogue and decisions
+- exploration and movement
+- requested rolls and their results
+- initiative setup
+- multiple combat rounds
+- every creature's individual combat turn
+- attacks, damage, healing, conditions, item use, charges, ammunition, spell slots, class resources, and other changing state
+- combat ending
+- post-combat searching, dialogue, loot, clues, discoveries, movement, and other directly connected actions
+
+Ending a creature's normal D&D combat turn does **not** end the Campaign Turn.
+
+Ending a combat round does **not** end the Campaign Turn.
+
+Combat itself ending does **not automatically** end the Campaign Turn if the connected gameplay sequence continues.
+
+During active combat, an unqualified phrase such as `end turn` means the current creature's **Combat Turn** ends. It does not trigger Campaign Turn reconciliation. The persistence workflow is entered only when the full Campaign Turn is intentionally interpreted as complete.
+
+### Combat Turn and Combat Round
+
+A **Combat Turn** is one creature's activation within initiative order.
+
+A **Combat Round** is one initiative cycle through the active combatants.
+
+Combat Turns and Combat Rounds exist inside a Campaign Turn and never cause `turn_save.md` to reset merely because they end.
+
+### Starting a Campaign Turn
+
+Before starting a Campaign Turn:
+
+1. Read the current completed canonical campaign files required for the scene.
+2. Confirm `turn_save.md` is `ready` and no older Campaign Turn requires recovery, review, verification, or reset.
+3. Use the current permanent files as the starting state rather than copying every starting value into `turn_save.md`.
+4. Set `Campaign Turn` to the next Campaign Turn number.
+5. Set `Status` to `in_progress`.
+6. Set `Current Step` to `0`.
+7. Set `Base save revision` to the current `save_revision` in `active_game.json`.
+
+The effective state while the Campaign Turn is open is:
+
+`last completed permanent state + turn_save.md overlay`
+
+### Recording Campaign Turn Steps
+
+A Campaign Turn may contain as many numbered Steps as needed.
+
+After each resolved Step:
+
+1. append the relevant action/event, roll calculation when applicable, immediate result, and state deltas to `Turn Events`
+2. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
+3. update `Pending End-Turn Transfers` when a result may need persistent reconciliation
+4. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
+5. do not increment `save_revision`
+
+`Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
+
+Whenever Git repository writing is available, a resolved Step may be checkpointed with a small Git commit for interruption recovery. Step/lifecycle checkpoint commits do **not** increment `save_revision` and are not completed campaign saves.
+
+### Full Campaign Turn end interpretation
+
+When gameplay reaches what may be the end of the full Campaign Turn, first interpret what ended.
+
+A creature's Combat Turn, a Combat Round, or a combat encounter ending is not enough by itself.
+
+When the gameplay flow explicitly means **end the full Campaign Turn**:
+
+1. set `Status` to `ending_review`
+2. freeze the Turn ledger
+3. stop adding new gameplay actions
+4. do **not** write permanent campaign files yet
+5. do **not** reset `turn_save.md`
+
+At this point `Current In-Turn State` becomes the proposed **Final Turn State** for review.
+
+### Confirmation Gate 1: save approval
+
+Before any permanent transfer:
+
+1. review every recorded Step and verify the proposed Final Turn State is fully consistent with the recorded actions, rolls, damage, healing, resource use, movement, discoveries, and results
+2. resolve any missing, contradictory, uncertain, or unresolved state in the temporary ledger first
+3. determine the **Exact Planned Permanent Transfers** to the owning files
+4. show the player both the Final Turn State and Exact Planned Permanent Transfers
+5. ask: `Confirm Campaign Turn N save? Yes / No / Corrections`
+
+If the player says **No**:
+
+- remain `ending_review`
+- change no permanent campaign files
+- do not reset the ledger
+
+If the player gives **Corrections**:
+
+- correct the temporary Turn record first
+- recalculate the Final Turn State and planned transfers
+- show the revised review again
+- ask for save confirmation again
+
+If the player says **Yes**:
+
+- record the approval
+- set `Status` to `reconciling`
+- begin permanent reconciliation
+
+No permanent Campaign Turn save may begin without this confirmation.
+
+### Reconciliation after save approval
+
+After Confirmation Gate 1 is approved:
+
+1. transfer only the approved persistent, continuity-relevant, or historically important results to their proper permanent owners
+2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
+3. update shop business stock and acquired party inventory separately when a shop transaction occurred
+4. append the completed Campaign Turn checkpoint to `session_log.md`
+5. prepare `active_game.json` as the completed-state marker using `campaign_turn_number`
+6. increment `save_revision` exactly once for the completed permanent save
+7. do **not** reset the Turn ledger as part of this permanent save
+
+Whenever tooling permits an atomic multi-file commit, commit the supporting permanent-state updates, `session_log.md`, and completed `active_game.json` revision together in one permanent-save commit. The complete temporary ledger remains intact.
+
+If permanent files must be written sequentially, update supporting permanent files first and update `active_game.json` last.
+
+### Permanent save verification
+
+After the permanent writes land, do not assume the save succeeded merely because the writes returned successfully.
+
+Read/check the affected permanent files again and compare them with the player-approved Final Turn State and Exact Planned Permanent Transfers.
+
+Verify at minimum:
+
+- expected character-state changes landed correctly
+- expected inventory/resource changes landed correctly
+- required NPC master/detail records agree when applicable
+- required world/clue changes landed correctly
+- `session_log.md` contains the completed Campaign Turn checkpoint
+- `active_game.json` contains the completed `campaign_turn_number`
+- `save_revision` advanced exactly once
+- every approved planned transfer is accounted for
+- no unrelated campaign state was changed
+- no unresolved result remains stranded only in the temporary ledger
+
+If verification fails, keep the Turn ledger intact, do not request reset, and reconcile the permanent state until it matches the approved final state.
+
+When verification passes:
+
+1. set `Status` to `saved_awaiting_reset`
+2. preserve the full completed Turn ledger as a safety copy
+3. send the player a compact save-completion report confirming the completed Campaign Turn, save revision, important final state, and successful verification
+4. explicitly state that `turn_save.md` has **not** been reset
+5. ask: `Confirm reset for Campaign Turn N+1? Yes / No`
+
+A checkpoint commit that only records the verified `saved_awaiting_reset` ledger state does not increment `save_revision`.
+
+### Confirmation Gate 2: reset approval
+
+The successful permanent save does **not** automatically erase its temporary source ledger.
+
+If the player says **No**:
+
+- remain `saved_awaiting_reset`
+- keep the completed Turn events, Final Turn State, planned transfers, and verification information intact
+- do not replay or resave the completed Campaign Turn
+
+If the player says **Yes**:
+
+1. reset the temporary ledger
+2. clear the completed Turn events, Current In-Turn State, pending transfers, final review, save verification, and prior reset approval
+3. prepare the next Campaign Turn number
+4. set `Status` to `ready`
+5. set `Current Step` to `0`
+6. set `Base save revision` to the newly completed `save_revision`
+
+The reset is a cleanup/checkpoint operation. It does **not** increment `save_revision` because the permanent Campaign Turn save already completed.
+
+### Campaign Turn recovery by status
+
+Before beginning or continuing gameplay, read `turn_save.md` and use its status to determine recovery:
+
+- `ready` — no unfinished Campaign Turn exists; the next Campaign Turn may begin.
+- `in_progress` — resume the active Campaign Turn from the last completed permanent state plus the temporary overlay. Never start another Campaign Turn first.
+- `ending_review` — the full Campaign Turn end was interpreted and the ledger is frozen. No permanent Campaign Turn write is authorized until the player confirms the final review.
+- `reconciling` — the player approved the final state and the permanent save may be partially or fully written. Check `active_game.json`, the affected permanent files, and the approved Final Turn State before taking any action. Never replay the Campaign Turn automatically.
+- `saved_awaiting_reset` — the permanent Campaign Turn save is complete and verified. Do not replay or resave it. Only the player's reset confirmation remains.
+
+Also compare `Base save revision` with `active_game.json.save_revision` in context with the status:
+
+- `in_progress` normally overlays the same base revision currently recorded in `active_game.json`.
+- `reconciling` may temporarily coexist with a newer `active_game.json.save_revision` if the permanent save has already landed and is awaiting verification.
+- `saved_awaiting_reset` intentionally references the older base revision while `active_game.json` already contains the newly completed revision.
+- a base revision greater than the completed `active_game.json.save_revision` is inconsistent and must be reconciled before play continues.
+
+Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-reset Campaign Turn ledger.
+
+### Character creation and Campaign Turns
+
+Character creation occurs before Campaign Turn 1.
+
+Each finalized character-creation step may update the appropriate permanent files and complete a normal save revision directly. Those finalized creation saves do not require an `in_progress` Campaign Turn unless actual gameplay has begun.
+
 ## Equipment and special effects
 
 Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
@@ -232,12 +439,12 @@ When an NPC joins the party:
 1. mark party membership in `NPC-state.md`
 2. keep the master ownership list there
 3. add an expanded active inventory section in `inventory.md` for carried possessions that need detailed mechanical bookkeeping
-4. stage unfinished-turn item/resource changes in `turn_save.md`
+4. stage unfinished-Campaign-Turn item/resource changes in `turn_save.md`
 
 When an NPC leaves the party:
 
 1. reconcile their final quantities, currency, equipment, charges, acquired items, lost items, and other relevant possessions back into the master ownership list in `NPC-state.md`
-2. reconcile any unfinished-turn changes
+2. reconcile any unfinished Campaign Turn changes
 3. update the NPC's off-party location when known
 4. only then remove or collapse their expanded section from `inventory.md`
 
@@ -301,6 +508,24 @@ Workflow:
 3. The player rolls and reports the raw die result or results.
 4. ChatGPT applies established modifiers, proficiency, advantage/disadvantage or other mechanics when those mechanics exist, calculates totals, determines consequences, and records persistent changes when necessary.
 
+### Compact roll recording in `turn_save.md`
+
+When recording rolls in Campaign Turn Steps, keep the calculation on one line whenever practical while preserving enough information to reconstruct it.
+
+General pattern:
+
+`**Actor rolls Roll Name:** dice/results + bonuses - penalties ×/÷ other effects = **final total**`
+
+Attack pattern:
+
+`**Attack — Attack Name:** dice/results + modifiers = **total** vs AC/target = **Hit/Miss**`
+
+Damage/healing pattern:
+
+`**Damage/Healing — Source:** dice/results + modifiers ×/÷ effects = **final amount**`
+
+Preserve the dice expression and individual die results when useful, especially for multiple dice, advantage/disadvantage, critical hits, resistance, vulnerability, rerolls, or other effects. Initiative order should record each combatant's final initiative total beside the name.
+
 ### Hidden checks
 
 Because the player rolls all dice, a hidden check does **not** mean ChatGPT secretly rolls a die.
@@ -352,7 +577,7 @@ When the player supplies reference art or manually adds images to the repository
 
 `../active_campaign.json` is a **campaign selector only**. It identifies the active numbered campaign and points to that campaign's `active_game.json`.
 
-It is not the authoritative place for session, turn, character level, XP, location, or other changing gameplay state. Do not rewrite `../active_campaign.json` after ordinary gameplay turns unless the active campaign selection, campaign path, or pointer-level phase actually changes.
+It is not the authoritative place for session, Campaign Turn, character level, XP, location, or other changing gameplay state. Do not rewrite `../active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or pointer-level phase actually changes.
 
 Campaign saves are isolated:
 
@@ -364,63 +589,67 @@ Campaign saves are isolated:
 
 Within Campaign 1, file ownership is:
 
-- `active_game.json` — authoritative **last completed live save**: session, turn, scene, step, location, character-creation state, character levels, XP, save revision, and latest synchronization note.
-- `turn_save.md` — temporary authoritative ledger for the current unfinished gameplay turn, including turn events, effective in-turn state, positions, HP/resource changes, conditions, pending end-turn transfers, and recovery state.
+- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, scene, step, location, character-creation state, character levels, XP, save revision, and latest synchronization note.
+- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, and established relationship continuity.
 - `NPC-state.md` — persistent NPC identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to NPCs.
-- `session_log.md` — chronological resolved-turn history.
+- `session_log.md` — chronological completed Campaign Turn history.
 - `art/art_log.md` — visual continuity and verified reference-art information.
 - `README.md` — static campaign documentation; do not use it as a duplicate live save.
 
 ## Persistence
 
-### During a gameplay turn
+The detailed Campaign Turn workflow is defined above. The persistence rules below govern how that workflow writes permanent state.
 
-Do not repeatedly rewrite permanent campaign files for every ordinary step.
+### Permanent transfer destinations
 
-Use `turn_save.md` as the temporary authoritative ledger for the unfinished turn. Record step-by-step actions and results there, including relevant movement, HP changes, conditions, charges, ammunition, consumables, resources, temporary effects, discoveries, and other in-turn changes.
+At approved Campaign Turn reconciliation, transfer only persistent, continuity-relevant, or historically important results to their correct owners.
 
-While `turn_save.md` is `in_progress`, the effective current state is:
+Typical destinations include:
 
-`last completed permanent state + turn_save.md overlay`
+- `character_sheet.md` — DevilMedlar/Senpai HP, conditions, abilities, character resources, advancement, lasting personal state
+- `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
+- `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, and other possessions for DevilMedlar, Senpai, and current party NPCs
+- `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
+- `session_log.md` — chronological completed Campaign Turn summary and continuity-critical events
+- `art/art_log.md` — newly established visual continuity when relevant
+- `active_game.json` — completed session/Campaign Turn/scene/step/location/levels/XP/save revision/latest sync state
 
-If an unfinished turn exists, resume or reconcile it before starting another gameplay turn.
+For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
 
-### End-turn reconciliation
+- update `NPC-state.md` so the NPC's master ownership list remains correct
+- update `inventory.md` so the NPC's expanded active mechanical bookkeeping remains correct
 
-At end turn:
+Examples include consuming or gaining an item, spending or receiving currency, losing ammunition, transferring equipment, changing quantities, or permanently changing charges/uses.
 
-1. freeze new gameplay actions while saving
-2. review the turn events, current in-turn state, and pending transfers
-3. transfer only persistent, continuity-relevant, or historically important results to their correct permanent owners
-4. update `session_log.md` with the completed-turn checkpoint
-5. prepare the new completed state in `active_game.json`
-6. verify required transfers
-7. increment `save_revision` exactly once
-8. reset `turn_save.md` for the next turn only as part of the successfully completed end-turn save
+For a **shop transaction**, update the shop NPC's business stock in `NPC-state.md` and the acquiring party member's appropriate inventory record. Shop stock must not be treated as the shopkeeper's personal carried possessions.
 
-Whenever Git tooling permits an atomic multi-file commit, the permanent state updates, `session_log.md` checkpoint, completed `active_game.json` revision, and `turn_save.md` reset should be committed together in **one Git commit**.
-
-A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it.
+Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
 
 ### Save revision rule
 
 `active_game.json` contains `save_revision`.
 
-For a completed turn or other completed persistent save revision:
+For a completed Campaign Turn or other completed persistent save revision:
 
-1. determine all Campaign 1 files that need real changes
+1. determine all Campaign 1 permanent files that need real changes
 2. prepare the canonical state/history updates
 3. prepare `active_game.json` with the new completed authoritative state
-4. increment `save_revision` by exactly 1 only after the related campaign-state updates are synchronized as one completed save
+4. increment `save_revision` by exactly 1 only for the completed permanent save
 5. set `last_sync_note` to a compact description of what that completed revision represents
-6. if a required state-file update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the state is reconciled
+6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
 
-Individual turn-step checkpoints do **not** increment `save_revision`.
+Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, and the later temporary-ledger reset do **not** increment `save_revision`.
 
-If the environment cannot make one atomic multi-file commit and must write permanent files sequentially, update supporting permanent files first, update `active_game.json` last, and reset `turn_save.md` only after the completed revision has successfully landed.
+Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
+
+If the environment cannot make one atomic multi-file permanent save and must write files sequentially, update supporting permanent files first and `active_game.json` last. Then verify the completed state before moving the temporary ledger to `saved_awaiting_reset`.
+
+The later player-approved reset of `turn_save.md` is a separate cleanup/checkpoint operation and does not create another campaign save revision.
+
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it.
 
 The revision marks a completed Campaign 1 save checkpoint. It does not permit old campaign history to become canon.
 
@@ -437,9 +666,9 @@ Examples of reasons to remove, delete, or correct existing material include, but
 
 ### Session log behavior
 
-`session_log.md` is chronological. New gameplay turns should normally be appended as new checkpoints rather than replacing older checkpoints.
+`session_log.md` is chronological. New completed Campaign Turns should normally be appended as new checkpoints rather than replacing older checkpoints.
 
-Record important rolls, choices, consequences, XP awards, scene transitions, discoveries, relationship changes, combat outcomes, and other continuity-critical events.
+Record important rolls, choices, consequences, XP awards, scene transitions, discoveries, relationship changes, combat outcomes, and other continuity-critical events. The session log summarizes completed Campaign Turns and does not need every granular Step already preserved during the temporary Turn ledger.
 
 ## Priority order
 
