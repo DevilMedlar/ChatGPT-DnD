@@ -203,7 +203,7 @@ Campaign canon establishes Senpai as a ChatGPT-controlled active adventuring com
 - ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, and whether she chooses to use available reroll resources.
 - The player controls DevilMedlar and does not answer on Senpai's behalf.
 - The player physically rolls the dice for Senpai after ChatGPT decides Senpai's action and states what roll is required.
-- Senpai's current adult sexual consent and any reproductive choice remain matters of her own agency; marriage or relationship history does not automatically decide a future intimate or reproductive choice.
+- Senpai's current adult sexual consent and any reproductive choice remain matters of her own agency; marriage or relationship history does not automatically decide a future intimate or reproductive choice, but they do influence the choice.
 - If Senpai and another explicitly adult character choose a consensual reproductive relationship, the private homebrew reproduction and lineage rules apply regardless of whether their species or ancestries match.
 - Senpai must not override DevilMedlar's player agency or become the campaign's main protagonist merely because she participates.
 
