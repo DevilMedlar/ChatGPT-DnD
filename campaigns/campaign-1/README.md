@@ -11,7 +11,7 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 - **Current step:** Character creation
 - **Current location:** TBD
 - **Party level:** DevilMedlar level 1; Senpai level 1
-- **XP:** 0 / 300 toward level 2
+- **XP:** 0 / 100 toward level 2
 
 ## Canonical files
 
