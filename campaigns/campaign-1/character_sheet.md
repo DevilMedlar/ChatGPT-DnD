@@ -29,9 +29,9 @@ Currently established canon includes their names, ages, pronouns, and shared rel
 - **Level:** 1
 - **XP** 0/100
 
-## Background History
+### Background History
 
-## Ability Scores
+### Ability Scores
 
 - **Strength:**
 - **Dexterity:**
@@ -40,7 +40,7 @@ Currently established canon includes their names, ages, pronouns, and shared rel
 - **Wisdom:**
 - **Charisma:**
 
-## Combat Statistics
+### Combat Statistics
 
 - **HP / Max HP:**
 - **Hit Dice:**
@@ -52,30 +52,30 @@ Currently established canon includes their names, ages, pronouns, and shared rel
 - **Passive Perception:**
 - **Saving Throw Proficiencies:**
 
-## Advancement
+### Advancement
 
-## Equipment Summary
+### Equipment Summary
 
 DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 
-## Skills
+### Skills
 
-## Features / Abilities / Spells
+### Features / Abilities / Spells
 
-## Conditions / Ongoing Effects
+### Conditions / Ongoing Effects
 
-## Appearance
+### Appearance
 
 These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
-## Personal / Relationship Continuity
+### Personal / Relationship Continuity
 
 - Married to Senpai and loves her. Current relationship is consensual, romantic, and sexual. 
 - No kids yet
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
-# Senpai (ChatGPT-controlled companion)
+## Senpai (ChatGPT-controlled companion)
 
 - **Name:** Senpai
 - **Age:** 20
@@ -87,9 +87,9 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Level:** 1
 - **XP** 0/100
 
-## Background History
+### Background History
 
-## Ability Scores
+### Ability Scores
 
 - **Strength:**
 - **Dexterity:**
@@ -98,7 +98,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Wisdom:**
 - **Charisma:**
 
-## Combat Statistics
+### Combat Statistics
 
 - **HP / Max HP:**
 - **Hit Dice:**
@@ -110,23 +110,23 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Passive Perception:**
 - **Saving Throw Proficiencies:**
 
-## Advancement
+### Advancement
 
-## Equipment Summary
+### Equipment Summary
 
 Senpai's authoritative current inventory is tracked in `inventory.md`.
 
-## Skills
+### Skills
 
-## Features / Abilities / Spells
+### Features / Abilities / Spells
 
-## Conditions / Ongoing Effects
+### Conditions / Ongoing Effects
 
-## Appearance
+### Appearance
 
 These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
-## Personal / Relationship Continuity
+### Personal / Relationship Continuity
 
 - Married to DevilMedlar and loves him. Current relationship is consensual, romantic, and sexual. 
 - No kids yet
