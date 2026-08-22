@@ -2,26 +2,23 @@
 
 Fresh adult fantasy campaign. No prior campaign canon is imported.
 
-## Status
+## Live state authority
 
-- **Phase:** Active
-- **Session:** 1
-- **Last resolved turn:** 0
-- **Next turn:** 1
-- **Current step:** Character creation
-- **Current location:** TBD
-- **Party level:** DevilMedlar level 1; Senpai level 1
-- **XP:** 0 / 100 toward level 2
+`active_game.json` is the authoritative live save for Campaign 1.
+
+It owns the current session, turn, scene, step, location, character-creation status, character levels, XP, save revision, and latest synchronization note. Do not duplicate changing live-state values in this README.
+
+At initialization, Campaign 1 begins in character creation before the first resolved gameplay turn.
 
 ## Canonical files
 
-- `GAME_MASTER_RULES.md` — campaign rules, mechanics, adult-content rules, image workflow, and persistence rules.
-- `active_game.json` — compact live Campaign 1 state.
+- `GAME_MASTER_RULES.md` — campaign rules, mechanics, adult-content rules, image workflow, file ownership, and persistence rules.
+- `active_game.json` — authoritative live Campaign 1 state.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, and personal state.
-- `NPC-state.md` — NPC statistics, abilities, traits, advancement, appearance, personal state, and in party or not.
+- `NPC-state.md` — authoritative NPC identity, statistics, abilities, traits, appearance, relationships, condition, and party-membership state.
 - `inventory.md` — equipment, currency, consumables, evidence, and important carried items.
-- `world_state.md` — NPCs names, locations, factions, quests, clues, resolved discoveries, and unresolved consequences.
-- `session_log.md` — chronological resolved-turn checkpoints, rolls, choices, consequences, and XP awards; historical turn-end states remain preserved even when later between-turn advancement changes the live state.
+- `world_state.md` — locations, factions, quests, clues, discoveries, world consequences, and references to NPCs when relevant to world events.
+- `session_log.md` — chronological resolved-turn checkpoints, rolls, choices, consequences, XP awards, and historical save checkpoints.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
 ## Fresh-start canon
