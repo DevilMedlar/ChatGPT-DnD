@@ -22,6 +22,7 @@ campaigns/
     README.md
     GAME_MASTER_RULES.md
     active_game.json
+    turn_save.md
     character_sheet.md
     NPC-state.md
     inventory.md
@@ -31,9 +32,11 @@ campaigns/
       art_log.md
 ```
 
-Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, or art-continuity state unless the player explicitly requests it.
+Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, or art-continuity state unless the player explicitly requests it.
 
-`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's live session, turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
+`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
+
+Each campaign's `turn_save.md` is the temporary authoritative ledger for an **unfinished gameplay turn**. While its status is `in_progress`, recorded in-turn changes overlay the last completed state in `active_game.json` and the permanent campaign files. An unfinished turn must be resumed or reconciled before a new gameplay turn begins.
 
 ## Adult campaign style
 
@@ -57,6 +60,8 @@ Not every scene needs an image.
 
 ## Persistence
 
-Before continuing a campaign, read `campaigns/active_campaign.json`, follow its pointer to the active campaign, then read that campaign's `active_game.json` and any other canonical files needed for the scene.
+Before continuing a campaign, read `campaigns/active_campaign.json`, follow its pointer to the active campaign, then read that campaign's `active_game.json`, `turn_save.md`, and any other canonical files needed for the scene.
 
-After gameplay turns, synchronize only the active campaign's persistent state according to that campaign's `GAME_MASTER_RULES.md`. Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.
+If `turn_save.md` is `in_progress`, resume or reconcile that unfinished turn before starting another gameplay turn. During the turn, stage step-by-step changes there. At end turn, transfer only the important, relevant, persistent results to their proper canonical files, verify the transfer, and complete the save according to that campaign's turn-save and `GAME_MASTER_RULES.md` workflow.
+
+Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.

@@ -1,6 +1,6 @@
 # Campaigns
 
-Each campaign lives in its own numbered folder and keeps its own rules, character state, NPC state, world state, inventory, session history, and art continuity.
+Each campaign lives in its own numbered folder and keeps its own rules, character state, NPC state, world state, inventory, session history, turn-save state, and art continuity.
 
 ## Active campaign
 
@@ -16,6 +16,16 @@ Campaign saves are isolated by folder:
 - Continue the same pattern for later campaigns.
 
 Changing campaigns changes the pointer in `active_campaign.json`; it does not move, merge, or copy campaign state.
+
+## Turn-save staging
+
+Each campaign also owns its own `turn_save.md`.
+
+`active_game.json` represents the campaign's last completed save. `turn_save.md` stages the current unfinished gameplay turn, including step-by-step actions and temporary changes such as position, HP, resources, charges, conditions, and other in-turn effects.
+
+While `turn_save.md` is marked `in_progress`, its recorded current in-turn state overlays the last completed permanent state. That unfinished turn must be resumed or reconciled before another gameplay turn begins.
+
+At end turn, only persistent or continuity-relevant results are transferred from `turn_save.md` into their proper campaign files. The transfer is verified before the completed save revision is finalized and the turn-save file is reset for the next turn.
 
 ## Folder convention
 
@@ -44,6 +54,7 @@ Each campaign should contain:
 README.md
 GAME_MASTER_RULES.md
 active_game.json
+turn_save.md
 character_sheet.md
 NPC-state.md
 inventory.md
@@ -53,4 +64,4 @@ art/
   art_log.md
 ```
 
-The campaign's `GAME_MASTER_RULES.md` defines its mechanics, save cadence, image workflow, adult-content boundaries, file ownership, and continuity behavior.
+The campaign's `GAME_MASTER_RULES.md` defines its mechanics, save cadence, image workflow, adult-content boundaries, file ownership, and continuity behavior. `turn_save.md` defines and carries the unfinished-turn staging and recovery workflow for that campaign.

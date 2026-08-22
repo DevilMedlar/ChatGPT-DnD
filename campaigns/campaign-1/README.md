@@ -4,22 +4,34 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 
 ## Live state authority
 
-`active_game.json` is the authoritative live save for Campaign 1.
+`active_game.json` is the authoritative **last completed live save** for Campaign 1.
 
-It owns the current session, turn, scene, step, location, character-creation status, character levels, XP, save revision, and latest synchronization note. Do not duplicate changing live-state values in this README.
+It owns the current completed session, turn, scene, step, location, character-creation status, character levels, XP, save revision, and latest synchronization note. Do not duplicate changing completed live-state values in this README.
 
-At initialization, Campaign 1 begins in character creation before the first resolved gameplay turn.
+`turn_save.md` is the authoritative staging record for the **current unfinished gameplay turn**. While it is marked `in_progress`, its recorded in-turn changes overlay the last completed state until end-turn reconciliation is completed.
+
+At initialization, Campaign 1 begins in character creation before the first resolved gameplay turn. Finalized character-creation choices may update their proper permanent files as completed save revisions without starting a gameplay turn.
 
 ## Canonical files
 
 - `GAME_MASTER_RULES.md` — campaign rules, mechanics, adult-content rules, image workflow, file ownership, and persistence rules.
-- `active_game.json` — authoritative live Campaign 1 state.
+- `active_game.json` — authoritative last completed Campaign 1 live state and save revision.
+- `turn_save.md` — temporary authoritative ledger for the current unfinished gameplay turn, step checkpoints, in-turn state, pending transfers, recovery, and end-turn reconciliation.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, and personal state.
 - `NPC-state.md` — authoritative NPC identity, statistics, abilities, traits, appearance, relationships, condition, and party-membership state.
 - `inventory.md` — equipment, currency, consumables, evidence, and important carried items.
 - `world_state.md` — locations, factions, quests, clues, discoveries, world consequences, and references to NPCs when relevant to world events.
 - `session_log.md` — chronological resolved-turn checkpoints, rolls, choices, consequences, XP awards, and historical save checkpoints.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
+
+## Unfinished-turn rule
+
+Before beginning or continuing gameplay, read `turn_save.md`.
+
+- `ready` means no gameplay turn is currently unfinished.
+- `in_progress` means resume that turn before starting another one.
+- During an unfinished turn, use the last completed permanent state plus the changes recorded in `turn_save.md` as the effective current state.
+- At end turn, reconcile only persistent or continuity-relevant results into their proper permanent files, verify the transfer, complete one save revision, and reset `turn_save.md` for the next turn.
 
 ## Fresh-start canon
 
