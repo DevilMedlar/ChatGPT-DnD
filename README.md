@@ -23,6 +23,7 @@ campaigns/
     GAME_MASTER_RULES.md
     active_game.json
     character_sheet.md
+    NPC-state.md
     inventory.md
     world_state.md
     session_log.md
@@ -30,7 +31,9 @@ campaigns/
       art_log.md
 ```
 
-Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, world, quest, relationship, inventory, session, or art-continuity state unless the player explicitly requests it.
+Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, or art-continuity state unless the player explicitly requests it.
+
+`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's live session, turn, scene, step, location, character levels, XP, and save revision. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
 
 ## Adult campaign style
 
@@ -54,6 +57,6 @@ Not every scene needs an image.
 
 ## Persistence
 
-Before continuing a campaign, read `campaigns/active_campaign.json` and the active campaign's canonical files needed for the scene.
+Before continuing a campaign, read `campaigns/active_campaign.json`, follow its pointer to the active campaign, then read that campaign's `active_game.json` and any other canonical files needed for the scene.
 
-After gameplay turns, synchronize the persistent state according to that campaign's `GAME_MASTER_RULES.md`. Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.
+After gameplay turns, synchronize only the active campaign's persistent state according to that campaign's `GAME_MASTER_RULES.md`. Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.
