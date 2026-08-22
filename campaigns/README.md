@@ -6,7 +6,7 @@ Each campaign lives in its own numbered folder and keeps its own rules, characte
 
 `active_campaign.json` is a pointer only. It identifies which numbered campaign is currently active and the path to that campaign's `active_game.json`.
 
-Live gameplay state does **not** belong in `active_campaign.json`. Session, completed Campaign Turn, scene, step, location, character-creation status, character levels, XP, save revision, and the latest synchronization note belong in the active campaign's own `active_game.json`.
+Live gameplay state does **not** belong in `active_campaign.json`. Session, completed Campaign Turn, completed/pre-game scene name, location, character-creation status, completed PC advancement state, save revision, and the latest synchronization note belong in the active campaign's own `active_game.json`. The current unfinished Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`.
 
 Campaign saves are isolated by folder:
 
@@ -23,7 +23,7 @@ Each campaign also owns its own `turn_save.md`.
 
 A **Campaign Turn** is the campaign persistence/gameplay unit. It may contain any number of steps, including conversation, exploration, multiple combat rounds, and individual combatant turns. A combatant ending its D&D turn, a combat round ending, or combat itself ending does not automatically finish the Campaign Turn.
 
-`active_game.json` represents the campaign's last completed save. `turn_save.md` stages the current unfinished Campaign Turn, including chronological steps and the compact latest effective in-turn state needed to continue or recover it.
+`active_game.json` represents the campaign's last completed save and stores the completed/pre-game scene label as `current_scene_name`. `turn_save.md` stages the current unfinished Campaign Turn, including its Current Step, Current Scene, chronological events, and the compact latest effective in-turn state needed to continue or recover it.
 
 While `turn_save.md` is `in_progress`, its current in-turn state overlays the last completed permanent state. The full Campaign Turn stays in the temporary ledger until the Campaign Turn itself is intentionally ended.
 
@@ -68,4 +68,4 @@ art/
   art_log.md
 ```
 
-The campaign's `GAME_MASTER_RULES.md` defines its mechanics, Campaign Turn lifecycle and save cadence, image workflow, adult-content boundaries, file ownership, and continuity behavior. `turn_save.md` carries the current Campaign Turn ledger, current in-turn state, pending transfers, final review, permanent-save verification, and reset-approval state.
+The campaign's `GAME_MASTER_RULES.md` defines its mechanics, Campaign Turn lifecycle and save cadence, image workflow, adult-content boundaries, file ownership, and continuity behavior. `turn_save.md` carries the current Campaign Turn number, Current Step, Current Scene, current in-turn state, pending transfers, final review, permanent-save verification, and reset-approval state.
