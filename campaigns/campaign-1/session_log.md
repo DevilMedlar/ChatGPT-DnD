@@ -1,6 +1,6 @@
 # Session Log — Campaign 1
 
-Gameplay has begun.
+Campaign initialized. Character creation is in progress. No gameplay turn has been resolved yet.
 
 ## Logging Rules
 
@@ -12,3 +12,5 @@ Gameplay has begun.
 - Do not reconstruct missing gameplay history from deleted files, repository history, previous chats, memory, or other campaigns unless the player explicitly requests a specific import.
 
 ## Checkpoints
+
+None yet. Character creation precedes the first resolved gameplay turn.
