@@ -12,18 +12,18 @@ It owns the current completed session, completed Campaign Turn, completed/pre-ga
 
 `turn_save.md` is the authoritative temporary ledger for the **current unfinished Campaign Turn**. It owns the live Campaign Turn number, Current Step, and Current Scene while the Turn is active. While it is `in_progress`, its recorded in-turn changes overlay the last completed state. A Campaign Turn may contain multiple combat rounds, every combatant's individual D&D combat turns, scene changes, and post-combat or noncombat steps without resetting the ledger.
 
-At initialization, Campaign 1 begins in character creation before the first Campaign Turn. Finalized character-creation choices may update their proper permanent files as completed save revisions without starting a Campaign Turn. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may describe the current pre-game character-creation context.
+At initialization, Campaign 1 begins in character creation before the first Campaign Turn. Finalized character-creation choices are saved through confirmed **character-creation checkpoint saves** rather than through `turn_save.md`. Each completed checkpoint updates only the required permanent files, appends a chronological `session_log.md` checkpoint, increments `active_game.json.save_revision` exactly once, and is verified before being reported complete. The final character-creation checkpoint verifies the required creation fields before setting `character_created` to `true`. `campaign_turn_number` remains `0` until Campaign Turn 1 actually completes. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may describe the current pre-game character-creation context.
 
 ## Canonical files
 
-- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, advancement rules, and persistence rules.
-- `active_game.json` — authoritative last completed Campaign 1 live state, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, completed PC Level/XP advancement state, and save revision.
-- `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending transfers, final turn review, permanent-save verification, and reset approval.
+- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, character-creation checkpoint saves, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, advancement rules, and persistence rules.
+- `active_game.json` — authoritative last completed Campaign 1 live state, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, character-creation status, completed PC Level/XP advancement state, and save revision.
+- `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending transfers, final turn review, permanent-save verification, and reset approval. Character creation does not use this ledger before gameplay begins.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, synchronized human-readable Level/XP mirrors, appearance, personal state, and established PC relationship continuity.
 - `NPC-state.md` — authoritative master database for persistent NPC identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to NPCs where they matter to world state.
-- `session_log.md` — chronological completed Campaign Turn checkpoints, important rolls, choices, consequences, XP awards, and historical save checkpoints.
+- `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn checkpoints, including the completed save revision for each checkpoint.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
 ## NPC / Inventory / World ownership
