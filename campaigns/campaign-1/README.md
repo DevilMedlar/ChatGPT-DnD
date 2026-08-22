@@ -6,22 +6,21 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 
 - **Phase:** Active
 - **Session:** 1
-- **Last resolved turn:** 8
-- **Next turn:** 9
-- **Current step:** Level 2 resolved / awaiting player action
-- **Current location:** Emberglass region — Suncoil Watch outer courtyard and opened sealed descent
-- **Party level:** DevilMedlar level 2; Senpai level 2
-- **XP:** 300 / 900 toward level 3
-
-The immediate Suncoil Watch surface is secured after the Copper Finch rescue, combat, prisoner restraint, and evidence sweep. Four hostile prisoners remain bound. Rian Kest, the rescued Copper Finch courier, remains restrained and not yet cleared. The recovered Meridian Archive case and other compact evidence are secured. The opened Suncoil descent remains unexplored.
+- **Last resolved turn:** 0
+- **Next turn:** 1
+- **Current step:** Character creation
+- **Current location:** TBD
+- **Party level:** DevilMedlar level 1; Senpai level 1
+- **XP:** 0 / 300 toward level 2
 
 ## Canonical files
 
 - `GAME_MASTER_RULES.md` — campaign rules, mechanics, adult-content rules, image workflow, and persistence rules.
 - `active_game.json` — compact live Campaign 1 state.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, advancement, appearance, and personal state.
+- `NPC-state.md` — NPC statistics, abilities, traits, advancement, appearance, personal state, and in party or not.
 - `inventory.md` — equipment, currency, consumables, evidence, and important carried items.
-- `world_state.md` — NPCs, relationships, locations, factions, quests, clues, resolved discoveries, and unresolved consequences.
+- `world_state.md` — NPCs names, locations, factions, quests, clues, resolved discoveries, and unresolved consequences.
 - `session_log.md` — chronological resolved-turn checkpoints, rolls, choices, consequences, and XP awards; historical turn-end states remain preserved even when later between-turn advancement changes the live state.
 - `art/art_log.md` — canonical visual continuity and verified reference-art notes.
 
