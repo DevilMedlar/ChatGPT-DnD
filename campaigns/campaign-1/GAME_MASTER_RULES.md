@@ -48,7 +48,7 @@ Campaign 1 already establishes the following relationship facts before the rest 
 - DevilMedlar and Senpai are both 20 years old.
 - They have loved one another since childhood.
 - They married five years ago.
-- Their relationship before both were 18 remained romantic and nonsexual.
+- Their relationship before both were 18 follows above Adult Content Rules
 - They are now consenting adult romantic and sexually active partners.
 - Their family name and additional background and relationship details are established during character creation rather than inferred from history or prior campaigns.
 
