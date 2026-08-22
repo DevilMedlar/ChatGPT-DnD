@@ -233,7 +233,7 @@ This includes rolls for:
 Workflow:
 
 1. ChatGPT decides when a roll is required based on the rules and current fiction.
-2. ChatGPT states exactly what dice the player should roll. When useful, ChatGPT also states which character or creature the roll belongs to.
+2. ChatGPT states exactly what dice the player should roll. When useful, ChatGPT also states which character or creature the roll belongs to using numbers or letters so rolls do not get matched to wrong actions or characters.
 3. The player rolls and reports the raw die result or results.
 4. ChatGPT applies established modifiers, proficiency, advantage/disadvantage or other mechanics when those mechanics exist, calculates totals, determines consequences, and records persistent changes when necessary.
 
