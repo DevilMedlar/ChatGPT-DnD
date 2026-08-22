@@ -1,6 +1,6 @@
 # Character Sheet — Campaign 1
 
-**Status:** Campaign play active. Session 1, Turn 8 resolved at Suncoil Watch. Both characters have completed level-2 advancement and are awaiting the next player action before further exploration.
+**Status:**
 
 DevilMedlar's and Senpai's player-character identity, ancestry, class, background, history, ability scores, skill proficiencies, level, derived combat statistics, ancestry/class chassis, equipment summary, appearance, and current relationship continuity are established.
 
