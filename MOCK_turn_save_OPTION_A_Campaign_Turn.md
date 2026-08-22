@@ -16,7 +16,9 @@ Combat itself ending does **not automatically** end the Campaign Turn if the sam
 
 All unresolved and changing state remains staged in this file until the **entire Campaign Turn** is explicitly interpreted as complete.
 
-Only after that interpretation does the ledger freeze, reconcile persistent results into the real campaign files, complete the save revision, verify the transfer, and finally reset fresh for the next Campaign Turn.
+After the end is interpreted, the ledger freezes. The final effective state and every planned permanent transfer are reviewed and shown to the player **before any permanent campaign file is changed**.
+
+Permanent reconciliation begins only after the player confirms that final review. After the permanent save is completed and independently verified, the player receives a completion report while the Turn 7 ledger is still intact. The ledger resets only after a separate player confirmation.
 
 ---
 
@@ -338,60 +340,171 @@ Example:
 
 # END INTERPRETED
 
-Before anything is reset, the end signal is interpreted.
+Before anything is transferred or reset, the end signal is interpreted.
 
 - **Interpretation:** END FULL CAMPAIGN TURN 7
-- **Status:** ending / frozen
+- **Status:** `ending_review`
+- **Turn ledger:** frozen
 - **New gameplay actions allowed:** No
+- **Permanent file changes allowed:** No
 - **Reset allowed:** No
-- **Permanent reconciliation begun:** Yes
-
-This is the critical gate.
 
 A plain `End turn` during an active creature's combat activation would have meant **end that creature's Combat Turn** and would never have reached this Campaign Turn end state.
+
+At this point, the `Current In-Turn State` stops being a moving snapshot. It becomes the proposed **Final Turn State — Awaiting Confirmation**.
+
+---
+
+# Final Turn Review — Awaiting Player Confirmation
+
+Before any permanent transfer begins, review **all Steps 0-16** and verify that the final state below is 100% consistent with the recorded rolls, actions, damage, healing, resource use, discoveries, movement, and results.
+
+If anything is missing, contradictory, unresolved, or uncertain, stop here and correct the temporary Turn 7 record first.
+
+## Final Turn State
+
+- **DevilMedlar HP:** 24/24
+- **Senpai HP:** 17/21
+- **DevilMedlar Healing Potions:** 1
+- **Senpai Arrows:** 17
+- **Bandit A:** defeated
+- **Bandit B:** defeated
+- **Bandit C:** escaped through northern archway
+- **Acquired / discovered:** +12 gp, Iron Key +1, locked cellar door, scratched symbol
+- **Combat:** ended
+- **Final immediate position:** Cellar Entrance
+
+## Exact Planned Permanent Transfers
+
+- `character_sheet.md`: persistent PC HP / conditions / other character-state changes that actually belong there
+- `inventory.md`: Healing Potions -> 1; Senpai Arrows -> 17; +12 gp; Iron Key +1
+- `NPC-state.md`: create/update persistent NPC records only if an NPC actually merits persistence
+- `world_state.md`: cellar entrance discovery, scratched-symbol clue, and other world-relevant consequences
+- `session_log.md`: append the completed Campaign Turn 7 summary
+- `active_game.json`: completed Campaign Turn 7, final scene/location/step as appropriate, `save_revision` 12 -> 13, and sync note
+
+## Confirmation Gate 1 — Save Approval
+
+Show the player the **Final Turn State** and **Exact Planned Permanent Transfers** above and ask:
+
+`Confirm Campaign Turn 7 save? Yes / No / Corrections`
+
+### If the player says No
+
+- Keep `Status: ending_review`.
+- Do not change permanent campaign files.
+- Do not reset this ledger.
+
+### If the player gives corrections
+
+1. Correct the temporary Turn 7 events/state first.
+2. Recalculate the Final Turn State.
+3. Recalculate the Exact Planned Permanent Transfers.
+4. Show the revised review again.
+5. Ask for save confirmation again.
+
+### If the player says Yes
+
+- Record that the final Turn 7 state was approved.
+- Set **Status:** `reconciling`.
+- Begin permanent reconciliation.
 
 ---
 
 # End-Turn Reconciliation
 
-Review **all Steps 0-16**, the Current In-Turn State, and Pending End-Turn Transfers.
+**This section begins only after Confirmation Gate 1 is approved.**
 
-1. Determine which changes are persistent, continuity-relevant, or historically important.
-2. Update the proper owning permanent files.
-3. Do not transfer temporary details that no longer matter.
-4. Do not push unresolved mid-combat state into permanent files because no mid-combat reset occurred.
-5. Append the completed Turn 7 checkpoint to `session_log.md`.
-6. Prepare `active_game.json` as the final completed-state marker.
+1. Transfer the approved persistent and continuity-relevant changes to their owning permanent files.
+2. Do not transfer temporary details that no longer matter.
+3. Synchronize master/detail representations when one fact exists in more than one required bookkeeping location.
+4. Append the completed Turn 7 checkpoint to `session_log.md`.
+5. Update supporting permanent files first when writes must be sequential.
+6. Update `active_game.json` last as the completed-state marker.
 7. Increment `save_revision` exactly once: **12 -> 13**.
+8. Do **not** reset `turn_save.md` yet.
 
 ---
 
-# End-Turn Verification
+# COMPLETE LIVE SAVE
 
-Before reset, verify:
+When the permanent writes have landed, Campaign Turn 7 is provisionally saved, but the temporary ledger remains intact.
 
-- required character-state changes landed
-- required inventory/resource changes landed
+- **Completed Campaign Turn:** 7
+- **New save revision:** 13
+- **Temporary Turn 7 ledger:** retained
+- **Reset allowed:** Not yet
+
+The permanent save must now be independently verified against the approved Final Turn State and Exact Planned Permanent Transfers.
+
+---
+
+# Permanent Save Verification
+
+Read/check the affected permanent files again rather than assuming the writes succeeded.
+
+Verify:
+
+- expected character-state changes landed correctly
+- expected inventory/resource changes landed correctly
 - required NPC master/detail records agree when applicable
-- required world/clue changes landed
-- completed Turn 7 was appended to session history
-- `active_game.json` represents the completed Turn 7 state
-- `save_revision` advanced exactly once
-- no unresolved Turn 7 state remains stranded only in this ledger
+- required world/clue changes landed correctly
+- `session_log.md` contains the completed Turn 7 checkpoint
+- `active_game.json` represents completed Campaign Turn 7
+- `save_revision` is exactly **13**, advanced exactly once
+- every approved planned transfer is accounted for
+- no unrelated campaign state was changed
+- no unresolved Turn 7 state remains stranded only in the temporary ledger
 
-If verification fails, **do not reset**.
+If any verification fails:
+
+- keep the Turn 7 ledger intact
+- do not request reset
+- reconcile the permanent state until it matches the approved final state
+
+When every verification passes:
+
+- set **Status:** `saved_awaiting_reset`
+- send the player a save-completion report
 
 ---
 
-# Reset Allowed
+# Save Completion Report
 
-Only after reconciliation and verification succeed may the old Turn 7 events, overlay state, and pending transfers be cleared.
+Example report shown to the player:
 
-The reset itself does not erase completed history because the relevant persistent results have already been transferred and the completed-turn summary has already been appended.
+> **Campaign Turn 7 save complete and verified.**
+>
+> - Campaign Turn saved: 7
+> - Save revision: 13
+> - Final location: Cellar Entrance
+> - All approved permanent transfers verified
+> - No unrelated state changes found
+> - `turn_save.md` has **NOT** been reset and still contains the complete Turn 7 safety ledger
+>
+> **Confirm reset for Campaign Turn 8? Yes / No**
 
 ---
 
-# Fresh State After Successful Reset
+# Confirmation Gate 2 — Reset Approval
+
+The successful permanent save does **not** automatically destroy the temporary Turn 7 ledger.
+
+### If the player says No
+
+- Keep **Status:** `saved_awaiting_reset`.
+- Keep Turn 7 events, Final Turn State, planned transfers, and verification information intact.
+- Do not replay or resave Turn 7 because its permanent save is already complete.
+
+### If the player says Yes
+
+- Reset is authorized.
+- Clear the completed Turn 7 temporary events, overlays, pending transfers, final review, and verification state.
+- Prepare the next Campaign Turn from the newly completed permanent save.
+
+---
+
+# Fresh State After Confirmed Reset
 
 ## Active Campaign Turn
 
@@ -416,6 +529,18 @@ None yet.
 
 - **Status:** not_started
 - **Notes:** None
+
+---
+
+# Recovery Meaning of Status
+
+The temporary ledger status tells exactly where recovery should resume:
+
+- `ready` — no unfinished Campaign Turn exists
+- `in_progress` — Campaign Turn is actively being played; resume from completed permanent state + this ledger overlay
+- `ending_review` — full-turn end was interpreted; ledger is frozen; **nothing permanent should be written until player save confirmation**
+- `reconciling` — player approved the final state; permanent save may be partly written; verify/reconcile before doing anything else
+- `saved_awaiting_reset` — permanent Turn 7 save is complete and verified; **do not replay or resave it**; only reset confirmation remains
 
 ---
 
@@ -467,12 +592,36 @@ search / dialogue / movement / loot / clues / decisions
         v
 [END INTERPRETED]
 Interpretation = END CAMPAIGN TURN 7
-Status -> ending / frozen
-NO RESET YET
+Status -> ending_review
+TURN FROZEN
+NO PERMANENT WRITES
+NO RESET
+        |
+        v
+[FINAL TURN REVIEW]
+verify Current In-Turn State against all Steps
+freeze it as Final Turn State
+verify Pending End-Turn Transfers
+        |
+        v
+[SHOW PLAYER]
+exact Final Turn State
++
+exact Planned Permanent Transfers
+        |
+        v
+[CONFIRMATION GATE 1]
+Confirm save? Yes / No / Corrections
+        |
+        +---- No / Corrections ----> remain ending_review
+        |                            fix temp ledger / review again
+        v
+       Yes
         |
         v
 [RECONCILE]
-transfer persistent results to owning files
+Status -> reconciling
+transfer approved persistent results to owning files
         |
         v
 [HISTORY]
@@ -482,13 +631,35 @@ append completed Turn 7 to session_log
 [COMPLETE LIVE SAVE]
 active_game -> completed Turn 7
 save_revision 12 -> 13
+TURN 7 LEDGER STILL INTACT
         |
         v
-[VERIFY]
-all required transfers landed
+[VERIFY PERMANENT SAVE]
+read/check affected permanent files
+confirm exact approved state landed
+confirm no unrelated state changed
         |
         v
-[RESET ALLOWED]
+[SAVE VERIFIED]
+Status -> saved_awaiting_reset
+        |
+        v
+[SEND COMPLETION REPORT]
+Permanent save complete
+Turn 7 temp ledger NOT reset
+        |
+        v
+[CONFIRMATION GATE 2]
+Confirm reset? Yes / No
+        |
+        +---- No ----> keep saved_awaiting_reset
+        |             do NOT replay/resave Turn 7
+        v
+       Yes
+        |
+        v
+[RESET TEMP LEDGER]
+clear completed Turn 7 temporary data
         |
         v
 [FRESH TURN 8]
@@ -497,4 +668,11 @@ Step: 0
 Base save revision: 13
 ```
 
-**Critical rule demonstrated by this mock:** a full Campaign Turn can contain the entire combat, multiple combat rounds, every combatant's turns, and post-combat actions. `turn_save.md` does not reset in the middle of that sequence and does not prematurely push unresolved state into the permanent campaign files.
+**Critical rules demonstrated by this mock:**
+
+1. A full Campaign Turn can contain the entire combat, multiple combat rounds, every combatant's turns, and post-combat actions.
+2. `turn_save.md` does not reset in the middle of that sequence and does not prematurely push unresolved state into permanent campaign files.
+3. After the full Campaign Turn ends, the final effective state and planned permanent transfers must be verified and shown to the player before any permanent write.
+4. Permanent reconciliation requires explicit player confirmation.
+5. After the permanent save is completed, the affected files are checked again against the approved final state.
+6. A verified permanent save does not erase its temporary source ledger until the player separately confirms the reset.
