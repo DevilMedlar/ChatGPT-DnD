@@ -24,7 +24,7 @@ Currently established canon includes their names, ages, pronouns, and shared rel
 - **Draconic affinity:**
 - **Class / homebrew class:**
 - **Background:**
-- **Level:**
+- **Level:** 1
 
 ## Background History
 
@@ -82,7 +82,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Mystical affinity:**
 - **Class / homebrew class:**
 - **Background:**
-- **Level:**
+- **Level:** 1
 
 ## Background History
 
