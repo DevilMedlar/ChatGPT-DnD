@@ -2,10 +2,6 @@
 
 Campaign 1 is active. Pre-game background canon remains established below.
 
-## Current Location
-
-Not established yet.
-
 ## Important NPCs
 
 None established. Persistent NPC records belong in `NPC-state.md`.
@@ -21,6 +17,8 @@ None established. Persistent NPC records belong in `NPC-state.md`.
 ## Locations
 
 None established.
+
+This section records persistent world locations and their established details. It does **not** track the party's current live location. The authoritative completed current location belongs in `active_game.json`; during an unfinished turn, any temporary movement or position changes are staged in `turn_save.md` until end-turn reconciliation.
 
 ## Factions / Organizations
 
@@ -53,3 +51,5 @@ None established as player-known secrets.
 Add new world information only when it is established during this campaign. Keep prior established facts unless they are explicitly corrected or superseded. Do not reconstruct world or story canon from deleted files, repository history, previous chats, memory, or other campaigns unless the player explicitly requests a specific import.
 
 `NPC-state.md` owns persistent NPC identity, statistics, condition, relationships, and party membership. This file should reference NPCs only where they matter to locations, factions, quests, clues, or world consequences rather than duplicating their full records.
+
+`active_game.json` owns the last completed current party location. `turn_save.md` owns temporary in-turn movement and position changes until they are reconciled at end turn. `world_state.md` owns the persistent facts about locations themselves.
