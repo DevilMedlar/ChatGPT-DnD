@@ -1,4 +1,4 @@
-# MOCK STORE OPTION B - Free Official Shop Catalog
+# MOCK STORE OPTION B - Official D&D Shop References
 
 > **DESIGN MOCK ONLY - NOT CAMPAIGN CANON**
 >
@@ -8,17 +8,19 @@
 
 Model shops more like a game vendor screen while avoiding a large local copy of official D&D item mechanics.
 
-1. the vendor/shop owns business rules
-2. `Current Shop Stock` owns the vendor-specific current quantity and displays the shared item Base Price
-3. normal shop stock is selected from **official D&D items whose usable mechanics are freely viewable**
-4. official shop items are discovered through the official free item/equipment catalog or its categories, not through a locally maintained duplicate catalog
-5. the shop row keeps only compact at-a-glance information such as category, named traits/mechanics, slots, or other useful tags
-6. the **item name itself is the verified direct official link**
-7. clicking the item name opens the full freely viewable official item details; no separate official-item inspection layer is needed
-8. homebrew, custom, unique, campaign-created, or mechanically modified items are **outside vendor mechanics and outside this store mock**
-9. an official item's **Base Price is shared across vendors**; shop-specific markup or discount changes only the Final Price for that vendor/transaction
+1. the vendor/shop owns business rules and current quantity
+2. normal shop stock is selected from **official D&D items whose usable mechanics are freely viewable**
+3. official shop items are found through the official D&D item/equipment catalog or its categories, then filtered to direct item pages whose useful mechanics are freely accessible
+4. D&D Beyond is used as the reference for standard item mechanics, abilities, properties, type, rarity, description, and similar published details
+5. D&D Beyond is **not the pricing authority for this shop system**
+6. the shop row keeps only compact at-a-glance information such as category, named traits/mechanics, slots, or other useful tags
+7. the **item name itself is the verified direct official link**
+8. clicking the item name opens the freely viewable official item details; no separate official-item inspection layer is needed
+9. homebrew, custom, unique, campaign-created, or mechanically modified items are **outside vendor mechanics and outside this store mock**
+10. routine/basic repeat goods may use a stable recurring Base Price, while other official items may receive a reasonable GM-generated Base Price when they appear in stock
+11. shop-specific markup or discount is applied after Base Price to determine the Final Price
 
-This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, markup math, restock math, buy-back rules, exact shop-generation rules, or how a shared Base Price is established when an official item source does not provide one.
+This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, exact markup math, restock math, buy-back rules, exact shop-generation rules, or a rigid formula for GM-generated prices.
 
 ---
 
@@ -30,13 +32,13 @@ Homebrew, custom, unique, campaign-created, or mechanically modified items are n
 
 ---
 
-# Official Free Shop Source Rule
+# Official D&D Shop Source Rule
 
-Normal shop stock should use freely accessible official D&D items.
+Normal shop stock should use official D&D items whose useful mechanics can be viewed freely.
 
 For each candidate item:
 
-1. choose an official item from the relevant official catalog/category
+1. choose an official item from the relevant official D&D catalog/category
 2. open the item's direct official page before using it
 3. verify that the page exposes enough of the actual item mechanics to use the item without requiring a purchase
 4. if the page is only a teaser, marketplace redirect, ownership prompt, or otherwise hides the usable mechanics, do **not** use that item as normal shop stock
@@ -45,7 +47,9 @@ For each candidate item:
 
 A page merely existing is not enough. The usable rules must actually be viewable for free.
 
-The campaign does not need to build or maintain its own copy of the official item catalog. The official catalog/categories are used to find suitable items, and the direct verified item page is what the shop row links to.
+The campaign does not need to build or maintain its own copy of the official item catalog. The official catalog/categories are used to find suitable items, and the direct item page is what the shop row links to.
+
+D&D Beyond is a **mechanical reference**, not a shop-pricing database for this design. A listed or missing price on the official page does not control the campaign's vendor Base Price.
 
 Because websites and access rules can change, a stored item link may be rechecked when that item is newly stocked again or when the existing reference no longer works.
 
@@ -75,23 +79,76 @@ Before this design becomes Campaign 1 canon, official shop references should be 
 - **Current party discount / markup:** Example only; not finalized
 - **Reason for discount / markup:** Relationship, reputation, faction standing, negotiation, event, scarcity, or another established cause
 
-### Price Meaning
+---
 
-`Base Price` is a **shared item-level value**, not vendor-specific stock state.
+# Pricing Model
 
-If two vendors sell the same standard official item, they start from the same Base Price.
+## Base Price
 
-The shop-specific or transaction-specific price is calculated when the purchase is resolved:
+`Base Price` is the starting campaign price before that shop's applicable markup or discount.
+
+There are two practical pricing cases in this mock.
+
+### 1. Routine / Basic Repeat Goods
+
+Ordinary goods that recur frequently can use a stable expected Base Price.
+
+Examples might include:
+
+- torches
+- basic weapons
+- basic armor
+- ordinary tools
+- common ammunition
+- recurring consumables
+
+If two merchants sell the same basic repeat item under normal circumstances, they can use the same established Base Price.
+
+This prevents common goods from being randomly repriced every time they appear.
+
+### 2. Other Official Items
+
+For official items that are not treated as routine fixed-price goods, the GM may reasonably generate a Base Price when the item appears in stock.
+
+That generated price should make sense for the item and campaign context rather than being arbitrary noise.
+
+Useful considerations include:
+
+- rarity
+- mechanical power
+- usefulness
+- duration or number of uses
+- whether the item is consumed
+- how difficult it is to replace
+- local scarcity
+- item category
+- comparable items already established in the campaign
+
+The general pricing direction should remain intuitive. A stronger potion should normally cost more than a weaker potion. A more powerful special arrow should normally cost more than a weaker one. More powerful, rarer, or more useful equipment should generally trend upward in price.
+
+The mock does not require a permanent global price registry for these items. The GM can establish a reasonable Base Price when the item appears.
+
+## Final Price
+
+After Base Price is established, the shop or transaction may modify it:
 
 `final price = base price +/- applicable shop markup/discount`
 
+Possible modifiers include:
+
+- shop markup
+- shop discount
+- party relationship
+- reputation
+- faction standing
+- negotiation
+- local scarcity
+- temporary events
+- other established circumstances
+
 The exact stacking, ordering, and rounding rules for multiple modifiers are **not decided by this mock**.
 
-A shop's markup, discount, relationship modifier, scarcity modifier, or temporary event does **not** rewrite the item's Base Price. Those modifiers affect only the Final Price.
-
-If the shared Base Price itself ever changes, that is an item-level pricing change and should apply consistently wherever that same official item is sold.
-
-The official item page defines the standard item mechanics. This mock does not yet decide how to establish a shared Base Price for an official item whose free official page does not provide one.
+A markup or discount changes the Final Price. It does not need to rewrite the Base Price used for that stock listing.
 
 ---
 
@@ -112,23 +169,26 @@ This is the compact browse view, similar in spirit to a video-game vendor screen
 | [Thieves' Tools](https://www.dndbeyond.com/equipment/495-thieves-tools) | 25 gp | 2 | Tool | Locks; Traps; Dexterity | Specialized tools for locks and traps. |
 | [Bag of Holding](https://www.dndbeyond.com/magic-items/4581-bag-of-holding) | 400 gp | 1 | Wondrous Item | Extradimensional Storage | Magical container with much greater interior capacity than its exterior suggests. |
 
-> **Mock-data warning:** The quantities and Base Prices in this table are design examples only. They are not Campaign 1 canon. In this model, quantity is vendor-specific while the Base Price for the same official item is shared across vendors. The linked item names exist to test the proposed official-free-shop workflow, not to decide Campaign 1 availability.
+> **Mock-data warning:** The quantities and Base Prices in this table are design examples only. They are not Campaign 1 canon. Some routine/basic items may eventually use stable recurring Base Prices; other items may receive a reasonable GM-generated Base Price when stocked. D&D Beyond links provide official item mechanics/details, not price authority.
 
 ### Stock Ownership Rule
 
-The vendor owns facts that can vary by vendor or over time:
+The vendor owns or records facts needed for the current shop state:
 
 - current availability
 - current quantity
+- the Base Price being used for this stock listing
 - shop markup / discount rules
 - current shop- or party-specific modifiers
 - compact vendor-screen tags
 - short storefront description
 - the verified direct official URL attached to the item name
 
-`Base Price` is displayed in the vendor row but is **not vendor-owned**. It is the shared item-level starting price used by every vendor selling that same official item.
+For a routine/basic repeat good, the displayed Base Price can reuse its already established recurring price.
 
-The freely viewable official source owns the standard official item's published mechanical definition.
+For another official item, the GM may generate a reasonable Base Price for that stock appearance.
+
+The freely viewable official source owns the standard official item's published mechanical definition, but **not the campaign vendor price**.
 
 The shop does **not** need:
 
@@ -146,7 +206,7 @@ For an ordinary official shop item, the compact stock row is the shop presentati
 ```text
 Generate or restock vendor
         ↓
-Choose candidate from official free catalog/category
+Choose candidate from official D&D catalog/category
         ↓
 Open candidate's direct official item page
         ↓
@@ -154,15 +214,17 @@ Are usable mechanics freely viewable?
    ├── NO
    │    ↓
    │  Reject candidate for normal shop stock
-   │  Choose another official free item
+   │  Choose another official item
    │
    └── YES
         ↓
-Attach direct verified URL to Item name
+Attach direct official URL to Item name
         ↓
-Use shared Base Price for that official item
+Establish Base Price
+   ├── routine/basic repeat good -> reuse stable expected Base Price
+   └── other official item -> GM generates reasonable Base Price
         ↓
-Apply this shop's markup/discount only when calculating Final Price
+Apply this shop's markup/discount when calculating Final Price
         ↓
 Show compact Current Shop Stock row
         ↓
@@ -218,7 +280,7 @@ Usable mechanics freely viewable?
 When an official shop item is bought:
 
 ```text
-Shared Base Price
+Base Price used for this stock listing
         +
 Applicable shop markup / discount
         ↓
@@ -233,38 +295,66 @@ The shop's responsibility ends after the stock and transaction state are updated
 
 ---
 
-# Same Official Item at Another Vendor
+# Same Item Pricing at Different Vendors
 
-Two vendors selling the same standard official item use the **same Base Price**. Their Final Prices may differ because their markup/discount rules differ.
+Pricing depends on whether the item is treated as a routine/basic repeat good or as another GM-priced official item.
+
+## Routine / Basic Example
+
+Two merchants selling the same ordinary repeat item can begin from the same established Base Price while still reaching different Final Prices through shop modifiers.
 
 ```text
-Shared Longsword Base Price: 15 gp
+Established Torch Base Price: 1 cp
 
 Ash & Ember Outfitters
-Linked Longsword - Base Price 15 gp - Qty 4
-Shop modifier: -10%
-Final Price: 13 gp 5 sp
-        ↓
-Direct verified official Longsword page
+Linked Torch - Base Price 1 cp - Qty 20
+Shop modifier: none
+Final Price: 1 cp
 
 Another Vendor
-Linked Longsword - Base Price 15 gp - Qty 1
+Linked Torch - Base Price 1 cp - Qty 10
 Shop modifier: +20%
-Final Price: 18 gp
-        ↓
-Same direct verified official Longsword page
+Final Price: calculated from the same 1 cp Base Price
 ```
 
-The vendors own their own quantity and pricing modifiers. They do **not** own separate Base Prices for the same item.
+## Other Official Item Example
+
+A less routine item does not require one permanent global Base Price in this mock.
+
+```text
+Ash & Ember Outfitters
+Linked Bag of Holding
+GM-generated Base Price for this stock appearance: 400 gp
+Shop modifier: -10%
+Final Price: calculated from 400 gp
+
+Another Vendor
+Linked Bag of Holding
+GM-generated Base Price for this stock appearance: 475 gp
+Shop modifier: +5%
+Final Price: calculated from 475 gp
+```
+
+The official item mechanics remain the same because both links point to the official reference. Pricing remains campaign/vendor logic handled by the GM.
 
 ---
 
 # Revised Option B Ownership Model
 
 ```text
-Shared Official Item Pricing
-└── Base Price
-    └── same starting value across vendors for the same official item
+Official D&D Catalog / Categories
+└── discovery source for candidate official shop items
+
+Freely Viewable Direct Official Item Page
+└── standard published item mechanics / abilities / properties / details
+    └── NOT campaign vendor price authority
+
+Campaign Pricing
+├── routine/basic repeat item
+│   └── stable expected Base Price may be reused
+│
+└── other official item
+    └── GM generates reasonable Base Price when stocked
 
 Vendor / Shop Record
 │
@@ -276,18 +366,15 @@ Vendor / Shop Record
 │
 └── Current Shop Stock
     ├── linked official item name
-    │   └── direct verified free official item page
-    ├── displayed shared Base Price
+    │   └── direct freely viewable official item page
+    ├── Base Price used for this stock listing
     ├── current vendor quantity
     ├── category
     ├── compact key mechanics
     └── short description
 
-Official D&D Free Catalog / Categories
-└── discovery source for normal shop items
-
-Freely Viewable Direct Official Item Page
-└── standard published mechanics for the linked shop item
+Transaction
+└── Base Price + applicable vendor modifiers -> Final Price
 ```
 
 ### Ordinary Official Item Details
@@ -300,31 +387,23 @@ Click linked Item name
 Freely viewable direct official item page
 ```
 
-### Transaction Price
-
-```text
-Shared Base Price
-        +
-This vendor's applicable markup / discount
-        ↓
-Final Price
-```
-
 ---
 
 # Strengths of This Revised Option B
 
-- Uses the official free item catalog/categories instead of building a duplicate local official-item catalog.
+- Uses the official D&D item catalog/categories instead of building a duplicate local official-item catalog.
+- Filters shop candidates to item pages whose useful mechanics are freely viewable.
+- Uses D&D Beyond for mechanics/details rather than pretending it is the campaign's price authority.
 - Makes the item name itself the direct official link.
 - Removes the extra `Free Official Reference` table column.
 - Removes the redundant locally generated inspection layer for ordinary official shop items.
 - Keeps normal shop rows compact and vendor-screen-like.
-- Keeps Base Price consistent across vendors selling the same official item.
-- Lets each vendor produce a different Final Price through its own markup/discount rules without rewriting Base Price.
+- Allows routine/basic repeat goods to stay predictably priced.
+- Allows rarer or less routine official items to receive reasonable GM-generated Base Prices without requiring a global price database.
+- Lets vendor markup/discount produce the Final Price after Base Price is established.
 - Keeps current quantity vendor-owned.
 - Leaves full standard official mechanics on the freely viewable official item page instead of copying them into `NPC-state.md`.
 - Rejects inaccessible/paywalled item pages before they become normal shop stock.
-- Allows the same official item to appear at multiple vendors without redefining its mechanics or Base Price.
 - Keeps homebrew/custom/modified items completely outside vendor mechanics.
 
 # Questions Still Open
@@ -332,7 +411,7 @@ Final Price
 - Campaign 1 still needs an explicit D&D rules/version baseline before official references can be standardized confidently.
 - External official URLs or access rules can change, so links may occasionally need rechecking or replacement.
 - We still need exact markup/discount stacking and rounding rules.
-- We still need to decide how a shared Base Price is established when a freely viewable official item page does not provide one.
+- The mock intentionally does not define a rigid formula for GM-generated Base Prices; pricing should remain reasonable and scale with item strength, rarity, usefulness, and comparable established prices.
 - We still need to decide whether shop `Key Mechanics` and `Short Description` are always manually stored vendor-facing summaries or can sometimes be generated from the freely viewable official page.
 
 ---
