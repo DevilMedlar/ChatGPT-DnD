@@ -1,6 +1,6 @@
 # World State — Campaign 1
 
-Campaign 1 is active. Pre-game background canon remains established below.
+Campaign 1 is active. Pre-game background canon remains established in its proper campaign owners.
 
 ## Important NPCs
 
@@ -11,8 +11,10 @@ When an NPC matters to a location, faction, quest, clue, discovery, or world con
 Reference format:
 
 ```text
-- **NPC-0001 — NPC Name** — role / world relevance; location if useful; see `NPC-0001` in `NPC-state.md`
+- **NPC-#### — NPC Name** — role / world relevance; location if useful; see the matching stable NPC ID in `NPC-state.md`
 ```
+
+`NPC-####` is a format placeholder only. Actual persistent references use the NPC's assigned stable ID from `NPC-state.md`.
 
 The stable NPC ID is the cross-file identity key. Do not rely on a name-derived Markdown heading or anchor, because an NPC's name may change while the NPC ID does not.
 
@@ -20,11 +22,9 @@ Do not duplicate NPC stats, full appearance, full relationship state, personal i
 
 ## Relationships
 
-- DevilMedlar and Senpai have loved one another since childhood.
-- They married five years ago.
-- Their relationship before both were 18 remained romantic and nonsexual.
-- They are now both 20 and are consenting adult romantic and sexually active partners.
-- Additional relationship and background details will be established during character creation.
+No separate world-level relationship state established.
+
+Player-character relationship canon and continuity belong in `character_sheet.md` and any applicable Campaign 1-specific rule overlay. Record relationship information here only when it creates a persistent world-level consequence involving a location, faction, quest, organization, public status, or similar world state.
 
 ## Locations
 
@@ -77,18 +77,18 @@ Do not reveal a secret merely because it is stored elsewhere for GM continuity. 
 
 ## World Changes / Consequences
 
-- DevilMedlar and Senpai married five years ago.
-- Family name: `(insert name here)` — to be replaced by the name Senpai and DevilMedlar choose together during character creation.
+None established.
 
-Persistent consequences may reference affected NPCs, locations, factions, shops, services, or quests without duplicating their full records.
+Persistent consequences may reference affected NPCs, locations, factions, shops, services, quests, or player-character relationships when those relationships create a world-level consequence, without duplicating the full records owned elsewhere.
 
 ## Unresolved Threads
 
-- DevilMedlar and Senpai's family name will be decided during character creation.
-- Remaining background-history details will be established during character creation.
+None established at the world-state level.
+
+Character-creation decisions and unfinished player-character background or relationship details remain with their character-creation owners until they produce persistent world-state information.
 
 ## Shared Rule Authority
 
 Cross-file NPC identity, NPC/world ownership boundaries, shop/world ownership boundaries, completed-vs-in-turn location authority, fresh-campaign isolation, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
 
-This file stores only Campaign 1's world-level canon and world-state schemas. `NPC-state.md` remains the persistent NPC master; `active_game.json` owns the last completed party location; `turn_save.md` owns temporary Campaign Turn movement and position changes.
+This file stores only Campaign 1's world-level canon and world-state schemas. `NPC-state.md` remains the persistent NPC master; `character_sheet.md` owns player-character relationship continuity; `active_game.json` owns the last completed party location; `turn_save.md` owns temporary Campaign Turn movement and position changes.
