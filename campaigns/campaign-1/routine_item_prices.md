@@ -10,10 +10,10 @@ This file does **not** define official item mechanics and does **not** own vendo
 
 - An item is treated as a **routine/basic repeat good for recurring-price purposes** only when it has an established entry in this file.
 - This file owns that item's current recurring **Base Price** for Campaign 1.
-- `GAME_MASTER_RULES.md` owns the rules for how Base Price and Final Price are used, including merchant pricing, contextual pricing, and the no-double-counting rule.
+- `../GAME_MASTER_RULES.md` owns the rules for how Base Price and Final Price are used, including merchant pricing, contextual pricing, and the no-double-counting rule.
 - A shop's `NPC-state.md` stock row **mirrors** the current recurring Base Price from this file for a routine/basic item. The vendor row does not independently redefine that Base Price.
 - Vendor-specific markup, discount, relationship treatment, negotiation, or another vendor-specific pricing difference changes the **Final Price**, not the recurring Base Price stored here.
-- Contextual market factors follow `GAME_MASTER_RULES.md`. A factor already incorporated into a Base Price must not be applied again to the same transaction.
+- Contextual market factors follow `../GAME_MASTER_RULES.md`. A factor already incorporated into a Base Price must not be applied again to the same transaction.
 - The verified official item page remains the mechanics/reference authority while a standard official item is shop stock.
 - After purchase, `inventory.md` owns the acquired item's mechanically relevant campaign snapshot.
 
