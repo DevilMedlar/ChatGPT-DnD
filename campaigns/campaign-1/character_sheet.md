@@ -2,11 +2,11 @@
 
 **Status:** Character creation is in progress.
 
-The blank fields below are intentional and remain undecided until DevilMedlar and Senpai establish them during character creation. Do not infer, reconstruct, or import missing character details from deleted material, repository history, previous chats, memory, or another campaign.
+This file stores Campaign 1's player-character detail and synchronized human-readable Level/XP mirrors.
 
-Currently established canon includes their names, ages, pronouns, and shared relationship history.
+Repository-wide character-creation requirements are owned by `../../GAME_MASTER_RULES.md`. Fresh-campaign isolation, character-creation checkpoint behavior, and completed advancement-state ownership are owned by `../GAME_MASTER_RULES.md`.
 
-`active_game.json` is authoritative for completed PC advancement state through `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`. The Level and XP values shown in this file are synchronized human-readable mirrors and must match that completed state after every completed save. During an active Campaign Turn, staged Level/XP changes in `turn_save.md` temporarily overlay both permanent representations until approved reconciliation.
+The blank fields below are intentional and remain undecided until established during current Campaign 1 character creation. Currently established canon includes the names, ages, pronouns, and shared relationship history below.
 
 ## Shared Relationship Canon
 
@@ -70,7 +70,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 
 ### Personal / Relationship Continuity
 
-- Married to Senpai and loves her. Current relationship is consensual, romantic, and sexual. 
+- Married to Senpai and loves her. Current relationship is consensual, romantic, and sexual.
 - No kids yet
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
@@ -128,7 +128,7 @@ These are stable visual-canon traits for continuity-sensitive narration and art 
 
 ### Personal / Relationship Continuity
 
-- Married to DevilMedlar and loves him. Current relationship is consensual, romantic, and sexual. 
+- Married to DevilMedlar and loves him. Current relationship is consensual, romantic, and sexual.
 - No kids yet
 
 Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
