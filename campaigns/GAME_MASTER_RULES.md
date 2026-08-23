@@ -16,6 +16,16 @@ Throughout this file, references such as `active_game.json`, `turn_save.md`, `ch
 6. The player's newest explicit statement overrides conflicting assistant-created material.
 7. Never silently overwrite established canon.
 
+## Chat session lifecycle
+
+`active_game.json.session_number` is that numbered campaign's ChatGPT chat-session counter.
+
+- A newly created numbered campaign begins with `session_number` set to `1`.
+- Continuing that campaign in the same ChatGPT chat keeps the same `session_number`, including reopening or returning to that same chat later.
+- When that campaign is continued in a different ChatGPT chat for any reason, increment `session_number` by exactly `1` before continuing the campaign in the new chat. This includes moving because the previous chat was deleted, reached its conversation limit, became unusable, or the player simply chose to continue in a new chat.
+- `session_number` is separate from `campaign_turn_number`, `Current Step`, `save_revision`, and the chronological checkpoints in `session_log.md`. Moving to a new ChatGPT chat does not by itself start, end, reset, replay, or discard a Campaign Turn.
+- If a Campaign Turn is unfinished when the campaign moves to a new ChatGPT chat, preserve its existing `turn_save.md` state and resume that same unfinished Campaign Turn under the new `session_number`.
+
 ## Append-first preservation
 
 Campaign-state files are historical records as well as current state.
