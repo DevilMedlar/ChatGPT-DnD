@@ -26,6 +26,28 @@ Throughout this file, references such as `active_game.json`, `turn_save.md`, `ch
 - `session_number` is separate from `campaign_turn_number`, `Current Step`, `save_revision`, and the chronological checkpoints in `session_log.md`. Moving to a new ChatGPT chat does not by itself start, end, reset, replay, or discard a Campaign Turn.
 - If a Campaign Turn is unfinished when the campaign moves to a new ChatGPT chat, preserve its existing `turn_save.md` state and resume that same unfinished Campaign Turn under the new `session_number`.
 
+## Campaign phase lifecycle
+
+`active_game.json.phase` is the authoritative broad lifecycle state for that numbered campaign. This shared rule defines the phase values once for every numbered campaign.
+
+Allowed values and meanings:
+
+- `setup` — the campaign exists, but required character creation is not yet completely finalized and verified.
+- `ready` — required character creation is completely finalized and verified, but Campaign Turn 1 has not begun.
+- `active` — Campaign Turn 1 has begun and normal campaign play is underway.
+
+The normal lifecycle is:
+
+`setup` → `ready` → `active`
+
+A newly created numbered campaign begins in `setup`.
+
+The confirmed and verified final character-creation checkpoint changes `phase` from `setup` to `ready` at the same time it sets `character_created` to `true`.
+
+Opening Campaign Turn 1 changes `phase` from `ready` to `active`. This phase transition is campaign-lifecycle bookkeeping, not a completed Campaign Turn save: it does not increment `save_revision`. When Git repository writing is available, update `active_game.json.phase` and the Campaign Turn 1 opening state in `turn_save.md` together in the same lifecycle checkpoint when practical. Later Campaign Turns leave `phase` as `active`.
+
+`phase` is separate from `session_number`, `campaign_turn_number`, `turn_save.md` Status, `Current Step`, and `save_revision`. It does not belong in `active_campaign.json`; that file remains a selector only.
+
 ## Append-first preservation
 
 Campaign-state files are historical records as well as current state.
@@ -93,6 +115,8 @@ Combat Turns and Combat Rounds exist inside a Campaign Turn and never cause `tur
 ### Starting a Campaign Turn
 
 Before starting a Campaign Turn:
+
+If this is Campaign Turn 1, `active_game.json.character_created` must be `true` and `active_game.json.phase` must be `ready`. Opening Campaign Turn 1 changes `phase` to `active` under the shared Campaign phase lifecycle; this lifecycle checkpoint does not increment `save_revision`. Later Campaign Turns require `phase` to remain `active`.
 
 1. Read the current completed canonical campaign files required for the scene.
 2. Confirm `turn_save.md` is `ready` and no older Campaign Turn requires recovery, review, verification, or reset.
@@ -330,9 +354,10 @@ After every character-creation checkpoint, verify at minimum:
 - `turn_save.md` remains `ready` for Campaign Turn 1 and was not used as a character-creation ledger
 - `save_revision` advanced exactly once
 - `last_sync_note` accurately describes the completed checkpoint
+- `active_game.json.phase` remains `setup` before the final character-creation checkpoint and becomes `ready` only when that final checkpoint sets `character_created` to `true`
 - no unrelated campaign state changed
 
-The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for every required player character in that campaign. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
+The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for every required player character in that campaign. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true` and changes `active_game.json.phase` from `setup` to `ready`. Until then `character_created` remains `false` and `phase` remains `setup`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
 
 ## Equipment ownership and special-effect continuity
 
@@ -534,7 +559,7 @@ If reference art is supplied or adopted during an active Campaign Turn, the imag
 
 `active_campaign.json` in this `campaigns/` directory is a **campaign selector only**. It identifies the active numbered campaign and points to that campaign's `active_game.json`.
 
-It is not the authoritative place for session, Campaign Turn, character level, XP, location, or other changing gameplay state. Do not rewrite `active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or pointer-level phase actually changes.
+It is not the authoritative place for campaign phase, session, Campaign Turn, character level, XP, location, or other changing gameplay state. Do not rewrite `active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or `active_game.json` pointer actually changes.
 
 Campaign saves are isolated:
 
@@ -546,7 +571,7 @@ Campaign saves are isolated:
 
 Within each numbered campaign, file ownership is:
 
-- `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
+- `active_game.json` — authoritative campaign lifecycle `phase` plus authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, `Pending Shop Transactions`, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — player-character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
@@ -575,7 +600,7 @@ Typical destinations include:
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
 - `session_log.md` — chronological character-creation checkpoint or completed Campaign Turn summary and continuity-critical events
 - `art/art_log.md` — newly established visual continuity when relevant
-- `active_game.json` — completed session/Campaign Turn/`current_scene_name`/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
+- `active_game.json` — campaign lifecycle `phase`, completed session/Campaign Turn/`current_scene_name`/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
 
 For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
 
@@ -601,7 +626,7 @@ For a completed Campaign Turn or other completed persistent save revision:
 5. set `last_sync_note` to a compact description of what that completed revision represents
 6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
 
-Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, and the later temporary-ledger reset do **not** increment `save_revision`.
+Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, the Campaign Turn 1 `ready` to `active` phase lifecycle checkpoint, and the later temporary-ledger reset do **not** increment `save_revision`.
 
 Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
 

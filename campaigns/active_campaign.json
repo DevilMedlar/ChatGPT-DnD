@@ -2,6 +2,5 @@
   "active_campaign": "campaign-1",
   "campaign_number": 1,
   "path": "campaigns/campaign-1",
-  "active_game": "campaigns/campaign-1/active_game.json",
-  "phase": "active"
+  "active_game": "campaigns/campaign-1/active_game.json"
 }

@@ -18,7 +18,7 @@ A local campaign rule file must not duplicate the shared rulebooks merely for co
 
 `active_campaign.json` is a pointer only. It identifies which numbered campaign is currently active and the path to that campaign's `active_game.json`.
 
-Live gameplay state does **not** belong in `active_campaign.json`. Session, completed Campaign Turn, completed/pre-game scene name, location, character-creation status, completed PC advancement state, save revision, and the latest synchronization note belong in the active campaign's own `active_game.json`. The current unfinished Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`.
+Live gameplay state does **not** belong in `active_campaign.json`. Campaign phase, session, completed Campaign Turn, completed/pre-game scene name, location, character-creation status, completed PC advancement state, save revision, and the latest synchronization note belong in the active campaign's own `active_game.json`. The current unfinished Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`.
 
 Campaign saves are isolated by folder:
 
@@ -41,7 +41,7 @@ Each campaign owns its own `turn_save.md`.
 
 A **Campaign Turn** is the campaign persistence/gameplay unit. It may contain any number of Steps, including conversation, exploration, multiple combat rounds, and individual combatant turns. A combatant ending its D&D turn, a combat round ending, or combat itself ending does not automatically finish the Campaign Turn.
 
-`active_game.json` represents the campaign's last completed save. `turn_save.md` stages the current unfinished Campaign Turn and overlays that permanent state until the Turn is intentionally completed.
+`active_game.json` owns the campaign's broad lifecycle phase and represents the campaign's last completed save. `turn_save.md` stages the current unfinished Campaign Turn and overlays that permanent state until the Turn is intentionally completed.
 
 The complete lifecycle, status meanings, confirmation gates, reconciliation, verification, recovery, reset rules, roll-recording format, and character-creation checkpoint workflow are owned by `GAME_MASTER_RULES.md` here rather than repeated inside every numbered campaign.
 
