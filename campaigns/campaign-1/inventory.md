@@ -169,6 +169,42 @@ For meaningful items, preserve enough information to resolve their mechanics cor
 
 Do not expose a hidden or unidentified property merely because it is recorded for continuity.
 
+## Acquired Official Item Snapshot Rule
+
+When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts needed to continue using that **owned campaign item** correctly. The snapshot belongs here rather than remaining dependent on a live external webpage.
+
+Depending on the item, preserve the relevant combination of:
+
+- item name and type
+- quantity
+- equipped / carried / stored state
+- damage / armor / defense information
+- attack or damage modifiers and damage type
+- weapon properties or mastery
+- ability-score, movement, or other stat effects
+- charges / uses / ammunition
+- recharge or refill rules
+- durability / condition
+- attunement / bonding
+- granted abilities, triggered effects, durations, saves, resistances, requirements, limitations, or other mechanics needed to use the item
+- the official acquisition reference when useful for provenance
+
+Preserve the useful mechanics, not a word-for-word copy of the entire external published page.
+
+Once those mechanics are established in Campaign 1 inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until Campaign 1 explicitly changes or updates that item through play or an approved rules change.
+
+If an external item reference has moved or become inaccessible before the acquisition snapshot can be resolved, handle that item case by case and establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
+
+During an active Campaign Turn, the acquisition and its snapshot remain staged in `turn_save.md` until approved reconciliation. If the buyer is a current-party persistent NPC, reconcile the NPC's master ownership list in `NPC-state.md` as part of the same completed save.
+
+## Inventory Stack Compatibility
+
+A newly acquired copy may merge with an existing inventory quantity/stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
+
+Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless Campaign 1 explicitly reconciles them to the same compatible state.
+
+Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
+
 ## Travel Resource Use
 
 Track meaningful shared travel resources here when established, such as food, water, ammunition, mounts, fuel, camping supplies, or other party-consumed resources.

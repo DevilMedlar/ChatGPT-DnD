@@ -276,7 +276,11 @@ When the NPC is currently in the party, `inventory.md` expands mechanically rele
 
 Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
 
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `GAME_MASTER_RULES.md`.
+
 Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
+
+#### Business-Level State
 
 - **Business name:**
 - **Business type:**
@@ -289,59 +293,32 @@ Shop stock is **business inventory**, not the NPC's personal ownership list and 
 - **Buy-back policy:**
 - **Base markup / discount rules:**
 - **Current party discount / markup:**
-- **Reason for discount / markup:**
+- **Reason for discount / markup:** Business / relationship cause such as shop policy, relationship, reputation, faction standing, or negotiation
+
+Contextual market factors such as scarcity, shortages, unusual demand, or temporary events are separate from merchant markup/discount reasons. Record them only when they are established and relevant.
 
 #### Current Shop Stock
 
-| Item | Price | Qty | Type | Mechanics | Description |
+For normal standard vendor stock, the **item name itself is the direct official link** to the freely viewable official item page.
+
+| Item | Base Price | Qty | Category | Key Mechanics | Short Description |
 |---|---:|---:|---|---|---|
 |  |  |  |  |  |  |
 
-For simple items, the table may be enough. For complicated weapons, armor, magical items, consumables, tools, cursed items, charged items, or items that grant abilities, add a detailed record below.
+For standard official shop items:
 
-#### Detailed Shop Item Template
+- current availability and quantity are vendor-owned state here
+- the row records the Base Price being used for this stock listing
+- routine/basic repeat goods must use their established recurring Base Price once the dedicated campaign recurring-price reference is created
+- non-routine official items may use a reasonable GM-established Base Price for that stock appearance
+- `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
+- `Short Description` is compact generated storefront text, not a second mechanical definition
+- the freely viewable official source owns the standard published mechanics while the item remains shop stock; it does **not** own Campaign 1 vendor pricing
+- do not add a separate official-reference column, duplicate official-item catalog, or locally maintained detailed official-item record
 
-- **Item name:**
-- **Price:**
-- **Quantity:**
-- **Type:**
-- **Rarity:**
-- **Damage / armor / defense:**
-- **Attack modifier:**
-- **Damage modifier:**
-- **Damage type:**
-- **Stat bonuses / penalties:**
-- **Requirements:**
-- **Charges / uses:**
-- **Recharge:**
-- **Attunement / bonding:**
-- **Durability / condition:**
-- **Known properties:**
-- **Unidentified properties:** Yes / No
-- **Description:**
+Homebrew, custom, unique, campaign-created, or mechanically modified items are outside this standard official vendor-item schema. Do not force them into this table as though they were ordinary official catalog items.
 
-##### Special Effect / Ability Template
-
-- **Name:**
-- **Description:**
-- **Trigger / activation:**
-- **Chance:** If random
-- **Mechanical effect:**
-- **Duration:**
-- **Save / resistance:**
-- **Stacking:**
-- **Uses / charges:**
-- **Recharge:**
-- **Requirements:**
-- **Immunities / limitations:**
-
-##### Hidden Properties — GM / Continuity Only
-
-Use only when an item actually has hidden, cursed, unidentified, or secret properties.
-
-**Do not reveal hidden properties until identified, discovered, triggered, or otherwise legitimately learned in play.**
-
-- 
+During an active Campaign Turn, purchases and other persistent shop changes remain staged in `turn_save.md`; do not immediately rewrite this permanent stock table.
 
 #### Services
 
@@ -405,7 +382,7 @@ Do not let items disappear merely because party membership changed.
 ## Ownership Rule
 
 - `NPC-state.md` owns each persistent NPC's stable NPC ID as part of NPC identity. Cross-file references use that ID rather than relying on a name-derived Markdown anchor.
-- `NPC-state.md` owns NPC identity, appearance, stats, HP at the last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, master personal possessions, NPC-specific story involvement, shops, shop stock, services, and NPC-specific continuity.
+- `NPC-state.md` owns NPC identity, appearance, stats, HP at the last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, master personal possessions, NPC-specific story involvement, business-level shop state, current shop stock, services, and NPC-specific continuity.
 - Relationship status, current partners, romantic interests, sexual interests, attraction, boundaries, jealousy, and consent / availability are separate facts and must not be inferred from one another.
 - `inventory.md` owns expanded mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by **current party NPCs**. For NPCs, it does not replace the master ownership list here.
 - Shop stock remains in the shop NPC's record here as business inventory and does not belong in `inventory.md` unless an item is actually acquired by a party member.

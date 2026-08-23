@@ -246,9 +246,10 @@ After each resolved Step:
 2. update `Current Scene` whenever the effective scene changes
 3. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
 4. update `Pending Permanent Transfers` when a result may need persistent reconciliation
-5. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
-6. do not increment `save_revision`
-7. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
+5. when a shop transaction occurs, update `Pending Shop Transactions` with the connected vendor-stock, currency, inventory, pricing, and acquisition-snapshot state needed for reconciliation
+6. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
+7. do not increment `save_revision`
+8. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
@@ -308,7 +309,7 @@ After Confirmation Gate 1 is approved:
 1. transfer only the approved persistent, continuity-relevant, or historically important results to their proper permanent owners
 2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
 3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values that will be stored authoritatively in `active_game.json.character_advancement`
-4. update shop business stock and acquired party inventory separately when a shop transaction occurred
+4. when a shop purchase occurred, reconcile the connected transaction together: update the shop business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item to the buyer's `inventory.md` record, preserve the acquisition-time mechanics snapshot, apply the approved compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC; do not permanently apply only one side of the transaction
 5. append the completed Campaign Turn checkpoint to `session_log.md`
 6. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, the approved final `Current Scene` as `current_scene_name`, the completed location, and the authoritative completed PC advancement state
 7. increment `save_revision` exactly once for the completed permanent save
@@ -329,6 +330,7 @@ Verify at minimum:
 - expected character-state changes landed correctly
 - when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
 - expected inventory/resource changes landed correctly
+- when a shop purchase occurred, vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and stack result all match the approved transaction
 - required NPC master/detail records agree when applicable
 - when persistent NPCs are created or cross-referenced, stable NPC IDs are unique, unchanged, and agree across every affected file
 - required world/clue changes landed correctly
@@ -365,7 +367,7 @@ If the player says **No**:
 If the player says **Yes**:
 
 1. reset the temporary ledger
-2. clear the completed Turn events, Current In-Turn State, pending transfers, final review, save verification, and prior reset approval
+2. clear the completed Turn events and Current In-Turn State, reset `Pending Shop Transactions` to `None yet.` while preserving its template, clear pending transfers, final review, save verification, and prior reset approval
 3. prepare the next Campaign Turn number
 4. set `Status` to `ready`
 5. set `Current Step` to `0`
@@ -411,7 +413,7 @@ Before writing a character-creation checkpoint:
 
 If the player says **No**, write nothing and do not increment `save_revision`.
 
-If the player gives **Corrections**, revise the proposed character-creation state and planned permanent changes, show the corrected checkpoint again, and ask for confirmation again.
+If the player gives **Corrections**, revise the proposed character-creation state and planned permanent changes, show the corrected checkpoint again, and ask for confirmation again
 
 If the player says **Yes**:
 
@@ -439,333 +441,61 @@ After every character-creation checkpoint, verify at minimum:
 - `last_sync_note` accurately describes the completed checkpoint
 - no unrelated campaign state changed
 
-The final character-creation checkpoint must additionally verify that every required character-creation field listed in the `Character creation` section above is established for both player characters. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
-
-## Equipment and special effects
-
-Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
-
-Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md`, `character_sheet.md`, `NPC-state.md`, and `world_state.md` as relevant before resolving an item-dependent effect.
-
-For persistent NPCs, `NPC-state.md` owns the master list of what the NPC owns. `inventory.md` expands mechanically relevant possessions only while that NPC is currently traveling with the party. Shop stock belongs in the shop NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
-
-Shop and inventory item descriptions should preserve established mechanics when relevant, including attack bonuses, damage dice and damage types, armor or defense changes, ability-score penalties or bonuses, triggered effects, proc chances, charges, cooldowns, requirements, attunement, durability, granted abilities, and their descriptions. Hidden or unidentified properties must not be revealed merely because they are stored for continuity.
-
-## Abilities and ongoing effects
-
-For significant abilities, spells, talents, transformations, blessings, curses, injuries, buffs, debuffs, or relationship-linked effects, track when relevant: name, source, mechanical effect, duration, recharge, current uses/charges, and stacking or exclusivity rules.
-
-## NPC and relationship continuity
-
-`NPC-state.md` is authoritative for persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships and attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
-
-Every persistent NPC receives one stable campaign-local ID in the form `NPC-0001`, `NPC-0002`, and so on when first added to `NPC-state.md`. The ID never changes or gets reused for another NPC. Cross-file references must use the stable NPC ID; the current NPC name may accompany it for readability. Names and name-derived Markdown headings or anchors are display/navigation aids, not identity keys.
-
-Important NPCs should track only fields that are relevant and established. When useful, this includes:
-
-- stable NPC ID; name, age, gender/pronouns, species/ancestry, role, occupation, faction, and status
-- appearance and verified visual-continuity references
-- level, class/archetype, XP or advancement state when used, HP, temporary HP, AC, initiative, speed, proficiency, hit dice/recovery resources, ability scores, saves, skills, attacks, features, spells, conditions, and limited resources
-- normal/current known location when not traveling with the party
-- party membership and the last known non-party location
-- personality, values, goals, wants, needs, fears, likes, dislikes, habits, and priorities
-- factual knowledge, beliefs, information shared, information withheld, secrets known, secrets held, and false beliefs
-- master personal ownership list
-- NPC-specific involvement in quests or missions
-- shop/services information, stock, prices, quantities, item mechanics, descriptions, and hidden properties when applicable
-- compact NPC-specific continuity history
-
-### NPC advancement
-
-NPC advancement is not universal.
-
-- Minor or background NPCs remain at their established mechanical state unless something in the fiction changes them.
-- Important persistent NPCs may gain or lose Level, abilities, spells, features, equipment, resources, class/archetype, resistances, weaknesses, transformations, or other mechanical traits when justified by training, experience, story events, consequences, or other established causes.
-- Long-term party NPCs should advance often enough to remain mechanically relevant, but they do **not** automatically use the PCs' XP system unless that has been explicitly established for the NPC.
-- NPC advancement may be level-based, ability-based, feature-based, or another established form appropriate to that NPC.
-- Existing NPCs do **not** automatically scale merely because DevilMedlar or Senpai became stronger. A previously established weaker NPC may remain weaker, while new or changed threats can become harder naturally through the world and story.
-- Any NPC advancement caused during an active Campaign Turn is staged in `turn_save.md` and transferred to `NPC-state.md` only through the normal confirmed Campaign Turn save process.
-
-### Relationship and attraction state
-
-Relationship information is made of separate facts and must not be collapsed into one label.
-
-When relevant, track:
-
-- **relationship status** such as single, dating, married, widowed, complicated, or another established state
-- **current partner(s)**
-- **romantic interest(s)**
-- **sexual interest(s)** for explicitly adult NPCs only
-- **attraction toward DevilMedlar**
-- **attraction toward Senpai**
-- **other known attractions**
-- **jealousy / rivalry**
-- **established boundaries**
-- **consent / availability notes**
-- target-specific disposition, trust, respect/fear, attraction/tension, relationship role, debts/favors, promises/obligations, and important history
-
-`Single` does **not** imply romantic or sexual interest. `Married` does **not** automatically imply lack of attraction to everyone else. Friendship, gratitude, debt, party membership, attraction, partnership status, boundaries, and consent are separate state facts. Do not infer one from another.
-
-For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under the Adult-content rules.
-
-Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
-
-### NPC inventory and party-membership flow
-
-`NPC-state.md` keeps the master ownership list whether an NPC is in the party or not.
-
-If an NPC joins or leaves during an active Campaign Turn, stage the party-membership change, location effect, and carried-possession bookkeeping in `turn_save.md`. Do **not** update `NPC-state.md` or `inventory.md` merely because the join or leave occurred in the fiction.
-
-At approved Campaign Turn reconciliation, or when the change is established outside an active Campaign Turn through the normal completed-save workflow:
-
-When an NPC joins the party:
-
-1. mark party membership in `NPC-state.md`
-2. keep the master ownership list there
-3. add an expanded active inventory section in `inventory.md` for carried possessions that need detailed mechanical bookkeeping
-4. reconcile any staged membership, location, item, resource, charge, ammunition, condition, or other relevant changes from `turn_save.md`
-
-When an NPC leaves the party:
-
-1. reconcile their final quantities, currency, equipment, charges, acquired items, lost items, and other relevant possessions back into the master ownership list in `NPC-state.md`
-2. reconcile any staged Campaign Turn membership, location, condition, and possession changes
-3. update the NPC's off-party location when known
-4. only then remove or collapse their expanded section from `inventory.md`
-
-Do not let possessions disappear merely because party membership changed.
-
-### NPCs in world state and quests
-
-`world_state.md` may reference NPCs when they matter to locations, factions, quests, clues, discoveries, or consequences, but each persistent NPC reference must use the stable NPC ID and may include the current NPC name for readability. Do not rely on a name-derived Markdown heading or anchor as the identity key, and do not duplicate the full persistent NPC record.
-
-`world_state.md` owns overall quest/mission state. `NPC-state.md` owns the NPC's personal involvement, motives, promises, information, rewards offered, conditions, and related continuity.
-
-A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns current shop stock, prices, services, and item details.
-
-## Player agency
-
-- Never choose the player character's major decisions for the player.
-- Present consequences honestly.
-- Creative freeform actions are always allowed.
-- Listed choices are suggestions, not a menu prison.
-- Do not retroactively decide that the player agreed to something they did not choose.
-
-## Senpai participation and agency
-
-Campaign canon establishes Senpai as a ChatGPT-controlled active adventuring companion, DevilMedlar's wife, romantic partner, adult sexual partner, and co-protagonist.
-
-- Senpai must remain in party and on screen unless an established story event temporarily prevents it or the player explicitly changes that campaign rule.
-- ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, and whether she chooses to use available reroll resources.
-- The player controls DevilMedlar and does not answer on Senpai's behalf.
-- The player physically rolls the dice for Senpai after ChatGPT decides Senpai's action and states what roll is required.
-- Senpai's current adult sexual consent and any reproductive choice remain matters of her own agency; marriage or relationship history does not automatically decide a future intimate or reproductive choice, but they do influence the choice.
-- If Senpai and another explicitly adult character choose a consensual reproductive relationship, the private homebrew reproduction and lineage rules apply regardless of whether their species or ancestries match.
-- Senpai must not override DevilMedlar's player agency or become the campaign's main protagonist merely because she participates.
-
-## Rolls
-
-The **player rolls every die used by the campaign**. ChatGPT does not secretly generate gameplay dice.
-
-This includes rolls for:
-
-- DevilMedlar
-- Senpai
-- allied NPCs
-- neutral NPCs
-- enemies and monsters
-- attacks
-- damage
-- saving throws
-- ability checks and skill checks
-- initiative
-- healing when dice are involved
-- random encounters
-- treasure or event tables
-- recharge rolls
-- pregnancy checks when relevant
-- any other random campaign mechanic
-
-Workflow:
-
-1. ChatGPT decides when a roll is required based on the rules and current fiction.
-2. ChatGPT states exactly what dice the player should roll. When useful, ChatGPT also states which character or creature the roll belongs to using numbers or letters so rolls do not get matched to wrong actions or characters.
-3. The player rolls and reports the raw die result or results.
-4. ChatGPT applies established modifiers, proficiency, advantage/disadvantage or other mechanics when those mechanics exist, calculates totals, determines consequences, and records the resulting state in `turn_save.md` during an active Campaign Turn or through the appropriate completed-save workflow outside one.
-
-### Compact roll recording in `turn_save.md`
-
-When recording rolls in Campaign Turn Steps, keep the calculation on one line whenever practical while preserving enough information to reconstruct it.
-
-General pattern:
-
-`**Actor rolls Roll Name:** dice/results + bonuses - penalties Ã—/Ã· other effects = **final total**`
-
-Attack pattern:
-
-`**Attack â€” Attack Name:** dice/results + modifiers = **total** vs AC/target = **Hit/Miss**`
-
-Damage/healing pattern:
-
-`**Damage/Healing â€” Source:** dice/results + modifiers Ã—/Ã· effects = **final amount**`
-
-Preserve the dice expression and individual die results when useful, especially for multiple dice, advantage/disadvantage, critical hits, resistance, vulnerability, rerolls, or other effects. Initiative order should record each combatant's final initiative total beside the name.
-
-### Hidden checks
-
-Because the player rolls all dice, a hidden check does **not** mean ChatGPT secretly rolls a die.
-
-When secrecy materially improves the game, ChatGPT may conceal the purpose, DC, modifier details, target, or meaning of a roll until revealing that information becomes appropriate. ChatGPT can simply ask for a specified die roll without explaining what hidden fact is being tested.
-
-The player's reported die result remains the roll. ChatGPT may not replace it with a privately generated result.
-
-### Rerolls
-
-Dice results cannot be overturned by ChatGPT or rerolled unless an established reroll resource, feature, or permitted new attempt allows it.
-
-- If DevilMedlar has an available reroll decision, stop before further outcome narration and ask the player whether to use it.
-- If Senpai has an available reroll decision, ChatGPT decides whether Senpai chooses to use it, then asks the player to physically roll the reroll if she does.
-- For NPCs and enemies, ChatGPT decides whether they use any established reroll resource, then the player physically rolls it.
-- Record consumed reroll resources and the resulting roll when they affect persistent state.
-
-## Image generation
-
-Scene art is optional. Do not ask for an image after every scene.
-
-Good image candidates include major character introductions, dramatic reveals, transformations, important romantic or sensual moments, visually striking adult intimacy where image generation is permitted, spectacular locations, major monsters, boss encounters, important outfits/equipment/scars/tattoos/visual changes, or any scene the player explicitly asks to see.
-
-### Image decision workflow
-
-1. Narrate the scene normally and present any relevant gameplay choices first.
-2. If the scene genuinely deserves an image, end the text with `Make image? Yes / No`.
-3. If the player answers `Yes`, generate the image **before resolving any gameplay choice for that scene**.
-4. After the generated image is shown, stop and wait for the player's gameplay choice or freeform action. Do not advance the scene merely because the image was generated.
-5. If the player answers `No`, do not generate an image.
-6. When `No` is followed by other text in the same message, immediately parse the remaining text as gameplay input. Example: `No, A, 1, E) ...`.
-7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult `art/art_log.md`.
-8. Generated images must be as accurate as possible to avoid having to remake them unnecessarily.
-9. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
-10. If newly established continuity-critical visual information occurs during an active Campaign Turn, stage it in `turn_save.md` and include `art/art_log.md` in the Exact Planned Permanent Transfers. Add it to `art/art_log.md` only during approved Campaign Turn reconciliation. Outside an active Campaign Turn, persist it through the normal completed-save workflow.
-
-## Reference art
-
-`art/art_log.md` is the canonical visual index for Campaign 1.
-
-When the player supplies reference art or manually adds images to the repository:
-
-- Record the repository path only after it actually exists.
-- Record which features are canonical and which are inspiration only.
-- Prefer written canonical traits over accidental differences in generated images.
-- Never assume an unverified image path exists.
-
-If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical path/trait metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
-
-## Campaign save routing and file ownership
-
-`../active_campaign.json` is a **campaign selector only**. It identifies the active numbered campaign and points to that campaign's `active_game.json`.
-
-It is not the authoritative place for session, Campaign Turn, character level, XP, location, or other changing gameplay state. Do not rewrite `../active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or pointer-level phase actually changes.
-
-Campaign saves are isolated:
-
-- Campaign 1 saves only to Campaign 1 files.
-- Campaign 2 saves only to Campaign 2 files.
-- Campaign 3 saves only to Campaign 3 files.
-- Continue the same rule for later campaigns.
-- Never write Campaign 1 state into another campaign folder or another campaign's state into Campaign 1 unless the player explicitly requests a crossover or import.
-
-Within Campaign 1, file ownership is:
-
-- `active_game.json` â€” authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
-- `turn_save.md` â€” temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
-- `character_sheet.md` â€” DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
-- `NPC-state.md` â€” persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
-- `inventory.md` â€” detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
-- `world_state.md` â€” locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
-- `session_log.md` â€” chronological completed character-creation checkpoint saves and completed Campaign Turn history.
-- `art/art_log.md` â€” visual continuity and verified reference-art information.
-- `README.md` â€” static campaign documentation; do not use it as a duplicate live save.
-
-## Persistence
-
-The detailed Campaign Turn workflow is defined above. The persistence rules below govern how that workflow writes permanent state.
-
-### Permanent transfer destinations
-
-At approved Campaign Turn reconciliation, transfer only persistent, continuity-relevant, or historically important results to their correct owners.
-
-Typical destinations include:
-
-- `character_sheet.md` â€” DevilMedlar/Senpai HP, conditions, abilities, character resources, synchronized human-readable Level/XP mirrors, and lasting personal state
-- `NPC-state.md` â€” NPC HP, conditions, abilities, relationships, party status, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
-- `inventory.md` â€” detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, and other possessions for DevilMedlar, Senpai, and current party NPCs
-- `world_state.md` â€” persistent locations, quests, factions, discoveries, clues, and world consequences
-- `session_log.md` â€” chronological character-creation checkpoint or completed Campaign Turn summary and continuity-critical events
-- `art/art_log.md` â€” newly established visual continuity when relevant
-- `active_game.json` â€” completed session/Campaign Turn/`current_scene_name`/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
-
-For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
-
-- update `NPC-state.md` so the NPC's master ownership list remains correct
-- update `inventory.md` so the NPC's expanded active mechanical bookkeeping remains correct
-
-Examples include consuming or gaining an item, spending or receiving currency, losing ammunition, transferring equipment, changing quantities, or permanently changing charges/uses.
-
-For a **shop transaction**, update the shop NPC's business stock in `NPC-state.md` and the acquiring party member's appropriate inventory record. Shop stock must not be treated as the shopkeeper's personal carried possessions.
-
-Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
-
-### Save revision rule
-
-`active_game.json` contains `save_revision`.
-
-For a completed Campaign Turn or other completed persistent save revision:
-
-1. determine all Campaign 1 permanent files that need real changes
-2. prepare the canonical state/history updates
-3. prepare `active_game.json` with the new completed authoritative state
-4. increment `save_revision` by exactly 1 only for the completed permanent save
-5. set `last_sync_note` to a compact description of what that completed revision represents
-6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
-
-Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, and the later temporary-ledger reset do **not** increment `save_revision`.
-
-Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
-
-If the environment cannot make one atomic multi-file permanent save and must write files sequentially, update supporting permanent files first and `active_game.json` last. Then verify the completed state before moving the temporary ledger to `saved_awaiting_reset`.
-
-The later player-approved reset of `turn_save.md` is a separate cleanup/checkpoint operation and does not create another campaign save revision.
-
-A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it.
-
-The revision marks a completed Campaign 1 save checkpoint. It does not permit old campaign history to become canon.
-
-Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file unless chronological order or clear ownership requires it.
-
-Examples of reasons to remove, delete, or correct existing material include, but are **not limited to**:
-
-- items were sold, lost, used, consumed, destroyed, traded, transferred, or otherwise legitimately removed from a character's possession
-- an established fact is explicitly corrected or superseded by the player
-- duplicate or accidental erroneous information must be removed
-- a mechanical state would otherwise remain incorrect
-- information conflicts and the current canonical source cannot be resolved from existing records; ask which conflicting fact to keep
-- chronological order
-
-### Session log behavior
-
-`session_log.md` is chronological. Each completed character-creation checkpoint save and each completed Campaign Turn should be appended as a new checkpoint rather than replacing older checkpoints. Every checkpoint should identify its completed `save_revision`, and Campaign Turn checkpoints should also identify their completed Campaign Turn number.
-
-For character creation, record only the choices and derived state actually finalized by that confirmed checkpoint; do not log every option discussed or rejected. For gameplay, record important rolls, choices, consequences, XP awards, scene transitions, discoveries, relationship changes, combat outcomes, and other continuity-critical events. The session log summarizes completed Campaign Turns and does not need every granular Step already preserved during the temporary Turn ledger.
-
-## Priority order
-
-1. Player agency
-2. Senpai's character agency
-3. Current-branch canon
-4. Continuity
-5. Interesting consequences
-6. Accurate mechanics
-7. Natural character behavior
-8. Adult tone where appropriate
-9. Pacing
-10. Visual continuity when images are used
-11. Fun over unnecessary bookkeeping
+The final character-creation checkpoint must additionally verify that every required character-creation field listed in the `Character creation` section above is established for both player characters. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context;›È]™HØ[\ZYÛˆ\›ˆİ\^\İÈİ]ÚYH\›—ÜØ]™K›Y‚‚ˆÈÈ\]Z\Y[[™ÜXÚX[Y™™XİÂ‚“YX[š[™Ù[][\ÈX^H˜XÚÈ]X[]K\]Z\YØØ\œšYYÜİÜ™Yİ]K[XYÙHÜˆ\›[Üˆ˜[Y\ËÚ\™Ù\Ë\˜Xš[]K][™[Y[Üˆ›Û™[™ËXYÚXØ[Y™™XİËİ\œÙ\Ë[™Y[ˆÜˆ[šY[YšYY›Ü\Y\Ë‚‚‘È›İ›Ü™Ù][ˆ][IÜÈ\İX›\ÚYÜXÚX[Y™™XİÚ[\H™XØ]\ÙHÙ]™\˜[ØÙ[™\È\ÜËˆÚXÚÈ[™[ÜK›YÚ\˜Xİ\—ÜÚY]›Y”Ë\İ]K›Y[™ÛÜ›Üİ]K›Y\È™[]˜[™Y›Ü™H™\ÛÛš[™È[ˆ][KY\[™[Y™™Xİ‚‚‘›Üˆ\œÚ\İ[”ÜË”Ë\İ]K›YİÛœÈHX\İ\ˆ\İÙˆÚ]H”ÈİÛœËˆ[™[ÜK›Y^[™ÈYXÚ[šXØ[H™[]˜[ÜÜÙ\ÜÚ[ÛœÈÛ›HÚ[H]”È\Èİ\œ™[H˜]™[[™ÈÚ]H\KˆÚÜİØÚÈ™[Û™ÜÈ[ˆHÚÜ”ÉÜÈ”Ë\İ]K›Y™XÛÜ™\È\Ú[™\ÜÈ[™[ÜH[[H\HY[X™\ˆXİX[HXÜ]Z\™\È[ˆ][K‚‚“İÛ™Y[™[ÜH][\ÈÚİ[™\Ù\™H\İX›\ÚYYXÚ[šXÜÈÚ[ˆ™[]˜[[˜ÛY[™È]XÚÈ›Û\Ù\Ë[XYÙHXÙH[™[XYÙH\\Ë\›[ÜˆÜˆY™[œÙHÚ[™Ù\ËXš[]K\ØÛÜ™H[˜[Y\ÈÜˆ›Û\Ù\ËšYÙÙ\™YY™™XİË›ØÈÚ[˜Ù\ËÚ\™Ù\ËÛÛÛİÛœË™\]Z\™[Y[Ë][™[Y[\˜Xš[]KÜ˜[YXš[]Y\Ë[™Z\ˆ\ØÜš\[ÛœËˆY[ˆÜˆ[šY[YšYY›Ü\Y\È]\İ›İ™H™]™X[YY\™[H™XØ]\ÙH^H\™HİÜ™Y›ÜˆÛÛ[Z]Kˆİ[™\™Ù™šXÚX[ÚÜİØÚÈ\Ù\ÈHÛÛ\Xİ™[™Üˆ™\™\Ù[][ÛˆYš[™Y™[İÈ˜]\ˆ[ˆ\XØ][™ÈHÙXÛÛ™[YXÚ[šXØ[][H™XÛÜ™[ˆ”Ë\İ]K›Y‚‚ˆÈÈÚÜ[™™[™Üˆ[\Â‚ˆÈÈÈİ[™\™™[™ÜˆØÛÜH[™Ù™šXÚX[™Y™\™[˜Ù\Â‚˜”Ë\İ]K›YİÛœÈ\Ú[™\ÜË[]™[™[™Üˆİ]Kİ\œ™[ÚÜİØÚË[™Ù\šXÙ\È›Üˆ\œÚ\İ[ÚÜ”ÜËˆÚÜİØÚÈ\È\Ú[™\ÜÈ[™[ÜK›İHÚÜÙY\\‰ÜÈ\œÛÛ˜[Ø\œšYYÜÜÙ\ÜÚ[ÛœÈ[™›İ\H[™[ÜK‚‚“›Ü›X[İ[™\™ÚÜİØÚÈ\Ù\È
+Š›Ù™šXÚX[	‘][\ÈÚÜÙH\ØX›HYXÚ[šXÜÈ\™Hœ™Y[HšY]ØX›JŠ‹ˆ\ÙHHÙ™šXÚX[	‘][KÙ\]Z\Y[Ø][ÙÈÜˆ]ÈØ]YÛÜšY\ÈÈ\ØÛİ™\ˆØ[™Y]\Ë[ˆÜ[ˆH\™XİÙ™šXÚX[][HYÙH™Y›Ü™HİØÚÚ[™ÈH][K‚‚‹HHYÙHY\™[H^\İ[™È\È›İ[›İYÚˆHYÙH]\İ^ÜÙH[›İYÚXİX[YXÚ[šXÜÈÈ\ÙHH][HÚ]İ]™\]Z\š[™ÈH\˜Ú\ÙK‚‹HYˆHØ[™Y]H\ÈÛ›HHX\Ù\‹X\šÙ]XÙH™Y\™XİİÛ™\œÚ\›Û\Üˆİ\Ú\ÙHY\È]È\ØX›HYXÚ[šXÜË™Z™Xİ]Ø[™Y]H›Üˆ›Ü›X[İ[™\™ÚÜİØÚÈ[™ÚÛÜÙH[›İ\ˆÙ™šXÚX[][K‚‹HH
+Šš][H˜[YH]Ù[ŠŠˆ[ˆ”Ë\İ]K›Y\ÈH\™XİÙ™šXÚX[[šËˆÈ›İXZ[Z[ˆHÙ\\˜]HÙ™šXÚX[\™Y™\™[˜ÙHÛÛ[[‹‚‹H	‘™^[Û™Üˆ[›İ\ˆYÜYÙ™šXÚX[Ûİ\˜ÙH\ÈH™Y™\™[˜ÙH]]Üš]H›ÜˆHİ[™\™X›\ÚY][IÜÈYXÚ[šXÜÈÚ[H]™[XZ[œÈÚÜİØÚËˆ]\È
+Š››İ
+ŠˆØ[\ZYÛˆIÜÈ™[™Ü‹\šXÚ[™È]]Üš]K‚‹HØ]YÛÜX[™Ù^HYXÚ[šXÜØ\™HÛÛ\XİİÜ™Yœ›ÛšY[È\š]™Yœ›ÛHHİ\œ™[Ù™šXÚX[™Y™\™[˜ÙKˆÚÜ\ØÜš\[Û˜\ÈÛÛ\XİÙ[™\˜]YİÜ™Yœ›Û^ˆ›Û™HÙˆÜÙHšY[È™XÛÛY\ÈHÙXÛÛ™\›X[™[YXÚ[šXØ[Yš[š][Û‹‚‹HÈ›İXZ[Z[ˆHØØ[\XØ]HÙ™šXÚX[Z][HØ][ÙÈÜˆHÙXÛÛ™ØØ[HÙ[™\˜]Y[œÜXİ[Ûˆ›ØÚÈ›ÜˆÜ™[˜\HÙ™šXÚX[ÚÜ][\Ë‚‹HÛYXœ™]Ëİ\İÛK[š\]YKØ[\ZYÛ‹XÜ™X]YÜˆYXÚ[šXØ[H[ÙYšYY][\È\™Hİ]ÚYH\Èİ[™\™™[™Ü‹Z][H\˜Ú]Xİ\™KˆZ\ˆÙ\\˜]HYXÚ[šXÜÈ[™\œÚ\İ[˜ÙH]\İ™H[™YHÚ]]™\ˆØ[›ÛšXØ[Ş\İ[H\İX›\Ú\È[K‚‚‘^\›˜[Ù™šXÚX[T“È[™XØÙ\ÜÈ[\ÈØ[ˆÚ[™ÙKˆYˆHİÜ™Y™Y™\™[˜ÙH]\ˆİÜÈÛÜšÚ[™ÈÜˆ™XÛÛY\È[˜XØÙ\ÜÚX›K™\ÛÛ™H]][HØ\ÙHHØ\ÙH˜]\ˆ[ˆ™][™[™ÈH^\›˜[™Y™\™[˜ÙH\È\›X[™[ˆ™Y›Ü™H[ˆXÜ]Z\Ú][ÛˆÛ˜\Úİ\Èš[˜[^™YH][IÜÈ™\]Z\™YYXÚ[šXÜÈ]\İ™H™\ÛÛ˜X›Hœ›ÛH[ˆ\›İ™YÛİ\˜ÙHÜˆ[™XYKY\İX›\ÚYØ[\ZYÛˆİ]K‚‚“Ù™šXÚX[ÚÜ™Y™\™[˜Ù\È]\İ›ÛİÈÚXÚ]™\ˆ	‘[\Ëİ™\œÚ[Ûˆ˜\Ù[[™HØ[\ZYÛˆH[[X][HYÜËˆ[[]˜\Ù[[™H\È^XÚ]H™\ÛÛ™YÈ›İ[™™\ˆ[ˆY][ÛˆY\™[Hœ›ÛHHÛÛ™[šY[][HT“‚‚ˆÈÈÈ™[™ÜˆšXÚ[™Â‚˜˜\ÙHšXÙX\ÈHİ\[™ÈØ[\ZYÛˆHšXÙH™Y›Ü™HH\XØX›HÚÜÜˆ˜[œØXİ[Ûˆ[ÙYšY\œË‚‚”›İ][™KØ˜\ÚXÈ™\X]ÛÛÙÈ]\İ\ÙHH\İX›\ÚY™Xİ\œš[™È˜\ÙHšXÙH›Üˆ]ÜXÚYšXÈ][H\HÚ[™]™\ˆİØÚÙYˆ\È[H\Y\ÈÛ›HÈ][\ÈÛ\ÜÚYšYY\È›İ][™KØ˜\ÚXÈ™\X]ÛÛÙÈ[™Ù\È›İ›Ü˜ÙH]™\H][HÚ\™YH][\HY\˜Ú[ÈÈ]™HHØ[YH˜\ÙHšXÙKˆY™™\™[Y\˜Ú[ÈX^Hİ[™XXÚY™™\™[š[˜[šXÙ\È›İYÚZ\ˆİÛˆ\XØX›H[ÙYšY\œË‚‚•HYXØ]YØ[\ZYÛ‹[İÛ™Y™Y™\™[˜ÙH]Ú[\œÚ\İÜÙH›İ][™KØ˜\ÚXÈ™Xİ\œš[™È˜\ÙHšXÙ\È\ÈHÙ\\˜]H›ÛİË]\\˜Ú]Xİ\™H\ÚËˆ[[]™Y™\™[˜ÙH\ÈÜ™X]YÈ›İ™X][ˆ[™]šYX[™[™Üˆ›İÈ\ÈH\›X[™[Ü›ÜÜË]™[™Üˆ]]Üš]H›ÜˆH›İ][™H][IÜÈ™Xİ\œš[™È˜\ÙHšXÙK‚‚‘›ÜˆÙ™šXÚX[][\È]\™H›İ›İ][™KØ˜\ÚXÈ™\X]ÛÛÙËHÓHX^H\İX›\ÚH™X\ÛÛ˜X›H˜\ÙHšXÙHÚ[ˆH][H\X\œÈ[ˆİØÚËˆHšXÙHÚİ[™HÙ[œÚX›H˜]\ˆ[ˆ\˜š]˜\H[™X^HÛÛœÚY\ˆ˜\š]KYXÚ[šXØ[İÙ\‹\ÙY[™\ÜË\˜][ÛˆÜˆ[X™\ˆÙˆ\Ù\ËÛÛœİ[XXš[]K™\XÙXXš[]KØØ[ØØ\˜Ú]KØ]YÛÜK[™ÛÛ\\˜X›H\İX›\ÚYØ[\ZYÛˆšXÙ\Ëˆ[Ü™HİÙ\™[˜\™\‹Üˆ[Ü™H\ÙY[][\ÈÚİ[Ù[™\˜[H™[™\Ø\™[ˆšXÙKˆ\ÙH›Û‹\›İ][™H][\ÈÈ›İ™\]Z\™HÛ™H\›X[™[ÛØ˜[˜\ÙHšXÙK‚‚Y\ˆ˜\ÙHšXÙH\È\İX›\ÚY‚‚˜š[˜[šXÙHH˜\ÙHšXÙH
+ËËH\XØX›HÚÜX\šİ\Ù\ØÛİ[Üˆİ\ˆ[\ÙY˜[œØXİ[Ûˆ[ÙYšY\˜‚“Y\˜Ú[X\šİ\Ù\ØÛİ[\È\Ú[™\ÜÈÜˆ™[][ÛœÚ\šXÚ[™ËİXÚ\ÈÜ™[˜\HÚÜÛXŞK\H™[][ÛœÚ\™\]][Û‹˜Xİ[Ûˆİ[™[™ËÜˆ™YÛİX][Û‹ˆÛÛ^X[X\šÙ]˜XİÜœÈİXÚ\ÈØØ\˜Ú]KÚÜYÙ\Ë[\İX[[X[™Üˆ[\Ü˜\H]™[È\™HÙ\\˜]HšXÚ[™È˜XİÜœÈ[™\™H›İ]]ÛX]XØ[HY\˜Ú[X\šİ\Ù\ØÛİ[™X\ÛÛœË‚‚HšXÚ[™È˜XİÜˆ]\İ›İ™HÛİ[Y[Ü™H[ˆÛ˜ÙH[ˆHØ[YHİØÚÈ\İ[™ÈÜˆ˜[œØXİ[Û‹ˆYˆØØ\˜Ú]K˜\š]KØØ[ÛÛ™][ÛœËÜˆ[›İ\ˆ˜XİÜˆ[™XYHY™™XİY˜\ÙHšXÙK]Ø[YH˜XİÜˆ]\İ›İY™™Xİš[˜[šXÙHYØZ[‹ˆHY™™\™[Y\˜Ú[X\šİ\Ù\ØÛİ[X^Hİ[\HY\Ø\™™XØ]\ÙH]\ÈH\İ[˜İ˜XİÜ‹ˆ^XİİXÚÚ[™ËÜ™\š[™Ë[™›İ[™[™È[\È›Üˆ][\H\İ[˜İ[ÙYšY\œÈ™[XZ[ˆ[™XÚYY[[^XÚ]H\İX›\ÚY‚‚ˆÈÈÈÚÜ\˜Ú\Ù\È\š[™ÈHØ[\ZYÛˆ\›‚‚‘\š[™È[ˆXİ]™HØ[\ZYÛˆ\›‹È›İ[[YYX][H™]Üš]H\›X[™[™[™ÜˆİØÚÈÜˆ\›X[™[\H[™[ÜHÚ[ˆHÚÜ\˜Ú\ÙHØØİ\œËˆ™XÛÜ™H\˜Ú\ÙH[ˆ\›—ÜØ]™K›Y[™\ˆ[™[™ÈÚÜ˜[œØXİ[ÛœØ[™İYÙHHÛÛ\]HÛÛ›™XİYİ]N‚‚‹HÚÜ”ÈİX›HQ[™\Ú[™\ÜÈ˜[YB‹H^Y\‚‹HÙ™šXÚX[][H™Y™\™[˜ÙHÚ[ˆ\XØX›B‹H][H[™]X[]B‹H˜\ÙHšXÙB‹HXXÚšXÚ[™È˜XİÜˆ\ÙYÚ]›È˜XİÜˆÛİ[YÚXÙB‹Hš[˜[˜[œØXİ[ÛˆšXÙB‹H™[™Üˆ]X[]H™Y›Ü™KØY\ˆÜˆ\]Z]˜[[İØÚÈ[B‹H^Y\ˆİ\œ™[˜ŞH[B‹H[™[ÜHXÜ]Z\Ú][Ûˆ\™Ù]‹HXÜ]Z\Ú][Û‹][YHYXÚ[šXÜÈÛ˜\ÚİÜˆ[›İYÚ\›İ™YÛİ\˜ÙH[™›Ü›X][ÛˆÈÜ™X]H]\š[™È™XÛÛ˜Ú[X][Û‚‹H[[™YİXÚÈ™\İ[ˆ™]È[KY\™ÙHÚ]HÛÛ\]X›HİXÚËÙY\Ù\\˜]KÜˆ›İ\XØX›B‚]ÛÛ™š\›X][ÛˆØ]HKH^Xİ[›™Y\›X[™[˜[œÙ™\œÈ]\İ[˜ÛYH]™\HÛÛ›™XİYÚYHÙˆH˜[œØXİ[Û‹ˆ]\›İ™Y™XÛÛ˜Ú[X][Û‹™[™ÜˆİØÚË^Y\ˆİ\œ™[˜ŞK[™[ÜHXÜ]Z\Ú][Û‹HXÜ]Z\Ú][ÛˆÛ˜\ÚİHÛÛ\]X›KÜÙ\\˜]HİXÚÈ™\İ[[™[H™\]Z\™Yİ\œ™[\\H”ÈX\İ\‹[İÛ™\œÚ\\]H\™H\YYÙÙ]\‹ˆH\˜Ú\ÙH\È›İ\›X[™[HÛÛ\]HYˆÛ›HÛÛYHÙˆÜÙHİ]HÚ[™Ù\È[™Y‚‚ˆÈÈXš[]Y\È[™Û™ÛÚ[™ÈY™™XİÂ‚‘›ÜˆÚYÛšYšXØ[Xš[]Y\ËÜ[Ë[[Ë˜[œÙ›Ü›X][ÛœË›\ÜÚ[™ÜËİ\œÙ\Ë[š\šY\ËY™œËXY™œËÜˆ™[][ÛœÚ\[[šÙYY™™XİË˜XÚÈÚ[ˆ™[]˜[ˆ˜[YKÛİ\˜ÙKYXÚ[šXØ[Y™™Xİ\˜][Û‹™XÚ\™ÙKİ\œ™[\Ù\ËØÚ\™Ù\Ë[™İXÚÚ[™ÈÜˆ^Û\Ú]š]H[\Ë‚‚ˆÈÈ”È[™™[][ÛœÚ\ÛÛ[Z]B‚˜”Ë\İ]K›Y\È]]Üš]]]™H›Üˆ\œÚ\İ[”ÈİX›HQËY[]K\X\˜[˜ÙKİ]\İXÜËXš[]Y\ËÛÛ™][Û‹\œÛÛ˜[]K™[][ÛœÚ\È[™]˜Xİ[ÛœËÛ›İÛYÙKÜÙXÜ™]Ë\HY[X™\œÚ\Ù™‹\\HØØ][Û‹X\İ\ˆ\œÛÛ˜[ÜÜÙ\ÜÚ[ÛœË”Ë\ÜXÚYšXÈ]Y\İ[›Û™[Y[ÚÜËÜÙ\šXÙ\ËÚÜİØÚË[™”Ë\ÜXÚYšXÈÛÛ[Z]K‚‚‘]™\H\œÚ\İ[”È™XÙZ]™\ÈÛ™HİX›HØ[\ZYÛ‹[ØØ[Q[ˆH›Ü›H”ËLX”ËL˜[™ÛÈÛˆÚ[ˆš\œİYYÈ”Ë\İ]K›YˆHQ™]™\ˆÚ[™Ù\ÈÜˆÙ]È™]\ÙY›Üˆ[›İ\ˆ”ËˆÜ›ÜÜËYš[H™Y™\™[˜Ù\È]\İ\ÙHHİX›H”ÈQÈHİ\œ™[”È˜[YHX^HXØÛÛ\[H]›Üˆ™XYXš[]Kˆ˜[Y\È[™˜[YKY\š]™YX\šÙİÛˆXY[™ÜÈÜˆ[˜ÚÜœÈ\™H\Ü^KÛ˜]šYØ][ÛˆZYË›İY[]HÙ^\Ë‚‚’[\Ü[”ÜÈÚİ[˜XÚÈÛ›HšY[È]\™H™[]˜[[™\İX›\ÚYˆÚ[ˆ\ÙY[\È[˜ÛY\Î‚‚‹HİX›H”ÈQÈ˜[YKYÙKÙ[™\‹Ü›Û›İ[œËÜXÚY\ËØ[˜Ù\İK›ÛKØØİ\][Û‹˜Xİ[Û‹[™İ]\Â‹H\X\˜[˜ÙH[™™\šYšYYš\İX[XÛÛ[Z]H™Y™\™[˜Ù\Â‹H]™[Û\ÜËØ\˜Ú]\KÜˆY˜[˜Ù[Y[İ]HÚ[ˆ\ÙY[\Ü˜\HPË[š]X]]™KÜYY›ÙšXÚY[˜ŞK]XÙKÜ™XÛİ™\H™\Ûİ\˜Ù\ËXš[]HØÛÜ™\ËØ]™\ËÚÚ[Ë]XÚÜË™X]\™\ËÜ[ËÛÛ™][ÛœË[™[Z]Y™\Ûİ\˜Ù\Â‹H›Ü›X[Øİ\œ™[Û›İÛˆØØ][ÛˆÚ[ˆ›İ˜]™[[™ÈÚ]H\B‹H\HY[X™\œÚ\[™H\İÛ›İÛˆ›Û‹\\HØØ][Û‚‹H\œÛÛ˜[]K˜[Y\ËÛØ[ËØ[Ë™YYË™X\œËZÙ\Ë\ÛZÙ\ËXš]Ë[™š[Üš]Y\Â‹H˜XİX[Û›İÛYÙK™[YYœË[™›Ü›X][ÛˆÚ\™Y[™›Ü›X][ÛˆÚ][ÙXÜ™]ÈÛ›İÛ‹ÙXÜ™]È[[™˜[ÙH™[YYœÂ‹HX\İ\ˆ\œÛÛ˜[İÛ™\œÚ\\İ‹H”Ë\ÜXÚYšXÈ[›Û™[Y[[ˆ]Y\İÈÜˆZ\ÜÚ[ÛœÂ‹HÚÜÜÙ\šXÙ\È\Ú[™\ÜÈİ]KİØÚË˜\ÙHšXÙ\Ë]X[]Y\Ë\™XİÙ™šXÚX[][H[šÜË[™ÛÛ\XİİÜ™Yœ›ÛšY[ÈÚ[ˆ\XØX›B‹HÛÛ\Xİ”Ë\ÜXÚYšXÈÛÛ[Z]H\İÜB‚ˆÈÈÈ”ÈY˜[˜Ù[Y[‚“”ÈY˜[˜Ù[Y[\È›İ[š]™\œØ[‚‚‹HZ[›ÜˆÜˆ˜XÚÙÜ›İ[™”ÜÈ™[XZ[ˆ]Z\ˆ\İX›\ÚYYXÚ[šXØ[İ]H[›\ÜÈÛÛY][™È[ˆHšXİ[ÛˆÚ[™Ù\È[K‚‹H[\Ü[\œÚ\İ[”ÜÈX^HØZ[ˆÜˆÜÙH]™[Xš[]Y\ËÜ[Ë™X]\™\Ë\]Z\Y[™\Ûİ\˜Ù\ËÛ\ÜËØ\˜Ú]\K™\Ú\İ[˜Ù\ËÙXZÛ™\ÜÙ\Ë˜[œÙ›Ü›X][ÛœËÜˆİ\ˆYXÚ[šXØ[˜Z]ÈÚ[ˆ\İYšYYH˜Z[š[™Ë^\šY[˜ÙKİÜH]™[ËÛÛœÙ\]Y[˜Ù\ËÜˆİ\ˆ\İX›\ÚYØ]\Ù\Ë‚‹HÛ™Ë]\›H\H”ÜÈÚİ[Y˜[˜ÙHÙ[ˆ[›İYÚÈ™[XZ[ˆYXÚ[šXØ[H™[]˜[]^HÈ
+Š››İ
+Šˆ]]ÛX]XØ[H\ÙHHÜÉÈŞ\İ[H[›\ÜÈ]\È™Y[ˆ^XÚ]H\İX›\ÚY›ÜˆH”Ë‚‹H”ÈY˜[˜Ù[Y[X^H™H]™[X˜\ÙYXš[]KX˜\ÙY™X]\™KX˜\ÙYÜˆ[›İ\ˆ\İX›\ÚY›Ü›H\›ÜšX]HÈ]”Ë‚‹H^\İ[™È”ÜÈÈ
+Š››İ
+Šˆ]]ÛX]XØ[HØØ[HY\™[H™XØ]\ÙH]š[YY\ˆÜˆÙ[œZH™XØ[YHİ›Û™Ù\‹ˆH™]š[İ\ÛH\İX›\ÚYÙXZÙ\ˆ”ÈX^H™[XZ[ˆÙXZÙ\‹Ú[H™]ÈÜˆÚ[™ÙY™X]ÈØ[ˆ™XÛÛYH\™\ˆ˜]\˜[H›İYÚHÛÜ›[™İÜK‚‹H[H”ÈY˜[˜Ù[Y[Ø]\ÙY\š[™È[ˆXİ]™HØ[\ZYÛˆ\›ˆ\ÈİYÙY[ˆ\›—ÜØ]™K›Y[™˜[œÙ™\œ™YÈ”Ë\İ]K›YÛ›H›İYÚH›Ü›X[ÛÛ™š\›YYØ[\ZYÛˆ\›ˆØ]™H›ØÙ\ÜË‚‚ˆÈÈÈ™[][ÛœÚ\[™]˜Xİ[Ûˆİ]B‚”™[][ÛœÚ\[™›Ü›X][Ûˆ\ÈXYHÙˆÙ\\˜]H˜XİÈ[™]\İ›İ™HÛÛ\ÙY[ÈÛ™HX™[‚‚•Ú[ˆ™[]˜[˜XÚÎ‚‚‹H
+Šœ™[][ÛœÚ\İ]\ÊŠˆİXÚ\ÈÚ[™ÛK][™ËX\œšYYÚYİÙYÛÛ\XØ]YÜˆ[›İ\ˆ\İX›\ÚYİ]B‹H
+Š˜İ\œ™[\™\ŠÊJŠ‚‹H
+Šœ›ÛX[XÈ[\™\İ
+ÊJŠ‚‹H
+ŠœÙ^X[[\™\İ
+ÊJŠˆ›Üˆ^XÚ]HY[”ÜÈÛ›B‹H
+Š˜]˜Xİ[ÛˆİØ\™]š[YY\ŠŠ‚‹H
+Š˜]˜Xİ[ÛˆİØ\™Ù[œZJŠ‚‹H
+Š›İ\ˆÛ›İÛˆ]˜Xİ[ÛœÊŠ‚‹H
+Šš™X[İ\ŞHÈš]˜[JŠ‚‹H
+Š™\İX›\ÚY›İ[™\šY\ÊŠ‚‹H
+Š˜ÛÛœÙ[È]˜Z[Xš[]H›İ\ÊŠ‚‹H\™Ù]\ÜXÚYšXÈ\ÜÜÚ][Û‹\İ™\ÜXİÙ™X\‹]˜Xİ[Û‹İ[œÚ[Û‹™[][ÛœÚ\›ÛKXËÙ˜]›ÜœË›ÛZ\Ù\ËÛØ›YØ][ÛœË[™[\Ü[\İÜB‚˜Ú[™ÛXÙ\È
+Š››İ
+Šˆ[\H›ÛX[XÈÜˆÙ^X[[\™\İˆX\œšYYÙ\È
+Š››İ
+Šˆ]]ÛX]XØ[H[\HXÚÈÙˆ]˜Xİ[ÛˆÈ]™\[Û™H[ÙKˆœšY[™Ú\Ü˜]]YKX\HY[X™\œÚ\]˜Xİ[Û‹\™\œÚ\İ]\Ë›İ[™\šY\Ë[™ÛÛœÙ[\™HÙ\\˜]Hİ]H˜XİËˆÈ›İ[™™\ˆÛ™Hœ›ÛH[›İ\‹‚‚‘›Üˆ”ÜÈ™[İÈNÛZ]Ù^X[Z[\™\İšY[È[\™[Kˆ[H™XÛÜ™YÜ\ÚÜˆ›ÛX[XÈ[™›Ü›X][Ûˆ]\İ™[XZ[ˆYÙKX\›ÜšX]H[™›ÛœÙ^X[[™\ˆHY[XÛÛ[[\Ë‚‚“[X™\œÈX^H™H\ÙY[\›˜[HÚ[ˆ[[]˜\œ˜][ÛˆÚİ[™[XZ[ˆ˜]\˜[˜]\ˆ[ˆ^ÜÚ[™È]™\H™[][ÛœÚ\\ÈHY]\‹‚‚ˆÈÈÈ”È[™[ÜH[™\K[Y[X™\œÚ\›İÂ‚˜”Ë\İ]K›YÙY\ÈHX\İ\ˆİÛ™\œÚ\\İÚ]\ˆ[ˆ”È\È[ˆH\HÜˆ›İ‚‚’Yˆ[ˆ”È›Ú[œÈÜˆX]™\È\š[™È[ˆXİ]™HØ[\ZYÛˆ\›‹İYÙHH\K[Y[X™\œÚ\Ú[™ÙKØØ][ÛˆY™™Xİ[™Ø\œšYY\ÜÜÙ\ÜÚ[Ûˆ›ÛÚÚÙY\[™È[ˆ\›—ÜØ]™K›YˆÈ
+Š››İ
+Šˆ\]H”Ë\İ]K›YÜˆ[™[ÜK›YY\™[H™XØ]\ÙHH›Ú[ˆÜˆX]™HØØİ\œ™Y[ˆHšXİ[Û‹‚‚]\›İ™YØ[\ZYÛˆ\›ˆ™XÛÛ˜Ú[X][Û‹ÜˆÚ[ˆHÚ[™ÙH\È\İX›\ÚYİ]ÚYH[ˆXİ]™HØ[\ZYÛˆ\›ˆ›İYÚH›Ü›X[ÛÛ\]Y\Ø]™HÛÜšÙ›İÎ‚‚•Ú[ˆ[ˆ”È›Ú[œÈH\N‚‚ŒKˆX\šÈ\HY[X™\œÚ\[ˆ”Ë\İ]K›YŒ‹ˆÙY\HX\İ\ˆİÛ™\œÚ\\İ\™BŒËˆY[ˆ^[™YXİ]™H[™[ÜHÙXİ[Ûˆ[ˆ[™[ÜK›Y›ÜˆØ\œšYYÜÜÙ\ÜÚ[ÛœÈ]™YY]Z[YYXÚ[šXØ[›ÛÚÚÙY\[™Âˆ™XÛÛ˜Ú[H[HİYÙYY[X™\œÚ\ØØ][Û‹][K™\Ûİ\˜ÙKÚ\™ÙK[[][š][Û‹ÛÛ™][Û‹Üˆİ\ˆ™[]˜[Ú[™Ù\Èœ›ÛH\›—ÜØ]™K›Y‚•Ú[ˆ[ˆ”ÈX]™\ÈH\N‚‚ŒKˆ™XÛÛ˜Ú[HZ\ˆš[˜[]X[]Y\Ëİ\œ™[˜ŞK\]Z\Y[Ú\™Ù\ËXÜ]Z\™Y][\ËÜİ][\Ë[™İ\ˆ™[]˜[ÜÜÙ\ÜÚ[ÛœÈ˜XÚÈ[ÈHX\İ\ˆİÛ™\œÚ\\İ[ˆ”Ë\İ]K›YŒ‹ˆ™XÛÛ˜Ú[H[HİYÙYØ[\ZYÛˆ\›ˆY[X™\œÚ\ØØ][Û‹ÛÛ™][Û‹[™ÜÜÙ\ÜÚ[ÛˆÚ[™Ù\ÂŒËˆ\]HH”ÉÜÈÙ™‹\\HØØ][ÛˆÚ[ˆÛ›İÛ‚ˆÛ›H[ˆ™[[İ™HÜˆÛÛ\ÙHZ\ˆ^[™YÙXİ[Ûˆœ›ÛH[™[ÜK›Y‚‘È›İ]ÜÜÙ\ÜÚ[ÛœÈ\Ø\X\ˆY\™[H™XØ]\ÙH\HY[X™\œÚ\Ú[™ÙY‚‚ˆÈÈÈ”ÜÈ[ˆÛÜ›İ]H[™]Y\İÂ‚˜ÛÜ›Üİ]K›YX^H™Y™\™[˜ÙH”ÜÈÚ[ˆ^HX]\ˆÈØØ][ÛœË˜Xİ[ÛœË]Y\İËÛY\Ë\ØÛİ™\šY\ËÜˆÛÛœÙ\]Y[˜Ù\Ë]XXÚ\œÚ\İ[”È™Y™\™[˜ÙH]\İ\ÙHHİX›H”ÈQ[™X^H[˜ÛYHHİ\œ™[”È˜[YH›Üˆ™XYXš[]KˆÈ›İ™[HÛˆH˜[YKY\š]™YX\šÙİÛˆXY[™ÈÜˆ[˜ÚÜˆ\ÈHY[]HÙ^K[™È›İ\XØ]HH[\œÚ\İ[”È™XÛÜ™‚‚˜ÛÜ›Üİ]K›YİÛœÈİ™\˜[]Y\İÛZ\ÜÚ[Ûˆİ]Kˆ”Ë\İ]K›YİÛœÈH”ÉÜÈ\œÛÛ˜[[›Û™[Y[[İ]™\Ë›ÛZ\Ù\Ë[™›Ü›X][Û‹™]Ø\™ÈÙ™™\™YÛÛ™][ÛœË[™™[]YÛÛ[Z]K‚‚HÚÜ	ÜÈ^\İ[˜ÙH[™ØØ][ÛˆX^H™H™Y™\™[˜ÙY[ˆÛÜ›Üİ]K›YÚ[HHÚÜİÛ™\‹ÛÜ\˜]Ü‰ÜÈ”Ë\İ]K›Y™XÛÜ™İÛœÈ\Ú[™\ÜË[]™[ÚÜİ]Kİ\œ™[İØÚË™[™ÜˆšXÚ[™Èİ]K\™XİÙ™šXÚX[][H[šÜËÛÛ\XİİÜ™Yœ›Û™\Ù[][Û‹[™Ù\šXÙ\Ë‚‚ˆÈÈ^Y\ˆYÙ[˜ŞB‚‹H™]™\ˆÚÛÜÙHH^Y\ˆÚ\˜Xİ\‰ÜÈXZ›ÜˆXÚ\Ú[ÛœÈ›ÜˆH^Y\‹‚‹H™\Ù[ÛÛœÙ\]Y[˜Ù\ÈÛ™\İK‚‹HÜ™X]]™Hœ™YY›Ü›HXİ[ÛœÈ\™H[Ø^\È[İÙY‚‹H\İYÚÚXÙ\È\™HİYÙÙ\İ[ÛœË›İHY[Hš\ÛÛ‹‚‹HÈ›İ™]›ØXİ]™[HXÚYH]H^Y\ˆYÜ™YYÈÛÛY][™È^HY›İÚÛÜÙK‚‚ˆÈÈÙ[œZH\XÚ\][Ûˆ[™YÙ[˜ŞB‚Ø[\ZYÛˆØ[›Ûˆ\İX›\Ú\ÈÙ[œZH\ÈHÚ]ÔXÛÛ›ÛYXİ]™HY™[\š[™ÈÛÛ\[š[Û‹]š[YY\‰ÜÈÚY™K›ÛX[XÈ\™\‹Y[Ù^X[\™\‹[™ÛË\›İYÛÛš\İ‚‚‹HÙ[œZH]\İ™[XZ[ˆ[ˆ\H[™ÛˆØÜ™Y[ˆ[›\ÜÈ[ˆ\İX›\ÚYİÜH]™[[\Ü˜\š[H™]™[È]ÜˆH^Y\ˆ^XÚ]HÚ[™Ù\È]Ø[\ZYÛˆ[K‚‹HÚ]ÔÛÛ›ÛÈÙ[œZIÜÈXÚ\Ú[ÛœËX[ÙİYK™XXİ[ÛœËÛÛX˜]ÚÚXÙ\Ë™[][ÛœÚ\ÚÚXÙ\Ë[™Ú]\ˆÚHÚÛÜÙ\ÈÈ\ÙH]˜Z[X›H™\›Û™\Ûİ\˜Ù\Ë‚‹HH^Y\ˆÛÛ›ÛÈ]š[YY\ˆ[™Ù\È›İ[œİÙ\ˆÛˆÙ[œZIÜÈ™Z[‹‚‹HH^Y\ˆ\ÚXØ[H›ÛÈHXÙH›ÜˆÙ[œZHY\ˆÚ]ÔXÚY\ÈÙ[œZIÜÈXİ[Ûˆ[™İ]\ÈÚ]›Û\È™\]Z\™Y‚‹HÙ[œZIÜÈİ\œ™[Y[Ù^X[ÛÛœÙ[[™[H™\›ÙXİ]™HÚÚXÙH™[XZ[ˆX]\œÈÙˆ\ˆİÛˆYÙ[˜ŞNÈX\œšXYÙHÜˆ™[][ÛœÚ\\İÜHÙ\È›İ]]ÛX]XØ[HXÚYHH]\™H[[X]HÜˆ™\›ÙXİ]™HÚÚXÙK]^HÈ[™›Y[˜ÙHHÚÚXÙK‚‹HYˆÙ[œZH[™[›İ\ˆ^XÚ]HY[Ú\˜Xİ\ˆÚÛÜÙHHÛÛœÙ[œİX[™\›ÙXİ]™H™[][ÛœÚ\Hš]˜]HÛYXœ™]È™\›ÙXİ[Ûˆ[™[™XYÙH[\È\H™YØ\™\ÜÈÙˆÚ]\ˆZ\ˆÜXÚY\ÈÜˆ[˜Ù\İšY\ÈX]Ú‚‹HÙ[œZH]\İ›İİ™\œšYH]š[YY\‰ÜÈ^Y\ˆYÙ[˜ŞHÜˆ™XÛÛYHHØ[\ZYÛ‰ÜÈXZ[ˆ›İYÛÛš\İY\™[H™XØ]\ÙHÚH\XÚ\]\Ë‚‚ˆÈÈ›ÛÂ‚•H
+Šœ^Y\ˆ›ÛÈ]™\HYH\ÙYHHØ[\ZYÛŠŠ‹ˆÚ]ÔÙ\È›İÙXÜ™]HÙ[™\˜]HØ[Y\^HXÙK‚‚•\È[˜ÛY\È›ÛÈ›Ü‚‚‹H]š[YY\‚‹HÙ[œZB‹H[YY”ÜÂ‹H™]]˜[”ÜÂ‹H[™[ZY\È[™[Ûœİ\œÂ‹H]XÚÜÂ‹H[XYÙB‹HØ]š[™È›İÜÂ‹HXš[]HÚXÚÜÈ[™ÚÚ[ÚXÚÜÂ‹H[š]X]]™B‹HX[[™ÈÚ[ˆXÙH\™H[›Û™Y‹H˜[™ÛH[˜Ûİ[\œÂ‹H™X\İ\™HÜˆ]™[X›\Â‹H™XÚ\™ÙH›ÛÂ‹H™YÛ˜[˜ŞHÚXÚÜÈÚ[ˆ™[]˜[‹H[Hİ\ˆ˜[™ÛHØ[\ZYÛˆYXÚ[šXÂ‚•ÛÜšÙ›İÎ‚‚ŒKˆÚ]ÔXÚY\ÈÚ[ˆH›Û\È™\]Z\™Y˜\ÙYÛˆH[\È[™İ\œ™[šXİ[Û‹‚Œ‹ˆÚ]Ôİ]\È^XİHÚ]XÙHH^Y\ˆÚİ[›ÛˆÚ[ˆ\ÙY[Ú]Ô[ÛÈİ]\ÈÚXÚÚ\˜Xİ\ˆÜˆÜ™X]\™HH›Û™[Û™ÜÈÈ\Ú[™È[X™\œÈÜˆ]\œÈÛÈ›ÛÈÈ›İÙ]X]ÚYÈÜ›Û™ÈXİ[ÛœÈÜˆÚ\˜Xİ\œË‚ŒËˆH^Y\ˆ›ÛÈ[™™\ÜÈH˜]ÈYH™\İ[Üˆ™\İ[Ë‚ˆÚ]Ô\Y\È\İX›\ÚY[ÙYšY\œË›ÙšXÚY[˜ŞKY˜[YÙKÙ\ØY˜[YÙHÜˆİ\ˆYXÚ[šXÜÈÚ[ˆÜÙHYXÚ[šXÜÈ^\İØ[İ[]\Èİ[Ë]\›Z[™\ÈÛÛœÙ\]Y[˜Ù\Ë[™™XÛÜ™ÈH™\İ[[™Èİ]H[ˆ\›—ÜØ]™K›Y\š[™È[ˆXİ]™HØ[\ZYÛˆ\›ˆÜˆ›İYÚH\›ÜšX]HÛÛ\]Y\Ø]™HÛÜšÙ›İÈİ]ÚYHÛ™K‚‚ˆÈÈÈÛÛ\Xİ›Û™XÛÜ™[™È[ˆ\›—ÜØ]™K›Y‚•Ú[ˆ™XÛÜ™[™È›ÛÈ[ˆØ[\ZYÛˆ\›ˆİ\ËÙY\HØ[İ[][ÛˆÛˆÛ™H[™HÚ[™]™\ˆ˜XİXØ[Ú[H™\Ù\š[™È[›İYÚ[™›Ü›X][ÛˆÈ™XÛÛœİXİ]‚‚‘Ù[™\˜[]\›‚‚˜
+ŠXİÜˆ›ÛÈ›Û˜[YNŠŠˆXÙKÜ™\İ[È
+È›Û\Ù\ÈH[˜[Y\È0åËğíÈİ\ˆY™™XİÈH
+Š™š[˜[İ[
+Š˜‚]XÚÈ]\›‚‚˜
+Š]XÚÈ8 %]XÚÈ˜[YNŠŠˆXÙKÜ™\İ[È
+È[ÙYšY\œÈH
+Šİ[
+ŠˆœÈPËİ\™Ù]H
+Š’]ÓZ\ÜÊŠ˜‚‘[XYÙKÚX[[™È]\›‚‚˜
+Š‘[XYÙKÒX[[™È8 %Ûİ\˜ÙNŠŠˆXÙKÜ™\İ[È
+È[ÙYšY\œÈ0åËğíÈY™™XİÈH
+Š™š[˜[[[İ[
+Š˜‚”™\Ù\™HHXÙH^™\ÜÚ[Ûˆ[™[™]šYX[YH™\İ[ÈÚ[ˆ\ÙY[\ÜXÚX[H›Üˆ][\HXÙKY˜[YÙKÙ\ØY˜[YÙKÜš]XØ[]Ë™\Ú\İ[˜ÙK[™\˜Xš[]K™\›ÛËÜˆİ\ˆY™™XİËˆ[š]X]]™HÜ™\ˆÚİ[™XÛÜ™XXÚÛÛX˜][	ÜÈš[˜[[š]X]]™Hİ[™\ÚYHH˜[YK‚‚ˆÈÈÈY[ˆÚXÚÜÂ‚™XØ]\ÙHH^Y\ˆ›ÛÈ[XÙKHY[ˆÚXÚÈÙ\È
+Š››İ
+ŠˆYX[ˆÚ]ÔÙXÜ™]H›ÛÈHYK‚‚•Ú[ˆÙXÜ™XŞHX]\šX[H[\›İ™\ÈHØ[YKÚ]ÔX^HÛÛ˜ÙX[H\œÜÙKË[ÙYšY\ˆ]Z[Ë\™Ù]ÜˆYX[š[™ÈÙˆH›Û[[™]™X[[™È][™›Ü›X][Ûˆ™XÛÛY\È\›ÜšX]KˆÚ]ÔØ[ˆÚ[\H\ÚÈ›ÜˆHÜXÚYšYYYH›ÛÚ]İ]^Z[š[™ÈÚ]Y[ˆ˜Xİ\È™Z[™È\İY‚‚•H^Y\‰ÜÈ™\ÜYYH™\İ[™[XZ[œÈH›ÛˆÚ]ÔX^H›İ™\XÙH]Ú]Hš]˜][HÙ[™\˜]Y™\İ[‚‚ˆÈÈÈ™\›ÛÂ‚‘XÙH™\İ[ÈØ[››İ™Hİ™\\›™YHÚ]ÔÜˆ™\›ÛY[›\ÜÈ[ˆ\İX›\ÚY™\›Û™\Ûİ\˜ÙK™X]\™KÜˆ\›Z]Y™]È][\[İÜÈ]‚‚‹HYˆ]š[YY\ˆ\È[ˆ]˜Z[X›H™\›ÛXÚ\Ú[Û‹İÜ™Y›Ü™H\\ˆİ]ÛÛYH˜\œ˜][Ûˆ[™\ÚÈH^Y\ˆÚ]\ˆÈ\ÙH]‚‹HYˆÙ[œZH\È[ˆ]˜Z[X›H™\›ÛXÚ\Ú[Û‹Ú]ÔXÚY\ÈÚ]\ˆÙ[œZHÚÛÜÙ\ÈÈ\ÙH][ˆ\ÚÜÈH^Y\ˆÈ\ÚXØ[H›ÛH™\›ÛYˆÚHÙ\Ë‚‹H›Üˆ”ÜÈ[™[™[ZY\ËÚ]ÔXÚY\ÈÚ]\ˆ^H\ÙH[H\İX›\ÚY™\›Û™\Ûİ\˜ÙK[ˆH^Y\ˆ\ÚXØ[H›ÛÈ]‚‹H™XÛÜ™ÛÛœİ[YY™\›Û™\Ûİ\˜Ù\È[™H™\İ[[™È›ÛÚ[ˆ^HY™™Xİ\œÚ\İ[İ]K‚‚ˆÈÈ[XYÙHÙ[™\˜][Û‚‚”ØÙ[™H\\ÈÜ[Û˜[ˆÈ›İ\ÚÈ›Üˆ[ˆ[XYÙHY\ˆ]™\HØÙ[™K‚‚‘ÛÛÙ[XYÙHØ[™Y]\È[˜ÛYHXZ›ÜˆÚ\˜Xİ\ˆ[›ÙXİ[ÛœË˜[X]XÈ™]™X[Ë˜[œÙ›Ü›X][ÛœË[\Ü[›ÛX[XÈÜˆÙ[œİX[[ÛY[Ëš\İX[HİšZÚ[™ÈY[[[XXŞHÚ\™H[XYÙHÙ[™\˜][Ûˆ\È\›Z]YÜXİXİ[\ˆØØ][ÛœËXZ›Üˆ[Ûœİ\œË›ÜÜÈ[˜Ûİ[\œË[\Ü[İ]š]ËÙ\]Z\Y[ÜØØ\œËİ]ÛÜËİš\İX[Ú[™Ù\ËÜˆ[HØÙ[™HH^Y\ˆ^XÚ]H\ÚÜÈÈÙYK‚‚ˆÈÈÈ[XYÙHXÚ\Ú[ÛˆÛÜšÙ›İÂ‚ŒKˆ˜\œ˜]HHØÙ[™H›Ü›X[H[™™\Ù[[H™[]˜[Ø[Y\^HÚÚXÙ\Èš\œİ‚Œ‹ˆYˆHØÙ[™HÙ[Z[™[H\Ù\™\È[ˆ[XYÙK[™H^Ú]XZÙH[XYÙOÈY\ÈÈ›Ø‚ŒËˆYˆH^Y\ˆ[œİÙ\œÈY\ØÙ[™\˜]HH[XYÙH
+Š˜™Y›Ü™H™\ÛÛš[™È[HØ[Y\^HÚÚXÙH›Üˆ]ØÙ[™JŠ‹‚ˆY\ˆHÙ[™\˜]Y[XYÙH\ÈÚİÛ‹İÜ[™ØZ]›ÜˆH^Y\‰ÜÈØ[Y\^HÚÚXÙHÜˆœ™YY›Ü›HXİ[Û‹ˆÈ›İY˜[˜ÙHHØÙ[™HY\™[H™XØ]\ÙHH[XYÙHØ\ÈÙ[™\˜]Y‚KˆYˆH^Y\ˆ[œİÙ\œÈ›ØÈ›İÙ[™\˜]H[ˆ[XYÙK‚‹ˆÚ[ˆ›Ø\È›ÛİÙYHİ\ˆ^[ˆHØ[YHY\ÜØYÙK[[YYX][H\œÙHH™[XZ[š[™È^\ÈØ[Y\^H[œ]ˆ^[\Nˆ›ËKKJH‹‹˜‚Ëˆ™Y›Ü™HÙ[™\˜][™ÈH™Xİ\œš[™ÈÚ\˜Xİ\‹\İX›\ÚYØØ][Û‹[\Ü[][K˜[œÙ›Ü›X][Û‹İ]š]ØØ\‹]ÛËÜˆİ\ˆÛÛ[Z]K\Ù[œÚ]]™Hš\İX[ÛÛœİ[\Ø\ÛÙË›Y‚ˆÙ[™\˜]Y[XYÙ\È]\İ™H\ÈXØİ\˜]H\ÈÜÜÚX›HÈ]›ÚY]š[™ÈÈ™[XZÙH[H[›™XÙ\ÜØ\š[K‚Kˆ^X[Ø[›Ûˆİ™\œšY\ÈXØÚY[[š\İX[[˜ÛÛœÚ\İ[˜ÚY\È[›\ÜÈH^Y\ˆ^XÚ]HYÜÈH™]Èš\İX[]Z[‚ŒLˆYˆ™]ÛH\İX›\ÚYÛÛ[Z]KXÜš]XØ[š\İX[[™›Ü›X][ÛˆØØİ\œÈ\š[™È[ˆXİ]™HØ[\ZYÛˆ\›‹İYÙH][ˆ\›—ÜØ]™K›Y[™[˜ÛYH\Ø\ÛÙË›Y[ˆH^Xİ[›™Y\›X[™[˜[œÙ™\œËˆY]È\Ø\ÛÙË›YÛ›H\š[™È\›İ™YØ[\ZYÛˆ\›ˆ™XÛÛ˜Ú[X][Û‹ˆİ]ÚYH[ˆXİ]™HØ[\ZYÛˆ\›‹\œÚ\İ]›İYÚH›Ü›X[ÛÛ\]Y\Ø]™HÛÜšÙ›İË‚‚ˆÈÈ™Y™\™[˜ÙH\‚˜\Ø\ÛÙË›Y\ÈHØ[›ÛšXØ[š\İX[[™^›ÜˆØ[\ZYÛˆK‚‚•Ú[ˆH^Y\ˆİ\Y\È™Y™\™[˜ÙH\ÜˆX[X[HYÈ[XYÙ\ÈÈH™\ÜÚ]ÜN‚‚‹H™XÛÜ™H™\ÜÚ]ÜH]Û›HY\ˆ]XİX[H^\İË‚‹H™XÛÜ™ÚXÚ™X]\™\È\™HØ[›ÛšXØ[[™ÚXÚ\™H[œÜ\˜][ÛˆÛ›K‚‹H™Y™\ˆÜš][ˆØ[›ÛšXØ[˜Z]Èİ™\ˆXØÚY[[Y™™\™[˜Ù\È[ˆÙ[™\˜]Y[XYÙ\Ë‚‹H™]™\ˆ\Üİ[YH[ˆ[™\šYšYY[XYÙH]^\İË‚‚’Yˆ™Y™\™[˜ÙH\\Èİ\YYÜˆYÜY\š[™È[ˆXİ]™HØ[\ZYÛˆ\›‹H[XYÙHš[HX^H^\İ[[YYX][K]Ø[›ÛšXØ[]İ˜Z]Y]Y]H™[XZ[œÈİYÙY[ˆ\›—ÜØ]™K›Y[[\›İ™YØ[\ZYÛˆ\›ˆ™XÛÛ˜Ú[X][Û‹ˆš[H^\İ[˜ÙHÙ\È›İ\\ÜÈÛÛ™š\›X][ÛˆØ]HK‚‚ˆÈÈØ[\ZYÛˆØ]™H›İ][™È[™š[HİÛ™\œÚ\‚˜‹‹ØXİ]™WØØ[\ZYÛ‹šœÛÛ˜\ÈH
+Š˜Ø[\ZYÛˆÙ[XİÜˆÛ›JŠ‹ˆ]Y[YšY\ÈHXİ]™H[X™\™YØ[\ZYÛˆ[™Ú[ÈÈ]Ø[\ZYÛ‰ÜÈXİ]™WÙØ[YKšœÛÛ˜‚‚’]\È›İH]]Üš]]]™HXÙH›ÜˆÙ\ÜÚ[Û‹Ø[\ZYÛˆ\›‹Ú\˜Xİ\ˆ]™[ØØ][Û‹Üˆİ\ˆÚ[™Ú[™ÈØ[Y\^Hİ]KˆÈ›İ™]Üš]H‹‹ØXİ]™WØØ[\ZYÛ‹šœÛÛ˜Y\ˆÜ™[˜\HØ[\ZYÛˆ\›œÈ[›\ÜÈHXİ]™HØ[\ZYÛˆÙ[Xİ[Û‹Ø[\ZYÛˆ]ÜˆÚ[\‹[]™[\ÙHXİX[HÚ[™Ù\Ë‚‚Ø[\ZYÛˆØ]™\È\™H\ÛÛ]Y‚‚‹HØ[\ZYÛˆHØ]™\ÈÛ›HÈØ[\ZYÛˆHš[\Ë‚‹HØ[\ZYÛˆˆØ]™\ÈÛ›HÈØ[\ZYÛˆˆš[\Ë‚‹HØ[\ZYÛˆÈØ]™\ÈÛ›HÈØ[\ZYÛˆÈš[\Ë‚‹HÛÛ[YHHØ[YH[H›Üˆ]\ˆØ[\ZYÛœË‚‹H™]™\ˆÜš]HØ[\ZYÛˆHİ]H[È[›İ\ˆØ[\ZYÛˆ›Û\ˆÜˆ[›İ\ˆØ[\ZYÛ‰ÜÈİ]H[ÈØ[\ZYÛˆH[›\ÜÈH^Y\ˆ^XÚ]H™\]Y\İÈHÜ›ÜÜÛİ™\ˆÜˆ[\Ü‚‚•Ú][ˆØ[\ZYÛˆKš[HİÛ™\œÚ\\Î‚‚‹HXİ]™WÙØ[YKšœÛÛ˜8 %]]Üš]]]™H
+Š›\İÛÛ\]Y]™HØ]™JŠˆÙ\ÜÚ[Û‹ÛÛ\]YØ[\ZYÛ—İ\›—Û[X™\˜ÛÛ\]YÜ™KYØ[YHİ\œ™[ÜØÙ[™WÛ˜[YXØØ][Û‹Ú\˜Xİ\‹XÜ™X][Ûˆİ]K]]Üš]]]™HÛÛ\]YÈY˜[˜Ù[Y[›İYÚÛ[ÙX[™Ú\˜Xİ\—ØY˜[˜Ù[Y[Ø]™H™]š\Ú[Û‹[™]\İŞ[˜Ú›Ûš^˜][Ûˆ›İKˆ]Ù\È›İİÜ™HH]™HØ[\ZYÛˆ\›ˆİ\‚‹H\›—ÜØ]™K›Y8 %[\Ü˜\H]]Üš]]]™HYÙ\ˆ›ÜˆHİ\œ™[Ø[\ZYÛˆ\›ˆİ\œ™[Û™^Ø[\ZYÛˆ\›ˆ[X™\‹İ\œ™[İ\İ\œ™[ØÙ[™X[X™\™Y]™[ËÛÛ\XİY™™Xİ]™H[‹]\›ˆİ]K[™[™ÈÚÜ˜[œØXİ[ÛœË[™[™È˜[œÙ™\œËš[˜[™]šY]Ë\›X[™[\Ø]™H™\šYšXØ][Û‹[™™\Ù]\›İ˜[‚‹HÚ\˜Xİ\—ÜÚY]›Y8 %]š[YY\ˆ[™Ù[œZHÚ\˜Xİ\ˆİ]\İXÜËXš[]Y\Ë\X\˜[˜ÙK\œÛÛ˜[İ]K\İX›\ÚY™[][ÛœÚ\ÛÛ[Z]K[™Ş[˜Ú›Ûš^™Y[X[‹\™XYX›H]™[ÖZ\œ›ÜœÈÙˆXİ]™WÙØ[YKšœÛÛ˜‚‹H”Ë\İ]K›Y8 %\œÚ\İ[”ÈİX›HQËY[]K\X\˜[˜ÙKİ]\İXÜËXš[]Y\ËÛÛ™][Û‹\œÛÛ˜[]K™[][ÛœÚ\ËØ]˜Xİ[ÛœËÛ›İÛYÙKÜÙXÜ™]Ë\HY[X™\œÚ\Ù™‹\\HØØ][Û‹X\İ\ˆ\œÛÛ˜[ÜÜÙ\ÜÚ[ÛœË”Ë\ÜXÚYšXÈ]Y\İ[›Û™[Y[ÚÜËÜÙ\šXÙ\Ë\Ú[™\ÜË[]™[™[™Üˆİ]Kİ\œ™[ÚÜİØÚË[™”Ë\ÜXÚYšXÈÛÛ[Z]Kˆ]İÛœÈHİX›HÜ›ÜÜËYš[HY[]HÙ^H›ÜˆXXÚ\œÚ\İ[”Ë‚‹H[™[ÜK›Y8 %]Z[YXİ]™HYXÚ[šXØ[›ÛÚÚÙY\[™È›Üˆ]š[YY\‹Ù[œZK[™ÜÜÙ\ÜÚ[ÛœÈØ\œšYYHİ\œ™[\H”ÜË[˜ÛY[™ÈXÜ]Z\Ú][Û‹][YHYXÚ[šXÜÈÛ˜\ÚİÈ›ÜˆİÛ™YÙ™šXÚX[ÚÜ][\È[™İXÚÈÛÛ\]Xš[]Kˆ›Üˆ”ÜË”Ë\İ]K›Y™[XZ[œÈHX\İ\ˆİÛ™\œÚ\\İ‚‹HÛÜ›Üİ]K›Y8 %ØØ][ÛœË˜Xİ[ÛœËİ™\˜[]Y\İËÛZ\ÜÚ[ÛœËÛY\Ë\ØÛİ™\šY\Ë^Y\‹ZÛ›İÛˆÛÜ›ÙXÜ™]ËÛÜ›ÛÛœÙ\]Y[˜Ù\Ë[™YÚÙZYÚÛÜ›XÛÛ^™Y™\™[˜Ù\ÈÈ\œÚ\İ[”ÜÈHİX›H”ÈQ[™İ\œ™[˜[YK‚‹HÙ\ÜÚ[Û—ÛÙË›Y8 %Ú›Û›ÛÙÚXØ[ÛÛ\]YÚ\˜Xİ\‹XÜ™X][ÛˆÚXÚÜÚ[Ø]™\È[™ÛÛ\]YØ[\ZYÛˆ\›ˆ\İÜK‚‹H\Ø\ÛÙË›Y8 %š\İX[ÛÛ[Z]H[™™\šYšYY™Y™\™[˜ÙKX\[™›Ü›X][Û‹‚‹H‘PQQK›Y8 %İ]XÈØ[\ZYÛˆØİ[Y[][ÛÈÈ›İ\ÙH]\ÈH\XØ]H]™HØ]™K‚‚ˆÈÈ\œÚ\İ[˜ÙB‚•H]Z[YØ[\ZYÛˆ\›ˆÛÜšÙ›İÈ\ÈYš[™YX›İ™KˆH\œÚ\İ[˜ÙH[\È™[İÈÛİ™\›ˆİÈ]ÛÜšÙ›İÈÜš]\È\›X[™[İ]K‚‚ˆÈÈÈ\›X[™[˜[œÙ™\ˆ\İ[˜][ÛœÂ‚]\›İ™YØ[\ZYÛˆ\›ˆ™XÛÛ˜Ú[X][Û‹˜[œÙ™\ˆÛ›H\œÚ\İ[ÛÛ[Z]K\™[]˜[Üˆ\İÜšXØ[H[\Ü[™\İ[ÈÈZ\ˆÛÜœ™XİİÛ™\œË‚‚•\XØ[\İ[˜][ÛœÈ[˜ÛYN‚‚‹HÚ\˜Xİ\—ÜÚY]›Y8 %]š[YY\‹ÔÙ[œZHÛÛ™][ÛœËXš[]Y\ËÚ\˜Xİ\ˆ™\Ûİ\˜Ù\ËŞ[˜Ú›Ûš^™Y[X[‹\™XYX›H]™[ÖZ\œ›ÜœË[™\İ[™È\œÛÛ˜[İ]B‹H”Ë\İ]K›Y8 %”ÈÛÛ™][ÛœËXš[]Y\Ë™[][ÛœÚ\Ë\Hİ]\ËX\İ\ˆ\œÛÛ˜[\ÜÜÙ\ÜÚ[ÛˆİÛ™\œÚ\Ü]X[]Y\ËÚÜİØÚËÜÙ\šXÙ\ÈÚ[™Ù\Ë[™İ\ˆ\œÚ\İ[”Èİ]B‹H[™[ÜK›Y8 %]Z[YXİ]™H][H]X[]Y\ËÚ\™Ù\Ëİ\œ™[˜ŞK[[][š][Û‹ÛÛœİ[XX›\Ë\]Z\Y[Ú[™Ù\ËXÜ]Z\Ú][Û‹][YH][HÛ˜\ÚİË]šY[˜ÙK[™İ\ˆÜÜÙ\ÜÚ[ÛœÈ›Üˆ]š[YY\‹Ù[œZK[™İ\œ™[\H”ÜÂ‹HÛÜ›Üİ]K›Y8 %\œÚ\İ[ØØ][ÛœË]Y\İË˜Xİ[ÛœË\ØÛİ™\šY\ËÛY\Ë[™ÛÜ›ÛÛœÙ\]Y[˜Ù\Â‹HÙ\ÜÚ[Û—ÛÙË›Y8 %Ú›Û›ÛÙÚXØ[Ú\˜Xİ\‹XÜ™X][ÛˆÚXÚÜÚ[ÜˆÛÛ\]YØ[\ZYÛˆ\›ˆİ[[X\H[™ÛÛ[Z]KXÜš]XØ[]™[Â‹H\Ø\ÛÙË›Y8 %™]ÛH\İX›\ÚYš\İX[ÛÛ[Z]HÚ[ˆ™[]˜[‹HXİ]™WÙØ[YKšœÛÛ˜8 %ÛÛ\]YÙ\ÜÚ[Û‹ĞØ[\ZYÛˆ\›‹Øİ\œ™[ÜØÙ[™WÛ˜[YXÛØØ][Û‹]]Üš]]]™HÛ[ÙX[™Ú\˜Xİ\—ØY˜[˜Ù[Y[Ø]™H™]š\Ú[Û‹[™]\İŞ[˜Èİ]B‚‘›ÜˆH
+Š˜İ\œ™[\H”ÊŠ‹[ˆİÛ™\œÚ\XÚ[™Ú[™È][H]™[X^H™\]Z\™H›İ”Ë\İ]K›Y[™[™[ÜK›YÈ™H\]Y[ˆHØ[YHÛÛ\]YØ]™N‚‚‹H\]H”Ë\İ]K›YÛÈH”ÉÜÈX\İ\ˆİÛ™\œÚ\\İ™[XZ[œÈÛÜœ™Xİ‹H\]H[™[ÜK›YÛÈH”ÉÜÈ^[™YXİ]™HYXÚ[šXØ[›ÛÚÚÙY\[™È™[XZ[œÈÛÜœ™Xİ‚‘^[\\È[˜ÛYHÛÛœİ[Z[™ÈÜˆØZ[š[™È[ˆ][KÜ[™[™ÈÜˆ™XÙZ]š[™Èİ\œ™[˜ŞKÜÚ[™È[[][š][Û‹˜[œÙ™\œš[™È\]Z\Y[Ú[™Ú[™È]X[]Y\ËÜˆ\›X[™[HÚ[™Ú[™ÈÚ\™Ù\Ëİ\Ù\Ë‚‚‘›ÜˆH
+ŠœÚÜ\˜Ú\ÙJŠ‹™XÛÛ˜Ú[HHİYÙY˜[œØXİ[Ûˆ\ÈÛ™HÛÛ›™XİYİ]HÚ[™ÙNˆ\]HHÚÜ”ÉÜÈ\Ú[™\ÜÈİØÚÈ[ˆ”Ë\İ]K›YXÜ™X\ÙHH^Y\‰ÜÈİ\œ™[˜ŞHHH\›İ™Yš[˜[˜[œØXİ[ÛˆšXÙKYHXÜ]Z\™Y][HÈH^Y\‰ÜÈ\›ÜšX]H[™[ÜK›Y™XÛÜ™™\Ù\™HHXÜ]Z\Ú][Û‹][YHYXÚ[šXÜÈÛ˜\Úİ[™\HH\›İ™YÛÛ\]X›KÜÙ\\˜]HİXÚÈ™\İ[ˆÚÜİØÚÈ]\İ›İ™H™X]Y\ÈHÚÜÙY\\‰ÜÈ\œÛÛ˜[Ø\œšYYÜÜÙ\ÜÚ[ÛœË‚‚‘È›İX]™HHX\İ\ˆ™XÛÜ™İ[HY\™[H™XØ]\ÙHHØ[YHÜÜÙ\ÜÚ[Ûˆ[ÛÈ\ÈH[Ü™H]Z[YXİ]™H™\™\Ù[][Ûˆ[ˆ[™[ÜK›Y‚‚ˆÈÈÈØ]™H™]š\Ú[Ûˆ[B‚˜Xİ]™WÙØ[YKšœÛÛ˜ÛÛZ[œÈØ]™WÜ™]š\Ú[Û˜‚‚‘›ÜˆHÛÛ\]YØ[\ZYÛˆ\›ˆÜˆİ\ˆÛÛ\]Y\œÚ\İ[Ø]™H™]š\Ú[Û‚‚ŒKˆ]\›Z[™H[Ø[\ZYÛˆH\›X[™[š[\È]™YY™X[Ú[™Ù\ÂŒ‹ˆ™\\™HHØ[›ÛšXØ[İ]KÚ\İÜH\]\ÂŒËˆ™\\™HXİ]™WÙØ[YKšœÛÛ˜Ú]H™]ÈÛÛ\]Y]]Üš]]]™Hİ]Bˆ[˜Ü™[Y[Ø]™WÜ™]š\Ú[Û˜H^XİHHÛ›H›ÜˆHÛÛ\]Y\›X[™[Ø]™BKˆÙ]\İÜŞ[˜×Û›İXÈHÛÛ\Xİ\ØÜš\[ÛˆÙˆÚ]]ÛÛ\]Y™]š\Ú[Ûˆ™\™\Ù[Â‹ˆYˆH™\]Z\™Y\›X[™[\İ]H\]H˜Z[ÈÜˆ™[XZ[œÈ[œ™\ÛÛ™YÈ›İ™][™HØ]™HÛÛ\]Y[™È›İš[˜[^™HH™]š\Ú[Ûˆ[[H\›X[™[İ]H\È™XÛÛ˜Ú[Y‚’[™]šYX[Ø[\ZYÛˆ\›ˆİ\Ëİ]\ÈÚXÚÜÚ[Ëš[˜[\™]šY]ÈÚXÚÜÚ[ËØ]™YØ]ØZ][™×Ü™\Ù]ÚXÚÜÚ[Ë[™H]\ˆ[\Ü˜\K[YÙ\ˆ™\Ù]È
+Š››İ
+Šˆ[˜Ü™[Y[Ø]™WÜ™]š\Ú[Û˜‚‚•Ú[™]™\ˆ]ÛZXÈÚ]ÛÛ[™È\È]˜Z[X›KÛ™HÛÛ\]Y\œÚ\İ[Ø]™H™]š\Ú[ÛˆÚİ[ÛÜœ™\ÜÛ™ÈÛ™H\›X[™[\İ]HÚ]ÛÛ[Z]ÛÛZ[š[™ÈHŞ[˜Ú›Ûš^™Yİ\Ü[™È\›X[™[š[\ËÙ\ÜÚ[Û—ÛÙË›YÚ[ˆ\XØX›K[™Xİ]™WÙØ[YKšœÛÛ˜ˆH[\Ü˜\HYÙ\ˆ\È[X™\˜][H
+Š››İ™\Ù]
+Šˆ[ˆ]ÛÛ[Z]‚‚’YˆH[š\›Û›Y[Ø[››İXZÙHÛ™H]ÛZXÈ][KYš[H\›X[™[Ø]™H[™]\İÜš]Hš[\ÈÙ\]Y[X[K\]Hİ\Ü[™È\›X[™[š[\Èš\œİ[™Xİ]™WÙØ[YKšœÛÛ˜\İˆ[ˆ™\šYHHÛÛ\]Yİ]H™Y›Ü™H[İš[™ÈH[\Ü˜\HYÙ\ˆÈØ]™YØ]ØZ][™×Ü™\Ù]‚‚•H]\ˆ^Y\‹X\›İ™Y™\Ù]Ùˆ\›—ÜØ]™K›Y\ÈHÙ\\˜]HÛX[\ØÚXÚÜÚ[Ü\˜][Ûˆ[™Ù\È›İÜ™X]H[›İ\ˆØ[\ZYÛˆØ]™H™]š\Ú[Û‹‚‚Hš[HÙ\È›İ™YYšXİ[Û˜[Ú[™Ù\È\İÈ›İ™H]Ø\ÈÚXÚÙYˆYˆ›İ[™ÈİXœİ[]™HÚ[™ÙY™\Ù\™H]‚‚•H™]š\Ú[ÛˆX\šÜÈHÛÛ\]YØ[\ZYÛˆHØ]™HÚXÚÜÚ[ˆ]Ù\È›İ\›Z]ÛØ[\ZYÛˆ\İÜHÈ™XÛÛYHØ[›Û‹‚‚‘È
+Š››İ
+Šˆ™[[İ™HÜˆ[]H[][™Èœ›ÛHHš[H[›\ÜÈ]\È™XÙ\ÜØ\KˆÈ
+Š››İ
+Šˆ™[Ü™Ø[š^™HHš[H[›\ÜÈÚ›Û›ÛÙÚXØ[Ü™\ˆÜˆÛX\ˆİÛ™\œÚ\™\]Z\™\È]‚‚‘^[\\ÈÙˆ™X\ÛÛœÈÈ™[[İ™K[]KÜˆÛÜœ™Xİ^\İ[™ÈX]\šX[[˜ÛYK]\™H
+Š››İ[Z]YÊŠ‚‚‹H][\ÈÙ\™HÛÛÜİ\ÙYÛÛœİ[YY\İ›ŞYY˜YY˜[œÙ™\œ™YÜˆİ\Ú\ÙHYÚ][X][H™[[İ™Yœ›ÛHHÚ\˜Xİ\‰ÜÈÜÜÙ\ÜÚ[Û‚‹H[ˆ\İX›\ÚY˜Xİ\È^XÚ]HÛÜœ™XİYÜˆİ\\œÙYYHH^Y\‚‹H\XØ]HÜˆXØÚY[[\œ›Û™[İ\È[™›Ü›X][Ûˆ]\İ™H™[[İ™Y‹HHYXÚ[šXØ[İ]HÛİ[İ\Ú\ÙH™[XZ[ˆ[˜ÛÜœ™Xİ‹H[™›Ü›X][ÛˆÛÛ™›XİÈ[™Hİ\œ™[Ø[›ÛšXØ[Ûİ\˜ÙHØ[››İ™H™\ÛÛ™Yœ›ÛH^\İ[™È™XÛÜ™ÎÈ\ÚÈÚXÚÛÛ™›Xİ[™È˜XİÈÙY\‹HÚ›Û›ÛÙÚXØ[Ü™\‚‚ˆÈÈÈÙ\ÜÚ[ÛˆÙÈ™Z]š[Ü‚‚˜Ù\ÜÚ[Û—ÛÙË›Y\ÈÚ›Û›ÛÙÚXØ[ˆXXÚÛÛ\]YÚ\˜Xİ\‹XÜ™X][ÛˆÚXÚÜÚ[Ø]™H[™XXÚÛÛ\]YØ[\ZYÛˆ\›ˆÚİ[™H\[™Y\ÈH™]ÈÚXÚÜÚ[˜]\ˆ[ˆ™\XÚ[™ÈÛ\ˆÚXÚÜÚ[Ëˆ]™\HÚXÚÜÚ[Úİ[Y[YH]ÈÛÛ\]YØ]™WÜ™]š\Ú[Û˜[™Ø[\ZYÛˆ\›ˆÚXÚÜÚ[ÈÚİ[[ÛÈY[YHZ\ˆÛÛ\]YØ[\ZYÛˆ\›ˆ[X™\‹‚‚‘›ÜˆÚ\˜Xİ\ˆÜ™X][Û‹™XÛÜ™Û›HHÚÚXÙ\È[™\š]™Yİ]HXİX[Hš[˜[^™YH]ÛÛ™š\›YYÚXÚÜÚ[ÈÈ›İÙÈ]™\HÜ[Ûˆ\Øİ\ÜÙYÜˆ™Z™XİYˆ›ÜˆØ[Y\^K™XÛÜ™[\Ü[›ÛËÚÚXÙ\ËÛÛœÙ\]Y[˜Ù\Ë]Ø\™ËØÙ[™H˜[œÚ][ÛœË\ØÛİ™\šY\Ë™[][ÛœÚ\Ú[™Ù\ËÛÛX˜]İ]ÛÛY\Ë[™İ\ˆÛÛ[Z]KXÜš]XØ[]™[ËˆHÙ\ÜÚ[ÛˆÙÈİ[[X\š^™\ÈÛÛ\]YØ[\ZYÛˆ\›œÈ[™Ù\È›İ™YY]™\HÜ˜[[\ˆİ\[™XYH™\Ù\™Y\š[™ÈH[\Ü˜\H\›ˆYÙ\‹‚‚ˆÈÈš[Üš]HÜ™\‚‚ŒKˆ^Y\ˆYÙ[˜ŞBŒ‹ˆÙ[œZIÜÈÚ\˜Xİ\ˆYÙ[˜ŞBŒËˆİ\œ™[Xœ˜[˜ÚØ[›Û‚ˆÛÛ[Z]BKˆ[\™\İ[™ÈÛÛœÙ\]Y[˜Ù\Â‹ˆXØİ\˜]HYXÚ[šXÜÂËˆ˜]\˜[Ú\˜Xİ\ˆ™Z]š[Ü‚ˆY[Û™HÚ\™H\›ÜšX]BKˆXÚ[™ÂŒLˆš\İX[ÛÛ[Z]HÚ[ˆ[XYÙ\È\™H\ÙYŒLKˆ[ˆİ™\ˆ[›™XÙ\ÜØ\H›ÛÚÚÙY\[™Â
