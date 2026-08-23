@@ -27,7 +27,7 @@ The blank fields below are intentional and remain undecided until established du
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
-- **XP** 0/100
+- **XP:** 0/100
 
 ### Background History
 
@@ -85,7 +85,7 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
-- **XP** 0/100
+- **XP:** 0/100
 
 ### Background History
 
