@@ -48,11 +48,22 @@ For Campaign 1, the repository-wide priority entry for ChatGPT-controlled compan
 
 For Campaign 1, when the shared NPC advancement rule says existing NPCs do not automatically scale merely because `the PCs` became stronger, that reference includes both DevilMedlar and Senpai.
 
+## Chat session numbering
+
+`active_game.json.session_number` counts the ChatGPT conversation sessions used to create, play, or continue Campaign 1.
+
+- Campaign 1 begins at `session_number: 1`.
+- Remaining in the same ChatGPT chat keeps the same session number, including ordinary breaks, reopening the same chat, or continuing later in that same conversation.
+- When Campaign 1 is moved to a different ChatGPT chat for any reason, increment `session_number` by exactly `1` before continuing. This includes moving because the previous chat was deleted, reached its conversation limit, became unusable, or the player simply chose to continue in a new chat.
+- A chat-session change does not itself begin or end a Campaign Turn, reset `turn_save.md`, change `campaign_turn_number`, or alter gameplay canon.
+- If a Campaign Turn is unfinished when the chat changes, preserve the existing `turn_save.md` state and resume that same Campaign Turn in the new chat.
+- Updating only `session_number` for a chat handoff is continuity metadata and does not by itself increment `save_revision`.
+
 ## Campaign 1 state ownership
 
 Campaign 1 uses the shared file-ownership architecture without a Campaign 1-specific exception:
 
-- `active_game.json` — last completed live save
+- `active_game.json` — last completed live save and Campaign 1 chat `session_number`
 - `turn_save.md` — current unfinished Campaign Turn ledger
 - `character_sheet.md` — DevilMedlar and Senpai character detail and synchronized Level/XP mirrors
 - `NPC-state.md` — persistent NPC master state and vendor/business state
