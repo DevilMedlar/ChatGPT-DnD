@@ -1,4 +1,4 @@
-# MOCK STORE OPTION B - Free Official Shop Catalog + Local Custom Items
+# MOCK STORE OPTION B - Free Official Shop Catalog
 
 > **DESIGN MOCK ONLY - NOT CAMPAIGN CANON**
 >
@@ -15,10 +15,17 @@ Model shops more like a game vendor screen while avoiding a large local copy of 
 5. the shop row keeps only compact at-a-glance information such as category, named traits/mechanics, slots, or other useful tags
 6. the **item name itself is the verified direct official link**
 7. clicking the item name opens the full freely viewable official item details; no separate official-item inspection layer is needed
-8. homebrew, custom, unique, campaign-created, or mechanically modified items use local campaign definitions instead of pretending an official page fully defines them
-9. under the current working idea, those custom/modified items are primarily found through treasure, defeated enemies, hidden caches, quests, rewards, crafting, unique NPC possessions, world events, or similar discoveries rather than ordinary shop stock
+8. homebrew, custom, unique, campaign-created, or mechanically modified items are **outside vendor mechanics and outside this store mock**
 
-This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, markup math, loot system, custom-item storage location, or whether a previously discovered custom item may later enter commerce.
+This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, markup math, restock math, buy-back rules, or exact shop-generation rules.
+
+---
+
+# Vendor Scope Boundary
+
+This store architecture covers **freely viewable official D&D items only**.
+
+Homebrew, custom, unique, campaign-created, or mechanically modified items are not part of vendor stock mechanics in this design. Their discovery, storage, mechanics, inspection, and persistence belong outside this store mock.
 
 ---
 
@@ -194,165 +201,19 @@ Usable mechanics freely viewable?
 
 ---
 
-# Homebrew / Custom / Modified Items
-
-## Working Discovery Rule
-
-Under the current design direction, homebrew, custom, unique, campaign-created, or mechanically modified items are primarily discovered outside ordinary merchant stock.
-
-Possible sources include:
-
-- treasure chests
-- defeated enemies or bodies
-- hidden caches
-- dungeon rewards
-- quest rewards
-- unique NPC possessions
-- crafting
-- transformations
-- faction rewards
-- world events
-- relic discoveries
-- secret rooms
-- boss encounters
-- other established campaign discoveries
-
-This keeps normal shops grounded in freely accessible official items while allowing Campaign 1's stranger and more memorable equipment to emerge through play.
-
-This rule is **not yet final**. A later decision could allow a discovered custom item type to enter commerce, be copied, be crafted for sale, or appear in a specialist shop if the world establishes that outcome.
-
----
-
-# Local Definition Model for Custom Items
-
-A normal official shop item can rely on its verified freely viewable official page for standard mechanics.
-
-A homebrew/custom item cannot, so its stable mechanics must be preserved locally once it becomes real Campaign 1 canon.
-
-The following examples are still **mock only** and are not shop stock.
-
-## Blazebrand Longsword - Mock Custom Item
-
-- **Source type:** Homebrew / custom
-- **Discovery example:** Treasure from a defeated boss
-- **Canonical item name:** Blazebrand Longsword
-- **Type:** Weapon - longsword
-- **Rarity:** Mock rarity only
-- **Damage / armor / defense:** Example placeholder; exact campaign damage rules not decided here
-- **Damage type:** Slashing
-- **Gem slots:** 1
-- **Attunement / bonding:** Example: required
-- **Known properties:** Blaze; one gem slot
-- **Unidentified properties:** No
-- **Description:** A blackened longsword whose edge gives off a low ember glow when drawn.
-
-### Ability - Blaze
-
-- **Description:** Example named homebrew ability.
-- **Mechanical effect:** Deliberately not finalized in this mock.
-- **Activation:** Not finalized
-- **Uses / charges:** Not finalized
-- **Recharge:** Not finalized
-- **Duration:** Not finalized
-- **Requirements:** Not finalized
-- **Stacking / exclusivity:** Not finalized
-
-## Ashen Reliquary - Mock Unique Item
-
-- **Source type:** Homebrew / unique
-- **Discovery example:** Hidden cache or sealed tomb
-- **Canonical item name:** Ashen Reliquary
-- **Type:** Curio / possible magical item
-- **Rarity:** Unknown to the player in this example
-- **Requirements:** Unknown
-- **Attunement / bonding:** Unknown
-- **Known properties:** Faint unidentified aura
-- **Unidentified properties:** Yes
-- **Description:** A sealed silver reliquary with old ash packed into its engraved seams.
-
-### Hidden Properties - GM / Continuity Only
-
-> These are intentionally mock hidden details used only to test information filtering. They must not appear in player-facing narration or inspection until discovered through legitimate play.
-
-- **Hidden property A:** Mock curse/effect placeholder
-- **Hidden property B:** Mock trigger placeholder
-
----
-
-# Custom Item Inspection Model
-
-Custom items still need local inspection behavior because there is no official page that defines the custom mechanics.
-
-```text
-Local Custom Item Definition
-        +
-Specific Item Instance State when relevant
-        +
-Current player knowledge
-        ↓
-Generated Custom Item Inspection
-```
-
-A custom item's hidden properties remain stored for continuity but are filtered from player-facing inspection until legitimately discovered.
-
-Once custom mechanics are established, they stay stable unless play legitimately changes the item.
-
----
-
-# Modified Official Item Rule
-
-If an official item is mechanically altered by Campaign 1, its linked official page can still define the unchanged base item, but it no longer defines the entire campaign object.
-
-Conceptually:
-
-```text
-Linked Official Base Item
-        +
-Locally Stored Campaign Modification
-        ↓
-Modified Campaign Item
-```
-
-The campaign-specific modification must be stored locally.
-
-Examples:
-
-- an ordinary official longsword gains a permanent fire ability
-- a shield acquires a curse
-- a Bag of Holding is permanently altered by a campaign event
-- an official weapon gains a unique socket/gem system not present in the official rules
-
-A modified official item is therefore treated as campaign-specific state for the part that differs from the official definition.
-
----
-
 # Purchased Official Item Transition
 
-When an ordinary official item is bought:
+When an official shop item is bought:
 
 ```text
 Vendor Stock
     ↓ purchase
 Vendor Qty decreases
     +
-Party Inventory gains the linked official item / necessary local active state
+Party Inventory gains the purchased official item
 ```
 
-The campaign does not need to copy the full standard official definition into inventory merely because ownership changed.
-
-Instance-specific state still belongs locally when relevant, such as:
-
-- quantity
-- equipped/carried/stored state
-- current charges or ammunition
-- durability / damage
-- attunement
-- custom name
-- socketed gem
-- discovered curse
-- campaign modification
-
-This separates **what the official item is** from **what happened to this particular campaign copy**.
+The shop's responsibility ends after the stock and transaction state are updated. Any later inventory-specific or non-vendor changes to that item belong outside vendor mechanics.
 
 ---
 
@@ -401,14 +262,6 @@ Official D&D Free Catalog / Categories
 
 Freely Viewable Direct Official Item Page
 └── standard published mechanics for the linked shop item
-
-Local Custom Definition
-├── homebrew / unique / campaign-created mechanics
-├── campaign modifications to official items when needed
-├── abilities / effects
-├── requirements
-├── descriptions
-└── hidden / unidentified properties
 ```
 
 ### Ordinary Official Item Details
@@ -419,18 +272,6 @@ Current Shop Stock
 Click linked Item name
         ↓
 Freely viewable direct official item page
-```
-
-### Custom Item Inspection
-
-```text
-Local Custom Definition
-        +
-Instance State when relevant
-        +
-Current player knowledge
-        ↓
-Generated Detailed Inspection
 ```
 
 ---
@@ -446,15 +287,12 @@ Generated Detailed Inspection
 - Leaves full standard official mechanics on the freely viewable official item page instead of copying them into `NPC-state.md`.
 - Rejects inaccessible/paywalled item pages before they become normal shop stock.
 - Allows the same official item to appear at multiple vendors with different stock and prices without redefining its mechanics.
-- Keeps homebrew/custom/modified item mechanics local only when Campaign 1 actually needs local mechanics.
-- Lets custom/unique loot primarily come from exploration, enemies, quests, rewards, crafting, and discoveries rather than routine vendor shelves.
+- Keeps homebrew/custom/modified items completely outside vendor mechanics.
 
 # Questions Still Open
 
 - Campaign 1 still needs an explicit D&D rules/version baseline before official references can be standardized confidently.
 - External official URLs or access rules can change, so links may occasionally need rechecking or replacement.
-- We still need to decide where local homebrew/custom item definitions permanently live if this architecture is adopted.
-- We still need to decide whether custom items can later become legitimate shop stock after being discovered, crafted, copied, commissioned, or commercialized in the story.
 - We still need exact markup/discount stacking and rounding rules.
 - We still need to decide whether shop `Key Mechanics` and `Short Description` are always manually stored vendor-facing summaries or can sometimes be generated from the freely viewable official page.
 
