@@ -377,7 +377,11 @@ Do not add a separate official-reference column, a duplicate local official-item
 
 `routine_item_prices.md` is authoritative for which items are classified as routine/basic repeat goods for recurring-price purposes and for each such item's current recurring Base Price. A routine/basic item must use that established Base Price whenever stocked. Every vendor stock row for that routine item mirrors the value from `routine_item_prices.md` and must not independently redefine it.
 
+Use `routine_item_prices.md` for ordinary goods that the campaign intentionally wants to price consistently across merchants, especially items commonly purchased repeatedly or in quantity.
+
 This recurring-price rule applies only to items explicitly classified in `routine_item_prices.md`; it does not require every item appearing at multiple merchants to share one Base Price. If an item has no entry there, do not claim it already has an established routine recurring Base Price. Establish the entry through the appropriate completed-save workflow before relying on routine-price authority.
+
+Do not reconstruct routine-item prices from deleted files, repository history, previous chats, memory, another campaign, or external listed prices unless the player explicitly establishes or imports that information for the campaign.
 
 For other official items, the GM may establish a reasonable Base Price when the item appears in stock. The price should be sensible rather than arbitrary noise. Relevant considerations can include rarity, mechanical power, usefulness, duration or number of uses, whether the item is consumed, replaceability, local scarcity, item category, and comparable established campaign prices. These non-routine items do not require a permanent global Base Price registry.
 
@@ -390,6 +394,8 @@ Merchant markup/discount is business or relationship pricing, such as ordinary s
 Contextual market factors include scarcity, shortages, unusual demand, temporary events, and similar established market circumstances. A contextual factor is not automatically a merchant markup/discount.
 
 A pricing factor must not be counted more than once in the same stock listing or transaction. If scarcity, rarity, local conditions, or another factor already affected that listing's Base Price, the same factor must not be applied again to Final Price. A distinct merchant markup or discount may still apply afterward because it is a different pricing factor.
+
+Change an established routine Base Price only when the campaign explicitly changes that item's recurring baseline.
 
 A change to an established Base Price in `routine_item_prices.md` is campaign-wide, not a single-vendor adjustment. When that recurring Base Price changes, every currently stocked vendor row for that item must be reconciled to the new mirrored Base Price in the same completed save whenever such rows exist. Vendor-specific price differences continue to use Final Price modifiers instead.
 
