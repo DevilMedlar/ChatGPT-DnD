@@ -6,6 +6,8 @@ The shared rules for establishing, using, changing, staging, reconciling, and ve
 
 The routine/basic classification here is a **Campaign 1 shopping classification**, not the same thing as an official D&D rarity category such as Common, Uncommon, Rare, or another rules-defined rarity.
 
+Each entry must identify the exact item under Campaign 1's adopted rules/reference context before the classification and recurring Base Price are established through the shared workflow.
+
 ## Current Routine Item Base Prices
 
 **No routine/basic item Base Prices are established yet.**
