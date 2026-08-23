@@ -4,9 +4,9 @@ Fresh adult fantasy campaign. No prior campaign canon is imported.
 
 Campaign 1 inherits repository-wide gameplay rules from `../../GAME_MASTER_RULES.md` and shared numbered-campaign architecture from `../GAME_MASTER_RULES.md`.
 
-`GAME_MASTER_RULES.md` in this folder is now a **Campaign 1-only overlay**. It contains the DevilMedlar/Senpai-specific canon and agency rules that would be wrong to impose on future campaigns. It does not duplicate the shared rulebooks.
+`GAME_MASTER_RULES.md` in this folder is a **Campaign 1-only overlay**. It contains DevilMedlar/Senpai-specific canon and agency rules that would be wrong to impose on future campaigns. It must not duplicate the shared rulebooks.
 
-## Current Campaign 1 phase
+## Current Campaign 1 Phase
 
 Campaign 1 is in character creation before Campaign Turn 1.
 
@@ -14,53 +14,38 @@ Campaign 1 is in character creation before Campaign Turn 1.
 
 Finalized character-creation choices use the shared confirmed character-creation checkpoint workflow in `../GAME_MASTER_RULES.md`.
 
-## Rule order for Campaign 1
+## Rule Conflict Order
+
+When two **rules** conflict for Campaign 1, use:
 
 1. the player's newest explicit Campaign 1 instruction
 2. this folder's `GAME_MASTER_RULES.md` local overlay
 3. `../GAME_MASTER_RULES.md` shared campaign architecture
 4. `../../GAME_MASTER_RULES.md` repository-wide gameplay rules
-5. current Campaign 1 canonical state files
 
-## Canonical Campaign 1 files
+Campaign 1's canonical state files remain authoritative for the campaign facts and state each file owns. They are not a lower-priority rulebook.
+
+## Canonical Campaign 1 Files
 
 - `GAME_MASTER_RULES.md` — Campaign 1-only canon and overrides, currently including DevilMedlar/Senpai relationship and agency rules.
 - `active_game.json` — authoritative last completed Campaign 1 live state, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, character-creation status, completed PC Level/XP advancement state, and save revision.
 - `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending shop transactions, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, synchronized human-readable Level/XP mirrors, appearance, personal state, and established PC relationship continuity.
-- `NPC-state.md` — authoritative master database for persistent NPC stable IDs, identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
-- `routine_item_prices.md` — authoritative Campaign 1 classification and recurring Base Price reference for routine/basic repeat goods. Vendor stock rows mirror these Base Prices; the file does not own quantity, mechanics, merchant modifiers, Final Price, or inventory.
-- `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
-- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to persistent NPCs by stable NPC ID and current name where they matter to world state.
-- `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn checkpoints, including the completed save revision for each checkpoint.
-- `art/art_log.md` — canonical Campaign 1 visual continuity and verified reference-art notes.
+- `NPC-state.md` — persistent NPC master state and the Campaign 1 NPC record schema, including stable IDs, NPC mechanics/relationships, possessions, vendor/business state, and shop stock.
+- `routine_item_prices.md` — authoritative Campaign 1 classification and recurring Base Price reference for routine/basic repeat goods.
+- `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs, including owned-item mechanics snapshots and stack handling.
+- `world_state.md` — Campaign 1 locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight NPC references.
+- `session_log.md` — Campaign 1's chronological completed-save checkpoint history.
+- `art/art_log.md` — Campaign 1's visual-canon and verified reference-art metadata.
 
-## Campaign 1 ownership notes
+Shared ownership, Campaign Turn, NPC reconciliation, vendor/shop, save, recovery, fresh-start, and visual-staging rules are defined outside this folder in the inherited shared rulebooks.
 
-Persistent NPC information should be referenced rather than duplicated across multiple files. Every persistent Campaign 1 NPC receives one stable ID such as `NPC-0001` in `NPC-state.md`; the ID never changes or gets reused for another NPC.
+## Campaign 1-Specific Relationship and Agency
 
-- `world_state.md` answers **where and why an NPC matters to the world**.
-- `NPC-state.md` answers **who the NPC is**, owns the stable ID and persistent NPC state, and owns vendor/business state when applicable.
-- `routine_item_prices.md` answers **which Campaign 1 shop goods use a campaign-wide recurring Base Price and what that Base Price currently is**.
-- `inventory.md` answers **what the active party is carrying and how those items currently work**.
-- Shop stock stays in the relevant NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
-- `world_state.md` owns overall quest/mission state; `NPC-state.md` owns each NPC's involvement in that quest or mission.
-- `turn_save.md` temporarily overlays changing Campaign 1 state during an unfinished Campaign Turn.
-
-The detailed ownership, NPC join/leave, vendor transaction, stack compatibility, save, and reconciliation procedures are inherited from `../GAME_MASTER_RULES.md`.
-
-## Campaign 1-specific relationship and agency
-
-DevilMedlar and Senpai's established relationship facts and Senpai's ChatGPT-controlled agency belong in this campaign's local `GAME_MASTER_RULES.md` and `character_sheet.md` as appropriate.
+DevilMedlar and Senpai's established relationship facts and Senpai's ChatGPT-controlled agency belong in this campaign's local `GAME_MASTER_RULES.md` and Campaign 1 state files as appropriate.
 
 Those facts are Campaign 1 canon, not repository-wide assumptions for future campaigns.
 
-## Fresh-start boundary
-
-Only information currently stored in Campaign 1 or explicitly established by the player during this fresh campaign is Campaign 1 canon.
-
-Do not import Campaign 1 content from deleted material, previous chats, memory, another campaign, or repository history unless the player explicitly requests a specific import. The complete shared fresh-start rule is in `../GAME_MASTER_RULES.md`.
-
-## Visual continuity
+## Visual Continuity
 
 Campaign 1 uses `art/art_log.md` as its visual-continuity index. Repository-wide image behavior lives in `../../GAME_MASTER_RULES.md`; Campaign Turn staging of visual metadata lives in `../GAME_MASTER_RULES.md`.
