@@ -36,7 +36,9 @@ When a shop purchase occurs during an active Campaign Turn, keep the transaction
 - **Item:**
 - **Quantity:**
 - **Base Price:**
-- **Pricing factors used:** List each distinct factor once
+- **Base Price basis:** Routine recurring / GM-established
+- **Factors already included in Base Price:** None / list each distinct factor once
+- **Final Price modifiers applied:** None / list each distinct modifier once, including its amount or effect when known
 - **Final Transaction Price:**
 - **Vendor stock before / after:**
 - **Buyer currency delta:**
@@ -45,7 +47,7 @@ When a shop purchase occurs during an active Campaign Turn, keep the transaction
 - **Stack result:** New entry / Merge with compatible stack / Keep separate / Not applicable
 - **Notes:**
 
-A staged purchase is one connected transaction. Vendor quantity, buyer currency, inventory acquisition, and acquisition snapshot must reconcile together; do not permanently apply only one side. If the buyer is a current-party persistent NPC, include the required `NPC-state.md` master-ownership update in `Pending Permanent Transfers`.
+A staged purchase is one connected transaction. Vendor quantity, buyer currency, inventory acquisition, and acquisition snapshot must reconcile together; do not permanently apply only one side. A pricing factor recorded as already included in Base Price must not also appear as a Final Price modifier for the same transaction. If the buyer is a current-party persistent NPC, include the required `NPC-state.md` master-ownership update in `Pending Permanent Transfers`.
 
 ## Pending Permanent Transfers
 
