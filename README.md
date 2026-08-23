@@ -10,13 +10,14 @@ Shared rules are intentionally kept **outside** individual numbered campaign fol
 - `campaigns/GAME_MASTER_RULES.md` — shared numbered-campaign architecture: fresh-campaign isolation, append-first preservation, PC advancement state ownership, Campaign Turn lifecycle, character-creation checkpoint saves, file ownership, NPC persistence, vendor/shop persistence, image metadata staging, save revisions, verification, recovery, and session-log behavior.
 - `campaigns/campaign-N/GAME_MASTER_RULES.md` — optional **campaign-local overlay only**. It contains campaign-specific canon, exceptions, or overrides that would be wrong to impose on every campaign. It must not become another copy of the shared rulebooks.
 
-For a numbered campaign, the intended precedence is:
+When **rules themselves conflict**, use this order:
 
 1. the player's newest explicit instruction for that campaign
 2. that campaign's local rule overlay, when present
 3. `campaigns/GAME_MASTER_RULES.md`
 4. root `GAME_MASTER_RULES.md`
-5. the campaign's current canonical state files
+
+The campaign's canonical state files are not a lower-priority rule layer. Each state file remains authoritative for the facts and mutable state assigned to it by the ownership rules. Read rules and state together rather than using a generic rule to overwrite established state that belongs to another authority.
 
 ## Core canon rule
 
