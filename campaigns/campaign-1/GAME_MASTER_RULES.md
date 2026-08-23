@@ -46,6 +46,8 @@ These facts establish their current relationship. Merely being listed in `charac
 
 For Campaign 1, the repository-wide priority entry for ChatGPT-controlled companion/character agency specifically means Senpai's agency.
 
+For Campaign 1, when the shared NPC advancement rule says existing NPCs do not automatically scale merely because `the PCs` became stronger, that reference includes both DevilMedlar and Senpai.
+
 ## Campaign 1 state ownership
 
 Campaign 1 uses the shared file-ownership architecture without a Campaign 1-specific exception:
