@@ -48,9 +48,11 @@ Only NPCs currently traveling with the party should receive expanded active inve
 
 ### Current Party NPC Inventory Template
 
-#### NPC Name
+`NPC-####` is a template placeholder only. Replace it with the NPC's actual stable ID from `NPC-state.md` when creating the active inventory section.
 
-See master NPC record in `NPC-state.md`.
+#### NPC-#### — NPC Name
+
+See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 
 ##### Equipped
 
