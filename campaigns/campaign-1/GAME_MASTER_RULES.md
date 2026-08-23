@@ -2,13 +2,14 @@
 
 Campaign 1 inherits the repository-wide gameplay rules in `../../GAME_MASTER_RULES.md` and the shared numbered-campaign architecture in `../GAME_MASTER_RULES.md`.
 
-Rule scope and precedence for Campaign 1 are:
+When **rules themselves conflict**, Campaign 1 uses this order:
 
 1. the player's newest explicit Campaign 1 instruction
 2. this Campaign 1-local rule file for Campaign 1-specific canon or overrides
 3. `../GAME_MASTER_RULES.md` for shared campaign persistence, ownership, Campaign Turn, NPC, vendor, and save architecture
 4. `../../GAME_MASTER_RULES.md` for repository-wide gameplay mechanics and behavior
-5. current Campaign 1 canon/state in the remaining Campaign 1 files
+
+Campaign 1's remaining canonical state files stay authoritative for the facts and mutable state assigned to them by the shared ownership rules. They are not a lower-priority rules layer.
 
 This file should stay small. Do not copy shared rules back into it merely for convenience. Add material here only when Campaign 1 intentionally differs from the shared rules or needs campaign-specific canon that would be wrong to impose on future campaigns.
 
