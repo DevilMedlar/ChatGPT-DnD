@@ -4,13 +4,9 @@ This file is the authoritative master record for persistent NPCs in Campaign 1.
 
 It owns NPC identity, appearance, mechanical state, personality, relationship and attraction state, knowledge, secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC continuity.
 
-`world_state.md` references NPCs where they matter to locations, factions, quests, clues, discoveries, or world consequences without duplicating their full records.
+`world_state.md` references NPCs where they matter to locations, factions, quests, clues, discoveries, or world consequences without duplicating their full records. `inventory.md` expands the possessions of NPCs currently traveling with the party. `turn_save.md` temporarily overlays unfinished Campaign Turn changes.
 
-`inventory.md` expands the possessions of NPCs currently traveling with the party.
-
-`turn_save.md` temporarily overlays NPC HP, position, resources, conditions, consumed items, charges, party-membership transitions, and other in-turn changes until Campaign Turn reconciliation.
-
-If an NPC joins or leaves during an active Campaign Turn, this file remains the last completed master state until Confirmation Gate 1 is approved and the transition is reconciled. Stage the temporary membership, location, condition, and possession effects in `turn_save.md` first.
+Shared NPC ownership, relationship semantics, advancement, party-membership reconciliation, vendor/shop behavior, fresh-start isolation, and persistence rules are owned by `../GAME_MASTER_RULES.md`. Repository-wide adult-content boundaries are owned by `../../GAME_MASTER_RULES.md`.
 
 ## Stable NPC ID Convention
 
@@ -26,21 +22,9 @@ Every persistent NPC receives one stable Campaign 1 ID when the NPC is first add
 
 ## Relationship / Attraction Field Convention
 
-Relationship information is split into separate facts so that one label does not silently imply another.
+The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../GAME_MASTER_RULES.md`.
 
-- **Relationship status** records the NPC's general partnership state, such as single, dating, married, widowed, complicated, or another established status.
-- **Current partner(s)** records established current partners.
-- **Romantic interest(s)** records characters the NPC is romantically interested in when that interest has actually been established.
-- **Sexual interest(s)** records established sexual interest for explicitly adult NPCs only.
-- **Attraction toward DevilMedlar** and **Attraction toward Senpai** record target-specific attraction when relevant.
-- **Other known attractions** records established attraction toward other characters.
-- **Jealousy / rivalry** records relationship-linked jealousy, rivalry, or tension when established.
-- **Established boundaries** records important romantic, social, or intimate boundaries.
-- **Consent / availability notes** records relevant established facts without treating attraction, partnership status, friendship, favors, or a successful social roll as automatic consent.
-
-`Single` does **not** mean romantically or sexually interested. `Married` does **not** mean uninterested in everyone else. Attraction, relationship status, boundaries, and consent are separate state facts and must not be inferred from one another.
-
-For an NPC below 18, omit sexual-interest fields entirely. Age-appropriate nonsexual crush or romantic information may be recorded when relevant and must follow `../../GAME_MASTER_RULES.md`.
+Campaign 1's template below keeps explicit target-specific fields for DevilMedlar and Senpai where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
 
 ## Current Party NPCs
 
@@ -113,8 +97,6 @@ If the NPC is currently traveling with the party:
 - **Last non-party location:**
 
 When `In party: Yes`, do not duplicate moment-to-moment movement here. The last completed party location belongs in `active_game.json`; unfinished Campaign Turn movement and combat position belong in `turn_save.md` until Campaign Turn reconciliation.
-
-When an NPC leaves during an active Campaign Turn, stage the departure and intended off-party location in `turn_save.md`. Update this permanent section only during approved Campaign Turn reconciliation, or through the normal completed-save workflow when no Campaign Turn is active.
 
 ### Personality / Motivations
 
@@ -276,7 +258,7 @@ When the NPC is currently in the party, `inventory.md` expands mechanically rele
 
 Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
 
-This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `../GAME_MASTER_RULES.md`; recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Shared official-item sourcing, pricing, transaction, acquisition, and Campaign Turn rules are defined in `../GAME_MASTER_RULES.md`. Recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
 
 Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
 
@@ -295,8 +277,6 @@ Shop stock is **business inventory**, not the NPC's personal ownership list and 
 - **Current party discount / markup:**
 - **Reason for discount / markup:** Business / relationship cause such as shop policy, relationship, reputation, faction standing, or negotiation
 
-Contextual market factors such as scarcity, shortages, unusual demand, or temporary events are separate from merchant markup/discount reasons. Record them only when they are established and relevant.
-
 #### Current Shop Stock
 
 For normal standard vendor stock, the **item name itself is the direct official link** to the freely viewable official item page.
@@ -305,20 +285,15 @@ For normal standard vendor stock, the **item name itself is the direct official 
 |---|---:|---:|---|---|---|
 |  |  |  |  |  |  |
 
-For standard official shop items:
+For this table:
 
 - current availability and quantity are vendor-owned state here
-- the row records the Base Price being used for this stock listing
-- when an item is classified as a routine/basic repeat good in `routine_item_prices.md`, this row **mirrors that file's current recurring Base Price** and must not independently redefine it
-- non-routine official items may use a reasonable GM-established Base Price for that stock appearance
+- routine/basic Base Price mirrors `routine_item_prices.md` when that item is classified there
+- non-routine official items may use the shared GM-established Base Price procedure
 - `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
-- `Short Description` is compact generated storefront text, not a second mechanical definition
-- the freely viewable official source owns the standard published mechanics while the item remains shop stock; it does **not** own Campaign 1 vendor pricing
-- do not add a separate official-reference column, duplicate official-item catalog, or locally maintained detailed official-item record
+- `Short Description` is compact generated storefront text rather than an independent mechanical authority
 
-Homebrew, custom, unique, campaign-created, or mechanically modified items are outside this standard official vendor-item schema. Do not force them into this table as though they were ordinary official catalog items.
-
-During an active Campaign Turn, purchases and other persistent shop changes remain staged in `turn_save.md`; do not immediately rewrite this permanent stock table.
+Full official-stock, pricing-factor, no-double-counting, external-reference, homebrew/custom-item boundary, and purchase-staging rules remain in `../GAME_MASTER_RULES.md`.
 
 #### Services
 
@@ -359,39 +334,8 @@ Keep a compact NPC-specific history of events that explain the NPC's current sta
 
 - **Session / Campaign Turn:** Event or continuity change
 
-## NPC Inventory Transfer Rule
+## Shared Rule Authority
 
-If an NPC joins or leaves during an active Campaign Turn, stage the membership, location, and possession effects in `turn_save.md` first. The permanent steps below occur only after Confirmation Gate 1 during approved Campaign Turn reconciliation. They are not immediate mid-Turn writes.
+NPC party joins/leaves, possession reconciliation, cross-file ownership, stable cross-file references, NPC advancement, relationship-state semantics, shop/vendor behavior, fresh-start isolation, append-first preservation, and Campaign Turn staging are governed by `../GAME_MASTER_RULES.md`.
 
-### When an NPC joins the party
-
-1. Mark the NPC as `In party: Yes` in this file.
-2. Keep the NPC's master ownership list in this file.
-3. Add an expanded active inventory section for that NPC in `inventory.md` when their carried possessions need detailed bookkeeping.
-4. Reconcile any staged carried-item, resource, charge, ammunition, condition, location, or other relevant changes from `turn_save.md`.
-
-### When an NPC leaves the party
-
-1. Reconcile the NPC's final carried possessions and quantities from `inventory.md` and any staged Campaign Turn state into the master ownership list here.
-2. Mark the NPC as no longer in the party and confirm the transfer is complete.
-3. Update the NPC's off-party location when known.
-4. Only then remove or collapse that NPC's expanded party-inventory section from `inventory.md`.
-
-Do not let items disappear merely because party membership changed.
-
-## Ownership Rule
-
-- `NPC-state.md` owns each persistent NPC's stable NPC ID as part of NPC identity. Cross-file references use that ID rather than relying on a name-derived Markdown anchor.
-- `NPC-state.md` owns NPC identity, appearance, stats, HP at the last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, master personal possessions, NPC-specific story involvement, business-level shop state, current shop stock, services, and NPC-specific continuity.
-- `routine_item_prices.md` owns the routine/basic repeat-good classification and recurring Base Price used by every vendor row for those items; vendor rows here mirror that Base Price rather than redefining it.
-- Relationship status, current partners, romantic interests, sexual interests, attraction, boundaries, jealousy, and consent / availability are separate facts and must not be inferred from one another.
-- `inventory.md` owns expanded mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by **current party NPCs**. For NPCs, it does not replace the master ownership list here.
-- Shop stock remains in the shop NPC's record here as business inventory and does not belong in `inventory.md` unless an item is actually acquired by a party member.
-- `world_state.md` may reference NPCs for locations, factions, quests, clues, discoveries, and consequences without duplicating their full records.
-- `world_state.md` owns overall quest and mission state; this file owns each NPC's involvement in those quests or missions.
-- `session_log.md` records chronological events involving NPCs without replacing their current persistent state here.
-- `turn_save.md` overlays this file, `routine_item_prices.md`, and `inventory.md` during an unfinished Campaign Turn when relevant changes are staged.
-
-## Fresh-Start Rule
-
-Do not recover or reconstruct NPC canon from deleted files, repository history, previous chats, memory, or another campaign unless the player explicitly requests a specific import.
+This file contains only Campaign 1's persistent NPC master state and the Campaign 1 NPC record schema.
