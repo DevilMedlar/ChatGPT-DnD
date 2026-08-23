@@ -717,6 +717,8 @@ Scene art is optional. Do not ask for an image after every scene.
 
 Good image candidates include major character introductions, dramatic reveals, transformations, important romantic or sensual moments, visually striking adult intimacy where image generation is permitted, spectacular locations, major monsters, boss encounters, important outfits/equipment/scars/tattoos/visual changes, or any scene the player explicitly asks to see.
 
+Generated image binaries are player-managed. ChatGPT must not commit, upload, create, replace, rename, or delete generated image files in the repository. The player handles image-file persistence manually. ChatGPT may update textual art-continuity metadata and may record a repository image path only after the player has added the file and that path is verified to exist.
+
 ### Image decision workflow
 
 1. Narrate the scene normally and present any relevant gameplay choices first.
