@@ -92,7 +92,7 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 - `world_state.md` owns locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, and world consequences.
 - `NPC-state.md` owns each persistent NPC's stable NPC ID, identity, appearance, stats, conditions, relationships and attractions, party membership, off-party location, master personal possessions, shop/services record, shop stock, knowledge/secrets, NPC-specific quest involvement, and continuity history.
 - This file should reference persistent NPCs by stable NPC ID and current name and point to `NPC-state.md` rather than duplicating full NPC records.
-- A shop's **existence and location** may be referenced here. Its current stock, prices, services, and owner-specific business details belong in the relevant NPC record in `NPC-state.md`.
+- A shop's **existence and location** may be referenced here. Its current stock, services, owner-specific business details, and vendor-specific pricing state belong in the relevant NPC record in `NPC-state.md`; recurring Base Prices for items classified as routine/basic repeat goods belong in `routine_item_prices.md`.
 - `active_game.json` owns the last completed current party location.
 - `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation.
 
