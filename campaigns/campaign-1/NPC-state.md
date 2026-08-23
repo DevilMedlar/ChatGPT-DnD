@@ -276,7 +276,7 @@ When the NPC is currently in the party, `inventory.md` expands mechanically rele
 
 Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
 
-This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `GAME_MASTER_RULES.md`.
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `GAME_MASTER_RULES.md`; recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
 
 Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
 
@@ -309,7 +309,7 @@ For standard official shop items:
 
 - current availability and quantity are vendor-owned state here
 - the row records the Base Price being used for this stock listing
-- routine/basic repeat goods must use their established recurring Base Price once the dedicated campaign recurring-price reference is created
+- when an item is classified as a routine/basic repeat good in `routine_item_prices.md`, this row **mirrors that file's current recurring Base Price** and must not independently redefine it
 - non-routine official items may use a reasonable GM-established Base Price for that stock appearance
 - `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
 - `Short Description` is compact generated storefront text, not a second mechanical definition
@@ -383,13 +383,14 @@ Do not let items disappear merely because party membership changed.
 
 - `NPC-state.md` owns each persistent NPC's stable NPC ID as part of NPC identity. Cross-file references use that ID rather than relying on a name-derived Markdown anchor.
 - `NPC-state.md` owns NPC identity, appearance, stats, HP at the last completed save, abilities, conditions, relationship and attraction state, off-party location, party membership, master personal possessions, NPC-specific story involvement, business-level shop state, current shop stock, services, and NPC-specific continuity.
+- `routine_item_prices.md` owns the routine/basic repeat-good classification and recurring Base Price used by every vendor row for those items; vendor rows here mirror that Base Price rather than redefining it.
 - Relationship status, current partners, romantic interests, sexual interests, attraction, boundaries, jealousy, and consent / availability are separate facts and must not be inferred from one another.
 - `inventory.md` owns expanded mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by **current party NPCs**. For NPCs, it does not replace the master ownership list here.
 - Shop stock remains in the shop NPC's record here as business inventory and does not belong in `inventory.md` unless an item is actually acquired by a party member.
 - `world_state.md` may reference NPCs for locations, factions, quests, clues, discoveries, and consequences without duplicating their full records.
 - `world_state.md` owns overall quest and mission state; this file owns each NPC's involvement in those quests or missions.
 - `session_log.md` records chronological events involving NPCs without replacing their current persistent state here.
-- `turn_save.md` overlays this file and `inventory.md` during an unfinished Campaign Turn.
+- `turn_save.md` overlays this file, `routine_item_prices.md`, and `inventory.md` during an unfinished Campaign Turn when relevant changes are staged.
 
 ## Fresh-Start Rule
 

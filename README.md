@@ -25,6 +25,7 @@ campaigns/
     turn_save.md
     character_sheet.md
     NPC-state.md
+    routine_item_prices.md
     inventory.md
     world_state.md
     session_log.md
@@ -32,7 +33,7 @@ campaigns/
       art_log.md
 ```
 
-Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, or art-continuity state unless the player explicitly requests it.
+Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, pricing-reference, or art-continuity state unless the player explicitly requests it.
 
 Within each campaign, persistent NPCs receive stable campaign-local IDs such as `NPC-0001` in that campaign's `NPC-state.md`. Cross-file references use the stable NPC ID plus the NPC's current name for readability; names and Markdown headings are not identity keys.
 

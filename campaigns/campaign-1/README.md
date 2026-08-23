@@ -16,11 +16,12 @@ At initialization, Campaign 1 begins in character creation before the first Camp
 
 ## Canonical files
 
-- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, character-creation checkpoint saves, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, advancement rules, and persistence rules.
+- `GAME_MASTER_RULES.md` — campaign rules, mechanics, Campaign Turn lifecycle, character-creation checkpoint saves, save confirmations, recovery behavior, adult-content rules, image workflow, file ownership, advancement rules, vendor pricing procedure, and persistence rules.
 - `active_game.json` — authoritative last completed Campaign 1 live state, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, character-creation status, completed PC Level/XP advancement state, and save revision.
-- `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending transfers, final turn review, permanent-save verification, and reset approval. Character creation does not use this ledger before gameplay begins.
+- `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending shop transactions, pending transfers, final turn review, permanent-save verification, and reset approval. Character creation does not use this ledger before gameplay begins.
 - `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, synchronized human-readable Level/XP mirrors, appearance, personal state, and established PC relationship continuity.
 - `NPC-state.md` — authoritative master database for persistent NPC stable IDs, identity, appearance, stats, abilities, conditions, personality, relationship and attraction state, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, NPC knowledge/secrets, and NPC-specific continuity.
+- `routine_item_prices.md` — authoritative Campaign 1 classification and recurring Base Price reference for routine/basic repeat goods. Vendor stock rows mirror these Base Prices; the file does not own quantity, mechanics, merchant modifiers, Final Price, or inventory.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, and lightweight references to persistent NPCs by stable NPC ID and current name where they matter to world state.
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn checkpoints, including the completed save revision for each checkpoint.
@@ -32,10 +33,11 @@ Persistent NPC information should be referenced rather than duplicated across mu
 
 - `world_state.md` answers **where and why an NPC matters to the world**, references persistent NPCs by stable NPC ID and current name, and points to `NPC-state.md` for the full record.
 - `NPC-state.md` answers **who the NPC is**, owns the NPC's stable ID, persistent mechanical and relationship state, where they can be found when away from the party, what they own, their shop/services if applicable, and their personal role in quests or missions.
+- `routine_item_prices.md` answers **which shop goods use a campaign-wide recurring Base Price and what that Base Price currently is**. Vendor rows mirror that value for those items; merchant-specific differences belong in Final Price modifiers rather than competing Base Prices.
 - `inventory.md` answers **what the active party is carrying and how those items currently work**, including expanded bookkeeping for current party NPC possessions.
 - Shop stock stays in the relevant NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
 - `world_state.md` owns the overall quest/mission state; `NPC-state.md` owns each NPC's involvement in that quest or mission.
-- `turn_save.md` temporarily overlays NPC HP, positions, item quantities, charges, ammunition, conditions, and similar changes during an unfinished Campaign Turn.
+- `turn_save.md` temporarily overlays NPC HP, positions, item quantities, charges, ammunition, conditions, shop transactions, routine-price changes when applicable, and similar changes during an unfinished Campaign Turn.
 
 If an NPC joins or leaves during an active Campaign Turn, stage the party-membership, location, and inventory effects in `turn_save.md`; do not update the permanent NPC/inventory records merely because the transition occurred in the fiction.
 

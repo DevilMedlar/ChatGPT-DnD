@@ -249,7 +249,7 @@ After each resolved Step:
 5. when a shop transaction occurs, update `Pending Shop Transactions` with the connected vendor-stock, currency, inventory, pricing, and acquisition-snapshot state needed for reconciliation
 6. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
 7. do not increment `save_revision`
-8. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
+8. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, routine-item Base Price changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
@@ -310,10 +310,11 @@ After Confirmation Gate 1 is approved:
 2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
 3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values that will be stored authoritatively in `active_game.json.character_advancement`
 4. when a shop purchase occurred, reconcile the connected transaction together: update the shop business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item to the buyer's `inventory.md` record, preserve the acquisition-time mechanics snapshot, apply the approved compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC; do not permanently apply only one side of the transaction
-5. append the completed Campaign Turn checkpoint to `session_log.md`
-6. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, the approved final `Current Scene` as `current_scene_name`, the completed location, and the authoritative completed PC advancement state
-7. increment `save_revision` exactly once for the completed permanent save
-8. do **not** reset the Turn ledger as part of this permanent save
+5. when a routine/basic recurring Base Price changed, update `routine_item_prices.md` and every currently stocked vendor row that mirrors that item's Base Price in the same completed save
+6. append the completed Campaign Turn checkpoint to `session_log.md`
+7. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, the approved final `Current Scene` as `current_scene_name`, the completed location, and the authoritative completed PC advancement state
+8. increment `save_revision` exactly once for the completed permanent save
+9. do **not** reset the Turn ledger as part of this permanent save
 
 Whenever tooling permits an atomic multi-file commit, commit the supporting permanent-state updates, `session_log.md`, and completed `active_game.json` revision together in one permanent-save commit. The complete temporary ledger remains intact.
 
@@ -331,6 +332,7 @@ Verify at minimum:
 - when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
 - expected inventory/resource changes landed correctly
 - when a shop purchase occurred, vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and stack result all match the approved transaction
+- when a routine/basic item is stocked or its recurring Base Price changes, the vendor row's Base Price exactly matches the authoritative current value in `routine_item_prices.md`
 - required NPC master/detail records agree when applicable
 - when persistent NPCs are created or cross-referenced, stable NPC IDs are unique, unchanged, and agree across every affected file
 - required world/clue changes landed correctly
@@ -496,7 +498,9 @@ Do not add a separate official-reference column, a duplicate local official-item
 
 `Base Price` is the campaign starting price before the applicable vendor or transaction modifiers.
 
-Routine/basic repeat goods must reuse the established recurring Base Price for that specific item type whenever stocked. This rule applies only to items classified as routine/basic repeat goods; it does not require every item appearing at multiple merchants to share one Base Price. The dedicated campaign-owned file/schema that will persist those recurring routine prices is intentionally deferred to a separate follow-up architecture task.
+`routine_item_prices.md` is authoritative for which items are classified as routine/basic repeat goods for recurring-price purposes and for each such item's current recurring Base Price. A routine/basic item must use that established Base Price whenever stocked. Every vendor stock row for that routine item mirrors the value from `routine_item_prices.md` and must not independently redefine it.
+
+This recurring-price rule applies only to items explicitly classified in `routine_item_prices.md`; it does not require every item appearing at multiple merchants to share one Base Price. If an item has no entry there, do not claim it already has an established routine recurring Base Price. Establish the entry through the appropriate completed-save workflow before relying on routine-price authority.
 
 For other official items, the GM may establish a reasonable Base Price when the item appears in stock. The price should be sensible rather than arbitrary noise. Relevant considerations can include rarity, mechanical power, usefulness, duration or number of uses, whether the item is consumed, replaceability, local scarcity, item category, and comparable established campaign prices. These non-routine items do not require a permanent global Base Price registry.
 
@@ -509,6 +513,8 @@ Merchant markup/discount is business or relationship pricing, such as ordinary s
 Contextual market factors include scarcity, shortages, unusual demand, temporary events, and similar established market circumstances. A contextual factor is not automatically a merchant markup/discount.
 
 A pricing factor must not be counted more than once in the same stock listing or transaction. If scarcity, rarity, local conditions, or another factor already affected that listing's Base Price, the same factor must not be applied again to Final Price. A distinct merchant markup or discount may still apply afterward because it is a different pricing factor.
+
+A change to an established Base Price in `routine_item_prices.md` is campaign-wide, not a single-vendor adjustment. When that recurring Base Price changes, every currently stocked vendor row for that item must be reconciled to the new mirrored Base Price in the same completed save whenever such rows exist. Vendor-specific price differences continue to use Final Price modifiers instead.
 
 The exact stacking, ordering, and rounding rules for multiple distinct modifiers remain intentionally undecided until Campaign 1 establishes them.
 
@@ -618,7 +624,7 @@ Do not let possessions disappear merely because party membership changed.
 
 `world_state.md` owns overall quest/mission state. `NPC-state.md` owns the NPC's personal involvement, motives, promises, information, rewards offered, conditions, and related continuity.
 
-A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns persistent business state, current shop stock, vendor pricing state, storefront presentation fields, and services.
+A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns persistent business state, current shop stock, vendor pricing state, storefront presentation fields, and services. `routine_item_prices.md` separately owns the recurring Base Price authority for items explicitly classified there as routine/basic repeat goods.
 
 ## Player agency
 
@@ -757,6 +763,7 @@ Within Campaign 1, file ownership is:
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, `Pending Shop Transactions`, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
+- `routine_item_prices.md` — authoritative Campaign 1 classification and recurring Base Price reference for routine/basic repeat goods. Vendor rows mirror these Base Prices; this file does not own item mechanics, vendor quantities, merchant modifiers, Final Price, or inventory.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn history.
@@ -775,6 +782,7 @@ Typical destinations include:
 
 - `character_sheet.md` — DevilMedlar/Senpai HP, conditions, abilities, character resources, synchronized human-readable Level/XP mirrors, and lasting personal state
 - `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
+- `routine_item_prices.md` — explicit routine/basic classification changes and recurring Base Price additions or revisions, together with any required vendor Base Price mirror updates
 - `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, and other possessions for DevilMedlar, Senpai, and current party NPCs
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
 - `session_log.md` — chronological character-creation checkpoint or completed Campaign Turn summary and continuity-critical events
@@ -788,7 +796,7 @@ For a **current party NPC**, an ownership-changing item event may require both `
 
 Examples include consuming or gaining an item, spending or receiving currency, losing ammunition, transferring equipment, changing quantities, or permanently changing charges/uses.
 
-For a **shop purchase**, reconcile the connected transaction rather than updating isolated pieces: update the shop NPC's business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item and acquisition snapshot to the appropriate `inventory.md` record, apply the compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC. Shop stock must not be treated as the shopkeeper's personal carried possessions.
+For a **shop purchase**, reconcile the connected transaction rather than updating isolated pieces: update the shop NPC's business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item and acquisition snapshot to the appropriate `inventory.md` record, apply the compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC. For a routine/basic repeat good, verify that the shop row's Base Price matches `routine_item_prices.md`. Shop stock must not be treated as the shopkeeper's personal carried possessions.
 
 Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
 
