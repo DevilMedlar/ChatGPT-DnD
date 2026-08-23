@@ -22,8 +22,9 @@ Model shops more like a game vendor screen while avoiding a large local copy of 
 12. shop-specific markup or discount is applied after Base Price to determine the Final Price
 13. a pricing factor must not be counted twice in the same stock listing or transaction
 14. when an official item is purchased, the mechanically relevant facts needed to use that owned item are snapshotted into `inventory.md`; later changes to the external official page do not silently rewrite the already-owned campaign item
+15. when this design is merged into Campaign 1, routine/basic Base Prices, Campaign Turn purchase staging, inventory stack compatibility, and merchant-vs-context pricing separation must be integrated according to the **Canonical Merge Requirements** in this mock
 
-This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, exact markup math, restock math, buy-back rules, exact shop-generation rules, or a rigid formula for GM-generated prices.
+This is still a design mock. It does **not** finalize the campaign's D&D edition/rules baseline, exact markup math, restock math, buy-back rules, exact shop-generation rules, the permanent routine-price file/schema, or a rigid formula for GM-generated prices.
 
 ---
 
@@ -80,7 +81,9 @@ Before this design becomes Campaign 1 canon, official shop references should be 
 - **Buy-back policy:** Example only; not finalized
 - **Base markup / discount rules:** Example only; not finalized
 - **Current party discount / markup:** Example only; not finalized
-- **Reason for discount / markup:** Relationship, reputation, faction standing, negotiation, event, scarcity, or another established cause
+- **Reason for discount / markup:** Relationship, reputation, faction standing, negotiation, shop policy, or another established business/relationship cause
+
+Contextual market factors such as scarcity, shortages, demand, or temporary events are handled separately under the pricing model. They are not automatically merchant markup/discount reasons.
 
 ---
 
@@ -112,6 +115,8 @@ This rule applies **only** to items classified as routine/basic repeat goods. It
 Different merchants may still reach different Final Prices through their own applicable markup or discount rules.
 
 This prevents common goods from being randomly repriced every time they appear without forcing the same pricing behavior onto rarer or less routine items.
+
+When this architecture is merged into Campaign 1, established recurring Base Prices for routine/basic shop items must persist in a dedicated campaign-owned reference, likely a small `.md` file or equivalent structured list. The exact filename, schema, included item set, and maintenance rules are intentionally deferred until that system is designed. It is expected to focus on ordinary items that players commonly buy repeatedly, in quantity, or across multiple shops.
 
 ### 2. Other Official Items
 
@@ -161,6 +166,8 @@ Contextual market factors can also affect pricing, such as:
 - unusual demand
 - temporary events
 - another established market circumstance
+
+A contextual market factor is not automatically a merchant markup/discount. When this design is merged into the canonical vendor system, the two concepts must remain distinct even if both ultimately affect the Final Price.
 
 ### No Double Counting Rule
 
@@ -316,7 +323,7 @@ Usable mechanics freely viewable?
 
 # Purchased Official Item Transition
 
-When an official shop item is bought:
+When an official shop item is bought, the transaction conceptually includes all linked state changes:
 
 ```text
 Base Price used for this stock listing
@@ -327,10 +334,16 @@ Final Transaction Price
         ↓ purchase
 Vendor Qty decreases
         +
+Buyer currency decreases by Final Transaction Price
+        +
 Party Inventory gains the purchased official item
         ↓
 Snapshot mechanically relevant owned-item facts into inventory.md
 ```
+
+The mock shows the resulting transaction state for clarity. During an active Campaign Turn, canonical implementation must stage the purchase through `turn_save.md` rather than immediately mutating permanent campaign files. The exact `turn_save.md` fields/functions for shopping are deferred until this architecture is merged.
+
+On approved Campaign Turn reconciliation, the staged purchase must reconcile the connected state together, including the vendor quantity change, buyer currency expenditure, acquired inventory state, and acquisition snapshot. The purchase must not permanently apply only one side of the transaction.
 
 ## Acquisition Snapshot Rule
 
@@ -378,6 +391,26 @@ keeps its established inventory mechanics
         ↓
 unless Campaign 1 explicitly changes or updates that item through play or an approved rules change
 ```
+
+### Inventory Stack Compatibility Rule
+
+A newly acquired item may merge into an existing inventory quantity/stack only when the existing owned item and the newly acquired item have compatible established mechanics and relevant instance state.
+
+If two items share the same name but their recorded mechanics differ, they must remain separate inventory entries unless Campaign 1 explicitly reconciles them to the same mechanical version.
+
+For example:
+
+```text
+Owned Longsword - mechanics snapshot A
+        +
+New Longsword - mechanics snapshot B
+        ↓
+Do NOT automatically merge into Longsword x2
+        ↓
+Keep separate entries until explicitly reconciled
+```
+
+Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
 
 The shop's responsibility ends after the transaction and acquisition transfer are reconciled. Later inventory-specific or non-vendor changes belong outside vendor mechanics.
 
@@ -446,12 +479,15 @@ Storefront Presentation
 
 Campaign Pricing
 ├── routine/basic repeat item
-│   └── MUST reuse that item's established recurring Base Price
+│   ├── MUST reuse that item's established recurring Base Price
+│   └── canonical merge must persist that price in a dedicated campaign-owned common-item reference
 │
 └── other official item
     └── GM generates reasonable Base Price when stocked
 
 Pricing Factors
+├── merchant markup/discount -> business or relationship pricing
+├── contextual factors -> scarcity / shortage / demand / events / similar market conditions
 └── each distinct factor may affect a listing/transaction no more than once
 
 Vendor / Shop Record
@@ -471,12 +507,19 @@ Vendor / Shop Record
     ├── derived Key Mechanics
     └── generated Short Description
 
-Transaction
-└── Base Price + applicable distinct modifiers -> Final Price
+Transaction during active Campaign Turn
+└── stage in turn_save.md
+    ├── vendor Qty decrease
+    ├── buyer currency decrease
+    ├── inventory acquisition
+    └── acquisition snapshot
+        ↓
+    approved reconciliation applies connected permanent changes
 
-Purchase
-└── relevant mechanics snapshot -> inventory.md
-    └── owned item remains mechanically stable unless Campaign 1 explicitly changes it
+Owned Inventory
+├── relevant mechanics snapshot -> inventory.md
+├── external page changes do not silently rewrite owned mechanics
+└── only mechanically compatible copies may automatically merge into one stack
 ```
 
 ### Ordinary Official Item Details
@@ -488,6 +531,31 @@ Click linked Item name
         ↓
 Freely viewable direct official item page
 ```
+
+---
+
+# Canonical Merge Requirements - Deferred Integration Checklist
+
+This section records design requirements that must be handled when this mock is eventually merged into Campaign 1. It does **not** make those canonical-file changes now.
+
+1. **Routine/basic Base Price persistence**
+   - Create a dedicated campaign-owned `.md` file or equivalent structured reference for recurring Base Prices of routine/basic shop items.
+   - It should primarily cover ordinary items commonly purchased repeatedly, in quantity, or across multiple shops.
+   - Exact filename, schema, item-selection rules, and maintenance behavior are intentionally deferred until that system is designed.
+
+2. **Campaign Turn purchase staging**
+   - During an active Campaign Turn, a purchase must stage through `turn_save.md` rather than immediately rewriting permanent vendor/inventory state.
+   - The staged transaction must preserve the connected effects needed for reconciliation: vendor quantity decrease, buyer currency decrease by the Final Transaction Price, inventory acquisition, and the acquisition-time mechanics snapshot.
+   - Exact `turn_save.md` shopping fields/functions are intentionally deferred until merger.
+
+3. **Inventory stack compatibility**
+   - When permanent inventory is reconciled, a newly acquired copy may merge with an existing quantity only if its established mechanics and relevant instance state are compatible.
+   - Same-name items with mechanically different snapshots remain separate entries unless Campaign 1 explicitly reconciles them to the same mechanical version.
+
+4. **Merchant pricing vs. contextual market pricing**
+   - Canonical merchant markup/discount reasons should remain business/relationship factors such as shop policy, relationships, reputation, faction standing, or negotiation.
+   - Scarcity, shortages, unusual demand, temporary events, and similar conditions belong to contextual market pricing rather than automatically being classified as merchant markup/discount reasons.
+   - The no-double-counting rule still applies: if a contextual factor has already affected Base Price, that same factor must not be applied again to Final Price.
 
 ---
 
@@ -503,13 +571,17 @@ Freely viewable direct official item page
 - Makes `Category` and `Key Mechanics` derived storefront data instead of competing mechanical authority.
 - Makes `Short Description` generated storefront presentation rather than permanent mechanical truth.
 - Requires routine/basic repeat goods to use their established recurring Base Price without extending that rule to non-routine items.
+- Preserves a future canonical home requirement for routine/basic recurring Base Prices without prematurely choosing its exact schema.
 - Allows rarer or less routine official items to receive reasonable GM-generated Base Prices without requiring a global price database.
+- Separates merchant markup/discount reasons from contextual market pricing factors.
 - Prevents the same scarcity, rarity, or other pricing factor from being counted twice in one listing/transaction.
 - Lets vendor markup/discount produce the Final Price after Base Price is established.
 - Keeps current quantity vendor-owned.
+- Stages future canonical purchases through `turn_save.md` so quantity, currency, and acquisition state reconcile together.
 - Leaves full standard official mechanics on the freely viewable official item page while the item remains shop stock instead of copying them into `NPC-state.md`.
 - Snapshots relevant mechanics into `inventory.md` when the item is acquired, preserving continuity for the owned campaign item.
 - Prevents later external webpage changes from silently rewriting previously acquired equipment.
+- Prevents mechanically different same-name items from being silently collapsed into one inventory stack.
 - Rejects inaccessible/paywalled item pages before they become normal shop stock.
 - Keeps homebrew/custom/modified items completely outside vendor mechanics.
 
@@ -519,6 +591,8 @@ Freely viewable direct official item page
 - External official URLs or access rules can change, so links may occasionally need rechecking or replacement.
 - We still need exact markup/discount stacking and rounding rules for multiple **distinct** modifiers.
 - The mock intentionally does not define a rigid formula for GM-generated Base Prices; pricing should remain reasonable and scale with item strength, rarity, usefulness, and comparable established prices.
+- The permanent filename/schema for the routine/basic recurring-price reference remains intentionally deferred.
+- Exact `turn_save.md` shopping fields/functions remain intentionally deferred until canonical merger.
 
 ---
 
