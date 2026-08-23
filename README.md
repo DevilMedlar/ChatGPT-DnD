@@ -2,6 +2,23 @@
 
 A persistent, choice-driven adult fantasy RPG repository for D&D-style campaigns played through ChatGPT, with d20 mechanics, persistent saves, relationship continuity, and optional generated scene art.
 
+## Rule hierarchy
+
+Shared rules are intentionally kept **outside** individual numbered campaign folders so a new campaign does not require another full rules audit or copy of the same rulebook.
+
+- `GAME_MASTER_RULES.md` — repository-wide gameplay mechanics and behavior: core premise, adult-content rules, homebrew lineage framework, character-creation requirements, d20 resolution, advancement math, combat, player agency, dice ownership, image-generation behavior, reference-art behavior, and general priority order.
+- `campaigns/GAME_MASTER_RULES.md` — shared numbered-campaign architecture: fresh-campaign isolation, append-first preservation, PC advancement state ownership, Campaign Turn lifecycle, character-creation checkpoint saves, file ownership, NPC persistence, vendor/shop persistence, image metadata staging, save revisions, verification, recovery, and session-log behavior.
+- `campaigns/campaign-N/GAME_MASTER_RULES.md` — optional **campaign-local overlay only**. It contains campaign-specific canon, exceptions, or overrides that would be wrong to impose on every campaign. It must not become another copy of the shared rulebooks.
+
+When **rules themselves conflict**, use this order:
+
+1. the player's newest explicit instruction for that campaign
+2. that campaign's local rule overlay, when present
+3. `campaigns/GAME_MASTER_RULES.md`
+4. root `GAME_MASTER_RULES.md`
+
+The campaign's canonical state files are not a lower-priority rule layer. Each state file remains authoritative for the facts and mutable state assigned to it by the ownership rules. Read rules and state together rather than using a generic rule to overwrite established state that belongs to another authority.
+
 ## Core canon rule
 
 The files on the repository's current branch are the campaign source of truth.
@@ -12,15 +29,19 @@ The files on the repository's current branch are the campaign source of truth.
 - Repository history may be consulted only for reusable **framework, file structure, mechanics, and operating instructions** when the player explicitly allows it.
 - Prior chats are non-canonical unless the player explicitly imports information from them.
 
+Detailed enforcement belongs to the shared rule files above rather than being duplicated here.
+
 ## Repository layout
 
 ```text
+GAME_MASTER_RULES.md
 campaigns/
   README.md
+  GAME_MASTER_RULES.md
   active_campaign.json
   campaign-1/
     README.md
-    GAME_MASTER_RULES.md
+    GAME_MASTER_RULES.md   # Campaign 1-only overlay
     active_game.json
     turn_save.md
     character_sheet.md
@@ -33,42 +54,44 @@ campaigns/
       art_log.md
 ```
 
-Future campaigns should use sibling folders such as `campaign-2`, `campaign-3`, and so on. Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, pricing-reference, or art-continuity state unless the player explicitly requests it.
+Future campaigns use sibling folders such as `campaign-2`, `campaign-3`, and so on. They inherit the root and `campaigns/` rulebooks automatically. A new campaign needs a local `GAME_MASTER_RULES.md` only when it has campaign-specific rules or canon that belong in an overlay.
+
+Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, pricing-reference, or art-continuity state unless the player explicitly requests it.
+
+## Active campaign
+
+`campaigns/active_campaign.json` selects the campaign currently in play. It is a pointer, not a duplicate live save.
+
+Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**. During an unfinished Campaign Turn, the live Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`.
+
+Before continuing play:
+
+1. read the shared rule hierarchy
+2. read `campaigns/active_campaign.json`
+3. follow its pointer to the active numbered campaign
+4. read that campaign's local overlay if one exists
+5. read `active_game.json`, `turn_save.md`, and the other canonical state files needed for the scene
+
+## Campaign-local identity and state
 
 Within each campaign, persistent NPCs receive stable campaign-local IDs such as `NPC-0001` in that campaign's `NPC-state.md`. Cross-file references use the stable NPC ID plus the NPC's current name for readability; names and Markdown headings are not identity keys.
 
-`campaigns/active_campaign.json` selects the campaign currently in play. Each campaign's own `active_game.json` is authoritative for that campaign's **last completed live save**: session, completed Campaign Turn, `current_scene_name`, location, completed PC advancement state, and save revision. During an unfinished Campaign Turn, the live Campaign Turn number, Current Step, and Current Scene belong in that campaign's `turn_save.md`. Campaign 1 saves to Campaign 1, Campaign 2 saves to Campaign 2, and so on.
+Each campaign owns its own routine-item Base Price reference, inventory, world state, chronological session history, temporary Campaign Turn ledger, and visual-continuity log.
 
-A **Campaign Turn** is the campaign persistence/gameplay unit. One Campaign Turn may contain many numbered steps, including conversation, exploration, multiple combat rounds, and every combatant's individual D&D combat turns. Ending a creature's combat turn, ending a combat round, or even ending combat does not by itself end the Campaign Turn.
+## Campaign Turn summary
 
-Each campaign's `turn_save.md` is the temporary authoritative ledger for the **current unfinished Campaign Turn**. While its status is `in_progress`, recorded in-turn changes overlay the last completed state in `active_game.json` and the permanent campaign files. The ledger remains intact through the full Campaign Turn instead of pushing unresolved mid-turn state into permanent files.
+A **Campaign Turn** is the persistence/gameplay unit. One Campaign Turn may contain many numbered Steps, including conversation, exploration, multiple combat rounds, and every combatant's individual D&D combat turns. Ending a creature's combat turn, ending a combat round, or even ending combat does not by itself end the Campaign Turn.
 
-## Adult campaign style
+Each campaign's `turn_save.md` remains the temporary authoritative ledger until the full Campaign Turn is intentionally completed, reviewed, confirmed, reconciled, verified, and separately approved for reset.
 
-- Fantasy adventure may include combat, exploration, danger, mystery, humor, social play, romance, flirting, sexual tension, consensual sexual situations, and nudity.
-- Sexual material can be a meaningful part of the campaign without being forced into every scene.
-- Characters and NPCs may be under 18 for ordinary story roles. Under-18 characters may have age-appropriate crushes or romantic feelings. Teen crushes may include awkward, private, confusing, or "too grown-up to talk about" feelings shown through nonsexual cues such as embarrassment, looking away, changing the subject, becoming self-conscious, or trying too hard to impress the crush. The narration does not identify those private thoughts as sexual, describe fantasies or arousal, or otherwise sexualize the minor.
-- Every character involved in sexual content, nudity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+**.
-- Current sexual and reproductive content must be consensual. Nonconsensual abuse may exist only as non-erotic, non-graphic background/backstory, history, or villain motivation and must never be presented as erotic entertainment.
-- Generated images may include adult sensuality or nudity when allowed by the image system. Nude or sexualized depicted characters must be explicitly 18+.
+The complete lifecycle and recovery behavior are owned by `campaigns/GAME_MASTER_RULES.md`.
 
-## Image play loop
+## Images
 
-Not every scene needs an image.
+The repository-wide image play loop and player-managed generated-image-binary rule are owned by root `GAME_MASTER_RULES.md`.
 
-1. ChatGPT narrates the scene normally and presents any relevant choices.
-2. If the scene genuinely deserves an image, ChatGPT ends the text with `Make image? Yes / No`.
-3. If the player replies `Yes`, ChatGPT generates the image before resolving any gameplay choice for that scene. After the image is shown, the player makes the choices.
-4. If the player replies `No`, ChatGPT skips image generation and immediately parses anything after `No` as the player's choices or freeform action, including compact replies such as `No, A, 1, E) ...`.
-5. Before generating recurring characters, equipment, locations, transformations, scars, tattoos, or other established visuals, consult that campaign's `art/art_log.md`.
-6. Textual campaign canon overrides conflicting generated-art details unless the player explicitly adopts the variation.
+Each campaign's `art/art_log.md` owns that campaign's visual-continuity metadata. Image-path and visual-canon staging during Campaign Turns follows `campaigns/GAME_MASTER_RULES.md`.
 
-## Persistence
+## Preservation
 
-Before continuing a campaign, read `campaigns/active_campaign.json`, follow its pointer to the active campaign, then read that campaign's `active_game.json`, `turn_save.md`, and any other canonical files needed for the scene.
-
-If `turn_save.md` is not `ready`, follow that campaign's recovery rules before starting a new Campaign Turn. During an active Campaign Turn, stage step-by-step changes in `turn_save.md`; do not finalize permanent campaign state merely because a combatant turn, combat round, or combat encounter ends.
-
-When the **full Campaign Turn** ends, freeze the ledger and verify its final effective state and planned permanent transfers. Permanent reconciliation begins only after the player confirms the save review. After the permanent save is written, re-check the affected files and report that the save is complete while the temporary ledger is still intact. Reset `turn_save.md` only after a separate player confirmation.
-
-Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records.
+Preserve established history by default. Add new information instead of casually rewriting, compressing, reorganizing, or deleting earlier campaign records. Detailed save, verification, correction, and recovery rules live in `campaigns/GAME_MASTER_RULES.md`.

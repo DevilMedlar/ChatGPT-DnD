@@ -87,19 +87,8 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 - DevilMedlar and Senpai's family name will be decided during character creation.
 - Remaining background-history details will be established during character creation.
 
-## NPC / World Ownership Rule
+## Shared Rule Authority
 
-- `world_state.md` owns locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, and world consequences.
-- `NPC-state.md` owns each persistent NPC's stable NPC ID, identity, appearance, stats, conditions, relationships and attractions, party membership, off-party location, master personal possessions, shop/services record, shop stock, knowledge/secrets, NPC-specific quest involvement, and continuity history.
-- This file should reference persistent NPCs by stable NPC ID and current name and point to `NPC-state.md` rather than duplicating full NPC records.
-- A shop's **existence and location** may be referenced here. Its current stock, prices, services, and owner-specific business details belong in the relevant NPC record in `NPC-state.md`.
-- `active_game.json` owns the last completed current party location.
-- `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation.
+Cross-file NPC identity, NPC/world ownership boundaries, shop/world ownership boundaries, completed-vs-in-turn location authority, fresh-campaign isolation, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
 
-## Continuity Rule
-
-Add new world information only when it is established during this campaign. Keep prior established facts unless they are explicitly corrected or superseded. Do not reconstruct world or story canon from deleted files, repository history, previous chats, memory, or other campaigns unless the player explicitly requests a specific import.
-
-`NPC-state.md` owns persistent NPC identity, stable NPC IDs, statistics, condition, relationships, party membership, master possessions, and NPC-specific continuity. This file should reference NPCs by stable NPC ID and current name only where they matter to locations, factions, quests, clues, discoveries, or world consequences rather than duplicating their full records.
-
-`active_game.json` owns the last completed current party location. `turn_save.md` owns temporary Campaign Turn movement and position changes until full Campaign Turn reconciliation. `world_state.md` owns the persistent facts about locations themselves.
+This file stores only Campaign 1's world-level canon and world-state schemas. `NPC-state.md` remains the persistent NPC master; `active_game.json` owns the last completed party location; `turn_save.md` owns temporary Campaign Turn movement and position changes.

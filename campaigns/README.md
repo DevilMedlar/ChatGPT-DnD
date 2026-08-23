@@ -1,6 +1,18 @@
 # Campaigns
 
-Each campaign lives in its own numbered folder and keeps its own rules, character state, NPC state, world state, inventory, session history, Campaign Turn state, and art continuity.
+Each numbered campaign lives in its own folder and keeps its own **canon and mutable state**. Shared numbered-campaign operating rules live here in `GAME_MASTER_RULES.md` so future campaigns do not need another full copy of the persistence architecture.
+
+Repository-wide gameplay rules live one level above in `../GAME_MASTER_RULES.md`.
+
+## Shared rule inheritance
+
+Every numbered campaign inherits:
+
+1. `../GAME_MASTER_RULES.md` — repository-wide gameplay rules
+2. `GAME_MASTER_RULES.md` — shared numbered-campaign persistence and ownership rules
+3. an optional local `campaign-N/GAME_MASTER_RULES.md` — campaign-specific canon, exceptions, or overrides only
+
+A local campaign rule file must not duplicate the shared rulebooks merely for convenience.
 
 ## Active campaign
 
@@ -17,52 +29,41 @@ Campaign saves are isolated by folder:
 
 Changing campaigns changes the pointer in `active_campaign.json`; it does not move, merge, or copy campaign state.
 
+## Campaign-local identity
+
 Each campaign assigns persistent NPCs stable campaign-local IDs such as `NPC-0001` in its own `NPC-state.md`. NPC IDs are never reused within that campaign, and cross-file references use the stable NPC ID plus the NPC's current name instead of relying on name-derived Markdown headings or anchors.
+
+Detailed NPC ownership, party-membership reconciliation, vendor state, and cross-file behavior are defined in this directory's `GAME_MASTER_RULES.md`.
 
 ## Campaign Turn staging
 
-Each campaign also owns its own `turn_save.md`.
+Each campaign owns its own `turn_save.md`.
 
-A **Campaign Turn** is the campaign persistence/gameplay unit. It may contain any number of steps, including conversation, exploration, multiple combat rounds, and individual combatant turns. A combatant ending its D&D turn, a combat round ending, or combat itself ending does not automatically finish the Campaign Turn.
+A **Campaign Turn** is the campaign persistence/gameplay unit. It may contain any number of Steps, including conversation, exploration, multiple combat rounds, and individual combatant turns. A combatant ending its D&D turn, a combat round ending, or combat itself ending does not automatically finish the Campaign Turn.
 
-`active_game.json` represents the campaign's last completed save and stores the completed/pre-game scene label as `current_scene_name`. `turn_save.md` stages the current unfinished Campaign Turn, including its Current Step, Current Scene, chronological events, and the compact latest effective in-turn state needed to continue or recover it.
+`active_game.json` represents the campaign's last completed save. `turn_save.md` stages the current unfinished Campaign Turn and overlays that permanent state until the Turn is intentionally completed.
 
-While `turn_save.md` is `in_progress`, its current in-turn state overlays the last completed permanent state. The full Campaign Turn stays in the temporary ledger until the Campaign Turn itself is intentionally ended.
+The complete lifecycle, status meanings, confirmation gates, reconciliation, verification, recovery, reset rules, roll-recording format, and character-creation checkpoint workflow are owned by `GAME_MASTER_RULES.md` here rather than repeated inside every numbered campaign.
 
-At full Campaign Turn end, the ledger is frozen for final review. The player must confirm the final effective state and exact planned permanent transfers before permanent reconciliation begins. After the permanent save is written, the affected files are checked again. The completed temporary ledger remains intact until the player separately confirms its reset.
-
-Detailed Campaign Turn lifecycle, status meanings, reconciliation, verification, and recovery behavior belong in each campaign's `GAME_MASTER_RULES.md`. `turn_save.md` carries the live ledger and review/verification fields rather than duplicating the full rulebook.
-
-## Folder convention
-
-```text
-campaign-1/
-campaign-2/
-campaign-3/
-...
-```
-
-Campaigns do not share canon unless the player explicitly imports or connects something between them.
-
-## Fresh-campaign rule
+## Fresh campaigns
 
 A newly created campaign begins only with facts written into that campaign's current files or established by the player during current play.
 
-Do not import or reconstruct character data, NPCs, items, locations, relationships, quests, story events, secrets, or other campaign canon from another campaign, deleted material, prior chats, or repository history.
+Do not import or reconstruct character data, NPCs, items, locations, relationships, quests, story events, secrets, or other campaign canon from another campaign, deleted material, prior chats, or repository history unless the player explicitly requests a specific import.
 
-Repository history may be used only for reusable framework, mechanics, file structure, or operating instructions when the player explicitly requests that use. Framework recovery never makes historical campaign content canon.
+The detailed fresh-start and append-first preservation rules are owned by `GAME_MASTER_RULES.md`.
 
 ## Campaign structure
 
-Each campaign should contain:
+A normal numbered campaign should contain:
 
 ```text
 README.md
-GAME_MASTER_RULES.md
 active_game.json
 turn_save.md
 character_sheet.md
 NPC-state.md
+routine_item_prices.md
 inventory.md
 world_state.md
 session_log.md
@@ -70,4 +71,23 @@ art/
   art_log.md
 ```
 
-The campaign's `GAME_MASTER_RULES.md` defines its mechanics, Campaign Turn lifecycle and save cadence, image workflow, adult-content boundaries, file ownership, and continuity behavior. `turn_save.md` carries the current Campaign Turn number, Current Step, Current Scene, current in-turn state, pending transfers, final review, permanent-save verification, and reset-approval state.
+A numbered campaign may additionally contain:
+
+```text
+GAME_MASTER_RULES.md
+```
+
+but only when that campaign needs local canon, exceptions, or overrides that do not belong in the shared rule layers.
+
+## New campaign setup
+
+When creating a new numbered campaign:
+
+1. create the new sibling folder
+2. create fresh state/template files using the shared ownership architecture
+3. initialize `active_game.json` and `turn_save.md` for that campaign
+4. keep its canon isolated from every existing campaign
+5. create a local `GAME_MASTER_RULES.md` only if the campaign actually needs a local rule or campaign-specific canon overlay
+6. change `active_campaign.json` only when the new campaign should become the active campaign
+
+Do **not** copy the root or `campaigns/` shared rulebooks into the new campaign folder.
