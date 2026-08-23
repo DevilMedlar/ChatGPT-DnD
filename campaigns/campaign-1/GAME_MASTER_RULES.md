@@ -246,9 +246,10 @@ After each resolved Step:
 2. update `Current Scene` whenever the effective scene changes
 3. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
 4. update `Pending Permanent Transfers` when a result may need persistent reconciliation
-5. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
-6. do not increment `save_revision`
-7. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
+5. when a shop transaction occurs, update `Pending Shop Transactions` with the connected vendor-stock, currency, inventory, pricing, and acquisition-snapshot state needed for reconciliation
+6. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
+7. do not increment `save_revision`
+8. stage every gameplay-caused persistent change in `turn_save.md` until Confirmation Gate 1, including NPC party joins/leaves, permanent possession or shop changes, and visual-continuity changes; another file's ownership workflow must not bypass the Campaign Turn save gates
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
@@ -308,7 +309,7 @@ After Confirmation Gate 1 is approved:
 1. transfer only the approved persistent, continuity-relevant, or historically important results to their proper permanent owners
 2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
 3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values that will be stored authoritatively in `active_game.json.character_advancement`
-4. update shop business stock and acquired party inventory separately when a shop transaction occurred
+4. when a shop purchase occurred, reconcile the connected transaction together: update the shop business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item to the buyer's `inventory.md` record, preserve the acquisition-time mechanics snapshot, apply the approved compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC; do not permanently apply only one side of the transaction
 5. append the completed Campaign Turn checkpoint to `session_log.md`
 6. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, the approved final `Current Scene` as `current_scene_name`, the completed location, and the authoritative completed PC advancement state
 7. increment `save_revision` exactly once for the completed permanent save
@@ -329,6 +330,7 @@ Verify at minimum:
 - expected character-state changes landed correctly
 - when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
 - expected inventory/resource changes landed correctly
+- when a shop purchase occurred, vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and stack result all match the approved transaction
 - required NPC master/detail records agree when applicable
 - when persistent NPCs are created or cross-referenced, stable NPC IDs are unique, unchanged, and agree across every affected file
 - required world/clue changes landed correctly
@@ -365,7 +367,7 @@ If the player says **No**:
 If the player says **Yes**:
 
 1. reset the temporary ledger
-2. clear the completed Turn events, Current In-Turn State, pending transfers, final review, save verification, and prior reset approval
+2. clear the completed Turn events and Current In-Turn State, reset `Pending Shop Transactions` to `None yet.` while preserving its template, clear pending transfers, final review, save verification, and prior reset approval
 3. prepare the next Campaign Turn number
 4. set `Status` to `ready`
 5. set `Current Step` to `0`
@@ -449,7 +451,83 @@ Do not forget an item's established special effect simply because several scenes
 
 For persistent NPCs, `NPC-state.md` owns the master list of what the NPC owns. `inventory.md` expands mechanically relevant possessions only while that NPC is currently traveling with the party. Shop stock belongs in the shop NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
 
-Shop and inventory item descriptions should preserve established mechanics when relevant, including attack bonuses, damage dice and damage types, armor or defense changes, ability-score penalties or bonuses, triggered effects, proc chances, charges, cooldowns, requirements, attunement, durability, granted abilities, and their descriptions. Hidden or unidentified properties must not be revealed merely because they are stored for continuity.
+Owned inventory must preserve enough established mechanical detail to resolve meaningful item effects correctly. Standard official items that are still vendor stock use the compact linked storefront architecture below rather than duplicating full official mechanics into the shop record. Hidden or unidentified properties must not be revealed merely because they are stored for continuity.
+
+### Official shop items and vendor pricing
+
+#### Standard official item sourcing
+
+Normal standard vendor stock uses official D&D items whose usable mechanics are freely viewable.
+
+For a candidate standard official item:
+
+1. choose it from the relevant official item/equipment catalog or category
+2. open the item's direct official page before using it as normal stock
+3. verify that enough actual mechanics are freely viewable to use the item without requiring a purchase
+4. reject a candidate whose page is only a teaser, marketplace redirect, ownership prompt, or otherwise hides the usable mechanics, and choose another suitable official item instead
+5. place the verified direct official URL on the **item name itself** in the vendor stock row
+
+The campaign does not maintain a duplicate local official-item catalog or a second detailed inspection layer for normal standard vendor items. D&D Beyond or another approved official source is a mechanics/reference authority for the standard item while it remains shop stock, but it is **not** Campaign 1's vendor-price authority.
+
+External URLs and access rules can change. A stored reference may be rechecked when an item is newly stocked or when the existing reference no longer works. If a reference fails at acquisition time, resolve that case individually before finalizing the owned-item mechanics snapshot.
+
+Official shop references must eventually align with Campaign 1's chosen D&D rules/version baseline. This vendor architecture does not itself choose that broader baseline.
+
+Homebrew, custom, unique, campaign-created, and mechanically modified items are outside this standard official vendor-item schema. Their mechanics and persistence must be handled by whatever separate campaign architecture governs those items rather than forcing them into the normal official-stock flow.
+
+#### Storefront presentation
+
+`NPC-state.md` owns the persistent business-level vendor state and `Current Shop Stock` table.
+
+For normal standard official stock, the row contains:
+
+- linked Item name
+- Base Price
+- Qty
+- Category
+- Key Mechanics
+- Short Description
+
+`Category` and `Key Mechanics` are compact storefront fields derived from the current linked official reference. `Short Description` is compact generated storefront text. These are presentation fields, not independent permanent mechanical authorities.
+
+Do not add a separate official-reference column, a duplicate local official-item catalog, a locally maintained detailed copy of standard official mechanics, or an extra generated inspection block that repeats the stock row.
+
+#### Base Price and Final Price
+
+`Base Price` is the campaign starting price before the applicable vendor or transaction modifiers.
+
+Routine/basic repeat goods must reuse the established recurring Base Price for that specific item type whenever stocked. This rule applies only to items classified as routine/basic repeat goods; it does not require every item appearing at multiple merchants to share one Base Price. The dedicated campaign-owned file/schema that will persist those recurring routine prices is intentionally deferred to a separate follow-up architecture task.
+
+For other official items, the GM may establish a reasonable Base Price when the item appears in stock. The price should be sensible rather than arbitrary noise. Relevant considerations can include rarity, mechanical power, usefulness, duration or number of uses, whether the item is consumed, replaceability, local scarcity, item category, and comparable established campaign prices. These non-routine items do not require a permanent global Base Price registry.
+
+After Base Price is established:
+
+`final price = base price +/- applicable merchant or unused contextual modifiers`
+
+Merchant markup/discount is business or relationship pricing, such as ordinary shop policy, relationship treatment, reputation, faction standing, or negotiation.
+
+Contextual market factors include scarcity, shortages, unusual demand, temporary events, and similar established market circumstances. A contextual factor is not automatically a merchant markup/discount.
+
+A pricing factor must not be counted more than once in the same stock listing or transaction. If scarcity, rarity, local conditions, or another factor already affected that listing's Base Price, the same factor must not be applied again to Final Price. A distinct merchant markup or discount may still apply afterward because it is a different pricing factor.
+
+The exact stacking, ordering, and rounding rules for multiple distinct modifiers remain intentionally undecided until Campaign 1 establishes them.
+
+#### Shop purchase flow
+
+During an active Campaign Turn, a purchase is staged in `turn_save.md` under `Pending Shop Transactions`; do not immediately rewrite permanent vendor or inventory files.
+
+A completed purchase has connected state on both sides:
+
+- vendor quantity decreases by the purchased quantity
+- buyer currency decreases by the approved Final Transaction Price
+- the buyer gains the purchased item in the appropriate inventory record
+- the acquired standard official item's mechanically relevant facts are preserved in the acquisition snapshot governed by `inventory.md`
+- compatible or separate stack handling follows `inventory.md`
+- if the buyer is a current-party persistent NPC, that NPC's master ownership list in `NPC-state.md` is reconciled too
+
+After Confirmation Gate 1, reconcile all connected sides together. Never permanently apply only the vendor side, only the currency side, or only the inventory side of the transaction.
+
+Once an official item has been acquired and its relevant mechanics are established in campaign inventory, later changes to the external official page do not silently rewrite the already-owned campaign item. `inventory.md` owns the acquired-item snapshot and stack-compatibility rules.
 
 ## Abilities and ongoing effects
 
@@ -472,7 +550,7 @@ Important NPCs should track only fields that are relevant and established. When 
 - factual knowledge, beliefs, information shared, information withheld, secrets known, secrets held, and false beliefs
 - master personal ownership list
 - NPC-specific involvement in quests or missions
-- shop/services information, stock, prices, quantities, item mechanics, descriptions, and hidden properties when applicable
+- shop/services information, business pricing state, current stock, quantities, linked official-item storefront fields, and services when applicable
 - compact NPC-specific continuity history
 
 ### NPC advancement
@@ -540,7 +618,7 @@ Do not let possessions disappear merely because party membership changed.
 
 `world_state.md` owns overall quest/mission state. `NPC-state.md` owns the NPC's personal involvement, motives, promises, information, rewards offered, conditions, and related continuity.
 
-A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns current shop stock, prices, services, and item details.
+A shop's existence and location may be referenced in `world_state.md`, while the shop owner/operator's `NPC-state.md` record owns persistent business state, current shop stock, vendor pricing state, storefront presentation fields, and services.
 
 ## Player agency
 
@@ -676,7 +754,7 @@ Campaign saves are isolated:
 Within Campaign 1, file ownership is:
 
 - `active_game.json` — authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
-- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending transfers, final review, permanent-save verification, and reset approval.
+- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, `Pending Shop Transactions`, pending transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — DevilMedlar and Senpai character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
 - `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
@@ -710,7 +788,7 @@ For a **current party NPC**, an ownership-changing item event may require both `
 
 Examples include consuming or gaining an item, spending or receiving currency, losing ammunition, transferring equipment, changing quantities, or permanently changing charges/uses.
 
-For a **shop transaction**, update the shop NPC's business stock in `NPC-state.md` and the acquiring party member's appropriate inventory record. Shop stock must not be treated as the shopkeeper's personal carried possessions.
+For a **shop purchase**, reconcile the connected transaction rather than updating isolated pieces: update the shop NPC's business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item and acquisition snapshot to the appropriate `inventory.md` record, apply the compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC. Shop stock must not be treated as the shopkeeper's personal carried possessions.
 
 Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
 
