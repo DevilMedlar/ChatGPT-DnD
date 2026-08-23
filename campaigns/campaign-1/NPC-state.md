@@ -40,7 +40,7 @@ Relationship information is split into separate facts so that one label does not
 
 `Single` does **not** mean romantically or sexually interested. `Married` does **not** mean uninterested in everyone else. Attraction, relationship status, boundaries, and consent are separate state facts and must not be inferred from one another.
 
-For an NPC below 18, omit sexual-interest fields entirely. Age-appropriate nonsexual crush or romantic information may be recorded when relevant and must follow `GAME_MASTER_RULES.md`.
+For an NPC below 18, omit sexual-interest fields entirely. Age-appropriate nonsexual crush or romantic information may be recorded when relevant and must follow `../../GAME_MASTER_RULES.md`.
 
 ## Current Party NPCs
 
@@ -276,7 +276,7 @@ When the NPC is currently in the party, `inventory.md` expands mechanically rele
 
 Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
 
-This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `GAME_MASTER_RULES.md`; recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Detailed standard official item mechanics are not duplicated here. The sourcing, pricing, transaction, and acquisition rules are defined in `../GAME_MASTER_RULES.md`; recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
 
 Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
 
