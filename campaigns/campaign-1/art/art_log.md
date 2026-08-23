@@ -11,7 +11,8 @@ This file is the canonical visual index for Campaign 1.
 - Generated images may include adult sensuality or nudity when permitted by the image system.
 - Every character depicted nude or in sexualized presentation must be explicitly 18+.
 - Textual campaign canon wins over accidental image inconsistencies unless the player explicitly adopts the visual variation.
-- Generated image files are not automatically repository canon. Record a repository path only after the file actually exists there.
+- Generated image binaries are player-managed. ChatGPT must not commit, upload, create, replace, rename, or delete generated image files in the repository. The player handles image-file persistence manually.
+- A generated image file is not automatically repository canon. ChatGPT may record its repository path only after the player has added the file and the path is verified to exist.
 - During an active Campaign Turn, newly established or adopted visual canon and reference-art metadata remain staged in `turn_save.md` until Confirmation Gate 1 is approved. Update this file only during approved Campaign Turn reconciliation; an image file already existing does not bypass the save gate.
 
 ## Player Character Visual Canon
