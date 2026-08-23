@@ -12,8 +12,8 @@ Model shops more like a game vendor screen while avoiding a large local copy of 
 2. `Current Shop Stock` owns the vendor-specific base price and current quantity
 3. ordinary shop stock uses **official D&D items whose usable mechanics are freely viewable**
 4. the shop row keeps only compact at-a-glance information such as category, named traits/mechanics, slots, or other useful tags
-5. the row stores a verified free official reference so a player can open the full official item details when desired
-6. official item inspection should be compact and link to the freely viewable official definition rather than duplicating the entire official rules text locally
+5. the **item name itself is the verified free official link**
+6. clicking the item name is the normal detailed-inspection path for an ordinary official shop item
 7. homebrew, custom, unique, campaign-created, or mechanically modified items use local campaign definitions instead of pretending an official page defines them
 8. under the current working idea, those custom/modified items are primarily found through treasure, defeated enemies, hidden caches, quests, rewards, crafting, unique NPC possessions, world events, or similar discoveries rather than ordinary shop stock
 
@@ -32,6 +32,7 @@ Before an official D&D item is added to normal shop stock:
 3. verify that the page exposes enough of the actual item mechanics to inspect and use the item without requiring a purchase
 4. if the page is only a teaser, marketplace redirect, ownership prompt, or otherwise does not expose the usable mechanics for free, do **not** use that item as a link-dependent shop entry
 5. choose another freely viewable official item instead, unless the player later changes this rule
+6. place that verified reference directly on the item name in `Current Shop Stock`
 
 A page merely existing is not enough. The usable rules must actually be viewable.
 
@@ -83,20 +84,32 @@ For official items, the vendor's `Base Price` does not need to equal an official
 
 This is the compact browse view, similar in spirit to a video-game vendor screen.
 
+**Clicking the item name is the inspection action for an ordinary official item.** The item name contains the verified freely viewable official reference directly, so there is no separate `Free Official Reference` column and no second locally generated official-item inspection record.
+
 `Key Mechanics` contains short recognizable information such as a mastery/property name, an ability name, an important tag, attunement, a slot count, or another useful glanceable trait. It is **not** a replacement for the full official item definition.
 
-`Free Official Reference` points to the official freely viewable details checked for that item.
+| Item | Base Price | Qty | Category | Key Mechanics | Short Description |
+|---|---:|---:|---|---|---|
+| [Torch](https://www.dndbeyond.com/equipment/437-torch) | 1 cp | 20 | Adventuring Gear | Burns 1 hour; Light | Ordinary handheld light source. |
+| [Dagger](https://www.dndbeyond.com/equipment/3-dagger) | 2 gp | 8 | Weapon | Finesse; Light; Thrown; Nick | Small versatile piercing weapon. |
+| [Longsword](https://www.dndbeyond.com/equipment/4-longsword) | 15 gp | 4 | Weapon | Versatile; Sap | Martial slashing weapon usable one- or two-handed. |
+| [Shield](https://www.dndbeyond.com/equipment/8-shield) | 10 gp | 3 | Armor / Shield | +2 AC while properly used | Standard defensive shield. |
+| [Thieves' Tools](https://www.dndbeyond.com/equipment/495-thieves-tools) | 25 gp | 2 | Tool | Locks; Traps; Dexterity | Specialized tools for locks and traps. |
+| [Bag of Holding](https://www.dndbeyond.com/magic-items/4581-bag-of-holding) | 400 gp | 1 | Wondrous Item | Extradimensional Storage | Magical container with much greater interior capacity than its exterior suggests. |
 
-| Item | Base Price | Qty | Category | Key Mechanics | Short Description | Free Official Reference |
-|---|---:|---:|---|---|---|---|
-| Torch | 1 cp | 20 | Adventuring Gear | Burns 1 hour; Light | Ordinary handheld light source. | [D&D Beyond — Torch](https://www.dndbeyond.com/equipment/437-torch) |
-| Dagger | 2 gp | 8 | Weapon | Finesse; Light; Thrown; Nick | Small versatile piercing weapon. | [D&D Beyond — Dagger](https://www.dndbeyond.com/equipment/3-dagger) |
-| Longsword | 15 gp | 4 | Weapon | Versatile; Sap | Martial slashing weapon usable one- or two-handed. | [D&D Beyond — Longsword](https://www.dndbeyond.com/equipment/4-longsword) |
-| Shield | 10 gp | 3 | Armor / Shield | +2 AC while properly used | Standard defensive shield. | [D&D Beyond — Shield](https://www.dndbeyond.com/equipment/8-shield) |
-| Thieves' Tools | 25 gp | 2 | Tool | Locks; Traps; Dexterity | Specialized tools for locks and traps. | [D&D Beyond — Thieves' Tools](https://www.dndbeyond.com/equipment/495-thieves-tools) |
-| Bag of Holding | 400 gp | 1 | Wondrous Item | Extradimensional Storage | Magical container with much greater interior capacity than its exterior suggests. | [D&D Beyond — Bag of Holding](https://www.dndbeyond.com/magic-items/4581-bag-of-holding) |
+> **Mock-data warning:** The quantities and vendor-specific base prices in this table are design examples only. They are not Campaign 1 canon. The links are included only to test the free-reference workflow and clickable-item-name idea.
 
-> **Mock-data warning:** The quantities and vendor-specific base prices in this table are design examples only. They are not Campaign 1 canon. The official links are included to test the free-reference workflow, not to decide campaign availability.
+### Linked Item Name Test
+
+The `Longsword` table cell above is written in the Markdown source as:
+
+```md
+[Longsword](https://www.dndbeyond.com/equipment/4-longsword)
+```
+
+If GitHub renders the table normally, the visible word **Longsword** in the Item column should itself be clickable and should open the official item page.
+
+This mock deliberately tests that behavior before the architecture is adopted.
 
 ### Stock Ownership Rule
 
@@ -107,51 +120,41 @@ The vendor row owns facts that can vary by vendor or over time:
 - vendor-specific base price
 - compact vendor-screen tags
 - short storefront description
-- verified free official reference used for inspection
+- the verified official reference attached to the item name
 
 The official source owns the standard official item's published mechanical definition.
 
-The shop does **not** need a second local detailed copy of all official mechanics merely so the player can inspect the item.
+The shop does **not** need:
+
+- a separate official-reference column
+- a second locally maintained detailed copy of official mechanics
+- a generated official-item inspection block whose only purpose is to repeat the same vendor-row information and provide the same link
+
+For an ordinary official item, the compact row is the shop view and the linked item name is the route to full details.
 
 ---
 
-# Official Item Inspection — Link-First Model
-
-Player request:
-
-`Inspect the Longsword.`
-
-The game can respond compactly from the vendor row and then provide the checked official reference:
-
-## Longsword — Mock Inspection View
-
-- **Base Price at this vendor:** 15 gp
-- **Available:** 4
-- **Category:** Weapon
-- **Key Mechanics:** Versatile; Sap
-- **Short Description:** Martial slashing weapon usable one- or two-handed.
-- **Full Official Details:** [D&D Beyond — Longsword](https://www.dndbeyond.com/equipment/4-longsword)
-
-There is no need to reproduce the entire official item entry inside the shop record.
-
-If the player wants the exact official mechanics, the official page is the detailed reference.
-
-### Inspection Source Model
+# Official Item Browse / Inspection Flow
 
 ```text
-Vendor Stock Row
-    ├── current quantity
-    ├── vendor base price
-    ├── compact tags
-    └── short storefront description
-
-Verified Free Official Reference
-    └── full standard official item mechanics
-
-Combined during narration
+Generate or restock vendor
         ↓
-Compact Item Inspection + Official Link
+Choose candidate official item
+        ↓
+Verify usable official mechanics are freely viewable
+        ↓
+Attach verified reference directly to Item name
+        ↓
+Show compact Current Shop Stock row
+        ↓
+Player wants full details
+        ↓
+Player clicks Item name
+        ↓
+Official free item page
 ```
+
+No intermediate locally generated official-item inspection screen is required unless a later gameplay/UI reason makes one useful.
 
 ---
 
@@ -184,7 +187,7 @@ Are usable mechanics freely viewable?
    ├── YES
    │    ↓
    │  Item may be used in normal shop stock
-   │  Save/use the checked free reference
+   │  Attach checked reference to Item name
    │
    └── NO
         ↓
@@ -310,7 +313,7 @@ If an official item is mechanically altered by Campaign 1, the official page can
 Conceptually:
 
 ```text
-Official Longsword Reference
+Official Item Reference
         +
 Campaign Modification
         ↓
@@ -368,17 +371,17 @@ Example:
 
 ```text
 Ash & Ember Outfitters
-Longsword — Base Price 15 gp — Qty 4
+[Longsword] — Base Price 15 gp — Qty 4
     ↓
 Same checked official Longsword reference
 
 Another Vendor
-Longsword — Base Price 18 gp — Qty 1
+[Longsword] — Base Price 18 gp — Qty 1
     ↓
 Same checked official Longsword reference
 ```
 
-The vendors own their own price and quantity. The official reference continues to define the standard Longsword.
+The vendors own their own price and quantity. Both item names can point to the same verified official definition.
 
 ---
 
@@ -394,16 +397,16 @@ Vendor / Shop Record
 │   └── markup / discount rules
 │
 └── Current Shop Stock
-    ├── official item name
+    ├── linked official item name
     ├── vendor-specific base price
     ├── current quantity
     ├── category
     ├── compact key mechanics
-    ├── short description
-    └── verified free official reference
+    └── short description
 
-Official Free Reference
-└── standard published mechanics for normal shop items
+Verified Free Official Reference
+└── attached directly to the Item name
+    └── standard published mechanics for normal shop items
 
 Local Custom Definition
 ├── homebrew / unique / campaign-created mechanics
@@ -414,14 +417,14 @@ Local Custom Definition
 └── hidden / unidentified properties
 ```
 
-### Official Item Inspection
+### Official Item Details
 
 ```text
-Vendor Stock State
-        +
-Verified Free Official Reference
+Current Shop Stock
         ↓
-Compact Inspection + Link
+Click linked Item name
+        ↓
+Verified free official item page
 ```
 
 ### Custom Item Inspection
@@ -441,6 +444,8 @@ Generated Detailed Inspection
 # Strengths of This Revised Option B
 
 - Cuts out most locally duplicated inspection data for ordinary official shop items.
+- Removes the extra `Free Official Reference` table column by attaching the reference directly to the item name.
+- Removes the need for a redundant generated official-item inspection block in the normal browse flow.
 - Base price and quantity remain vendor-owned with one clear authority.
 - Full standard mechanics remain on the official free reference instead of being recopied into `NPC-state.md`.
 - Paywalled/inaccessible official items can be rejected before they enter normal shop stock.
@@ -452,25 +457,14 @@ Generated Detailed Inspection
 
 # Weaknesses / Questions Still Open
 
+- We need to verify that the linked-item-name presentation actually feels good in GitHub's rendered Markdown table. This mock now exists specifically to test that.
 - Campaign 1 still needs an explicit D&D rules/version baseline before official references can be standardized confidently.
 - External official URLs can change, so links may occasionally need rechecking or replacement.
 - We still need to decide where local homebrew/custom item definitions permanently live if this architecture is adopted.
 - We still need to decide whether custom items can later become legitimate shop stock after being discovered, crafted, copied, commissioned, or commercialized in the story.
 - We still need exact markup/discount stacking and rounding rules.
-- We still need to decide whether shop `Key Mechanics` and `Short Description` are manually maintained vendor-facing summaries or generated from the official reference when possible.
-- We still need to decide what happens when an official item is free to view today but later becomes unavailable at the stored URL.
-- We still need to decide whether an official item reference itself needs a small local catalog/index or can simply live directly in each vendor stock row.
-
-# Questions to Test Before Choosing
-
-1. Is the compact shop row enough information to browse comfortably before opening an official reference?
-2. Should every shop row contain the exact official item URL, or should shops reference a small local official-item index that owns the URL?
-3. Should the free-access check happen every time stock is generated, only when an item first enters Campaign 1, or both when practical?
-4. Should ordinary official item `Base Price` default to an official listed cost when one exists, with vendor-specific exceptions, or should every shop always establish its own base price?
-5. Should homebrew/custom items remain noncommercial by default, with later shop availability only when the story explicitly establishes it?
-6. When a purchased official item gains unique campaign state, how much local detail is needed before it should be treated as a modified/custom instance?
-7. How should multiple markup/discount modifiers combine and round?
-8. Once Campaign 1 chooses its D&D fallback baseline, should legacy free references be excluded in favor of only that chosen rules version?
+- We still need to decide whether shop `Key Mechanics` and `Short Description` are always manually stored vendor-facing summaries or can sometimes be generated from the official reference.
+- We still need to decide what happens when an official item page is free when stocked but later becomes unavailable.
 
 ---
 
