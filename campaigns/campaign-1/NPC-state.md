@@ -39,14 +39,14 @@ When NPCs become persistent, list them here with their stable NPC ID, current na
 Example format only:
 
 ```text
-- **NPC-0001 — NPC Name** — role / relevance
+- **NPC-#### — NPC Name** — role / relevance
 ```
 
 ## NPC Record Template
 
 Use the sections below when an NPC becomes important enough to track persistently. Not every NPC needs every optional section. Populate what is relevant and established rather than inventing filler.
 
-Replace the placeholder NPC ID with the next unused stable ID when the persistent record is first created.
+`NPC-####` is a template placeholder only. Replace it with the next unused stable ID when the persistent record is first created.
 
 ---
 
@@ -54,7 +54,7 @@ Replace the placeholder NPC ID with the next unused stable ID when the persisten
 
 ### Identity
 
-- **NPC ID:** NPC-0001
+- **NPC ID:** NPC-####
 - **Name:**
 - **Age:**
 - **Gender / pronouns:**
