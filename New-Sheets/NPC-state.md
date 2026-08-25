@@ -1,6 +1,6 @@
-# NPC State — Campaign 1
+# NPC State
 
-This file is the authoritative master record for persistent NPCs in Campaign 1.
+This file is the authoritative master record for persistent NPCs in the campaign.
 
 It owns NPC identity, appearance, mechanical state, personality, relationship and attraction state, knowledge, secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC continuity.
 
@@ -10,7 +10,7 @@ Shared NPC ownership, relationship semantics, advancement, party-membership reco
 
 ## Stable NPC ID Convention
 
-Every persistent NPC receives one stable Campaign 1 ID when the NPC is first added to this file.
+Every persistent NPC receives one stable campaign-local ID when the NPC is first added to this file.
 
 - Use the form `NPC-0001`, `NPC-0002`, `NPC-0003`, and so on.
 - Assign the next unused numeric ID in sequence.
@@ -24,15 +24,11 @@ Every persistent NPC receives one stable Campaign 1 ID when the NPC is first add
 
 The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../GAME_MASTER_RULES.md`.
 
-Campaign 1's template below keeps explicit target-specific fields for DevilMedlar and Senpai where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
+The template below keeps explicit target-specific fields for the player-controlled PC and ChatGPT-controlled PC / co-protagonist where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
 
 ## Current Party NPCs
 
-None established.
-
 ## Important NPC Index
-
-None established.
 
 When NPCs become persistent, list them here with their stable NPC ID, current name, and a short role or relevance note. Do not use a name-derived Markdown anchor as the NPC's identity.
 
@@ -117,14 +113,14 @@ When `In party: Yes`, do not duplicate moment-to-moment movement here. The last 
 - **Current partner(s):**
 - **Romantic interest(s):**
 - **Sexual interest(s):** Explicitly adult NPCs only
-- **Attraction toward DevilMedlar:**
-- **Attraction toward Senpai:**
+- **Attraction toward player-controlled PC:**
+- **Attraction toward ChatGPT-controlled PC / co-protagonist:**
 - **Other known attractions:**
 - **Jealousy / rivalry:**
 - **Established boundaries:**
 - **Consent / availability notes:**
 
-#### Relationship with DevilMedlar
+#### Relationship with Player-Controlled PC
 
 - **Disposition:**
 - **Trust:**
@@ -135,7 +131,7 @@ When `In party: Yes`, do not duplicate moment-to-moment movement here. The last 
 - **Promises / obligations:**
 - **Important history:**
 
-#### Relationship with Senpai
+#### Relationship with ChatGPT-Controlled PC / Co-Protagonist
 
 - **Disposition:**
 - **Trust:**
@@ -319,7 +315,7 @@ Use this optional section for quest givers, mission contacts, targets, witnesses
 
 - **Role:**
 - **Current objective:**
-- **What they asked DevilMedlar / Senpai to do:**
+- **What they asked the player-controlled PC / ChatGPT-controlled PC / co-protagonist to do:**
 - **Information provided:**
 - **Information withheld:**
 - **Reward promised:**
@@ -338,4 +334,4 @@ Keep a compact NPC-specific history of events that explain the NPC's current sta
 
 NPC party joins/leaves, possession reconciliation, cross-file ownership, stable cross-file references, NPC advancement, relationship-state semantics, shop/vendor behavior, fresh-start isolation, append-first preservation, and Campaign Turn staging are governed by `../GAME_MASTER_RULES.md`.
 
-This file contains only Campaign 1's persistent NPC master state and the Campaign 1 NPC record schema.
+This file contains only persistent NPC master state and the reusable NPC record schema.
