@@ -1,42 +1,16 @@
-## Equipment and special effects
+# Inventory, Equipment, and Items
 
-Meaningful items may track quantity, equipped/carried/stored state, damage or armor values, charges, durability, attunement or bonding, magical effects, curses, and hidden or unidentified properties.
+## Inventory ownership
 
-Owned inventory must preserve enough established mechanical detail to resolve meaningful item effects correctly. Hidden or unidentified properties must not be revealed merely because they are stored for continuity.
+`inventory.md` owns detailed active mechanical bookkeeping for possessions carried by the core PCs and current party NPCs, including quantities, equipped/carried/stored state, charges, ammunition, durability, attunement, active item effects, currencies, consumables, and similar state.
 
-Persistent file ownership, NPC possession mirroring, shop-stock ownership, and acquisition-snapshot rules live in `campaigns/GAME_MASTER_RULES.md`.
+For persistent NPCs, `NPC-state.md` remains the **master ownership list** whether the NPC is in the party or not. `inventory.md` expands mechanically relevant possessions only while that NPC is currently traveling with the party.
 
-## Equipment ownership and special-effect continuity
+Shop stock is business inventory and belongs in the relevant shop NPC's `NPC-state.md` record until a party member actually acquires an item.
 
-Do not forget an item's established special effect simply because several scenes pass. Check `inventory.md`, `character_sheet.md`, `NPC-state.md`, and `world_state.md` as relevant before resolving an item-dependent effect.
+## Equipment and special-effect continuity
 
-For persistent NPCs, `NPC-state.md` owns the master list of what the NPC owns. `inventory.md` expands mechanically relevant possessions only while that NPC is currently traveling with the party. Shop stock belongs in the shop NPC's `NPC-state.md` record as business inventory until a party member actually acquires an item.
-
-Standard official items that are still vendor stock use the compact linked storefront architecture below rather than duplicating full official mechanics into the shop record.
-
-DevilMedlar's, Senpai's, and current party NPCs' carried equipment and resources are tracked below.
-
-This file owns detailed mechanical bookkeeping for party-carried possessions: quantities, equipped/carried/stored state, charges, ammunition, durability, attunement, active item effects, currencies, consumables, and similar active inventory state.
-
-For NPCs, `NPC-state.md` remains the **master ownership list**. This file expands mechanically relevant possessions only while that NPC is currently traveling with the party.
-
-Shop stock does **not** belong here. Shop stock belongs in the relevant NPC's `NPC-state.md` record until a party member actually acquires an item.
-
-Shared inventory ownership, NPC join/leave reconciliation, Campaign Turn staging, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
-
-Party membership itself is authoritative in `NPC-state.md`.
-
-Only NPCs currently traveling with the party should receive expanded active inventory records here. Their full identity, stats, relationships, conditions, off-party location, and master ownership lists remain in `NPC-state.md`.
-
-## NPC Join / Leave Reconciliation
-
-The shared NPC party-membership and possession-reconciliation procedure is owned by `../GAME_MASTER_RULES.md`.
-
-This file must not be rewritten mid-Turn merely because an NPC joins, leaves, spends, gains, loses, or changes possessions. Use `turn_save.md` during an unfinished Campaign Turn. Create or expand a current-party NPC section here only through the shared completed-save workflow, and remove or collapse it only after that NPC's final active possessions have been reconciled back to the master ownership list in `NPC-state.md`.
-
-## Item Detail Rule
-
-For meaningful items, preserve enough information to resolve their mechanics correctly when relevant, including:
+Meaningful items may track:
 
 - item name and type
 - quantity
@@ -49,17 +23,33 @@ For meaningful items, preserve enough information to resolve their mechanics cor
 - recharge or refill rules
 - durability / condition
 - attunement / bonding
-- granted abilities and their descriptions
+- granted abilities and descriptions
 - triggered effects and proc chances
 - durations, saves, resistances, immunities, and stacking rules
 - curses or hidden properties
 - identified vs unidentified information
 
-Do not expose a hidden or unidentified property merely because it is recorded for continuity.
+Owned inventory must preserve enough established mechanical detail to resolve meaningful item effects correctly.
 
-## Acquired Official Item Snapshot Rule
+Do not forget an item's established special effect merely because several scenes pass. Check `inventory.md`, `character_sheet.md`, `NPC-state.md`, and `world_state.md` as relevant before resolving an item-dependent effect.
 
-When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts needed to continue using that **owned campaign item** correctly. The snapshot belongs here rather than remaining dependent on a live external webpage.
+Hidden or unidentified properties must not be revealed merely because they are recorded for continuity.
+
+## NPC party inventory
+
+Party membership itself is authoritative in `NPC-state.md`.
+
+Only NPCs currently traveling with the party should receive expanded active inventory records in `inventory.md`. Their full identity, stats, relationships, conditions, off-party location, and master ownership lists remain in `NPC-state.md`.
+
+If an NPC joins or leaves during an active Campaign Turn, stage the membership and possession changes in `turn_save.md` rather than rewriting permanent files immediately.
+
+Create or expand a current-party NPC inventory section only through the completed-save workflow. When an NPC leaves, reconcile final quantities, currency, equipment, charges, acquired items, lost items, and other relevant possession changes back to the master ownership list in `NPC-state.md` before removing or collapsing the expanded inventory section.
+
+Detailed party-membership behavior is defined in `NPCS_AND_PARTY_MEMBERSHIP.md`.
+
+## Acquired official item snapshots
+
+When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts needed to continue using that **owned campaign item** correctly. The acquired item's mechanics snapshot belongs in campaign inventory rather than remaining dependent on a live external webpage.
 
 Depending on the item, preserve the relevant combination of:
 
@@ -79,30 +69,22 @@ Depending on the item, preserve the relevant combination of:
 
 Preserve the useful mechanics, not a word-for-word copy of the entire external published page.
 
-Once those mechanics are established in Campaign 1 inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until Campaign 1 explicitly changes or updates that item through play or an approved rules change.
+Once those mechanics are established in campaign inventory, later changes to an external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
 
-If an external item reference has moved or become inaccessible before the acquisition snapshot can be resolved, handle that item case by case and establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
+If an external reference has moved or become inaccessible before the acquisition snapshot can be resolved, establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
 
 During an active Campaign Turn, the acquisition and its snapshot remain staged in `turn_save.md` until approved reconciliation. If the buyer is a current-party persistent NPC, reconcile the NPC's master ownership list in `NPC-state.md` as part of the same completed save.
 
-## Inventory Stack Compatibility
+## Stack compatibility
 
-A newly acquired copy may merge with an existing inventory quantity/stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
+A newly acquired copy may merge with an existing inventory quantity or stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
 
-Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless Campaign 1 explicitly reconciles them to the same compatible state.
+Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
 
 Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
 
-## Travel Resource Use
+## Travel resources
 
-Track meaningful shared travel resources here when established, such as food, water, ammunition, mounts, fuel, camping supplies, or other party-consumed resources.
+Track meaningful shared travel resources when established, such as food, water, ammunition, mounts, fuel, camping supplies, or other party-consumed resources.
 
-## Local Continuity Note
-
-This file contains only Campaign 1 inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation, append-first preservation, Campaign Turn staging, and completed-save transfer rules are inherited from `../GAME_MASTER_RULES.md`.
-
-`NPC-state.md` remains the master ownership list for each persistent NPC; this file remains the detailed active bookkeeping owner for possessions carried by the current party.
-
-DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
-
-Senpai's authoritative current inventory is tracked in `inventory.md`.
+Shop sourcing and transaction rules are defined in `SHOPS_PRICING_AND_TRANSACTIONS.md`. General ownership and persistence rules are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
