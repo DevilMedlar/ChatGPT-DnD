@@ -1,6 +1,6 @@
-# Inventory — Campaign 1
+# Inventory
 
-DevilMedlar's, Senpai's, and current party NPCs' carried equipment and resources are tracked below.
+The player-controlled PC's, ChatGPT-controlled PC / co-protagonist's, and current party NPCs' carried equipment and resources are tracked below.
 
 This file owns detailed mechanical bookkeeping for party-carried possessions: quantities, equipped/carried/stored state, charges, ammunition, durability, attunement, active item effects, currencies, consumables, and similar active inventory state.
 
@@ -10,7 +10,7 @@ Shop stock does **not** belong here. Shop stock belongs in the relevant NPC's `N
 
 Shared inventory ownership, NPC join/leave reconciliation, Campaign Turn staging, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
 
-## DevilMedlar
+## Player-Controlled PC
 
 ### Equipped
 
@@ -24,7 +24,7 @@ Shared inventory ownership, NPC join/leave reconciliation, Campaign Turn staging
 
 ### Expenditures
 
-## Senpai
+## ChatGPT-Controlled PC / Co-Protagonist
 
 ### Equipped
 
@@ -39,8 +39,6 @@ Shared inventory ownership, NPC join/leave reconciliation, Campaign Turn staging
 ### Expenditures
 
 ## Current Party NPC Inventories
-
-None established.
 
 Party membership itself is authoritative in `NPC-state.md`.
 
@@ -174,7 +172,7 @@ Depending on the item, preserve the relevant combination of:
 
 Preserve the useful mechanics, not a word-for-word copy of the entire external published page.
 
-Once those mechanics are established in Campaign 1 inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until Campaign 1 explicitly changes or updates that item through play or an approved rules change.
+Once those mechanics are established in campaign inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
 
 If an external item reference has moved or become inaccessible before the acquisition snapshot can be resolved, handle that item case by case and establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
 
@@ -184,7 +182,7 @@ During an active Campaign Turn, the acquisition and its snapshot remain staged i
 
 A newly acquired copy may merge with an existing inventory quantity/stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
 
-Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless Campaign 1 explicitly reconciles them to the same compatible state.
+Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
 
 Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
 
@@ -194,6 +192,6 @@ Track meaningful shared travel resources here when established, such as food, wa
 
 ## Local Continuity Note
 
-This file contains only Campaign 1 inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation, append-first preservation, Campaign Turn staging, and completed-save transfer rules are inherited from `../GAME_MASTER_RULES.md`.
+This file contains only campaign-local inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation, append-first preservation, Campaign Turn staging, and completed-save transfer rules are inherited from `../GAME_MASTER_RULES.md`.
 
 `NPC-state.md` remains the master ownership list for each persistent NPC; this file remains the detailed active bookkeeping owner for possessions carried by the current party.
