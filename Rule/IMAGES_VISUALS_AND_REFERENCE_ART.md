@@ -60,3 +60,7 @@ When the player supplies reference art or manually adds images to the repository
 - never assume an unverified image path exists
 
 If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
+
+## Visual continuity
+
+Textual appearance canon belongs to `character_sheet.md`, `NPC-state.md`, `world_state.md`, or `inventory.md` according to the entity involved. `art/art_log.md` is the Campaign 1 visual-reference index. Repository-wide image behavior lives in `../../GAME_MASTER_RULES.md`; Campaign Turn staging of visual-reference metadata lives in `../GAME_MASTER_RULES.md`.
