@@ -6,7 +6,7 @@ It owns NPC identity, appearance, mechanical state, personality, relationship an
 
 `world_state.md` references NPCs where they matter to locations, factions, quests, clues, discoveries, or world consequences without duplicating their full records. `inventory.md` expands the possessions of NPCs currently traveling with the party. `turn_save.md` temporarily overlays unfinished Campaign Turn changes.
 
-Shared NPC ownership, relationship semantics, advancement, party-membership reconciliation, vendor/shop behavior, fresh-start isolation, and persistence rules are owned by `../GAME_MASTER_RULES.md`. Repository-wide adult-content boundaries are owned by `../../GAME_MASTER_RULES.md`.
+Shared NPC ownership, advancement, and party-membership reconciliation are defined in `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Relationship semantics are defined in `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`. Vendor/shop behavior is defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Fresh-start isolation is defined in `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Persistence is defined in `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`. Adult-content boundaries are defined in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
 
 ## Stable NPC ID Convention
 
@@ -22,9 +22,9 @@ Every persistent NPC receives one stable campaign-local ID when the NPC is first
 
 ## Relationship / Attraction Field Convention
 
-The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../GAME_MASTER_RULES.md`.
+The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
 
-The template below keeps explicit target-specific fields for the player-controlled PC and ChatGPT-controlled PC / co-protagonist where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
+The template below keeps explicit target-specific fields for the player-controlled PC and ChatGPT-controlled PC / co-protagonist where useful. NPCs below 18 follow `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
 
 ## Current Party NPCs
 
@@ -254,7 +254,7 @@ When the NPC is currently in the party, `inventory.md` expands mechanically rele
 
 Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
 
-This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Shared official-item sourcing, pricing, transaction, acquisition, and Campaign Turn rules are defined in `../GAME_MASTER_RULES.md`. Recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Official-item sourcing, pricing, and transaction rules are defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Acquired-item mechanics and inventory snapshots are defined in `../Rule/INVENTORY_EQUIPMENT_AND_ITEMS.md`. Campaign Turn staging and reconciliation follow `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`. Recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
 
 Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
 
@@ -289,7 +289,7 @@ For this table:
 - `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
 - `Short Description` is compact generated storefront text rather than an independent mechanical authority
 
-Full official-stock, pricing-factor, no-double-counting, external-reference, homebrew/custom-item boundary, and purchase-staging rules remain in `../GAME_MASTER_RULES.md`.
+Full official-stock, pricing-factor, no-double-counting, external-reference, homebrew/custom-item boundary, and purchase-staging rules are defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`.
 
 #### Services
 
@@ -332,6 +332,6 @@ Keep a compact NPC-specific history of events that explain the NPC's current sta
 
 ## Shared Rule Authority
 
-NPC party joins/leaves, possession reconciliation, cross-file ownership, stable cross-file references, NPC advancement, relationship-state semantics, shop/vendor behavior, fresh-start isolation, append-first preservation, and Campaign Turn staging are governed by `../GAME_MASTER_RULES.md`.
+NPC party joins/leaves, possession reconciliation, stable cross-file references, and NPC advancement are governed by `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Relationship-state semantics are governed by `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`. Shop/vendor behavior is governed by `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Fresh-start isolation is governed by `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Append-first preservation and cross-file ownership are governed by `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`. Campaign Turn staging and save behavior are governed by `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
 
 This file contains only persistent NPC master state and the reusable NPC record schema.
