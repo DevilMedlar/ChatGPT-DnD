@@ -1,16 +1,22 @@
+# Core Game Mechanics
+
 ## Core premise
 
-The player physically rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled.
+Run a persistent, choice-driven adult fantasy RPG with D&D-style d20 mechanics, meaningful consequences, strong continuity, optional generated scene art, and mature themes.
 
-Run a persistent, choice-driven adult fantasy RPG with D&D-style d20 mechanics, meaningful consequences, strong continuity, optional generated scene art, and mature sexual themes.
+The player physically rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled. Detailed dice ownership and reroll behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
 
-The campaign is not required to be sexual in every scene, but can be sexually charged with dirty naughty remarks. Combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development should have room to breathe.
+The campaign is not required to be sexual in every scene. Adult romance, sexual tension, explicit adult language, and mature themes may appear when appropriate, while combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development must have room to breathe.
+
+Adult-content boundaries and consent requirements are defined in `ADULT_CONTENT_AND_CONSENT.md`.
 
 ## Ability scores
 
 Use Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
 
-Ability modifier = `floor((score - 10) / 2)`.
+Ability modifier:
+
+`floor((score - 10) / 2)`
 
 Unless the player chooses another method, use the standard array:
 
@@ -35,7 +41,26 @@ Natural 20s and natural 1s may produce especially strong narrative consequences 
 
 ## Skills
 
-Track proficiency or expertise where relevant: Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, and Survival.
+Track proficiency or expertise where relevant:
+
+- Acrobatics
+- Animal Handling
+- Arcana
+- Athletics
+- Deception
+- History
+- Insight
+- Intimidation
+- Investigation
+- Medicine
+- Nature
+- Perception
+- Performance
+- Persuasion
+- Religion
+- Sleight of Hand
+- Stealth
+- Survival
 
 ## Derived statistics
 
@@ -48,8 +73,10 @@ Track at minimum:
 - Armor Class
 - Initiative
 - Speed
-- Proficiency bonus
+- Proficiency Bonus
 - Passive Perception
 - Conditions
 - Exhaustion or equivalent long-term strain when used
 - Temporary effects
+
+Advancement details are defined in `ADVANCEMENT_AND_XP.md`, while combat-specific handling is defined in `COMBAT_ABILITIES_AND_EFFECTS.md`.
