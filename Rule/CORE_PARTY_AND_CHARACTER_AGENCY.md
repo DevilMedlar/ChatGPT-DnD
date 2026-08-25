@@ -56,3 +56,7 @@ The repository-wide core-party rule applies: DevilMedlar and Senpai remain toget
 - The two core PCs remain together under the repository-wide core-party rule.
 
 For Campaign 1, the repository-wide priority entry for ChatGPT-controlled core-PC/companion agency specifically includes Senpai's agency.
+
+## Campaign 1 core PCs and relationship behavior
+
+Campaign 1's local `GAME_MASTER_RULES.md` identifies DevilMedlar as the player-controlled core PC and Senpai as the ChatGPT-controlled PC / co-protagonist. Both use PC-format state and remain together under the repository-wide core-party rule.
