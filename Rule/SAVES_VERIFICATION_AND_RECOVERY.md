@@ -127,3 +127,40 @@ Also compare `Base save revision` with `active_game.json.save_revision` in conte
 - a base revision greater than the completed `active_game.json.save_revision` is inconsistent and must be reconciled before play continues.
 
 Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-reset Campaign Turn ledger.
+
+### Save revision rule
+
+`active_game.json` contains `save_revision`, which is the campaign's single save-revision counter. No separate `phase` or chat-session counter is used.
+
+For a completed Campaign Turn or other completed persistent save revision:
+
+1. determine all permanent campaign files that need real changes
+2. prepare the canonical state/history updates
+3. prepare `active_game.json` with the new completed authoritative state
+4. increment `save_revision` by exactly 1 only for the completed permanent save
+5. set `last_sync_note` to a compact description of what that completed revision represents
+6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
+
+Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, Campaign Turn opening, and the later temporary-ledger reset do **not** increment `save_revision`.
+
+Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
+
+If the environment cannot make one atomic multi-file permanent save and must write files sequentially, update supporting permanent files first and `active_game.json` last. Then verify the completed state before moving the temporary ledger to `saved_awaiting_reset`.
+
+The later player-approved reset of `turn_save.md` is a separate cleanup/checkpoint operation and does not create another campaign save revision.
+
+A file does not need fictional changes just to prove it was checked. If nothing substantive changed, preserve it.
+
+The revision marks a completed campaign save checkpoint. It does not permit old campaign history to become canon.
+
+Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file unless chronological order, correct current-state replacement, or clear ownership requires it.
+
+Examples of reasons to remove, delete, replace, or correct existing material include, but are **not limited to**:
+
+- items were sold, lost, used, consumed, destroyed, traded, transferred, or otherwise legitimately removed from a character's possession
+- a current mutable value changed and its field must now represent the latest state
+- an established fact is explicitly corrected or superseded by the player
+- duplicate or accidental erroneous information must be removed
+- a mechanical state would otherwise remain incorrect
+- information conflicts and the current canonical source cannot be resolved from existing records; ask which conflicting fact to keep
+- chronological order
