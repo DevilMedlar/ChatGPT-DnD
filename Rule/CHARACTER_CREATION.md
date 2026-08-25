@@ -1,12 +1,14 @@
-## Character creation
+# Character Creation
+
+## Required core PCs
 
 Character creation must establish the required player-controlled PC and ChatGPT-controlled PC / co-protagonist before Campaign Turn 1 begins.
 
-At character creation, establish at minimum for each required core PC:
+At minimum, establish for each required core PC:
 
 - Name
 - Age, explicitly 18+ for player characters participating in adult content
-- Gender / pronouns, consistent with the required core-party roles above unless the player explicitly changes that repository-wide rule for the campaign
+- Gender / pronouns, consistent with `CORE_PARTY_AND_CHARACTER_AGENCY.md` unless the player explicitly changes that rule for the campaign
 - Species / ancestry
 - Class or homebrew class
 - Background
@@ -21,15 +23,17 @@ At character creation, establish at minimum for each required core PC:
 
 Blank character fields are intentionally undecided until established during character creation. Do not fill those blanks by recovering or guessing prior-campaign information.
 
-Optional adult-character details may include romantic interests, sexual interests, boundaries, relationship goals, fertility/reproductive details, or other mature themes when the player chooses to establish them.
+Optional adult-character details may include romantic interests, sexual interests, boundaries, relationship goals, fertility/reproductive details, or other mature themes when the player chooses to establish them. Adult-content boundaries are defined in `ADULT_CONTENT_AND_CONSENT.md`.
 
-## Character creation and Campaign Turns
+## Character-creation checkpoints
 
-Character creation occurs before Campaign Turn 1. It uses **character-creation checkpoint saves**, not the Campaign Turn ledger. `turn_save.md` remains prepared for Campaign Turn 1 and is not opened, reconciled, or reset merely because character-creation choices are saved.
+Character creation occurs before Campaign Turn 1. It uses **character-creation checkpoint saves**, not the Campaign Turn ledger.
+
+`turn_save.md` remains prepared for Campaign Turn 1 and is not opened, reconciled, or reset merely because character-creation choices are saved.
 
 A character-creation checkpoint is a logical group of finalized choices that the player is ready to make permanent. Discussion, previews, rejected options, and unfinished choices do not create a checkpoint or increment `save_revision`.
 
-Before writing a character-creation checkpoint:
+### Before writing a checkpoint
 
 1. determine the exact finalized choices and every permanent file that must change
 2. calculate any derived values that depend on those choices and verify them against the established rules
@@ -43,6 +47,8 @@ If the player says **No**, write nothing and do not increment `save_revision`.
 
 If the player gives **Corrections**, revise the proposed character-creation state and planned permanent changes, show the corrected checkpoint again, and ask for confirmation again.
 
+### After approval
+
 If the player says **Yes**:
 
 1. write only the confirmed permanent character-creation changes to their proper owners
@@ -51,9 +57,13 @@ If the player says **Yes**:
 4. update `active_game.json` last as the completed-save marker with the new authoritative state, a `save_revision` increment of exactly `1`, and a compact `last_sync_note`
 5. do not change `campaign_turn_number` from `0` and do not create a Campaign Turn Step
 
-Whenever tooling permits an atomic multi-file commit, the affected permanent files, `session_log.md`, and `active_game.json` must be committed together as the character-creation checkpoint save. There is no second reset gate because character creation has no temporary source ledger to erase.
+Whenever tooling permits an atomic multi-file commit, the affected permanent files, `session_log.md`, and `active_game.json` should be committed together as the character-creation checkpoint save.
 
-If permanent files must be written sequentially, update the supporting permanent files and `session_log.md` first and `active_game.json` last. Do not report the checkpoint as complete until all required files have been reread and verified. If an interruption or partial write occurs, treat the checkpoint as incomplete; inspect the affected files, `session_log.md`, and `active_game.json.save_revision`, reconcile them to one confirmed state, and only then continue character creation.
+If permanent files must be written sequentially, update the supporting permanent files and `session_log.md` first and `active_game.json` last. Do not report the checkpoint as complete until all required files have been reread and verified.
+
+If an interruption or partial write occurs, treat the checkpoint as incomplete; inspect the affected files, `session_log.md`, and `active_game.json.save_revision`, reconcile them to one confirmed state, and only then continue character creation.
+
+## Checkpoint verification
 
 After every character-creation checkpoint, verify at minimum:
 
@@ -70,12 +80,14 @@ After every character-creation checkpoint, verify at minimum:
 - `character_created` remains `false` until the final character-creation checkpoint
 - no unrelated campaign state changed
 
-The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for both required core PCs. It must also verify that each core PC's finalized starting equipment, starting currency, and other starting consumable/resource inventory are recorded in `inventory.md`, and any equipment summary in `character_sheet.md` agrees with that inventory state. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
+## Final character-creation checkpoint
 
-Finalized character-creation choices use the shared confirmed character-creation checkpoint workflow in `../GAME_MASTER_RULES.md`.
+The final checkpoint must additionally verify that every required character-creation field above is established for both required core PCs.
 
-This file stores Campaign 1's core player-character detail and synchronized human-readable Level/XP mirrors.
+It must also verify that each core PC's finalized starting equipment, starting currency, and other starting consumable/resource inventory are recorded in `inventory.md`, and any equipment summary in `character_sheet.md` agrees with that inventory state.
 
-Repository-wide character-creation requirements are owned by `../../GAME_MASTER_RULES.md`. Fresh-campaign isolation, character-creation checkpoint behavior, and completed advancement-state ownership are owned by `../GAME_MASTER_RULES.md`.
+Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`.
 
-The blank fields below are intentional and remain undecided until established during current Campaign 1 character creation. Currently established canon includes the names, ages, pronouns, and shared relationship history below.
+Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
+
+Advancement authority is defined in `ADVANCEMENT_AND_XP.md`. General state ownership and save discipline are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md` and `SAVES_VERIFICATION_AND_RECOVERY.md`.
