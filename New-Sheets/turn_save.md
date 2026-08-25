@@ -1,4 +1,4 @@
-# Turn Save — Campaign 1
+# Turn Save
 
 This file is the temporary authoritative ledger for the current unfinished **Campaign Turn**.
 
@@ -8,23 +8,17 @@ The starting state is the current completed canonical campaign state at the reco
 
 ## Active Campaign Turn
 
-- **Campaign Turn:** 1
-- **Status:** ready
-- **Current Step:** 0
-- **Current Scene:** None yet.
-- **Base save revision:** 0
+- **Campaign Turn:**
+- **Status:**
+- **Current Step:**
+- **Current Scene:**
+- **Base save revision:**
 
 ## Turn Events
 
-None yet.
-
 ## Current In-Turn State
 
-None yet.
-
 ## Pending Shop Transactions
-
-None yet.
 
 When a shop purchase occurs during an active Campaign Turn, keep the transaction temporary here until Confirmation Gate 1. Use one compact record per transaction and preserve enough information to reconcile every connected side of the purchase.
 
@@ -51,22 +45,20 @@ A staged purchase is one connected transaction. Vendor quantity, buyer currency,
 
 ## Pending Permanent Transfers
 
-None yet.
-
 ## Final Turn Review
 
-- **Status:** not_started
-- **Final Turn State:** None yet.
-- **Exact Planned Permanent Transfers:** None yet.
-- **Player save confirmation:** not_requested
+- **Status:**
+- **Final Turn State:**
+- **Exact Planned Permanent Transfers:**
+- **Player save confirmation:**
 
 ## Permanent Save Verification
 
-- **Status:** not_started
-- **Completed save revision:** None
-- **Verification notes:** None.
+- **Status:**
+- **Completed save revision:**
+- **Verification notes:**
 
 ## Reset Approval
 
-- **Status:** not_requested
-- **Player reset confirmation:** not_requested
+- **Status:**
+- **Player reset confirmation:**
