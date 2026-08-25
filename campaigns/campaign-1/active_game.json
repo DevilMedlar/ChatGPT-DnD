@@ -1,7 +1,5 @@
 {
   "campaign": "campaign-1",
-  "phase": "setup",
-  "session_number": 1,
   "campaign_turn_number": 0,
   "current_scene_name": "Character creation",
   "current_location": "",
