@@ -1,4 +1,4 @@
-# World State — Campaign 1
+# World State
 
 ## Important NPCs
 
