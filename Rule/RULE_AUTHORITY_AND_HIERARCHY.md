@@ -14,3 +14,11 @@ When **rules themselves conflict**, use this order:
 4. root `GAME_MASTER_RULES.md`
 
 The campaign's canonical state files are not a lower-priority rule layer. Each state file remains authoritative for the facts and mutable state assigned to it by the ownership rules. Read rules and state together rather than using a generic rule to overwrite established state that belongs to another authority.
+
+# Shared Game Master Rules
+
+These rules apply to every numbered campaign in this repository unless a campaign explicitly establishes a narrower campaign-specific override.
+
+Campaign-state architecture, Campaign Turn persistence, file ownership, recovery, NPC persistence, vendor persistence, and other shared numbered-campaign bookkeeping rules live in `campaigns/GAME_MASTER_RULES.md`. A numbered campaign may keep a local `GAME_MASTER_RULES.md` only for campaign-specific operating rules, agency rules, mechanical overrides, or exceptional premises that do not belong in the shared layers. Ordinary character, NPC, relationship, world, inventory, quest, and other campaign facts belong in their assigned state files rather than being duplicated into rule files.
+
+The player's newest explicit statement overrides conflicting assistant-created material. Never silently overwrite established canon.
