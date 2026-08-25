@@ -4,9 +4,9 @@ This file is the canonical **visual-reference index** for the campaign. It does 
 
 ## Rule authority
 
-Repository-wide image-generation behavior, adult image boundaries, textual-canon precedence, and the player-managed generated-image-binary rule are owned by `../../../GAME_MASTER_RULES.md`.
+Image-generation behavior, textual-canon precedence, reference-art handling, and the player-managed generated-image-binary rule are owned by `../Rule/IMAGES_VISUALS_AND_REFERENCE_ART.md`. Adult image boundaries are owned by `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
 
-Campaign-level visual-reference metadata staging, reference-art persistence, path verification, and Campaign Turn reconciliation are owned by `../../GAME_MASTER_RULES.md`.
+Visual-reference metadata staging and Campaign Turn persistence follow `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
 
 Textual appearance canon belongs to the owning state file:
 
