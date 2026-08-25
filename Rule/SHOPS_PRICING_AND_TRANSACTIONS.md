@@ -107,3 +107,21 @@ Suggested format:
 ## Local Continuity Note
 
 This file contains Campaign 1 price state only. Fresh-campaign isolation and historical-reconstruction restrictions are inherited from `../GAME_MASTER_RULES.md`.
+
+Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
+
+This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Shared official-item sourcing, pricing, transaction, acquisition, and Campaign Turn rules are defined in `../GAME_MASTER_RULES.md`. Recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
+
+Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
+
+For normal standard vendor stock, the **item name itself is the direct official link** to the freely viewable official item page.
+
+For this table:
+
+- current availability and quantity are vendor-owned state here
+- routine/basic Base Price mirrors `routine_item_prices.md` when that item is classified there
+- non-routine official items may use the shared GM-established Base Price procedure
+- `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
+- `Short Description` is compact generated storefront text rather than an independent mechanical authority
+
+Full official-stock, pricing-factor, no-double-counting, external-reference, homebrew/custom-item boundary, and purchase-staging rules remain in `../GAME_MASTER_RULES.md`.
