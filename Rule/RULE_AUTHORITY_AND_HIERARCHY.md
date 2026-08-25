@@ -22,3 +22,19 @@ These rules apply to every numbered campaign in this repository unless a campaig
 Campaign-state architecture, Campaign Turn persistence, file ownership, recovery, NPC persistence, vendor persistence, and other shared numbered-campaign bookkeeping rules live in `campaigns/GAME_MASTER_RULES.md`. A numbered campaign may keep a local `GAME_MASTER_RULES.md` only for campaign-specific operating rules, agency rules, mechanical overrides, or exceptional premises that do not belong in the shared layers. Ordinary character, NPC, relationship, world, inventory, quest, and other campaign facts belong in their assigned state files rather than being duplicated into rule files.
 
 The player's newest explicit statement overrides conflicting assistant-created material. Never silently overwrite established canon.
+
+# Campaigns
+
+Each numbered campaign lives in its own folder and keeps its own **canon and mutable state**. Shared numbered-campaign operating rules live here in `GAME_MASTER_RULES.md` so future campaigns do not need another full copy of the persistence architecture.
+
+Repository-wide gameplay rules live one level above in `../GAME_MASTER_RULES.md`.
+
+## Shared rule inheritance
+
+Every numbered campaign inherits:
+
+1. `../GAME_MASTER_RULES.md` — repository-wide gameplay rules, including the required two-core-PC party structure
+2. `GAME_MASTER_RULES.md` — shared numbered-campaign persistence and ownership rules
+3. an optional local `campaign-N/GAME_MASTER_RULES.md` — campaign-specific operating, agency, behavior, or mechanical overrides only
+
+A local campaign rule file must not duplicate the shared rulebooks or ordinary campaign facts merely for convenience. Character, NPC, relationship, world, inventory, quest, and other state facts belong in their assigned state files.
