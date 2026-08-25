@@ -9,3 +9,6 @@ The files on the repository's current branch are the campaign source of truth.
 - Prior chats are non-canonical unless the player explicitly imports information from them.
 
 Detailed enforcement belongs to the shared rule files above rather than being duplicated here.
+
+Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, pricing-reference, or art-continuity state unless the player explicitly requests it.
+
