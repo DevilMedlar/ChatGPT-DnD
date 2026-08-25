@@ -64,3 +64,28 @@ If reference art is supplied or adopted during an active Campaign Turn, the imag
 ## Visual continuity
 
 Textual appearance canon belongs to `character_sheet.md`, `NPC-state.md`, `world_state.md`, or `inventory.md` according to the entity involved. `art/art_log.md` is the Campaign 1 visual-reference index. Repository-wide image behavior lives in `../../GAME_MASTER_RULES.md`; Campaign Turn staging of visual-reference metadata lives in `../GAME_MASTER_RULES.md`.
+
+This section owns DevilMedlar's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+
+This section owns Senpai's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+
+This file is the canonical **visual-reference index** for Campaign 1. It does not duplicate or override textual appearance canon.
+
+## Rule authority
+
+Repository-wide image-generation behavior, adult image boundaries, textual-canon precedence, and the player-managed generated-image-binary rule are owned by `../../../GAME_MASTER_RULES.md`.
+
+Campaign-level visual-reference metadata staging, reference-art persistence, path verification, and Campaign Turn reconciliation are owned by `../../GAME_MASTER_RULES.md`.
+
+Textual appearance canon belongs to the owning state file:
+
+- DevilMedlar and Senpai — `../character_sheet.md`
+- persistent NPCs — `../NPC-state.md`
+- locations and world objects — `../world_state.md`
+- owned equipment or important carried objects when applicable — `../inventory.md`
+
+This file records verified image paths, visual-reference provenance, which visible features are canonical versus inspiration only, known image inaccuracies, and other reference metadata needed to reproduce established visuals consistently.
+
+## Reference rule
+
+When reference art is later supplied or adopted, record a repository path only after it actually exists and identify which visible features match canonical textual state, which are inspiration only, and which are accidental or incorrect. If an image conflicts with the owning textual state file, the textual state remains authoritative unless the player explicitly adopts the image difference as new canon through the normal persistence workflow.
