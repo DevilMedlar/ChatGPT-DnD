@@ -2,7 +2,7 @@
 
 **Status:** Character creation is in progress.
 
-This file stores Campaign 1's player-character detail and synchronized human-readable Level/XP mirrors.
+This file stores Campaign 1's core player-character detail and synchronized human-readable Level/XP mirrors.
 
 Repository-wide character-creation requirements are owned by `../../GAME_MASTER_RULES.md`. Fresh-campaign isolation, character-creation checkpoint behavior, and completed advancement-state ownership are owned by `../GAME_MASTER_RULES.md`.
 
@@ -15,9 +15,10 @@ The blank fields below are intentional and remain undecided until established du
 - They married five years ago.
 - Their relationship before both were 18 remained romantic and nonsexual.
 - They are now consenting adult romantic and sexually active partners.
+- They have no children yet.
 - Additional history, relationship details, and their family name will be established together during character creation.
 
-## DevilMedlar (player)
+## DevilMedlar (player-controlled PC)
 
 - **Name:** DevilMedlar
 - **Age:** 20
@@ -66,16 +67,15 @@ DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 
 ### Appearance
 
-These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+This section owns DevilMedlar's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
 ### Personal / Relationship Continuity
 
-- Married to Senpai and loves her. Current relationship is consensual, romantic, and sexual.
-- No kids yet
+No additional DevilMedlar-specific relationship continuity established beyond the Shared Relationship Canon above.
 
 Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
-## Senpai (ChatGPT-controlled companion)
+## Senpai (ChatGPT-controlled PC / co-protagonist)
 
 - **Name:** Senpai
 - **Age:** 20
@@ -124,11 +124,10 @@ Senpai's authoritative current inventory is tracked in `inventory.md`.
 
 ### Appearance
 
-These are stable visual-canon traits for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+This section owns Senpai's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
 
 ### Personal / Relationship Continuity
 
-- Married to DevilMedlar and loves him. Current relationship is consensual, romantic, and sexual.
-- No kids yet
+No additional Senpai-specific relationship continuity established beyond the Shared Relationship Canon above.
 
 Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
