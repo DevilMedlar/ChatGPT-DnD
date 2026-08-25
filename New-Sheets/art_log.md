@@ -1,6 +1,6 @@
-# Art Continuity Log — Campaign 1
+# Art Continuity Log
 
-This file is the canonical **visual-reference index** for Campaign 1. It does not duplicate or override textual appearance canon.
+This file is the canonical **visual-reference index** for the campaign. It does not duplicate or override textual appearance canon.
 
 ## Rule authority
 
@@ -10,36 +10,31 @@ Campaign-level visual-reference metadata staging, reference-art persistence, pat
 
 Textual appearance canon belongs to the owning state file:
 
-- DevilMedlar and Senpai — `../character_sheet.md`
+- player-controlled PC — `../character_sheet.md`
+- ChatGPT-controlled PC / co-protagonist — `../character_sheet.md`
 - persistent NPCs — `../NPC-state.md`
 - locations and world objects — `../world_state.md`
 - owned equipment or important carried objects when applicable — `../inventory.md`
 
 This file records verified image paths, visual-reference provenance, which visible features are canonical versus inspiration only, known image inaccuracies, and other reference metadata needed to reproduce established visuals consistently.
 
-## DevilMedlar references
+## Player-Controlled PC references
 
-- **Primary reference:** None established.
-- **Other verified references:** None established.
-- **Reference notes:** None.
+- **Primary reference:**
+- **Other verified references:**
+- **Reference notes:**
 
-## Senpai references
+## ChatGPT-Controlled PC / Co-Protagonist references
 
-- **Primary reference:** None established.
-- **Other verified references:** None established.
-- **Reference notes:** None.
+- **Primary reference:**
+- **Other verified references:**
+- **Reference notes:**
 
 ## NPC references
 
-None established.
-
 ## Location references
 
-None established.
-
 ## Equipment / important-object references
-
-None established.
 
 ## Reference rule
 
