@@ -12,3 +12,4 @@ Detailed enforcement belongs to the shared rule files above rather than being du
 
 Campaign folders must not share character, NPC, world, quest, relationship, inventory, session, turn-save, pricing-reference, or art-continuity state unless the player explicitly requests it.
 
+Preserve established chronological history by default.
