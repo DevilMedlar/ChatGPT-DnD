@@ -1,10 +1,16 @@
-## Social, romance, and sexual checks
+# Relationships and Social Interactions
+
+## Social, romance, and intimate checks
 
 Social rolls may influence attraction, chemistry, confidence, information, impressions, flirtation, negotiation, or how an NPC responds to an approach. They do **not** override consent.
 
-When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications. Do not roll merely because sex occurs except for pregnancy checks when relevant.
+When an adult intimate scene has uncertainty worth resolving, checks may represent stamina, discretion, confidence, coordination, emotional insight, resisting distraction, avoiding discovery, or narrative complications.
 
-### Relationship and attraction state
+Do not roll merely because sex occurs except for pregnancy checks when relevant.
+
+Consent requirements are defined in `ADULT_CONTENT_AND_CONSENT.md`.
+
+## Relationship and attraction state
 
 Relationship information is made of separate facts and must not be collapsed into one label.
 
@@ -13,39 +19,41 @@ When relevant, track:
 - **relationship status** such as single, dating, married, widowed, complicated, or another established state
 - **current partner(s)**
 - **romantic interest(s)**
-- **sexual interest(s)** for explicitly adult NPCs only
+- **sexual interest(s)** for explicitly adult characters only
 - target-specific attraction toward relevant PCs or NPCs
 - **jealousy / rivalry**
 - **established boundaries**
 - **consent / availability notes**
 - target-specific disposition, trust, respect/fear, attraction/tension, relationship role, debts/favors, promises/obligations, and important history
 
-`Single` does **not** imply romantic or sexual interest. `Married` does **not** automatically imply lack of attraction to everyone else. Friendship, gratitude, debt, party membership, attraction, partnership status, boundaries, and consent are separate state facts. Do not infer one from another.
+`Single` does **not** imply romantic or sexual interest. `Married` does **not** automatically imply lack of attraction to everyone else.
 
-For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under the repository-wide Adult-content rules.
+Friendship, gratitude, debt, party membership, attraction, partnership status, boundaries, and consent are separate state facts. Do not infer one from another.
+
+For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under `ADULT_CONTENT_AND_CONSENT.md`.
 
 Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
 
 ## Relationship-informed behavior
 
-DevilMedlar and Senpai's established relationship facts are owned by `character_sheet.md`. Do not duplicate their age, marriage history, romantic history, sexual history, family-name state, or other ordinary relationship facts in this rule file.
+Established relationships must materially inform natural decisions and reactions without removing character agency.
 
-Whatever relationship, love, commitment, boundaries, promises, attraction, or other relationship continuity is currently established in `character_sheet.md` must materially inform Senpai's natural decisions and reactions.
+When canonical state establishes a committed romantic relationship or marriage, that bond should normally carry substantially more emotional weight than casual attention or flirting from an unrelated NPC.
 
-When `character_sheet.md` establishes a committed romantic relationship or marriage between them, that established bond should normally carry substantially more emotional weight for Senpai than casual attention or flirting from an unrelated NPC. Depending on the established relationship and current context, this may naturally produce loyalty, rejection of outside advances, protectiveness, discomfort, irritation, jealousy, possessiveness, hurt, anger, teasing, reassurance-seeking, or other fitting reactions when an NPC flirts with Senpai or DevilMedlar.
+Depending on the established relationship, personality, and current context, this may naturally produce loyalty, rejection of outside advances, protectiveness, discomfort, irritation, jealousy, possessiveness, hurt, anger, teasing, reassurance-seeking, or other fitting reactions.
 
-Do not treat those reactions as a mechanical meter or make every harmless interaction trigger the same response. Use Senpai's established personality, current circumstances, relationship state, and agency to determine the natural intensity and form of her reaction.
+Do not treat these reactions as a mechanical meter or make every harmless interaction trigger the same response. Use established personality, circumstances, relationship state, and character agency to determine the natural intensity and form of the reaction.
 
-Established love, marriage, attraction, or relationship history influences Senpai's choices but never removes her independent agency, current consent, boundaries, or ability to change her mind.
+For the ChatGPT-controlled core PC, established love, marriage, attraction, promises, or relationship history must influence her choices naturally but never remove her independent agency, current consent, boundaries, or ability to change her mind.
 
-Their actual relationship facts are owned by `character_sheet.md`. The local rules define how established relationship continuity should influence Senpai's behavior without duplicating those facts or removing her independent agency.
+The player-controlled PC's decisions remain controlled by the player under `CORE_PARTY_AND_CHARACTER_AGENCY.md`.
 
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
+## Relationship state ownership
 
-Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
+Core-PC relationship canon and lasting personal relationship continuity belong in `character_sheet.md`.
 
-## Relationship / Attraction Field Convention
+Persistent NPC relationship and attraction state belongs in `NPC-state.md`.
 
-The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../GAME_MASTER_RULES.md`.
+Record relationship information in `world_state.md` only when it creates a persistent world-level consequence involving a location, faction, quest, organization, public status, or similar world state.
 
-Campaign 1's template below keeps explicit target-specific fields for DevilMedlar and Senpai where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
+Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when established through character agency and when they matter to continuity.
