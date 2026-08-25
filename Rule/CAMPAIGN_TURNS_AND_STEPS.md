@@ -129,3 +129,9 @@ When ChatGPT determines the full Campaign Turn has ended:
 5. do **not** reset `turn_save.md`
 
 At this point `Current In-Turn State`, together with the final `Current Scene`, becomes the proposed **Final Turn State** for review.
+
+This file is the temporary authoritative ledger for the current unfinished **Campaign Turn**.
+
+It carries only the live Campaign Turn record. Detailed Campaign Turn terminology, roll-recording conventions, end interpretation, confirmation gates, reconciliation, verification, recovery, and reset rules belong in `../GAME_MASTER_RULES.md`.
+
+The starting state is the current completed canonical campaign state at the recorded `Base save revision`; do not copy that entire state into this file. Record the steps, scene changes, other changes, pending shop transactions, and compact effective in-turn values needed to continue or recover the Campaign Turn.
