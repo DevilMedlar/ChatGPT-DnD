@@ -46,3 +46,18 @@ These rules apply to every numbered campaign under `campaigns/` unless that camp
 Repository-wide gameplay mechanics and behavioral rules live in `../GAME_MASTER_RULES.md`. Each numbered campaign owns its own canon and mutable state. A campaign-local `GAME_MASTER_RULES.md`, when present, should contain only campaign-specific operating rules, agency rules, mechanical overrides, or exceptional premises rather than duplicating shared rules or ordinary state facts.
 
 Throughout this file, references such as `active_game.json`, `turn_save.md`, `character_sheet.md`, `NPC-state.md`, `routine_item_prices.md`, `inventory.md`, `world_state.md`, `session_log.md`, and `art/art_log.md` mean the corresponding files inside the active numbered campaign folder.
+
+# Game Master Rules — Campaign 1
+
+Campaign 1 inherits the repository-wide gameplay rules in `../../GAME_MASTER_RULES.md` and the shared numbered-campaign architecture in `../GAME_MASTER_RULES.md`.
+
+When **rules themselves conflict**, Campaign 1 uses this order:
+
+1. the player's newest explicit Campaign 1 instruction
+2. this Campaign 1-local rule file for Campaign 1-specific operating, agency, behavior, or mechanical overrides
+3. `../GAME_MASTER_RULES.md` for shared campaign persistence, ownership, Campaign Turn, NPC, vendor, and save architecture
+4. `../../GAME_MASTER_RULES.md` for repository-wide gameplay mechanics and behavior
+
+Campaign 1's canonical state files remain authoritative for the facts and mutable state assigned to them by the shared ownership rules. They are not a lower-priority rules layer.
+
+This file should stay small. Do not copy shared rules or ordinary character facts back into it merely for convenience. Character facts belong in `character_sheet.md`; NPC facts belong in `NPC-state.md`; world facts belong in `world_state.md`; and other campaign state belongs in its assigned owner.
