@@ -91,3 +91,26 @@ Examples include consuming or gaining an item, spending or receiving currency, l
 For a **shop purchase**, reconcile the connected transaction rather than updating isolated pieces: update the shop NPC's business stock in `NPC-state.md`, decrease the buyer's currency by the approved Final Transaction Price, add the acquired item and acquisition snapshot to the appropriate `inventory.md` record, apply the compatible/separate stack result, and update the buyer's `NPC-state.md` master ownership too when the buyer is a current-party persistent NPC. For a routine/basic repeat good, verify that the shop row's Base Price matches `routine_item_prices.md`. Shop stock must not be treated as the shopkeeper's personal carried possessions.
 
 Do not leave a master record stale merely because the same possession also has a more detailed active representation in `inventory.md`.
+
+## Current-state routing
+
+This README is static documentation and does not duplicate live campaign state.
+
+- `active_game.json` owns the authoritative last completed Campaign 1 state header.
+- `turn_save.md` owns the current unfinished Campaign Turn ledger and recovery status.
+- `character_sheet.md` owns DevilMedlar and Senpai's established character and relationship facts.
+
+## Canonical Campaign 1 files
+
+- `GAME_MASTER_RULES.md` — Campaign 1-only core-PC mapping, agency, relationship-informed behavior rules, and any future Campaign 1-specific operating/mechanical overrides.
+- `active_game.json` — authoritative last completed Campaign 1 state header, including completed Campaign Turn, completed/pre-game `current_scene_name`, location, character-creation completion state, completed PC Level/XP advancement state, and save revision.
+- `turn_save.md` — temporary authoritative ledger for the current unfinished Campaign Turn: Campaign Turn number, Current Step, Current Scene, numbered events, current in-turn state, pending shop transactions, pending transfers, final review, permanent-save verification, and reset approval.
+- `character_sheet.md` — DevilMedlar and Senpai statistics, abilities, traits, textual appearance canon, synchronized human-readable Level/XP mirrors, personal state, and established relationship continuity.
+- `NPC-state.md` — persistent NPC master state and the Campaign 1 NPC record schema, including stable IDs, NPC mechanics/relationships, possessions, vendor/business state, and shop stock.
+- `routine_item_prices.md` — authoritative Campaign 1 classification and recurring Base Price reference for routine/basic repeat goods.
+- `inventory.md` — detailed active mechanical bookkeeping for DevilMedlar, Senpai, and possessions carried by current party NPCs, including owned-item mechanics snapshots and stack handling.
+- `world_state.md` — Campaign 1 locations, factions, overall quests/missions, clues, discoveries, world consequences, player-known world secrets, unresolved threads, and lightweight NPC references.
+- `session_log.md` — Campaign 1's chronological completed-save checkpoint history.
+- `art/art_log.md` — Campaign 1 verified visual-reference paths and visual-reference continuity metadata. Textual appearance canon remains in the owning state files.
+
+Shared ownership, Campaign Turn, NPC reconciliation, vendor/shop, save, recovery, fresh-start, and visual-reference staging rules are defined outside this folder in the inherited shared rulebooks.
