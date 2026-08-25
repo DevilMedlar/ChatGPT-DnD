@@ -1,0 +1,1 @@
+Future campaigns use sibling folders such as `campaign-2`, `campaign-3`, and so on. They inherit the root and `campaigns/` rulebooks automatically. A new campaign needs a local `GAME_MASTER_RULES.md` only when it has campaign-specific operating, agency, behavior, or mechanical rules that belong in an overlay.
