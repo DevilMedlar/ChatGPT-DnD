@@ -2,12 +2,6 @@
 
 **Status:** Character creation is in progress.
 
-This file stores Campaign 1's core player-character detail and synchronized human-readable Level/XP mirrors.
-
-Repository-wide character-creation requirements are owned by `../../GAME_MASTER_RULES.md`. Fresh-campaign isolation, character-creation checkpoint behavior, and completed advancement-state ownership are owned by `../GAME_MASTER_RULES.md`.
-
-The blank fields below are intentional and remain undecided until established during current Campaign 1 character creation. Currently established canon includes the names, ages, pronouns, and shared relationship history below.
-
 ## Shared Relationship Canon
 
 - DevilMedlar and Senpai are both 20 years old.
@@ -57,8 +51,6 @@ The blank fields below are intentional and remain undecided until established du
 
 ### Equipment Summary
 
-DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
-
 ### Skills
 
 ### Features / Abilities / Spells
@@ -67,13 +59,9 @@ DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
 
 ### Appearance
 
-This section owns DevilMedlar's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
-
 ### Personal / Relationship Continuity
 
 No additional DevilMedlar-specific relationship continuity established beyond the Shared Relationship Canon above.
-
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
 
 ## Senpai (ChatGPT-controlled PC / co-protagonist)
 
@@ -114,8 +102,6 @@ Adult romantic, sexual, fertility, reproductive, or relationship details are rec
 
 ### Equipment Summary
 
-Senpai's authoritative current inventory is tracked in `inventory.md`.
-
 ### Skills
 
 ### Features / Abilities / Spells
@@ -124,10 +110,6 @@ Senpai's authoritative current inventory is tracked in `inventory.md`.
 
 ### Appearance
 
-This section owns Senpai's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
-
 ### Personal / Relationship Continuity
 
 No additional Senpai-specific relationship continuity established beyond the Shared Relationship Canon above.
-
-Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
