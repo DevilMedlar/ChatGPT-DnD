@@ -20,3 +20,15 @@ Award XP for meaningful accomplishments such as encounters, discoveries, investi
 When an XP calculation produces a fractional result, use normal arithmetic rounding unless the effect explicitly defines another rule: `.5` or higher rounds up to the next whole XP, while anything below `.5` rounds down.
 
 Campaign-specific advancement state authority and persistence rules live in `campaigns/GAME_MASTER_RULES.md`.
+
+## PC advancement authority
+
+The repository-wide gameplay rulebook owns **how** PC advancement works: XP mode, default thresholds, award logic, rounding, and level-up behavior.
+
+Within each numbered campaign:
+
+- `active_game.json` owns the authoritative **completed PC advancement state** through campaign-wide `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`.
+- `character_sheet.md` displays each core PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
+- The required ChatGPT-controlled PC / co-protagonist uses the same PC-format advancement authority as the player-controlled PC. She is not routed through generic NPC advancement unless a campaign-specific rule explicitly says otherwise.
+- During an active Campaign Turn, staged XP awards, threshold changes, and level changes belong in `turn_save.md` and temporarily overlay the completed permanent representations until approved reconciliation.
+- After any completed save that changes PC advancement, the Level/XP mirrors in `character_sheet.md` must exactly match the authoritative values in `active_game.json`.
