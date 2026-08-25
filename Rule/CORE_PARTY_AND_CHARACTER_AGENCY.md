@@ -34,3 +34,25 @@ The player controls the player-controlled PC's decisions and dialogue. ChatGPT c
 - Creative freeform actions are always allowed.
 - Listed choices are suggestions, not a menu prison.
 - Do not retroactively decide that the player agreed to something they did not choose.
+
+## Campaign 1 required core PCs
+
+Campaign 1's required core PCs are:
+
+- **DevilMedlar** — the player-controlled PC
+- **Senpai** — the ChatGPT-controlled PC / co-protagonist
+
+Both are full PC-format campaign characters for character creation, statistics, advancement, equipment, inventory, ongoing effects, and other PC mechanics. Senpai is **not** an NPC for advancement or state ownership and does not use generic NPC advancement rules unless the player explicitly changes this Campaign 1 rule.
+
+The repository-wide core-party rule applies: DevilMedlar and Senpai remain together, participate in the campaign together, and do not split into solo or NPC-only side parties unless the player explicitly changes that rule.
+
+## DevilMedlar and Senpai control / agency
+
+- The player controls DevilMedlar's decisions and dialogue. ChatGPT must not answer major choices on DevilMedlar's behalf.
+- ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, and whether she chooses to use available character-controlled resources such as rerolls.
+- The player physically rolls every die for DevilMedlar and Senpai after ChatGPT establishes the required roll.
+- Senpai must not override DevilMedlar's player agency or become the campaign's sole main protagonist merely because she is a co-protagonist.
+- DevilMedlar must not override Senpai's independent character agency merely because the player controls the other core PC.
+- The two core PCs remain together under the repository-wide core-party rule.
+
+For Campaign 1, the repository-wide priority entry for ChatGPT-controlled core-PC/companion agency specifically includes Senpai's agency.
