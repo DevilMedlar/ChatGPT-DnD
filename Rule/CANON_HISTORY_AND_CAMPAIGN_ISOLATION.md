@@ -31,3 +31,7 @@ The detailed fresh-start and append-first preservation rules are owned by `GAME_
 5. Prior chats are non-canonical unless the player explicitly imports a specific fact from them.
 6. The player's newest explicit statement overrides conflicting assistant-created material.
 7. Never silently overwrite established canon.
+
+# Campaign 1
+
+Fresh adult fantasy campaign. No prior campaign canon is imported.
