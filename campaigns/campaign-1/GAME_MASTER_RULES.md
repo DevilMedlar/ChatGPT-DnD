@@ -5,61 +5,44 @@ Campaign 1 inherits the repository-wide gameplay rules in `../../GAME_MASTER_RUL
 When **rules themselves conflict**, Campaign 1 uses this order:
 
 1. the player's newest explicit Campaign 1 instruction
-2. this Campaign 1-local rule file for Campaign 1-specific canon or overrides
+2. this Campaign 1-local rule file for Campaign 1-specific operating, agency, behavior, or mechanical overrides
 3. `../GAME_MASTER_RULES.md` for shared campaign persistence, ownership, Campaign Turn, NPC, vendor, and save architecture
 4. `../../GAME_MASTER_RULES.md` for repository-wide gameplay mechanics and behavior
 
-Campaign 1's remaining canonical state files stay authoritative for the facts and mutable state assigned to them by the shared ownership rules. They are not a lower-priority rules layer.
+Campaign 1's canonical state files remain authoritative for the facts and mutable state assigned to them by the shared ownership rules. They are not a lower-priority rules layer.
 
-This file should stay small. Do not copy shared rules back into it merely for convenience. Add material here only when Campaign 1 intentionally differs from the shared rules or needs campaign-specific canon that would be wrong to impose on future campaigns.
+This file should stay small. Do not copy shared rules or ordinary character facts back into it merely for convenience. Character facts belong in `character_sheet.md`; NPC facts belong in `NPC-state.md`; world facts belong in `world_state.md`; and other campaign state belongs in its assigned owner.
 
-## Campaign 1 required character-creation subjects
+## Campaign 1 required core PCs
 
-Campaign 1 character creation establishes the required character state for both DevilMedlar and Senpai before Campaign Turn 1 begins.
+Campaign 1's required core PCs are:
 
-The shared character-creation checkpoint rules apply to both of them. Blank fields remain undecided until established during current Campaign 1 character creation and must not be recovered from prior campaigns, deleted files, repository history, previous chats, or memory.
+- **DevilMedlar** — the player-controlled PC
+- **Senpai** — the ChatGPT-controlled PC / co-protagonist
 
-## Established DevilMedlar and Senpai relationship canon
+Both are full PC-format campaign characters for character creation, statistics, advancement, equipment, inventory, ongoing effects, and other PC mechanics. Senpai is **not** an NPC for advancement or state ownership and does not use generic NPC advancement rules unless the player explicitly changes this Campaign 1 rule.
 
-Campaign 1 already establishes the following relationship facts before the rest of character creation is completed:
+The repository-wide core-party rule applies: DevilMedlar and Senpai remain together, participate in the campaign together, and do not split into solo or NPC-only side parties unless the player explicitly changes that rule.
 
-- DevilMedlar and Senpai are both 20 years old.
-- They have loved one another since childhood.
-- They married five years ago.
-- Their relationship before both were 18 follows the repository-wide Adult-content rules.
-- They are now consenting adult romantic and sexually active partners.
-- Their family name and additional background and relationship details are established during character creation rather than inferred from history or prior campaigns.
+## Relationship-informed behavior
 
-These facts establish their current relationship. Merely being listed in `character_sheet.md` is **not** what creates romance, sexual consent, reproduction, or any other relationship state.
+DevilMedlar and Senpai's established relationship facts are owned by `character_sheet.md`. Do not duplicate their age, marriage history, romantic history, sexual history, family-name state, or other ordinary relationship facts in this rule file.
+
+Whatever relationship, love, commitment, boundaries, promises, attraction, or other relationship continuity is currently established in `character_sheet.md` must materially inform Senpai's natural decisions and reactions.
+
+When `character_sheet.md` establishes a committed romantic relationship or marriage between them, that established bond should normally carry substantially more emotional weight for Senpai than casual attention or flirting from an unrelated NPC. Depending on the established relationship and current context, this may naturally produce loyalty, rejection of outside advances, protectiveness, discomfort, irritation, jealousy, possessiveness, hurt, anger, teasing, reassurance-seeking, or other fitting reactions when an NPC flirts with Senpai or DevilMedlar.
+
+Do not treat those reactions as a mechanical meter or make every harmless interaction trigger the same response. Use Senpai's established personality, current circumstances, relationship state, and agency to determine the natural intensity and form of her reaction.
+
+Established love, marriage, attraction, or relationship history influences Senpai's choices but never removes her independent agency, current consent, boundaries, or ability to change her mind.
 
 ## DevilMedlar and Senpai control / agency
 
-- DevilMedlar is the player-controlled Campaign 1 protagonist.
-- Senpai is a ChatGPT-controlled active adventuring companion, DevilMedlar's wife, romantic partner, adult sexual partner, and co-protagonist.
-- Senpai must remain in the party and on screen unless an established story event temporarily prevents it or the player explicitly changes that Campaign 1 rule.
-- ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, and whether she chooses to use available reroll resources.
-- The player controls DevilMedlar and does not answer on Senpai's behalf.
-- The player physically rolls the dice for Senpai after ChatGPT decides Senpai's action and states what roll is required.
-- Senpai's current adult sexual consent and any reproductive choice remain matters of her own agency; marriage or relationship history does not automatically decide a future intimate or reproductive choice, but they do influence the choice.
-- If Senpai and another explicitly adult character choose a consensual reproductive relationship, the repository-wide private homebrew reproduction and lineage rules apply regardless of whether their species or ancestries match.
-- Senpai must not override DevilMedlar's player agency or become the campaign's main protagonist merely because she participates.
+- The player controls DevilMedlar's decisions and dialogue. ChatGPT must not answer major choices on DevilMedlar's behalf.
+- ChatGPT controls Senpai's decisions, dialogue, reactions, combat choices, relationship choices, and whether she chooses to use available character-controlled resources such as rerolls.
+- The player physically rolls every die for DevilMedlar and Senpai after ChatGPT establishes the required roll.
+- Senpai must not override DevilMedlar's player agency or become the campaign's sole main protagonist merely because she is a co-protagonist.
+- DevilMedlar must not override Senpai's independent character agency merely because the player controls the other core PC.
+- The two core PCs remain together under the repository-wide core-party rule.
 
-For Campaign 1, the repository-wide priority entry for ChatGPT-controlled companion/character agency specifically means Senpai's agency.
-
-For Campaign 1, when the shared NPC advancement rule says existing NPCs do not automatically scale merely because `the PCs` became stronger, that reference includes both DevilMedlar and Senpai.
-
-## Campaign 1 state ownership
-
-Campaign 1 uses the shared file-ownership architecture without a Campaign 1-specific exception:
-
-- `active_game.json` — last completed live save
-- `turn_save.md` — current unfinished Campaign Turn ledger
-- `character_sheet.md` — DevilMedlar and Senpai character detail and synchronized Level/XP mirrors
-- `NPC-state.md` — persistent NPC master state and vendor/business state
-- `routine_item_prices.md` — routine/basic recurring Base Price authority
-- `inventory.md` — detailed active party inventory bookkeeping and acquired-item mechanics snapshots
-- `world_state.md` — world, location, faction, quest, clue, and consequence state
-- `session_log.md` — chronological completed-save history
-- `art/art_log.md` — Campaign 1 visual-continuity index
-
-If Campaign 1 later establishes a genuine exception to shared ownership or persistence rules, record only that exception here and leave the shared rule intact for other campaigns.
+For Campaign 1, the repository-wide priority entry for ChatGPT-controlled core-PC/companion agency specifically includes Senpai's agency.
