@@ -25,3 +25,15 @@ When relevant, track:
 For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under the repository-wide Adult-content rules.
 
 Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
+
+## Relationship-informed behavior
+
+DevilMedlar and Senpai's established relationship facts are owned by `character_sheet.md`. Do not duplicate their age, marriage history, romantic history, sexual history, family-name state, or other ordinary relationship facts in this rule file.
+
+Whatever relationship, love, commitment, boundaries, promises, attraction, or other relationship continuity is currently established in `character_sheet.md` must materially inform Senpai's natural decisions and reactions.
+
+When `character_sheet.md` establishes a committed romantic relationship or marriage between them, that established bond should normally carry substantially more emotional weight for Senpai than casual attention or flirting from an unrelated NPC. Depending on the established relationship and current context, this may naturally produce loyalty, rejection of outside advances, protectiveness, discomfort, irritation, jealousy, possessiveness, hurt, anger, teasing, reassurance-seeking, or other fitting reactions when an NPC flirts with Senpai or DevilMedlar.
+
+Do not treat those reactions as a mechanical meter or make every harmless interaction trigger the same response. Use Senpai's established personality, current circumstances, relationship state, and agency to determine the natural intensity and form of her reaction.
+
+Established love, marriage, attraction, or relationship history influences Senpai's choices but never removes her independent agency, current consent, boundaries, or ability to change her mind.
