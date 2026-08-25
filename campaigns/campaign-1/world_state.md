@@ -1,6 +1,6 @@
 # World State — Campaign 1
 
-Campaign 1 is active. Pre-game background canon remains established in its proper campaign owners.
+Campaign 1 is the currently selected campaign. Its lifecycle phase is setup. Pre-game background canon remains established in its proper campaign owners.
 
 ## Important NPCs
 
