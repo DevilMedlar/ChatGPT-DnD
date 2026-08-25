@@ -8,7 +8,7 @@ For NPCs, `NPC-state.md` remains the **master ownership list**. This file expand
 
 Shop stock does **not** belong here. Shop stock belongs in the relevant NPC's `NPC-state.md` record until a party member actually acquires an item.
 
-Shared inventory ownership, NPC join/leave reconciliation, Campaign Turn staging, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
+Inventory ownership and item mechanics are defined in `../Rule/INVENTORY_EQUIPMENT_AND_ITEMS.md`. NPC join/leave reconciliation is defined in `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Campaign Turn staging and persistence follow `../Rule/CAMPAIGN_TURNS_AND_STEPS.md`, `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`, and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
 
 ## Player-Controlled PC
 
@@ -123,7 +123,7 @@ Record important expenditures when useful for continuity or reconciliation.
 
 ## NPC Join / Leave Reconciliation
 
-The shared NPC party-membership and possession-reconciliation procedure is owned by `../GAME_MASTER_RULES.md`.
+The NPC party-membership and possession-reconciliation procedure is defined in `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`.
 
 This file must not be rewritten mid-Turn merely because an NPC joins, leaves, spends, gains, loses, or changes possessions. Use `turn_save.md` during an unfinished Campaign Turn. Create or expand a current-party NPC section here only through the shared completed-save workflow, and remove or collapse it only after that NPC's final active possessions have been reconciled back to the master ownership list in `NPC-state.md`.
 
@@ -192,6 +192,6 @@ Track meaningful shared travel resources here when established, such as food, wa
 
 ## Local Continuity Note
 
-This file contains only campaign-local inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation, append-first preservation, Campaign Turn staging, and completed-save transfer rules are inherited from `../GAME_MASTER_RULES.md`.
+This file contains only campaign-local inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation is defined in `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Append-first preservation and completed-save transfer rules are defined in `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`. Campaign Turn staging and save approval are defined in `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
 
 `NPC-state.md` remains the master ownership list for each persistent NPC; this file remains the detailed active bookkeeping owner for possessions carried by the current party.
