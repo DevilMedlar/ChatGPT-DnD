@@ -39,3 +39,13 @@ Do not treat those reactions as a mechanical meter or make every harmless intera
 Established love, marriage, attraction, or relationship history influences Senpai's choices but never removes her independent agency, current consent, boundaries, or ability to change her mind.
 
 Their actual relationship facts are owned by `character_sheet.md`. The local rules define how established relationship continuity should influence Senpai's behavior without duplicating those facts or removing her independent agency.
+
+Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
+
+Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
+
+## Relationship / Attraction Field Convention
+
+The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../GAME_MASTER_RULES.md`.
+
+Campaign 1's template below keeps explicit target-specific fields for DevilMedlar and Senpai where useful. NPCs below 18 follow the repository-wide adult-content rules in `../../GAME_MASTER_RULES.md`.
