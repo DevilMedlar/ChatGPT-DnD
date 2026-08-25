@@ -38,3 +38,11 @@ Every numbered campaign inherits:
 3. an optional local `campaign-N/GAME_MASTER_RULES.md` — campaign-specific operating, agency, behavior, or mechanical overrides only
 
 A local campaign rule file must not duplicate the shared rulebooks or ordinary campaign facts merely for convenience. Character, NPC, relationship, world, inventory, quest, and other state facts belong in their assigned state files.
+
+# Shared Campaign Rules
+
+These rules apply to every numbered campaign under `campaigns/` unless that campaign explicitly establishes a narrower local override.
+
+Repository-wide gameplay mechanics and behavioral rules live in `../GAME_MASTER_RULES.md`. Each numbered campaign owns its own canon and mutable state. A campaign-local `GAME_MASTER_RULES.md`, when present, should contain only campaign-specific operating rules, agency rules, mechanical overrides, or exceptional premises rather than duplicating shared rules or ordinary state facts.
+
+Throughout this file, references such as `active_game.json`, `turn_save.md`, `character_sheet.md`, `NPC-state.md`, `routine_item_prices.md`, `inventory.md`, `world_state.md`, `session_log.md`, and `art/art_log.md` mean the corresponding files inside the active numbered campaign folder.
