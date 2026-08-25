@@ -83,3 +83,27 @@ A completed purchase has connected state on both sides:
 After Confirmation Gate 1, reconcile all connected sides together. Never permanently apply only the vendor side, only the currency side, or only the inventory side of the transaction.
 
 Once an official item has been acquired and its relevant mechanics are established in campaign inventory, later changes to the external official page do not silently rewrite the already-owned campaign item. `inventory.md` owns the acquired-item snapshot and stack-compatibility rules.
+
+When a shop purchase occurs during an active Campaign Turn, keep the transaction temporary here until Confirmation Gate 1. Use one compact record per transaction and preserve enough information to reconcile every connected side of the purchase.
+
+A staged purchase is one connected transaction. Vendor quantity, buyer currency, inventory acquisition, and acquisition snapshot must reconcile together; do not permanently apply only one side. A pricing factor recorded as already included in Base Price must not also appear as a Final Price modifier for the same transaction. If the buyer is a current-party persistent NPC, include the required `NPC-state.md` master-ownership update in `Pending Permanent Transfers`.
+
+This file is the authoritative Campaign 1 data reference for **routine/basic repeat-good classification** and each classified item's recurring **Base Price**.
+
+The shared rules for establishing, using, changing, staging, reconciling, and verifying recurring Base Prices are owned by `../GAME_MASTER_RULES.md`. This file does not redefine those rules.
+
+The routine/basic classification here is a **Campaign 1 shopping classification**, not the same thing as an official D&D rarity category such as Common, Uncommon, Rare, or another rules-defined rarity.
+
+Each entry must identify the exact item under Campaign 1's adopted rules/reference context before the classification and recurring Base Price are established through the shared workflow.
+
+Do not add placeholder items merely to populate the table. Add an entry only when Campaign 1 establishes the classification and Base Price through the shared completed-save workflow.
+
+When an established recurring Base Price changes under the shared rules, append a compact chronological record containing the completed save context, item, old Base Price, new Base Price, and reason.
+
+Suggested format:
+
+`- Save revision / Campaign Turn or other completed-save context — Item: old Base Price -> new Base Price — reason`
+
+## Local Continuity Note
+
+This file contains Campaign 1 price state only. Fresh-campaign isolation and historical-reconstruction restrictions are inherited from `../GAME_MASTER_RULES.md`.
