@@ -62,3 +62,49 @@ When an NPC leaves the party:
 4. only then remove or collapse their expanded section from `inventory.md`
 
 Do not let possessions disappear merely because party membership changed.
+
+This file is the authoritative master record for persistent NPCs in Campaign 1.
+
+It owns NPC identity, appearance, mechanical state, personality, relationship and attraction state, knowledge, secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC continuity.
+
+`world_state.md` references NPCs where they matter to locations, factions, quests, clues, discoveries, or world consequences without duplicating their full records. `inventory.md` expands the possessions of NPCs currently traveling with the party. `turn_save.md` temporarily overlays unfinished Campaign Turn changes.
+
+Shared NPC ownership, relationship semantics, advancement, party-membership reconciliation, vendor/shop behavior, fresh-start isolation, and persistence rules are owned by `../GAME_MASTER_RULES.md`. Repository-wide adult-content boundaries are owned by `../../GAME_MASTER_RULES.md`.
+
+## Stable NPC ID Convention
+
+Every persistent NPC receives one stable Campaign 1 ID when the NPC is first added to this file.
+
+- Use the form `NPC-0001`, `NPC-0002`, `NPC-0003`, and so on.
+- Assign the next unused numeric ID in sequence.
+- An NPC ID never changes because the NPC's name, title, role, location, relationship, party status, or life status changes.
+- Never reuse an old NPC ID for a different NPC, even if the original NPC later dies, disappears, is retired from active play, or has their record corrected.
+- Names and Markdown headings are human-readable display text; they are not the cross-file identity key.
+- Cross-file references to a persistent NPC must include the stable NPC ID. The current NPC name may be included beside it for readability.
+- If one NPC is ever found with multiple IDs, or two NPCs share one ID, stop and reconcile the identity conflict before completing another persistent save.
+
+When NPCs become persistent, list them here with their stable NPC ID, current name, and a short role or relevance note. Do not use a name-derived Markdown anchor as the NPC's identity.
+
+When `In party: Yes`, do not duplicate moment-to-moment movement here. The last completed party location belongs in `active_game.json`; unfinished Campaign Turn movement and combat position belong in `turn_save.md` until Campaign Turn reconciliation.
+
+Keep factual knowledge, beliefs, shared information, withheld information, and secrets separate when they differ.
+
+Use when the NPC is mechanically relevant. A minor noncombat NPC does not need a complete combat block unless play establishes one.
+
+`Level` and `Class / archetype` are mutable mechanical state and are tracked here rather than duplicated in Identity.
+
+This is the NPC's **master ownership list**. It remains here whether the NPC is in the party or not.
+
+When the NPC is currently in the party, `inventory.md` expands mechanically relevant carried possessions for active bookkeeping. The ownership list here remains the master list of what belongs to the NPC.
+
+Use this optional section for quest givers, mission contacts, targets, witnesses, missing persons, suspects, guides, faction representatives, villains, or other story-linked NPCs.
+
+`NPC-state.md` records **this NPC's involvement**. `world_state.md` remains authoritative for the overall quest or mission state.
+
+Keep a compact NPC-specific history of events that explain the NPC's current state, behavior, relationships, obligations, or role. Do not duplicate the entire `session_log.md`.
+
+## Shared Rule Authority
+
+NPC party joins/leaves, possession reconciliation, cross-file ownership, stable cross-file references, NPC advancement, relationship-state semantics, shop/vendor behavior, fresh-start isolation, append-first preservation, and Campaign Turn staging are governed by `../GAME_MASTER_RULES.md`.
+
+This file contains only Campaign 1's persistent NPC master state and the Campaign 1 NPC record schema.
