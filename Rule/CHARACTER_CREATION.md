@@ -73,3 +73,9 @@ After every character-creation checkpoint, verify at minimum:
 The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for both required core PCs. It must also verify that each core PC's finalized starting equipment, starting currency, and other starting consumable/resource inventory are recorded in `inventory.md`, and any equipment summary in `character_sheet.md` agrees with that inventory state. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
 
 Finalized character-creation choices use the shared confirmed character-creation checkpoint workflow in `../GAME_MASTER_RULES.md`.
+
+This file stores Campaign 1's core player-character detail and synchronized human-readable Level/XP mirrors.
+
+Repository-wide character-creation requirements are owned by `../../GAME_MASTER_RULES.md`. Fresh-campaign isolation, character-creation checkpoint behavior, and completed advancement-state ownership are owned by `../GAME_MASTER_RULES.md`.
+
+The blank fields below are intentional and remain undecided until established during current Campaign 1 character creation. Currently established canon includes the names, ages, pronouns, and shared relationship history below.
