@@ -26,6 +26,8 @@ This section records persistent world locations and their established details.
 
 Locations may reference relevant NPCs by stable NPC ID and current name and point to their `NPC-state.md` records. A location record may include things such as ownership, services normally available there, faction control, known hazards, discovered features, access conditions, and important events without copying the NPC's full record.
 
+It does **not** track the party's current live location. The authoritative completed current location belongs in `active_game.json`; during an unfinished Campaign Turn, any temporary movement or position changes are staged in `turn_save.md` until Campaign Turn reconciliation.
+
 ## Factions / Organizations
 
 Faction records may reference important NPC members or leaders by stable NPC ID and current name and point to `NPC-state.md`, while this file remains authoritative for the faction's world-level status, goals, alliances, enemies, territory, reputation, and consequences.
@@ -51,3 +53,9 @@ Persistent consequences may reference affected NPCs, locations, factions, shops,
 ## Unresolved Threads
 
 Character-creation decisions and unfinished player-character background or relationship details remain with their character-creation owners until they produce persistent world-state information.
+
+## Shared Rule Authority
+
+Cross-file NPC identity, NPC/world ownership boundaries, shop/world ownership boundaries, completed-vs-in-turn location authority, fresh-campaign isolation, and persistence behavior are owned by `../GAME_MASTER_RULES.md`.
+
+This file stores only Campaign 1's world-level canon and world-state schemas. `NPC-state.md` remains the persistent NPC master; `character_sheet.md` owns player-character relationship continuity; `active_game.json` owns the last completed party location; `turn_save.md` owns temporary Campaign Turn movement and position changes.
