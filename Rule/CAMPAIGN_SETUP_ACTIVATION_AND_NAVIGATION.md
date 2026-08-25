@@ -1,21 +1,25 @@
-Future campaigns use sibling folders such as `campaign-2`, `campaign-3`, and so on. They inherit the root and `campaigns/` rulebooks automatically. A new campaign needs a local `GAME_MASTER_RULES.md` only when it has campaign-specific operating, agency, behavior, or mechanical rules that belong in an overlay.
+# Campaign Setup, Activation, and Navigation
+
+## Continuing an existing campaign
 
 Before continuing play:
 
-1. read the shared rule hierarchy
+1. read the applicable rules under `Rule/`
 2. read `campaigns/active_campaign.json`
 3. follow its pointer to the active numbered campaign
-4. read that campaign's local rules overlay if one exists
-5. read `active_game.json` and `turn_save.md`
-6. use the `turn_save.md` status to recover, resume, review, verify, reset, or begin the next Campaign Turn correctly
-7. read the other canonical state files needed for the current scene
+4. read that campaign's `active_game.json` and `turn_save.md`
+5. use the `turn_save.md` status to recover, resume, review, verify, reset, or begin the next Campaign Turn correctly
+6. read the other canonical state files needed for the current scene
 
-## Campaign structure
+Do not rely on chat memory when the current repository state can answer the question.
 
-A normal numbered campaign should contain:
+## Numbered campaign structure
+
+Each numbered campaign is a sibling folder such as `campaign-1/`, `campaign-2/`, `campaign-3/`, and so on.
+
+A normal numbered campaign contains:
 
 ```text
-README.md
 active_game.json
 turn_save.md
 character_sheet.md
@@ -28,25 +32,24 @@ art/
   art_log.md
 ```
 
-A numbered campaign may additionally contain:
-
-```text
-GAME_MASTER_RULES.md
-```
-
-but only when that campaign needs local operating, agency, behavior, or mechanical rules that do not belong in the shared rule layers.
+The numbered campaign folder owns live campaign state. Reusable rules belong in `Rule/`, and reusable blank sheet structure belongs in `New-Sheets/`.
 
 ## New campaign setup
 
 When creating a new numbered campaign:
 
-1. create the new sibling folder
-2. create fresh state/template files using the shared ownership architecture
-3. initialize `active_game.json` with `campaign_turn_number: 0`, `character_created: false`, PC advancement state for both required core PCs, and `save_revision: 0`
-4. initialize `turn_save.md` prepared for Campaign Turn 1 with `Status: ready` and `Base save revision: 0`
-5. create both required core PCs under the repository-wide core-party rules: one male he/him player-controlled PC and one female she/her ChatGPT-controlled PC / co-protagonist
-6. keep the campaign's canon isolated from every existing campaign
-7. create a local `GAME_MASTER_RULES.md` only if the campaign actually needs a local operating, agency, behavior, or mechanical override
-8. change `active_campaign.json` only when the new campaign should become the active campaign
+1. create a new sibling folder under `campaigns/`
+2. create fresh campaign state from the blank templates in `New-Sheets/`; do not copy another campaign's populated state
+3. initialize `active_game.json` with `campaign_turn_number: 0`, `character_created: false`, the chosen `xp_mode`, completed advancement state for both required core PCs, and `save_revision: 0`
+4. initialize `turn_save.md` for Campaign Turn 1 with `Status: ready`, `Current Step: 0`, `Current Scene: None yet.`, and `Base save revision: 0`
+5. create both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
+6. keep the new campaign's canon isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
+7. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
 
-Do **not** copy the root or `campaigns/` shared rulebooks into the new campaign folder.
+The new campaign begins fresh. Existing characters, NPCs, relationships, items, locations, quests, secrets, story events, and other state are not imported unless the player explicitly requests a permitted import.
+
+## Activating another campaign
+
+Changing the active campaign changes only the selector in `campaigns/active_campaign.json` and its pointer to that campaign's `active_game.json`.
+
+Do not move, merge, rewrite, or copy campaign state merely because a different campaign becomes active.
