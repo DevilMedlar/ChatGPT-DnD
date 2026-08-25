@@ -1,51 +1,46 @@
 # Art Continuity Log — Campaign 1
 
-This file is the canonical visual index for Campaign 1.
+This file is the canonical **visual-reference index** for Campaign 1. It does not duplicate or override textual appearance canon.
 
-## Rule Authority
+## Rule authority
 
 Repository-wide image-generation behavior, adult image boundaries, textual-canon precedence, and the player-managed generated-image-binary rule are owned by `../../../GAME_MASTER_RULES.md`.
 
-Campaign-level visual metadata staging, reference-art persistence, path verification, and Campaign Turn reconciliation are owned by `../../GAME_MASTER_RULES.md`.
+Campaign-level visual-reference metadata staging, reference-art persistence, path verification, and Campaign Turn reconciliation are owned by `../../GAME_MASTER_RULES.md`.
 
-This file stores Campaign 1's established visual canon and verified reference-art metadata. Do not duplicate the shared image rules here.
+Textual appearance canon belongs to the owning state file:
 
-## Player Character Visual Canon
+- DevilMedlar and Senpai — `../character_sheet.md`
+- persistent NPCs — `../NPC-state.md`
+- locations and world objects — `../world_state.md`
+- owned equipment or important carried objects when applicable — `../inventory.md`
 
-### DevilMedlar
+This file records verified image paths, visual-reference provenance, which visible features are canonical versus inspiration only, known image inaccuracies, and other reference metadata needed to reproduce established visuals consistently.
 
-No visual details established yet. Character creation is in progress.
+## DevilMedlar references
 
-Once established, these details remain stable visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit player revision.
+- **Primary reference:** None established.
+- **Other verified references:** None established.
+- **Reference notes:** None.
 
-## Companion Visual Canon
+## Senpai references
 
-### Senpai
+- **Primary reference:** None established.
+- **Other verified references:** None established.
+- **Reference notes:** None.
 
-No visual details established yet. Character creation is in progress.
-
-Once established, these details remain stable visual canon unless later changed by transformation, injury, disguise, equipment, or an explicit character revision.
-
-## NPC Visual Canon
-
-None established.
-
-## Locations
-
-None established.
-
-## Equipment / Important Objects
+## NPC references
 
 None established.
 
-## Reference Art
+## Location references
 
-### DevilMedlar
+None established.
 
-No primary reference established yet.
+## Equipment / important-object references
 
-### Senpai
+None established.
 
-No primary reference established yet.
+## Reference rule
 
-When reference art is later supplied or adopted, follow the shared path-verification, canonical-trait, and Campaign Turn staging rules in `../../GAME_MASTER_RULES.md`.
+When reference art is later supplied or adopted, record a repository path only after it actually exists and identify which visible features match canonical textual state, which are inspiration only, and which are accidental or incorrect. If an image conflicts with the owning textual state file, the textual state remains authoritative unless the player explicitly adopts the image difference as new canon through the normal persistence workflow.
