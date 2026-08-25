@@ -102,3 +102,7 @@ Track meaningful shared travel resources here when established, such as food, wa
 This file contains only Campaign 1 inventory state and inventory-specific mechanics/schema. Fresh-campaign isolation, append-first preservation, Campaign Turn staging, and completed-save transfer rules are inherited from `../GAME_MASTER_RULES.md`.
 
 `NPC-state.md` remains the master ownership list for each persistent NPC; this file remains the detailed active bookkeeping owner for possessions carried by the current party.
+
+DevilMedlar's authoritative current inventory is tracked in `inventory.md`.
+
+Senpai's authoritative current inventory is tracked in `inventory.md`.
