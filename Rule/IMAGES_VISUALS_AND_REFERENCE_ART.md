@@ -1,18 +1,34 @@
-## Images
-
-The repository-wide image play loop and player-managed generated-image-binary rule are owned by root `GAME_MASTER_RULES.md`.
-
-Textual appearance canon remains in the state file that owns the character, NPC, location, or item. Each campaign's `art/art_log.md` owns verified reference-image paths and visual-reference continuity metadata rather than duplicating textual appearance authority. Image-path and reference-metadata staging during Campaign Turns follows `campaigns/GAME_MASTER_RULES.md`.
+# Images, Visuals, and Reference Art
 
 ## Image generation
 
 Scene art is optional. Do not ask for an image after every scene.
 
-Good image candidates include major character introductions, dramatic reveals, transformations, important romantic or sensual moments, visually striking adult intimacy where image generation is permitted, spectacular locations, major monsters, boss encounters, important outfits/equipment/scars/tattoos/visual changes, or any scene the player explicitly asks to see.
+Good image candidates include:
 
-Generated image binaries are player-managed. ChatGPT must not commit, upload, create, replace, rename, or delete generated image files in the repository. The player handles image-file persistence manually. ChatGPT may update textual art-continuity metadata and may record a repository image path only after the player has added the file and that path is verified to exist.
+- major character introductions
+- dramatic reveals
+- transformations
+- important romantic or sensual moments
+- visually striking adult intimacy where image generation is permitted
+- spectacular locations
+- major monsters or boss encounters
+- important outfits, equipment, scars, tattoos, or other visual changes
+- any scene the player explicitly asks to see
 
-### Image decision workflow
+Adult image boundaries are governed by `ADULT_CONTENT_AND_CONSENT.md`.
+
+## Generated image files
+
+Generated image binaries are player-managed.
+
+ChatGPT must not commit, upload, create, replace, rename, or delete generated image files in the repository. The player handles image-file persistence manually.
+
+ChatGPT may update textual art-continuity metadata and may record a repository image path only after the player has added the file and that path is verified to exist.
+
+File existence alone does not make an image canonical.
+
+## Image decision workflow
 
 1. Narrate the scene normally and present any relevant gameplay choices first.
 2. If the scene genuinely deserves an image, end the text with `Make image? Yes / No`.
@@ -21,23 +37,10 @@ Generated image binaries are player-managed. ChatGPT must not commit, upload, cr
 5. If the player answers `No`, do not generate an image.
 6. When `No` is followed by other text in the same message, immediately parse the remaining text as gameplay input. Example: `No, A, 1, E) ...`.
 7. Before generating a recurring character, established location, important item, transformation, outfit, scar, tattoo, or other continuity-sensitive visual, consult the active campaign's textual appearance owner and visual-reference log.
-8. Generated images must be as accurate as possible to avoid having to remake them unnecessarily.
+8. Generated images must be as accurate as possible to established visual canon to avoid unnecessary remakes.
 9. Textual canon overrides accidental visual inconsistencies unless the player explicitly adopts the new visual detail.
 
-Campaign-specific staging and persistence of visual-reference metadata live in `campaigns/GAME_MASTER_RULES.md`.
-
-## Reference art
-
-When the player supplies reference art or manually adds images to the repository:
-
-- Record a repository path only after it actually exists.
-- Record which features are canonical and which are inspiration only.
-- Prefer written canonical traits over accidental differences in generated images.
-- Never assume an unverified image path exists.
-
-The active campaign's assigned textual state files own appearance canon. The campaign's `art/art_log.md` owns verified reference-image paths and visual-reference metadata that point back to that textual canon.
-
-## Image and reference-art persistence
+## Textual appearance authority
 
 Textual appearance canon belongs to the state file that owns the entity:
 
@@ -46,46 +49,34 @@ Textual appearance canon belongs to the state file that owns the entity:
 - `world_state.md` owns established location and world-object appearance where applicable
 - `inventory.md` owns mechanically or visually relevant owned-item state where applicable
 
-`art/art_log.md` is the campaign's canonical **visual-reference index**, not a competing textual appearance owner. It owns verified reference-image paths, generated/reference-art continuity metadata, provenance notes, and notes identifying which visible features are canonical, inspirational, or accidental. When an image conflicts with established textual canon, the textual state owner wins unless the player explicitly adopts the image difference as new canon.
+`art/art_log.md` is the campaign's canonical **visual-reference index**, not a competing textual appearance owner.
 
-Generated image binaries remain player-managed under the repository-wide image rules. File existence does not itself make an image canonical.
+It owns verified reference-image paths, visual-reference continuity metadata, provenance notes, and notes identifying which visible features are canonical, inspirational, accidental, or known to be inaccurate.
 
-When newly established continuity-critical visual-reference information occurs during an active Campaign Turn, stage it in `turn_save.md` and include `art/art_log.md` in the Exact Planned Permanent Transfers. If the underlying textual appearance also changes, stage the appropriate textual state owner too. Add the reference metadata to `art/art_log.md` only during approved Campaign Turn reconciliation. Outside an active Campaign Turn, persist it through the normal completed-save workflow.
+When an image conflicts with established textual canon, the textual state owner wins unless the player explicitly adopts the image difference as new canon.
+
+## Reference art
 
 When the player supplies reference art or manually adds images to the repository:
 
-- record the repository path only after it actually exists
-- record which features are canonical and which are inspiration only
-- prefer written canonical traits over accidental differences in generated images
+- record a repository path only after it actually exists
+- record which visible features match canonical textual state
+- record which features are inspiration only
+- record known accidental or incorrect visual details when relevant
+- prefer written canonical traits over accidental image differences
 - never assume an unverified image path exists
 
-If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
+## Persistence of visual-reference metadata
 
-## Visual continuity
+When continuity-critical visual-reference information is established during an active Campaign Turn:
 
-Textual appearance canon belongs to `character_sheet.md`, `NPC-state.md`, `world_state.md`, or `inventory.md` according to the entity involved. `art/art_log.md` is the Campaign 1 visual-reference index. Repository-wide image behavior lives in `../../GAME_MASTER_RULES.md`; Campaign Turn staging of visual-reference metadata lives in `../GAME_MASTER_RULES.md`.
+1. stage the change in `turn_save.md`
+2. include `art/art_log.md` in the planned permanent transfers
+3. if the underlying textual appearance also changes, stage the appropriate textual state owner too
+4. add the reference metadata to `art/art_log.md` only during approved Campaign Turn reconciliation
 
-This section owns DevilMedlar's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+Outside an active Campaign Turn, persist new visual-reference metadata through the normal completed-save workflow.
 
-This section owns Senpai's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged until approved reconciliation. File existence does not bypass save approval.
 
-This file is the canonical **visual-reference index** for Campaign 1. It does not duplicate or override textual appearance canon.
-
-## Rule authority
-
-Repository-wide image-generation behavior, adult image boundaries, textual-canon precedence, and the player-managed generated-image-binary rule are owned by `../../../GAME_MASTER_RULES.md`.
-
-Campaign-level visual-reference metadata staging, reference-art persistence, path verification, and Campaign Turn reconciliation are owned by `../../GAME_MASTER_RULES.md`.
-
-Textual appearance canon belongs to the owning state file:
-
-- DevilMedlar and Senpai — `../character_sheet.md`
-- persistent NPCs — `../NPC-state.md`
-- locations and world objects — `../world_state.md`
-- owned equipment or important carried objects when applicable — `../inventory.md`
-
-This file records verified image paths, visual-reference provenance, which visible features are canonical versus inspiration only, known image inaccuracies, and other reference metadata needed to reproduce established visuals consistently.
-
-## Reference rule
-
-When reference art is later supplied or adopted, record a repository path only after it actually exists and identify which visible features match canonical textual state, which are inspiration only, and which are accidental or incorrect. If an image conflicts with the owning textual state file, the textual state remains authoritative unless the player explicitly adopts the image difference as new canon through the normal persistence workflow.
+Campaign Turn staging and save behavior are defined in `CAMPAIGN_TURNS_AND_STEPS.md` and `SAVES_VERIFICATION_AND_RECOVERY.md`.
