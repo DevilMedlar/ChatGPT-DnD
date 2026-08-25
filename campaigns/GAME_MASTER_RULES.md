@@ -2,7 +2,7 @@
 
 These rules apply to every numbered campaign under `campaigns/` unless that campaign explicitly establishes a narrower local override.
 
-Repository-wide gameplay mechanics and behavioral rules live in `../GAME_MASTER_RULES.md`. Each numbered campaign owns its own canon and mutable state. A campaign-local `GAME_MASTER_RULES.md`, when present, should contain only campaign-specific canon, exceptions, or overrides rather than duplicating these shared rules.
+Repository-wide gameplay mechanics and behavioral rules live in `../GAME_MASTER_RULES.md`. Each numbered campaign owns its own canon and mutable state. A campaign-local `GAME_MASTER_RULES.md`, when present, should contain only campaign-specific operating rules, agency rules, mechanical overrides, or exceptional premises rather than duplicating shared rules or ordinary state facts.
 
 Throughout this file, references such as `active_game.json`, `turn_save.md`, `character_sheet.md`, `NPC-state.md`, `routine_item_prices.md`, `inventory.md`, `world_state.md`, `session_log.md`, and `art/art_log.md` mean the corresponding files inside the active numbered campaign folder.
 
@@ -16,45 +16,15 @@ Throughout this file, references such as `active_game.json`, `turn_save.md`, `ch
 6. The player's newest explicit statement overrides conflicting assistant-created material.
 7. Never silently overwrite established canon.
 
-## Chat session lifecycle
-
-`active_game.json.session_number` is that numbered campaign's ChatGPT chat-session counter.
-
-- A newly created numbered campaign begins with `session_number` set to `1`.
-- Continuing that campaign in the same ChatGPT chat keeps the same `session_number`, including reopening or returning to that same chat later.
-- When that campaign is continued in a different ChatGPT chat for any reason, increment `session_number` by exactly `1` before continuing the campaign in the new chat. This includes moving because the previous chat was deleted, reached its conversation limit, became unusable, or the player simply chose to continue in a new chat.
-- `session_number` is separate from `campaign_turn_number`, `Current Step`, `save_revision`, and the chronological checkpoints in `session_log.md`. Moving to a new ChatGPT chat does not by itself start, end, reset, replay, or discard a Campaign Turn.
-- If a Campaign Turn is unfinished when the campaign moves to a new ChatGPT chat, preserve its existing `turn_save.md` state and resume that same unfinished Campaign Turn under the new `session_number`.
-
-## Campaign phase lifecycle
-
-`active_game.json.phase` is the authoritative broad lifecycle state for that numbered campaign. This shared rule defines the phase values once for every numbered campaign.
-
-Allowed values and meanings:
-
-- `setup` — the campaign exists, but required character creation is not yet completely finalized and verified.
-- `ready` — required character creation is completely finalized and verified, but Campaign Turn 1 has not begun.
-- `active` — Campaign Turn 1 has begun and normal campaign play is underway.
-
-The normal lifecycle is:
-
-`setup` → `ready` → `active`
-
-A newly created numbered campaign begins in `setup`.
-
-The confirmed and verified final character-creation checkpoint changes `phase` from `setup` to `ready` at the same time it sets `character_created` to `true`.
-
-Opening Campaign Turn 1 changes `phase` from `ready` to `active`. This phase transition is campaign-lifecycle bookkeeping, not a completed Campaign Turn save: it does not increment `save_revision`. When Git repository writing is available, update `active_game.json.phase` and the Campaign Turn 1 opening state in `turn_save.md` together in the same lifecycle checkpoint when practical. Later Campaign Turns leave `phase` as `active`.
-
-`phase` is separate from `session_number`, `campaign_turn_number`, `turn_save.md` Status, `Current Step`, and `save_revision`. It does not belong in `active_campaign.json`; that file remains a selector only.
-
 ## Append-first preservation
 
-Campaign-state files are historical records as well as current state.
+Campaign-state files may contain both current state and historical records, but those roles must not be confused.
 
-- Add new Campaign Turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older information merely for neatness or brevity.
-- Rewrite or delete established material only when it is factually wrong, contradicts a newer explicit player choice, is an accidental duplicate/error, makes current mechanics incorrect, or the player explicitly requests the change.
-- When a correction is needed, make the smallest practical edit and preserve useful history whenever possible by marking old information as corrected or superseded.
+- **Chronological/history sections** are append-first. Add new Campaign Turn information instead of rewriting, compressing, summarizing away, reorganizing, or deleting older historical information merely for neatness or brevity.
+- **Current mutable state fields** must be updated in place during the appropriate approved reconciliation. Do not preserve stale current values beside the new value merely because append-first preservation exists. Examples include current HP, currency, quantities, charges, equipped state, current conditions, current location, quest status, party membership, shop stock, current relationship status, and other facts whose purpose is to represent the latest state.
+- Preserve an earlier mutable value in `session_log.md`, a continuity-history section, or another appropriate chronological owner only when that earlier value matters to continuity or history.
+- Rewrite or delete established material when it is factually wrong, contradicts a newer explicit player choice, is an accidental duplicate/error, makes current mechanics incorrect, represents legitimately replaced current state, or the player explicitly requests the change.
+- When a correction is needed, make the smallest practical edit and preserve useful history whenever possible by marking old historical information as corrected or superseded.
 - Static documentation and shared rule files may be updated when the rules themselves change.
 
 ## PC advancement authority
@@ -64,7 +34,8 @@ The repository-wide gameplay rulebook owns **how** PC advancement works: XP mode
 Within each numbered campaign:
 
 - `active_game.json` owns the authoritative **completed PC advancement state** through campaign-wide `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`.
-- `character_sheet.md` displays each PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
+- `character_sheet.md` displays each core PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
+- The required ChatGPT-controlled PC / co-protagonist uses the same PC-format advancement authority as the player-controlled PC. She is not routed through generic NPC advancement unless a campaign-specific rule explicitly says otherwise.
 - During an active Campaign Turn, staged XP awards, threshold changes, and level changes belong in `turn_save.md` and temporarily overlay the completed permanent representations until approved reconciliation.
 - After any completed save that changes PC advancement, the Level/XP mirrors in `character_sheet.md` must exactly match the authoritative values in `active_game.json`.
 
@@ -93,7 +64,7 @@ Ending a combat round does **not** end the Campaign Turn.
 
 Combat itself ending does **not automatically** end the Campaign Turn if the connected gameplay sequence continues.
 
-During active combat, an unqualified phrase such as `end turn` means the current creature's **Combat Turn** ends. It does not trigger Campaign Turn reconciliation. The persistence workflow is entered only when the full Campaign Turn is intentionally interpreted as complete.
+During active combat, an unqualified phrase such as `end turn` means the current creature's **Combat Turn** ends. It does not trigger Campaign Turn reconciliation. The persistence workflow is entered only when the full Campaign Turn is intentionally interpreted as complete by ChatGPT acting as GM/DM, or when the player's newest explicit instruction clearly ends it.
 
 ### Combat Turn and Combat Round
 
@@ -116,7 +87,7 @@ Combat Turns and Combat Rounds exist inside a Campaign Turn and never cause `tur
 
 Before starting a Campaign Turn:
 
-If this is Campaign Turn 1, `active_game.json.character_created` must be `true` and `active_game.json.phase` must be `ready`. Opening Campaign Turn 1 changes `phase` to `active` under the shared Campaign phase lifecycle; this lifecycle checkpoint does not increment `save_revision`. Later Campaign Turns require `phase` to remain `active`.
+If this is Campaign Turn 1, `active_game.json.character_created` must be `true` and `active_game.json.campaign_turn_number` must still be `0`. No separate campaign phase field is used. Later Campaign Turns begin only after the prior Campaign Turn's completed permanent save and any required ledger reset have finished.
 
 1. Read the current completed canonical campaign files required for the scene.
 2. Confirm `turn_save.md` is `ready` and no older Campaign Turn requires recovery, review, verification, or reset.
@@ -148,7 +119,7 @@ After each resolved Step:
 
 `Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
 
-Whenever Git repository writing is available, a resolved Step may be checkpointed with a small Git commit for interruption recovery. Step/lifecycle checkpoint commits do **not** increment `save_revision` and are not completed campaign saves.
+Whenever repository writing is available, persist `turn_save.md` after every resolved Step that contains a roll result, mechanical or resource-state change, scene/location change, discovery, relationship change, shop event, inventory change, combat-state change, or other continuity-relevant result before proceeding beyond the next player decision point. A purely narrative Step with no meaningful state or recovery value may be left uncommitted until the next continuity-relevant Step. Step checkpoint commits do **not** increment `save_revision` and are not completed campaign saves.
 
 ### Compact roll recording in `turn_save.md`
 
@@ -170,11 +141,11 @@ Preserve the dice expression and individual die results when useful, especially 
 
 ### Full Campaign Turn end interpretation
 
-When gameplay reaches what may be the end of the full Campaign Turn, first interpret what ended.
+ChatGPT, acting as the campaign's GM/DM, decides when the connected gameplay unit has reached the end of the full Campaign Turn. A Campaign Turn may contain many rolls, conversations, scenes, combat rounds, creature turns, discoveries, transactions, and consequences before that point.
 
-A creature's Combat Turn, a Combat Round, or a combat encounter ending is not enough by itself.
+A creature's Combat Turn, a Combat Round, a combat encounter ending, a conversation ending, a rest beginning, or a scene becoming quiet is not enough by itself. Do not ask the player to decide whether every sub-event ends the Campaign Turn. The player may explicitly request that the Campaign Turn end, and the player's newest explicit instruction controls when it conflicts with ChatGPT's interpretation.
 
-When the gameplay flow explicitly means **end the full Campaign Turn**:
+When ChatGPT determines the full Campaign Turn has ended:
 
 1. set `Status` to `ending_review`
 2. freeze the Turn ledger
@@ -348,16 +319,16 @@ After every character-creation checkpoint, verify at minimum:
 - no undecided field or rejected option was invented or made canonical
 - derived character values are internally consistent
 - when Level/XP is involved, `character_sheet.md` mirrors exactly match `active_game.json.character_advancement`
-- starting equipment and `inventory.md` agree when inventory was part of the checkpoint
+- starting equipment and `inventory.md` agree whenever inventory was part of that checkpoint
 - `session_log.md` contains exactly one corresponding character-creation checkpoint for the completed `save_revision`
 - `campaign_turn_number` remains `0`
 - `turn_save.md` remains `ready` for Campaign Turn 1 and was not used as a character-creation ledger
 - `save_revision` advanced exactly once
 - `last_sync_note` accurately describes the completed checkpoint
-- `active_game.json.phase` remains `setup` before the final character-creation checkpoint and becomes `ready` only when that final checkpoint sets `character_created` to `true`
+- `character_created` remains `false` until the final character-creation checkpoint
 - no unrelated campaign state changed
 
-The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for every required player character in that campaign. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true` and changes `active_game.json.phase` from `setup` to `ready`. Until then `character_created` remains `false` and `phase` remains `setup`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
+The final character-creation checkpoint must additionally verify that every required character-creation field listed in the repository-wide `Character creation` rules is established for both required core PCs. It must also verify that each core PC's finalized starting equipment, starting currency, and other starting consumable/resource inventory are recorded in `inventory.md`, and any equipment summary in `character_sheet.md` agrees with that inventory state. Only that confirmed and verified final checkpoint sets `active_game.json.character_created` to `true`. Until then it remains `false`. Before Campaign Turn 1 begins, `active_game.json.current_scene_name` may continue to identify the current pre-game character-creation context; no live Campaign Turn Step exists outside `turn_save.md`.
 
 ## Equipment ownership and special-effect continuity
 
@@ -479,9 +450,9 @@ NPC advancement is not universal.
 
 - Minor or background NPCs remain at their established mechanical state unless something in the fiction changes them.
 - Important persistent NPCs may gain or lose Level, abilities, spells, features, equipment, resources, class/archetype, resistances, weaknesses, transformations, or other mechanical traits when justified by training, experience, story events, consequences, or other established causes.
-- Long-term party NPCs should advance often enough to remain mechanically relevant, but they do **not** automatically use the PCs' XP system unless that has been explicitly established for the NPC.
+- Long-term party NPCs should advance often enough to remain mechanically relevant, but they do **not** automatically use the core PCs' XP system unless that has been explicitly established for the NPC.
 - NPC advancement may be level-based, ability-based, feature-based, or another established form appropriate to that NPC.
-- Existing NPCs do **not** automatically scale merely because the PCs became stronger. A previously established weaker NPC may remain weaker, while new or changed threats can become harder naturally through the world and story.
+- Existing NPCs do **not** automatically scale merely because the core PCs became stronger. A previously established weaker NPC may remain weaker, while new or changed threats can become harder naturally through the world and story.
 - Any NPC advancement caused during an active Campaign Turn is staged in `turn_save.md` and transferred to `NPC-state.md` only through the normal confirmed Campaign Turn save process.
 
 ### Relationship and attraction state
@@ -540,11 +511,18 @@ A shop's existence and location may be referenced in `world_state.md`, while the
 
 ## Image and reference-art persistence
 
-Each campaign's `art/art_log.md` is that campaign's canonical visual index.
+Textual appearance canon belongs to the state file that owns the entity:
+
+- `character_sheet.md` owns the core PCs' textual appearance canon
+- `NPC-state.md` owns persistent NPC textual appearance canon
+- `world_state.md` owns established location and world-object appearance where applicable
+- `inventory.md` owns mechanically or visually relevant owned-item state where applicable
+
+`art/art_log.md` is the campaign's canonical **visual-reference index**, not a competing textual appearance owner. It owns verified reference-image paths, generated/reference-art continuity metadata, provenance notes, and notes identifying which visible features are canonical, inspirational, or accidental. When an image conflicts with established textual canon, the textual state owner wins unless the player explicitly adopts the image difference as new canon.
 
 Generated image binaries remain player-managed under the repository-wide image rules. File existence does not itself make an image canonical.
 
-When newly established continuity-critical visual information occurs during an active Campaign Turn, stage it in `turn_save.md` and include `art/art_log.md` in the Exact Planned Permanent Transfers. Add it to `art/art_log.md` only during approved Campaign Turn reconciliation. Outside an active Campaign Turn, persist it through the normal completed-save workflow.
+When newly established continuity-critical visual-reference information occurs during an active Campaign Turn, stage it in `turn_save.md` and include `art/art_log.md` in the Exact Planned Permanent Transfers. If the underlying textual appearance also changes, stage the appropriate textual state owner too. Add the reference metadata to `art/art_log.md` only during approved Campaign Turn reconciliation. Outside an active Campaign Turn, persist it through the normal completed-save workflow.
 
 When the player supplies reference art or manually adds images to the repository:
 
@@ -553,13 +531,13 @@ When the player supplies reference art or manually adds images to the repository
 - prefer written canonical traits over accidental differences in generated images
 - never assume an unverified image path exists
 
-If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical path/trait metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
+If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged in `turn_save.md` until approved Campaign Turn reconciliation. File existence does not bypass Confirmation Gate 1.
 
 ## Campaign save routing and file ownership
 
 `active_campaign.json` in this `campaigns/` directory is a **campaign selector only**. It identifies the active numbered campaign and points to that campaign's `active_game.json`.
 
-It is not the authoritative place for campaign phase, session, Campaign Turn, character level, XP, location, or other changing gameplay state. Do not rewrite `active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or `active_game.json` pointer actually changes.
+It is not the authoritative place for Campaign Turn state, character level, XP, location, character-creation state, save revision, or other changing gameplay state. Do not rewrite `active_campaign.json` after ordinary Campaign Turns unless the active campaign selection, campaign path, or `active_game.json` pointer actually changes.
 
 Campaign saves are isolated:
 
@@ -571,17 +549,17 @@ Campaign saves are isolated:
 
 Within each numbered campaign, file ownership is:
 
-- `active_game.json` — authoritative campaign lifecycle `phase` plus authoritative **last completed live save**: session, completed `campaign_turn_number`, completed/pre-game `current_scene_name`, location, character-creation state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, save revision, and latest synchronization note. It does not store the live Campaign Turn Step.
+- `active_game.json` — authoritative **last completed campaign state header**: completed `campaign_turn_number`, completed/pre-game `current_scene_name`, completed location, character-creation completion state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, `save_revision`, and latest synchronization note. It does not store the live Campaign Turn Step.
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, `Pending Shop Transactions`, pending transfers, final review, permanent-save verification, and reset approval.
-- `character_sheet.md` — player-character statistics, abilities, appearance, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
-- `NPC-state.md` — persistent NPC stable IDs, identity, appearance, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
+- `character_sheet.md` — core-PC statistics, abilities, textual appearance canon, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
+- `NPC-state.md` — persistent NPC stable IDs, identity, textual appearance canon, statistics, abilities, condition, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity. It owns the stable cross-file identity key for each persistent NPC.
 - `routine_item_prices.md` — authoritative campaign-local classification and recurring Base Price reference for routine/basic repeat goods. Vendor rows mirror these Base Prices; this file does not own item mechanics, vendor quantities, merchant modifiers, Final Price, or inventory.
-- `inventory.md` — detailed active mechanical bookkeeping for player characters and possessions carried by current party NPCs. For NPCs, `NPC-state.md` remains the master ownership list.
-- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
+- `inventory.md` — detailed active mechanical bookkeeping for core PCs and possessions carried by current party NPCs, including owned-item mechanics snapshots and relevant owned-item state. For NPCs, `NPC-state.md` remains the master ownership list.
+- `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, unresolved threads, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn history.
-- `art/art_log.md` — visual continuity and verified reference-art information.
+- `art/art_log.md` — verified visual-reference paths and visual-reference continuity metadata; it does not override textual appearance owners.
 - `README.md` — static campaign documentation; do not use it as a duplicate live save.
-- a local `GAME_MASTER_RULES.md`, when present — only campaign-specific canon, exceptions, or overrides that are not already owned by the shared repository or campaign rulebooks.
+- a local `GAME_MASTER_RULES.md`, when present — campaign-specific operating rules, agency rules, behavior rules, mechanical overrides, or exceptional premises that are not already owned by the shared rulebooks. Ordinary character/NPC/world facts belong in state files.
 
 ## Persistence
 
@@ -593,14 +571,14 @@ At approved Campaign Turn reconciliation, transfer only persistent, continuity-r
 
 Typical destinations include:
 
-- `character_sheet.md` — PC HP, conditions, abilities, character resources, synchronized human-readable Level/XP mirrors, and lasting personal state
-- `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
+- `character_sheet.md` — core-PC HP, conditions, abilities, character resources, textual appearance changes, synchronized human-readable Level/XP mirrors, and lasting personal/relationship state
+- `NPC-state.md` — NPC HP, conditions, abilities, relationships, party status, textual appearance changes, master personal-possession ownership/quantities, shop stock/services changes, and other persistent NPC state
 - `routine_item_prices.md` — explicit routine/basic classification changes and recurring Base Price additions or revisions, together with any required vendor Base Price mirror updates
-- `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, and other possessions for PCs and current party NPCs
-- `world_state.md` — persistent locations, quests, factions, discoveries, clues, and world consequences
+- `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, owned-item snapshots/state, and other possessions for core PCs and current party NPCs
+- `world_state.md` — persistent locations, quests, factions, discoveries, clues, unresolved threads, and world consequences
 - `session_log.md` — chronological character-creation checkpoint or completed Campaign Turn summary and continuity-critical events
-- `art/art_log.md` — newly established visual continuity when relevant
-- `active_game.json` — campaign lifecycle `phase`, completed session/Campaign Turn/`current_scene_name`/location, authoritative `xp_mode` and `character_advancement`, save revision, and latest sync state
+- `art/art_log.md` — newly established visual-reference paths or reference metadata when relevant
+- `active_game.json` — completed Campaign Turn/`current_scene_name`/location, character-creation completion state, authoritative `xp_mode` and `character_advancement`, `save_revision`, and latest sync state
 
 For a **current party NPC**, an ownership-changing item event may require both `NPC-state.md` and `inventory.md` to be updated in the same completed save:
 
@@ -615,7 +593,7 @@ Do not leave a master record stale merely because the same possession also has a
 
 ### Save revision rule
 
-`active_game.json` contains `save_revision`.
+`active_game.json` contains `save_revision`, which is the campaign's single save-revision counter. No separate `phase` or chat-session counter is used.
 
 For a completed Campaign Turn or other completed persistent save revision:
 
@@ -626,7 +604,7 @@ For a completed Campaign Turn or other completed persistent save revision:
 5. set `last_sync_note` to a compact description of what that completed revision represents
 6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
 
-Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, the Campaign Turn 1 `ready` to `active` phase lifecycle checkpoint, and the later temporary-ledger reset do **not** increment `save_revision`.
+Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, Campaign Turn opening, and the later temporary-ledger reset do **not** increment `save_revision`.
 
 Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
 
@@ -638,11 +616,12 @@ A file does not need fictional changes just to prove it was checked. If nothing 
 
 The revision marks a completed campaign save checkpoint. It does not permit old campaign history to become canon.
 
-Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file unless chronological order or clear ownership requires it.
+Do **not** remove or delete anything from a file unless it is necessary. Do **not** reorganize a file unless chronological order, correct current-state replacement, or clear ownership requires it.
 
-Examples of reasons to remove, delete, or correct existing material include, but are **not limited to**:
+Examples of reasons to remove, delete, replace, or correct existing material include, but are **not limited to**:
 
 - items were sold, lost, used, consumed, destroyed, traded, transferred, or otherwise legitimately removed from a character's possession
+- a current mutable value changed and its field must now represent the latest state
 - an established fact is explicitly corrected or superseded by the player
 - duplicate or accidental erroneous information must be removed
 - a mechanical state would otherwise remain incorrect
