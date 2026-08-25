@@ -21,3 +21,13 @@ A newly created campaign begins only with facts written into that campaign's cur
 Do not import or reconstruct character data, NPCs, items, locations, relationships, quests, story events, secrets, or other campaign canon from another campaign, deleted material, prior chats, or repository history unless the player explicitly requests a specific import.
 
 The detailed fresh-start and append-first preservation rules are owned by `GAME_MASTER_RULES.md`.
+
+## Fresh-start canon
+
+1. A numbered campaign begins from the files on the repository's current branch plus facts explicitly established by the player for that campaign.
+2. Do **not** recover, infer, reconstruct, or borrow character data, NPC data, items, locations, factions, relationships, quests, story events, secrets, rolls, consequences, visual canon, or any other campaign content from deleted files, repository history, previous chats, memory, or another campaign.
+3. Repository history may be consulted only for reusable **framework, file structure, mechanics, templates, and operating instructions**, and only when the player explicitly allows that use.
+4. Historical framework is never evidence that any historical character, NPC, item, location, relationship, quest, or story fact exists in the current campaign.
+5. Prior chats are non-canonical unless the player explicitly imports a specific fact from them.
+6. The player's newest explicit statement overrides conflicting assistant-created material.
+7. Never silently overwrite established canon.
