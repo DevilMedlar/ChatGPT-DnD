@@ -61,3 +61,18 @@ When **rules themselves conflict**, Campaign 1 uses this order:
 Campaign 1's canonical state files remain authoritative for the facts and mutable state assigned to them by the shared ownership rules. They are not a lower-priority rules layer.
 
 This file should stay small. Do not copy shared rules or ordinary character facts back into it merely for convenience. Character facts belong in `character_sheet.md`; NPC facts belong in `NPC-state.md`; world facts belong in `world_state.md`; and other campaign state belongs in its assigned owner.
+
+Campaign 1 inherits repository-wide gameplay rules from `../../GAME_MASTER_RULES.md` and shared numbered-campaign architecture from `../GAME_MASTER_RULES.md`.
+
+`GAME_MASTER_RULES.md` in this folder is a **Campaign 1-only rules overlay**. It contains Campaign 1-specific core-PC mapping, agency, and relationship-informed behavior rules that would be wrong to impose on future campaigns. Ordinary character and relationship facts belong in `character_sheet.md`, not the local rulebook.
+
+## Rule conflict order
+
+When two **rules** conflict for Campaign 1, use:
+
+1. the player's newest explicit Campaign 1 instruction
+2. this folder's `GAME_MASTER_RULES.md` local rules overlay
+3. `../GAME_MASTER_RULES.md` shared campaign architecture
+4. `../../GAME_MASTER_RULES.md` repository-wide gameplay rules
+
+Campaign 1's canonical state files remain authoritative for the campaign facts and state each file owns. They are not a lower-priority rulebook.
