@@ -18,16 +18,18 @@ Use the files in this order when resolving a reproductive question:
 10. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_7.md` — stable extraordinary-origin biological lineages, including Extaminaar and Trueborn Krinth
 11. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_8.md` — family-inheritance promotions for obvious fixed-form mammalian, avian, reptilian, arthropod, and amphibian species
 12. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_9.md` — fixed humanoid branches and stable mixed lineages, including Elf/Gnome/Halfling branches, Dhakaani goblinoids, Mongrelfolk, Grimlock, and additional ordinary humanoid-family promotions
-13. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+13. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_10.md` — resolved Holds and unusual biological profiles, including Killoren, Gloaming, Githzerai, Harssaf, Gulgar, Sphinxes, and specific resolved exclusions
+14. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
 When the same species appears in more than one reproductive file:
 
-- a **specific completed species/version profile** overrides a generic candidate-catalog row
+- a **specific completed or specifically resolved species/version profile** overrides a generic candidate-catalog row
 - a species marked **Complete by family inheritance** is Complete for its basic reproductive method even if an older candidate row still says `Candidate`
+- a specific `Ineligible`, `Not a breeder under current global rules`, or retained `Hold` determination in a later profile batch overrides an older generic Candidate/Hold row for that version
 - a completed species profile may inherit a shared biological-family profile unless its own text overrides that family rule
-- a candidate row is research/navigation data and does not override a completed profile
+- a candidate row is research/navigation data and does not override a completed or specifically resolved profile
 - the global restrictions in `REPRODUCTION_AND_LINEAGE.md` still apply unless a campaign-specific rule overrides them
 
 ## Version-specific biology rule
@@ -69,7 +71,11 @@ An `Ineligible` or `Not a breeder under current global rules` species may still 
 The completed profile library currently supports:
 
 - Internal Live-Bearing Humanoid
+- Internal Live-Bearing Humanoid / Fey Humanoid
+- Internal Live-Bearing Humanoid / Planetouched
+- Internal Live-Bearing Humanoid / Monstrous Humanoid
 - Internal Live-Bearing Mammalian / Beastfolk
+- Internal Live-Bearing Mammalian / Sphinx
 - Internal Live-Bearing Giant
 - Internal Live-Bearing Aquatic Humanoid
 - Internal Egg-Laying Draconic
@@ -115,6 +121,18 @@ Even when both reproductive directions are biologically compatible, reversing wh
 Ogrillon/Orog legacy traditions provide a repository precedent for this possibility.
 
 Directional expression does not change the fact that both contributors are biological parents and does not prevent the offspring from inheriting traits from either ancestry.
+
+## Born lineage is not automatically a fertile adult lineage
+
+Evidence that a hybrid or lineage can be **born** proves the parent pairing can exist in that version, but it does not automatically prove that adult members of the resulting lineage are fertile.
+
+Track these separately:
+
+- parent-pair compatibility
+- birth/development viability
+- adult offspring fertility
+
+Dhampir is a current example: source material can establish a vampire/mortal parentage origin without thereby establishing universal adult Dhampir fertility or universal Vampire reproductive biology.
 
 ## Remaining Holds should be meaningful
 
