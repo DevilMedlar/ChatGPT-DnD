@@ -8,6 +8,8 @@ Species, ancestry, lineage, or Creature Type difference does **not by itself** m
 
 All participating characters must satisfy the age and consent requirements in `ADULT_CONTENT_AND_CONSENT.md`.
 
+Species-level reproductive biology and breeding-pool eligibility are owned by `REPRODUCTIVE_SPECIES_PROFILES.md`. This file governs pairing compatibility, crossbreeding behavior, gestation logic, lineage, and later hybrid mechanics using those profiles.
+
 ## Initial breeding-pool scope
 
 For the initial global crossbreeding system, selectable breeding species are limited to species whose normal established reproduction is **sexual reproduction**.
@@ -111,20 +113,24 @@ Gestation or delivery method does **not** by itself determine how much of either
 
 ## Reproductive profile requirement
 
-Before a species is used for breeding, enough reproductive biology must be established to determine compatibility consistently.
+Before a species is used for breeding, it must have enough reproductive biology recorded in `REPRODUCTIVE_SPECIES_PROFILES.md` to determine compatibility consistently.
 
-At minimum, the species should establish when relevant:
+That profile file owns the reusable species-level facts, including when relevant:
 
 - sexual reproductive method
-- which sex supplies the fertilizing contribution
-- which sex supplies the egg or equivalent contribution
+- male reproductive role
+- female reproductive role
 - internal or external fertilization
-- live-bearing, egg-laying, implanted, or other non-magical development method
-- whether a carrier or host is required
+- live-bearing, egg-laying, implanted, host-dependent, or other non-magical development method
+- carrier or host requirements
 - special biological conditions required for fertilization, gestation, incubation, or hatching
-- known compatibility limitations that matter to cross-species reproduction
+- known cross-species compatibility and incompatibility information
 
-Do not infer missing reproductive anatomy merely to make a pairing work. If a required fact is genuinely unknown, establish or research that fact before resolving the pairing.
+Do not duplicate a full species reproductive profile in this file or ordinary campaign state.
+
+Do not infer missing reproductive anatomy merely to make a pairing work. If a required fact is genuinely unknown or the species profile is Partial, establish or research that fact before resolving the pairing.
+
+An unprofiled species is not yet cleared for breeding selection.
 
 ## Hybrid offspring
 
