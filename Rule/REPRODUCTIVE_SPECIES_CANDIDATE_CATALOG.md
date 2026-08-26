@@ -41,7 +41,10 @@ A removed family may return only through the player's newer explicit instruction
 | Canonical species / ancestry | Representative variants, max 5 | Biological baseline |
 |---|---|---|
 | Dragonborn | standard Dragonborn; Floral Dragonborn; Grim Hollow Dragonborn | Male/female physical mating; internal fertilization; egg-laying |
+| Dragonkin | winged Dragonkin; stable homebrew Dragonkin lineages | Male/female physical mating; internal fertilization; egg-laying in a fixed draconic body |
 | True Dragon | Chromatic; Metallic; Gem; Deep; Moonstone | Male/female physical mating; internal fertilization; egg-laying |
+
+Dragonkin are treated as a distinct winged draconic people rather than as a class, Dragonborn alias, temporary transformation, or generic name for every dragon-descended creature.
 
 True-dragon colors and named varieties are not separate candidate rows unless their reproductive biology materially differs from the shared True Dragon profile.
 
@@ -51,6 +54,17 @@ True-dragon colors and named varieties are not separate candidate rows unless th
 |---|---|---|
 | Feline Beastfolk | Tabaxi; Leonin; Rakasta | Male/female physical mating; internal fertilization; live-bearing |
 | Canine Beastfolk | Lupin; Worg; Canisar | Male/female physical mating; internal fertilization; live-bearing |
+| Kitsune | natural foxfolk Kitsune; one-tailed and multi-tailed biological lineages | Male/female physical mating in the natural Kitsune body; internal fertilization; live-bearing |
+
+### Kitsune natural-body rule
+
+Kitsune are a specific approved exception to the general exclusion of shapechanger species.
+
+- A Kitsune's reproductive eligibility is determined from its stable natural Kitsune body.
+- Physical mating and fertilization occur through that natural biological body.
+- A humanoid disguise, alternate appearance, illusion, or assumed form does not create reproductive anatomy or cross-species compatibility.
+- Shapechanging is not required for Kitsune reproduction.
+- This exception applies only to Kitsune and does not automatically restore other removed shapechanger species.
 
 ## Reptilian and serpentine families
 
@@ -63,7 +77,7 @@ True-dragon colors and named varieties are not separate candidate rows unless th
 
 # Shortlist authority
 
-The active shortlist contains **10 canonical species/family rows**.
+The active shortlist contains **12 canonical species/family rows**.
 
 - Completed profiles elsewhere remain useful for biological research, old campaigns, version-specific reference, and future player-approved expansion.
 - They do not automatically make an omitted species selectable through this shortlist.
