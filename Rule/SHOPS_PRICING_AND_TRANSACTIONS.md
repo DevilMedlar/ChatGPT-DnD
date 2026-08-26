@@ -2,11 +2,11 @@
 
 ## Standard official item sourcing
 
-Normal standard vendor stock uses official D&D items whose usable mechanics are freely viewable.
+Normal standard vendor stock uses official D&D 5.5e items whose usable mechanics are freely viewable.
 
 For a candidate standard official item:
 
-1. choose it from the relevant official item or equipment catalog/category
+1. choose it from the relevant current official item or equipment catalog/category
 2. open the item's direct official page before using it as normal stock
 3. verify that enough actual mechanics are freely viewable to use the item without requiring a purchase
 4. reject a candidate whose page is only a teaser, marketplace redirect, ownership prompt, or otherwise hides the usable mechanics, and choose another suitable official item instead
@@ -18,9 +18,9 @@ An approved official source is a mechanics/reference authority for a standard it
 
 External URLs and access rules can change. Recheck a stored reference when an item is newly stocked or when the existing reference no longer works. If a reference fails at acquisition time, resolve that case before finalizing the owned-item mechanics snapshot.
 
-This repository intentionally does not assume one universal official D&D edition/version for every D&D-derived mechanic. Official shop references must align with the applicable researched global standard once that item/mechanical subject has one established under `CORE_GAME_MECHANICS.md` and the relevant reusable rule files. Until that research and decision are complete, the unresolved official version choice is a research/design topic rather than a missing-state or audit defect; do not invent a universal edition baseline merely to fill the gap.
+Ordinary official shop mechanics follow the repository-wide **D&D 5.5e / SRD 5.2.1** baseline established in `CORE_GAME_MECHANICS.md`. Use current 5.5e mechanics and references for normal standard official stock unless a more-specific repository rule or an explicit numbered-campaign override applies.
 
-If a numbered campaign explicitly overrides an established global standard, apply that campaign's `Rules/Campaign-N_Rules.md` override only to that campaign.
+If a numbered campaign explicitly overrides the global standard, apply that campaign's `Rules/Campaign-N_Rules.md` override only to that campaign.
 
 Homebrew, custom, unique, campaign-created, and mechanically modified items are outside this standard official vendor-item flow and must use their established campaign mechanics instead of being forced into the normal official-stock schema.
 
