@@ -32,21 +32,42 @@ Editing the campaign-specific rule file does not by itself create a Campaign Tur
 
 Rule priority and campaign-specific scope are defined in `RULE_AUTHORITY_AND_HIERARCHY.md`.
 
-## Template versus live-state ownership
+## New-Sheets and copied campaign files
 
-`New-Sheets/` owns reusable schemas, examples, field guidance, and template-only instructional material. It is never a live source of campaign facts.
+`New-Sheets/` owns the reusable **blank copy-ready skeletons/outlines** for new campaigns.
 
-A numbered campaign's instantiated files own only that campaign's actual state. Creating a campaign from `New-Sheets/` is therefore a **schema-to-state transformation**, not a byte-for-byte copy of the Markdown templates.
+A new numbered campaign normally begins by copying those files into the campaign's own folder and then filling out that campaign's copies.
 
-Template-only material such as rule explanations, example blocks, placeholder IDs or names, optional-field guidance, sample repeated records, and headings explicitly marked as templates must remain in `New-Sheets/` unless a real campaign entity or event causes a concrete record to be created from that schema.
+Copied Markdown campaign files may therefore contain both:
 
-Live files may retain state-owning headings, field names, table headers, blank undecided values, required initialized values, explicit empty-state markers, and actual established campaign facts.
+- the campaign's actual canonical state
+- retained inline guidance, examples, blank layouts, and clearly labeled reusable templates that explain how to maintain that state file
 
-A template example has no canonical force merely because it appears in `New-Sheets/`. A placeholder such as `NPC-####`, `NPC Name`, `Item Name`, `Service Name`, `PLAYER_CONTROLLED_PC_NAME`, or `CHATGPT_CONTROLLED_PC_NAME` is not campaign state. Replace or omit it according to the instantiation rules before it could be mistaken for an established fact.
+These roles must not be confused.
 
-Do not later rewrite an existing campaign merely because its source template changed. Template revisions affect future instantiations by default. Existing campaign structure is migrated only when explicitly requested or required by a rule change, with established state preserved.
+### Canonical state versus retained guidance
 
-The exact new-campaign instantiation procedure and file-by-file initial live forms are defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+Actual filled-in state that belongs to the campaign is canonical according to the ownership rules below.
+
+Retained instructions, examples, placeholder values, and sections explicitly labeled as templates are documentation only. They do not become campaign facts merely because they exist inside a live campaign file.
+
+For example:
+
+- a labeled `NPC Record Template` is not itself an NPC
+- `NPC-####` is not an assigned stable ID until replaced by a real ID in an actual NPC record
+- a labeled `Shop Transaction Template` is not a pending purchase
+- an empty example row is not inventory, shop stock, or a price
+- `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are placeholders until replaced by established character names
+
+If retained copied guidance conflicts with the current reusable rules under `Rule/`, the current reusable rules control. The copied guidance helps ChatGPT fill out the campaign's file but is not an independent rule layer.
+
+The exact copy procedure, destination mapping, and reference-adjustment behavior are defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+
+### Existing campaign copies
+
+A later change to `New-Sheets/` does not automatically rewrite an already-created campaign's files. The campaign's copies remain its working records.
+
+Apply a later template improvement to an existing campaign only when explicitly requested or when a required rule change makes the migration necessary, preserving established state.
 
 ## Character-creation state and revision 0
 
@@ -74,7 +95,7 @@ Within each numbered campaign:
 
 - `Rules/Campaign-N_Rules.md` — persistent campaign-specific rules, overrides, exceptional premises, and explicitly scoped operating instructions. It is not ordinary campaign state and should contain only the campaign-specific delta from the reusable `Rule/` library.
 - `active_game.json` — authoritative **last completed campaign state header**: completed `campaign_turn_number`, completed/pre-game `current_scene_name`, completed location, character-creation completion state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, `save_revision`, and latest synchronization note. It does not store the live Campaign Turn Step.
-- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending shop transactions, pending permanent transfers, final review, permanent-save verification, and reset approval.
+- `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending shop transactions, pending permanent transfers, final review, permanent-save verification, and reset approval. Its copied instructional/template sections may remain as noncanonical fill-out guidance.
 - `character_sheet.md` — core-PC statistics, abilities, textual appearance canon, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
 - `NPC-state.md` — persistent NPC stable IDs, identity, textual appearance canon, statistics, abilities, conditions, personality, relationships/attractions, knowledge/secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC-specific continuity.
 - `routine_item_prices.md` — authoritative campaign-local classification and recurring Base Price reference for routine/basic repeat goods. Vendor rows mirror these Base Prices; this file does not own item mechanics, vendor quantities, merchant modifiers, Final Price, or inventory.
@@ -83,7 +104,7 @@ Within each numbered campaign:
 - `session_log.md` — one character-creation completion / Campaign Turn 1 baseline entry at revision 1, followed by chronological completed Campaign Turn history. It does not accumulate intermediate character-creation save checkpoints.
 - `art/art_log.md` — verified visual-reference paths and visual-reference continuity metadata; it does not override textual appearance owners.
 
-Reusable repository-wide rules belong in `Rule/`. Reusable blank sheet structure belongs in `New-Sheets/`. Neither should be used as duplicate live campaign state or as a substitute for the active campaign's local rule layer.
+Reusable repository-wide rules belong in `Rule/`. Reusable blank campaign skeletons belong in `New-Sheets/`. A campaign's copied sheets may retain guidance from those skeletons, but only actual filled-in campaign state has canonical force.
 
 ## Append-first preservation
 
