@@ -2,60 +2,120 @@
 
 ## Core premise
 
-Run a persistent, choice-driven adult fantasy RPG with D&D-style d20 mechanics, meaningful consequences, strong continuity, optional generated scene art, and mature themes.
+Run a persistent, choice-driven adult fantasy RPG using the current D&D 5.5e rules engine for ordinary game mechanics, with explicitly established repository homebrew layered on top where this project intentionally differs.
 
-The player physically rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled. Detailed dice ownership and reroll behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
+The player physically rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled. Detailed dice ownership and anti-fabrication behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
 
 The campaign is not required to be sexual in every scene. Adult romance, sexual tension, explicit adult language, and mature themes may appear when appropriate, while combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development must have room to breathe.
 
 Adult-content boundaries and consent requirements are defined in `ADULT_CONTENT_AND_CONSENT.md`.
 
-## Official and homebrew rules research status
+## Official rules baseline
 
-This repository intentionally uses a mixture of explicitly established homebrew rules and D&D-derived official mechanics. A single official D&D edition or rules-version baseline is **not** assumed to govern every subject unless such a global standard is deliberately established after the relevant research is completed.
+The repository-wide default for ordinary D&D mechanics is **D&D 5.5e using System Reference Document v5.2.1 (SRD 5.2.1)**.
 
-- Categorized homebrew rules already established under `Rule/` govern their own subjects and are not displaced merely because an official D&D rule differs.
-- For subjects intended to use official D&D mechanics, research the relevant official rules, available versions, and their interaction with the repository's existing rules before establishing a permanent global standard.
-- Different mechanical subjects may require separate researched decisions rather than one repository-wide edition choice.
-- An official-rules/version question that has not yet been researched and decided is an intentional **research/design topic**, not by itself a missing-rule, missing-state, or audit defect.
-- Do not invent a global edition/version choice merely to resolve an undecided research topic.
-- Once a global mechanical standard for a subject is deliberately established, record it in the appropriate reusable file under `Rule/` and apply it consistently unless the global rule is later changed.
-- `campaigns/campaign-N/Rules/Campaign-N_Rules.md` is used only when the player explicitly changes or overrides the applicable global rule for that numbered campaign; it is not the normal owner of repository-wide mechanical standards.
+Official reference entry point:
 
-A future review or repository audit should flag this area only when there is an actual contradiction, an established mechanic lacks the authority needed to use it consistently, or a previously decided standard is being applied inconsistently. The mere absence of one universal D&D edition declaration is not an issue.
+`https://www.dndbeyond.com/srd`
+
+Use that current rules baseline whenever an ordinary D&D mechanic is needed and no more-specific repository rule explicitly replaces or modifies it.
+
+This includes, when applicable:
+
+- character creation mechanics
+- ability scores and ability modifiers
+- backgrounds and their mechanical benefits
+- species mechanics
+- classes, subclasses, multiclassing, and class features
+- proficiency and expertise
+- D20 Tests
+- ability checks and skills
+- saving throws
+- Advantage and Disadvantage
+- Difficulty Classes
+- Armor Class
+- initiative
+- movement and Speed
+- Actions, Bonus Actions, and Reactions
+- attacks and damage
+- Critical Hits
+- damage types, Resistance, Immunity, and Vulnerability
+- Hit Points, Temporary Hit Points, healing, dying, stabilization, and Death Saving Throws
+- conditions and Exhaustion
+- cover
+- grappling and other combat actions
+- opportunity attacks
+- falling, suffocation, environmental hazards, and similar general hazards
+- vision, lighting, hiding, Stealth, and Perception
+- social-interaction mechanics
+- exploration and travel mechanics
+- Short Rests and Long Rests
+- weapons, armor, tools, equipment, and ordinary item mechanics
+- official currency values
+- spellcasting, spell attacks, spell saves, spell slots, preparation, components, Concentration, and spell effects
+- feats
+- magic items and Attunement
+- creature types
+- monster stat blocks, Challenge Rating, and ordinary monster mechanics
+- XP advancement and normal XP values
+- other ordinary D&D mechanics covered by the current official rules
+
+Do **not** invent a replacement mechanic merely because the repository does not restate an official rule locally. If an exact ordinary mechanic matters and is not summarized in the repository, consult the current official 5.5e rule and apply it.
+
+## Homebrew relationship to the official baseline
+
+The official 5.5e baseline does not erase intentionally established homebrew.
+
+A more-specific current repository rule wins for the subject it explicitly governs. Examples include:
+
+- player-owned dice rolling in `DICE_ROLLS_AND_REROLLS.md`
+- Campaign Turn persistence and save workflow
+- campaign isolation and state ownership
+- cross-species reproduction and lineage rules
+- relationship and agency rules
+- shop-price modifier stacking and final-price rounding
+- any explicit campaign-specific override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`
+
+If a homebrew subject has not yet been mechanically defined, do not pretend that ordinary D&D supplies a rule for it when it does not. Research or establish the missing homebrew rule before using it as a permanent mechanic.
 
 ## Ability scores
 
-Use Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
+Use Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma under the official 5.5e character rules.
 
 Ability modifier:
 
 `floor((score - 10) / 2)`
 
-Unless the player chooses another method, use the standard array:
+Unless the player chooses another official permitted method, use the standard array:
 
 `15, 14, 13, 12, 10, 8`
 
-## Resolution system
+Under the 5.5e baseline, ordinary ability-score adjustments come from Background rather than Species unless an explicit homebrew rule says otherwise.
 
-For uncertain actions, use:
+## D20 Tests and Difficulty Classes
 
-`d20 + ability modifier + proficiency when applicable + situational modifiers`
+For ordinary uncertain actions, use the official D20 Test structure:
 
-Typical DCs:
+`d20 + relevant ability modifier + Proficiency Bonus when applicable + other applicable modifiers`
 
-- 8 — easy under pressure
-- 10 — routine
-- 12 — moderate
-- 15 — hard
-- 18 — very hard
-- 22 — exceptional
+If the total equals or exceeds the target number, the test succeeds unless a more-specific rule changes the resolution.
 
-Natural 20s and natural 1s may produce especially strong narrative consequences when appropriate, but they do not make impossible actions possible.
+For ability checks, use the official typical DC scale when a specific rule does not already establish a DC:
+
+- DC 5 — Very Easy
+- DC 10 — Easy
+- DC 15 — Medium
+- DC 20 — Hard
+- DC 25 — Very Hard
+- DC 30 — Nearly Impossible
+
+Use official Advantage and Disadvantage rules.
+
+A natural 20 or natural 1 has the special automatic-hit/automatic-miss effect on **attack rolls** defined by the official rules. Do not turn natural 20s or natural 1s on ordinary ability checks or saving throws into automatic success or failure unless a specific applicable rule says so.
 
 ## Skills
 
-Track proficiency or expertise where relevant:
+Use the official skills and their normal 5.5e applications:
 
 - Acrobatics
 - Animal Handling
@@ -76,6 +136,8 @@ Track proficiency or expertise where relevant:
 - Stealth
 - Survival
 
+Track proficiency or Expertise where applicable under the official rules.
+
 ## Derived statistics
 
 Track at minimum:
@@ -83,14 +145,16 @@ Track at minimum:
 - Level
 - XP and next-level threshold
 - HP / Max HP
+- Hit Dice
 - Temporary HP
 - Armor Class
 - Initiative
 - Speed
 - Proficiency Bonus
-- Passive Perception
+- Passive Perception when relevant
+- Saving Throw proficiencies
 - Conditions
-- Exhaustion or equivalent long-term strain when used
-- Temporary effects
+- Exhaustion
+- Temporary and persistent mechanical effects
 
 Advancement details are defined in `ADVANCEMENT_AND_XP.md`, while combat-specific handling is defined in `COMBAT_ABILITIES_AND_EFFECTS.md`.
