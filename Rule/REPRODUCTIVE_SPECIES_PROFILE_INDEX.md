@@ -19,7 +19,8 @@ Use the files in this order when resolving a reproductive question:
 11. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_8.md` — family-inheritance promotions for obvious fixed-form mammalian, avian, reptilian, arthropod, and amphibian species
 12. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_9.md` — fixed humanoid branches and stable mixed lineages, including Elf/Gnome/Halfling branches, Dhakaani goblinoids, Mongrelfolk, Grimlock, and additional ordinary humanoid-family promotions
 13. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_10.md` — resolved Holds and unusual biological profiles, including Killoren, Gloaming, Githzerai, Harssaf, Gulgar, Sphinxes, and specific resolved exclusions
-14. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+14. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_11.md` — family-inherited older monster peoples, including Forestkith Goblins, Flinds, Ibixian Goatfolk, Nycters, Blackscale/Poison Dusk Lizardfolk, and additional Giant breeds
+15. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
