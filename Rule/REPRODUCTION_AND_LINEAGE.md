@@ -25,6 +25,29 @@ The following are outside the initial breeding pool unless the player later esta
 
 A species being intelligent, humanoid-shaped, or a particular D&D Creature Type does not by itself establish reproductive compatibility.
 
+## Species origin, era, and power do not restrict eligibility
+
+This is a homebrew crossbreeding system, not a current-edition-only species list.
+
+A species is **not** excluded merely because it is:
+
+- Legacy
+- from an older D&D edition
+- from a future D&D release
+- setting-specific
+- normally presented as a monster or NPC rather than a player species
+- third-party or player-created homebrew
+- futuristic, extraterrestrial, or science-fantasy
+- divine, god-like, demi-divine, celestial, fiendish, draconic, giant, fey, aberrant, monstrous, or otherwise unusually powerful
+
+Those labels do not answer the reproductive question. The same biological criteria apply regardless of origin or power level.
+
+If an extraordinary species has an established biological male/female sexual reproductive pathway, workable fertilization, viable development, and a compatible pairing under the rules below, it may participate in the breeding system.
+
+If it reproduces only asexually, only magically, only through an excluded shapechanging method, or has no coherent compatible reproductive pathway, it remains outside the initial breeding pool even if it is otherwise a valid campaign species.
+
+`REPRODUCTIVE_SPECIES_PROFILES.md` may therefore grow without a fixed species-count limit as additional Legacy, future, monstrous, divine, demi-divine, futuristic, third-party, or homebrew species are researched.
+
 ## Required male/female reproductive pairing
 
 Under the initial global system, ordinary biological conception between two partners requires:
@@ -90,7 +113,7 @@ The required condition must follow the established biology of the species. ChatG
 
 A pairing with no coherent ordinary biological reproductive pathway is **not eligible** for the initial breeding system.
 
-Do not override biological incompatibility merely because the species are fantasy creatures, intelligent, consenting, romantically involved, or different Creature Types.
+Do not override biological incompatibility merely because the species are fantasy creatures, intelligent, consenting, romantically involved, unusually powerful, divine, technologically advanced, or different Creature Types.
 
 Biological incompatibility affects biological reproduction only. It does not block adoption or other non-biological family relationships.
 
@@ -162,6 +185,7 @@ Before a species is used for breeding, it must have enough reproductive biology 
 
 That profile file owns the reusable species-level facts, including when relevant:
 
+- source or version when needed to distinguish materially different forms of the same named species
 - sexual reproductive method
 - male reproductive role
 - female reproductive role
@@ -176,7 +200,7 @@ Do not duplicate a full species reproductive profile in this file or ordinary ca
 
 Do not infer missing reproductive anatomy merely to make a pairing work. If a required fact is genuinely unknown or the species profile is Partial, establish or research that fact before resolving the pairing.
 
-An unprofiled species is not yet cleared for breeding selection.
+An unprofiled species is not yet cleared for breeding selection, but being absent from an existing catalog is never itself proof that the species is disallowed. It may be researched and added when relevant.
 
 ## Hybrid offspring
 
