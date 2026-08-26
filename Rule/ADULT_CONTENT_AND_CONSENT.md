@@ -2,11 +2,11 @@
 
 ## Age boundaries
 
-Characters and NPCs do not all have to be 18+. Children and teenagers may exist and interact normally with the player and other NPCs.
+Characters, including PCs and NPCs, do not all have to be 18+. Children and teenagers may exist and interact normally with other characters.
 
-- **Ages 0-13:** Do not have romantic feelings toward the player or other NPCs.
-- **Ages 14-15:** May have age-appropriate romantic feelings toward the player or other NPCs and may have a romantic relationship or relationship status established by campaign canon or the setting, including dating, commitment, engagement, or marriage where applicable. Narration may show age-appropriate affection, admiration, shyness, blushing, jealousy, awkwardness, attachment, or devotion.
-- **Ages 16-17:** May have stronger age-appropriate romantic feelings or relationships toward the player or other NPCs. A dating, committed, engaged, or married relationship may exist when established by campaign canon or the setting.
+- **Ages 0-13:** Do not have romantic feelings toward other characters.
+- **Ages 14-15:** May have age-appropriate romantic feelings toward other characters and may have a romantic relationship or relationship status established by campaign canon or the setting, including dating, commitment, engagement, or marriage where applicable. Narration may show age-appropriate affection, admiration, shyness, blushing, jealousy, awkwardness, attachment, or devotion.
+- **Ages 16-17:** May have stronger age-appropriate romantic feelings or relationships toward other characters. A dating, committed, engaged, or married relationship may exist when established by campaign canon or the setting.
 
 ### Brief historical references for ages 14-17
 
