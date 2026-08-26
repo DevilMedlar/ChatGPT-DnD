@@ -13,7 +13,8 @@ Use the files in this order when resolving a reproductive question:
 5. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_2.md` — additional completed humanoid branches, beastfolk, avians, reptilians, Thri-kreen, Grung, and Locathah
 6. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_3.md` — true giants and giant relatives, Yuan-ti major breeds, Githyanki, named true-dragon families, and Tanarukk
 7. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_4.md` — aquatic and amphibious profiles, including Sahuagin, Kuo-toa, Bullywug, Merfolk, Triton, and directional compatibility cases
-8. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+8. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_5.md` — Legacy biological peoples and hybrid evidence, including Saurials, Loxo, biological Gnolls, Bariaur, Rakasta, Phanatons, and Half-Ogres
+9. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -23,6 +24,14 @@ When the same species appears in more than one reproductive file:
 - a completed species profile may inherit a shared biological-family profile unless its own text overrides that family rule
 - a candidate row is research/navigation data and does not override a completed profile
 - the global restrictions in `REPRODUCTION_AND_LINEAGE.md` still apply unless a campaign-specific rule overrides them
+
+## Version-specific biology rule
+
+The same species name may have multiple reproductive profiles when editions, settings, transformations, or source premises materially change how that population reproduces or comes into existence.
+
+A later magical, transformed, constructed, or otherwise ineligible version does not erase an older stable biological version.
+
+A campaign may choose which version exists, may override a version locally, or may establish multiple distinct populations when that makes sense in its canon.
 
 ## Status flow
 
