@@ -81,7 +81,65 @@ A pricing factor must not be counted more than once in the same stock listing or
 
 A distinct merchant markup or discount may still apply afterward because it is a different pricing factor.
 
-The exact stacking, ordering, and rounding rules for multiple distinct modifiers remain intentionally undecided until the active campaign establishes them.
+## Currency, modifier stacking, and rounding
+
+Campaign currency uses these fixed conversions:
+
+- `1 gold = 100 silver`
+- `1 silver = 100 copper`
+- therefore `1 gold = 10,000 copper`
+
+For price calculations, convert monetary values to copper-equivalent units so mixed denominations and fractional results can be resolved consistently.
+
+### Percentage modifiers
+
+Multiple percentage modifiers stack **additively**. Calculate every percentage modifier independently from the same Base Price rather than applying percentages sequentially to an already modified subtotal.
+
+For Base Price `B` and percentage modifiers `p1`, `p2`, and so on:
+
+`percentage-adjusted price = B + (B × p1) + (B × p2) + ...`
+
+A discount is represented by a negative percentage.
+
+### Flat modifiers
+
+After calculating all percentage adjustments from Base Price, add or subtract any distinct flat-price modifiers.
+
+General form:
+
+`final unrounded price = B + sum(B × percentage modifiers) + sum(flat modifiers)`
+
+Do not double-count a factor already included in Base Price.
+
+Example:
+
+`50c + (50c × 0.10) - (50c × 0.05) + 5c - 10c`
+
+`= 50c + 5c - 2.5c + 5c - 10c`
+
+`= 47.5c`
+
+Final price: `48c`.
+
+### Denomination conversion and rounding
+
+Convert fractional higher denominations downward before rounding:
+
+- `1.5g = 1g 50s`
+- `1.5s = 1s 50c`
+
+Only a remaining fractional **copper** amount requires rounding. Use normal arithmetic rounding:
+
+- `.5` copper or higher rounds up to the next whole copper
+- below `.5` copper rounds down
+
+Examples:
+
+- `1.5c = 2c`
+- `47.50c = 48c`
+- `47.49c = 47c`
+
+After final copper rounding, the price may be displayed in the largest convenient denominations using the fixed gold/silver/copper conversions above.
 
 ## Shop purchase flow
 
