@@ -48,9 +48,21 @@ Do not later rewrite an existing campaign merely because its source template cha
 
 The exact new-campaign instantiation procedure and file-by-file initial live forms are defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
 
+## Character-creation state and revision 0
+
+The entire pre-game character-creation and backstory phase belongs to `save_revision: 0`.
+
+During revision 0, explicitly established character-creation facts may be written directly to their proper permanent state owners as part of the same evolving pre-game baseline. These writes do not create Campaign Turn Steps and do not increment `save_revision`.
+
+Revision 0 continues until character creation is fully complete and the player confirms the final transition defined in `CHARACTER_CREATION.md`.
+
+That transition establishes `save_revision: 1` as the permanent starting baseline for Campaign Turn 1, while `campaign_turn_number` remains `0` and `turn_save.md` remains `ready` with `Base save revision: 1`.
+
 ## Completed state and live Turn state
 
 Each campaign's `active_game.json` is authoritative for that campaign's **last completed campaign state header**.
+
+Before gameplay begins, revision 1 is the completed pre-game starting baseline for Campaign Turn 1.
 
 During an unfinished Campaign Turn, the live Campaign Turn number, Current Step, Current Scene, and staged changes belong in that campaign's `turn_save.md`.
 
@@ -68,7 +80,7 @@ Within each numbered campaign:
 - `routine_item_prices.md` — authoritative campaign-local classification and recurring Base Price reference for routine/basic repeat goods. Vendor rows mirror these Base Prices; this file does not own item mechanics, vendor quantities, merchant modifiers, Final Price, or inventory.
 - `inventory.md` — detailed active mechanical bookkeeping for core PCs and possessions carried by current party NPCs, including owned-item mechanics snapshots and relevant owned-item state. For persistent NPCs, `NPC-state.md` remains the master ownership list.
 - `world_state.md` — locations, factions, overall quests/missions, clues, discoveries, player-known world secrets, unresolved world threads, world consequences, and lightweight world-context references to persistent NPCs by stable NPC ID and current name.
-- `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn history.
+- `session_log.md` — one character-creation completion / Campaign Turn 1 baseline entry at revision 1, followed by chronological completed Campaign Turn history. It does not accumulate intermediate character-creation save checkpoints.
 - `art/art_log.md` — verified visual-reference paths and visual-reference continuity metadata; it does not override textual appearance owners.
 
 Reusable repository-wide rules belong in `Rule/`. Reusable blank sheet structure belongs in `New-Sheets/`. Neither should be used as duplicate live campaign state or as a substitute for the active campaign's local rule layer.
@@ -111,7 +123,7 @@ If conflicting current facts cannot be resolved from the existing authorities, d
 
 ## Permanent transfer destinations
 
-At approved reconciliation, transfer only persistent, continuity-relevant, or historically important results to their correct owners.
+At approved Campaign Turn reconciliation, transfer only persistent, continuity-relevant, or historically important results to their correct owners.
 
 Typical destinations include:
 
@@ -120,7 +132,7 @@ Typical destinations include:
 - `routine_item_prices.md` — explicit routine/basic classification changes and recurring Base Price additions or revisions, together with required vendor Base Price mirror updates
 - `inventory.md` — detailed active item quantities, charges, currency, ammunition, consumables, equipment changes, evidence, owned-item snapshots/state, and other possessions for core PCs and current party NPCs
 - `world_state.md` — persistent locations, quests, factions, discoveries, clues, unresolved threads, and world consequences
-- `session_log.md` — chronological character-creation checkpoints or completed Campaign Turn summaries and continuity-critical events
+- `session_log.md` — the revision-1 character-creation completion entry or completed Campaign Turn summaries and continuity-critical events
 - `art/art_log.md` — newly established visual-reference paths or reference metadata when relevant
 - `active_game.json` — completed Campaign Turn, `current_scene_name`, completed location, character-creation completion state, authoritative `xp_mode` and `character_advancement`, `save_revision`, and latest sync state
 
@@ -141,8 +153,10 @@ Detailed shop behavior is defined in `SHOPS_PRICING_AND_TRANSACTIONS.md`.
 
 ## Persistence discipline
 
-Do not rewrite permanent campaign files for ordinary gameplay changes while a Campaign Turn is still open. Stage those changes in `turn_save.md` and transfer them only through the approved save workflow.
+During revision-0 character creation, finalized pre-game facts may be written directly to their state owners without opening the Campaign Turn ledger and without incrementing the revision.
+
+After Campaign Turn 1 begins, do not rewrite permanent campaign files for ordinary gameplay changes while a Campaign Turn is still open. Stage those changes in `turn_save.md` and transfer them only through the approved save workflow.
 
 A file does not need fictional changes merely to prove it was checked. If nothing substantive changed, preserve it.
 
-Campaign Turn staging is defined in `CAMPAIGN_TURNS_AND_STEPS.md`. Save approval, verification, and recovery are defined in `SAVES_VERIFICATION_AND_RECOVERY.md`.
+Character-creation persistence is defined in `CHARACTER_CREATION.md`. Campaign Turn staging is defined in `CAMPAIGN_TURNS_AND_STEPS.md`. Save approval, verification, and recovery are defined in `SAVES_VERIFICATION_AND_RECOVERY.md`.
