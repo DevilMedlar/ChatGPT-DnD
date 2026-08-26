@@ -39,9 +39,25 @@ Therefore:
 - male + female may be capable of producing a biological child when the rest of the compatibility rules are satisfied
 - male + male does not naturally produce a biological child together under this initial system
 - female + female does not naturally produce a biological child together under this initial system
-- same-sex couples may still become parents through adoption
 
 Gender identity, romance, attraction, partnership, marriage, and parenthood are separate from biological reproductive capability. The breeding check uses the actual reproductive biology relevant to conception rather than assuming that relationship status alone creates reproductive compatibility.
+
+## Adoption is separate from reproductive compatibility
+
+Adoption is a separate parenthood path and does **not** require biological reproductive compatibility.
+
+A couple, family, or individual may adopt when the campaign circumstances and applicable character-agency rules allow it, regardless of whether the prospective parents:
+
+- are the same sex
+- are different species
+- are reproductively incompatible
+- are infertile
+- are outside one another's natural crossbreeding range
+- could biologically reproduce together but simply choose adoption instead
+
+Being unable to produce a biological child together does not make characters ineligible to become parents through adoption.
+
+Adoption does not create biological ancestry, genetic inheritance, pregnancy, gestation, or reproductive parentage. Adoptive family relationships and biological lineage remain distinct facts even when both are equally important socially and emotionally.
 
 ## Compatibility categories
 
@@ -76,6 +92,8 @@ A pairing with no coherent ordinary biological reproductive pathway is **not eli
 
 Do not override biological incompatibility merely because the species are fantasy creatures, intelligent, consenting, romantically involved, or different Creature Types.
 
+Biological incompatibility affects biological reproduction only. It does not block adoption or other non-biological family relationships.
+
 ## External fertilization
 
 Sexually reproducing species that use external fertilization are allowed in the initial breeding pool.
@@ -109,7 +127,34 @@ Examples:
 - male human + female egg-laying dragon: if the pairing is otherwise compatible, the dragon may lay a fertilized hybrid egg, which later hatches into a human/dragon hybrid
 - male dragon + female live-bearing elf: if the pairing is otherwise compatible, the elf may carry the hybrid through pregnancy and give live birth to an elf/dragon hybrid
 
-Gestation or delivery method does **not** by itself determine how much of either ancestry the offspring expresses. Hybrid inheritance is a separate mechanic.
+Gestation or delivery method does **not** by itself determine how much of either ancestry the offspring ultimately expresses. Hybrid inheritance is a separate mechanic.
+
+## Birth-safe hybrid development
+
+A hybrid's **final inherited form does not have to be fully expressed at birth or hatching**.
+
+The developing offspring must remain physically compatible enough with the carrying parent's gestation and delivery biology for the pregnancy, egg formation, laying, birth, implantation, or hatching pathway to make biological sense.
+
+When a fully developed inherited feature would create an unreasonable or needlessly dangerous gestational or delivery problem, that feature may be present genetically or developmentally but remain immature, soft, folded, vestigial, internal, unformed, or otherwise not fully expressed until after birth or hatching.
+
+Examples can include:
+
+- horns beginning as soft or absent neonatal structures and hardening or growing later
+- wings existing as small folded buds or developing during childhood rather than being full-sized at live birth
+- heavy scales beginning as softer skin or light scale patches and becoming more pronounced with growth
+- claws, fangs, spines, crests, plates, tails, or similar structures developing progressively when full neonatal expression would conflict with the carrying parent's delivery biology
+- supernatural-looking coloration, markings, or other harmless traits appearing at birth when they create no biological conflict
+
+This rule does **not** erase the inherited trait. It changes the trait's **developmental expression timeline** when needed to preserve a coherent gestation and delivery pathway.
+
+The later hybrid-inheritance system should therefore distinguish at minimum between:
+
+- the trait the offspring inherits
+- whether the trait is expressed at birth or hatching
+- the age or developmental stage at which a delayed trait first appears
+- the age or developmental stage at which the trait becomes mechanically functional, if different
+
+A carrying parent does not force the hybrid to permanently resemble that parent's species. The child may grow into features inherited from either ancestry over time.
 
 ## Reproductive profile requirement
 
@@ -124,6 +169,7 @@ That profile file owns the reusable species-level facts, including when relevant
 - live-bearing, egg-laying, implanted, host-dependent, or other non-magical development method
 - carrier or host requirements
 - special biological conditions required for fertilization, gestation, incubation, or hatching
+- neonatal or delivery constraints that matter to safe hybrid development
 - known cross-species compatibility and incompatibility information
 
 Do not duplicate a full species reproductive profile in this file or ordinary campaign state.
@@ -136,7 +182,9 @@ An unprofiled species is not yet cleared for breeding selection.
 
 A valid compatible pairing may produce hybrid offspring that combine ancestry and biologically or mechanically appropriate traits from both parents.
 
-Exact fertility chances, conception checks, gestation timing, multiple-offspring rules, inheritance probabilities, offspring trait selection, hybrid balance, mutations, later-generation genetics, and offspring fertility are defined by the later crossbreeding mechanics rather than improvised case by case.
+Inherited traits may be expressed immediately or may develop later under the Birth-safe hybrid development rule.
+
+Exact fertility chances, conception checks, gestation timing, multiple-offspring rules, inheritance probabilities, offspring trait selection, hybrid balance, mutations, later-generation genetics, offspring fertility, and detailed developmental milestones are defined by the later crossbreeding mechanics rather than improvised case by case.
 
 Until those mechanics are established, do not invent permanent probabilities or inheritance formulas merely to resolve an undecided system question.
 
@@ -144,4 +192,4 @@ Until those mechanics are established, do not invent permanent probabilities or 
 
 These compatibility rules establish only whether a biological reproductive pathway is possible.
 
-They do not create automatic attraction, romance, consent, mating, conception, pregnancy, reproduction, or parenthood. Those remain dependent on adult character agency, consent, established circumstances, and choices made during play.
+They do not create automatic attraction, romance, consent, mating, conception, pregnancy, reproduction, adoption, or parenthood. Those remain dependent on adult character agency, consent, established circumstances, and choices made during play.
