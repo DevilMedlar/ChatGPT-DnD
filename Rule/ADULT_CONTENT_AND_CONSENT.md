@@ -14,6 +14,17 @@ Campaign canon may contain brief, non-graphic, non-erotic factual references to 
 
 This allowance is for concise historical reference only. Any depicted or actively narrated sexual content, nudity, erotic imagery, current sexual activity, fertility, pregnancy, or reproduction must involve characters who are explicitly **18+**.
 
+### Continuity and audit interpretation
+
+For campaign continuation, rule review, and repository audits, do **not** treat either of the following as a contradiction with this rule:
+
+- established romantic relationships or relationship statuses involving characters ages 14-17, including dating, commitment, engagement, or marriage
+- concise, non-graphic, non-erotic historical sexual facts involving characters who were ages 14-17, when handled under the historical-reference rule above
+
+The 18+ requirement applies to depicted or actively narrated sexual content, nudity, erotic imagery, current sexual activity, fertility, pregnancy, and reproduction. It does not erase or invalidate the permitted background continuity facts above.
+
+When campaign-specific canon contains one of those permitted facts, preserve it accurately rather than silently rewriting, downgrading, or flagging it merely because the characters were under 18 at the historical time.
+
 ## Consensual adult content
 
 Consensual adult romance, seduction, erotic tension, nudity, sexual activity, adult relationship themes, fertility, pregnancy, reproduction, and lineage consequences may appear when appropriate and within platform rules.
