@@ -15,7 +15,8 @@ Use the files in this order when resolving a reproductive question:
 7. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_4.md` — aquatic and amphibious profiles, including Sahuagin, Kuo-toa, Bullywug, Merfolk, Triton, and directional compatibility cases
 8. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_5.md` — Legacy biological peoples and hybrid evidence, including Saurials, Loxo, biological Gnolls, Bariaur, Rakasta, Phanatons, and Half-Ogres
 9. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_6.md` — directional Ogre hybrid evidence, including Ogrillon, Orog, Ogre/Hobgoblin, Ogre/Bugbear, and Human/Ogre refinements
-10. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+10. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_7.md` — stable extraordinary-origin biological lineages, including Extaminaar and Trueborn Krinth
+11. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -33,6 +34,14 @@ The same species name may have multiple reproductive profiles when editions, set
 A later magical, transformed, constructed, or otherwise ineligible version does not erase an older stable biological version.
 
 A campaign may choose which version exists, may override a version locally, or may establish multiple distinct populations when that makes sense in its canon.
+
+## Stable-lineage rule
+
+An extraordinary-origin population can receive a normal breeder profile when its established descendant population reproduces through ordinary biological male/female sexual reproduction and no longer requires the original transformation, ritual, curse, divine event, laboratory process, or other extraordinary creation method for each new individual.
+
+The stable descendant lineage must be profiled separately from the founding transformation/origin state.
+
+Extaminaar and Trueborn Krinth are current examples.
 
 ## Status flow
 
