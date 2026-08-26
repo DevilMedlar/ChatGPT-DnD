@@ -38,6 +38,7 @@ Current rule categories include:
 - NPCs and party membership
 - relationships and social interactions
 - reproduction and lineage
+- reproductive species profiles
 - rule authority and hierarchy
 - saves, verification, and recovery
 - session logs and history
@@ -126,7 +127,7 @@ New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Cam
 New-Sheets/art/art_log.md                      -> campaigns/campaign-N/art/art_log.md
 ```
 
-The campaign's copied Markdown files keep useful instructions, examples, blank layouts, and clearly labeled templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
+The campaign's copied Markdown files keep useful instructions, examples, blank layouts, and clearly labeled record templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
 
 Those retained helper sections are **not canonical state**. A labeled `NPC Record Template` is not an NPC, a labeled `Shop Transaction Template` is not a pending transaction, and placeholder names/IDs or example rows are not established campaign facts.
 
@@ -169,6 +170,7 @@ Rule/
   NPCS_AND_PARTY_MEMBERSHIP.md
   RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md
   REPRODUCTION_AND_LINEAGE.md
+  REPRODUCTIVE_SPECIES_PROFILES.md
   RULE_AUTHORITY_AND_HIERARCHY.md
   SAVES_VERIFICATION_AND_RECOVERY.md
   SESSION_LOG_AND_HISTORY.md
