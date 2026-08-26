@@ -14,6 +14,16 @@ This is a homebrew-universal catalog. Current, Legacy, older-edition, future, se
 
 No finite document can literally contain species that have not been invented or published yet. Therefore this catalog is **open-ended by rule**: any newly encountered species is added when it plausibly passes the same biological test.
 
+## Deduplication rule
+
+Keep **one canonical row per distinct species or materially different biological version**.
+
+- Exact repeats are removed.
+- Aliases for the same biological lineage are combined in one row.
+- Source or setting variants that use the same reproductive biology are named in the canonical row's note rather than repeated elsewhere.
+- A genuinely different version stays separate when its biology, lifecycle, fertility, or reproductive origin materially differs.
+- Species are organized by biological/reproductive family rather than repeated again in a separate source-based section.
+
 ## Status meanings
 
 - **Candidate**: sexual male/female reproduction is established or strongly biologically supported; full pairing compatibility still requires a completed profile.
@@ -38,8 +48,6 @@ No finite document can literally contain species that have not been invented or 
 
 ## Core humanoid and near-humanoid peoples
 
-These are strong or ordinary biological candidates, usually live-bearing unless a specific profile establishes otherwise.
-
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
 | Human | Candidate | Live-bearing |
@@ -47,21 +55,21 @@ These are strong or ordinary biological candidates, usually live-bearing unless 
 | High Elf | Candidate | Elf profile |
 | Moon Elf | Candidate | Elf profile |
 | Wood Elf | Candidate | Elf profile |
-| Sea Elf | Candidate | Elf profile; aquatic conditions may matter |
+| Sea Elf | Candidate | Elf profile; aquatic adaptation does not automatically change fertilization |
 | Astral Elf | Candidate | Elf profile |
 | Eladrin | Candidate | Elf-related profile |
 | Shadar-kai | Candidate | Elf-related profile |
 | Lorwyn-Shadowmoor Elf | Candidate | Elf-related profile |
 | Athasian Elf | Candidate | Elf profile |
-| Dargonesti | Candidate | Aquatic elf profile |
-| Dimernesti | Candidate | Aquatic elf profile |
+| Dargonesti | Candidate | Aquatic Elf profile |
+| Dimernesti | Candidate | Aquatic Elf profile |
 | Kagonesti | Candidate | Elf profile |
 | Qualinesti | Candidate | Elf profile |
 | Silvanesti | Candidate | Elf profile |
 | Llewyrr | Candidate | Elf profile |
 | Dwarf | Candidate | Live-bearing |
-| Deep Gnome / Svirfneblin | Candidate | Gnome profile |
 | Gnome | Candidate | Live-bearing |
+| Deep Gnome / Svirfneblin | Candidate | Gnome profile |
 | Forest Gnome | Candidate | Gnome profile |
 | Rock Gnome | Candidate | Gnome profile |
 | Halfling | Candidate | Live-bearing |
@@ -73,7 +81,7 @@ These are strong or ordinary biological candidates, usually live-bearing unless 
 | Kithkin | Candidate | Likely live-bearing |
 | Orc | Candidate | Live-bearing |
 | Gray Orc | Candidate | Orc profile |
-| Orog | Candidate | Orc-related profile |
+| Orog | Candidate | Orc-related or directional Orc/Ogre version; profile by version |
 | Goblin | Candidate | Live-bearing |
 | Boggart | Candidate | Goblinoid profile |
 | Hobgoblin | Candidate | Live-bearing |
@@ -83,28 +91,23 @@ These are strong or ordinary biological candidates, usually live-bearing unless 
 | Dhakaani Guul'dar | Candidate | Bugbear profile |
 | Firbolg | Candidate | Live-bearing |
 | Goliath | Candidate | Live-bearing |
-| Giantkin | Candidate | Giant-descended; likely live-bearing |
-| Kender | Candidate | Live-bearing |
 | Vedalken | Candidate | Likely live-bearing |
-| Verdan | Hold | Sexual reproduction after magical origin needs confirmation |
-| Kalashtar | Candidate | Likely human-derived live-bearing biology; profile needed |
-| Shifter | Candidate | Live-bearing; not treated as a prohibited full shapechanger under current seed interpretation unless later ruled otherwise |
-| Khoravar | Candidate | Established mixed human/elf lineage |
-| Jhorgun'taal / Half-orc | Candidate | Established human/orc mixed lineage |
-| Half-Elf | Candidate | Established hybrid lineage |
-| Half-Orc | Candidate | Established hybrid lineage |
+| Verdan | Hold | Stable biological reproduction unresolved in this catalog; later resolved profile overrides this row |
+| Kalashtar | Candidate | Human-derived live-bearing biology; completed version profile exists |
+| Shifter | Candidate | Fixed inherited mammalian/humanoid biology; not treated as a prohibited full shapechanger |
+| Half-Elf / Khoravar | Candidate | Human/Elf hybrid lineage; Khoravar is the stable Eberron lineage |
+| Half-Orc / Jhorgun'taal | Candidate | Human/Orc hybrid lineage |
 | Half-Drow | Candidate | Established mixed lineage |
 | Half-Sea-Elf | Candidate | Established mixed lineage |
 | Half-Goblin | Candidate | Established mixed lineage |
-| Half-Ogre | Candidate | Established mixed lineage |
 | Mongrelfolk | Candidate | Mixed humanoid lineage; live-bearing likely |
 | Grimlock | Candidate | Humanoid live-bearing inference |
-| Krinth | Candidate | Human/fiend-descended humanoid lineage |
-| Extaminaar | Candidate | Serpentine humanoid lineage; development profile needed |
-| Elan | Hold | Psionic transformation origin; ordinary reproduction needs confirmation |
-| Abbalaya | Hold | Older-edition biology needs research |
-| Talfir | Candidate | Human lineage; human reproductive profile |
+| Extaminaar | Candidate | Stable Human/Yuan-ti-descended lineage |
+| Elan | Hold | Transformation-origin version requires its resolved profile |
+| Abbalaya | Candidate | Human subrace; Human reproductive profile |
+| Talfir | Candidate | Human lineage; Human reproductive profile |
 | Nubari | Candidate | Human-like ancient lineage; live-bearing inference |
+| Umbral Human | Candidate | Human biology unless a specific transformation prevents heredity |
 
 ## Goblinoid, orcish, ogre, trollish, and giant-descended peoples
 
@@ -112,13 +115,13 @@ These are strong or ordinary biological candidates, usually live-bearing unless 
 |---|---|---|
 | Ogre | Candidate | Mammalian/humanoid live-bearing inference |
 | Zakharan Ogre | Candidate | Ogre profile |
-| Half-Ogre | Candidate | Hybrid lineage |
-| Trollkin | Candidate | Established descendants of ogre/troll/fey and humans in partner lore; live-bearing profile needed |
+| Half-Ogre | Candidate | Established hybrid lineage |
+| Trollkin | Candidate | Mixed humanoid/ogre/troll ancestry; profile by version |
 | Ogresh | Candidate | Ogre-like humanoid; likely live-bearing |
 | Alaghi | Candidate | Mammalian humanoid inference |
-| Gnoll | Candidate | Hyena-like mammalian inference; live-bearing |
-| Lupin | Candidate | Canine mammalian inference; live-bearing |
-| Rakasta | Candidate | Feline mammalian inference; live-bearing |
+| Gnoll | Candidate | Hyena-like mammalian inference; includes fixed biological versions such as Frontiers of Eberron unless a version differs |
+| Lupin | Candidate | Canine mammalian live-bearing; sub-breeds share the profile unless a source differs |
+| Rakasta | Candidate | Feline mammalian live-bearing; sub-breeds share the profile unless a source differs |
 | Beastman | Hold | Name covers multiple biological forms; profile by specific version |
 | Baphitaur | Candidate | Bovine/minotaur-like hybrid biology; live-bearing inference |
 | Minotaur | Candidate | Mammalian live-bearing inference |
@@ -135,6 +138,7 @@ These are strong or ordinary biological candidates, usually live-bearing unless 
 | Armand | Candidate | Armadillo-like mammalian inference; live-bearing |
 | Saru | Candidate | Ape-like mammalian inference; live-bearing |
 | Pangolin-like peoples when sapient | Candidate | Mammalian inference; live-bearing |
+| Bogborn | Hold | Troll-like biology may include nonsexual regenerative reproduction; needs confirmation |
 
 ## True dragons and draconic peoples
 
@@ -142,13 +146,12 @@ True dragons are strong breeding candidates because D&D lore repeatedly depicts 
 
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
-| Dragonborn | Candidate | Egg-laying |
-| Dray / Athasian Dragonborn | Candidate | Draconic profile; likely egg-laying |
+| Dragonborn | Candidate | Egg-laying; Floral and Grim Hollow versions use this baseline unless their source establishes different biology |
+| Dray / Athasian Dragonborn | Candidate | Stable transformed draconic lineage; profile by generation/version |
 | Kobold | Candidate | Egg-laying |
 | Saurial | Candidate | Dinosaur/reptilian model; egg-laying |
 | Portal Drake | Candidate | Draconic egg-laying inference |
 | Dracon | Candidate | Reptilian/draconic Spelljammer people; egg-laying inference |
-| Floral Dragonborn | Candidate | Dragonborn profile unless source biology differs |
 | Chromatic Dragon — Black | Candidate | Egg-laying |
 | Chromatic Dragon — Blue | Candidate | Egg-laying |
 | Chromatic Dragon — Green | Candidate | Egg-laying |
@@ -183,23 +186,22 @@ The old-edition Half-Dragon template is **not** automatically used as this repos
 | Cloud Giant | Candidate | Live-bearing inference |
 | Storm Giant | Candidate | Live-bearing inference |
 | Cyclops | Candidate | Giant humanoid live-bearing inference |
+| Cyclopian | Candidate | Partner-setting giant-like humanoid; live-bearing inference |
 | Ettin | Candidate | Giant humanoid live-bearing inference; developmental profile needed |
 | Fomorian | Candidate | Giant humanoid live-bearing inference unless source establishes curse-only propagation |
-| Half-Giant | Hold | Some settings treat half-giants as infertile; profile by setting/version |
-| Gulgar | Hold | Giant/earth-associated biology needs confirmation |
+| Half-Giant | Hold | Profile by setting/version; Athasian stable population has a resolved profile |
+| Gulgar | Hold | Later resolved profile overrides this catalog row |
 | Maur | Candidate | Giant/ogre-like humanoid inference |
 | Giantkin | Candidate | Giant-descended humanoid biology |
 
 ## Avian and winged biological peoples
-
-These are generally sexual egg-laying candidates when plainly bird-modeled.
 
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
 | Aarakocra | Candidate | Egg-laying |
 | Kenku | Candidate | Egg-laying |
 | Owlin | Candidate | Egg-laying |
-| Harpy | Candidate | Egg-laying inference; profile needed |
+| Harpy | Candidate | Egg-laying inference; includes fixed biological Frontiers of Eberron version unless a source differs |
 | Raptoran | Candidate | Egg-laying inference |
 | Corvum | Candidate | Egg-laying inference |
 | Gallus | Candidate | Egg-laying inference |
@@ -210,7 +212,7 @@ These are generally sexual egg-laying candidates when plainly bird-modeled.
 | Gobboc | Candidate | Chicken-like avian inference; egg-laying |
 | Azureborn | Candidate | Harpy-like avian inference; egg-laying likely |
 | Dohwar | Candidate | Penguin-like avian inference; egg-laying |
-| Feathren | Candidate | Avian/feline hybrid body plan; reproductive profile needed |
+| Feathren | Hold | Known to be born; avian/feline mixed development method remains unresolved |
 | Pluvenn | Candidate | Raptor/dinosaurian model; egg-laying |
 | Children of Seth | Candidate | Winged biological humanoids; development method needs research |
 
@@ -221,10 +223,10 @@ These are generally sexual egg-laying candidates when plainly bird-modeled.
 | Lizardfolk | Candidate | Egg-laying |
 | Tortle | Candidate | Egg-laying |
 | Snapper Tortle | Candidate | Tortle-related egg-laying profile |
-| Yuan-ti | Candidate | Egg-laying and/or live-bearing depending form; profile by lineage |
-| Yuan-ti Pureblood | Candidate | Reproduction established in yuan-ti lore; profile needed |
-| Yuan-ti Malison | Candidate | Reproduction established in yuan-ti lore; profile needed |
-| Phaerlock | Candidate | Reptilian humanoid inference; egg-laying |
+| Yuan-ti | Candidate | Development varies by lineage; use completed lineage profiles where available |
+| Yuan-ti Pureblood | Candidate | Reproduction established in Yuan-ti lore; profile by version |
+| Yuan-ti Malison | Candidate | Reproduction established in Yuan-ti lore; profile by version |
+| Phaerlock | Hold | Reptilian body is known; stable reproductive sex roles remain unresolved |
 | Pterafolk | Candidate | Reptilian/pterosaur model; egg-laying |
 | Sarrukh | Candidate | Serpentine progenitor species; egg-laying inference |
 | Kappa | Candidate | Turtle/reptilian model; egg-laying inference |
@@ -233,7 +235,7 @@ These are generally sexual egg-laying candidates when plainly bird-modeled.
 | Chameleon Man | Candidate | Reptilian model; egg-laying inference |
 | Sis'thik | Candidate | Reptilian model; egg-laying inference |
 | Bakali | Candidate | Lizardfolk-related; egg-laying |
-| Pterran | Candidate | Reptilian/pterosaur-like Dark Sun people; egg-laying inference |
+| Pterran | Candidate | Dark Sun pterosaur-like people; completed profile exists |
 | Ssurran | Candidate | Reptilian Dark Sun people; egg-laying inference |
 | Ankylier | Candidate | Dinosaurian model; egg-laying |
 | Jeholrak | Candidate | Dinosaurian/reptilian model; egg-laying |
@@ -246,17 +248,17 @@ These frequently require **Conditional compatibility** because fertilization env
 
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
-| Grung | Candidate — conditional | External fertilization / eggs / larval development, provisional |
-| Bullywug | Candidate — conditional | Amphibian external-fertilization inference |
-| Locathah | Candidate — conditional | Fish-like external fertilization / eggs, provisional |
-| Kuo-toa | Candidate — conditional | Fish/amphibious egg reproduction inference; aquatic conditions |
-| Merfolk | Candidate — conditional | Sexual aquatic reproduction; exact live/egg method by setting |
+| Grung | Candidate — conditional | External fertilization / eggs / larval development |
+| Bullywug | Candidate — conditional | External fertilization / eggs / tadpole development |
+| Locathah | Candidate — conditional | Fish-like external fertilization / eggs |
+| Kuo-toa | Candidate — conditional | External aquatic spawning |
+| Merfolk | Candidate — conditional | Sexual aquatic reproduction; exact development by setting/version |
 | Kalamer Landwalker / Merfolk | Candidate — conditional | Merfolk profile |
-| Triton | Candidate — conditional | Sexual aquatic humanoid; development method needs confirmation |
-| Sahuagin | Candidate — conditional | Aquatic sexual reproduction; eggs likely but profile needed |
+| Triton | Candidate — conditional | Aquatic humanoid; completed profile/version rules govern development |
+| Sahuagin | Candidate — conditional | Internal fertilization with egg development in source-supported versions |
 | Vodyanoi | Candidate — conditional | Amphibious/aquatic profile needed |
 | Nakudama | Candidate — conditional | Amphibian model; eggs/larvae likely |
-| Cnidaran | Hold | Cnidarian-inspired sexual biology can be complex; male/female roles must be confirmed for the fantasy species |
+| Cnidaran | Hold | Sexual communal lifecycle known; stable male/female roles not established |
 | Lotol | Candidate — conditional | Salamander/amphibian model; aquatic egg development likely |
 | Deepborn | Candidate — conditional | Fish-like biological species; fertilization profile needed |
 | Laneshi | Candidate — conditional | Biological undersea people; profile needed |
@@ -271,18 +273,19 @@ These frequently require **Conditional compatibility** because fertilization env
 | Rastipede | Candidate | Insect-centaur; egg-laying inference |
 | Xixchil | Candidate | Insectoid; egg-laying inference |
 | Silkborn | Candidate | Spider-like; egg-laying inference |
-| Spider-kin variants with fixed biological forms | Candidate | Egg-laying inference; exclude versions that are shapechangers |
+| Spider-kin variants with fixed biological forms | Candidate | Egg-laying inference; shapechanger versions excluded |
 | Yurian | Candidate | Crustacean-like; egg development inference |
 | Golynn | Candidate | Burrowing animal-like biology; exact reproductive model needs profile |
+| Opteran | Candidate | Sexual lepidopteran lifecycle; egg -> larva -> chrysalis -> reproductive adult |
 
 ## Mammalian beastfolk and animal-derived peoples
 
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
-| Bearfolk | Candidate | Mammalian live-bearing |
-| Beastkin with fixed biological form | Candidate | Use underlying mammal biology when applicable; shapechanging versions excluded |
+| Bearfolk | Candidate | Mammalian live-bearing; includes Northlands/Ebon Tides variants unless biology differs |
+| Beastkin with fixed biological form | Candidate | Use underlying mammal biology when applicable; active shapechanger versions excluded |
 | Cervan | Candidate | Deer-like mammalian live-bearing |
-| Hedge / Erina | Candidate | Hedgehog-like mammalian live-bearing |
+| Hedge / Erina | Candidate | Hedgehog-like mammalian live-bearing; names retained as aliases/versions |
 | Jerbeen | Candidate | Mouse-like mammalian live-bearing |
 | Mapach | Candidate | Raccoon-like mammalian live-bearing |
 | Vulpin | Candidate | Fox-like mammalian live-bearing |
@@ -290,10 +293,8 @@ These frequently require **Conditional compatibility** because fertilization env
 | Tarandus | Candidate | Reindeer-like mammalian live-bearing |
 | Rakin | Candidate | Mammalian animalfolk; profile by option |
 | Ratatosk | Candidate | Squirrel-like mammalian live-bearing |
-| Worg | Candidate | Sapient canid; live-bearing inference |
+| Worg | Candidate | Sapient canid; includes fixed biological Frontiers of Eberron version |
 | Plagueborn | Candidate | Rat-like mammalian live-bearing unless source origin overrides |
-| Lupin sub-breeds | Candidate | Canine live-bearing |
-| Rakasta sub-breeds | Candidate | Feline live-bearing |
 | Phanaton | Candidate | Gliding mammalian/primate-like; live-bearing inference |
 | Pegataur | Candidate | Equine mammalian live-bearing inference |
 
@@ -306,14 +307,15 @@ Fey are not automatically eligible or ineligible. A fixed biological male/female
 | Satyr | Candidate | Mammalian live-bearing inference |
 | Fairy | Hold | Sexual biology needs confirmation |
 | Faerie (Lorwyn) | Hold | Sexual biology needs confirmation |
-| Gloaming | Hold | Fey reproductive biology needs confirmation |
+| Gloaming | Candidate | Resolved completed profile exists |
 | Gloura | Hold | Fey reproductive biology needs confirmation |
-| Killoren | Hold | Plant/fey nature makes reproductive pathway uncertain |
-| Spirit Folk | Candidate | Human/spirital lineage suggests biological reproduction; profile needed |
+| Killoren | Candidate | Source-supported male/female born population; completed profile exists |
+| Spirit Folk | Candidate | Stable Human/spirit-descended biological lineage |
 | Quickstep | Candidate | Fey humanoid; live-bearing inference unless source contradicts |
 | Shadow Goblin | Candidate | Goblinoid/fey profile; live-bearing inference |
-| Dara | Hold | Species biology needs research |
-| Etherean | Hold | Extraplanar biology needs confirmation |
+| Dara | Not a breeder under current global rules | Source lifecycle produces new Dara through glyph/tree emergence rather than male/female conception |
+| Etherean | Hold | Extraplanar biology remains unresolved |
+| Ombrask | Hold | Transformed adult state; source does not establish retained reproductive function |
 
 ## Elemental and planar mortal lineages
 
@@ -328,8 +330,8 @@ Fey are not automatically eligible or ineligible. A fixed biological male/female
 | Tiefling | Candidate | Mortal fiendish lineage; live-bearing inference |
 | Feral Tiefling | Candidate | Tiefling profile |
 | Frontiers of Eberron Tiefling | Candidate | Tiefling profile unless source biology differs |
-| Downcast | Candidate | Biological celestial-descended form appears plausible; profile needed |
-| Krinth | Candidate | Fiend-descended humanoid; live-bearing inference |
+| Downcast | Candidate | Biological celestial-descended humanoid appears plausible; profile needed |
+| Krinth | Candidate | Fiend-descended stable humanoid lineage; profile by generation/version |
 
 ## Fiend-cross and supernatural biological lineages
 
@@ -341,6 +343,7 @@ These are included only where biological offspring are actually plausible. A fie
 | Alu-fiend / alu-demon (older editions) | Candidate | Biological fiend/humanoid hybrid lineage; profile needed |
 | Fey'ri / fiend-touched elf lineages | Candidate | Elf/fiend-descended biological lineage; live-bearing inference |
 | Tanarukk | Candidate | Orc/fiend-descended biological lineage; live-bearing inference |
+| Dhampir (Grim Hollow version) | Candidate | Inherited vampiric lineage appears biologically plausible; profile by version |
 | Ashborn | Hold | Imp-like species but ordinary sexual reproduction needs confirmation |
 | Satarre | Hold | Biological reproductive pathway needs confirmation |
 
@@ -350,121 +353,25 @@ Succubus/incubus are **not automatically admitted** under the current global rul
 
 | Species / lineage | Status | Likely development or note |
 |---|---|---|
-| Harpy | Candidate | Avian egg-laying inference |
-| Medusa | Candidate | Fixed-form serpentine humanoid; reproductive development needs profile |
+| Medusa | Candidate | Fixed-form serpentine humanoid; includes Frontiers of Eberron version unless biology differs |
 | Lamia | Candidate | Mammalian/humanoid biological model; live-bearing inference |
-| Sphinx — fixed biological species | Hold | Male/female forms exist in some lore, but D&D reproductive biology needs confirmation |
+| Sphinx — fixed biological species | Candidate | Completed fixed biological Sphinx-family profile exists |
 | Peryton-like sapient people if established | Hold | Profile by setting |
 | Ettercap-like fixed biological peoples | Candidate | Arachnid/humanoid sexual biology plausible; egg-laying inference |
 | Firenewt | Candidate | Reptilian/amphibian egg-laying inference |
-| Phaerlock | Candidate | Reptilian egg-laying inference |
-| Harssaf | Hold | Elemental-associated biology needs confirmation |
+| Harssaf | Candidate | Resolved completed profile exists |
 | Tarek | Candidate | Humanoid/mammalian inference |
 | Belgoi | Candidate | Humanoid live-bearing inference |
-| Anakore | Hold | Biology needs research |
+| Anakore | Not a breeder under current global rules | No stable male/female biology; replacement lifecycle uses transformed captives |
 | Braxat | Candidate | Large reptilian/humanoid biological species; egg-laying inference unless lore differs |
 | Scro | Candidate | Orc-derived Spelljammer species; live-bearing inference |
-| Varan | Candidate | Reptilian/humanoid profile needed |
-| Thoric | Hold | Spelljammer biology needs research |
+| Varan | Candidate | Astromundi Human population; Human reproductive profile |
+| Thoric | Candidate | Astromundi Human population; Human reproductive profile |
 | Wiggle | Hold | Spelljammer biology needs research |
-| Antilan | Candidate | Human-like Spelljammer people; live-bearing inference |
-| Aperusa | Candidate | Human-like Spelljammer people; live-bearing inference |
-| Calidian | Candidate | Human-like Spelljammer people; live-bearing inference |
-
-## Third-party / partner biological candidates surfaced on D&D Beyond
-
-These are not privileged over other homebrew species. They are included because the live species index provides useful names and obvious biological models.
-
-| Species / lineage | Status | Likely development or note |
-|---|---|---|
-| Bearfolk (Northlands / Ebon Tides variants) | Candidate | Mammalian live-bearing |
-| Beastkin with fixed inherited form | Candidate | Underlying animal biology; exclude active shapechanger versions |
-| Giantkin | Candidate | Giant-descended live-bearing inference |
-| Trollkin | Candidate | Mixed humanoid/ogre/troll ancestry; profile needed |
-| Floral Dragonborn | Candidate | Egg-laying dragonborn model |
-| Gnoll (Frontiers of Eberron) | Candidate | Mammalian live-bearing |
-| Harpy (Frontiers of Eberron) | Candidate | Avian egg-laying inference |
-| Medusa (Frontiers of Eberron) | Candidate | Serpentine biological humanoid; profile needed |
-| Worg (Frontiers of Eberron) | Candidate | Sapient canid; live-bearing |
-| Erina | Candidate | Hedgehog-like live-bearing |
-| Ratatosk | Candidate | Squirrel-like live-bearing |
-| Ravenfolk | Candidate | Avian egg-laying |
-| Shadow Goblin | Candidate | Goblinoid live-bearing |
-| Umbral Human | Candidate | Human biology unless source transformation prevents heredity |
-| Nakudama | Candidate — conditional | Amphibian reproduction inference |
-| Cervan | Candidate | Deer-like live-bearing |
-| Corvum | Candidate | Avian egg-laying |
-| Gallus | Candidate | Avian egg-laying |
-| Hedge | Candidate | Hedgehog-like live-bearing |
-| Jerbeen | Candidate | Rodent live-bearing |
-| Luma | Candidate | Avian egg-laying |
-| Mapach | Candidate | Raccoon-like live-bearing |
-| Raptor | Candidate | Avian egg-laying |
-| Strig | Candidate | Avian egg-laying |
-| Vulpin | Candidate | Fox-like live-bearing |
-| Cnidaran | Hold | Sexual system must be established for fantasy species |
-| Cyclopian | Candidate | Humanoid/giant-like live-bearing inference |
-| Gobboc | Candidate | Avian egg-laying |
-| Golynn | Candidate | Biological animalfolk; profile needed |
-| Rakin | Candidate | Mammalian animalfolk; live-bearing inference |
-| Lotol | Candidate — conditional | Amphibian model |
-| Ombrask | Hold | Heritage-dependent biology needs research |
-| Opteran | Candidate | Insectoid lifecycle/metamorphosis can still be biological sexual reproduction; egg-laying likely |
-| Feathren | Candidate | Avian/feline hybrid body; development profile needed |
-| Azureborn | Candidate | Harpy-like avian egg-laying inference |
-| Bogborn | Hold | Troll-like biology may include nonsexual regenerative reproduction; needs confirmation |
-| Deepborn | Candidate — conditional | Fish-like sexual reproduction plausible |
-| Plagueborn | Candidate | Rat-like live-bearing inference |
-| Silkborn | Candidate | Spider-like egg-laying inference |
-| Dhampir (Grim Hollow version) | Candidate | Inherited vampiric lineage appears biologically plausible; profile by version |
-| Downcast | Candidate | Celestial-descended biological humanoid appears plausible |
-| Dragonborn (Grim Hollow version) | Candidate | Draconic reproductive profile needed |
-| Laneshi | Candidate — conditional | Aquatic biological species |
-| Ogresh | Candidate | Ogre-like live-bearing inference |
-| Canisar | Candidate | Fox/canid-like live-bearing |
-| Tarandus | Candidate | Reindeer-like live-bearing |
-| Ankylier | Candidate | Dinosaurian egg-laying |
-| Jeholrak | Candidate | Dinosaurian/reptilian egg-laying |
-| Limukin | Candidate | Reptilian egg-laying |
-| Pluvenn | Candidate | Raptorfolk egg-laying |
-| Children of Seth | Candidate | Winged biological humanoid; development profile needed |
-| Manyhorn | Candidate | Ceratopsian egg-laying |
-
-## Research Holds that could still qualify
-
-The following should **not** be discarded. They may enter the breeding pool if research establishes ordinary biological male/female sexual reproduction and viable development:
-
-- Dhampir, by source/version
-- Fairy / Faerie variants
-- Flamekin
-- Rimekin
-- Plasmoid
-- Verdan
-- Githzerai development method
-- Triton development method
-- Yuan-ti lineage-specific development details
-- Cnidaran
-- Etherean
-- Sphinx
-- Harssaf
-- Anakore
-- Gulgar
-- Elan
-- Killoren
-- Gloaming
-- Gloura
-- Lith
-- Juna
-- Kaorti
-- Khala
-- Old One
-- Phaerlock variants where biology differs
-- Spirit Folk variants
-- Thoric
-- Wiggle
-- Ombrask
-- Bogborn
-- any celestial, fiend, aberration, elemental, or divine species whose reproduction is biological rather than created, spawned, reincarnated, magical-only, or shapechanger-dependent
+| Antilan | Candidate | Astromundi Human population; Human reproductive profile |
+| Aperusa | Candidate | Human/Half-Elf population rather than separate biological species |
+| Calidian | Candidate | Astromundi Human population; Human reproductive profile |
+| Geleton | Not a breeder under current global rules | Ooze/undead Synthesis lifecycle rather than male/female reproduction |
 
 ## Known categories excluded by the current global biological gate
 
@@ -485,9 +392,8 @@ These are not erased from the universe. They simply are not ordinary breeders un
 - Relicborn / skeleton-like undead species
 - Shade when the version is an undead echo rather than a biological species
 - Geleton when reproduction is only ooze/undead symbiosis rather than sexual biology
-- Mycelian if the specific version reproduces only by spores/asexual fungus mechanisms
-- Oozekin if the specific version lacks male/female sexual reproduction
-- Plasmoid unless a male/female sexual pathway is established
+- Oozekin when the version lacks male/female sexual reproduction
+- Plasmoid under the current stable male/female-role rule
 - Plantman / mold-man species when reproduction is asexual/spore-only
 - Hederan / Gnarlborn / other plant people if reproduction is seed/spore/asexual only
 - Changeling and Lorwyn Changeling under the current no-shapechanger rule
@@ -495,6 +401,14 @@ These are not erased from the universe. They simply are not ordinary breeders un
 - Succubus/Incubus versions treated as shapechangers under the current no-shapechanger rule
 - Simic Hybrid when the altered form is not established as biologically heritable
 - Hexblood when the version is a magical transformation rather than a sexually reproducing stable species
+- Elan when the profiled version is created from an existing Human rather than born
+- Kaorti when propagation requires transformation of other creatures
+- Dromite under the current stable male/female-role requirement
+- Hengeyokai under the current no-shapechanger rule
+- Dara under its published glyph/tree lifecycle
+- Anakore under its captive-transformation lifecycle
+- Heliana Oozekin under its asexual self-replication lifecycle
+- Mycelian under its spore/corpse-host lifecycle
 - purely magical manifestations, summoned beings, reincarnating-only beings, or species created individually rather than born
 
 ## Automatic future intake rule
