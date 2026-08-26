@@ -48,20 +48,41 @@ The effective state while a Campaign Turn is open is:
 
 `last completed permanent state + turn_save.md overlay`
 
+## Revision-1 starting baseline for Campaign Turn 1
+
+The entire character-creation and backstory phase occurs at `save_revision: 0` under `CHARACTER_CREATION.md`.
+
+Campaign Turn 1 does not begin directly from revision 0.
+
+After character creation is fully complete and the player confirms the final character-creation review, the campaign establishes revision 1 as the starting permanent baseline for Campaign Turn 1.
+
+Immediately before Campaign Turn 1 begins:
+
+- `active_game.json.campaign_turn_number` must be `0`
+- `active_game.json.character_created` must be `true`
+- `active_game.json.save_revision` must be `1`
+- `turn_save.md.Campaign Turn` must be `1`
+- `turn_save.md.Status` must be `ready`
+- `turn_save.md.Current Step` must be `0`
+- `turn_save.md.Base save revision` must be `1`
+
+Starting Campaign Turn 1 does not increment the revision. The completed permanent save for Campaign Turn 1 later advances `save_revision` from `1` to `2`.
+
 ## Starting a Campaign Turn
 
-If this is Campaign Turn 1, `active_game.json.character_created` must be `true` and `active_game.json.campaign_turn_number` must still be `0`. Later Campaign Turns begin only after the prior Campaign Turn's completed permanent save and any required ledger reset have finished.
+If this is Campaign Turn 1, the revision-1 starting baseline above must already be complete and verified. Later Campaign Turns begin only after the prior Campaign Turn's completed permanent save and any required ledger reset have finished.
 
 Before starting a Campaign Turn:
 
 1. read the current completed canonical campaign files required for the scene
 2. confirm `turn_save.md` is `ready` and no older Campaign Turn requires recovery, review, verification, or reset
-3. use the current permanent files as the starting state rather than copying every starting value into `turn_save.md`
-4. set `Campaign Turn` to the next Campaign Turn number
-5. set `Status` to `in_progress`
-6. set `Current Step` to `0`
-7. set `Current Scene` to the completed `active_game.json.current_scene_name` unless the opening gameplay explicitly establishes a different scene before Step 0 is recorded
-8. set `Base save revision` to the current `save_revision` in `active_game.json`
+3. confirm `turn_save.md.Base save revision` matches the current `active_game.json.save_revision`
+4. use the current permanent files as the starting state rather than copying every starting value into `turn_save.md`
+5. set `Campaign Turn` to the next Campaign Turn number
+6. set `Status` to `in_progress`
+7. set `Current Step` to `0`
+8. set `Current Scene` to the completed `active_game.json.current_scene_name` unless the opening gameplay explicitly establishes a different scene before Step 0 is recorded
+9. keep `Base save revision` equal to the current `save_revision` in `active_game.json`
 
 ## Recording Steps
 
