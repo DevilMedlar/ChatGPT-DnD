@@ -8,9 +8,31 @@ It does not replace ordinary D&D species mechanics. It adds only the reproductiv
 
 A species must have enough of this profile established before ChatGPT treats it as breeding-eligible. Do not invent missing reproductive anatomy, compatibility, gestation, fertilization, or delivery facts merely to make a pairing work.
 
-## Initial global scope
+## Global homebrew catalog scope
 
-The initial breeding pool is intentionally narrow. A species is eligible only when its normal established reproduction is **sexual reproduction**.
+The reproductive catalog is intentionally **open-ended**. Publication status, edition, era, setting, source, technological level, power level, divinity, or Creature Type does **not by itself** include or exclude a species.
+
+Species may be researched and profiled from any suitable source or campaign concept, including:
+
+- current D&D species
+- Legacy D&D species
+- older-edition species or ancestries
+- future D&D species added after the current catalog snapshot
+- setting-specific species
+- monster or NPC species that were not originally written as player options
+- third-party species
+- player-created homebrew species
+- futuristic, science-fantasy, extraterrestrial, or otherwise technologically unusual species
+- divine, god-like, demi-divine, celestial, fiendish, draconic, giant, fey, aberrant, monstrous, or other extraordinary species
+- newly discovered or campaign-created species
+
+A species' **biology**, not its publication category or power tier, determines whether it enters the breeding pool.
+
+The current D&D Beyond Species page and other catalogs are useful research indexes, but none of them define the outer boundary of this homebrew system.
+
+## Initial biological breeding-pool scope
+
+The initial breeding pool is intentionally narrower than the catalog itself. A species is breeding-eligible only when its normal established reproduction satisfies the current biological rules.
 
 The following remain outside the initial breeding pool unless the player later establishes a broader global rule or a campaign-specific override:
 
@@ -23,6 +45,8 @@ The following remain outside the initial breeding pool unless the player later e
 
 External fertilization and host-dependent or egg-implantation reproduction are allowed when they are genuine non-magical sexual reproductive methods and the required biology is actually supported.
 
+A god-like, demi-divine, futuristic, Legacy, monster-derived, third-party, or homebrew species can therefore be eligible if it still has an established biological male/female sexual reproductive pathway that satisfies the same compatibility rules.
+
 ## Required profile fields
 
 Each breeding-eligible species should have one compact profile containing:
@@ -30,7 +54,8 @@ Each breeding-eligible species should have one compact profile containing:
 ### Identity
 
 - **Species:** canonical species name
-- **Creature Type:** official or established D&D Creature Type
+- **Source / Version:** source, edition, setting, campaign origin, or homebrew identifier when useful for disambiguation
+- **Creature Type:** official or established D&D Creature Type, or the closest established equivalent for homebrew material
 - **Profile Status:** `Complete`, `Partial`, or `Ineligible`
 
 ### Reproductive system
@@ -64,7 +89,11 @@ A `Partial` profile is missing one or more facts that could matter to a proposed
 
 ### Ineligible
 
-An `Ineligible` profile records that the species falls outside the current global breeding pool. Common reasons include asexual-only reproduction, hermaphroditic or sequential-sex biology under the current restricted scope, magical-only reproduction, shapechanger-dependent reproduction, or no coherent ordinary biological sexual pathway.
+An `Ineligible` profile means the **specific profiled version of that species** falls outside the current biological breeding pool.
+
+Common reasons include asexual-only reproduction, hermaphroditic or sequential-sex biology under the current restricted scope, magical-only reproduction, shapechanger-dependent reproduction, or no coherent ordinary biological sexual pathway.
+
+`Ineligible` is not a judgment about the species' value, intelligence, morality, power, edition, or publication status. A substantially different version or campaign-specific variant may receive its own profile if its established biology differs.
 
 ## Compatibility is pairing-specific
 
@@ -114,15 +143,18 @@ Record any normal serious injury or death risk associated with emergence when re
 
 ## Source and research discipline
 
-When a species has official D&D material, use official/current D&D information for its ordinary game identity and mechanics, but do not pretend official D&D supplies reproductive biology when it does not.
+Use the best available source for the specific version of the species being profiled.
 
 For reproductive facts:
 
-1. use explicit official lore when it clearly establishes the biology
-2. otherwise use well-supported biological inference only when the species is plainly modeled on a real reproductive organism and the inference does not conflict with established fantasy lore
-3. otherwise leave the field unknown until the player establishes a homebrew answer or research provides enough support
+1. use explicit source lore when it clearly establishes the biology
+2. otherwise use well-supported biological inference when the species is plainly modeled on a real reproductive organism and the inference does not conflict with established fantasy or setting lore
+3. otherwise establish a restrained homebrew biological answer that fits the species and the repository's pre-established reproductive criteria
+4. if there is still not enough basis to make a coherent ruling, leave the field unknown and keep the profile `Partial` or `Hold`
 
-Do not silently turn an unknown field into a convenient answer.
+Do not silently turn an unknown field into a convenient answer solely to force compatibility.
+
+Official D&D lore is preferred for official D&D versions when available, but Legacy material, older-edition lore, setting material, third-party material, campaign canon, and explicit player-established homebrew are valid sources for the corresponding species version.
 
 ## Species Profile Template
 
@@ -130,6 +162,7 @@ Do not silently turn an unknown field into a convenient answer.
 ## SPECIES NAME
 
 - Species:
+- Source / Version:
 - Creature Type:
 - Profile Status: Complete / Partial / Ineligible
 - Reproductive Mode: Sexual
@@ -151,28 +184,26 @@ Do not silently turn an unknown field into a convenient answer.
 
 An unprofiled species is **not yet cleared for breeding selection**. Completed profiles become reusable repository-wide reproductive reference data unless a numbered campaign explicitly overrides them in that campaign's `Rules/Campaign-N_Rules.md`.
 
-## Official D&D catalog scope
+There is no fixed maximum size for this catalog. Add new profiles whenever a species becomes relevant or is researched.
 
-The default catalog is built from the current D&D Beyond Species index:
+Variants or versions that genuinely share the same biology may point to one shared profile. Versions with materially different biology should receive separate profiles.
 
-`https://www.dndbeyond.com/species`
+## Initial researched seed catalog
 
-For the global D&D baseline, include current Wizards of the Coast species entries that are not marked `Legacy`. Do not silently import third-party or partner species merely because D&D Beyond hosts them. Legacy species may be researched later when the player explicitly wants them, but they are not part of the default 5.5e breeding catalog.
+The table below is only the **first researched seed list**, taken from a 2026-08-26 review of current Wizards-published, non-Legacy entries on the D&D Beyond Species index.
 
-Variants that are biologically the same species may point to a shared reproductive profile. Legacy Half-Elf and Half-Orc are not used as default 5.5e species selections; mixed ancestry is handled by this repository's hybrid system instead.
+It is **not the boundary of allowed species** and must not be interpreted to exclude Legacy, future, older-edition, divine, demi-divine, monster-derived, third-party, futuristic, setting-specific, or homebrew species.
+
+Additional catalogs and individual species should be added as research continues.
 
 ### First-pass status legend
 
 - `Candidate`: biology strongly suggests ordinary male/female sexual reproduction, but the full crossbreeding profile is still Partial
 - `Hold`: sexual reproduction or the required development method is not established strongly enough to clear the species
-- `No`: outside the initial breeding pool under the current global rules
+- `No`: the specific profiled version is outside the initial biological breeding pool under the current global rules
 - `Inferred`: a biological inference from an obvious real-organism or ordinary humanoid body model, not an invented official D&D fact
 
 A `Candidate` is **not automatically compatible with every other Candidate**.
-
-## First-pass current official species catalog
-
-Snapshot: 2026-08-26. Live catalog re-check confirms **70 current Wizards-published, non-Legacy entries** under this scope. This is a research queue, not a declaration that every Candidate is already crossbreeding-compatible.
 
 | Species | Source | Creature Type | Sexual? | Breeding Selection | Development Method | Profile Status |
 |---|---|---|---|---|---|---|
@@ -247,18 +278,18 @@ Snapshot: 2026-08-26. Live catalog re-check confirms **70 current Wizards-publis
 | Locathah | Locathah Rising | Humanoid | Yes, fish-like inference | Candidate | External fertilization / egg development, provisional | Partial |
 | Grung | One Grung Above | Humanoid | Yes, amphibian inference | Candidate | External fertilization / egg and larval development, provisional | Partial |
 
-## First-pass exclusions and holds
+## Seed-list exclusions and holds
 
-The current automatic `No` entries are deliberately conservative:
+The `No` entries above apply only to those **specific currently profiled versions under the current global criteria**:
 
-- **Warforged** and **Autognome** are Constructs rather than ordinary sexually reproducing biological species
+- **Warforged** and **Autognome** are constructed rather than established sexually reproducing biological species
 - **Changeling** and **Lorwyn Changeling** are excluded under the current global decision not to use shapechanger reproductive edge cases
-- **Hexblood** is excluded under the current restricted scope because the current species is magically derived rather than established here as a normal biological sexual species
+- **Hexblood** is excluded under the current restricted scope because its profiled form is magically derived rather than established here as a normal biological sexual species
 - **Reborn** is excluded because becoming Reborn is not established as an ordinary sexual reproductive lifecycle
-- **Simic Hybrid** is excluded because magical alteration creates the form and the heritability of that altered biology is not established
+- **Simic Hybrid** is excluded because magical alteration creates the profiled form and the heritability of that altered biology is not established
+
+These entries do **not** establish a blanket ban on all Constructs, shapechanging-adjacent lore, magically influenced ancestries, or similarly named variants forever. A separately established version must still be judged by the current biological eligibility rules.
 
 `Hold` entries remain unselectable for breeding until research establishes a qualifying ordinary sexual reproductive pathway. A Hold is not a permanent declaration of incompatibility.
 
-**Verdan** is currently a Hold. D&D Beyond lists the species as current and Wizards-published, but its established origin is a magical transformation of goblinoids and the ordinary reproductive biology of the resulting species is not established strongly enough to clear it yet.
-
-The next research pass should convert Candidates and Holds into full individual profiles, beginning with core Player's Handbook species and then obvious biological families such as elves, dwarves, goblinoids, avian species, reptilian species, mammalian beastfolk, aquatic species, and unusual planar lineages.
+The research queue should now expand beyond the seed list whenever useful, including Legacy species, older editions, future material, divine and demi-divine species, monster species, setting material, third-party species, futuristic species, and player-created homebrew.
