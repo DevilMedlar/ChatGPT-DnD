@@ -138,7 +138,21 @@ Compare `Base save revision` with `active_game.json.save_revision` in context wi
 
 `active_game.json.save_revision` is the campaign's single save-revision counter. No separate campaign phase or chat-session counter is used.
 
-For a completed Campaign Turn or other completed persistent save revision:
+### Revision 0
+
+`save_revision: 0` is a special **initialization baseline**, not a completed persistent save revision.
+
+It may contain canonical bootstrap facts explicitly established by the player as part of creating the campaign, together with required initialization defaults. Those facts are canonical even though no character-creation checkpoint or Campaign Turn save has completed yet.
+
+Revision 0 does not require a corresponding completed checkpoint entry in `session_log.md`. Do not retroactively invent revision 1 merely to account for legitimate bootstrap canon already present at initialization.
+
+Revision 0 must not be used to bypass later save approval. Once initialization is complete, newly finalized persistent character-creation choices use the character-creation checkpoint workflow, and the first completed persistent checkpoint advances `save_revision` from `0` to `1`.
+
+The detailed scope of bootstrap canon is defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md` and `CHARACTER_CREATION.md`.
+
+### Completed revisions
+
+For a completed Campaign Turn or other completed persistent save revision after the initialization baseline:
 
 1. determine all permanent campaign files that need real changes
 2. prepare the canonical state and history updates
