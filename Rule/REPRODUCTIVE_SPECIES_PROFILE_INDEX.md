@@ -23,7 +23,8 @@ Use the files in this order when resolving a reproductive question:
 15. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_12.md` — Eberron and psionic profiles, including Kalashtar, Shifter, Maenad, Xeph, Athasian Half-Giant, and the Dromite scope exclusion
 16. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_13.md` — Dark Sun profiles, including Mul hybrid evidence, both Dray generations, Pterran, and Athasian Aarakocra
 17. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_14.md` — Oriental Adventures and eastern-species profiles, including Korobokuru, Nezumi, Vanara, stable Spirit Folk, Hengeyokai exclusion, Anakore exclusion, and Gloura Hold
-18. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+18. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_15.md` — Astromundi Human populations and partner-setting lifecycle resolutions, including Thoric, Varan, Calidian, Dara, Geleton, Obojima Elf, Etherean, and Feathren
+19. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -61,6 +62,14 @@ This is intended for obvious animal-model and ordinary humanoid-family species s
 Family inheritance may establish the species' basic reproductive method, but pairing-specific compatibility still requires the normal fertilization, anatomy, carrier, environment, and directional checks.
 
 A specific later profile always overrides the inherited family baseline.
+
+## Population-versus-species rule
+
+A cultural, regional, or setting population that is explicitly still Human, Elf, Dwarf, Goblin, or another already completed biological species normally inherits that parent species' reproductive profile rather than receiving invented new anatomy.
+
+Thoric, Varan, and Calidian are current examples of Human populations that inherit Human reproduction.
+
+A separate reproductive profile is needed only when the population's biology materially differs.
 
 ## Status flow
 
@@ -147,6 +156,7 @@ Current examples include:
 
 - Dhampir: a source can establish vampire/mortal parentage without proving universal adult Dhampir fertility
 - Mul: Human/Dwarf conception and viable Mul birth are source-established, while classic Athasian Mul adults are sterile
+- Obojima Elf: Human parentage produces an Elf child, while adult Obojima Elf fertility remains unresolved
 
 ## Stable reproductive sex-role requirement
 
@@ -164,6 +174,17 @@ Spirit Folk are a current example. Older River Spirit Folk ancestry material inc
 
 The stable Spirit Folk descendant population is evaluated by its own fixed biological body and reproductive profile.
 
+## Playable does not mean breeder
+
+Being a playable species option does not itself establish biological sexual reproduction.
+
+Current examples include:
+
+- Dara, whose published lifecycle creates a new individual from a dying Dara's parting glyph and a tree rather than through male/female conception
+- Geleton, whose published lifecycle begins through symbiotic Synthesis of an ooze and a reanimated skeleton
+
+Always evaluate the actual lifecycle rather than assuming the character-builder category answers the biological question.
+
 ## Remaining Holds should be meaningful
 
 A species should remain `Hold` only when there is a real unresolved biological question, such as:
@@ -175,6 +196,7 @@ A species should remain `Hold` only when there is a real unresolved biological q
 - host-dependent reproduction is unclear
 - multiple source versions materially disagree
 - the species label covers several unrelated body plans
+- the species is known to be born, but the source does not establish whether development is live-bearing, egg-laying, or another route
 
 Do not leave an obvious fixed biological humanoid, mammal, bird, reptile, or arthropod as Hold merely because a bespoke paragraph has not been written.
 
