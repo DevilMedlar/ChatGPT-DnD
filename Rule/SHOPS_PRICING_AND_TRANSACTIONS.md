@@ -18,7 +18,9 @@ An approved official source is a mechanics/reference authority for a standard it
 
 External URLs and access rules can change. Recheck a stored reference when an item is newly stocked or when the existing reference no longer works. If a reference fails at acquisition time, resolve that case before finalizing the owned-item mechanics snapshot.
 
-Official shop references must align with the campaign's chosen D&D rules/version baseline once that baseline is established.
+This repository intentionally does not assume one universal official D&D edition/version for every D&D-derived mechanic. Official shop references must align with the applicable researched global standard once that item/mechanical subject has one established under `CORE_GAME_MECHANICS.md` and the relevant reusable rule files. Until that research and decision are complete, the unresolved official version choice is a research/design topic rather than a missing-state or audit defect; do not invent a universal edition baseline merely to fill the gap.
+
+If a numbered campaign explicitly overrides an established global standard, apply that campaign's `Rules/Campaign-N_Rules.md` override only to that campaign.
 
 Homebrew, custom, unique, campaign-created, and mechanically modified items are outside this standard official vendor-item flow and must use their established campaign mechanics instead of being forced into the normal official-stock schema.
 
