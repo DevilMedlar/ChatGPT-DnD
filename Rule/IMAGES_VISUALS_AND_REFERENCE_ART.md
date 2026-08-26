@@ -75,7 +75,9 @@ When continuity-critical visual-reference information is established during an a
 3. if the underlying textual appearance also changes, stage the appropriate textual state owner too
 4. add the reference metadata to `art/art_log.md` only during approved Campaign Turn reconciliation
 
-Outside an active Campaign Turn, persist new visual-reference metadata through the normal completed-save workflow.
+Outside an active Campaign Turn, verified reference-art paths, provenance notes, or other non-gameplay visual-reference metadata may be written directly to `art/art_log.md` under the non-gameplay correction and repository-maintenance rule in `STATE_OWNERSHIP_AND_PERSISTENCE.md`. Such maintenance does not create a Campaign Turn Step or increment `save_revision`.
+
+If the player explicitly adopts an image difference as a correction, clarification, or retcon to textual canon outside gameplay, update the appropriate textual state owner and any dependent visual metadata together under that same non-gameplay correction rule. If the visual change is meant to occur as an in-fiction event, stage it in the active Campaign Turn instead.
 
 If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged until approved reconciliation. File existence does not bypass save approval.
 
