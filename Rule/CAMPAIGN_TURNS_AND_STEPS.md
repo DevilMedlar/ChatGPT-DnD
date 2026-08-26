@@ -38,11 +38,15 @@ Each campaign owns its own `turn_save.md`.
 `active_game.json` represents the campaign's last completed permanent state header. `turn_save.md` stages the current unfinished Campaign Turn and overlays that completed state until the Turn is intentionally completed and saved.
 
 - `active_game.json.campaign_turn_number` is the last completed Campaign Turn number, not the active unfinished Turn number.
-- `active_game.json.current_scene_name` is the scene-name label at the last completed save. Before Campaign Turn 1, it may also describe the current pre-game character-creation context.
+- `active_game.json.current_scene_name` is the compact descriptive scene label at the last completed save or pre-game baseline.
+- Before revision 1 is established, `current_scene_name` may read `Character creation`; that pre-game label must be replaced by ChatGPT's GM-authored opening-scene label when revision 1 is created.
+- `active_game.json.current_location` is the last completed or pre-game-baseline location actually established in the fiction.
 - `active_game.json` does **not** store a live Campaign Turn Step.
 - `turn_save.md` owns the current/next Campaign Turn number, `Current Step`, and `Current Scene` for the unfinished Turn.
 - While a Campaign Turn is `in_progress`, its `Current Scene` and `Current Step` are the authoritative live gameplay position and temporarily overlay the completed scene label in `active_game.json`.
-- `current_scene_name` is a compact scene label, not a duplicate scene record; detailed location and world facts remain in their owning files.
+- `current_scene_name` is a compact descriptive label, not a duplicate scene record and not a gameplay constraint; detailed location and world facts remain in their owning files.
+
+A scene name follows the fiction. It never obligates the player-controlled PC to remain in the named location, continue the named activity, follow a particular hook, or make a predetermined choice. ChatGPT may update the scene label whenever the actual situation changes.
 
 The effective state while a Campaign Turn is open is:
 
@@ -54,17 +58,22 @@ The entire character-creation and backstory phase occurs at `save_revision: 0` u
 
 Campaign Turn 1 does not begin directly from revision 0.
 
-After character creation is fully complete and the player confirms the final character-creation review, the campaign establishes revision 1 as the starting permanent baseline for Campaign Turn 1.
+After character creation is fully complete and the player confirms the final character-creation review, ChatGPT as GM/DM creates the opening narrative frame and the campaign establishes revision 1 as the starting permanent baseline for Campaign Turn 1.
 
 Immediately before Campaign Turn 1 begins:
 
 - `active_game.json.campaign_turn_number` must be `0`
 - `active_game.json.character_created` must be `true`
 - `active_game.json.save_revision` must be `1`
+- `active_game.json.current_scene_name` must contain ChatGPT's descriptive opening-scene label rather than the pre-game `Character creation` label
+- `active_game.json.current_location` must contain the actual starting location established by the opening narration
 - `turn_save.md.Campaign Turn` must be `1`
 - `turn_save.md.Status` must be `ready`
 - `turn_save.md.Current Step` must be `0`
+- `turn_save.md.Current Scene` must match the revision-1 opening scene label
 - `turn_save.md.Base save revision` must be `1`
+
+The opening frame establishes where play begins but does not choose the player-controlled PC's first action or dialogue and does not itself create a Campaign Turn Step.
 
 Starting Campaign Turn 1 does not increment the revision. The completed permanent save for Campaign Turn 1 later advances `save_revision` from `1` to `2`.
 
@@ -81,7 +90,7 @@ Before starting a Campaign Turn:
 5. set `Campaign Turn` to the next Campaign Turn number
 6. set `Status` to `in_progress`
 7. set `Current Step` to `0`
-8. set `Current Scene` to the completed `active_game.json.current_scene_name` unless the opening gameplay explicitly establishes a different scene before Step 0 is recorded
+8. for Campaign Turn 1, keep `Current Scene` equal to the revision-1 GM-authored opening scene unless the opening gameplay itself immediately changes the situation before Step 0 is recorded; for later Turns, initialize from the completed `active_game.json.current_scene_name` unless opening gameplay explicitly establishes a different scene
 9. keep `Base save revision` equal to the current `save_revision` in `active_game.json`
 
 ## Recording Steps
