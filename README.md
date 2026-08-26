@@ -2,7 +2,7 @@
 
 A persistent, choice-driven adult fantasy tabletop RPG repository designed to be played through ChatGPT.
 
-The repository separates **reusable rules**, **campaign-specific rules**, **blank reusable campaign sheets**, and **live campaign state** so that campaigns can remain persistent without mixing reusable instructions into save files or leaking one campaign's special rules into another.
+The repository separates **reusable rules**, **campaign-specific rules**, **blank reusable campaign skeletons**, and **live campaign state** so campaigns can remain persistent while their copied sheets still carry the guidance needed to fill them out correctly.
 
 The intended play style uses D&D-style d20 mechanics, player-rolled dice, persistent characters and NPCs, campaign continuity, relationships, combat, quests, inventory, shops, advancement, and optional generated scene art.
 
@@ -45,7 +45,7 @@ Current rule categories include:
 - state ownership and persistence
 - world, quests, and continuity
 
-These files are the reusable operating brain of the repository. A numbered campaign should not duplicate unchanged reusable rules merely for convenience.
+These files are the reusable operating brain of the repository. A numbered campaign should not duplicate unchanged reusable rules as campaign-specific rules merely for convenience.
 
 ### `campaigns/campaign-N/Rules/` — persistent campaign-specific rules
 
@@ -69,13 +69,23 @@ Do not store ordinary character, NPC, relationship, inventory, world, quest, sho
 
 Campaign-specific rules never automatically carry into another numbered campaign.
 
-### `New-Sheets/` — blank reusable campaign templates
+### `New-Sheets/` — blank reusable campaign skeletons
 
-`New-Sheets/` contains clean, campaign-neutral templates used when creating a fresh campaign.
+`New-Sheets/` contains the clean, campaign-neutral **copy-ready skeletons/outlines** used to create a fresh numbered campaign.
 
-These files contain blank fields, reusable structure, examples, and sheet-specific guidance, but no existing character names, campaign numbers, established relationships, story facts, or live campaign state.
+These files intentionally contain:
 
-Current templates are:
+- blank state fields
+- reusable headings and tables
+- record layouts
+- clearly labeled templates for repeated records
+- examples
+- inline guidance explaining how the campaign's copy should be filled out and maintained
+- references to the reusable rules that govern the file
+
+They contain no established character names, populated campaign state, existing NPCs, relationships, story events, or other canon from a prior campaign.
+
+Current skeletons are:
 
 ```text
 New-Sheets/
@@ -90,29 +100,35 @@ New-Sheets/
   art_log.md
 ```
 
-`active_game.json` is the reusable initialization schema for the completed campaign-state header. Its core-PC advancement keys are template placeholders and must be replaced with the actual established PC names during character creation.
+`active_game.json` is the reusable initialization skeleton for the campaign-state header. Its core-PC advancement keys are placeholders that are replaced with actual established PC names during character creation.
 
-A new campaign should begin from fresh instances of these templates rather than copying another campaign's populated state.
+#### How New-Sheets becomes a campaign
 
-#### How templates become live state
+A new campaign copies these skeletons into its own numbered folder, then fills out **its own copies**.
 
-`New-Sheets/` is a **schema library**, not a set of files to copy byte for byte.
+Normal mapping:
 
-When a new campaign is created, ChatGPT uses each template to build a lean state-only live file. The live file keeps the state-owning headings, fields, required table headers, blank undecided values, required initialization values, explicit empty-state markers, and any facts already established for that campaign.
+```text
+New-Sheets/active_game.json          -> campaigns/campaign-N/active_game.json
+New-Sheets/character_sheet.md        -> campaigns/campaign-N/character_sheet.md
+New-Sheets/NPC-state.md              -> campaigns/campaign-N/NPC-state.md
+New-Sheets/inventory.md              -> campaigns/campaign-N/inventory.md
+New-Sheets/routine_item_prices.md    -> campaigns/campaign-N/routine_item_prices.md
+New-Sheets/world_state.md            -> campaigns/campaign-N/world_state.md
+New-Sheets/session_log.md            -> campaigns/campaign-N/session_log.md
+New-Sheets/turn_save.md              -> campaigns/campaign-N/turn_save.md
+New-Sheets/art_log.md                -> campaigns/campaign-N/art/art_log.md
+```
 
-The following remain in `New-Sheets/` and are **not** copied into live state merely because they appear in a template:
+The campaign's copied Markdown files keep useful instructions, examples, blank layouts, and clearly labeled templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
 
-- rule-authority and cross-reference explanations
-- instructions explaining how to use the sheet
-- example formats and code blocks
-- placeholder IDs, names, items, services, or sample rows
-- headings or records explicitly labeled as templates
-- optional-field guidance and schema explanations
-- duplicate operating rules already owned by `Rule/`
+Those retained helper sections are **not canonical state**. A labeled `NPC Record Template` is not an NPC, a labeled `Shop Transaction Template` is not a pending transaction, and placeholder names/IDs or example rows are not established campaign facts.
 
-Repeated-record schemas are instantiated only when a real entity or event exists. A new campaign therefore does not begin with a blank `NPC-####` record, a blank shop, a sample inventory item, or a Shop Transaction Template inside its live state. Those records are created only when a real NPC, shop, item, or transaction needs them.
+When copying a skeleton into its live destination, adjust campaign identifiers, placeholder names, and relative repository references as needed for the new location. This is initialization of the copy, not campaign canon.
 
-The exact file-by-file transformation and initialization contract is authoritative in `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`, with the template/live-state ownership boundary defined in `Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+If copied guidance conflicts with the current files under `Rule/`, the current reusable rule library wins. The copied guidance explains how to fill the file; it is not a separate rule authority.
+
+Later changes to `New-Sheets/` do not automatically rewrite existing campaigns.
 
 ### `campaigns/` — live isolated campaign state
 
@@ -194,9 +210,10 @@ In general:
 
 - `Rule/` owns reusable repository-wide rules and operating behavior.
 - `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
-- `New-Sheets/` owns reusable blank sheet structure and initialization schemas; template examples and guidance are not live campaign facts.
+- `New-Sheets/` owns the reusable blank copy-ready campaign skeletons and their fill-out guidance.
 - `campaigns/active_campaign.json` selects the active campaign.
 - the selected campaign folder owns that campaign's actual canon and mutable state.
+- copied instructions, examples, placeholders, and explicitly labeled templates inside campaign files are guidance, not canon.
 - `active_game.json` owns the last completed campaign state header and advancement summary defined by the rules.
 - `turn_save.md` owns temporary state for the unfinished Campaign Turn.
 - `character_sheet.md` owns the core PCs' persistent character state and relationship continuity.
@@ -217,6 +234,8 @@ When the player asks to continue play, ChatGPT should first resolve the active c
 
 Then read the applicable reusable rules under `Rule/`, the active campaign's `Rules/Campaign-N_Rules.md`, and the current state required for the scene, including `active_game.json` and `turn_save.md` plus any relevant character, NPC, inventory, world, history, pricing, or visual-reference files.
 
+When reading a copied campaign sheet, distinguish its retained instructions/templates from its actual filled-in campaign state.
+
 If `turn_save.md` contains an unfinished Campaign Turn, recover and continue that Turn according to the Campaign Turn, save, verification, and recovery rules rather than starting a new one or silently discarding staged state.
 
 Do not reconstruct missing campaign canon or local rules from another campaign, previous chats, deleted material, or repository history unless the player explicitly requests a specific import permitted by the rules.
@@ -231,11 +250,13 @@ A new numbered campaign should be a fresh sibling folder under `campaigns/`, for
 campaigns/campaign-2/
 ```
 
-Create **state-only live instances** from the schemas in `New-Sheets/` under `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`. Do not byte-copy the Markdown templates, their guidance, examples, or placeholder records into the campaign folder, and do not copy another campaign's populated files.
+Copy the blank skeletons from `New-Sheets/` into the corresponding locations under the new campaign. Keep the useful fill-out guidance, examples, tables, and clearly labeled record templates in the new campaign's copies.
 
-Instantiate the new campaign's `active_game.json` from `New-Sheets/active_game.json` and replace its campaign identifier and core-PC placeholder keys with the new campaign's actual established values according to the setup rule.
+Then initialize campaign identifiers, placeholder character names, starting values, and destination-relative references according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
 
-Create its own local rule file at:
+Do not copy another campaign's populated files.
+
+Create the new campaign's own local rule file at:
 
 ```text
 campaigns/campaign-2/Rules/Campaign-2_Rules.md
@@ -271,11 +292,11 @@ Generated image files themselves are player-managed. The repository may store ve
 
 ## Design principle
 
-This repository intentionally separates reusable instructions, campaign-local instructions, templates, and state:
+This repository intentionally separates reusable authority, campaign-local authority, reusable skeletons, and campaign state:
 
 > `Rule/` explains how every campaign works by default.  
 > `campaigns/campaign-N/Rules/` records only the persistent rule differences for that campaign.  
-> `New-Sheets/` defines reusable schemas and examples for fresh campaign records.  
-> the remaining files under `campaigns/campaign-N/` contain only what is actually true, initialized, or has happened in that campaign.
+> `New-Sheets/` provides the blank copy-ready outlines and guidance used to create each campaign's working files.  
+> the copied files under `campaigns/campaign-N/` are filled out as that campaign's records while clearly labeled guidance/templates remain noncanonical helpers.
 
-Keeping those layers separate makes it possible to improve the reusable game system without rewriting campaign history, preserve special campaign rules without leaking them into other campaigns, create new campaigns without importing old canon or template instructions, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
+Keeping those roles distinct makes it possible to improve the reusable game system, preserve special campaign rules without leaking them into other campaigns, create new campaigns from a complete working skeleton, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
