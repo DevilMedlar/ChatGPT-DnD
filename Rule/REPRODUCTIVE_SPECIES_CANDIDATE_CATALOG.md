@@ -41,8 +41,6 @@ A removed family may return only through the player's newer explicit instruction
 | Canonical species / ancestry | Representative variants, max 5 | Biological baseline |
 |---|---|---|
 | Dragonborn | standard Dragonborn; Floral Dragonborn; Grim Hollow Dragonborn | Male/female physical mating; internal fertilization; egg-laying |
-| Dray | first-generation Dray; second-generation Dray | Male/female physical mating in stable populations; internal fertilization; egg-laying |
-| Saurial | common Saurial family | Male/female physical mating; internal fertilization; egg-laying |
 | True Dragon | Chromatic; Metallic; Gem; Deep; Moonstone | Male/female physical mating; internal fertilization; egg-laying |
 
 True-dragon colors and named varieties are not separate candidate rows unless their reproductive biology materially differs from the shared True Dragon profile.
@@ -54,21 +52,18 @@ True-dragon colors and named varieties are not separate candidate rows unless th
 | Feline Beastfolk | Tabaxi; Leonin; Rakasta | Male/female physical mating; internal fertilization; live-bearing |
 | Canine Beastfolk | Lupin; Worg; Canisar | Male/female physical mating; internal fertilization; live-bearing |
 
-## Reptilian, dinosaurian, and serpentine families
+## Reptilian and serpentine families
 
 | Canonical species / ancestry | Representative variants, max 5 | Biological baseline |
 |---|---|---|
 | Lizardfolk | standard Lizardfolk; Blackscale; Poison Dusk; Bakali | Male/female physical mating; internal fertilization; egg-laying |
-| Tortle | standard Tortle; Snapper Tortle | Male/female physical mating; internal fertilization; egg-laying |
 | Yuan-ti | Pureblood; Malison; stable biological lineage variants | Male/female physical mating; sexual reproduction; development by lineage/profile |
-| Pterosaur / Dinosaur Peoples | Pterran; Pterafolk; Ankylier; Manyhorn; Pluvenn | Male/female physical mating; internal fertilization; egg-laying |
-| Other Reptilian Peoples | Sarrukh; Caiman / Cayma; Gatorman; Chameleon Man; Ssurran | Male/female physical mating; internal fertilization; egg-laying unless a specific profile differs |
 
 ---
 
 # Shortlist authority
 
-The active shortlist contains **15 canonical species/family rows**.
+The active shortlist contains **10 canonical species/family rows**.
 
 - Completed profiles elsewhere remain useful for biological research, old campaigns, version-specific reference, and future player-approved expansion.
 - They do not automatically make an omitted species selectable through this shortlist.
