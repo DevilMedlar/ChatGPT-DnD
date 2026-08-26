@@ -25,13 +25,29 @@ Blank character fields are intentionally undecided until established during char
 
 Optional adult-character details may include romantic interests, sexual interests, boundaries, relationship goals, fertility/reproductive details, or other mature themes when the player chooses to establish them. Adult-content boundaries are defined in `ADULT_CONTENT_AND_CONSENT.md`.
 
+## Revision-0 bootstrap facts
+
+A newly initialized campaign may already contain player-established seed facts at `save_revision: 0` before the first formal character-creation checkpoint.
+
+These revision-0 facts are canonical **bootstrap canon**, not an unrecorded checkpoint. They may include core-PC names, ages, pronouns, explicitly supplied relationship/history premises, or other facts the player directly established as part of creating the campaign.
+
+Bootstrap canon does not mean all character-creation fields are finalized. Unestablished fields remain blank, `character_created` remains `false`, `campaign_turn_number` remains `0`, and `turn_save.md` remains prepared for Campaign Turn 1.
+
+Revision 0 does not require a `session_log.md` checkpoint entry because it is the campaign initialization baseline rather than a completed persistent save revision. A short initialization note may exist without pretending a character-creation checkpoint has completed.
+
+Once initialization is complete, newly finalized character-creation choices use the checkpoint workflow below. The first confirmed character-creation checkpoint advances `save_revision` from `0` to `1`.
+
+A player correction to an already-established bootstrap fact during ongoing character creation should normally be included in the next confirmed checkpoint. A pure initialization transcription error may be corrected directly as an error correction without inventing a historical checkpoint.
+
+The repository-wide definition of revision-0 bootstrap canon is in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+
 ## Character-creation checkpoints
 
 Character creation occurs before Campaign Turn 1. It uses **character-creation checkpoint saves**, not the Campaign Turn ledger.
 
 `turn_save.md` remains prepared for Campaign Turn 1 and is not opened, reconciled, or reset merely because character-creation choices are saved.
 
-A character-creation checkpoint is a logical group of finalized choices that the player is ready to make permanent. Discussion, previews, rejected options, and unfinished choices do not create a checkpoint or increment `save_revision`.
+A character-creation checkpoint is a logical group of finalized choices that the player is ready to make permanent **after the revision-0 initialization baseline**. Discussion, previews, rejected options, and unfinished choices do not create a checkpoint or increment `save_revision`.
 
 ### Before writing a checkpoint
 
