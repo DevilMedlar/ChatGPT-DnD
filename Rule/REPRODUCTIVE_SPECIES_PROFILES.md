@@ -199,3 +199,112 @@ Add one profile section here for every species that is researched for possible i
 Do not treat the absence of a profile as evidence of compatibility. An unprofiled species is **not yet cleared for breeding selection**.
 
 Profiles may be added as the species catalog is researched. A completed profile becomes reusable repository-wide reproductive reference data unless a numbered campaign explicitly overrides it in that campaign's `Rules/Campaign-N_Rules.md`.
+
+## Official D&D catalog scope
+
+The default catalog is built from the current D&D Beyond Species index at:
+
+`https://www.dndbeyond.com/species`
+
+For the global D&D baseline, include current Wizards of the Coast species entries that are not marked `Legacy`. Do not silently import third-party/partner species merely because D&D Beyond hosts them. Legacy species may be researched later when the player explicitly wants them, but they are not part of the default 5.5e breeding catalog.
+
+Variants that are biologically the same species may point to a shared reproductive profile rather than duplicating identical biology. Legacy Half-Elf and Half-Orc are not used as default 5.5e species selections; mixed ancestry is handled by this repository's hybrid system instead.
+
+### First-pass status legend
+
+- `Candidate`: biology strongly suggests ordinary male/female sexual reproduction, but the full crossbreeding profile is still Partial.
+- `Hold`: sexual reproduction or the required development method is not yet established strongly enough to clear the species.
+- `No`: outside the initial breeding pool under the current global rules.
+- `Inferred` means a biological inference from an obvious real-organism or ordinary humanoid body model, not an invented official D&D fact.
+
+A `Candidate` is **not automatically compatible with every other Candidate**. Pairing compatibility is established later from the completed profiles.
+
+## First-pass current official species catalog
+
+Snapshot: 2026-08-26. This is a research queue, not a declaration that every Candidate is already crossbreeding-compatible.
+
+| Species | Source | Creature Type | Sexual? | Breeding Selection | Development Method | Profile Status |
+|---|---|---|---|---|---|---|
+| Aasimar | Player's Handbook | Humanoid | Likely | Candidate | Live-bearing, inferred from mortal humanoid biology | Partial |
+| Dragonborn | Player's Handbook | Humanoid | Yes, lore-supported | Candidate | Egg-laying | Partial |
+| Dwarf | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Elf | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Gnome | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Goliath | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Halfling | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Human | Player's Handbook | Humanoid | Yes | Candidate | Live-bearing | Partial |
+| Orc | Player's Handbook | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Tiefling | Player's Handbook | Humanoid | Likely | Candidate | Live-bearing, inferred from mortal humanoid biology | Partial |
+| Dhampir | Ravenloft: The Horrors Within | Humanoid | Unknown | Hold | Unknown | Partial |
+| Hexblood | Ravenloft: The Horrors Within | Fey | Not cleared; magically derived | No | Unknown | Ineligible |
+| Lupin | Ravenloft: The Horrors Within | Humanoid | Likely, mammalian inference | Candidate | Live-bearing | Partial |
+| Reborn | Ravenloft: The Horrors Within | Humanoid | Not a normally born species under current scope | No | Not established as sexual reproduction | Ineligible |
+| Boggart | Lorwyn: First Light | Humanoid | Likely, goblinoid inference | Candidate | Live-bearing | Partial |
+| Faerie | Lorwyn: First Light | Fey | Unknown | Hold | Unknown | Partial |
+| Flamekin | Lorwyn: First Light | Humanoid | Unknown | Hold | Unknown | Partial |
+| Kithkin | Lorwyn: First Light | Humanoid | Likely | Candidate | Live-bearing, inferred | Partial |
+| Lorwyn Changeling | Lorwyn: First Light | Humanoid | Restricted by current shapechanger rule | No | Not used under initial scope | Ineligible |
+| Lorwyn-Shadowmoor Elf | Lorwyn: First Light | Humanoid | Yes, inferred from Elf biology | Candidate | Live-bearing | Partial |
+| Rimekin | Lorwyn: First Light | Humanoid | Unknown | Hold | Unknown | Partial |
+| Changeling | Eberron: Forge of the Artificer | Fey | Restricted by current shapechanger rule | No | Not used under initial scope | Ineligible |
+| Kalashtar | Eberron: Forge of the Artificer | Aberration | Likely; needs Eberron-specific confirmation | Candidate | Likely live-bearing | Partial |
+| Khoravar | Eberron: Forge of the Artificer | Humanoid | Yes, lineage-supported | Candidate | Live-bearing | Partial |
+| Shifter | Eberron: Forge of the Artificer | Humanoid | Likely | Candidate | Live-bearing, inferred | Partial |
+| Warforged | Eberron: Forge of the Artificer | Construct | No ordinary biological reproduction | No | Constructed | Ineligible |
+| Aarakocra | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, avian inference | Candidate | Egg-laying | Partial |
+| Air Genasi | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Live-bearing, inferred from humanoid lineage | Partial |
+| Bugbear | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Centaur | Mordenkainen Presents: Monsters of the Multiverse | Fey | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Deep Gnome | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred from Gnome biology | Candidate | Live-bearing | Partial |
+| Duergar | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred from Dwarf biology | Candidate | Live-bearing | Partial |
+| Earth Genasi | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Live-bearing, inferred from humanoid lineage | Partial |
+| Eladrin | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred from Elf biology | Candidate | Live-bearing | Partial |
+| Fairy | Mordenkainen Presents: Monsters of the Multiverse | Fey | Unknown | Hold | Unknown | Partial |
+| Firbolg | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Fire Genasi | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Live-bearing, inferred from humanoid lineage | Partial |
+| Githyanki | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes; egg-laying lore requires confirmation | Candidate | Egg-laying, provisional | Partial |
+| Githzerai | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Needs confirmation | Partial |
+| Goblin | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Harengon | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Hobgoblin | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Kenku | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, avian inference | Candidate | Egg-laying | Partial |
+| Kobold | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, reptilian/draconic inference | Candidate | Egg-laying | Partial |
+| Lizardfolk | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, reptilian inference | Candidate | Egg-laying | Partial |
+| Minotaur | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Satyr | Mordenkainen Presents: Monsters of the Multiverse | Fey | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Sea Elf | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred from Elf biology | Candidate | Live-bearing | Partial |
+| Shadar-kai | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, inferred from Elf biology | Candidate | Live-bearing | Partial |
+| Tabaxi | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Tortle | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Yes, reptilian inference | Candidate | Egg-laying | Partial |
+| Triton | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Needs aquatic-humanoid confirmation | Partial |
+| Water Genasi | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Live-bearing, inferred from humanoid lineage | Partial |
+| Yuan-ti | Mordenkainen Presents: Monsters of the Multiverse | Humanoid | Likely | Candidate | Needs serpentine-lineage confirmation | Partial |
+| Kender | Dragonlance: Shadow of the Dragon Queen | Humanoid | Yes, inferred | Candidate | Live-bearing | Partial |
+| Astral Elf | Spelljammer: Adventures in Space | Humanoid | Yes, inferred from Elf biology | Candidate | Live-bearing | Partial |
+| Autognome | Spelljammer: Adventures in Space | Construct | No ordinary biological reproduction | No | Constructed | Ineligible |
+| Giff | Spelljammer: Adventures in Space | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Hadozee | Spelljammer: Adventures in Space | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Plasmoid | Spelljammer: Adventures in Space | Ooze | Unknown; sexual reproduction not established | Hold | Unknown | Partial |
+| Thri-kreen | Spelljammer: Adventures in Space | Monstrosity | Yes, insectoid inference | Candidate | Egg-laying | Partial |
+| Owlin | Strixhaven: A Curriculum of Chaos | Humanoid | Yes, avian inference | Candidate | Egg-laying | Partial |
+| Leonin | Mythic Odysseys of Theros | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Loxodon | Guildmasters' Guide to Ravnica | Humanoid | Yes, mammalian inference | Candidate | Live-bearing | Partial |
+| Simic Hybrid | Guildmasters' Guide to Ravnica | Humanoid | Reproduction of magically altered form not established | No | Underlying base-species biology is insufficient to establish heritable hybrid biology | Ineligible |
+| Vedalken | Guildmasters' Guide to Ravnica | Humanoid | Likely | Candidate | Live-bearing, inferred | Partial |
+| Feral Tiefling | Sword Coast Adventurer's Guide | Humanoid | Same reproductive profile as Tiefling unless later evidence differs | Candidate | Live-bearing, inferred | Partial |
+| Locathah | Locathah Rising | Humanoid | Yes, fish-like inference | Candidate | External fertilization / egg development, provisional | Partial |
+| Grung | One Grung Above | Humanoid | Yes, amphibian inference | Candidate | External fertilization / egg and larval development, provisional | Partial |
+
+## First-pass exclusions and holds
+
+The current automatic `No` entries are deliberately conservative:
+
+- **Warforged** and **Autognome** are Constructs rather than ordinary sexually reproducing biological species.
+- **Changeling** and **Lorwyn Changeling** are excluded under the current global decision not to use shapechanger reproductive edge cases.
+- **Hexblood** is excluded under the current restricted scope because the current species is magically derived rather than established here as a normal biological sexual species.
+- **Reborn** is excluded because becoming Reborn is not established as an ordinary sexual reproductive lifecycle.
+- **Simic Hybrid** is excluded because magical alteration creates the form and the heritability of that altered biology is not established.
+
+`Hold` entries remain unselectable for breeding until research establishes a qualifying ordinary sexual reproductive pathway. A Hold is not a permanent declaration of incompatibility.
+
+The next research pass should convert Candidates and Holds into full individual profiles, beginning with core Player's Handbook species and then obvious biological families such as elves, dwarves, goblinoids, avian species, reptilian species, mammalian beastfolk, aquatic species, and unusual planar lineages.
