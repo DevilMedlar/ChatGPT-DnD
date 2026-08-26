@@ -101,7 +101,7 @@ If the player says **Yes**:
 
 1. reset the temporary ledger
 2. clear the completed Turn events and Current In-Turn State
-3. reset `Pending Shop Transactions` to `None yet.`; do not copy or preserve the reusable Shop Transaction Template inside the live ledger
+3. clear all actual staged shop-transaction records while preserving the copied, clearly labeled `Shop Transaction Template` and its fill-out guidance
 4. clear pending transfers, final review, save verification, and prior reset approval
 5. prepare the next Campaign Turn number
 6. set `Status` to `ready`
@@ -109,7 +109,7 @@ If the player says **Yes**:
 8. set `Current Scene` to `None yet.`
 9. set `Base save revision` to the newly completed `save_revision`
 
-The reusable shop-transaction schema remains in `New-Sheets/turn_save.md`. Instantiate a concrete transaction record in the live ledger only when an actual shop transaction occurs.
+A labeled `Shop Transaction Template` inside a campaign's copied `turn_save.md` is documentation, not a pending transaction. After reset, the `Pending Shop Transactions` section contains no actual staged transaction records even though the reusable template remains available for the next purchase.
 
 The reset is a cleanup/checkpoint operation. It does **not** increment `save_revision` because the permanent Campaign Turn save already completed.
 
