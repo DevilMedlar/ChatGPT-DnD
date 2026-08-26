@@ -36,12 +36,23 @@ When an XP calculation produces a fractional result, use normal arithmetic round
 - `.5` or higher rounds up to the next whole XP.
 - Anything below `.5` rounds down.
 
+## Core-PC name stability
+
+Once a required core PC's canonical **Name** is finalized during character creation, that Name remains fixed for the campaign and is the stable key used for that PC's advancement record.
+
+Titles, ranks, honorifics, epithets, nicknames, aliases, disguises, relationship labels, transformations, or similar descriptive changes do **not** change the canonical Name and do not change the advancement key.
+
+When useful, a current title, rank, epithet, or similar mutable descriptor may be added as a small bullet under that PC's `Personal / Relationship Continuity` section in `character_sheet.md` and may later be updated or removed without changing the PC's Name.
+
+A genuine transcription or data-entry mistake in the recorded Name may be corrected as an error correction. If such a correction changes the advancement key, update the key and all required mirrors/references together so no advancement state is lost or duplicated. This correction rule is for fixing an erroneous record, not for ordinary in-fiction renaming.
+
 ## PC advancement state authority
 
 Within each numbered campaign:
 
 - `active_game.json` owns the authoritative **completed PC advancement state** through campaign-wide `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`.
-- In `New-Sheets/active_game.json`, `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only placeholder keys. Replace each with the corresponding core PC's actual established name when that name is finalized; do not leave template placeholder keys in a completed character-creation save.
+- In `New-Sheets/active_game.json`, `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only placeholder keys. Replace each with the corresponding core PC's actual established canonical Name when that Name is finalized; do not leave template placeholder keys in a completed character-creation save.
+- Once replaced, those canonical Names are stable advancement keys for the campaign under the Core-PC name stability rule above.
 - `character_sheet.md` displays each core PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
 - The required ChatGPT-controlled PC / co-protagonist uses the same PC-format advancement authority as the player-controlled PC and is not routed through generic NPC advancement unless a campaign-specific rule explicitly says otherwise.
 - During an active Campaign Turn, staged XP awards, threshold changes, and level changes belong in `turn_save.md` and temporarily overlay the completed permanent representations until approved reconciliation.
