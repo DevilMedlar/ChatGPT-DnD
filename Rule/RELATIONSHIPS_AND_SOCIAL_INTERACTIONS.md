@@ -30,7 +30,9 @@ When relevant, track:
 
 Friendship, gratitude, debt, party membership, attraction, partnership status, boundaries, and consent are separate state facts. Do not infer one from another.
 
-For NPCs below 18, omit sexual-interest fields entirely. Any recorded crush or romantic information must remain age-appropriate and nonsexual under `ADULT_CONTENT_AND_CONSENT.md`.
+For characters below 18, do not create current sexual-interest fields. Age-appropriate romantic feelings, dating, commitment, engagement, marriage, and other romantic relationship status may be recorded when allowed by `ADULT_CONTENT_AND_CONSENT.md` and established by campaign canon.
+
+A concise historical sexual-history fact involving characters who were ages 14-17 may also be preserved as relationship/history continuity when it is permitted by the brief-historical-reference section of `ADULT_CONTENT_AND_CONSENT.md`. Such a historical continuity fact is not the same thing as a current sexual-interest field.
 
 Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
 
@@ -56,4 +58,6 @@ Persistent NPC relationship and attraction state belongs in `NPC-state.md`.
 
 Record relationship information in `world_state.md` only when it creates a persistent world-level consequence involving a location, faction, quest, organization, public status, or similar world state.
 
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when established through character agency and when they matter to continuity.
+Record romantic and relationship details whenever they are established through character agency or campaign canon and matter to continuity, subject to the age rules in `ADULT_CONTENT_AND_CONSENT.md`.
+
+For ages 14-17, this may include established romantic relationship status and permitted concise historical sexual-history facts. Current sexual-interest fields and adult intimate, fertility, pregnancy, or reproductive state remain subject to the adult-only requirements in `ADULT_CONTENT_AND_CONSENT.md`.
