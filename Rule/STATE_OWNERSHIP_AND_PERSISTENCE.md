@@ -12,11 +12,25 @@ Changing campaigns changes the selector only. It does not move, merge, copy, or 
 
 ## Campaign isolation
 
-Each numbered campaign owns its state inside its own folder.
+Each numbered campaign owns its state inside its own folder and owns its persistent campaign-specific rule layer under that folder's `Rules/` directory.
 
-Never write one campaign's character, NPC, relationship, inventory, world, quest, session, pricing, turn-save, advancement, or art-continuity state into another campaign folder unless the player explicitly requests a crossover or import.
+Never write one campaign's character, NPC, relationship, inventory, world, quest, session, pricing, turn-save, advancement, art-continuity state, or campaign-specific rules into another campaign folder unless the player explicitly requests a crossover or import.
 
 Fresh-start canon restrictions are defined in `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`.
+
+## Campaign-specific rule ownership
+
+Each numbered campaign stores persistent campaign-specific rules in:
+
+`Rules/Campaign-N_Rules.md`
+
+That file is **not gameplay state**. It owns only persistent rules, overrides, exceptional premises, and other explicit player instructions intentionally scoped to that campaign.
+
+Do not store ordinary character, NPC, relationship, inventory, world, quest, shop, advancement, session, or art facts there. Those remain in their assigned state owners below.
+
+Editing the campaign-specific rule file does not by itself create a Campaign Turn Step or increment `save_revision`. If a rule change also requires persistent campaign state to change, apply those state changes through the applicable save and reconciliation workflow.
+
+Rule priority and campaign-specific scope are defined in `RULE_AUTHORITY_AND_HIERARCHY.md`.
 
 ## Completed state and live Turn state
 
@@ -30,6 +44,7 @@ The effective state during an open Campaign Turn is the last completed permanent
 
 Within each numbered campaign:
 
+- `Rules/Campaign-N_Rules.md` — persistent campaign-specific rules, overrides, exceptional premises, and explicitly scoped operating instructions. It is not ordinary campaign state and should contain only the campaign-specific delta from the reusable `Rule/` library.
 - `active_game.json` — authoritative **last completed campaign state header**: completed `campaign_turn_number`, completed/pre-game `current_scene_name`, completed location, character-creation completion state, authoritative completed PC advancement through `xp_mode` and `character_advancement`, `save_revision`, and latest synchronization note. It does not store the live Campaign Turn Step.
 - `turn_save.md` — temporary authoritative ledger for the current Campaign Turn: current/next Campaign Turn number, `Current Step`, `Current Scene`, numbered events, compact effective in-turn state, pending shop transactions, pending permanent transfers, final review, permanent-save verification, and reset approval.
 - `character_sheet.md` — core-PC statistics, abilities, textual appearance canon, personal state, established relationship continuity, and synchronized human-readable Level/XP mirrors of `active_game.json`.
@@ -40,7 +55,7 @@ Within each numbered campaign:
 - `session_log.md` — chronological completed character-creation checkpoint saves and completed Campaign Turn history.
 - `art/art_log.md` — verified visual-reference paths and visual-reference continuity metadata; it does not override textual appearance owners.
 
-Reusable rules belong in `Rule/`. Reusable blank sheet structure belongs in `New-Sheets/`. Neither should be used as duplicate live campaign state.
+Reusable repository-wide rules belong in `Rule/`. Reusable blank sheet structure belongs in `New-Sheets/`. Neither should be used as duplicate live campaign state or as a substitute for the active campaign's local rule layer.
 
 ## Append-first preservation
 
