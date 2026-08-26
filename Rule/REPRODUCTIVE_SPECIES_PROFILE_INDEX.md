@@ -24,7 +24,9 @@ Use the files in this order when resolving a reproductive question:
 16. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_13.md` — Dark Sun profiles, including Mul hybrid evidence, both Dray generations, Pterran, and Athasian Aarakocra
 17. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_14.md` — Oriental Adventures and eastern-species profiles, including Korobokuru, Nezumi, Vanara, stable Spirit Folk, Hengeyokai exclusion, Anakore exclusion, and Gloura Hold
 18. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_15.md` — Astromundi Human populations and partner-setting lifecycle resolutions, including Thoric, Varan, Calidian, Dara, Geleton, Obojima Elf, Etherean, and Feathren
-19. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+19. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_16.md` — population/species cleanup and obscure Holds, including Antilan, Aperusa, Abbalaya, Khala, Juna, Old Ones, Phaerlock, and Lith
+20. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_17.md` — plant, fungal, ooze, and metamorphic lifecycle profiles, including Volodni, Opteran, Heliana Oozekin, Mycelian, Cnidaran, and Ombrask
+21. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -51,7 +53,7 @@ An extraordinary-origin population can receive a normal breeder profile when its
 
 The stable descendant lineage must be profiled separately from the founding transformation/origin state.
 
-Extaminaar, Trueborn Krinth, Kalashtar, Athasian Half-Giants, both stable Dray populations, and stable Spirit Folk populations are current examples.
+Extaminaar, Trueborn Krinth, Kalashtar, Athasian Half-Giants, both stable Dray populations, stable Spirit Folk populations, and Volodni are current examples.
 
 ## Family-inheritance rule
 
@@ -67,7 +69,7 @@ A specific later profile always overrides the inherited family baseline.
 
 A cultural, regional, or setting population that is explicitly still Human, Elf, Dwarf, Goblin, or another already completed biological species normally inherits that parent species' reproductive profile rather than receiving invented new anatomy.
 
-Thoric, Varan, and Calidian are current examples of Human populations that inherit Human reproduction.
+Thoric, Varan, Calidian, Antilan, Abbalaya, original Khala, and Human/Half-Elf Aperusa are current examples.
 
 A separate reproductive profile is needed only when the population's biology materially differs.
 
@@ -90,6 +92,7 @@ The completed profile library currently supports:
 - Internal Live-Bearing Humanoid / Psionic-Quori Lineage
 - Internal Live-Bearing Humanoid / Mammalian Shifter
 - Internal Live-Bearing Humanoid / Spirit Lineage
+- Internal Live-Bearing Humanoid / Plant-Humanoid Lineage
 - Internal Live-Bearing Mammalian / Beastfolk
 - Internal Live-Bearing Mammalian / Sphinx
 - Internal Live-Bearing Giant
@@ -102,6 +105,7 @@ The completed profile library currently supports:
 - Internal Egg-Laying Serpentine
 - Internal Egg-Laying Gith
 - Internal Egg-Laying Insectoid
+- Internal Egg-Laying Insectoid / Lepidopteran
 - Internal Egg-Laying Arthropod
 - Internal Egg-Laying Aquatic
 - External Aquatic Amphibian
@@ -164,6 +168,8 @@ Under the current global scope, the species must have stable biologically male a
 
 Dromites are a current example of a species excluded by this rule: they reproduce sexually and lay eggs, but ordinary Dromites are genderless and only elected reproductive individuals temporarily assume female and male sexual characteristics.
 
+Cnidarans are a current Hold under this rule: their sexual communal lifecycle is well established, but stable male/female reproductive roles are not.
+
 A future global or campaign-specific override can broaden this rule without deleting the version-specific biology already recorded.
 
 ## Shapechanger founding-parent distinction
@@ -174,6 +180,21 @@ Spirit Folk are a current example. Older River Spirit Folk ancestry material inc
 
 The stable Spirit Folk descendant population is evaluated by its own fixed biological body and reproductive profile.
 
+## Biological metamorphosis is not shapechanging
+
+Normal one-way or lifecycle-based biological development does not violate the no-shapechanger rule.
+
+Examples can include:
+
+- egg -> larva -> adult
+- tadpole -> adult
+- chrysalis -> winged adult
+- juvenile aquatic stage -> mature terrestrial stage
+
+when these are ordinary developmental stages rather than freely assumed alternate bodies.
+
+Opteran is the current explicit example: larval Opterans metamorphose into short-lived reproductive winged adults, and this is treated as biological maturation rather than prohibited shapechanging.
+
 ## Playable does not mean breeder
 
 Being a playable species option does not itself establish biological sexual reproduction.
@@ -182,6 +203,8 @@ Current examples include:
 
 - Dara, whose published lifecycle creates a new individual from a dying Dara's parting glyph and a tree rather than through male/female conception
 - Geleton, whose published lifecycle begins through symbiotic Synthesis of an ooze and a reanimated skeleton
+- Heliana Oozekin, whose published lifecycle is asexual self-replication
+- Mycelian, whose published lifecycle propagates through spores and corpse hosts
 
 Always evaluate the actual lifecycle rather than assuming the character-builder category answers the biological question.
 
@@ -197,6 +220,7 @@ A species should remain `Hold` only when there is a real unresolved biological q
 - multiple source versions materially disagree
 - the species label covers several unrelated body plans
 - the species is known to be born, but the source does not establish whether development is live-bearing, egg-laying, or another route
+- the creature is a transformed adult state and the source does not say whether reproductive function survives the transformation
 
 Do not leave an obvious fixed biological humanoid, mammal, bird, reptile, or arthropod as Hold merely because a bespoke paragraph has not been written.
 
