@@ -21,7 +21,8 @@ Use the files in this order when resolving a reproductive question:
 13. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_10.md` — resolved Holds and unusual biological profiles, including Killoren, Gloaming, Githzerai, Harssaf, Gulgar, Sphinxes, and specific resolved exclusions
 14. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_11.md` — family-inherited older monster peoples, including Forestkith Goblins, Flinds, Ibixian Goatfolk, Nycters, Blackscale/Poison Dusk Lizardfolk, and additional Giant breeds
 15. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_12.md` — Eberron and psionic profiles, including Kalashtar, Shifter, Maenad, Xeph, Athasian Half-Giant, and the Dromite scope exclusion
-16. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+16. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_13.md` — Dark Sun profiles, including Mul hybrid evidence, both Dray generations, Pterran, and Athasian Aarakocra
+17. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -48,7 +49,7 @@ An extraordinary-origin population can receive a normal breeder profile when its
 
 The stable descendant lineage must be profiled separately from the founding transformation/origin state.
 
-Extaminaar, Trueborn Krinth, Kalashtar, and Athasian Half-Giants are current examples.
+Extaminaar, Trueborn Krinth, Kalashtar, Athasian Half-Giants, and both stable Dray populations are current examples.
 
 ## Family-inheritance rule
 
@@ -84,6 +85,7 @@ The completed profile library currently supports:
 - Internal Live-Bearing Giant / Stable Hybrid Giant
 - Internal Live-Bearing Aquatic Humanoid
 - Internal Egg-Laying Draconic
+- Internal Egg-Laying Draconic / Stable Transformed Lineage
 - Internal Egg-Laying Avian
 - Internal Egg-Laying Reptilian / Dinosaurian
 - Internal Egg-Laying Serpentine
@@ -139,7 +141,10 @@ Track these separately:
 - birth/development viability
 - adult offspring fertility
 
-Dhampir is a current example: source material can establish a vampire/mortal parentage origin without thereby establishing universal adult Dhampir fertility or universal Vampire reproductive biology.
+Current examples include:
+
+- Dhampir: a source can establish vampire/mortal parentage without proving universal adult Dhampir fertility
+- Mul: Human/Dwarf conception and viable Mul birth are source-established, while classic Athasian Mul adults are sterile
 
 ## Stable reproductive sex-role requirement
 
