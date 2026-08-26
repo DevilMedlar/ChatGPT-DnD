@@ -79,6 +79,7 @@ Current templates are:
 
 ```text
 New-Sheets/
+  active_game.json
   character_sheet.md
   NPC-state.md
   inventory.md
@@ -88,6 +89,8 @@ New-Sheets/
   turn_save.md
   art_log.md
 ```
+
+`active_game.json` is the reusable initialization schema for the completed campaign-state header. Its core-PC advancement keys are template placeholders and must be replaced with the actual established PC names during character creation.
 
 A new campaign should begin from fresh instances of these templates rather than copying another campaign's populated state.
 
@@ -132,6 +135,7 @@ Rule/
   WORLD_QUESTS_AND_CONTINUITY.md
 
 New-Sheets/
+  active_game.json
   character_sheet.md
   NPC-state.md
   inventory.md
@@ -170,7 +174,7 @@ In general:
 
 - `Rule/` owns reusable repository-wide rules and operating behavior.
 - `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
-- `New-Sheets/` owns reusable blank sheet structure.
+- `New-Sheets/` owns reusable blank sheet structure and initialization schemas.
 - `campaigns/active_campaign.json` selects the active campaign.
 - the selected campaign folder owns that campaign's actual canon and mutable state.
 - `active_game.json` owns the last completed campaign state header and advancement summary defined by the rules.
@@ -209,6 +213,8 @@ campaigns/campaign-2/
 
 Create its campaign state from the blank templates in `New-Sheets/`, not from another campaign's populated files.
 
+Instantiate the new campaign's `active_game.json` from `New-Sheets/active_game.json` and replace its campaign identifier and core-PC placeholder keys with the new campaign's actual established values according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+
 Create its own local rule file at:
 
 ```text
@@ -216,8 +222,6 @@ campaigns/campaign-2/Rules/Campaign-2_Rules.md
 ```
 
 Begin that file with no active campaign-specific rules unless the player explicitly establishes some. Do not copy another campaign's local rules into it.
-
-The new campaign also needs its own `active_game.json` initialized according to the campaign setup, character creation, advancement, save-revision, and Campaign Turn rules.
 
 Do not import existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, or other campaign material merely because it exists in another numbered campaign.
 
