@@ -1,6 +1,6 @@
 # Session Log — Campaign 1
 
-Campaign initialized. Character creation is in progress. No character-creation checkpoint or Campaign Turn has been completed yet.
+Campaign initialized. Character creation is in progress. No character-creation completion entry or Campaign Turn has been completed yet.
 
 ## Checkpoints
 
