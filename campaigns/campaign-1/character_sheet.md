@@ -22,7 +22,7 @@
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
-- **XP:** 0/100
+- **XP:** 0/300
 
 ### Background History
 
@@ -73,7 +73,7 @@ No additional DevilMedlar-specific relationship continuity established beyond th
 - **Class / homebrew class:**
 - **Background:**
 - **Level:** 1
-- **XP:** 0/100
+- **XP:** 0/300
 
 ### Background History
 
