@@ -32,6 +32,22 @@ Editing the campaign-specific rule file does not by itself create a Campaign Tur
 
 Rule priority and campaign-specific scope are defined in `RULE_AUTHORITY_AND_HIERARCHY.md`.
 
+## Template versus live-state ownership
+
+`New-Sheets/` owns reusable schemas, examples, field guidance, and template-only instructional material. It is never a live source of campaign facts.
+
+A numbered campaign's instantiated files own only that campaign's actual state. Creating a campaign from `New-Sheets/` is therefore a **schema-to-state transformation**, not a byte-for-byte copy of the Markdown templates.
+
+Template-only material such as rule explanations, example blocks, placeholder IDs or names, optional-field guidance, sample repeated records, and headings explicitly marked as templates must remain in `New-Sheets/` unless a real campaign entity or event causes a concrete record to be created from that schema.
+
+Live files may retain state-owning headings, field names, table headers, blank undecided values, required initialized values, explicit empty-state markers, and actual established campaign facts.
+
+A template example has no canonical force merely because it appears in `New-Sheets/`. A placeholder such as `NPC-####`, `NPC Name`, `Item Name`, `Service Name`, `PLAYER_CONTROLLED_PC_NAME`, or `CHATGPT_CONTROLLED_PC_NAME` is not campaign state. Replace or omit it according to the instantiation rules before it could be mistaken for an established fact.
+
+Do not later rewrite an existing campaign merely because its source template changed. Template revisions affect future instantiations by default. Existing campaign structure is migrated only when explicitly requested or required by a rule change, with established state preserved.
+
+The exact new-campaign instantiation procedure and file-by-file initial live forms are defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+
 ## Completed state and live Turn state
 
 Each campaign's `active_game.json` is authoritative for that campaign's **last completed campaign state header**.
