@@ -4,16 +4,41 @@
 
 Reusable gameplay, GM behavior, campaign architecture, persistence, and continuity rules live in the categorized files under `Rule/`.
 
-Numbered campaign folders own campaign state. They should not duplicate shared rules merely for convenience.
+Numbered campaign folders own campaign state and may also contain a narrowly scoped persistent campaign-specific rule layer under their own `Rules/` directory.
 
-`New-Sheets/` contains reusable blank sheet structure and examples. It is not live campaign state and does not override the rules in `Rule/`.
+`New-Sheets/` contains reusable blank sheet structure and examples. It is not live campaign state and does not override the rules in `Rule/` or an applicable campaign-specific rule.
+
+## Campaign-specific rule layer
+
+Persistent rules that apply only to one numbered campaign live in:
+
+`campaigns/campaign-N/Rules/Campaign-N_Rules.md`
+
+This file is the campaign's canonical local rule layer.
+
+Use it only for persistent campaign-specific:
+
+- operating rules
+- mechanical overrides
+- agency or behavior overrides
+- exceptional premises
+- rule clarifications intentionally scoped to that campaign
+- other explicit player instructions that are intended to remain rules for that campaign across future sessions
+
+Do **not** copy unchanged repository-wide rules into the campaign-specific rule file merely for convenience. The local file should contain only the campaign-specific delta from the reusable rules under `Rule/`.
+
+Ordinary character, NPC, relationship, inventory, world, quest, shop, session, advancement, art, and other campaign facts are **state**, not local rules, and remain in their assigned state files.
+
+When the player explicitly establishes a new persistent campaign-specific rule, records a campaign-specific override, rescinds one, or changes one, update that campaign's `Rules/Campaign-N_Rules.md` accordingly. A rule-file edit does not by itself create a Campaign Turn Step or increment `save_revision`. If the rule change also requires campaign state to change, apply the resulting state changes through the appropriate persistence workflow.
+
+A campaign-specific rule applies only to the campaign or circumstance to which it is explicitly scoped. Never silently import it into another campaign or promote it into a repository-wide rule.
 
 ## Rule conflict order
 
 When **rules themselves conflict**, use this order:
 
 1. the player's newest explicit instruction that applies to the current campaign
-2. an explicitly scoped campaign-specific rule or override recorded on the repository's current branch, when one exists
+2. an applicable persistent rule or override in that campaign's `Rules/Campaign-N_Rules.md`
 3. the most specific applicable categorized rule under `Rule/`
 4. a more general applicable rule under `Rule/`
 5. the GM priority guidance in `GM_BEHAVIOR_AND_PRIORITY.md` when no more specific rule resolves the issue
