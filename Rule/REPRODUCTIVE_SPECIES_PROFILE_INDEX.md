@@ -11,7 +11,8 @@ Use the files in this order when resolving a reproductive question:
 3. `REPRODUCTIVE_SPECIES_PROFILES.md` — required species-profile schema, research discipline, catalog scope, and profile status rules
 4. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` — first completed profiles, including core humanoids, Dragonborn, Half-Elf/Half-Orc biological evidence, and general True Dragon biology
 5. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_2.md` — additional completed humanoid branches, beastfolk, avians, reptilians, Thri-kreen, Grung, and Locathah
-6. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+6. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_3.md` — true giants and giant relatives, Yuan-ti major breeds, Githyanki, named true-dragon families, and Tanarukk
+7. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -36,9 +37,12 @@ The completed profile library currently supports:
 
 - Internal Live-Bearing Humanoid
 - Internal Live-Bearing Mammalian / Beastfolk
+- Internal Live-Bearing Giant
 - Internal Egg-Laying Draconic
 - Internal Egg-Laying Avian
 - Internal Egg-Laying Reptilian / Dinosaurian
+- Internal Egg-Laying Serpentine
+- Internal Egg-Laying Gith
 - Internal Egg-Laying Insectoid
 - External Aquatic Amphibian
 - External Aquatic Fishlike
