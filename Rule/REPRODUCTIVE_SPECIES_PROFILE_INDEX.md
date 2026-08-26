@@ -14,7 +14,8 @@ Use the files in this order when resolving a reproductive question:
 6. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_3.md` — true giants and giant relatives, Yuan-ti major breeds, Githyanki, named true-dragon families, and Tanarukk
 7. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_4.md` — aquatic and amphibious profiles, including Sahuagin, Kuo-toa, Bullywug, Merfolk, Triton, and directional compatibility cases
 8. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_5.md` — Legacy biological peoples and hybrid evidence, including Saurials, Loxo, biological Gnolls, Bariaur, Rakasta, Phanatons, and Half-Ogres
-9. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+9. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_6.md` — directional Ogre hybrid evidence, including Ogrillon, Orog, Ogre/Hobgoblin, Ogre/Bugbear, and Human/Ogre refinements
+10. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -83,6 +84,14 @@ Always evaluate separately:
 One direction can be compatible while the reverse direction is conditional or incompatible. The female contributor determines where the ovum or egg begins and which development pathway must be supported; the male contribution must be biologically capable of reaching and fertilizing it through that pathway.
 
 A general species-to-species compatibility label must not erase a recorded directional difference.
+
+## Directional hybrid expression
+
+Even when both reproductive directions are biologically compatible, reversing which species is male and which is female may influence the offspring's early body plan, neonatal expression, culturally recognized lineage name, and later trait-expression probabilities.
+
+Ogrillon/Orog legacy traditions provide a repository precedent for this possibility.
+
+Directional expression does not change the fact that both contributors are biological parents and does not prevent the offspring from inheriting traits from either ancestry.
 
 ## Future expansion
 
