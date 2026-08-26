@@ -1,376 +1,286 @@
 # Reproductive Species Complete Profiles
 
-## Purpose
+## Purpose and authority
 
-This file stores reusable **completed reproductive biology profiles** for species that have passed enough of the global biological gate to be used in crossbreeding checks without inventing missing anatomy during play.
+This file owns the reusable reproductive biology for every entry in the active global whitelist defined by `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`.
 
-It is governed by:
+It contains profiles only for:
 
-- `REPRODUCTION_AND_LINEAGE.md`
-- `REPRODUCTIVE_SPECIES_PROFILES.md`
-- `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`
+1. Human
+2. Elf
+3. Dwarf
+4. Gnome
+5. Dragonborn
+6. Dragonkin
+7. True Dragon
+8. Feline Beastfolk
+9. Kitsune
+10. Lizardfolk
 
-A completed profile establishes reproductive biology only. It does not decide attraction, consent, conception chance, pregnancy chance, inherited-trait probabilities, or relationship outcomes.
+`REPRODUCTION_AND_LINEAGE.md` governs compatibility, directional development, carrying-parent rules, adoption, birth-safe hybrid development, hybrid lineage status, and dice ownership.
 
-## Evidence labels
+A profile establishes biological possibility. It does not create attraction, consent, mating, conception, pregnancy, offspring, or guaranteed adult hybrid fertility.
 
-- **Source-established**: directly supported by published lore for the relevant species/version.
-- **Lore-supported inference**: strongly implied by published ancestry, historical hybrid offspring, or the species' established body plan.
-- **Homebrew biological baseline**: deliberately established for this repository where published lore does not specify reproductive anatomy.
+## Shared active-roster rules
 
-Official lore is not required to spell out ordinary reproduction before this homebrew system can establish a sensible biological baseline.
+Every profile in this file uses:
 
-## Reproductive compatibility families
+- stable biological males and females
+- physical male/female mating
+- internal biological fertilization
+- either live-bearing or egg-laying development
 
-These are repository homebrew biology groups. They are not D&D Creature Types.
+Unless a profile or campaign-specific rule says otherwise:
 
-### Internal Live-Bearing Humanoid family
+- the same species or biological family is `Naturally compatible`
+- two different active-whitelist entries are `Cross-species compatible`
+- a severe size or anatomy issue can make one reproductive direction `Conditionally compatible` until a real non-magical physical requirement is satisfied
+- the female partner determines live pregnancy or egg formation
+- prenatal or pre-laying size remains within the female partner's viable reproductive range
+- difficult inherited structures may develop after birth or hatching
 
-Members use internal fertilization, a biologically male fertilizing contribution, a biologically female ovum-equivalent contribution, and internal gestation by the female carrier followed by live birth.
+## Shared profile terminology
 
-Within this family:
+### Internal Live-Bearing Humanoid
 
-- same-species pairings are `Naturally compatible`
-- very closely related lineages may be `Naturally compatible`
-- different species are normally `Cross-species compatible` under this homebrew unless a specific profile says otherwise
-- meaningful size differences do not automatically block reproduction; prenatal growth remains within the carrying parent's viable delivery range and larger inherited size can express during later growth
+Physical mating transfers the male fertilizing contribution internally. The female supplies the ovum-equivalent contribution, carries the offspring, and gives live birth.
 
-### Internal Egg-Laying Draconic family
+### Internal Live-Bearing Mammalian Beastfolk
 
-Members use internal fertilization, a biologically male fertilizing contribution, a biologically female ovum-equivalent contribution, and fertilized egg development. The female forms and lays the egg; development then continues through incubation until hatching.
+The same internal live-bearing structure applies, with mammalian beastfolk traits inherited separately from gestation.
 
-Within this family:
+### Internal Egg-Laying Draconic
 
-- same-species pairings are `Naturally compatible`
-- closely related draconic species may be `Naturally compatible` or `Cross-species compatible`
-- different draconic species are normally `Cross-species compatible` unless a profile says otherwise
+Physical mating transfers the male fertilizing contribution internally. The female supplies the ovum-equivalent contribution, forms and lays a fertilized egg, and the offspring completes development through incubation and hatching.
 
-### Live-bearing humanoid ↔ egg-laying draconic bridge
+### Internal Egg-Laying Reptilian
 
-The two families above are explicitly `Cross-species compatible` in this repository when the individual pairing has functioning male/female reproductive roles and no specific incompatibility.
-
-The carrying female determines development:
-
-- live-bearing female + draconic male -> internal gestation and live birth
-- egg-laying draconic female + live-bearing male -> fertilized egg formation, laying, incubation, and hatching
-
-Inherited draconic traits that would interfere with live delivery may remain soft, small, folded, vestigial, or developmentally latent until after birth.
-
-This bridge is the homebrew biological basis for examples such as male human + female dragon and male dragon + female elf.
-
-## Universal birth-size rule
-
-For otherwise compatible pairings, the developing offspring's prenatal or pre-laying size follows the **carrying parent's viable reproductive range**, not the offspring's eventual adult size.
-
-A child with larger-parent ancestry can undergo accelerated or extended post-birth/post-hatching growth later. This prevents body-size differences such as Halfling/Goliath, Gnome/Orc, or Elf/Dragon ancestry from automatically creating incoherent delivery.
-
-This rule cannot repair a pairing that lacks a workable fertilization or development pathway in the first place.
+The same internal egg-laying structure applies through reptilian reproductive anatomy and incubation.
 
 ---
 
-# Core completed profiles
+# Human
 
-## Human
-
-- **Species:** Human
-- **Source / Version:** Current Player's Handbook / general D&D human
+- **Canonical Entry:** Human
+- **Representative Variants:** standard Human; Nubari; Umbral Human when heredity remains biologically stable
 - **Creature Type:** Humanoid
 - **Profile Status:** Complete
-- **Evidence Basis:** Source-established ordinary biological species; reproductive details use homebrew biological baseline
 - **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
 - **Fertilization Method:** Internal
 - **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** live-born offspring must remain within the female carrier's viable delivery size and flexibility range
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Human + Human
-- **Known Cross-Species Compatibility:** Elf and Orc are historically source-supported through Half-Elf and Half-Orc offspring; other cleared Internal Live-Bearing Humanoid species are homebrew cross-species compatible; cleared draconic egg-layers use the family bridge
-- **Known Incompatibilities:** any partner lacking a workable biological sexual fertilization/development path under the global rules
-- **Notes:** Human biology is the reference live-bearing baseline for many humanoid crossbreeding checks.
+- **Carrier:** Female parent
+- **Special Requirements:** functional compatible mating and internal-fertilization anatomy
+- **Birth Constraints:** the newborn remains within the Human female's viable delivery range; rigid or oversized non-Human traits may be developmentally delayed
+- **Naturally Compatible:** Human and Human variants sharing this biology
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Human is the reference live-bearing profile. A culture, nation, class, or profession does not create a separate reproductive species.
 
-## Elf
+# Elf
 
-- **Species:** Elf
-- **Source / Version:** Current Player's Handbook plus established legacy Half-Elf lineage
-- **Creature Type:** Humanoid
+- **Canonical Entry:** Elf
+- **Representative Variants:** High Elf; Wood Elf; Sea Elf; Astral Elf; Eladrin
+- **Creature Type:** Humanoid unless a selected variant's current rules say otherwise
 - **Profile Status:** Complete
-- **Evidence Basis:** Human/Elf offspring are source-established through Half-Elf lore; ordinary reproductive mechanics use homebrew biological baseline
 - **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
 - **Fertilization Method:** Internal
 - **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** ordinary live-birth constraints; inherited horns, wings, heavy scales, plates, or similar hybrid traits may develop later when necessary
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Elf + Elf; closely related Elf lineages unless a setting-specific profile differs
-- **Known Cross-Species Compatibility:** Human is source-supported; other cleared Internal Live-Bearing Humanoids are homebrew cross-species compatible; cleared draconic egg-layers use the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Sea Elf, Astral Elf, Eladrin, Shadar-kai, and setting-specific Elf branches may share this basic profile unless their own biology materially differs.
+- **Carrier:** Female parent
+- **Special Requirements:** functional compatible mating and internal-fertilization anatomy
+- **Birth Constraints:** inherited horns, scales, wings, large tails, or other difficult hybrid features may remain soft, small, folded, or dormant until after birth
+- **Naturally Compatible:** Elf variants sharing this reproductive profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Aquatic, astral, seasonal, cultural, or setting identity does not change reproduction unless the selected variant explicitly receives a different biological profile.
 
-## Orc
+# Dwarf
 
-- **Species:** Orc
-- **Source / Version:** Current Player's Handbook plus established legacy Half-Orc lineage
+- **Canonical Entry:** Dwarf
+- **Representative Variants:** standard Dwarf; Duergar
 - **Creature Type:** Humanoid
 - **Profile Status:** Complete
-- **Evidence Basis:** Human/Orc offspring are source-supported through Half-Orc lore; ordinary reproductive mechanics use homebrew biological baseline
 - **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
 - **Fertilization Method:** Internal
 - **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** ordinary live-birth constraints; unusually robust inherited musculature and frame develop progressively rather than requiring oversized newborn proportions
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Orc + Orc and sufficiently close Orc lineages
-- **Known Cross-Species Compatibility:** Human is source-supported; other cleared Internal Live-Bearing Humanoids are homebrew cross-species compatible; cleared draconic egg-layers use the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Gray Orc, Orog, and other Orc-related lineages may share or branch from this profile by setting.
+- **Carrier:** Female parent
+- **Special Requirements:** functional compatible mating and internal-fertilization anatomy
+- **Birth Constraints:** prenatal size remains within the Dwarf female's viable range; greater inherited adult height, mass, wingspan, or frame develops later
+- **Naturally Compatible:** Dwarf variants sharing this reproductive profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Dwarf culture, craft training, language, and social traditions are not genetically inherited.
 
-## Dwarf
+# Gnome
 
-- **Species:** Dwarf
-- **Source / Version:** Current Player's Handbook
+- **Canonical Entry:** Gnome
+- **Representative Variants:** Rock Gnome; Forest Gnome; Deep Gnome / Svirfneblin
 - **Creature Type:** Humanoid
 - **Profile Status:** Complete
-- **Evidence Basis:** Homebrew biological baseline consistent with ordinary humanoid anatomy
 - **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
 - **Fertilization Method:** Internal
 - **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** offspring gestated by a Dwarf female remains within Dwarf-safe prenatal and delivery dimensions; larger-parent frame and height can express later
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Dwarf + Dwarf; Duergar and other Dwarf branches may be naturally compatible when their profiles retain Dwarf biology
-- **Known Cross-Species Compatibility:** cleared Internal Live-Bearing Humanoids; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Cultural Dwarf traits are not genetic inheritance merely because the biological parent is a Dwarf.
+- **Carrier:** Female parent
+- **Special Requirements:** functional compatible mating and internal-fertilization anatomy
+- **Birth Constraints:** prenatal size remains within the Gnome female's viable range; larger inherited adult size and difficult structures develop after birth
+- **Naturally Compatible:** Gnome variants sharing this reproductive profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Small adult size does not create automatic infertility. A severe mating-size mismatch can still require a real physical accommodation under `REPRODUCTION_AND_LINEAGE.md`.
 
-## Gnome
+# Dragonborn
 
-- **Species:** Gnome
-- **Source / Version:** Current Player's Handbook
+- **Canonical Entry:** Dragonborn
+- **Representative Variants:** standard Dragonborn; Floral Dragonborn; Grim Hollow Dragonborn
 - **Creature Type:** Humanoid
 - **Profile Status:** Complete
-- **Evidence Basis:** Homebrew biological baseline consistent with ordinary humanoid anatomy
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** offspring gestated by a Gnome female remains within Gnome-safe prenatal and delivery dimensions; larger inherited adult size expresses later
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Gnome + Gnome; Deep Gnome and other Gnome branches when biology remains compatible
-- **Known Cross-Species Compatibility:** cleared Internal Live-Bearing Humanoids; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Small adult size does not itself prevent crossbreeding with larger compatible species.
-
-## Halfling
-
-- **Species:** Halfling
-- **Source / Version:** Current Player's Handbook
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Homebrew biological baseline consistent with ordinary humanoid anatomy
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** offspring gestated by a Halfling female remains within Halfling-safe prenatal and delivery dimensions; larger ancestry expresses through later growth
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Halfling + Halfling and close Halfling branches
-- **Known Cross-Species Compatibility:** cleared Internal Live-Bearing Humanoids; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Adult size difference is handled by the universal birth-size rule rather than automatic infertility.
-
-## Goliath
-
-- **Species:** Goliath
-- **Source / Version:** Current Player's Handbook
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Giant-descended humanoid identity is source-established; reproductive mechanics use homebrew biological baseline
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** Goliath-scale adult size is not required at birth; when the other parent or carrier is smaller, giant-derived size and build can emerge through childhood and adolescence
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Goliath + Goliath
-- **Known Cross-Species Compatibility:** cleared Internal Live-Bearing Humanoids; Giant-related biological species when their profiles allow; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** Giant ancestry can affect inherited growth potential without forcing giant-sized gestation.
-
-## Aasimar
-
-- **Species:** Aasimar
-- **Source / Version:** Current Player's Handbook
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Current lore describes Aasimar as mortals carrying an Upper Planes spark; reproductive mechanics use homebrew mortal-humanoid baseline
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** harmless celestial markings may appear at birth; wings, radiant manifestations, halos, or other mechanically significant inherited expressions may develop later if the hybrid-inheritance system assigns them
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Aasimar + Aasimar when both use this stable mortal biology
-- **Known Cross-Species Compatibility:** Human and other cleared Internal Live-Bearing Humanoids; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** a version of Aasimar that is individually manifested rather than a stable biological mortal lineage requires its own profile
-- **Notes:** Celestial ancestry or planar influence is not itself magical reproduction. The adult Aasimar in this profile reproduces biologically.
-
-## Tiefling
-
-- **Species:** Tiefling
-- **Source / Version:** Current Player's Handbook
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Mortal humanoid fiendish lineage is source-established; reproductive mechanics use homebrew biological baseline
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** functioning compatible internal-fertilization anatomy
-- **Birth / Hatching Constraints:** horns, thick tails, rigid spines, hooves, or similarly difficult inherited traits may begin small, soft, flexible, or developmentally incomplete and mature later
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Tiefling + Tiefling when both use compatible mortal biology
-- **Known Cross-Species Compatibility:** Human and other cleared Internal Live-Bearing Humanoids; cleared draconic egg-layers through the family bridge
-- **Known Incompatibilities:** fiendish beings that reproduce only magically, are shapechanger-dependent, or lack biological sex roles do not borrow this profile automatically
-- **Notes:** Fiendish heritage does not automatically mean the reproductive process itself is magical.
-
-## Dragonborn
-
-- **Species:** Dragonborn
-- **Source / Version:** Current Player's Handbook
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Current lore explicitly ties Dragonborn ancestry to dragon eggs; egg-laying sexual reproduction is established here as the homebrew biological continuation of that draconic body plan
 - **Compatibility Family:** Internal Egg-Laying Draconic
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
 - **Female Reproductive Role:** supplies the ovum-equivalent contribution, forms the fertilized egg, and lays it
 - **Fertilization Method:** Internal
 - **Development Method:** Egg-laying
-- **Carrier / Host:** Female parent until laying; egg then develops by incubation
-- **Special Biological Requirements:** viable shell formation and an incubation environment suitable to the female Dragonborn's egg biology
-- **Birth / Hatching Constraints:** hatchlings are small enough for viable egg formation and laying; horns, heavy scales, breath structures, wings when inherited, and other draconic features may continue developing after hatching
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Dragonborn + Dragonborn; very closely related Dragonborn lineages
-- **Known Cross-Species Compatibility:** True Dragons and other cleared Internal Egg-Laying Draconic species; cleared Internal Live-Bearing Humanoids through the family bridge
-- **Known Conditional Pairings:** species requiring external fertilization, unusual hosts, or incompatible incubation conditions require their own bridge rule
-- **Known Incompatibilities:** partners without a workable biological fertilizing contribution or viable development path
-- **Notes:** If the Dragonborn is the female carrier, the hybrid normally develops in an egg. If the Dragonborn is the male and the female partner is a live-bearer, the hybrid normally develops through live pregnancy instead.
+- **Carrier:** Female parent until laying; development continues in the egg
+- **Special Requirements:** viable shell or membrane formation and an incubation environment appropriate to the female Dragonborn's biology
+- **Hatching Constraints:** hatchlings remain small enough for safe egg formation and laying; horns, heavy scales, breath structures, wings when inherited, and adult musculature may mature later
+- **Naturally Compatible:** Dragonborn variants sharing this reproductive profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Directional Note:** a female Dragonborn lays a hybrid egg; a male Dragonborn mating with a live-bearing female produces a live-carried hybrid
 
-## Half-Elf / Human-Elf Hybrid Lineage
+# Dragonkin
 
-- **Species:** Half-Elf / Human-Elf hybrid lineage
-- **Source / Version:** Legacy D&D lineage retained as biological evidence and reusable hybrid ancestry
-- **Creature Type:** Humanoid
+- **Canonical Entry:** Dragonkin
+- **Representative Variants:** winged Dragonkin; stable homebrew Dragonkin lineages
+- **Creature Type:** Humanoid with draconic lineage under the repository homebrew baseline, unless a selected campaign version establishes another type
 - **Profile Status:** Complete
-- **Evidence Basis:** Source-established Human + Elf offspring
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** ordinary internal live-bearing compatibility
-- **Birth / Hatching Constraints:** follows the live-bearing carrier's safe range
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Human-Elf hybrid + sufficiently close Human/Elf-derived lineages when the pairing otherwise fits
-- **Known Cross-Species Compatibility:** Human, Elf, and other cleared Internal Live-Bearing Humanoids
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** This lineage is evidence that Human/Elf reproduction is viable. It does not force the repository's future Human/Elf children to use legacy Half-Elf game statistics; hybrid inheritance is handled separately.
-
-## Half-Orc / Human-Orc Hybrid Lineage
-
-- **Species:** Half-Orc / Human-Orc hybrid lineage
-- **Source / Version:** Legacy D&D lineage retained as biological evidence and reusable hybrid ancestry
-- **Creature Type:** Humanoid
-- **Profile Status:** Complete
-- **Evidence Basis:** Source-supported Human + Orc hybrid lineage
-- **Compatibility Family:** Internal Live-Bearing Humanoid
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution and normally carries the developing offspring
-- **Fertilization Method:** Internal
-- **Development Method:** Live-bearing
-- **Carrier / Host:** Female parent
-- **Special Biological Requirements:** ordinary internal live-bearing compatibility
-- **Birth / Hatching Constraints:** follows the live-bearing carrier's safe range; Orc-derived adult mass develops progressively
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** Human-Orc hybrid + sufficiently close Human/Orc-derived lineages when the pairing otherwise fits
-- **Known Cross-Species Compatibility:** Human, Orc, and other cleared Internal Live-Bearing Humanoids
-- **Known Incompatibilities:** species-specific exclusions established by another profile
-- **Notes:** This lineage is evidence that Human/Orc reproduction is viable. It does not force future Human/Orc offspring to use legacy Half-Orc game statistics.
-
-## True Dragon — General Biological Profile
-
-- **Species:** True Dragon, general biological baseline
-- **Source / Version:** Cross-edition D&D true-dragon lore; individual dragon kinds may override details
-- **Creature Type:** Dragon
-- **Profile Status:** Complete for ordinary chromatic, metallic, and gem true dragons unless a specific kind differs
-- **Evidence Basis:** Dragon eggs and draconic lineages are source-established; exact fertilization anatomy uses homebrew biological baseline
 - **Compatibility Family:** Internal Egg-Laying Draconic
-- **Reproductive Mode:** Sexual
-- **Male Reproductive Role:** supplies the fertilizing biological contribution
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution, forms fertilized eggs, and lays them
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating in a fixed Dragonkin body
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, forms the fertilized egg, and lays it
 - **Fertilization Method:** Internal
 - **Development Method:** Egg-laying
-- **Carrier / Host:** Female dragon until laying; egg then develops by incubation
-- **Special Biological Requirements:** viable egg formation plus incubation conditions appropriate to the dragon kind; specific temperature, environment, elemental affinity, or nest requirement can be added by the individual dragon-kind profile
-- **Birth / Hatching Constraints:** eggs and hatchlings remain within viable laying/hatching dimensions; large adult body size, rigid horns, heavy armor scales, wings, breath capability, and other major features develop progressively
-- **General Crossbreeding Potential:** Cross-species compatible
-- **Known Naturally Compatible:** same true-dragon kind; closely related true dragons may qualify depending on the specific profile
-- **Known Cross-Species Compatibility:** Dragonborn and other cleared Internal Egg-Laying Draconic species; cleared Internal Live-Bearing Humanoids through the family bridge
-- **Known Conditional Pairings:** extreme environmental incubation requirements may make otherwise biological pairings conditional
-- **Known Incompatibilities:** non-biological, magical-only, asexual-only, or otherwise reproductively incompatible beings under the global rules
-- **Notes:** A female True Dragon paired with a biologically compatible live-bearing humanoid male lays a hybrid egg. A male True Dragon paired with a compatible live-bearing humanoid female produces a live-carried hybrid, with dangerous draconic structures delayed until after birth when needed. Shapechanging is not required for reproduction under this repository's True Dragon homebrew profile.
+- **Carrier:** Female parent until laying; development continues in the egg
+- **Special Requirements:** functional fixed draconic mating anatomy, viable shell formation, and suitable incubation
+- **Hatching Constraints:** wings begin folded and immature; horns, claws, armor-like scales, tail strength, and adult body size develop progressively
+- **Naturally Compatible:** Dragonkin lineages sharing this profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Dragonkin are a biological people, not a class, title, Dragonborn alias, generic dragon-descendant label, or temporary transformation.
+
+# True Dragon
+
+- **Canonical Entry:** True Dragon
+- **Representative Groups:** Chromatic; Metallic; Gem; Deep; Moonstone
+- **Creature Type:** Dragon
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Egg-Laying Draconic
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating in the actual dragon body
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, forms the fertilized egg, and lays it
+- **Fertilization Method:** Internal
+- **Development Method:** Egg-laying
+- **Carrier:** Female parent until laying; development continues through incubation
+- **Special Requirements:** safe physical mating access, viable egg formation, and an incubation environment appropriate to the female Dragon's variety
+- **Hatching Constraints:** the egg and hatchling remain within the female's viable laying range; inherited humanoid, feline, foxlike, or other traits may appear at hatching or develop later
+- **Naturally Compatible:** the same True Dragon variety and sufficiently close True Dragon lineages
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Conditional Size Rule:** an extreme size difference may require a non-magical safe physical accommodation; shapechanging is neither required nor automatically assumed
+- **Notes:** Individual colors and named varieties share this profile unless a current campaign establishes materially different reproductive biology.
+
+# Feline Beastfolk
+
+- **Canonical Entry:** Feline Beastfolk
+- **Representative Variants:** Tabaxi; Leonin; Rakasta
+- **Creature Type:** Humanoid unless the selected variant says otherwise
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Mammalian Beastfolk
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** functional compatible mammalian mating and internal-fertilization anatomy
+- **Birth Constraints:** claws, fangs, ears, tail, fur pattern, musculature, and adult feline proportions remain neonatal-safe and mature after birth
+- **Naturally Compatible:** Feline Beastfolk variants sharing this reproductive family
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Notes:** Tabaxi, Leonin, and Rakasta remain distinct ancestry expressions while sharing one reproductive-family profile.
+
+# Kitsune
+
+- **Canonical Entry:** Kitsune
+- **Representative Variants:** natural foxfolk Kitsune; one-tailed biological lineages; multi-tailed biological lineages
+- **Creature Type:** Humanoid or Fey according to the selected version; reproductive biology always uses the stable natural Kitsune body
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Mammalian Beastfolk
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating through the natural Kitsune body
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer using natural-body anatomy
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth using natural-body anatomy
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** reproductive compatibility is evaluated from the natural Kitsune body, never from a disguise or assumed appearance
+- **Birth Constraints:** ears, fur, tails, claws, fangs, supernatural markings, and multiple-tail potential may appear gradually; additional tails need not be present at birth
+- **Naturally Compatible:** Kitsune lineages sharing this natural-body reproductive profile
+- **Cross-Species Compatible:** every other active-whitelist profile when the natural Kitsune body can physically mate through a workable internal-fertilization pathway
+- **Natural-Body Exception:** illusions, disguises, humanoid appearances, and assumed forms do not create reproductive anatomy or compatibility; shapechanging is not required for reproduction
+- **Notes:** This exception applies to Kitsune only and does not admit other shapechanger species.
+
+# Lizardfolk
+
+- **Canonical Entry:** Lizardfolk
+- **Representative Variants:** standard Lizardfolk
+- **Creature Type:** Humanoid
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Egg-Laying Reptilian
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, forms the fertilized egg, and lays it
+- **Fertilization Method:** Internal
+- **Development Method:** Egg-laying
+- **Carrier:** Female parent until laying; development continues in the egg
+- **Special Requirements:** viable reptilian egg formation and a suitable incubation environment
+- **Hatching Constraints:** hatchlings remain small enough for safe laying; heavy scales, crests, claws, tail mass, horns when inherited, and greater adult size develop progressively
+- **Naturally Compatible:** Lizardfolk sharing this profile
+- **Cross-Species Compatible:** every other active-whitelist profile unless a specific directional or physical condition prevents mating
+- **Directional Note:** a female Lizardfolk lays a hybrid egg; a male Lizardfolk mating with a live-bearing female produces a live-carried hybrid
 
 ---
 
-## Profile completion rule going forward
+# Variant and hybrid rules
 
-When promoting another species from `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` into this file:
+## Representative variants
 
-1. identify its sexual reproductive roles
-2. establish internal/external/other fertilization
-3. establish live-bearing/egg-laying/host-dependent/other development
-4. assign or create a compatibility family where useful
-5. record carrier-safe birth or hatching constraints
-6. record known direct compatibility evidence
-7. establish restrained homebrew cross-species compatibility where the global rules permit it
-8. leave fertility percentages, conception chance, gestation duration, inheritance probabilities, and offspring trait rolls for their dedicated later systems
+A representative variant uses its parent profile unless a current campaign explicitly establishes materially different reproductive biology.
 
-A completed profile should answer **whether and how reproduction can physically occur**, not yet **how likely conception is** or **what exact traits the child inherits**.
+A different culture, language, class, profession, region, color, social group, or setting label does not by itself create a new reproductive species.
+
+## Hybrid profiles
+
+A hybrid does not automatically receive a permanent profile in this file.
+
+Record the individual hybrid's established:
+
+- biological parents
+- sex and reproductive anatomy
+- live-bearing or egg-laying pathway when relevant
+- inherited traits and developmental timing
+- adult fertility only after that mechanic is established
+
+Create a permanent stable-lineage profile only after the player explicitly approves that lineage as a recurring selectable biological population.
