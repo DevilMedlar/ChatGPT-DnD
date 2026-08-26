@@ -2,7 +2,7 @@
 
 This file stores the campaign's core player-character detail and synchronized human-readable Level/XP mirrors.
 
-Repository-wide character-creation requirements and checkpoint behavior are owned by `../Rule/CHARACTER_CREATION.md`. Fresh-campaign isolation is owned by `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Completed PC advancement-state ownership is defined in `../Rule/ADVANCEMENT_AND_XP.md`.
+Repository-wide character-creation workflow and the revision-0 to revision-1 completion transition are owned by `../Rule/CHARACTER_CREATION.md`. Fresh-campaign isolation is owned by `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Completed PC advancement-state ownership is defined in `../Rule/ADVANCEMENT_AND_XP.md`.
 
 The blank fields below are intentional and remain undecided until established during character creation.
 
