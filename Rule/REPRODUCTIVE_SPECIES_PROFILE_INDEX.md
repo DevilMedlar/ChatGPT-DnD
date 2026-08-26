@@ -12,7 +12,8 @@ Use the files in this order when resolving a reproductive question:
 4. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` — first completed profiles, including core humanoids, Dragonborn, Half-Elf/Half-Orc biological evidence, and general True Dragon biology
 5. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_2.md` — additional completed humanoid branches, beastfolk, avians, reptilians, Thri-kreen, Grung, and Locathah
 6. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_3.md` — true giants and giant relatives, Yuan-ti major breeds, Githyanki, named true-dragon families, and Tanarukk
-7. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+7. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_4.md` — aquatic and amphibious profiles, including Sahuagin, Kuo-toa, Bullywug, Merfolk, Triton, and directional compatibility cases
+8. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -38,12 +39,14 @@ The completed profile library currently supports:
 - Internal Live-Bearing Humanoid
 - Internal Live-Bearing Mammalian / Beastfolk
 - Internal Live-Bearing Giant
+- Internal Live-Bearing Aquatic Humanoid
 - Internal Egg-Laying Draconic
 - Internal Egg-Laying Avian
 - Internal Egg-Laying Reptilian / Dinosaurian
 - Internal Egg-Laying Serpentine
 - Internal Egg-Laying Gith
 - Internal Egg-Laying Insectoid
+- Internal Egg-Laying Aquatic
 - External Aquatic Amphibian
 - External Aquatic Fishlike
 
@@ -58,6 +61,19 @@ Their development methods do not need to match.
 The female contributor determines whether the resulting offspring is live-carried, egg-laid, or follows another established female developmental route.
 
 External-fertilization and host-dependent species require their specific conditional compatibility checks.
+
+## Directional compatibility
+
+When two species use different fertilization or development methods, compatibility may be **directional**.
+
+Always evaluate separately:
+
+- male Species A + female Species B
+- male Species B + female Species A
+
+One direction can be compatible while the reverse direction is conditional or incompatible. The female contributor determines where the ovum or egg begins and which development pathway must be supported; the male contribution must be biologically capable of reaching and fertilizing it through that pathway.
+
+A general species-to-species compatibility label must not erase a recorded directional difference.
 
 ## Future expansion
 
