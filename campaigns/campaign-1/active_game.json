@@ -9,12 +9,12 @@
     "DevilMedlar": {
       "level": 1,
       "xp_current": 0,
-      "xp_next_level": 100
+      "xp_next_level": 300
     },
     "Senpai": {
       "level": 1,
       "xp_current": 0,
-      "xp_next_level": 100
+      "xp_next_level": 300
     }
   },
   "save_revision": 0,
