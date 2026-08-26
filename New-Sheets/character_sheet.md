@@ -60,7 +60,9 @@ This section owns the player-controlled PC's stable textual appearance canon for
 
 ### Personal / Relationship Continuity
 
-Adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when the player explicitly establishes them and they matter to continuity.
+Romantic, relationship, and permitted historical continuity details are recorded when the player explicitly establishes them and they matter to continuity, subject to `../Rule/ADULT_CONTENT_AND_CONSENT.md` and `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
+
+Current sexual-interest, intimate, fertility, pregnancy, and reproductive state remains subject to the applicable adult-only requirements in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
 
 ## ChatGPT-Controlled PC / Co-Protagonist
 
@@ -114,4 +116,6 @@ This section owns the ChatGPT-controlled PC / co-protagonist's stable textual ap
 
 ### Personal / Relationship Continuity
 
-Additional adult romantic, sexual, fertility, reproductive, or relationship details are recorded only when they become established through character agency and matter to continuity.
+Additional romantic, relationship, and permitted historical continuity details are recorded when they become established through character agency and matter to continuity, subject to `../Rule/ADULT_CONTENT_AND_CONSENT.md` and `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
+
+Current sexual-interest, intimate, fertility, pregnancy, and reproductive state remains subject to the applicable adult-only requirements in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
