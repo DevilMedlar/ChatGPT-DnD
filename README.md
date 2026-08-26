@@ -69,11 +69,11 @@ Do not store ordinary character, NPC, relationship, inventory, world, quest, sho
 
 Campaign-specific rules never automatically carry into another numbered campaign.
 
-### `New-Sheets/` — blank reusable campaign skeletons
+### `New-Sheets/` — blank reusable campaign skeleton
 
-`New-Sheets/` contains the clean, campaign-neutral **copy-ready skeletons/outlines** used to create a fresh numbered campaign.
+`New-Sheets/` contains the clean, campaign-neutral **copy-ready folder skeleton** used to create a fresh numbered campaign.
 
-These files intentionally contain:
+It intentionally mirrors the normal live campaign structure, including the `Rules/` and `art/` subfolders. Its Markdown files contain:
 
 - blank state fields
 - reusable headings and tables
@@ -85,7 +85,7 @@ These files intentionally contain:
 
 They contain no established character names, populated campaign state, existing NPCs, relationships, story events, or other canon from a prior campaign.
 
-Current skeletons are:
+Current skeleton:
 
 ```text
 New-Sheets/
@@ -97,34 +97,40 @@ New-Sheets/
   world_state.md
   session_log.md
   turn_save.md
-  art_log.md
+  Rules/
+    Campaign-N_Rules.md
+  art/
+    art_log.md
 ```
 
 `active_game.json` is the reusable initialization skeleton for the campaign-state header. Its core-PC advancement keys are placeholders that are replaced with actual established PC names during character creation.
 
+`Rules/Campaign-N_Rules.md` is a campaign-local rule template. `N` is replaced with the actual numbered campaign during initialization, and the file begins with no active campaign-specific rules unless the player establishes some.
+
 #### How New-Sheets becomes a campaign
 
-A new campaign copies these skeletons into its own numbered folder, then fills out **its own copies**.
+A new campaign copies the complete `New-Sheets/` folder skeleton into its own numbered folder, preserving the `Rules/` and `art/` subfolders, then fills out **its own copies**.
 
 Normal mapping:
 
 ```text
-New-Sheets/active_game.json          -> campaigns/campaign-N/active_game.json
-New-Sheets/character_sheet.md        -> campaigns/campaign-N/character_sheet.md
-New-Sheets/NPC-state.md              -> campaigns/campaign-N/NPC-state.md
-New-Sheets/inventory.md              -> campaigns/campaign-N/inventory.md
-New-Sheets/routine_item_prices.md    -> campaigns/campaign-N/routine_item_prices.md
-New-Sheets/world_state.md            -> campaigns/campaign-N/world_state.md
-New-Sheets/session_log.md            -> campaigns/campaign-N/session_log.md
-New-Sheets/turn_save.md              -> campaigns/campaign-N/turn_save.md
-New-Sheets/art_log.md                -> campaigns/campaign-N/art/art_log.md
+New-Sheets/active_game.json                    -> campaigns/campaign-N/active_game.json
+New-Sheets/character_sheet.md                  -> campaigns/campaign-N/character_sheet.md
+New-Sheets/NPC-state.md                        -> campaigns/campaign-N/NPC-state.md
+New-Sheets/inventory.md                        -> campaigns/campaign-N/inventory.md
+New-Sheets/routine_item_prices.md              -> campaigns/campaign-N/routine_item_prices.md
+New-Sheets/world_state.md                      -> campaigns/campaign-N/world_state.md
+New-Sheets/session_log.md                      -> campaigns/campaign-N/session_log.md
+New-Sheets/turn_save.md                        -> campaigns/campaign-N/turn_save.md
+New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Campaign-N_Rules.md
+New-Sheets/art/art_log.md                      -> campaigns/campaign-N/art/art_log.md
 ```
 
 The campaign's copied Markdown files keep useful instructions, examples, blank layouts, and clearly labeled templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
 
 Those retained helper sections are **not canonical state**. A labeled `NPC Record Template` is not an NPC, a labeled `Shop Transaction Template` is not a pending transaction, and placeholder names/IDs or example rows are not established campaign facts.
 
-When copying a skeleton into its live destination, adjust campaign identifiers, placeholder names, and relative repository references as needed for the new location. This is initialization of the copy, not campaign canon.
+When copying the skeleton into its live destination, adjust campaign identifiers, placeholder character names, the `Campaign-N_Rules.md` filename/heading, starting values, and any destination-relative repository references as needed. This is initialization of the copy, not campaign canon.
 
 If copied guidance conflicts with the current files under `Rule/`, the current reusable rule library wins. The copied guidance explains how to fill the file; it is not a separate rule authority.
 
@@ -179,7 +185,10 @@ New-Sheets/
   world_state.md
   session_log.md
   turn_save.md
-  art_log.md
+  Rules/
+    Campaign-N_Rules.md
+  art/
+    art_log.md
 
 campaigns/
   active_campaign.json
@@ -210,7 +219,7 @@ In general:
 
 - `Rule/` owns reusable repository-wide rules and operating behavior.
 - `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
-- `New-Sheets/` owns the reusable blank copy-ready campaign skeletons and their fill-out guidance.
+- `New-Sheets/` owns the reusable blank copy-ready campaign folder skeleton and its fill-out guidance.
 - `campaigns/active_campaign.json` selects the active campaign.
 - the selected campaign folder owns that campaign's actual canon and mutable state.
 - copied instructions, examples, placeholders, and explicitly labeled templates inside campaign files are guidance, not canon.
@@ -250,13 +259,13 @@ A new numbered campaign should be a fresh sibling folder under `campaigns/`, for
 campaigns/campaign-2/
 ```
 
-Copy the blank skeletons from `New-Sheets/` into the corresponding locations under the new campaign. Keep the useful fill-out guidance, examples, tables, and clearly labeled record templates in the new campaign's copies.
+Copy the complete blank folder skeleton from `New-Sheets/` into the new campaign, preserving its `Rules/` and `art/` subfolders. Keep the useful fill-out guidance, examples, tables, and clearly labeled record templates in the new campaign's copies.
 
-Then initialize campaign identifiers, placeholder character names, starting values, and destination-relative references according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+Then initialize campaign identifiers, placeholder character names, starting values, destination-relative references, and the copied campaign-local rules filename/heading according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
 
 Do not copy another campaign's populated files.
 
-Create the new campaign's own local rule file at:
+The copied local-rule template becomes, for example:
 
 ```text
 campaigns/campaign-2/Rules/Campaign-2_Rules.md
@@ -296,7 +305,7 @@ This repository intentionally separates reusable authority, campaign-local autho
 
 > `Rule/` explains how every campaign works by default.  
 > `campaigns/campaign-N/Rules/` records only the persistent rule differences for that campaign.  
-> `New-Sheets/` provides the blank copy-ready outlines and guidance used to create each campaign's working files.  
+> `New-Sheets/` provides the complete blank copy-ready folder skeleton and guidance used to create each campaign's working files.  
 > the copied files under `campaigns/campaign-N/` are filled out as that campaign's records while clearly labeled guidance/templates remain noncanonical helpers.
 
 Keeping those roles distinct makes it possible to improve the reusable game system, preserve special campaign rules without leaking them into other campaigns, create new campaigns from a complete working skeleton, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
