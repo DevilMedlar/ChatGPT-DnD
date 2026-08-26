@@ -80,33 +80,36 @@ When no additional campaign facts have yet been established, instantiate the tem
 - **`inventory.md`** — create the campaign title, one section for each required core PC with the live inventory subheadings, and `Current Party NPC Inventories` initialized with none established. Do not copy the sample current-party NPC inventory record, item examples, or instructional rule sections. Rename role-based core-PC headings when actual names are established.
 - **`routine_item_prices.md`** — create the campaign title, `Current Routine Item Base Prices`, the empty `Item | Base Price | Notes` table, and `Base Price Change History` initialized with no history. Do not copy pricing instructions or suggested example-history syntax.
 - **`world_state.md`** — create the campaign title and the state-owning sections for Important NPCs, Relationships, Locations, Factions / Organizations, Active Quests / Goals, Clues / Discoveries, Known Secrets, World Changes / Consequences, and Unresolved Threads. Initialize each section as empty or not established. Do not copy reference examples or quest-schema guidance into the live file.
-- **`session_log.md`** — create the campaign title and `Checkpoints`, initialized with `None yet.`. Do not copy rule-authority or logging-instruction prose. Add entries only for completed saves governed by the session-log rules.
+- **`session_log.md`** — create the campaign title and `Checkpoints`, initialized with `None yet.`. Do not copy rule-authority or logging-instruction prose. Do not add intermediate character-creation checkpoints during revision 0.
 - **`turn_save.md`** — create the campaign title and all live ledger sections: Active Campaign Turn, Turn Events, Current In-Turn State, Pending Shop Transactions, Pending Permanent Transfers, Final Turn Review, Permanent Save Verification, and Reset Approval. Initialize them using the new-campaign values below. Do not copy the Shop Transaction Template or instructional prose into the live ledger. When a shop transaction actually occurs, instantiate one concrete transaction record using the template as the schema.
 - **`art/art_log.md`** — instantiate from `New-Sheets/art_log.md` at the live path `art/art_log.md`. Create the campaign title and the reference sections for both core PCs, NPCs, locations, and equipment / important objects, initialized with no references established. Omit rule-authority prose, reference instructions, and other template guidance. Rename role-based core-PC reference headings when actual names are established.
 
 If a template changes later, do not rewrite an existing live campaign file merely to make it resemble the newer template. Apply structural changes to an existing campaign only when the player explicitly requests the migration or when a required rule change makes the migration necessary, and preserve all established campaign state during that migration.
 
-## Revision-0 bootstrap canon
+## Revision 0: campaign setup, character creation, and backstory
 
-`active_game.json.save_revision: 0` is the campaign's **initialization baseline**. It is not a completed character-creation checkpoint or completed Campaign Turn save.
+`active_game.json.save_revision: 0` covers the entire pre-game setup and character-creation phase.
 
-Revision 0 may nevertheless contain canonical facts that the player explicitly established as part of creating or initializing that campaign before the first formal checkpoint. These are **bootstrap canon**.
+Revision 0 begins when the campaign is instantiated and continues while the player and ChatGPT establish the required core PCs, their identities, mechanics, appearance, backstory, relationship and family history, starting equipment and resources, and other pre-game campaign facts.
 
-Bootstrap canon may include, when explicitly established at initialization:
+Explicitly established facts may be written to their proper state owners throughout this phase while the revision remains `0`.
 
-- the numbered campaign identifier and initial pre-game scene
-- the selected advancement mode and required starting advancement defaults
-- core-PC names, ages, pronouns, or other identity facts already supplied by the player
-- explicitly supplied starting relationship, family, history, or campaign-premise facts
-- other campaign facts the player directly establishes as part of the initial campaign premise before checkpointed character creation begins
+Revision 0 is not a sequence of hidden or unnumbered checkpoints. It is one evolving pre-game baseline.
 
-Bootstrap canon does **not** authorize ChatGPT to invent filler, resolve undecided fields, import another campaign's state, recover facts from chat memory, or treat guesses as canon.
+During revision 0:
 
-Facts legitimately present in revision 0 are canonical even though no completed save revision exists yet and no `session_log.md` checkpoint is required for them. `session_log.md` may record that the campaign was initialized, but it must not fabricate a revision-1 checkpoint for bootstrap facts.
+- `campaign_turn_number` remains `0`
+- `character_created` remains `false`
+- `save_revision` remains `0`
+- the live `turn_save.md` remains prepared for Campaign Turn 1
+- `turn_save.md.Base save revision` remains `0`
+- no character-creation activity creates Campaign Turn Steps
+- no intermediate character-creation choice creates a completed `session_log.md` checkpoint
+- no intermediate character-creation choice increments `save_revision`
 
-Revision 0 ends as a special initialization state once the first confirmed persistent character-creation checkpoint completes. After initialization, newly finalized character-creation choices use the checkpoint workflow in `CHARACTER_CREATION.md` and increment `save_revision` normally.
+Revision 0 does not authorize invention, filler, cross-campaign imports, or reconstruction from chat memory. Only explicitly established campaign facts and required initialization defaults belong there.
 
-A later player correction to a bootstrap fact is not a reason to rewrite history silently. During ongoing character creation, persist the corrected canonical state through the next appropriate confirmed checkpoint unless the change is merely correcting an initialization transcription error.
+The detailed character-creation workflow and the final transition out of revision 0 are defined in `CHARACTER_CREATION.md`.
 
 ## New campaign setup
 
@@ -126,7 +129,7 @@ When creating a new numbered campaign:
    - `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only key placeholders; replace each with that core PC's actual established name as soon as the name is finalized
    - keep `save_revision` at `0`
    - use a compact initialization `last_sync_note` describing the current pre-game state
-5. write any player-established bootstrap canon supplied as part of campaign initialization to its proper state owner while keeping `save_revision` at `0`; leave everything else undecided rather than inventing it
+5. write player-established setup, character-creation, and backstory canon to its proper state owners as it becomes finalized while keeping `save_revision` at `0`
 6. initialize the live `turn_save.md` for Campaign Turn 1 with:
    - `Campaign Turn: 1`
    - `Status: ready`
@@ -140,11 +143,28 @@ When creating a new numbered campaign:
    - Final Turn Review `Status: not_started`, no Final Turn State or planned transfers, and `Player save confirmation: not_requested`
    - Permanent Save Verification `Status: not_started`, no completed save revision, and no verification notes
    - Reset Approval `Status: not_requested` and `Player reset confirmation: not_requested`
-7. create both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
-8. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
-9. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
+7. complete both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
+8. when character creation is fully complete and the player confirms the final review, establish the Campaign Turn 1 starting baseline by setting `save_revision` to `1`, `character_created` to `true`, and `turn_save.md.Base save revision` to `1`, while keeping `campaign_turn_number: 0` and `turn_save.md.Status: ready`
+9. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
+10. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
 
 The new campaign begins fresh. Existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, and other state are not imported unless the player explicitly requests a permitted import.
+
+## Campaign Turn 1 baseline
+
+The normal state immediately before Campaign Turn 1 begins is:
+
+```text
+active_game.json.campaign_turn_number = 0
+active_game.json.character_created = true
+active_game.json.save_revision = 1
+turn_save.md.Campaign Turn = 1
+turn_save.md.Status = ready
+turn_save.md.Current Step = 0
+turn_save.md.Base save revision = 1
+```
+
+Campaign Turn 1 begins from revision 1. The completed permanent save for Campaign Turn 1 later becomes revision 2.
 
 ## Activating another campaign
 
