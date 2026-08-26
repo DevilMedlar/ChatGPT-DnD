@@ -130,6 +130,8 @@ campaigns/
     world_state.md
     session_log.md
     turn_save.md
+    Rules/
+      champaign-1_Rules.md
     art/
       art_log.md
 ```
