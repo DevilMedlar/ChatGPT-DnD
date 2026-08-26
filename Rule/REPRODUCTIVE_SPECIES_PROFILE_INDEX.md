@@ -16,13 +16,15 @@ Use the files in this order when resolving a reproductive question:
 8. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_5.md` — Legacy biological peoples and hybrid evidence, including Saurials, Loxo, biological Gnolls, Bariaur, Rakasta, Phanatons, and Half-Ogres
 9. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_6.md` — directional Ogre hybrid evidence, including Ogrillon, Orog, Ogre/Hobgoblin, Ogre/Bugbear, and Human/Ogre refinements
 10. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_7.md` — stable extraordinary-origin biological lineages, including Extaminaar and Trueborn Krinth
-11. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+11. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_8.md` — family-inheritance promotions for obvious fixed-form mammalian, avian, reptilian, arthropod, and amphibian species
+12. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
 When the same species appears in more than one reproductive file:
 
 - a **specific completed species/version profile** overrides a generic candidate-catalog row
+- a species marked **Complete by family inheritance** is Complete for its basic reproductive method even if an older candidate row still says `Candidate`
 - a completed species profile may inherit a shared biological-family profile unless its own text overrides that family rule
 - a candidate row is research/navigation data and does not override a completed profile
 - the global restrictions in `REPRODUCTION_AND_LINEAGE.md` still apply unless a campaign-specific rule overrides them
@@ -42,6 +44,16 @@ An extraordinary-origin population can receive a normal breeder profile when its
 The stable descendant lineage must be profiled separately from the founding transformation/origin state.
 
 Extaminaar and Trueborn Krinth are current examples.
+
+## Family-inheritance rule
+
+A fixed biological species can become `Complete by family inheritance` when its body plan maps cleanly to an already completed reproductive family and no source-specific fact contradicts that family biology.
+
+This is intended for obvious animal-model species so the repository does not duplicate identical reproductive anatomy hundreds of times.
+
+Family inheritance may establish the species' basic reproductive method, but pairing-specific compatibility still requires the normal fertilization, anatomy, carrier, environment, and directional checks.
+
+A specific later profile always overrides the inherited family baseline.
 
 ## Status flow
 
@@ -65,6 +77,7 @@ The completed profile library currently supports:
 - Internal Egg-Laying Serpentine
 - Internal Egg-Laying Gith
 - Internal Egg-Laying Insectoid
+- Internal Egg-Laying Arthropod
 - Internal Egg-Laying Aquatic
 - External Aquatic Amphibian
 - External Aquatic Fishlike
