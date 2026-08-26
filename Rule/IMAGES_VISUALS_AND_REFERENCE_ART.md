@@ -66,17 +66,25 @@ When the player supplies reference art or manually adds images to the repository
 - prefer written canonical traits over accidental image differences
 - never assume an unverified image path exists
 
-## Persistence of visual-reference metadata
+## Campaign Turn persistence of generated and reference art
 
-When continuity-critical visual-reference information is established during an active Campaign Turn:
+Canonical campaign art follows the same Campaign Turn staging, Final Review, approval, reconciliation, verification, and reset workflow as every other persistent Campaign Turn result. Do not create a separate out-of-Turn art save path.
 
-1. stage the change in `turn_save.md`
-2. include `art/art_log.md` in the planned permanent transfers
-3. if the underlying textual appearance also changes, stage the appropriate textual state owner too
-4. add the reference metadata to `art/art_log.md` only during approved Campaign Turn reconciliation
+When an image is generated or reference art is adopted during an active Campaign Turn:
 
-Outside an active Campaign Turn, persist new visual-reference metadata through the normal completed-save workflow.
+1. ChatGPT asks `Make image? Yes / No` under the Image decision workflow above when generation is appropriate.
+2. If the player says `Yes`, ChatGPT generates the image, but the image binary remains player-managed.
+3. The player saves the generated image and uploads it to the campaign repository as a `.png` or another supported image file.
+4. ChatGPT verifies that the repository image path actually exists before recording it as a campaign reference.
+5. Record the verified image in `turn_save.md` as a compact Turn entry such as `Art: <verified-image-path>.png`, with a note to follow this rule and the campaign's `art/art_log.md` instructions when preparing the permanent visual-reference details.
+6. Stage any continuity-relevant visual metadata in `turn_save.md`, including which visible features match established textual canon, which are inspiration only, and which are accidental or known to be inaccurate when relevant.
+7. If the underlying textual appearance actually changes through play, stage the corresponding textual state owner in `Pending Permanent Transfers` as well.
+8. Include `art/art_log.md` in `Pending Permanent Transfers` only when the Turn contains new or changed visual-reference metadata that is not already recorded there.
+9. At the Campaign Turn Final Review, compare the proposed art transfer against the existing `art/art_log.md` and textual appearance owners. Remove any unchanged or already-established detail from the planned merge so the permanent files are not duplicated.
+10. Show the art transfer as part of the same **Exact Planned Permanent Transfers** presented for the Campaign Turn save confirmation.
+11. Only after the player confirms the Campaign Turn save may the approved new or changed visual-reference metadata be written to `art/art_log.md` and any approved textual appearance change be written to its proper owner.
+12. Verify the permanent art/reference update together with the rest of the approved Campaign Turn save before requesting Turn reset.
 
-If reference art is supplied or adopted during an active Campaign Turn, the image file may exist immediately, but canonical reference metadata remains staged until approved reconciliation. File existence does not bypass save approval.
+The uploaded image file may physically exist in the repository before the Campaign Turn ends, but its canonical visual-reference metadata is not transferred into `art/art_log.md` merely because the file exists. The normal Campaign Turn Final Review and confirmation gate still control the permanent metadata update.
 
-Campaign Turn staging and save behavior are defined in `CAMPAIGN_TURNS_AND_STEPS.md` and `SAVES_VERIFICATION_AND_RECOVERY.md`.
+Campaign Turn staging and save behavior are defined in `CAMPAIGN_TURNS_AND_STEPS.md` and `SAVES_VERIFICATION_AND_RECOVERY.md`. The campaign copy of `art/art_log.md` defines the fill-out structure for the permanent visual-reference record.
