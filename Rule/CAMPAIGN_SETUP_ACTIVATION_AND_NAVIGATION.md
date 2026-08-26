@@ -37,12 +37,61 @@ art/
 
 The numbered campaign folder owns live campaign state and its own narrowly scoped persistent campaign-specific rules. Reusable repository-wide rules belong in `Rule/`, and reusable blank sheet structure belongs in `New-Sheets/`.
 
+## Template instantiation contract
+
+`New-Sheets/` files are **blueprints**, not byte-for-byte live campaign files.
+
+When creating a numbered campaign from `New-Sheets/`, instantiate only the structure and initial state that the live campaign file needs. Reusable instructions, rule-authority prose, examples, placeholder records, sample rows, explanatory schema text, and template-only labels remain in `New-Sheets/` and must not be copied into live campaign state merely because they appear in a template.
+
+### What becomes live state
+
+Copy or create only:
+
+- state-owning headings and field names
+- required table headers when the live file needs an empty table
+- blank fields that represent not-yet-established campaign facts
+- explicit empty-state markers such as `None established.` or `None yet.` when useful
+- required initialization values defined by the rules
+- campaign-specific titles or identifiers
+- actual campaign facts that have already been explicitly established for the new campaign
+
+### What stays template-only
+
+Do **not** copy into a live campaign file merely because it appears in `New-Sheets/`:
+
+- rule-authority paragraphs or cross-reference explanations
+- instructional prose explaining how a sheet works
+- example formats or example code blocks
+- headings explicitly labeled as templates
+- placeholder records such as `NPC-####`, `NPC Name`, `Item Name`, `Service Name`, or similar examples
+- blank sample vendor rows or sample repeated records whose only purpose is to demonstrate schema
+- lists explaining which optional fields may be tracked
+- duplicate operating rules already owned by `Rule/`
+
+A repeated-record template is instantiated only when the corresponding real entity or event exists. For example, do not copy a full blank NPC record into `NPC-state.md` until a persistent NPC is actually established, and do not copy the shop-transaction template into `turn_save.md` until an actual staged shop transaction needs a concrete record.
+
+### File-by-file initial live form
+
+When no additional campaign facts have yet been established, instantiate the templates as follows:
+
+- **`active_game.json`** — copy the full JSON schema from `New-Sheets/active_game.json`; set the campaign identifier and initialization values required below; keep temporary role-key placeholders only until the corresponding PC names are established.
+- **`character_sheet.md`** — create the campaign title, character-creation status, `Shared Relationship Canon`, and the two core-PC sections with their state-owning fields and subheadings. Leave undecided character facts blank. Level/XP mirrors must match initialized `active_game.json`. Omit template guidance paragraphs and rule explanations. Role-based core-PC headings may remain until names are established, then rename the headings to the actual PC names while preserving their control-role labels where useful.
+- **`NPC-state.md`** — create the campaign title, `Current Party NPCs`, and `Important NPC Index`, each initialized with no established NPCs. Do not copy the full `NPC Record Template`, relationship-field explanation, shop/service template, or other schema examples. Add a concrete persistent NPC record only when that NPC actually becomes persistent.
+- **`inventory.md`** — create the campaign title, one section for each required core PC with the live inventory subheadings, and `Current Party NPC Inventories` initialized with none established. Do not copy the sample current-party NPC inventory record, item examples, or instructional rule sections. Rename role-based core-PC headings when actual names are established.
+- **`routine_item_prices.md`** — create the campaign title, `Current Routine Item Base Prices`, the empty `Item | Base Price | Notes` table, and `Base Price Change History` initialized with no history. Do not copy pricing instructions or suggested example-history syntax.
+- **`world_state.md`** — create the campaign title and the state-owning sections for Important NPCs, Relationships, Locations, Factions / Organizations, Active Quests / Goals, Clues / Discoveries, Known Secrets, World Changes / Consequences, and Unresolved Threads. Initialize each section as empty or not established. Do not copy reference examples or quest-schema guidance into the live file.
+- **`session_log.md`** — create the campaign title and `Checkpoints`, initialized with `None yet.`. Do not copy rule-authority or logging-instruction prose. Add entries only for completed saves governed by the session-log rules.
+- **`turn_save.md`** — create the campaign title and all live ledger sections: Active Campaign Turn, Turn Events, Current In-Turn State, Pending Shop Transactions, Pending Permanent Transfers, Final Turn Review, Permanent Save Verification, and Reset Approval. Initialize them using the new-campaign values below. Do not copy the Shop Transaction Template or instructional prose into the live ledger. When a shop transaction actually occurs, instantiate one concrete transaction record using the template as the schema.
+- **`art/art_log.md`** — instantiate from `New-Sheets/art_log.md` at the live path `art/art_log.md`. Create the campaign title and the reference sections for both core PCs, NPCs, locations, and equipment / important objects, initialized with no references established. Omit rule-authority prose, reference instructions, and other template guidance. Rename role-based core-PC reference headings when actual names are established.
+
+If a template changes later, do not rewrite an existing live campaign file merely to make it resemble the newer template. Apply structural changes to an existing campaign only when the player explicitly requests the migration or when a required rule change makes the migration necessary, and preserve all established campaign state during that migration.
+
 ## New campaign setup
 
 When creating a new numbered campaign:
 
 1. create a new sibling folder under `campaigns/`
-2. create fresh campaign state from the blank templates in `New-Sheets/`; do not copy another campaign's populated state
+2. instantiate fresh **state-only** campaign files from `New-Sheets/` under the Template instantiation contract above; do not copy another campaign's populated state and do not byte-copy Markdown template guidance into live state
 3. create `Rules/Campaign-N_Rules.md` for that numbered campaign; begin with no campaign-specific rules unless the player explicitly establishes some
 4. copy `New-Sheets/active_game.json` into the new campaign as `active_game.json` and initialize every field for that campaign:
    - set `campaign` to the numbered campaign folder name
@@ -55,7 +104,19 @@ When creating a new numbered campaign:
    - `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only key placeholders; replace each with that core PC's actual established name as soon as the name is finalized
    - keep `save_revision` at `0`
    - use a compact initialization `last_sync_note` describing the current pre-game state
-5. initialize `turn_save.md` for Campaign Turn 1 with `Status: ready`, `Current Step: 0`, `Current Scene: None yet.`, and `Base save revision: 0`
+5. initialize the live `turn_save.md` for Campaign Turn 1 with:
+   - `Campaign Turn: 1`
+   - `Status: ready`
+   - `Current Step: 0`
+   - `Current Scene: None yet.`
+   - `Base save revision: 0`
+   - `Turn Events: None yet.`
+   - `Current In-Turn State: None yet.`
+   - `Pending Shop Transactions: None yet.`
+   - `Pending Permanent Transfers: None yet.`
+   - Final Turn Review `Status: not_started`, no Final Turn State or planned transfers, and `Player save confirmation: not_requested`
+   - Permanent Save Verification `Status: not_started`, no completed save revision, and no verification notes
+   - Reset Approval `Status: not_requested` and `Player reset confirmation: not_requested`
 6. create both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
 7. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
 8. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
