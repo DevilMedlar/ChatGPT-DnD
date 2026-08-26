@@ -53,7 +53,6 @@ True-dragon colors and named varieties are not separate candidate rows unless th
 | Canonical species / ancestry | Representative variants, max 5 | Biological baseline |
 |---|---|---|
 | Feline Beastfolk | Tabaxi; Leonin; Rakasta | Male/female physical mating; internal fertilization; live-bearing |
-| Canine Beastfolk | Lupin; Worg; Canisar | Male/female physical mating; internal fertilization; live-bearing |
 | Kitsune | natural foxfolk Kitsune; one-tailed and multi-tailed biological lineages | Male/female physical mating in the natural Kitsune body; internal fertilization; live-bearing |
 
 ### Kitsune natural-body rule
@@ -66,18 +65,17 @@ Kitsune are a specific approved exception to the general exclusion of shapechang
 - Shapechanging is not required for Kitsune reproduction.
 - This exception applies only to Kitsune and does not automatically restore other removed shapechanger species.
 
-## Reptilian and serpentine families
+## Reptilian family
 
 | Canonical species / ancestry | Representative variants, max 5 | Biological baseline |
 |---|---|---|
-| Lizardfolk | standard Lizardfolk; Blackscale; Poison Dusk; Bakali | Male/female physical mating; internal fertilization; egg-laying |
-| Yuan-ti | Pureblood; Malison; stable biological lineage variants | Male/female physical mating; sexual reproduction; development by lineage/profile |
+| Lizardfolk | standard Lizardfolk | Male/female physical mating; internal fertilization; egg-laying |
 
 ---
 
 # Shortlist authority
 
-The active shortlist contains **12 canonical species/family rows**.
+The active shortlist contains **10 canonical species/family rows**.
 
 - Completed profiles elsewhere remain useful for biological research, old campaigns, version-specific reference, and future player-approved expansion.
 - They do not automatically make an omitted species selectable through this shortlist.
