@@ -79,6 +79,18 @@ Do not duplicate the same operating rule into multiple files merely to make it e
 
 ## Canon corrections
 
-The player's newest explicit statement overrides conflicting assistant-created material.
+Established canon must be read from its authoritative state owner and preserved during narration, calculations, Turn staging, Final Review, and permanent reconciliation. ChatGPT must not use new narration, assumptions, or remembered chat context to silently replace an already-established fact.
 
-Never silently overwrite established canon. When a correction or override changes persistent state, apply it through the correct state owner and save workflow so the repository remains internally consistent.
+The player's newest explicit correction overrides conflicting assistant-created material. A correction is an explicit correction of canon, not permission for ChatGPT to reinterpret or casually rewrite established state.
+
+When the player explicitly identifies a canonical fact or assistant-created record as wrong:
+
+- verify the relevant authoritative state owner and the active `turn_save.md` before proposing any change
+- follow the existing Campaign Turn and save workflow for any persistent campaign-state change
+- if the correction is raised during an active Campaign Turn or its Final Review, correct the temporary Turn record and the **Exact Planned Permanent Transfers** before asking for confirmation again
+- do not write an unapproved corrected value directly into permanent campaign state
+- keep all required mirrors and dependent references synchronized when the approved correction is reconciled
+
+A fact that is already present and unchanged in its authoritative permanent owner is not a correction and is not a new transfer. If the same unchanged detail appears in `turn_save.md` only for context or recovery, remove it from the **Exact Planned Permanent Transfers** rather than duplicating it in the permanent files.
+
+Never silently overwrite established canon. Corrections, legitimate in-fiction changes, and permanent transfers must follow the proper state owner and the existing save workflow so the repository remains internally consistent.
