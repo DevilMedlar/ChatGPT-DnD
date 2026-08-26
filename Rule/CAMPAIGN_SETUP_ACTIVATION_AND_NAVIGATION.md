@@ -35,13 +35,31 @@ art/
   art_log.md
 ```
 
-The numbered campaign folder owns live campaign state and its own narrowly scoped persistent campaign-specific rules. Reusable repository-wide rules belong in `Rule/`, and reusable blank campaign skeletons belong in `New-Sheets/`.
+The numbered campaign folder owns live campaign state and its own narrowly scoped persistent campaign-specific rules. Reusable repository-wide rules belong in `Rule/`, and the complete reusable blank campaign folder skeleton belongs in `New-Sheets/`.
 
 ## New-Sheets copy contract
 
-`New-Sheets/` contains the **blank copy-ready skeletons/outlines for new campaigns**.
+`New-Sheets/` contains the **complete blank copy-ready folder skeleton for new campaigns**.
 
-When creating a numbered campaign, copy each applicable `New-Sheets/` file into the corresponding location in the new campaign folder, then initialize and fill out that campaign's own copy.
+Its normal shape mirrors a live numbered campaign, including the `Rules/` and `art/` subfolders:
+
+```text
+New-Sheets/
+  active_game.json
+  turn_save.md
+  character_sheet.md
+  NPC-state.md
+  routine_item_prices.md
+  inventory.md
+  world_state.md
+  session_log.md
+  Rules/
+    Campaign-N_Rules.md
+  art/
+    art_log.md
+```
+
+When creating a numbered campaign, copy the complete applicable `New-Sheets/` skeleton into the new campaign folder, then initialize and fill out that campaign's own copy. Preserve the subfolder structure rather than flattening files or recreating the `Rules/` and `art/` layout from memory.
 
 The copied Markdown files intentionally retain:
 
@@ -89,31 +107,34 @@ For a new campaign's copied sheets:
 
 ### Destination-reference adjustment
 
-Because `New-Sheets/` and `campaigns/campaign-N/` are at different directory depths, relative repository references may need to be adjusted in the copied file so they still point to the intended target from the live destination.
+Because `New-Sheets/` and `campaigns/campaign-N/` are at different directory depths, relative repository references in copied root-level sheets may need to be adjusted so they still point to the intended target from the live destination.
 
-For example:
+The folder skeleton itself must not be rearranged during that adjustment. In particular:
 
-- a root-level campaign sheet copied from `New-Sheets/` should reference the reusable rule library from its new location under `campaigns/campaign-N/`
-- `New-Sheets/art_log.md` is copied to `campaigns/campaign-N/art/art_log.md`, so its rule references must resolve correctly from the deeper `art/` directory
-- state-file references inside `art/art_log.md` should resolve to the campaign's own `character_sheet.md`, `NPC-state.md`, `world_state.md`, and `inventory.md`
+- `New-Sheets/art/art_log.md` maps directly to `campaigns/campaign-N/art/art_log.md`
+- state-file references inside `art/art_log.md` continue to resolve to the campaign's own `character_sheet.md`, `NPC-state.md`, `world_state.md`, and `inventory.md`
+- `New-Sheets/Rules/Campaign-N_Rules.md` remains inside the copied `Rules/` directory and is renamed/initialized for the actual campaign number
 
-Adjusting a path reference for the destination is initialization of the copied skeleton, not a change to campaign canon.
+Adjusting a path reference, campaign-number placeholder, or template heading for the destination is initialization of the copied skeleton, not a change to campaign canon.
 
 ### Copy map
 
 Use this normal mapping:
 
 ```text
-New-Sheets/active_game.json          -> campaigns/campaign-N/active_game.json
-New-Sheets/character_sheet.md        -> campaigns/campaign-N/character_sheet.md
-New-Sheets/NPC-state.md              -> campaigns/campaign-N/NPC-state.md
-New-Sheets/inventory.md              -> campaigns/campaign-N/inventory.md
-New-Sheets/routine_item_prices.md    -> campaigns/campaign-N/routine_item_prices.md
-New-Sheets/world_state.md            -> campaigns/campaign-N/world_state.md
-New-Sheets/session_log.md            -> campaigns/campaign-N/session_log.md
-New-Sheets/turn_save.md              -> campaigns/campaign-N/turn_save.md
-New-Sheets/art_log.md                -> campaigns/campaign-N/art/art_log.md
+New-Sheets/active_game.json                    -> campaigns/campaign-N/active_game.json
+New-Sheets/character_sheet.md                  -> campaigns/campaign-N/character_sheet.md
+New-Sheets/NPC-state.md                        -> campaigns/campaign-N/NPC-state.md
+New-Sheets/inventory.md                        -> campaigns/campaign-N/inventory.md
+New-Sheets/routine_item_prices.md              -> campaigns/campaign-N/routine_item_prices.md
+New-Sheets/world_state.md                      -> campaigns/campaign-N/world_state.md
+New-Sheets/session_log.md                      -> campaigns/campaign-N/session_log.md
+New-Sheets/turn_save.md                        -> campaigns/campaign-N/turn_save.md
+New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Campaign-N_Rules.md
+New-Sheets/art/art_log.md                      -> campaigns/campaign-N/art/art_log.md
 ```
+
+`Campaign-N_Rules.md` is a filename template. Replace `N` with the actual numbered campaign when the new campaign is initialized.
 
 A later change to `New-Sheets/` does not automatically rewrite an existing campaign's copy. Existing campaign files remain their campaign's working records. Apply later template improvements to an existing campaign only when explicitly requested or when a required rule change makes the migration necessary, while preserving all established state.
 
@@ -149,9 +170,9 @@ The detailed character-creation workflow and the final transition out of revisio
 When creating a new numbered campaign:
 
 1. create a new sibling folder under `campaigns/`
-2. copy the blank skeleton files from `New-Sheets/` into their corresponding destinations under the new campaign using the Copy map above; retain their useful inline fill-out guidance, examples, and labeled record templates
-3. adjust campaign identifiers, headings, placeholder names, and destination-relative repository references as required for the new campaign, without inventing campaign facts
-4. create `Rules/Campaign-N_Rules.md` for that numbered campaign; begin with no campaign-specific rules unless the player explicitly establishes some
+2. copy the complete blank folder skeleton from `New-Sheets/` into the new campaign folder, preserving the `Rules/` and `art/` subfolders and retaining useful inline fill-out guidance, examples, and labeled record templates
+3. adjust campaign identifiers, headings, placeholder names, filename placeholders, and destination-relative repository references as required for the new campaign, without inventing campaign facts
+4. rename and initialize the copied `Rules/Campaign-N_Rules.md` for the actual numbered campaign; begin with no campaign-specific rules unless the player explicitly establishes some
 5. initialize the copied `active_game.json` for that campaign:
    - set `campaign` to the numbered campaign folder name
    - keep `campaign_turn_number` at `0`
