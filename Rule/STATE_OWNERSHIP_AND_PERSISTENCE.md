@@ -28,7 +28,7 @@ That file is **not gameplay state**. It owns only persistent rules, overrides, e
 
 Do not store ordinary character, NPC, relationship, inventory, world, quest, shop, advancement, session, or art facts there. Those remain in their assigned state owners below.
 
-Editing the campaign-specific rule file does not by itself create a Campaign Turn Step or increment `save_revision`. If a rule change also requires persistent campaign state to change, apply those state changes through the applicable persistence workflow.
+Editing the campaign-specific rule file does not by itself create a Campaign Turn Step or increment `save_revision`. If a rule change also requires persistent campaign state to change, apply those state changes through the applicable save and reconciliation workflow.
 
 Rule priority and campaign-specific scope are defined in `RULE_AUTHORITY_AND_HIERARCHY.md`.
 
@@ -142,37 +142,6 @@ When correcting historical information, make the smallest practical edit and pre
 
 If conflicting current facts cannot be resolved from the existing authorities, do not silently choose one. Use `RULE_AUTHORITY_AND_HIERARCHY.md` and obtain the player's direction when necessary.
 
-## Non-gameplay corrections and repository maintenance
-
-A correction or maintenance edit made **outside an active Campaign Turn** is not a Campaign Turn and is not a new campaign save merely because repository files are written.
-
-Examples include:
-
-- correcting a transcription, data-entry, formatting, path, or synchronization error
-- applying the player's explicit correction to assistant-created canon
-- repairing a duplicated or stale mirror so it matches its authoritative owner
-- correcting a historical entry while preserving useful correction context
-- adding or correcting non-gameplay metadata such as a verified reference-art path
-- maintaining copied guidance, templates, relative links, or campaign-local rule text without inventing an in-world event
-
-For such work:
-
-1. determine the authoritative owner of the affected fact or metadata
-2. make the smallest practical correction in that owner
-3. update every required mirror or dependent reference so the repository remains internally consistent
-4. preserve useful historical context when correcting a chronological record
-5. verify the affected files after writing
-6. do **not** create a Campaign Turn Step
-7. do **not** change `campaign_turn_number`
-8. do **not** increment `save_revision`
-9. do **not** append a normal completed-Campaign-Turn entry to `session_log.md`
-
-A repository commit made for this maintenance is an implementation/history record, not a numbered campaign save revision.
-
-If the player explicitly changes a campaign fact between Turns as a correction, clarification, or retcon rather than as an in-fiction action, handle it under this non-gameplay correction rule. If the change is meant to happen **in the fiction as gameplay**, it belongs in a Campaign Turn instead.
-
-If a Campaign Turn is already `in_progress`, do not silently alter its completed base state underneath the ledger. Correct the active Turn record when the error belongs to the Turn itself; otherwise reconcile or defer a permanent-base correction as needed so the ledger and completed state cannot silently diverge.
-
 ## Permanent transfer destinations
 
 At approved Campaign Turn reconciliation, transfer only persistent, continuity-relevant, or historically important results to their correct owners.
@@ -208,8 +177,6 @@ Detailed shop behavior is defined in `SHOPS_PRICING_AND_TRANSACTIONS.md`.
 During revision-0 character creation, finalized pre-game facts may be written directly to their state owners without opening the Campaign Turn ledger and without incrementing the revision.
 
 After Campaign Turn 1 begins, do not rewrite permanent campaign files for ordinary gameplay changes while a Campaign Turn is still open. Stage those changes in `turn_save.md` and transfer them only through the approved save workflow.
-
-Non-gameplay corrections and repository maintenance outside an active Campaign Turn follow the dedicated rule above and do not increment `save_revision`.
 
 A file does not need fictional changes merely to prove it was checked. If nothing substantive changed, preserve it.
 
