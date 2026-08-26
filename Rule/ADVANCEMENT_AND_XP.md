@@ -41,6 +41,7 @@ When an XP calculation produces a fractional result, use normal arithmetic round
 Within each numbered campaign:
 
 - `active_game.json` owns the authoritative **completed PC advancement state** through campaign-wide `xp_mode` and `character_advancement.<character>.level`, `xp_current`, and `xp_next_level`.
+- In `New-Sheets/active_game.json`, `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only placeholder keys. Replace each with the corresponding core PC's actual established name when that name is finalized; do not leave template placeholder keys in a completed character-creation save.
 - `character_sheet.md` displays each core PC's Level and XP as synchronized human-readable mirrors of that completed state. Those mirror values do not override `active_game.json`.
 - The required ChatGPT-controlled PC / co-protagonist uses the same PC-format advancement authority as the player-controlled PC and is not routed through generic NPC advancement unless a campaign-specific rule explicitly says otherwise.
 - During an active Campaign Turn, staged XP awards, threshold changes, and level changes belong in `turn_save.md` and temporarily overlay the completed permanent representations until approved reconciliation.
