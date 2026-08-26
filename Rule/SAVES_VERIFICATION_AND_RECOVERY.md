@@ -129,6 +129,7 @@ Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-res
 
 Compare `Base save revision` with `active_game.json.save_revision` in context with the ledger status:
 
+- `ready` before Campaign Turn 1 must use `Base save revision: 1` after character creation is complete
 - `in_progress` normally overlays the same base revision currently recorded in `active_game.json`
 - `reconciling` may temporarily coexist with a newer `active_game.json.save_revision` if the permanent save has already landed and is awaiting verification
 - `saved_awaiting_reset` intentionally references the older base revision while `active_game.json` already contains the newly completed revision
@@ -140,19 +141,44 @@ Compare `Base save revision` with `active_game.json.save_revision` in context wi
 
 ### Revision 0
 
-`save_revision: 0` is a special **initialization baseline**, not a completed persistent save revision.
+`save_revision: 0` is the entire pre-game **character-creation and backstory phase**.
 
-It may contain canonical bootstrap facts explicitly established by the player as part of creating the campaign, together with required initialization defaults. Those facts are canonical even though no character-creation checkpoint or Campaign Turn save has completed yet.
+It begins when the campaign is initialized and remains `0` while the player and ChatGPT establish both required core PCs, their backstory, relationships, appearance, mechanics, starting equipment, starting resources, and other pre-game campaign facts.
 
-Revision 0 does not require a corresponding completed checkpoint entry in `session_log.md`. Do not retroactively invent revision 1 merely to account for legitimate bootstrap canon already present at initialization.
+Canonical character-creation facts may be written to their proper state owners during this phase without incrementing the revision. Intermediate character-creation edits are revisions of the same pre-game baseline, not separate completed save revisions.
 
-Revision 0 must not be used to bypass later save approval. Once initialization is complete, newly finalized persistent character-creation choices use the character-creation checkpoint workflow, and the first completed persistent checkpoint advances `save_revision` from `0` to `1`.
+Revision 0 does not require completed checkpoint entries in `session_log.md`, and no intermediate character-creation choice may increment `save_revision`.
 
-The detailed scope of bootstrap canon is defined in `CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md` and `CHARACTER_CREATION.md`.
+Revision 0 ends only when character creation is fully complete, the required starting state is verified, and the player confirms the transition into the Campaign Turn 1 starting baseline under `CHARACTER_CREATION.md`.
 
-### Completed revisions
+### Revision 1
 
-For a completed Campaign Turn or other completed persistent save revision after the initialization baseline:
+`save_revision: 1` is established exactly once when character creation is completed and confirmed.
+
+At that transition:
+
+- `active_game.json.character_created` becomes `true`
+- `active_game.json.campaign_turn_number` remains `0`
+- `active_game.json.save_revision` becomes `1`
+- `turn_save.md` remains `Campaign Turn: 1` and `Status: ready`
+- `turn_save.md.Base save revision` becomes `1`
+- one character-creation completion / Campaign Turn 1 baseline entry is appended to `session_log.md`
+
+Revision 1 is the permanent starting baseline **from which Campaign Turn 1 begins**. Establishing revision 1 does not itself begin Campaign Turn 1 and does not create a Campaign Turn Step.
+
+### Completed Campaign Turn revisions
+
+Starting a Campaign Turn never increments `save_revision`.
+
+Each completed and approved Campaign Turn permanent save increments the revision exactly once from the Turn's base revision. Therefore, under the normal lifecycle:
+
+- character creation and backstory: revision `0`
+- Campaign Turn 1 starting baseline: revision `1`
+- completed Campaign Turn 1 save: revision `2`
+- completed Campaign Turn 2 save: revision `3`
+- and so on
+
+For a completed Campaign Turn permanent save:
 
 1. determine all permanent campaign files that need real changes
 2. prepare the canonical state and history updates
@@ -163,7 +189,7 @@ For a completed Campaign Turn or other completed persistent save revision after 
 
 Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, Campaign Turn opening, and the later temporary-ledger reset do **not** increment `save_revision`.
 
-Whenever atomic Git tooling is available, one completed persistent save revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md` when applicable, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
+Whenever atomic Git tooling is available, one completed Campaign Turn revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md`, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
 
 If the environment cannot make one atomic multi-file permanent save and must write files sequentially, update supporting permanent files first and `active_game.json` last. Then verify the completed state before moving the temporary ledger to `saved_awaiting_reset`.
 
@@ -171,4 +197,4 @@ The later player-approved reset of `turn_save.md` is a separate cleanup/checkpoi
 
 A file does not need fictional changes merely to prove it was checked. If nothing substantive changed, preserve it.
 
-General state ownership, corrections, and legitimate removal are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+Character-creation revision behavior is defined in `CHARACTER_CREATION.md`. General state ownership, corrections, and legitimate removal are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
