@@ -83,11 +83,15 @@ A distinct merchant markup or discount may still apply afterward because it is a
 
 ## Currency, modifier stacking, and rounding
 
-Campaign currency uses these fixed conversions:
+Campaign currency follows the official current D&D coin values:
 
-- `1 gold = 100 silver`
-- `1 silver = 100 copper`
-- therefore `1 gold = 10,000 copper`
+- `1 Copper Piece (CP) = 1 CP`
+- `1 Silver Piece (SP) = 10 CP`
+- `1 Electrum Piece (EP) = 50 CP = 5 SP`
+- `1 Gold Piece (GP) = 100 CP = 10 SP = 2 EP`
+- `1 Platinum Piece (PP) = 1,000 CP = 100 SP = 20 EP = 10 GP`
+
+Gold Piece (GP) is the standard wealth reference unit, while actual holdings and transactions may use any official coin denomination.
 
 For price calculations, convert monetary values to copper-equivalent units so mixed denominations and fractional results can be resolved consistently.
 
@@ -113,20 +117,22 @@ Do not double-count a factor already included in Base Price.
 
 Example:
 
-`50c + (50c × 0.10) - (50c × 0.05) + 5c - 10c`
+`50 CP + (50 CP × 0.10) - (50 CP × 0.05) + 5 CP - 10 CP`
 
-`= 50c + 5c - 2.5c + 5c - 10c`
+`= 50 CP + 5 CP - 2.5 CP + 5 CP - 10 CP`
 
-`= 47.5c`
+`= 47.5 CP`
 
-Final price: `48c`.
+Final price: `48 CP`.
 
 ### Denomination conversion and rounding
 
-Convert fractional higher denominations downward before rounding:
+Convert fractional higher denominations downward using the official exchange values before rounding.
 
-- `1.5g = 1g 50s`
-- `1.5s = 1s 50c`
+Examples:
+
+- `1.5 GP = 1 GP 1 EP` (equivalently `1 GP 5 SP`)
+- `1.5 SP = 1 SP 5 CP`
 
 Only a remaining fractional **copper** amount requires rounding. Use normal arithmetic rounding:
 
@@ -135,11 +141,11 @@ Only a remaining fractional **copper** amount requires rounding. Use normal arit
 
 Examples:
 
-- `1.5c = 2c`
-- `47.50c = 48c`
-- `47.49c = 47c`
+- `1.5 CP = 2 CP`
+- `47.50 CP = 48 CP`
+- `47.49 CP = 47 CP`
 
-After final copper rounding, the price may be displayed in the largest convenient denominations using the fixed gold/silver/copper conversions above.
+After final copper rounding, the price may be displayed in the largest convenient official denominations using CP, SP, EP, GP, and PP.
 
 ## Shop purchase flow
 
