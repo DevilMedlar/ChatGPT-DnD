@@ -22,7 +22,8 @@ Use the files in this order when resolving a reproductive question:
 14. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_11.md` — family-inherited older monster peoples, including Forestkith Goblins, Flinds, Ibixian Goatfolk, Nycters, Blackscale/Poison Dusk Lizardfolk, and additional Giant breeds
 15. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_12.md` — Eberron and psionic profiles, including Kalashtar, Shifter, Maenad, Xeph, Athasian Half-Giant, and the Dromite scope exclusion
 16. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_13.md` — Dark Sun profiles, including Mul hybrid evidence, both Dray generations, Pterran, and Athasian Aarakocra
-17. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+17. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_14.md` — Oriental Adventures and eastern-species profiles, including Korobokuru, Nezumi, Vanara, stable Spirit Folk, Hengeyokai exclusion, Anakore exclusion, and Gloura Hold
+18. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -49,7 +50,7 @@ An extraordinary-origin population can receive a normal breeder profile when its
 
 The stable descendant lineage must be profiled separately from the founding transformation/origin state.
 
-Extaminaar, Trueborn Krinth, Kalashtar, Athasian Half-Giants, and both stable Dray populations are current examples.
+Extaminaar, Trueborn Krinth, Kalashtar, Athasian Half-Giants, both stable Dray populations, and stable Spirit Folk populations are current examples.
 
 ## Family-inheritance rule
 
@@ -79,6 +80,7 @@ The completed profile library currently supports:
 - Internal Live-Bearing Humanoid / Monstrous Humanoid
 - Internal Live-Bearing Humanoid / Psionic-Quori Lineage
 - Internal Live-Bearing Humanoid / Mammalian Shifter
+- Internal Live-Bearing Humanoid / Spirit Lineage
 - Internal Live-Bearing Mammalian / Beastfolk
 - Internal Live-Bearing Mammalian / Sphinx
 - Internal Live-Bearing Giant
@@ -153,6 +155,14 @@ Under the current global scope, the species must have stable biologically male a
 Dromites are a current example of a species excluded by this rule: they reproduce sexually and lay eggs, but ordinary Dromites are genderless and only elected reproductive individuals temporarily assume female and male sexual characteristics.
 
 A future global or campaign-specific override can broaden this rule without deleting the version-specific biology already recorded.
+
+## Shapechanger founding-parent distinction
+
+A stable descendant lineage can be biologically eligible even if an ancestral founding pairing involved a shapechanging parent, provided reproduction of the stable descendants no longer requires shapechanging.
+
+Spirit Folk are a current example. Older River Spirit Folk ancestry material includes transformed river-dragon parents, which is useful ancestry evidence but does not automatically re-enable that original parent pairing under the current no-shapechanger gate.
+
+The stable Spirit Folk descendant population is evaluated by its own fixed biological body and reproductive profile.
 
 ## Remaining Holds should be meaningful
 
