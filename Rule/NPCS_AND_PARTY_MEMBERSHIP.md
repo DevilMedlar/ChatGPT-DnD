@@ -5,11 +5,16 @@
 Within each campaign, every persistent NPC receives one stable campaign-local ID in the form `NPC-0001`, `NPC-0002`, and so on when first added to `NPC-state.md`.
 
 - Assign the next unused numeric ID in sequence.
-- An NPC ID never changes because the NPC's name, title, role, location, relationship, party status, or life status changes.
+- An NPC's canonical **Name** remains fixed once established, except when correcting a genuine transcription or data-entry mistake.
+- Titles, ranks, honorifics, epithets, nicknames, aliases, disguises, roles, locations, relationships, party status, and life status are separate mutable facts and do not replace or rename the NPC's canonical Name.
+- An NPC ID never changes because a title, role, location, relationship, party status, life status, or other mutable descriptive state changes.
 - Never reuse an old NPC ID for a different NPC.
+- Stable NPC IDs remain the cross-file identity keys even though canonical Names are fixed. This avoids ambiguity when different NPCs share the same or similar Names and keeps references reliable across files.
 - Names and Markdown headings are human-readable display text, not identity keys.
-- Cross-file references to a persistent NPC must use the stable NPC ID; the current NPC name may accompany it for readability.
+- Cross-file references to a persistent NPC must use the stable NPC ID; the canonical NPC Name may accompany it for readability.
 - If one NPC is found with multiple IDs, or two NPCs share one ID, stop and reconcile the identity conflict before completing another persistent save.
+
+When useful, mutable titles, ranks, epithets, honorifics, aliases, or similar descriptors should be recorded separately in `NPC-state.md` rather than modifying the NPC's Name. They may later be added, changed, or removed as campaign state changes.
 
 ## NPC state ownership
 
