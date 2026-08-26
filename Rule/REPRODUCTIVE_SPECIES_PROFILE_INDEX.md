@@ -17,7 +17,8 @@ Use the files in this order when resolving a reproductive question:
 9. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_6.md` — directional Ogre hybrid evidence, including Ogrillon, Orog, Ogre/Hobgoblin, Ogre/Bugbear, and Human/Ogre refinements
 10. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_7.md` — stable extraordinary-origin biological lineages, including Extaminaar and Trueborn Krinth
 11. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_8.md` — family-inheritance promotions for obvious fixed-form mammalian, avian, reptilian, arthropod, and amphibian species
-12. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+12. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_9.md` — fixed humanoid branches and stable mixed lineages, including Elf/Gnome/Halfling branches, Dhakaani goblinoids, Mongrelfolk, Grimlock, and additional ordinary humanoid-family promotions
+13. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -49,7 +50,7 @@ Extaminaar and Trueborn Krinth are current examples.
 
 A fixed biological species can become `Complete by family inheritance` when its body plan maps cleanly to an already completed reproductive family and no source-specific fact contradicts that family biology.
 
-This is intended for obvious animal-model species so the repository does not duplicate identical reproductive anatomy hundreds of times.
+This is intended for obvious animal-model and ordinary humanoid-family species so the repository does not duplicate identical reproductive anatomy hundreds of times.
 
 Family inheritance may establish the species' basic reproductive method, but pairing-specific compatibility still requires the normal fertilization, anatomy, carrier, environment, and directional checks.
 
@@ -114,6 +115,20 @@ Even when both reproductive directions are biologically compatible, reversing wh
 Ogrillon/Orog legacy traditions provide a repository precedent for this possibility.
 
 Directional expression does not change the fact that both contributors are biological parents and does not prevent the offspring from inheriting traits from either ancestry.
+
+## Remaining Holds should be meaningful
+
+A species should remain `Hold` only when there is a real unresolved biological question, such as:
+
+- whether it reproduces sexually at all
+- whether it has male/female roles under the current global scope
+- whether its stable population reproduces biologically or still requires transformation/creation
+- internal vs external fertilization genuinely changes compatibility
+- host-dependent reproduction is unclear
+- multiple source versions materially disagree
+- the species label covers several unrelated body plans
+
+Do not leave an obvious fixed biological humanoid, mammal, bird, reptile, or arthropod as Hold merely because a bespoke paragraph has not been written.
 
 ## Future expansion
 
