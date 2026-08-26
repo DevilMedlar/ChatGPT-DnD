@@ -94,6 +94,26 @@ New-Sheets/
 
 A new campaign should begin from fresh instances of these templates rather than copying another campaign's populated state.
 
+#### How templates become live state
+
+`New-Sheets/` is a **schema library**, not a set of files to copy byte for byte.
+
+When a new campaign is created, ChatGPT uses each template to build a lean state-only live file. The live file keeps the state-owning headings, fields, required table headers, blank undecided values, required initialization values, explicit empty-state markers, and any facts already established for that campaign.
+
+The following remain in `New-Sheets/` and are **not** copied into live state merely because they appear in a template:
+
+- rule-authority and cross-reference explanations
+- instructions explaining how to use the sheet
+- example formats and code blocks
+- placeholder IDs, names, items, services, or sample rows
+- headings or records explicitly labeled as templates
+- optional-field guidance and schema explanations
+- duplicate operating rules already owned by `Rule/`
+
+Repeated-record schemas are instantiated only when a real entity or event exists. A new campaign therefore does not begin with a blank `NPC-####` record, a blank shop, a sample inventory item, or a Shop Transaction Template inside its live state. Those records are created only when a real NPC, shop, item, or transaction needs them.
+
+The exact file-by-file transformation and initialization contract is authoritative in `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`, with the template/live-state ownership boundary defined in `Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+
 ### `campaigns/` — live isolated campaign state
 
 Each numbered campaign owns its own canonical state inside its own folder.
@@ -174,7 +194,7 @@ In general:
 
 - `Rule/` owns reusable repository-wide rules and operating behavior.
 - `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
-- `New-Sheets/` owns reusable blank sheet structure and initialization schemas.
+- `New-Sheets/` owns reusable blank sheet structure and initialization schemas; template examples and guidance are not live campaign facts.
 - `campaigns/active_campaign.json` selects the active campaign.
 - the selected campaign folder owns that campaign's actual canon and mutable state.
 - `active_game.json` owns the last completed campaign state header and advancement summary defined by the rules.
@@ -211,9 +231,9 @@ A new numbered campaign should be a fresh sibling folder under `campaigns/`, for
 campaigns/campaign-2/
 ```
 
-Create its campaign state from the blank templates in `New-Sheets/`, not from another campaign's populated files.
+Create **state-only live instances** from the schemas in `New-Sheets/` under `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`. Do not byte-copy the Markdown templates, their guidance, examples, or placeholder records into the campaign folder, and do not copy another campaign's populated files.
 
-Instantiate the new campaign's `active_game.json` from `New-Sheets/active_game.json` and replace its campaign identifier and core-PC placeholder keys with the new campaign's actual established values according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+Instantiate the new campaign's `active_game.json` from `New-Sheets/active_game.json` and replace its campaign identifier and core-PC placeholder keys with the new campaign's actual established values according to the setup rule.
 
 Create its own local rule file at:
 
@@ -255,7 +275,7 @@ This repository intentionally separates reusable instructions, campaign-local in
 
 > `Rule/` explains how every campaign works by default.  
 > `campaigns/campaign-N/Rules/` records only the persistent rule differences for that campaign.  
-> `New-Sheets/` defines what fresh campaign records look like.  
-> the remaining files under `campaigns/campaign-N/` record what is actually true or has happened in that campaign.
+> `New-Sheets/` defines reusable schemas and examples for fresh campaign records.  
+> the remaining files under `campaigns/campaign-N/` contain only what is actually true, initialized, or has happened in that campaign.
 
-Keeping those layers separate makes it possible to improve the reusable game system without rewriting campaign history, preserve special campaign rules without leaking them into other campaigns, create new campaigns without importing old canon, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
+Keeping those layers separate makes it possible to improve the reusable game system without rewriting campaign history, preserve special campaign rules without leaking them into other campaigns, create new campaigns without importing old canon or template instructions, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
