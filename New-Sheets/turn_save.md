@@ -2,7 +2,9 @@
 
 This file is the temporary authoritative ledger for the current unfinished **Campaign Turn**.
 
-It carries only the live Campaign Turn record. Detailed Campaign Turn terminology, roll-recording conventions, and end interpretation are defined in `../Rule/CAMPAIGN_TURNS_AND_STEPS.md`. Confirmation gates, reconciliation, verification, recovery, and reset rules are defined in `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
+When this skeleton is copied into a numbered campaign, keep the explanatory text and the labeled `Shop Transaction Template` in that campaign's copy as fill-out guidance. They are documentation, not staged Turn events or transactions.
+
+It carries only the live Campaign Turn record as canonical state. Detailed Campaign Turn terminology, roll-recording conventions, and end interpretation are defined in `../Rule/CAMPAIGN_TURNS_AND_STEPS.md`. Confirmation gates, reconciliation, verification, recovery, and reset rules are defined in `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
 
 The starting state is the current completed canonical campaign state at the recorded `Base save revision`; do not copy that entire state into this file. Record the steps, scene changes, other changes, pending shop transactions, and compact effective in-turn values needed to continue or recover the Campaign Turn.
 
