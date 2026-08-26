@@ -9,12 +9,12 @@
     "PLAYER_CONTROLLED_PC_NAME": {
       "level": 1,
       "xp_current": 0,
-      "xp_next_level": 100
+      "xp_next_level": 300
     },
     "CHATGPT_CONTROLLED_PC_NAME": {
       "level": 1,
       "xp_current": 0,
-      "xp_next_level": 100
+      "xp_next_level": 300
     }
   },
   "save_revision": 0,
