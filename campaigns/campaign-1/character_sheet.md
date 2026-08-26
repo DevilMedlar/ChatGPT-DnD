@@ -6,8 +6,8 @@
 
 - DevilMedlar and Senpai are both 20 years old.
 - They have loved one another since childhood.
-- They married five years ago.
-- Their relationship before both were 18 remained romantic and nonsexual.
+- By age 15, their relationship was romantic, and they married at age 15.
+- Their marriage and romantic relationship remained nonsexual until both were 18.
 - They are now consenting adult romantic and sexually active partners.
 - They have no children yet.
 - Additional history, relationship details, and their family name will be established together during character creation.
