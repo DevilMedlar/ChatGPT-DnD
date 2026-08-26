@@ -132,6 +132,8 @@ During revision 0:
 - `campaign_turn_number` remains `0`
 - `character_created` remains `false`
 - `save_revision` remains `0`
+- `current_scene_name` may remain the pre-game label `Character creation`
+- `current_location` may remain blank until the GM-authored opening frame is established
 - the live `turn_save.md` remains prepared for Campaign Turn 1
 - `turn_save.md.Base save revision` remains `0`
 - no character-creation activity creates Campaign Turn Steps
@@ -153,12 +155,12 @@ When creating a new numbered campaign:
 5. initialize the copied `active_game.json` for that campaign:
    - set `campaign` to the numbered campaign folder name
    - keep `campaign_turn_number` at `0`
-   - use `Character creation` as `current_scene_name` unless another explicit pre-game scene label has already been established
-   - leave `current_location` blank until a location is established
+   - use `Character creation` as the revision-0 `current_scene_name`
+   - leave `current_location` blank until ChatGPT establishes the GM-authored opening frame at the revision-1 transition
    - keep `character_created` as `false`
    - use the chosen `xp_mode`; use `cumulative` by default unless the player chooses another mode
    - keep both core-PC advancement records at Level 1, 0 XP, and the applicable next-level threshold unless an explicit campaign-specific rule establishes different starting advancement
-   - `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only key placeholders; replace each with that core PC's actual established name as soon as the name is finalized
+   - `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only key placeholders; replace each with that core PC's actual established canonical Name as soon as the Name is finalized
    - keep `save_revision` at `0`
    - use a compact initialization `last_sync_note` describing the current pre-game state
 6. write player-established setup, character-creation, and backstory canon to its proper state owners as it becomes finalized while keeping `save_revision` at `0`
@@ -176,11 +178,22 @@ When creating a new numbered campaign:
    - Permanent Save Verification `Status: not_started`, no completed save revision, and no verification notes
    - Reset Approval `Status: not_requested` and `Player reset confirmation: not_requested`
 8. complete both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
-9. when character creation is fully complete and the player confirms the final review, establish the Campaign Turn 1 starting baseline by setting `save_revision` to `1`, `character_created` to `true`, and `turn_save.md.Base save revision` to `1`, while keeping `campaign_turn_number: 0` and `turn_save.md.Status: ready`
-10. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
-11. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
+9. when character creation is fully complete and the player confirms the final review, ChatGPT as GM/DM creates the opening narrative frame for the campaign and establishes the Campaign Turn 1 starting baseline by:
+   - choosing a concise descriptive `current_scene_name` that matches the opening narration and replacing the pre-game `Character creation` label
+   - establishing the actual `current_location` from the opening narration
+   - recording any continuity-relevant opening world facts in their proper owners
+   - setting `save_revision` to `1`
+   - setting `character_created` to `true`
+   - setting `turn_save.md.Current Scene` to the same opening-scene label
+   - setting `turn_save.md.Base save revision` to `1`
+   - keeping `campaign_turn_number: 0`, `turn_save.md.Campaign Turn: 1`, `turn_save.md.Current Step: 0`, and `turn_save.md.Status: ready`
+10. treat the opening scene name as a descriptive label only. It follows the fiction and does not require the player-controlled PC to remain in that location, perform the named activity, follow a specific hook, or make a predetermined choice
+11. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
+12. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
 
 The new campaign begins fresh. Existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, and other state are not imported unless the player explicitly requests a permitted import.
+
+ChatGPT is responsible for generating the campaign's GM-controlled world, opening situation, locations, scene framing, NPC introductions, quests, complications, and consequences under `GM_BEHAVIOR_AND_PRIORITY.md`. The player is not required to provide scene titles or a predetermined campaign path. Player-controlled decisions and dialogue remain under the player's agency.
 
 ## Campaign Turn 1 baseline
 
@@ -190,13 +203,16 @@ The normal state immediately before Campaign Turn 1 begins is:
 active_game.json.campaign_turn_number = 0
 active_game.json.character_created = true
 active_game.json.save_revision = 1
+active_game.json.current_scene_name = ChatGPT's descriptive opening-scene label
+active_game.json.current_location = the actual opening location established by the GM narration
 turn_save.md.Campaign Turn = 1
 turn_save.md.Status = ready
 turn_save.md.Current Step = 0
+turn_save.md.Current Scene = same opening-scene label
 turn_save.md.Base save revision = 1
 ```
 
-Campaign Turn 1 begins from revision 1. The completed permanent save for Campaign Turn 1 later becomes revision 2.
+Campaign Turn 1 begins from revision 1. The opening frame does not choose the player-controlled PC's first action and does not itself create a Campaign Turn Step. The completed permanent save for Campaign Turn 1 later becomes revision 2.
 
 ## Activating another campaign
 
