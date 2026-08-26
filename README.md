@@ -38,7 +38,8 @@ Current rule categories include:
 - NPCs and party membership
 - relationships and social interactions
 - reproduction and lineage
-- reproductive species profiles
+- active reproductive-species selection
+- completed reproductive-species profiles
 - rule authority and hierarchy
 - saves, verification, and recovery
 - session logs and history
@@ -170,7 +171,8 @@ Rule/
   NPCS_AND_PARTY_MEMBERSHIP.md
   RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md
   REPRODUCTION_AND_LINEAGE.md
-  REPRODUCTIVE_SPECIES_PROFILES.md
+  REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md
+  REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md
   RULE_AUTHORITY_AND_HIERARCHY.md
   SAVES_VERIFICATION_AND_RECOVERY.md
   SESSION_LOG_AND_HISTORY.md
@@ -290,6 +292,18 @@ The player physically rolls the dice after ChatGPT establishes that a roll is re
 Gameplay is persisted through **Campaign Turns**. A Campaign Turn may include multiple scenes, decisions, rolls, conversations, combat rounds, individual combatant turns, transactions, discoveries, and consequences. Ending a normal D&D combat turn or combat round does not by itself finish the Campaign Turn.
 
 The exact Step recording, review, confirmation, permanent reconciliation, verification, and reset workflow is defined under `Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
+
+---
+
+## Reproduction rule structure
+
+The reproduction system is intentionally consolidated:
+
+- `Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive operation, compatibility, carrying-parent development, adoption, hybrid safety, and lineage.
+- `Rule/REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the active global species whitelist.
+- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the ten active reproductive profiles.
+
+Deleted catalogs, profile batches, repository history, or remembered chat context cannot independently restore a removed species.
 
 ---
 
