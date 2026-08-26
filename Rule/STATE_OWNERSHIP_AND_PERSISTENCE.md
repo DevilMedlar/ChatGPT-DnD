@@ -128,17 +128,54 @@ Examples include current HP, currency, quantities, charges, equipped state, curr
 
 ## Corrections and legitimate removal
 
-Rewrite, replace, or delete established material when it is necessary because:
+Established campaign facts must be treated as authoritative constraints, not as suggestions that narration may casually replace.
 
-- the material is factually wrong
-- it conflicts with a newer explicit player correction
-- it is an accidental duplicate or error
-- leaving it unchanged would make current mechanics or state incorrect
-- it represents legitimately replaced current state
-- an item was sold, lost, used, consumed, destroyed, traded, transferred, or otherwise legitimately removed
-- the player explicitly requests the change
+Before narrating a continuity-sensitive fact, resolving mechanics that depend on established state, or preparing a permanent transfer, read the relevant permanent state owner and the active `turn_save.md` overlay. This includes established appearance, location, relationships, possessions, conditions, quests, NPC identity, world facts, visual canon, and other continuity-relevant state.
 
-When correcting historical information, make the smallest practical edit and preserve useful history whenever possible by marking older information corrected or superseded.
+Narration may build on established facts and gameplay may legitimately change mutable state, but ChatGPT must not silently change an already-established fact merely because a new description, assumption, or remembered chat detail differs from the repository.
+
+### Turn staging and duplicate prevention
+
+`turn_save.md` records the Campaign Turn's new events, actual state changes, and the compact effective state needed for continuation and recovery.
+
+An established permanent fact may be restated temporarily in `turn_save.md` when context is needed to understand the Turn. Restating it does **not** make that unchanged fact a new permanent result.
+
+During the Final Turn Review:
+
+1. compare every proposed permanent result against the current authoritative owner
+2. separate actual new or changed persistent state from unchanged context already stored permanently
+3. remove from the **Exact Planned Permanent Transfers** any detail that is already present and unchanged in its proper owner
+4. do not append a second copy of the same fact merely because the fact appeared in `turn_save.md`
+5. do not transfer one fact into an additional file unless that file is an established required mirror/detail representation under the ownership rules
+6. organize the remaining real changes by their correct destination file before showing the Final Review to the player
+
+The permanent merge should therefore contain only approved new state, approved changed state, required synchronized mirrors/details, and historically necessary append-first records. It must not accumulate duplicate copies of already-established facts.
+
+### Corrections
+
+Established material may be corrected when it is actually wrong, conflicts with the player's newest explicit correction, contains an accidental duplicate, or contains another verified error that would leave the repository internally inconsistent.
+
+A correction is exceptional and must not be used as a substitute for reading the sheets correctly before narration or Final Review.
+
+When a correction is raised during an active Campaign Turn or Final Review:
+
+- verify the authoritative owner and the current Turn record first
+- correct the temporary Turn data or proposed transfer rather than silently changing unrelated permanent state
+- recalculate the affected Final Turn State and **Exact Planned Permanent Transfers**
+- show the corrected review to the player again when save confirmation is required
+- reconcile the approved correction only through the existing save workflow
+
+When correcting historical information, make the smallest practical correction and preserve useful history whenever appropriate rather than rewriting unrelated chronology.
+
+Do not invent a correction, retcon, or replacement simply because new narration could be made more convenient by changing established canon.
+
+### Legitimate removal
+
+Current state may legitimately be removed or replaced when play actually establishes that result, including when an item is sold, lost, used, consumed, destroyed, traded, transferred, or otherwise no longer belongs in its current-state location.
+
+Such gameplay-caused removal is staged in `turn_save.md` and applied only through the approved Campaign Turn reconciliation.
+
+An accidental duplicate may also be removed when its duplication is verified and the authoritative fact remains preserved in the correct owner.
 
 If conflicting current facts cannot be resolved from the existing authorities, do not silently choose one. Use `RULE_AUTHORITY_AND_HIERARCHY.md` and obtain the player's direction when necessary.
 
