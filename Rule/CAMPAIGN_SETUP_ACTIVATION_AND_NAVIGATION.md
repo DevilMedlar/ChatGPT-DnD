@@ -86,6 +86,28 @@ When no additional campaign facts have yet been established, instantiate the tem
 
 If a template changes later, do not rewrite an existing live campaign file merely to make it resemble the newer template. Apply structural changes to an existing campaign only when the player explicitly requests the migration or when a required rule change makes the migration necessary, and preserve all established campaign state during that migration.
 
+## Revision-0 bootstrap canon
+
+`active_game.json.save_revision: 0` is the campaign's **initialization baseline**. It is not a completed character-creation checkpoint or completed Campaign Turn save.
+
+Revision 0 may nevertheless contain canonical facts that the player explicitly established as part of creating or initializing that campaign before the first formal checkpoint. These are **bootstrap canon**.
+
+Bootstrap canon may include, when explicitly established at initialization:
+
+- the numbered campaign identifier and initial pre-game scene
+- the selected advancement mode and required starting advancement defaults
+- core-PC names, ages, pronouns, or other identity facts already supplied by the player
+- explicitly supplied starting relationship, family, history, or campaign-premise facts
+- other campaign facts the player directly establishes as part of the initial campaign premise before checkpointed character creation begins
+
+Bootstrap canon does **not** authorize ChatGPT to invent filler, resolve undecided fields, import another campaign's state, recover facts from chat memory, or treat guesses as canon.
+
+Facts legitimately present in revision 0 are canonical even though no completed save revision exists yet and no `session_log.md` checkpoint is required for them. `session_log.md` may record that the campaign was initialized, but it must not fabricate a revision-1 checkpoint for bootstrap facts.
+
+Revision 0 ends as a special initialization state once the first confirmed persistent character-creation checkpoint completes. After initialization, newly finalized character-creation choices use the checkpoint workflow in `CHARACTER_CREATION.md` and increment `save_revision` normally.
+
+A later player correction to a bootstrap fact is not a reason to rewrite history silently. During ongoing character creation, persist the corrected canonical state through the next appropriate confirmed checkpoint unless the change is merely correcting an initialization transcription error.
+
 ## New campaign setup
 
 When creating a new numbered campaign:
@@ -104,7 +126,8 @@ When creating a new numbered campaign:
    - `PLAYER_CONTROLLED_PC_NAME` and `CHATGPT_CONTROLLED_PC_NAME` are template-only key placeholders; replace each with that core PC's actual established name as soon as the name is finalized
    - keep `save_revision` at `0`
    - use a compact initialization `last_sync_note` describing the current pre-game state
-5. initialize the live `turn_save.md` for Campaign Turn 1 with:
+5. write any player-established bootstrap canon supplied as part of campaign initialization to its proper state owner while keeping `save_revision` at `0`; leave everything else undecided rather than inventing it
+6. initialize the live `turn_save.md` for Campaign Turn 1 with:
    - `Campaign Turn: 1`
    - `Status: ready`
    - `Current Step: 0`
@@ -117,9 +140,9 @@ When creating a new numbered campaign:
    - Final Turn Review `Status: not_started`, no Final Turn State or planned transfers, and `Player save confirmation: not_requested`
    - Permanent Save Verification `Status: not_started`, no completed save revision, and no verification notes
    - Reset Approval `Status: not_requested` and `Player reset confirmation: not_requested`
-6. create both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
-7. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
-8. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
+7. create both required core PCs under `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `CHARACTER_CREATION.md`
+8. keep the new campaign's canon and campaign-specific rules isolated from every existing campaign under `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`
+9. change `campaigns/active_campaign.json` only when the new campaign should become the active campaign
 
 The new campaign begins fresh. Existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, and other state are not imported unless the player explicitly requests a permitted import.
 
