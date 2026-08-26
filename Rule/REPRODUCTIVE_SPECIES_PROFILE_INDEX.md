@@ -20,7 +20,8 @@ Use the files in this order when resolving a reproductive question:
 12. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_9.md` — fixed humanoid branches and stable mixed lineages, including Elf/Gnome/Halfling branches, Dhakaani goblinoids, Mongrelfolk, Grimlock, and additional ordinary humanoid-family promotions
 13. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_10.md` — resolved Holds and unusual biological profiles, including Killoren, Gloaming, Githzerai, Harssaf, Gulgar, Sphinxes, and specific resolved exclusions
 14. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_11.md` — family-inherited older monster peoples, including Forestkith Goblins, Flinds, Ibixian Goatfolk, Nycters, Blackscale/Poison Dusk Lizardfolk, and additional Giant breeds
-15. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
+15. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES_BATCH_12.md` — Eberron and psionic profiles, including Kalashtar, Shifter, Maenad, Xeph, Athasian Half-Giant, and the Dromite scope exclusion
+16. `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` — open-ended registry of species still awaiting complete profiling or tracked as Holds/exclusions
 
 ## Authority rule
 
@@ -47,7 +48,7 @@ An extraordinary-origin population can receive a normal breeder profile when its
 
 The stable descendant lineage must be profiled separately from the founding transformation/origin state.
 
-Extaminaar and Trueborn Krinth are current examples.
+Extaminaar, Trueborn Krinth, Kalashtar, and Athasian Half-Giants are current examples.
 
 ## Family-inheritance rule
 
@@ -75,9 +76,12 @@ The completed profile library currently supports:
 - Internal Live-Bearing Humanoid / Fey Humanoid
 - Internal Live-Bearing Humanoid / Planetouched
 - Internal Live-Bearing Humanoid / Monstrous Humanoid
+- Internal Live-Bearing Humanoid / Psionic-Quori Lineage
+- Internal Live-Bearing Humanoid / Mammalian Shifter
 - Internal Live-Bearing Mammalian / Beastfolk
 - Internal Live-Bearing Mammalian / Sphinx
 - Internal Live-Bearing Giant
+- Internal Live-Bearing Giant / Stable Hybrid Giant
 - Internal Live-Bearing Aquatic Humanoid
 - Internal Egg-Laying Draconic
 - Internal Egg-Laying Avian
@@ -99,6 +103,8 @@ Two completed species that both use biological **internal fertilization** can no
 Their development methods do not need to match.
 
 The female contributor determines whether the resulting offspring is live-carried, egg-laid, or follows another established female developmental route.
+
+A specific completed profile can override this generic default. Athasian Half-Giants are one example: their source version is fertile with other Half-Giants but explicitly not naturally fertile with Humans or Giants.
 
 External-fertilization and host-dependent species require their specific conditional compatibility checks.
 
@@ -135,12 +141,20 @@ Track these separately:
 
 Dhampir is a current example: source material can establish a vampire/mortal parentage origin without thereby establishing universal adult Dhampir fertility or universal Vampire reproductive biology.
 
+## Stable reproductive sex-role requirement
+
+Under the current global scope, the species must have stable biologically male and female reproductive roles rather than a reproduction system based on hermaphroditism, sequential sex, or temporary reproductive-sex transformation.
+
+Dromites are a current example of a species excluded by this rule: they reproduce sexually and lay eggs, but ordinary Dromites are genderless and only elected reproductive individuals temporarily assume female and male sexual characteristics.
+
+A future global or campaign-specific override can broaden this rule without deleting the version-specific biology already recorded.
+
 ## Remaining Holds should be meaningful
 
 A species should remain `Hold` only when there is a real unresolved biological question, such as:
 
 - whether it reproduces sexually at all
-- whether it has male/female roles under the current global scope
+- whether it has stable male/female roles under the current global scope
 - whether its stable population reproduces biologically or still requires transformation/creation
 - internal vs external fertilization genuinely changes compatibility
 - host-dependent reproduction is unclear
