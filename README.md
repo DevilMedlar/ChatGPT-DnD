@@ -2,7 +2,7 @@
 
 A persistent, choice-driven adult fantasy tabletop RPG repository designed to be played through ChatGPT.
 
-The repository separates **rules**, **blank reusable campaign sheets**, and **live campaign state** so that campaigns can remain persistent without mixing reusable instructions into the save files themselves.
+The repository separates **reusable rules**, **campaign-specific rules**, **blank reusable campaign sheets**, and **live campaign state** so that campaigns can remain persistent without mixing reusable instructions into save files or leaking one campaign's special rules into another.
 
 The intended play style uses D&D-style d20 mechanics, player-rolled dice, persistent characters and NPCs, campaign continuity, relationships, combat, quests, inventory, shops, advancement, and optional generated scene art.
 
@@ -12,11 +12,11 @@ All characters involved in adult content must be adults. Detailed content, conse
 
 ## Repository model
 
-The repository has three main layers:
+The repository has three top-level working areas, with a campaign-local rule layer inside each numbered campaign.
 
 ### `Rule/` — reusable game and persistence rules
 
-`Rule/` is the central rule library.
+`Rule/` is the central reusable rule library.
 
 Rules are separated by subject instead of being repeated inside every campaign. ChatGPT should consult the relevant rule files when running or modifying a campaign.
 
@@ -45,7 +45,29 @@ Current rule categories include:
 - state ownership and persistence
 - world, quests, and continuity
 
-The rule files are the reusable operating brain of the repository. Campaign state files should not duplicate those rules merely for convenience.
+These files are the reusable operating brain of the repository. A numbered campaign should not duplicate unchanged reusable rules merely for convenience.
+
+### `campaigns/campaign-N/Rules/` — persistent campaign-specific rules
+
+Each numbered campaign has its own local rule layer:
+
+```text
+campaigns/campaign-N/Rules/Campaign-N_Rules.md
+```
+
+This file stores only persistent rules intentionally scoped to that campaign, such as:
+
+- campaign-specific mechanical overrides
+- campaign-specific agency or behavior rules
+- exceptional campaign premises
+- campaign-specific operating rules
+- explicit player instructions that should remain rules for that campaign across future sessions
+
+It is a **delta layer**, not another copy of `Rule/`.
+
+Do not store ordinary character, NPC, relationship, inventory, world, quest, shop, session, art, or other campaign facts there. Those facts remain in their assigned state files.
+
+Campaign-specific rules never automatically carry into another numbered campaign.
 
 ### `New-Sheets/` — blank reusable campaign templates
 
@@ -67,7 +89,7 @@ New-Sheets/
   art_log.md
 ```
 
-A new campaign should begin from fresh copies of these templates rather than copying another campaign's live state.
+A new campaign should begin from fresh instances of these templates rather than copying another campaign's populated state.
 
 ### `campaigns/` — live isolated campaign state
 
@@ -75,7 +97,7 @@ Each numbered campaign owns its own canonical state inside its own folder.
 
 `campaigns/active_campaign.json` is the campaign selector. It identifies the campaign currently in play and points to that campaign's `active_game.json`.
 
-Campaigns are isolated. Character data, NPCs, relationships, inventory, quests, world state, story history, secrets, and other canon do not automatically carry from one numbered campaign into another.
+Campaigns are isolated. Character data, NPCs, relationships, inventory, quests, world state, story history, secrets, campaign-specific rules, and other canon do not automatically carry from one numbered campaign into another.
 
 ---
 
@@ -131,12 +153,12 @@ campaigns/
     session_log.md
     turn_save.md
     Rules/
-      champaign-1_Rules.md
+      Campaign-1_Rules.md
     art/
       art_log.md
 ```
 
-Additional numbered campaigns follow the same campaign-folder pattern.
+Additional numbered campaigns follow the same campaign-folder pattern, including their own `Rules/Campaign-N_Rules.md`.
 
 ---
 
@@ -146,7 +168,8 @@ When playing or editing a campaign, use the repository's current branch as the s
 
 In general:
 
-- `Rule/` owns reusable rules and operating behavior.
+- `Rule/` owns reusable repository-wide rules and operating behavior.
+- `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
 - `New-Sheets/` owns reusable blank sheet structure.
 - `campaigns/active_campaign.json` selects the active campaign.
 - the selected campaign folder owns that campaign's actual canon and mutable state.
@@ -160,7 +183,7 @@ In general:
 - `session_log.md` owns chronological completed-save history.
 - `art/art_log.md` owns verified visual-reference metadata while textual appearance canon remains in the appropriate state file.
 
-If two instructions or state records appear to conflict, use the authority rules in `Rule/RULE_AUTHORITY_AND_HIERARCHY.md` and the ownership rules in `Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md` rather than guessing.
+If rules conflict, use `Rule/RULE_AUTHORITY_AND_HIERARCHY.md`. If state ownership is unclear, use `Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md` rather than guessing.
 
 ---
 
@@ -168,11 +191,11 @@ If two instructions or state records appear to conflict, use the authority rules
 
 When the player asks to continue play, ChatGPT should first resolve the active campaign from `campaigns/active_campaign.json`.
 
-Then read the active campaign's current state required for the scene, including `active_game.json` and `turn_save.md`, plus any relevant character, NPC, inventory, world, history, pricing, or visual-reference files.
+Then read the applicable reusable rules under `Rule/`, the active campaign's `Rules/Campaign-N_Rules.md`, and the current state required for the scene, including `active_game.json` and `turn_save.md` plus any relevant character, NPC, inventory, world, history, pricing, or visual-reference files.
 
 If `turn_save.md` contains an unfinished Campaign Turn, recover and continue that Turn according to the Campaign Turn, save, verification, and recovery rules rather than starting a new one or silently discarding staged state.
 
-Do not reconstruct missing campaign canon from another campaign, previous chats, deleted material, or repository history unless the player explicitly requests a specific import permitted by the rules.
+Do not reconstruct missing campaign canon or local rules from another campaign, previous chats, deleted material, or repository history unless the player explicitly requests a specific import permitted by the rules.
 
 ---
 
@@ -186,9 +209,17 @@ campaigns/campaign-2/
 
 Create its campaign state from the blank templates in `New-Sheets/`, not from another campaign's populated files.
 
+Create its own local rule file at:
+
+```text
+campaigns/campaign-2/Rules/Campaign-2_Rules.md
+```
+
+Begin that file with no active campaign-specific rules unless the player explicitly establishes some. Do not copy another campaign's local rules into it.
+
 The new campaign also needs its own `active_game.json` initialized according to the campaign setup, character creation, advancement, save-revision, and Campaign Turn rules.
 
-Do not import existing characters, NPCs, relationships, items, locations, quests, secrets, or story events merely because they exist in another numbered campaign.
+Do not import existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, or other campaign material merely because it exists in another numbered campaign.
 
 Change `campaigns/active_campaign.json` only when the new campaign should become the active campaign.
 
@@ -216,10 +247,11 @@ Generated image files themselves are player-managed. The repository may store ve
 
 ## Design principle
 
-This repository intentionally separates **instructions from state**:
+This repository intentionally separates reusable instructions, campaign-local instructions, templates, and state:
 
-> `Rule/` explains how the game works.  
+> `Rule/` explains how every campaign works by default.  
+> `campaigns/campaign-N/Rules/` records only the persistent rule differences for that campaign.  
 > `New-Sheets/` defines what fresh campaign records look like.  
-> `campaigns/` records what has actually happened.
+> the remaining files under `campaigns/campaign-N/` record what is actually true or has happened in that campaign.
 
-Keeping those layers separate makes it possible to improve the game system without rewriting campaign history, create new campaigns without importing old canon, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
+Keeping those layers separate makes it possible to improve the reusable game system without rewriting campaign history, preserve special campaign rules without leaking them into other campaigns, create new campaigns without importing old canon, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
