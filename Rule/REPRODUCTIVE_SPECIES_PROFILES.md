@@ -6,7 +6,7 @@ This file is the repository-wide authority for the **small reproductive profile 
 
 It does not replace ordinary D&D species mechanics. It adds only the reproductive biology needed by `REPRODUCTION_AND_LINEAGE.md`.
 
-A species must have enough of this profile established before ChatGPT treats it as breeding-eligible. Do not invent missing reproductive anatomy, compatibility, gestation, or fertilization facts merely to make a pairing work.
+A species must have enough of this profile established before ChatGPT treats it as breeding-eligible. Do not invent missing reproductive anatomy, compatibility, gestation, fertilization, or delivery facts merely to make a pairing work.
 
 ## Initial global scope
 
@@ -44,6 +44,7 @@ Each breeding-eligible species should have one compact profile containing the fo
 - **Development Method:** `Live-bearing`, `Egg-laying`, `Host-dependent / implanted`, or another specifically established biological method
 - **Carrier / Host:** which sex or biological host normally carries, incubates, protects, or nourishes the developing offspring, if any
 - **Special Biological Requirements:** environment, anatomy, reproductive structure, incubation requirement, host requirement, or other biological condition required for successful reproduction
+- **Birth / Hatching Constraints:** anatomical or developmental limits relevant to successful delivery or hatching, including traits that normally must be small, soft, folded, immature, or otherwise incompletely developed at birth or hatching
 
 ### Crossbreeding information
 
@@ -92,13 +93,14 @@ For each proposed pairing, ChatGPT must compare both species' profiles and verif
 4. the required reproductive anatomy is present and functional
 5. the embryo, fertilized egg, or equivalent offspring stage has a biologically viable development pathway
 6. any required external environment, carrier, host, implantation pathway, incubation condition, or other biological requirement is satisfied
-7. the pairing falls into `Naturally compatible`, `Cross-species compatible`, or an actually satisfied `Conditionally compatible` pathway
+7. the carrying parent's Birth / Hatching Constraints can be satisfied by the developing hybrid, including delayed expression of inherited traits when needed
+8. the pairing falls into `Naturally compatible`, `Cross-species compatible`, or an actually satisfied `Conditionally compatible` pathway
 
 If those checks fail, the pairing is not biologically eligible under the current system.
 
 ## Carrying biology and offspring biology are separate
 
-The reproductive profile determines **how conception, gestation, incubation, implantation, or delivery physically works**.
+The reproductive profile determines **how conception, gestation, incubation, implantation, delivery, or hatching physically works**.
 
 It does not determine the final hybrid phenotype by itself.
 
@@ -108,6 +110,24 @@ Examples:
 - a female live-bearing elf can carry and give live birth to an elf/dragon hybrid when the dragon-male/elf-female pairing is otherwise compatible
 
 The carrying parent's reproductive biology normally determines the development and delivery method. Hybrid ancestry, appearance, inherited abilities, resistances, vulnerabilities, and other offspring traits are resolved by the separate hybrid-inheritance mechanics.
+
+A hybrid trait that would conflict with viable delivery or hatching does not have to be fully expressed at birth. The trait may remain developmentally immature and emerge later under `REPRODUCTION_AND_LINEAGE.md`.
+
+## Birth / Hatching Constraints
+
+Use this field to record only species-level constraints that matter to successful delivery or hatching.
+
+Examples include:
+
+- live-born young must remain sufficiently flexible for delivery
+- rigid horns, antlers, plates, spines, or similar structures normally harden after birth
+- large wings or crests normally begin folded, undersized, or immature
+- egg-laying young may complete more external development after laying than a comparable live-born species
+- a particular shell, membrane, birth canal, brood pouch, or exit structure imposes a meaningful maximum form or size at delivery
+
+This field does not define the final hybrid inheritance result. It provides the biological constraints that the later hybrid-development system must respect.
+
+When a hybrid inherits a feature that cannot reasonably be fully developed during the carrying parent's pregnancy or delivery method, delayed post-birth or post-hatching development is preferred over either deleting the inherited feature or forcing a biologically incoherent delivery.
 
 ## External fertilization profiles
 
@@ -164,6 +184,7 @@ Use this format for each species entered into the catalog:
 - Development Method: Live-bearing / Egg-laying / Host-dependent / Other
 - Carrier / Host:
 - Special Biological Requirements:
+- Birth / Hatching Constraints:
 - General Crossbreeding Potential: Naturally compatible / Cross-species compatible / Conditionally compatible / Incompatible by ordinary biology
 - Known Compatible Groups / Species:
 - Known Conditional Pairings:
