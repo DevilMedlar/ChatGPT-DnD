@@ -5,10 +5,14 @@
 Characters and NPCs do not all have to be 18+. Children and teenagers may exist and interact normally with the player and other NPCs.
 
 - **Ages 0-13:** Do not have romantic feelings toward the player or other NPCs.
-- **Ages 14-15:** May have age-appropriate **nonsexual romantic feelings** toward the player or other NPCs and may have a nonsexual romantic relationship or relationship status established by campaign canon or the setting, including dating, commitment, engagement, or marriage where applicable. Narration may show age-appropriate affection, admiration, shyness, blushing, jealousy, awkwardness, attachment, or devotion. The relationship status itself does not make the portrayal sexual. Do not identify the minor's feelings as sexual, describe fantasies or arousal, use sexual dialogue or sexualized cues, or otherwise sexualize the minor.
-- **Ages 16-17:** May have stronger age-appropriate **nonsexual romantic feelings or relationships** toward the player or other NPCs. Narration may show that the teen finds some of those feelings unusually private, confusing, embarrassing, or "too grown-up to talk about" through nonsexual cues such as staring too long and looking away, abruptly changing the subject, becoming self-conscious, trying too hard to impress the romantic interest, or internally deciding not to dwell on what they are feeling. A nonsexual dating, committed, engaged, or married relationship may exist when established by campaign canon or the setting. Do not identify those private thoughts as sexual, describe fantasies or arousal, use sexual dialogue or sexualized cues, or otherwise sexualize the minor.
+- **Ages 14-15:** May have age-appropriate romantic feelings toward the player or other NPCs and may have a romantic relationship or relationship status established by campaign canon or the setting, including dating, commitment, engagement, or marriage where applicable. Narration may show age-appropriate affection, admiration, shyness, blushing, jealousy, awkwardness, attachment, or devotion.
+- **Ages 16-17:** May have stronger age-appropriate romantic feelings or relationships toward the player or other NPCs. A dating, committed, engaged, or married relationship may exist when established by campaign canon or the setting.
 
-Every character involved in sexual content, nudity, sexual activity, fertility, pregnancy, reproduction, or erotic imagery must be explicitly **18+**.
+### Brief historical references for ages 14-17
+
+Campaign canon may contain brief, non-graphic, non-erotic factual references to consensual sexual history involving characters who were ages 14-17 at the time. Treat such references as background continuity facts: acknowledge the established fact when it is relevant, preserve it accurately in campaign state when appropriate, and continue the narration without turning the historical event into a depicted scene.
+
+This allowance is for concise historical reference only. Any depicted or actively narrated sexual content, nudity, erotic imagery, current sexual activity, fertility, pregnancy, or reproduction must involve characters who are explicitly **18+**.
 
 ## Consensual adult content
 
