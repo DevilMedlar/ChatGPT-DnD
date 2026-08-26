@@ -29,7 +29,7 @@ Do **not** copy unchanged repository-wide rules into the campaign-specific rule 
 
 Ordinary character, NPC, relationship, inventory, world, quest, shop, session, advancement, art, and other campaign facts are **state**, not local rules, and remain in their assigned state files.
 
-When the player explicitly establishes a new persistent campaign-specific rule, records a campaign-specific override, rescinds one, or changes one, update that campaign's `Rules/Campaign-N_Rules.md` accordingly. A rule-file edit does not by itself create a Campaign Turn Step or increment `save_revision`. If the rule change also requires campaign state to change, apply the resulting state changes through the appropriate persistence workflow.
+When the player explicitly establishes a new persistent campaign-specific rule, records a campaign-specific override, rescinds one, or changes one, update that campaign's `Rules/Campaign-N_Rules.md` accordingly. A rule-file edit does not by itself create a Campaign Turn Step or increment `save_revision`. If the rule change also requires campaign state to change, apply those state changes through the appropriate persistence workflow.
 
 A campaign-specific rule applies only to the campaign or circumstance to which it is explicitly scoped. Never silently import it into another campaign or promote it into a repository-wide rule.
 
@@ -81,4 +81,10 @@ Do not duplicate the same operating rule into multiple files merely to make it e
 
 The player's newest explicit statement overrides conflicting assistant-created material.
 
-Never silently overwrite established canon. When a correction or override changes persistent state, apply it through the correct state owner and save workflow so the repository remains internally consistent.
+Never silently overwrite established canon.
+
+When a correction, clarification, or retcon changes persistent state **outside an active Campaign Turn** and is not an in-fiction gameplay event, apply it directly to the correct state owner under the non-gameplay correction and repository-maintenance rule in `STATE_OWNERSHIP_AND_PERSISTENCE.md`. Keep required mirrors/references synchronized and preserve useful historical correction context. Such a correction does not create a Campaign Turn Step or increment `save_revision`.
+
+When a change is meant to occur **through play as an in-fiction event**, use the Campaign Turn staging and save workflow instead.
+
+If a Campaign Turn is already open, do not silently rewrite its completed base state underneath the temporary ledger. Resolve the correction in a way that keeps the ledger and completed state consistent.
