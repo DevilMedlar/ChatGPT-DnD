@@ -92,21 +92,49 @@ If the player says **No**, keep revision 0 open and make no transition to revisi
 
 If the player gives **Corrections**, apply or stage the requested character-creation corrections, re-run the final review, and ask again.
 
+## GM-authored opening frame for revision 1
+
+The player is not required to provide a title, destination, opening quest, opening location, or predetermined first-scene activity.
+
+After the player confirms that character creation is complete, ChatGPT as GM/DM creates the campaign's opening narrative frame and uses that frame to establish the revision-1 starting scene and location.
+
+The opening frame should be consistent with all completed character/backstory canon and any already-established world facts, but otherwise ChatGPT may freely create the initial situation, surroundings, time, atmosphere, nearby NPCs, hooks, complications, and other GM-controlled world details needed to begin play.
+
+For that opening frame:
+
+- set `active_game.json.current_scene_name` to a concise scene label chosen by ChatGPT that describes where the fiction currently is and/or what is presently happening
+- replace the pre-game `Character creation` scene label; do not carry that label into the completed revision-1 gameplay baseline
+- set `active_game.json.current_location` to the actual starting location established by the opening narration
+- record persistent world facts introduced by the opening frame in their proper owners when needed for continuity
+- keep the scene name descriptive rather than prescriptive
+- do not ask the player to invent or approve a scene title merely to start the campaign
+- do not interpret the scene name as requiring the player-controlled PC to remain there, perform the activity named by the scene, follow a particular quest, or make a predetermined decision
+
+A scene label may later change whenever the fiction changes. The current story determines the label; the label never determines what the story is allowed to become.
+
+Creating this opening frame establishes the revision-1 starting situation but does not choose the player-controlled PC's first action or dialogue and does not itself create a Campaign Turn Step. Campaign Turn 1 gameplay begins only after the revision-1 baseline is complete and the Turn ledger changes from `ready` to `in_progress`.
+
+GM authorship and player-agency boundaries are defined in `GM_BEHAVIOR_AND_PRIORITY.md` and `CORE_PARTY_AND_CHARACTER_AGENCY.md`.
+
 ## Transition from revision 0 to revision 1
 
 If the player says **Yes** to the final character-creation review:
 
 1. ensure every final character-creation fact is written to its proper permanent owner
 2. synchronize all required duplicated representations
-3. set `active_game.json.character_created` to `true`
-4. keep `active_game.json.campaign_turn_number` at `0` because Campaign Turn 1 has not completed or begun merely from this transition
-5. set `active_game.json.save_revision` from `0` to `1`
-6. set `active_game.json.last_sync_note` to a compact statement that character creation is complete and revision 1 is the starting baseline for Campaign Turn 1
-7. append one chronological `session_log.md` entry recording character creation completion and establishment of the revision-1 Campaign Turn 1 starting baseline; do not fabricate intermediate character-creation checkpoint entries
-8. keep `turn_save.md.Campaign Turn` at `1`, keep `Status` as `ready`, keep `Current Step` at `0`, and set `Base save revision` from `0` to `1`
-9. do not create a Campaign Turn Step and do not set `turn_save.md` to `in_progress` merely because character creation completed
+3. have ChatGPT create the GM-authored opening frame described above
+4. replace `active_game.json.current_scene_name` with ChatGPT's concise scene label for that opening frame
+5. set `active_game.json.current_location` to the actual starting location established by that opening frame
+6. persist any continuity-relevant opening world facts to their proper owners
+7. set `active_game.json.character_created` to `true`
+8. keep `active_game.json.campaign_turn_number` at `0` because Campaign Turn 1 has not completed or begun merely from this transition
+9. set `active_game.json.save_revision` from `0` to `1`
+10. set `active_game.json.last_sync_note` to a compact statement that character creation is complete and revision 1 is the starting baseline for Campaign Turn 1
+11. append one chronological `session_log.md` entry recording character creation completion and establishment of the revision-1 Campaign Turn 1 starting baseline; do not fabricate intermediate character-creation checkpoint entries
+12. keep `turn_save.md.Campaign Turn` at `1`, keep `Status` as `ready`, keep `Current Step` at `0`, set `Current Scene` to the same opening scene label stored in `active_game.json.current_scene_name`, and set `Base save revision` from `0` to `1`
+13. do not create a Campaign Turn Step and do not set `turn_save.md` to `in_progress` merely because character creation completed
 
-Whenever tooling permits an atomic multi-file commit, the final synchronized character-creation state, the single completion entry in `session_log.md`, `active_game.json`, and the `turn_save.md` base-revision update should be committed together.
+Whenever tooling permits an atomic multi-file commit, the final synchronized character-creation state, opening-frame persistent state, the single completion entry in `session_log.md`, `active_game.json`, and the `turn_save.md` baseline update should be committed together.
 
 If writes must occur sequentially, update supporting permanent state first, then the session log and ready Turn ledger, and update `active_game.json` last as the authoritative completion marker. Verify the resulting revision-1 baseline before starting Campaign Turn 1.
 
@@ -119,9 +147,12 @@ Immediately before Campaign Turn 1 begins, the expected baseline is:
 - `active_game.json.campaign_turn_number: 0`
 - `active_game.json.character_created: true`
 - `active_game.json.save_revision: 1`
+- `active_game.json.current_scene_name`: ChatGPT's current descriptive opening-scene label, not `Character creation`
+- `active_game.json.current_location`: the actual opening location established by ChatGPT's opening narration
 - `turn_save.md.Campaign Turn: 1`
 - `turn_save.md.Status: ready`
 - `turn_save.md.Current Step: 0`
+- `turn_save.md.Current Scene`: matches the revision-1 opening scene label
 - `turn_save.md.Base save revision: 1`
 
 Starting Campaign Turn 1 changes the Turn ledger to `in_progress` but does not increment `save_revision`. Completing and permanently saving Campaign Turn 1 later advances `save_revision` from `1` to `2`.
