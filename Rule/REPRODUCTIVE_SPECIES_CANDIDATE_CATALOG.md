@@ -2,16 +2,41 @@
 
 ## Purpose and authority
 
-This file is the repository-wide **active global whitelist** for species selectable in the homebrew crossbreeding system.
+This file is the repository-wide **active global whitelist** for:
 
-`REPRODUCTION_AND_LINEAGE.md` governs how reproduction works. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` supplies the reproductive biology for every entry below.
+- species / ancestry options allowed during character creation for every required core PC and any later PC created under the global rules
+- species selectable in the homebrew crossbreeding system
 
-A species omitted from this whitelist is not globally selectable merely because it appears in an older source, deleted file, Git history, remembered chat context, or surviving background research.
+This file is therefore both the **global character-creation species authority** and the **global reproductive-species selection authority**.
+
+`CHARACTER_CREATION.md` governs the character-creation workflow. `REPRODUCTION_AND_LINEAGE.md` governs how reproduction works. `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` supplies the reproductive biology for every entry below.
+
+A species omitted from this whitelist is not globally selectable merely because it appears in an older source, deleted file, Git history, remembered chat context, surviving background research, an official character builder, or another D&D publication.
 
 An omitted or new species may enter only through:
 
-1. the player's newer explicit global instruction, or
+1. the player's newer explicit global instruction that updates this whitelist, or
 2. an applicable campaign-specific override.
+
+## Character-creation species limitation
+
+Under the global rules:
+
+- the player-controlled PC must select one standard species listed in the active whitelist below
+- the ChatGPT-controlled PC / co-protagonist must select one standard species listed in the active whitelist below
+- any later replacement PC, additional PC, or newly created core PC must also select from this whitelist
+- ChatGPT must present only the active-whitelist species as ordinary character-creation choices
+- a class, subclass, background, profession, title, transformation, disguise, ancestry description, or remembered prior-campaign option cannot be used to bypass the whitelist
+- a subrace, setting variant, alternate lineage, third-party version, or hybrid lineage is unavailable unless it is explicitly approved under the rules below
+
+If the player requests an unlisted species during character creation, do not make that choice canonical until either:
+
+1. the player explicitly adds it to the global whitelist and its required profile is established, or
+2. the active campaign records a campaign-specific species override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
+
+A campaign-specific addition applies only to that campaign and does not change this global whitelist.
+
+This character-creation limitation does **not** erase unlisted creatures from the setting. Unlisted species may still exist as NPCs, monsters, wildlife, historical peoples, or world inhabitants when appropriate. They are simply not globally selectable as PCs and are not automatically eligible for the global crossbreeding system.
 
 ## Biological admission gate
 
@@ -148,13 +173,15 @@ The active global whitelist contains **13 standard species entries**:
 
 ## Selection rules
 
-- Offer only these thirteen standard entries for ordinary global character and NPC reproductive-species selection.
+- Offer only these thirteen standard entries during ordinary global PC character creation.
+- Use the same thirteen entries for global reproductive-species selection.
+- Before completing character creation, verify that every required core PC's species / ancestry exactly matches an active-whitelist entry or an explicit applicable campaign-specific override.
 - Do not display or silently substitute subraces, variations, alternate lineages, or setting versions.
 - Consult `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` for biology.
 - Consult `REPRODUCTION_AND_LINEAGE.md` for compatibility, directional development, birth safety, adoption, and hybrid handling.
 - Every active-whitelist species is cross-species compatible with every other active-whitelist species unless a specific directional physical condition temporarily makes the pairing conditional.
 - True Dragon size is never such a blocking condition because the True Dragon reproductive-form accommodation resolves it.
-- Do not offer a removed species or variation through an older profile, historical commit, deleted file, or remembered conversation.
+- Do not offer a removed species or variation through an older profile, historical commit, deleted file, official character builder, sourcebook, or remembered conversation.
 - Campaign-specific additions belong in that campaign's local rule file and do not change the global whitelist.
 
 ## Adding a future entry
@@ -168,5 +195,6 @@ Before adding a new standard canonical entry, verify that:
 5. mating provides internal fertilization
 6. the offspring has a viable biological development route
 7. an existing standard entry does not already cover the exact approved species
+8. its reusable reproductive profile is added to `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md`
 
 Do not add a variant beneath an existing entry without the player's explicit approval.
