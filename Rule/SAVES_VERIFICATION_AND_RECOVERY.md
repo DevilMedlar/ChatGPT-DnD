@@ -25,6 +25,7 @@ The review must include:
 - scheduled events and deadlines reached or crossed
 - final scene and location
 - all real persistent changes
+- every reproductive cooldown that remains active after the proposed End Clock
 
 ## No
 
@@ -39,7 +40,7 @@ If the player says **No**:
 If the player gives **Corrections**:
 
 - correct the temporary Turn record first
-- recalculate clock-dependent values, schedules, Final Turn State, and planned transfers
+- recalculate clock-dependent values, schedules, cooldowns, Final Turn State, and planned transfers
 - show the corrected review
 - request confirmation again
 
@@ -61,13 +62,20 @@ After approval:
 2. update supporting state owners before the completed-state marker when writes are sequential
 3. synchronize PC Level/XP mirrors with `active_game.json.character_advancement`
 4. synchronize NPC master/detail possessions with `inventory.md`
-5. reconcile each shop transaction as one connected stock/currency/inventory/snapshot result
+5. reconcile each shop transaction as one connected stock/currency/inventory/snapshot result using:
+   - Final Unit Price calculated and rounded once for one item
+   - Final Transaction Price = Quantity × Final Unit Price
+   - a minimum price of `0 CP`
 6. synchronize routine Base Prices and vendor mirrors
 7. reconcile reproductive and family state:
-   - core-PC state to `character_sheet.md`
-   - NPC, child, egg, hybrid, biological-parent, adoptive-parent, and guardian state to `NPC-state.md`
-   - due, laying, hatching, and developmental schedules to `world_state.md`
-8. reconcile world, quest, clue, discovery, relationship, inventory, art, and other approved state
+   - copy each still-active conception-check cooldown to both participants' current reproductive state
+   - copy each still-active failed mundane-detection cooldown to the reproductive-state target
+   - on conception, store only parents, aggregate offspring or fertilized-egg count, conception clock, route, and due/laying/hatching schedules
+   - do not create individual child records or resolve sex, appearance, or mechanical hybrid traits at conception
+   - at live birth or hatching, create each individual child record in `NPC-state.md`, including player-rolled biological sex and visible appearance
+   - keep mechanical hybrid traits and dependencies unresolved until later aging under a player-approved mechanic
+   - reconcile due, laying, hatching, and established developmental schedules to `world_state.md`
+8. reconcile world, quest, clue, discovery, unresolved-question, relationship, inventory, art, and other approved state
 9. append one completed Campaign Turn checkpoint to `session_log.md`, including clock range when material
 10. prepare `active_game.json` with:
    - completed Campaign Turn number
@@ -104,22 +112,39 @@ Verify at minimum:
 - every approved core-PC change landed
 - Level/XP mirrors exactly match authoritative advancement
 - species/class resources, conditions, relationships, reproductive state, parent state, and offspring links agree
+- DevilMedlar and Senpai share every learned fact; no separate hidden knowledge was created between them
+
+## Reproductive state
+
+- every conception check has the exact check clock, outcome, and next eligible clock
+- each still-active pair cooldown appears in both participants' current state
+- expired cooldowns are not retained as active state
+- every failed mundane detection check has the exact next eligible clock in the target's state
+- conception stores only aggregate count and schedules, not premature child sex, appearance, or mechanical traits
+- no individual child NPC record exists before live birth or hatching
+- every newborn or hatchling has one stable record after birth or hatching
+- mechanical hybrid traits remain unresolved until an approved aging mechanic resolves them
 
 ## NPC, child, and family state
 
 - stable IDs remain unique and unchanged
 - biological parents, adoptive parents, guardians, children, and co-parents are correctly separated and cross-referenced
-- hybrid traits, developmental milestones, fertility, pregnancy, egg, birth, and hatching state match the approved results
+- revealed information and known unanswered questions match established play
+- no untold hidden answer or undiscovered fact was added
 
 ## Inventory and transactions
 
 - currency, quantities, charges, equipment, ammunition, consumables, and item snapshots are correct
 - vendor stock, buyer currency, acquired item, stack result, and NPC ownership reconcile
 - routine Base Price mirrors agree
+- quantity equals the number of items transferred
+- Final Transaction Price exactly equals Quantity × Final Unit Price
+- no price is negative
 
 ## World and chronology
 
-- locations, quests, clues, discoveries, schedules, due dates, laying dates, hatching dates, deadlines, and consequences landed
+- locations, quests, clues, discoveries, unresolved questions, schedules, due dates, laying dates, hatching dates, deadlines, and consequences landed
+- unresolved mysteries are recorded as known questions without hidden answers
 - `session_log.md` contains the completed checkpoint with correct chronology
 - every scheduled event crossed by the Turn's time passage was handled
 
@@ -165,17 +190,18 @@ If the player says **No**:
 
 If the player says **Yes**:
 
-1. clear completed Turn events and live in-turn state
-2. clear actual reproductive-event and shop-transaction records while preserving labeled templates and guidance
-3. clear pending transfers, Final Review, verification, and prior reset approval
-4. prepare the next Campaign Turn number
-5. set Status to `ready`
-6. set Current Step to `0`
-7. set Current Scene to `None yet.`
-8. set Base save revision to the completed revision
-9. set Start Clock and Current In-Turn Clock to the completed `active_game.json.campaign_clock`
-10. set Total Elapsed This Turn to zero
-11. clear actual time-change records
+1. confirm every still-active conception and detection cooldown was transferred to its current permanent state owner
+2. clear completed Turn events and live in-turn state
+3. clear actual reproductive-event and shop-transaction records while preserving labeled templates and guidance
+4. clear pending transfers, Final Review, verification, and prior reset approval
+5. prepare the next Campaign Turn number
+6. set Status to `ready`
+7. set Current Step to `0`
+8. set Current Scene to `None yet.`
+9. set Base save revision to the completed revision
+10. set Start Clock and Current In-Turn Clock to the completed `active_game.json.campaign_clock`
+11. set Total Elapsed This Turn to zero
+12. clear actual time-change records
 
 Reset is a cleanup checkpoint and does not increment `save_revision`.
 
