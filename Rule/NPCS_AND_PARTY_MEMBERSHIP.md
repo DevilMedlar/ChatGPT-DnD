@@ -5,6 +5,8 @@
 Within each campaign, every persistent NPC receives one stable campaign-local ID in the form `NPC-0001`, `NPC-0002`, and so on when first added to `NPC-state.md`.
 
 - Assign the next unused numeric ID in sequence.
+- A newborn or hatchling receives the next unused ID at live birth or hatching.
+- Do not create an individual unborn-child or unhatched-child NPC record before live birth or hatching; the female parent's reproductive state owns the aggregate pregnancy or clutch before then.
 - An NPC's canonical **Name** remains fixed once established, except when correcting a genuine transcription or data-entry mistake.
 - Titles, ranks, honorifics, epithets, nicknames, aliases, disguises, roles, locations, relationships, party status, and life status are separate mutable facts and do not replace or rename the NPC's canonical Name.
 - An NPC ID never changes because a title, role, location, relationship, party status, life status, or other mutable descriptive state changes.
@@ -23,16 +25,20 @@ When useful, mutable titles, ranks, epithets, honorifics, aliases, or similar de
 - stable ID and identity
 - textual appearance canon
 - statistics, abilities, conditions, and mechanical state
-- personality, values, goals, fears, habits, and priorities
+- personality, values, goals, fears, habits, and priorities that have been established or revealed
 - relationships and attractions
-- factual knowledge, beliefs, information shared or withheld, and secrets
+- information told to, witnessed by, or discovered by the core PCs
+- known NPC beliefs, lies, contradictions, misunderstandings, and unanswered questions
 - party membership and off-party location
 - master personal possessions
-- NPC-specific quest or mission involvement
+- reproductive cooldowns, parentage, pregnancy or egg state, and post-birth child development
+- NPC-specific quest or mission involvement known to the core PCs
 - shops, services, business state, and shop stock
 - compact NPC-specific continuity history
 
 Important NPCs should track only fields that are relevant and established. Do not invent filler merely because a template contains a field.
+
+Do not store an untold hidden answer, unrevealed secret, undiscovered motive, or unknown solution merely for future GM use. If the core PCs know only that a question exists, record the question rather than its answer in the appropriate NPC or world record.
 
 The required ChatGPT-controlled core PC is a PC, not an NPC, and is governed by `CORE_PARTY_AND_CHARACTER_AGENCY.md` and `ADVANCEMENT_AND_XP.md`.
 
@@ -77,8 +83,8 @@ When `In party: Yes`, do not duplicate moment-to-moment movement in `NPC-state.m
 
 `world_state.md` may reference persistent NPCs when they matter to locations, factions, quests, clues, discoveries, or world consequences, but must use the stable NPC ID and should not duplicate the full NPC record.
 
-`NPC-state.md` owns an NPC's personal quest involvement, motives, promises, information, rewards offered, conditions, and related continuity. `world_state.md` owns the overall quest or mission state.
+`NPC-state.md` owns an NPC's revealed personal quest involvement, promises, information, rewards offered, conditions, and related continuity. `world_state.md` owns the overall quest or mission state and unresolved questions known to the core PCs.
 
 For merchant NPCs, `NPC-state.md` owns persistent business state, current shop stock, vendor-specific pricing state, storefront presentation fields, and services. Routine recurring Base Prices are owned separately by `routine_item_prices.md`.
 
-Relationship-state semantics are defined in `RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`, inventory detail in `INVENTORY_EQUIPMENT_AND_ITEMS.md`, and shop behavior in `SHOPS_PRICING_AND_TRANSACTIONS.md`.
+Relationship-state semantics are defined in `RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`, inventory detail in `INVENTORY_EQUIPMENT_AND_ITEMS.md`, reproduction in `REPRODUCTION_AND_LINEAGE.md`, and shop behavior in `SHOPS_PRICING_AND_TRANSACTIONS.md`.
