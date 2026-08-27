@@ -354,21 +354,42 @@ Rules:
 - clamp an otherwise possible final target to a minimum of `1` and maximum of `95`
 - an explicit guaranteed-conception or guaranteed-prevention effect may override that clamp when its wording truly establishes certainty
 
+## Percentile roll using one d10
+
+A physical 100-sided die is not required.
+
+Use the player's ordinary `d10` twice in sequence:
+
+1. the first `d10` roll is the tens digit
+2. the second `d10` roll is the ones digit
+3. if the die is numbered `0-9`, use `0` normally as a zero digit
+4. if the die is numbered `1-10`, treat a rolled `10` as the digit `0`
+5. combine the two digits into one percentile result
+6. `00` counts as `100`
+
+Examples:
+
+- first roll `4`, second roll `7` -> `47`
+- first roll `0` or `10`, second roll `8` -> `8`
+- first roll `0` or `10`, second roll `0` or `10` -> `100`
+
+Every result from `1` through `100` is equally likely. Do not add or multiply the two rolls.
+
 ## Player-rolled conception check
 
 When a conception opportunity exists:
 
 1. ChatGPT states the compatibility category, visible modifiers, and Final Conception Target unless the purpose must remain hidden from the characters
-2. ChatGPT asks the player to roll `1d100`
-3. percentile `00` counts as `100`
-4. if the result is equal to or lower than the Final Conception Target, conception succeeds
-5. if the result is higher, conception does not occur from that opportunity
+2. ChatGPT asks the player to roll the same `d10` twice, first for tens and then for ones
+3. combine the rolls according to the percentile rule above
+4. if the combined result is equal to or lower than the Final Conception Target, conception succeeds
+5. if the combined result is higher, conception does not occur from that opportunity
 
 There are no automatic critical effects on `1` or `100`.
 
 A failed conception check causes no automatic injury, complication, infertility, or relationship consequence.
 
-ChatGPT never generates, selects, changes, rerolls, or secretly substitutes the result.
+ChatGPT never generates, selects, changes, rerolls, or secretly substitutes either d10 result or the combined percentile result.
 
 ## What a successful conception check means
 
@@ -418,7 +439,7 @@ Do not invent reliability percentages for an item, spell, treatment, or method w
 
 The player still rolls every die even when the characters should not yet know why the roll matters.
 
-When appropriate, ChatGPT may request `1d100` without revealing the purpose or Final Conception Target until the fiction permits discovery. The roll and mechanical result must still be recorded accurately.
+When appropriate, ChatGPT may request two sequential `d10` rolls without revealing their purpose or the Final Conception Target until the fiction permits discovery. The two physical rolls and the combined percentile result must still be recorded accurately.
 
 Character knowledge of pregnancy or fertilized-egg formation is separate from the actual biological state. Detection uses later mechanics.
 
@@ -437,7 +458,9 @@ During an active Campaign Turn, record each conception check in `turn_save.md` w
 - Base Conception Target
 - explicit effect modifiers
 - Final Conception Target
-- player-roll result
+- first d10 result for the tens digit
+- second d10 result for the ones digit
+- combined percentile result
 - success or failure
 - live-bearing or egg-forming development route on success
 
