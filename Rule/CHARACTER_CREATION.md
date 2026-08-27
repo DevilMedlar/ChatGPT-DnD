@@ -1,187 +1,267 @@
 # Character Creation
 
+## Purpose and authority
+
+This file owns the workflow for creating, reviewing, and permanently establishing the required core PCs.
+
+- `PLAYABLE_CHARACTER_OPTIONS.md` owns approved species, species mechanics, class policy, background policy, feat policy, and the homebrew-option completion gates.
+- `CORE_GAME_MECHANICS.md` owns the general 5.5e mechanics and campaign clock.
+- `CORE_PARTY_AND_CHARACTER_AGENCY.md` owns which character the player controls and which character ChatGPT controls.
+- `ADULT_CONTENT_AND_CONSENT.md` owns adult-content boundaries.
+- `STATE_OWNERSHIP_AND_PERSISTENCE.md` owns where finalized character state is stored.
+
 ## Required core PCs
 
-Character creation must establish the required player-controlled PC and ChatGPT-controlled PC / co-protagonist before Campaign Turn 1 begins.
+Before Campaign Turn 1 begins, character creation must establish:
 
-At minimum, establish for each required core PC:
+1. the player-controlled PC, and
+2. the ChatGPT-controlled PC / co-protagonist.
+
+At minimum, establish for each:
 
 - Name
-- Age, explicitly 18+ for player characters participating in adult content
-- Gender / pronouns, consistent with `CORE_PARTY_AND_CHARACTER_AGENCY.md` unless the player explicitly changes that rule for the campaign
-- Species / ancestry, selected under `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`
-- Class or homebrew class
+- Age
+- Gender / pronouns
+- Biological reproductive role when relevant
+- Species / ancestry
+- Class or approved homebrew class
 - Background
+- Level and XP
 - Ability scores
-- Skill proficiencies
-- Starting HP
+- Saving throw and skill proficiencies
+- Hit Points and Hit Dice
 - Armor Class
+- Initiative
 - Speed
-- Starting equipment
-- Core class / ancestry features
+- Proficiency Bonus
+- Starting equipment and currency
+- Species traits
+- Class features, spells, and resources
 - Appearance
+- Backstory and important relationships
+- Current conditions and ongoing effects
+- Reproductive state when the player chooses to establish it
 
-Blank character fields are intentionally undecided until established during character creation. Do not fill those blanks by recovering or guessing prior-campaign information.
+All PCs must be at least 18 years old. A PC participating in adult or reproductive content must also be physically and reproductively mature.
 
-Optional adult-character details may include romantic interests, sexual interests, boundaries, relationship goals, fertility/reproductive details, or other mature themes when the player chooses to establish them. Adult-content boundaries are defined in `ADULT_CONTENT_AND_CONSENT.md`.
+Blank required fields remain undecided until explicitly established. Do not recover, guess, or import them from another campaign, deleted material, or chat memory.
 
-## Species / ancestry character-creation whitelist
+## Species / ancestry limitation
 
-`REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the repository-wide authority for the standard species / ancestry options available during character creation.
+`PLAYABLE_CHARACTER_OPTIONS.md` is the global character-creation species authority.
 
 Under the global rules:
 
-- the player-controlled PC must use one standard species listed in that catalog
-- the ChatGPT-controlled PC / co-protagonist must use one standard species listed in that catalog
-- any replacement PC, additional PC, or later-created core PC must use the same catalog
-- ChatGPT must present only the current active-whitelist entries as ordinary species / ancestry choices
-- an official character builder, sourcebook list, deleted file, Git history, prior chat, class, subclass, background, profession, title, transformation, disguise, or ancestry description cannot add another option by implication
-- a subrace, regional form, setting variant, alternate lineage, third-party version, or hybrid lineage is unavailable unless explicitly approved
+- each required core PC must select one of its thirteen standard species packages
+- every later replacement, additional, or newly created PC must use the same roster
+- the selected package supplies the character's complete species mechanics
+- do not stack that package with an older species version, subrace, lineage, monster stat block, or second package
+- an official builder or sourcebook does not add an option by implication
+- a hybrid is not automatically selectable
 
-If the player requests a species or variation that is not in the active global whitelist, do not finalize it as character canon until one of the following occurs:
+An unlisted species or nonstandard form becomes available only when:
 
-1. the player explicitly adds it to the global catalog and the corresponding reusable profile is established, or
-2. the active campaign records an explicit campaign-specific species override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
+1. the player explicitly adds and completes it globally in `PLAYABLE_CHARACTER_OPTIONS.md`, or
+2. the active campaign records an explicit local option in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
 
-A campaign-specific species option applies only to that campaign and must not be silently added to another campaign or promoted into the global catalog.
+A local option applies only to that campaign.
 
-This restriction limits **PC character creation**, not the existence of creatures in the setting. Unlisted species may still appear as NPCs, monsters, wildlife, historical peoples, or world inhabitants when appropriate. They do not become globally selectable PCs or global crossbreeding participants merely because they appear in the fiction.
+This limits PC creation, not world population. Unlisted creatures may still exist as NPCs, monsters, wildlife, or historical peoples.
 
-A hybrid child or adult hybrid does not automatically become a selectable character-creation lineage. It must be explicitly approved as a stable selectable lineage and receive the required biology before it can enter the global catalog or a campaign-specific roster.
+## Class, subclass, background, and feat selection
 
-## Revision 0 is the full character-creation phase
+Use `PLAYABLE_CHARACTER_OPTIONS.md`.
 
-`save_revision: 0` covers the campaign's entire pre-game character-creation and backstory phase.
+- The twelve listed 5.5e core classes are globally available.
+- Every approved species may choose any approved class.
+- A current official subclass, background, or feat may be used when its complete mechanics can be verified.
+- A homebrew option must pass its completion gate before selection.
+- Do not finalize a character around a class, subclass, background, or feat whose required mechanics remain missing.
+- Use official 5.5e multiclassing rules unless an explicit homebrew rule replaces them.
 
-This includes both the facts supplied when the campaign is first initialized and the additional character, relationship, family, history, starting-inventory, appearance, mechanical, and campaign-premise facts established while character creation continues.
+## Revision 0 is the complete pre-game phase
 
-All such explicitly established character-creation facts are canonical while `save_revision` remains `0`.
-
-Revision 0 is therefore not limited to a small initialization snapshot and does not end when the first additional character detail is finalized. It continues until character creation and required starting state are fully complete and the player confirms the transition into the Campaign Turn 1 starting baseline.
+`save_revision: 0` covers campaign setup, both required PCs, backstory, initial relationships, starting resources, and every other pre-game fact.
 
 During revision 0:
 
 - `active_game.json.campaign_turn_number` remains `0`
-- `active_game.json.character_created` remains `false` until final completion
+- `active_game.json.character_created` remains `false`
 - `active_game.json.save_revision` remains `0`
-- `turn_save.md` remains prepared for Campaign Turn 1 and is not opened for character-creation activity
-- `turn_save.md.Base save revision` remains `0` until the final character-creation transition
-- finalized character-creation and backstory facts may be written to their proper permanent state owners as they are explicitly established
-- discussion, previews, rejected options, and undecided fields are not canonical merely because they were mentioned
-- no intermediate character-creation choice increments `save_revision`
-- no intermediate character-creation choice creates a Campaign Turn Step
-- no intermediate character-creation choice requires a completed `session_log.md` save checkpoint
+- `active_game.json.current_scene_name` remains `Character creation` until the final opening frame
+- the campaign clock remains at its initialized starting value and does not advance for out-of-fiction design discussion
+- `turn_save.md` remains prepared for Campaign Turn 1
+- `turn_save.md.Status` remains `ready`
+- `turn_save.md.Current Step` remains `0`
+- `turn_save.md.Base save revision` remains `0`
+- no character-creation discussion creates a Campaign Turn Step
+- no intermediate choice creates a completed `session_log.md` checkpoint
+- no intermediate choice increments `save_revision`
 
-Revision 0 must not be used to invent filler, resolve undecided fields without the player, import another campaign's state, recover facts from chat memory, or treat guesses as canon.
+Explicitly finalized revision-0 facts may be written directly to their proper permanent owners. Those writes are revisions of the same pre-game baseline, not separate saves.
 
-A transcription error in revision-0 state may be corrected directly. A genuine change to an already established character-creation fact should be treated as the player's newest explicit character-creation direction and kept internally consistent across the applicable state owners, still without incrementing `save_revision` while character creation remains open.
+A transcription mistake may be corrected directly during revision 0. A real change to an already established pre-game choice follows the player's newest explicit direction and must be synchronized everywhere it is represented.
 
-## Working during character creation
+## Working procedure
 
 As character creation proceeds:
 
-1. establish choices and backstory collaboratively
-2. validate each proposed PC species / ancestry against `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` or an explicit applicable campaign-specific override before making it canonical
-3. distinguish finalized player-established facts from discussion, examples, previews, and rejected options
-4. write finalized facts to the correct state owners when persistence is useful or necessary
-5. keep duplicated representations synchronized, including Level/XP mirrors in `character_sheet.md` and authoritative advancement state in `active_game.json`
-6. keep starting equipment, currency, consumables, and other starting resources synchronized with `inventory.md` as they become established
-7. leave required-but-undecided fields blank rather than inventing them
-8. keep `save_revision: 0`, `campaign_turn_number: 0`, and `character_created: false`
-9. keep `turn_save.md` ready for Campaign Turn 1 rather than using it as a character-creation ledger
+1. establish choices collaboratively
+2. distinguish finalized choices from examples, discussion, rejected options, and undecided possibilities
+3. validate the proposed species and its exact package against `PLAYABLE_CHARACTER_OPTIONS.md`
+4. validate the class, subclass, background, feat, and any homebrew mechanics
+5. calculate all derived values from the finalized mechanics
+6. write finalized character details to `character_sheet.md`
+7. write starting equipment, currency, ammunition, consumables, and other possessions to `inventory.md`
+8. synchronize Level/XP mirrors with `active_game.json.character_advancement`
+9. replace the advancement placeholder keys with the PCs' actual names as soon as those names are finalized
+10. preserve `save_revision: 0`, `campaign_turn_number: 0`, and `character_created: false`
+11. leave genuinely undecided fields blank
 
-Repository writes made during revision-0 character creation are persistence of the same pre-game baseline, not separate save revisions.
+## Species-package recording
+
+For each core PC, `character_sheet.md` must record:
+
+- the exact species name from `PLAYABLE_CHARACTER_OPTIONS.md`
+- Creature Type
+- Size
+- Speed and any special movement
+- every species trait
+- every fixed trait choice, such as Dragonborn Draconic Energy
+- each trait's uses, recharge, scaling, and save DC when applicable
+- any form limitations or level gates
+
+Do not record only the species name while leaving the actual mechanics implicit.
+
+## Class-package recording
+
+For each core PC, record enough class information to run play without guessing:
+
+- class and subclass
+- Hit Die
+- proficiencies and armor training
+- class resources
+- all current-level features
+- spellcasting ability, cantrips, prepared/known spells, slots, and focus when applicable
+- Weapon Mastery choices when applicable
+- current uses, charges, or resource totals
+- future feature choices only when they become available
+
+Do not copy the full level 1–20 official class text into the character sheet. Record the character's current mechanical state and reference the current rules for future levels.
+
+## Reproductive state during character creation
+
+Reproductive details are optional unless the campaign premise requires them.
+
+When established, record only explicit facts such as:
+
+- biological reproductive role
+- reproductive maturity
+- fertility status and modifier
+- pregnancy, egg-production, or contraception state
+- established reproductive effects or treatments
+
+The healthy mature default in `REPRODUCTION_AND_LINEAGE.md` may be recorded as `Fertile +0`. Never invent hidden infertility, pregnancy, conception history, or modifiers.
 
 ## Final character-creation review
 
-Before revision 0 may end, verify that every required character-creation field above is established for both required core PCs.
+Before revision 0 may end, verify both required PCs.
 
-Also verify at minimum:
+### Identity and approval
 
-- each required core PC's species / ancestry exactly matches an active standard entry in `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` or an explicit applicable campaign-specific override
-- no unapproved subrace, variation, alternate lineage, hybrid lineage, or unlisted species was made canonical
-- all explicitly established backstory and relationship canon is recorded in the correct owner
-- no rejected option or undecided required fact was made canonical
-- derived character values are internally consistent
-- `character_sheet.md` Level/XP mirrors exactly match `active_game.json.character_advancement`
-- each core PC's finalized starting equipment, starting currency, consumables, ammunition, charges, and other starting resources are recorded in `inventory.md`
-- any equipment summary in `character_sheet.md` agrees with `inventory.md`
-- required campaign-specific rules, when any were explicitly established, are recorded in the campaign's `Rules/Campaign-N_Rules.md`
-- `active_game.json.campaign_turn_number` is still `0`
-- `active_game.json.save_revision` is still `0`
-- `turn_save.md` is still `ready` for Campaign Turn 1 and has no character-creation Steps
+- every required identity field is established
+- each PC is at least 18
+- each species exactly matches an approved standard package or applicable campaign override
+- no unapproved subrace, alternate lineage, hybrid package, monster stat block, or second species package was added
+- each class, subclass, background, feat, and homebrew option is complete and approved
 
-Then show the player the completed character-creation state and any exact final corrections needed for consistency and ask:
+### Mechanical consistency
+
+- ability scores and modifiers are correct
+- HP, Hit Dice, AC, Initiative, Speed, Proficiency Bonus, saving throws, skills, attacks, spell DCs, and resource totals are correct
+- every selected species trait is fully recorded
+- every current class feature is fully recorded
+- Level/XP in `character_sheet.md` exactly matches `active_game.json.character_advancement`
+- starting equipment and currency exactly match `inventory.md`
+- no rejected or undecided option became canonical
+
+### Continuity and state
+
+- finalized backstory and relationships are in their correct owners
+- appearance is sufficiently established for continuity
+- campaign-specific rules are in the campaign's local rule file
+- `campaign_turn_number` is `0`
+- `save_revision` is `0`
+- `character_created` is `false`
+- the clock has a valid initialized value
+- `turn_save.md` is still ready for Campaign Turn 1 and has no gameplay Steps
+
+Then show the completed character-creation state and any exact corrections required, and ask:
 
 `Confirm character creation complete and establish the Campaign Turn 1 baseline? Yes / No / Corrections`
 
-If the player says **No**, keep revision 0 open and make no transition to revision 1.
+If the player says **No**, keep revision 0 open.
 
-If the player gives **Corrections**, apply or stage the requested character-creation corrections, re-run the final review, and ask again.
+If the player provides **Corrections**, apply them, repeat the review, and ask again.
 
-## GM-authored opening frame for revision 1
+## GM-authored opening frame
 
-The player is not required to provide a title, destination, opening quest, opening location, or predetermined first-scene activity.
+After the player confirms character creation:
 
-After the player confirms that character creation is complete, ChatGPT as GM/DM creates the campaign's opening narrative frame and uses that frame to establish the revision-1 starting scene and location.
+- ChatGPT creates the opening situation, location, time, atmosphere, nearby NPCs, hooks, and complications consistent with established canon
+- ChatGPT chooses a concise descriptive scene label
+- ChatGPT establishes the actual opening campaign clock
+- the player is not required to invent a scene title or predetermined first action
+- the opening frame does not choose the player-controlled PC's dialogue or action
 
-The opening frame should be consistent with all completed character/backstory canon and any already-established world facts, but otherwise ChatGPT may freely create the initial situation, surroundings, time, atmosphere, nearby NPCs, hooks, complications, and other GM-controlled world details needed to begin play.
-
-For that opening frame:
-
-- set `active_game.json.current_scene_name` to a concise scene label chosen by ChatGPT that describes where the fiction currently is and/or what is presently happening
-- replace the pre-game `Character creation` scene label; do not carry that label into the completed revision-1 gameplay baseline
-- set `active_game.json.current_location` to the actual starting location established by the opening narration
-- record persistent world facts introduced by the opening frame in their proper owners when needed for continuity
-- keep the scene name descriptive rather than prescriptive
-- do not ask the player to invent or approve a scene title merely to start the campaign
-- do not interpret the scene name as requiring the player-controlled PC to remain there, perform the activity named by the scene, follow a particular quest, or make a predetermined decision
-
-A scene label may later change whenever the fiction changes. The current story determines the label; the label never determines what the story is allowed to become.
-
-Creating this opening frame establishes the revision-1 starting situation but does not choose the player-controlled PC's first action or dialogue and does not itself create a Campaign Turn Step. Campaign Turn 1 gameplay begins only after the revision-1 baseline is complete and the Turn ledger changes from `ready` to `in_progress`.
-
-GM authorship and player-agency boundaries are defined in `GM_BEHAVIOR_AND_PRIORITY.md` and `CORE_PARTY_AND_CHARACTER_AGENCY.md`.
+The scene name describes the fiction. It never constrains where the player may go or what the player may choose.
 
 ## Transition from revision 0 to revision 1
 
-If the player says **Yes** to the final character-creation review:
+After a **Yes** confirmation:
 
-1. ensure every final character-creation fact is written to its proper permanent owner
-2. synchronize all required duplicated representations
-3. have ChatGPT create the GM-authored opening frame described above
-4. replace `active_game.json.current_scene_name` with ChatGPT's concise scene label for that opening frame
-5. set `active_game.json.current_location` to the actual starting location established by that opening frame
-6. persist any continuity-relevant opening world facts to their proper owners
-7. set `active_game.json.character_created` to `true`
-8. keep `active_game.json.campaign_turn_number` at `0` because Campaign Turn 1 has not completed or begun merely from this transition
-9. set `active_game.json.save_revision` from `0` to `1`
-10. set `active_game.json.last_sync_note` to a compact statement that character creation is complete and revision 1 is the starting baseline for Campaign Turn 1
-11. append one chronological `session_log.md` entry recording character creation completion and establishment of the revision-1 Campaign Turn 1 starting baseline; do not fabricate intermediate character-creation checkpoint entries
-12. keep `turn_save.md.Campaign Turn` at `1`, keep `Status` as `ready`, keep `Current Step` at `0`, set `Current Scene` to the same opening scene label stored in `active_game.json.current_scene_name`, and set `Base save revision` from `0` to `1`
-13. do not create a Campaign Turn Step and do not set `turn_save.md` to `in_progress` merely because character creation completed
+1. write every final character-creation fact to its proper owner
+2. synchronize all mirrors and inventories
+3. create and persist the GM-authored opening frame
+4. replace `current_scene_name: Character creation` with the opening scene label
+5. set `current_location` to the actual opening location
+6. set `active_game.json.campaign_clock` to the opening day and time
+7. persist continuity-relevant opening world facts and scheduled events
+8. set `character_created` to `true`
+9. keep `campaign_turn_number` at `0`
+10. set `save_revision` from `0` to `1`
+11. set a compact `last_sync_note`
+12. append one revision-1 character-creation completion entry to `session_log.md`, including the opening clock
+13. keep `turn_save.md.Campaign Turn` at `1`
+14. keep `turn_save.md.Status` as `ready`
+15. keep `turn_save.md.Current Step` at `0`
+16. set `turn_save.md.Current Scene` to the opening scene label
+17. set `turn_save.md.Base save revision` to `1`
+18. set the Turn's start and current clock to match `active_game.json.campaign_clock`
+19. do not create a gameplay Step merely because character creation completed
 
-Whenever tooling permits an atomic multi-file commit, the final synchronized character-creation state, opening-frame persistent state, the single completion entry in `session_log.md`, `active_game.json`, and the `turn_save.md` baseline update should be committed together.
-
-If writes must occur sequentially, update supporting permanent state first, then the session log and ready Turn ledger, and update `active_game.json` last as the authoritative completion marker. Verify the resulting revision-1 baseline before starting Campaign Turn 1.
+Whenever possible, commit the synchronized revision-1 baseline atomically. If writes must be sequential, update supporting files first and `active_game.json` last, then verify the complete baseline.
 
 ## Campaign Turn 1 starting condition
 
-Campaign Turn 1 starts from revision 1.
+Immediately before Campaign Turn 1 begins:
 
-Immediately before Campaign Turn 1 begins, the expected baseline is:
+```text
+active_game.json.campaign_turn_number = 0
+active_game.json.character_created = true
+active_game.json.save_revision = 1
+active_game.json.current_scene_name = opening scene label
+active_game.json.current_location = opening location
+active_game.json.campaign_clock = opening completed clock
+turn_save.md.Campaign Turn = 1
+turn_save.md.Status = ready
+turn_save.md.Current Step = 0
+turn_save.md.Current Scene = opening scene label
+turn_save.md.Base save revision = 1
+turn_save.md.Start Clock = active_game.json.campaign_clock
+turn_save.md.Current In-Turn Clock = active_game.json.campaign_clock
+```
 
-- `active_game.json.campaign_turn_number: 0`
-- `active_game.json.character_created: true`
-- `active_game.json.save_revision: 1`
-- `active_game.json.current_scene_name`: ChatGPT's current descriptive opening-scene label, not `Character creation`
-- `active_game.json.current_location`: the actual opening location established by ChatGPT's opening narration
-- `turn_save.md.Campaign Turn: 1`
-- `turn_save.md.Status: ready`
-- `turn_save.md.Current Step: 0`
-- `turn_save.md.Current Scene`: matches the revision-1 opening scene label
-- `turn_save.md.Base save revision: 1`
+Starting Campaign Turn 1 changes the Turn ledger to `in_progress` but does not increment `save_revision`. The completed save for Campaign Turn 1 later advances revision `1` to revision `2`.
 
-Starting Campaign Turn 1 changes the Turn ledger to `in_progress` but does not increment `save_revision`. Completing and permanently saving Campaign Turn 1 later advances `save_revision` from `1` to `2`.
-
-Advancement authority is defined in `ADVANCEMENT_AND_XP.md`. General state ownership and save discipline are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md` and `SAVES_VERIFICATION_AND_RECOVERY.md`.
+Advancement is governed by `ADVANCEMENT_AND_XP.md`. Campaign Turn staging is governed by `CAMPAIGN_TURNS_AND_STEPS.md`. Save confirmation and verification are governed by `SAVES_VERIFICATION_AND_RECOVERY.md`.
