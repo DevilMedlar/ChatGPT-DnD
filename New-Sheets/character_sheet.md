@@ -1,20 +1,28 @@
 # Character Sheet
 
-This file stores the campaign's core player-character detail and synchronized human-readable Level/XP mirrors.
+This file stores the two required core PCs' persistent character state and synchronized human-readable Level/XP mirrors.
 
-Repository-wide character-creation workflow and the revision-0 to revision-1 completion transition are owned by `../Rule/CHARACTER_CREATION.md`. Fresh-campaign isolation is owned by `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Completed PC advancement-state ownership is defined in `../Rule/ADVANCEMENT_AND_XP.md`. Reproductive compatibility, fertility, conception, pregnancy/egg-development state, and lineage rules are defined in `../Rule/REPRODUCTION_AND_LINEAGE.md`.
+- Character-creation workflow: `../Rule/CHARACTER_CREATION.md`
+- Approved species and playable mechanics: `../Rule/PLAYABLE_CHARACTER_OPTIONS.md`
+- Advancement: `../Rule/ADVANCEMENT_AND_XP.md`
+- Reproduction and lineage: `../Rule/REPRODUCTION_AND_LINEAGE.md`
+- State ownership: `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`
 
-The blank fields below are intentional and remain undecided until established during character creation or play.
+Blank fields remain undecided until explicitly established.
 
 ## Shared Relationship Canon
 
 ## Player-Controlled PC
 
+### Identity
+
 - **Name:**
 - **Age:**
 - **Gender / pronouns:**
-- **Species / ancestry:**
-- **Class / homebrew class:**
+- **Biological reproductive role:** Male / Female / Not established
+- **Species / ancestry:** Exact standard package or approved campaign override
+- **Class:**
+- **Subclass:**
 - **Background:**
 - **Level:**
 - **XP:**
@@ -35,59 +43,95 @@ The blank fields below are intentional and remain undecided until established du
 - **HP / Max HP:**
 - **Hit Dice:**
 - **Temporary HP:**
-- **Armor Class:**
+- **Armor Class / calculation:**
 - **Initiative:**
 - **Speed:**
+- **Special movement:**
 - **Proficiency Bonus:**
 - **Passive Perception:**
 - **Saving Throw Proficiencies:**
 
-### Advancement
+### Species Package
 
-### Equipment Summary
+Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its mechanics implicit.
 
-The player-controlled PC's authoritative current inventory is tracked in `inventory.md`.
+- **Creature Type:**
+- **Size:**
+- **Typical lifespan:**
+- **Fixed species choices:**
+- **Species traits:**
+- **Species trait save DCs:**
+- **Species trait uses / recharge:**
+- **Level-gated traits:**
+- **Forms / limitations:**
+
+### Class and Advancement
+
+- **Primary ability:**
+- **Class Hit Die:**
+- **Armor training:**
+- **Weapon / tool proficiencies:**
+- **Current class features:**
+- **Class resources / current uses:**
+- **Weapon Mastery choices:**
+- **Next-level threshold:**
 
 ### Skills
 
-### Features / Abilities / Spells
+### Spells
+
+Use when applicable.
+
+- **Spellcasting ability:**
+- **Spell Attack Modifier:**
+- **Spell Save DC:**
+- **Spellcasting focus:**
+- **Cantrips:**
+- **Prepared / known spells:**
+- **Spell slots:**
+
+### Equipment Summary
+
+The detailed authoritative inventory belongs in `inventory.md`.
 
 ### Conditions / Ongoing Effects
 
 ### Appearance
 
-This section owns the player-controlled PC's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+This section owns stable textual appearance canon, including species markers, until explicitly changed in fiction.
 
 ### Personal / Relationship Continuity
 
-Romantic, relationship, and permitted historical continuity details are recorded when the player explicitly establishes them and they matter to continuity, subject to `../Rule/ADULT_CONTENT_AND_CONSENT.md` and `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
+### Reproductive and Parent State
 
-### Reproductive State
+Populate only established facts. A healthy mature adult defaults to `Fertile +0` under `REPRODUCTION_AND_LINEAGE.md`.
 
-Populate only established facts. The default healthy reproductive adult fertility status is defined in `../Rule/REPRODUCTION_AND_LINEAGE.md`; do not invent hidden infertility, pregnancy, or modifiers.
-
-- **Biological reproductive role:** Male / Female / Not established
 - **Reproductive maturity:** Mature / Not mature / Not established
-- **Fertility status:** High Fertility / Fertile / Reduced Fertility / Very Low Fertility / Infertile / Temporarily Suppressed / Unknown
-- **Fertility modifier:**
+- **Fertility status / modifier:**
 - **Prevention / contraception state:**
-- **Current pregnancy / fertilized-egg state:** None / Pregnant / Forming fertilized egg or clutch / Other established state
-- **Biological co-parent:**
-- **Conception date / approximate time:**
-- **Compatibility category:**
-- **Development route:** Live-bearing / Egg-forming and egg-laying / Other established route
-- **Character knowledge of current state:**
-- **Ongoing reproductive effects / treatment / notes:**
-
-Current sexual-interest, intimate, fertility, pregnancy, and reproductive state remains subject to the applicable adult-only requirements in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
+- **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
+- **Biological co-parent / stable ID:**
+- **Conception clock:**
+- **Compatibility:**
+- **Development route:**
+- **Offspring / egg count:**
+- **Due date or laying date:**
+- **Hatching date:**
+- **Character knowledge:**
+- **Children / offspring and stable IDs:**
+- **Ongoing effects / treatment / notes:**
 
 ## ChatGPT-Controlled PC / Co-Protagonist
 
+### Identity
+
 - **Name:**
 - **Age:**
 - **Gender / pronouns:**
-- **Species / ancestry:**
-- **Class / homebrew class:**
+- **Biological reproductive role:** Male / Female / Not established
+- **Species / ancestry:** Exact standard package or approved campaign override
+- **Class:**
+- **Subclass:**
 - **Background:**
 - **Level:**
 - **XP:**
@@ -108,48 +152,74 @@ Current sexual-interest, intimate, fertility, pregnancy, and reproductive state 
 - **HP / Max HP:**
 - **Hit Dice:**
 - **Temporary HP:**
-- **Armor Class:**
+- **Armor Class / calculation:**
 - **Initiative:**
 - **Speed:**
+- **Special movement:**
 - **Proficiency Bonus:**
 - **Passive Perception:**
 - **Saving Throw Proficiencies:**
 
-### Advancement
+### Species Package
 
-### Equipment Summary
+- **Creature Type:**
+- **Size:**
+- **Typical lifespan:**
+- **Fixed species choices:**
+- **Species traits:**
+- **Species trait save DCs:**
+- **Species trait uses / recharge:**
+- **Level-gated traits:**
+- **Forms / limitations:**
 
-The ChatGPT-controlled PC / co-protagonist's authoritative current inventory is tracked in `inventory.md`.
+### Class and Advancement
+
+- **Primary ability:**
+- **Class Hit Die:**
+- **Armor training:**
+- **Weapon / tool proficiencies:**
+- **Current class features:**
+- **Class resources / current uses:**
+- **Weapon Mastery choices:**
+- **Next-level threshold:**
 
 ### Skills
 
-### Features / Abilities / Spells
+### Spells
+
+- **Spellcasting ability:**
+- **Spell Attack Modifier:**
+- **Spell Save DC:**
+- **Spellcasting focus:**
+- **Cantrips:**
+- **Prepared / known spells:**
+- **Spell slots:**
+
+### Equipment Summary
+
+The detailed authoritative inventory belongs in `inventory.md`.
 
 ### Conditions / Ongoing Effects
 
 ### Appearance
 
-This section owns the ChatGPT-controlled PC / co-protagonist's stable textual appearance canon for continuity-sensitive narration and art once established unless later transformed, injured, disguised, or explicitly changed.
+This section owns stable textual appearance canon, including species markers, until explicitly changed in fiction.
 
 ### Personal / Relationship Continuity
 
-Additional romantic, relationship, and permitted historical continuity details are recorded when they become established through character agency and matter to continuity, subject to `../Rule/ADULT_CONTENT_AND_CONSENT.md` and `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
+### Reproductive and Parent State
 
-### Reproductive State
-
-Populate only established facts. The default healthy reproductive adult fertility status is defined in `../Rule/REPRODUCTION_AND_LINEAGE.md`; do not invent hidden infertility, pregnancy, or modifiers.
-
-- **Biological reproductive role:** Male / Female / Not established
 - **Reproductive maturity:** Mature / Not mature / Not established
-- **Fertility status:** High Fertility / Fertile / Reduced Fertility / Very Low Fertility / Infertile / Temporarily Suppressed / Unknown
-- **Fertility modifier:**
+- **Fertility status / modifier:**
 - **Prevention / contraception state:**
-- **Current pregnancy / fertilized-egg state:** None / Pregnant / Forming fertilized egg or clutch / Other established state
-- **Biological co-parent:**
-- **Conception date / approximate time:**
-- **Compatibility category:**
-- **Development route:** Live-bearing / Egg-forming and egg-laying / Other established route
-- **Character knowledge of current state:**
-- **Ongoing reproductive effects / treatment / notes:**
-
-Current sexual-interest, intimate, fertility, pregnancy, and reproductive state remains subject to the applicable adult-only requirements in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
+- **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
+- **Biological co-parent / stable ID:**
+- **Conception clock:**
+- **Compatibility:**
+- **Development route:**
+- **Offspring / egg count:**
+- **Due date or laying date:**
+- **Hatching date:**
+- **Character knowledge:**
+- **Children / offspring and stable IDs:**
+- **Ongoing effects / treatment / notes:**
