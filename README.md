@@ -301,7 +301,7 @@ The reproduction system is intentionally consolidated:
 
 - `Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive operation, compatibility, carrying-parent development, adoption, hybrid safety, fertility, conception, and lineage.
 - `Rule/REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the active global standard-species whitelist.
-- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the nine active standard reproductive profiles.
+- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the thirteen active standard reproductive profiles.
 
 Deleted catalogs, profile batches, repository history, nonstandard variations, or remembered chat context cannot independently restore a removed species.
 
