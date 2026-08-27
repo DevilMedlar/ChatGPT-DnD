@@ -466,19 +466,34 @@ All other species mechanics in `PLAYABLE_CHARACTER_OPTIONS.md` cost 1 slot unles
 
 Examples include Darkvision, a skill proficiency, Fey Ancestry, Trance, Damage Resistance, Stonecunning, cantrips, natural weapons, gliding, Powerful Build, keen senses, movement increases, swimming, Hold Breath, and limited-use movement traits.
 
-## Trait-source procedure
+## Dice-to-list procedure
 
-1. Build a list of each parent's eligible mechanical species traits.
-2. Exclude reproductive-baseline text and purely cosmetic notes.
-3. Reserve at least one 1-slot trait from each parent.
-4. For every remaining slot, roll `1d20`:
-   - 1–10 selects the female parent's pool
-   - 11–20 selects the male parent's pool
-5. If the selected pool contains multiple eligible traits, sort them alphabetically and use the smallest owned die that can cover the list. Reroll results above the list length.
-6. If the selected trait would break a cap or duplicate an existing trait, reroll within that pool.
-7. Stop when exactly four slots are filled.
+Whenever a roll must select one trait from a list:
 
-ChatGPT constructs and shows the eligible lists before dice are rolled. ChatGPT never chooses the inherited trait.
+1. remove traits that cannot fit the remaining slots or would violate a cap
+2. sort the remaining traits alphabetically by trait name
+3. use the smallest die the player owns whose maximum can cover the list length: d4, d6, d8, d10, d12, then d20
+4. roll that die
+5. reroll any result greater than the list length
+6. the final result selects the trait at that numbered position
+
+ChatGPT shows the exact numbered list before the roll and never chooses between valid results.
+
+## Trait-selection procedure
+
+1. Build and show each parent's eligible mechanical trait list, separated into 1-slot and 2-slot traits.
+2. Exclude reproductive-baseline text, cosmetic notes, and anything not actually contained in the parent's approved species package.
+3. Select one mandatory 1-slot trait from the female parent using the Dice-to-list procedure.
+4. Select one mandatory 1-slot trait from the male parent using the Dice-to-list procedure.
+5. Two slots remain. Before each further selection, roll `1d20` for parent source:
+   - 1–10 = female parent's remaining pool
+   - 11–20 = male parent's remaining pool
+6. From the selected parent's traits that fit the remaining slots and all caps, use the Dice-to-list procedure.
+7. If the selected parent has no currently legal trait, use the other parent's currently legal pool rather than allowing ChatGPT to choose or wasting the roll.
+8. Remove each selected trait from its parent's pool unless a specific trait is explicitly repeatable.
+9. Continue until exactly four slots are filled.
+
+Every current approved species has at least one 1-slot trait, so the mandatory parent contributions never require a discretionary exception.
 
 ## Trait caps and merging
 
@@ -488,7 +503,7 @@ ChatGPT constructs and shows the eligible lists before dice are rolled. ChatGPT 
 - At most one natural Armor Class calculation.
 - At most one natural weapon of each body part.
 - Duplicate Darkvision uses the greater range and consumes only one slot.
-- Duplicate skill proficiency does not create Expertise; reroll or choose another eligible trait.
+- Duplicate skill proficiency does not create Expertise; remove the duplicate from the eligible list before rolling.
 - Duplicate movement speeds use the greater value and do not add together.
 - A Humanoid or compact-form trait does not grant a monster stat block.
 - A trait with a character-level gate retains that gate.
