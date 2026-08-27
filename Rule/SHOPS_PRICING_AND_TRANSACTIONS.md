@@ -63,7 +63,7 @@ Vendor-specific price differences continue to use Final Price modifiers rather t
 
 ## Base Price and Final Price
 
-`Base Price` is the campaign starting price before applicable vendor or transaction modifiers.
+`Base Price` is the campaign starting price for one item before applicable vendor or transaction modifiers.
 
 For official items that are not routine/basic repeat goods, the GM may establish a reasonable Base Price when the item appears in stock.
 
@@ -71,17 +71,17 @@ Relevant considerations can include rarity, mechanical power, usefulness, durati
 
 After Base Price is established:
 
-`final price = base price +/- applicable merchant or unused contextual modifiers`
+`final unit price = base price +/- applicable merchant or unused contextual modifiers`
 
 Merchant markup/discount is business or relationship pricing, such as ordinary shop policy, relationship treatment, reputation, faction standing, or negotiation.
 
 Contextual market factors include scarcity, shortages, unusual demand, temporary events, and similar established market circumstances.
 
-A pricing factor must not be counted more than once in the same stock listing or transaction. If scarcity, rarity, local conditions, or another factor already affected the Base Price, the same factor must not be applied again to Final Price.
+A pricing factor must not be counted more than once in the same stock listing or transaction. If scarcity, rarity, local conditions, or another factor already affected the Base Price, the same factor must not be applied again to Final Unit Price.
 
 A distinct merchant markup or discount may still apply afterward because it is a different pricing factor.
 
-## Currency, modifier stacking, and rounding
+## Currency, modifier stacking, quantity, and rounding
 
 Campaign currency follows the official current D&D coin values:
 
@@ -101,17 +101,17 @@ Multiple percentage modifiers stack **additively**. Calculate every percentage m
 
 For Base Price `B` and percentage modifiers `p1`, `p2`, and so on:
 
-`percentage-adjusted price = B + (B × p1) + (B × p2) + ...`
+`percentage-adjusted unit price = B + (B × p1) + (B × p2) + ...`
 
 A discount is represented by a negative percentage.
 
 ### Flat modifiers
 
-After calculating all percentage adjustments from Base Price, add or subtract any distinct flat-price modifiers.
+After calculating all percentage adjustments from Base Price, add or subtract any distinct flat-price modifiers from that same unit price.
 
 General form:
 
-`final unrounded price = B + sum(B × percentage modifiers) + sum(flat modifiers)`
+`final unrounded unit price = B + sum(B × percentage modifiers) + sum(flat modifiers)`
 
 Do not double-count a factor already included in Base Price.
 
@@ -123,7 +123,7 @@ Example:
 
 `= 47.5 CP`
 
-Final price: `48 CP`.
+Final Unit Price: `48 CP`.
 
 ### Denomination conversion and rounding
 
@@ -147,6 +147,26 @@ Examples:
 
 After final copper rounding, the price may be displayed in the largest convenient official denominations using CP, SP, EP, GP, and PP.
 
+### Quantity
+
+First calculate and round the Final Unit Price for one item under the rules above. Then multiply that Final Unit Price by the number of identical items purchased:
+
+`Final Transaction Price = Quantity × Final Unit Price`
+
+An item that costs `X` therefore costs exactly `2X` for two, `3X` for three, and so on. Quantity does not create another markup, discount, percentage, or rounding step.
+
+Example using the `48 CP` Final Unit Price above:
+
+- one item costs `48 CP`
+- two identical items cost `2 × 48 CP = 96 CP`
+- five identical items cost `5 × 48 CP = 240 CP = 2 GP 4 SP`
+
+### No negative prices
+
+A price can never be negative.
+
+If the Final Unit Price calculation would fall below `0 CP`, the Final Unit Price is `0 CP`, meaning the item is free. The seller never owes the buyer money unless a separate explicit payment, reward, refund, or buy-back transaction establishes that payment.
+
 ## Shop purchase flow
 
 During an active Campaign Turn, a purchase is staged in `turn_save.md` under `Pending Shop Transactions`; do not immediately rewrite permanent vendor or inventory files.
@@ -159,8 +179,9 @@ A staged transaction must preserve enough information to reconcile all connected
 - item and quantity
 - Base Price and its basis
 - factors already included in Base Price
-- Final Price modifiers
-- Final Transaction Price
+- Final Unit Price modifiers
+- Final Unit Price
+- Final Transaction Price as Quantity × Final Unit Price
 - vendor stock before and after
 - buyer currency delta
 - inventory target and acquisition
@@ -179,7 +200,7 @@ A completed purchase has connected state on both sides:
 
 After save approval, reconcile all connected sides together. Never permanently apply only the vendor side, only the currency side, or only the inventory side.
 
-A pricing factor recorded as already included in Base Price must not also appear as a Final Price modifier for the same transaction.
+A pricing factor recorded as already included in Base Price must not also appear as a Final Unit Price modifier for the same transaction.
 
 Once an official item has been acquired and its relevant mechanics are established in campaign inventory, later changes to the external official page do not silently rewrite the already-owned campaign item.
 
