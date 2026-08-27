@@ -9,7 +9,7 @@ At minimum, establish for each required core PC:
 - Name
 - Age, explicitly 18+ for player characters participating in adult content
 - Gender / pronouns, consistent with `CORE_PARTY_AND_CHARACTER_AGENCY.md` unless the player explicitly changes that rule for the campaign
-- Species / ancestry
+- Species / ancestry, selected under `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`
 - Class or homebrew class
 - Background
 - Ability scores
@@ -24,6 +24,30 @@ At minimum, establish for each required core PC:
 Blank character fields are intentionally undecided until established during character creation. Do not fill those blanks by recovering or guessing prior-campaign information.
 
 Optional adult-character details may include romantic interests, sexual interests, boundaries, relationship goals, fertility/reproductive details, or other mature themes when the player chooses to establish them. Adult-content boundaries are defined in `ADULT_CONTENT_AND_CONSENT.md`.
+
+## Species / ancestry character-creation whitelist
+
+`REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the repository-wide authority for the standard species / ancestry options available during character creation.
+
+Under the global rules:
+
+- the player-controlled PC must use one standard species listed in that catalog
+- the ChatGPT-controlled PC / co-protagonist must use one standard species listed in that catalog
+- any replacement PC, additional PC, or later-created core PC must use the same catalog
+- ChatGPT must present only the current active-whitelist entries as ordinary species / ancestry choices
+- an official character builder, sourcebook list, deleted file, Git history, prior chat, class, subclass, background, profession, title, transformation, disguise, or ancestry description cannot add another option by implication
+- a subrace, regional form, setting variant, alternate lineage, third-party version, or hybrid lineage is unavailable unless explicitly approved
+
+If the player requests a species or variation that is not in the active global whitelist, do not finalize it as character canon until one of the following occurs:
+
+1. the player explicitly adds it to the global catalog and the corresponding reusable profile is established, or
+2. the active campaign records an explicit campaign-specific species override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
+
+A campaign-specific species option applies only to that campaign and must not be silently added to another campaign or promoted into the global catalog.
+
+This restriction limits **PC character creation**, not the existence of creatures in the setting. Unlisted species may still appear as NPCs, monsters, wildlife, historical peoples, or world inhabitants when appropriate. They do not become globally selectable PCs or global crossbreeding participants merely because they appear in the fiction.
+
+A hybrid child or adult hybrid does not automatically become a selectable character-creation lineage. It must be explicitly approved as a stable selectable lineage and receive the required biology before it can enter the global catalog or a campaign-specific roster.
 
 ## Revision 0 is the full character-creation phase
 
@@ -57,13 +81,14 @@ A transcription error in revision-0 state may be corrected directly. A genuine c
 As character creation proceeds:
 
 1. establish choices and backstory collaboratively
-2. distinguish finalized player-established facts from discussion, examples, previews, and rejected options
-3. write finalized facts to the correct state owners when persistence is useful or necessary
-4. keep duplicated representations synchronized, including Level/XP mirrors in `character_sheet.md` and authoritative advancement state in `active_game.json`
-5. keep starting equipment, currency, consumables, and other starting resources synchronized with `inventory.md` as they become established
-6. leave required-but-undecided fields blank rather than inventing them
-7. keep `save_revision: 0`, `campaign_turn_number: 0`, and `character_created: false`
-8. keep `turn_save.md` ready for Campaign Turn 1 rather than using it as a character-creation ledger
+2. validate each proposed PC species / ancestry against `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` or an explicit applicable campaign-specific override before making it canonical
+3. distinguish finalized player-established facts from discussion, examples, previews, and rejected options
+4. write finalized facts to the correct state owners when persistence is useful or necessary
+5. keep duplicated representations synchronized, including Level/XP mirrors in `character_sheet.md` and authoritative advancement state in `active_game.json`
+6. keep starting equipment, currency, consumables, and other starting resources synchronized with `inventory.md` as they become established
+7. leave required-but-undecided fields blank rather than inventing them
+8. keep `save_revision: 0`, `campaign_turn_number: 0`, and `character_created: false`
+9. keep `turn_save.md` ready for Campaign Turn 1 rather than using it as a character-creation ledger
 
 Repository writes made during revision-0 character creation are persistence of the same pre-game baseline, not separate save revisions.
 
@@ -73,6 +98,8 @@ Before revision 0 may end, verify that every required character-creation field a
 
 Also verify at minimum:
 
+- each required core PC's species / ancestry exactly matches an active standard entry in `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` or an explicit applicable campaign-specific override
+- no unapproved subrace, variation, alternate lineage, hybrid lineage, or unlisted species was made canonical
 - all explicitly established backstory and relationship canon is recorded in the correct owner
 - no rejected option or undecided required fact was made canonical
 - derived character values are internally consistent
