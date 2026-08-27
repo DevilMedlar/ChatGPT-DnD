@@ -23,6 +23,16 @@ Marriage, romance, sexual activity, attraction, or any other intimate relationsh
 
 Whatever relationship is established may naturally influence behavior and choices without overriding either character's agency or current consent.
 
+## Core-party information sharing
+
+The two core PCs share everything they learn and keep no secrets from one another.
+
+- Once either core PC learns, discovers, witnesses, or is told a fact, treat both core PCs as knowing it.
+- A separate recap scene or duplicate knowledge record is not required.
+- Unknown answers that neither core PC has been told or discovered are not created or stored as hidden canon.
+- Questions, mysteries, and missing information known to the core PCs belong in `world_state.md` as unresolved questions.
+- Information sharing does not let either core PC choose the other's dialogue, decisions, consent, or actions.
+
 ## Player-controlled PC agency
 
 The player controls the player-controlled PC's decisions and dialogue.
