@@ -2,7 +2,7 @@
 
 This file is the authoritative master record for persistent NPCs and persistent children in the campaign.
 
-It owns NPC identity, appearance, mechanics, personality, relationships, knowledge, secrets, party membership, location, personal possessions, reproductive and parent state, biological and adoptive family links, shops, NPC-specific quest involvement, and continuity.
+It owns NPC identity, appearance, mechanics, personality, relationships, revealed knowledge, party membership, location, personal possessions, reproductive and parent state, biological and adoptive family links, shops, NPC-specific quest involvement, and continuity.
 
 - NPC rules: `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`
 - Relationships: `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`
@@ -15,7 +15,8 @@ It owns NPC identity, appearance, mechanics, personality, relationships, knowled
 ## Stable NPC ID Convention
 
 - Assign persistent NPC IDs in sequence: `NPC-0001`, `NPC-0002`, and so on.
-- A newborn or hatchling receives the next unused ID when its persistent record is created.
+- A newborn or hatchling receives the next unused ID at live birth or hatching.
+- Do not create an individual child NPC record before live birth or hatching; before then, the female parent's record owns the aggregate pregnancy or clutch state.
 - Never reuse or change an ID because a name, title, relationship, age, location, party state, or life status changes.
 - Cross-file references include the stable ID. A current name may accompany it for readability.
 - `NPC-####` is a template placeholder, not an actual NPC.
@@ -34,6 +35,8 @@ Example format only:
 ## NPC Record Template
 
 Populate only established and relevant fields. A minor NPC does not need invented filler or a complete combat block.
+
+Do not record an untold hidden answer merely to preserve GM secrets. Record only information revealed to or known by the core PCs, or the known fact that a question remains unanswered.
 
 ---
 
@@ -69,7 +72,7 @@ Populate only established and relevant fields. A minor NPC does not need invente
 - **Other visual notes:**
 - **Reference art:** See `art/art_log.md` when established
 
-For a hybrid child, distinguish traits visible now from traits scheduled to develop later.
+For a hybrid child, distinguish visible traits from delayed or potential traits whose mechanics remain TBD during aging.
 
 ### Location / Party State
 
@@ -87,12 +90,12 @@ When `In party: Yes`, moment-to-moment movement belongs in `turn_save.md`; the c
 
 - **Personality:**
 - **Values:**
-- **Goals:**
-- **Wants / needs:**
-- **Fears:**
+- **Goals known to the core PCs:**
+- **Wants / needs known to the core PCs:**
+- **Fears known to the core PCs:**
 - **Likes / dislikes:**
 - **Habits / mannerisms:**
-- **Current priorities:**
+- **Current priorities known to the core PCs:**
 
 ### Relationship / Attraction Overview
 
@@ -119,7 +122,7 @@ Populate only established facts. A healthy reproductively mature adult defaults 
 - **Biological father / stable ID:**
 - **Adoptive parent(s) / stable IDs:**
 - **Guardian(s) / stable IDs:**
-- **Children / offspring / stable IDs:**
+- **Children / offspring / stable IDs after birth or hatching:**
 - **Other family links:**
 
 Biological and adoptive relationships remain distinct fields.
@@ -132,37 +135,59 @@ Biological and adoptive relationships remain distinct fields.
 - **Source-species schedule for a hybrid female:**
 - **Prevention / contraception state:**
 - **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
-- **Biological co-parent / stable ID:**
+- **Biological co-parent / stable reference:**
 - **Conception clock:**
 - **Compatibility:**
-- **Offspring / egg count:**
+- **Offspring / fertilized-egg count:**
 - **Due date or laying date:**
 - **Hatching date:**
-- **Character knowledge:**
+- **Individual sex / appearance / mechanical traits:** Not resolved until birth, hatching, or later aging as applicable
+- **What the core PCs know:**
 - **Ongoing reproductive effects / treatment / notes:**
+
+##### Current Conception-Check Cooldowns
+
+Keep each exact pair's latest check until its 24-hour next-eligible clock passes.
+
+| Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
+|---|---|---|---|
+|  |  |  |  |
+
+##### Current Mundane-Detection Cooldown
+
+- **Last mundane detection check clock:**
+- **Outcome:**
+- **Next eligible detection clock:**
 
 #### Hybrid and Developmental State
 
-Use for a hybrid, child, hatchling, or developing lineage.
+Use only after live birth or hatching.
 
 - **Ancestry / biological parents:**
-- **Inherited four-slot mechanical package:**
-- **Current usable species traits:**
-- **Visible cosmetic traits:**
-- **Delayed traits:**
+- **Visible traits at birth or hatching:**
+- **Delayed or potential traits:**
+- **Resolved mechanical traits developed during aging:**
+- **Unresolved mechanical traits / dependencies:** TBD after birth during aging
 - **Scheduled developmental milestones:**
-- **Adult size / lifespan result:**
+- **Current Size:**
+- **Expected adult size / lifespan:** Not established until later aging unless explicitly resolved
 - **Adult fertility:** Not yet established / Fertile +0 / Other explicit state
+- **Female development route at maturity:** Not yet established / Live-bearing / Egg-laying
 - **Stable-lineage status:** Individual hybrid / Campaign-local lineage / Global approved lineage
 
-### Knowledge / Secrets
+Do not invent a mechanical hybrid benefit before an applicable player-approved aging rule resolves it.
 
-- **What the NPC knows:**
-- **What the NPC believes:**
-- **Information shared with the party:**
-- **Information withheld:**
-- **Secrets known / personally held:**
-- **False beliefs / misunderstandings:**
+### Revealed Information and Known Questions
+
+Record only information that has been told to, witnessed by, or discovered by the core PCs.
+
+- **What the NPC has told or shown the core PCs:**
+- **What the core PCs know the NPC believes:**
+- **Information the core PCs know was shared with someone else:**
+- **Known lies, contradictions, or misunderstandings:**
+- **Known unanswered questions involving this NPC:**
+
+Do not record the untold answer to a mystery, the content of an unrevealed secret, or undiscovered information. If the core PCs know only that something is being withheld, record the unanswered question rather than the hidden answer.
 
 ### Mechanical State
 
@@ -247,17 +272,18 @@ For each service record price, time, effect, requirements, and limitations.
 ### Quest / Story Role
 
 - **Associated quests / missions:**
-- **Current involvement:**
+- **Current involvement known to the core PCs:**
 - **Objective / request:**
-- **Information provided / withheld:**
+- **Information provided:**
+- **Known unanswered questions:**
 - **Reward / conditions / deadline:**
 - **Consequences:**
 
-`world_state.md` owns overall quest state; this section owns the NPC's involvement.
+`world_state.md` owns overall quest state; this section owns the NPC's revealed involvement.
 
 ### Continuity History
 
-Append compact NPC-specific changes that explain current state.
+Append compact NPC-specific changes that explain current known state.
 
 ```text
 - Campaign Turn / clock: event or continuity change
