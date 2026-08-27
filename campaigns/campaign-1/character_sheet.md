@@ -4,6 +4,8 @@
 
 Species packages, class policy, backgrounds, and homebrew completion gates are governed by `../../Rule/PLAYABLE_CHARACTER_OPTIONS.md`. Character creation is governed by `../../Rule/CHARACTER_CREATION.md`. Reproduction and lineage are governed by `../../Rule/REPRODUCTION_AND_LINEAGE.md`.
 
+DevilMedlar and Senpai share everything either of them learns and keep no secrets from one another.
+
 ## Shared Relationship Canon
 
 - DevilMedlar and Senpai are both 20 years old.
@@ -111,16 +113,30 @@ No DevilMedlar-specific relationship continuity is established beyond the Shared
 - **Fertility status / modifier:** Not yet established
 - **Prevention / contraception state:** Not established
 - **Current state:** Not established
-- **Biological co-parent / stable ID:** None established
+- **Biological co-parent / stable reference:** None established
 - **Conception clock:** None established
 - **Compatibility:** Pending species selection
 - **Development route:** Pending species and biological-role selection
-- **Offspring / egg count:** None established
+- **Offspring / fertilized-egg count:** None established
 - **Due date or laying date:** None established
 - **Hatching date:** None established
-- **Character knowledge:** No reproductive state established
-- **Children / offspring and stable IDs:** None
+- **Individual sex / appearance / mechanical traits:** Not resolved; these wait for birth, hatching, or later aging as applicable
+- **Shared core-PC knowledge:** No reproductive state established
+- **Children / offspring and stable IDs after birth or hatching:** None
 - **Ongoing effects / treatment / notes:** None established
+
+#### Current Conception-Check Cooldowns
+
+None.
+
+| Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
+|---|---|---|---|
+
+#### Current Mundane-Detection Cooldown
+
+- **Last mundane detection check clock:** None
+- **Outcome:** None
+- **Next eligible detection clock:** None
 
 ## Senpai — ChatGPT-Controlled PC / Co-Protagonist
 
@@ -219,13 +235,27 @@ No Senpai-specific relationship continuity is established beyond the Shared Rela
 - **Fertility status / modifier:** Not yet established
 - **Prevention / contraception state:** Not established
 - **Current state:** Not established
-- **Biological co-parent / stable ID:** None established
+- **Biological co-parent / stable reference:** None established
 - **Conception clock:** None established
 - **Compatibility:** Pending species selection
 - **Development route:** Pending species and biological-role selection
-- **Offspring / egg count:** None established
+- **Offspring / fertilized-egg count:** None established
 - **Due date or laying date:** None established
 - **Hatching date:** None established
-- **Character knowledge:** No reproductive state established
-- **Children / offspring and stable IDs:** None
+- **Individual sex / appearance / mechanical traits:** Not resolved; these wait for birth, hatching, or later aging as applicable
+- **Shared core-PC knowledge:** No reproductive state established
+- **Children / offspring and stable IDs after birth or hatching:** None
 - **Ongoing effects / treatment / notes:** None established
+
+#### Current Conception-Check Cooldowns
+
+None.
+
+| Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
+|---|---|---|---|
+
+#### Current Mundane-Detection Cooldown
+
+- **Last mundane detection check clock:** None
+- **Outcome:** None
+- **Next eligible detection clock:** None
