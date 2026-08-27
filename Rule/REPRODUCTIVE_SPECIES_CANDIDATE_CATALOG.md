@@ -81,9 +81,22 @@ The repository naming map is:
 |---|---|
 | Dragonborn | Physical male/female mating; internal fertilization; egg-laying |
 | Dragonkin | Physical male/female mating; internal fertilization; egg-laying in a fixed draconic body |
-| True Dragon | Physical male/female mating; internal fertilization; egg-laying |
+| True Dragon | Physical male/female mating; innate size reduction or functional humanoid form available when needed; internal fertilization; egg-laying |
 
 Dragonkin are a distinct fixed biological draconic people, not a class, temporary transformation, Dragonborn alias, or generic label for every dragon-descended creature.
+
+### True Dragon reproductive-form accommodation
+
+Every reproductively mature standard True Dragon can safely reduce to a physically compatible true-dragon size or assume a physically functional Humanoid form when needed for mating.
+
+- Adult size difference does not make a True Dragon pairing conditional or incompatible.
+- No roll, magic item, outside spell, or partner-provided transformation is required.
+- The dragon remains biologically a True Dragon regardless of the form used during mating.
+- A female True Dragon still produces and lays a fertilized egg after conception.
+- A male True Dragon mating with a live-bearing female follows the female partner's live-bearing development route.
+- The accommodation changes physical access only. It does not change parentage, ancestry, inherited traits, fertility category, or the carrying female's development method.
+
+`REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` contains the full True Dragon profile.
 
 ## Kemonomimi species
 
@@ -140,6 +153,7 @@ The active global whitelist contains **13 standard species entries**:
 - Consult `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` for biology.
 - Consult `REPRODUCTION_AND_LINEAGE.md` for compatibility, directional development, birth safety, adoption, and hybrid handling.
 - Every active-whitelist species is cross-species compatible with every other active-whitelist species unless a specific directional physical condition temporarily makes the pairing conditional.
+- True Dragon size is never such a blocking condition because the True Dragon reproductive-form accommodation resolves it.
 - Do not offer a removed species or variation through an older profile, historical commit, deleted file, or remembered conversation.
 - Campaign-specific additions belong in that campaign's local rule file and do not change the global whitelist.
 
