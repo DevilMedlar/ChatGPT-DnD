@@ -4,6 +4,8 @@
 
 `world_state.md` owns persistent world-level state, including:
 
+- calendar name, seasons, named-date mapping, and planar/time-zone context
+- scheduled events, appointments, deadlines, restocks, due dates, laying dates, hatching dates, and developmental milestones
 - locations
 - factions and organizations
 - overall quests, missions, goals, and investigations
@@ -12,84 +14,128 @@
 - unresolved world threads
 - persistent world changes and consequences
 
-It does not replace the specialized owners for character, NPC, inventory, or active-turn state.
+It does not own the authoritative current clock, current party location, complete NPC records, character state, inventory, or unfinished-Turn state.
+
+## Current clock and schedule separation
+
+- `active_game.json.campaign_clock` owns the last completed current time.
+- `turn_save.md` owns the unfinished Turn's live clock overlay.
+- `world_state.md` owns the calendar's meaning and future scheduled timestamps.
+
+Do not duplicate the current clock as a competing mutable field in `world_state.md`.
+
+When time advances, compare the effective current clock against every relevant scheduled record. Resolve or stage crossed events chronologically. Do not silently skip an event because a time jump passed its timestamp.
+
+## Calendar context
+
+Until a named setting calendar is established, `Campaign Day` provides neutral sequential bookkeeping.
+
+A later calendar may define:
+
+- month and weekday names
+- seasons
+- holidays and festivals
+- sunrise, sunset, tides, moons, or planar cycles
+- mapping from named dates to Campaign Day numbers
+- local time differences
+
+Adding calendar lore does not reset elapsed time.
+
+## Scheduled events and milestones
+
+Every schedule record should include, when applicable:
+
+- event or milestone name
+- exact scheduled clock
+- relevant people or stable NPC IDs
+- location
+- status
+- consequence or notes
+
+Possible records include:
+
+- appointments and meetings
+- quest deadlines
+- travel arrivals
+- shop openings or restocks
+- effect expirations
+- expected births
+- egg-laying dates
+- hatching dates
+- developmental milestones
+
+A scheduled event changes only through established play, an explicit effect, an approved correction, or a rule that genuinely changes its time.
 
 ## Persistent NPC references
 
-Persistent NPC records belong in `NPC-state.md`.
+Persistent NPC and child records belong in `NPC-state.md`.
 
-When an NPC matters to a location, faction, quest, clue, discovery, or world consequence, `world_state.md` may reference that NPC using the stable NPC ID from `NPC-state.md`, with the current NPC name for readability and only enough context to explain why the NPC matters.
+When an NPC matters to a location, faction, schedule, quest, clue, discovery, or world consequence, `world_state.md` may reference the stable NPC ID and current name with only enough context to explain relevance.
 
-The stable NPC ID is the cross-file identity key. Do not rely on a name-derived Markdown heading or anchor.
+Do not duplicate full NPC statistics, appearance, relationships, family record, inventory, shop stock, reproductive state, hybrid package, or continuity history.
 
-Do not duplicate NPC stats, full appearance, full relationship state, personal inventory, shop stock, or full continuity history in `world_state.md`.
+## Relationships with world consequences
 
-## Relationships with world-level consequences
+Core-PC relationships belong in `character_sheet.md`. Persistent NPC and family relationships belong in `NPC-state.md`.
 
-Core-PC relationship canon and continuity belong in `character_sheet.md`. Persistent NPC relationship state belongs in `NPC-state.md`.
-
-Record relationship information in `world_state.md` only when it creates a persistent world-level consequence involving a location, faction, quest, organization, public status, or similar world state.
+Record relationship information in `world_state.md` only when it creates a persistent public, factional, legal, political, location, quest, or other world-level consequence.
 
 ## Locations
 
-Location records may include established details such as:
+Location records may include:
 
 - ownership
-- services normally available there
+- services
 - faction control
-- known hazards
+- hazards
 - discovered features
 - access conditions
-- important events
-- relevant NPCs by stable NPC ID and current name
+- important events and schedules
+- relevant NPCs by stable ID
 
-`world_state.md` does **not** track the party's current live location.
-
-The authoritative completed current location belongs in `active_game.json`. During an unfinished Campaign Turn, temporary movement or position changes belong in `turn_save.md` until reconciliation.
+Completed current party location belongs in `active_game.json`. Unfinished movement belongs in `turn_save.md`.
 
 ## Factions and organizations
 
-Faction records may reference important NPC members or leaders by stable NPC ID and current name while `world_state.md` remains authoritative for world-level faction state such as goals, alliances, enemies, territory, reputation, and consequences.
+Faction records may include goals, alliances, enemies, territory, reputation, scheduled plans, and persistent consequences while referencing NPC members by stable ID.
 
 ## Quests, missions, and goals
 
-`world_state.md` owns the **overall state** of quests, missions, goals, investigations, and similar world objectives.
+`world_state.md` owns overall objective state.
 
-When useful, a quest or mission may track:
+A quest may track:
 
 - status
-- quest giver or relevant NPCs by stable NPC ID and current name
-- objective
-- current progress
+- quest giver and relevant NPCs by stable ID
+- objective and progress
 - known clues
 - relevant locations
 - reward
-- deadline or time pressure
-- success conditions
-- failure conditions
+- exact deadline or time pressure
+- success and failure conditions
 - consequences
 - unresolved questions
 
-`NPC-state.md` may record an NPC's personal involvement, promises, information, motives, rewards offered, or conditions, but the overall quest status remains in `world_state.md`.
+`NPC-state.md` may record an NPC's personal involvement, motives, promises, information, or reward offer, but not the overall quest authority.
 
 ## Clues and discoveries
 
-Clues and discoveries may reference the NPC who supplied, hid, misunderstood, or is affected by them by stable NPC ID and current name, but the NPC's knowledge and beliefs remain in `NPC-state.md`.
+World-level clues and discoveries may reference involved NPCs by stable ID. NPC knowledge, beliefs, lies, and misunderstandings remain in `NPC-state.md`.
 
 ## Known secrets
 
-Do not reveal a secret merely because it is stored elsewhere for GM continuity.
+Do not reveal a secret merely because it exists in GM continuity.
 
-The `Known Secrets` section of `world_state.md` contains secrets that have actually become player-known world information.
+The `Known Secrets` section contains only world secrets actually known to the player or player-controlled characters as established by the campaign's knowledge rules.
 
 ## World changes and consequences
 
-Persistent consequences may reference affected NPCs, locations, factions, shops, services, quests, or player-character relationships without duplicating the full records owned elsewhere.
+Persistent consequences may reference affected locations, factions, NPCs, families, shops, schedules, quests, or relationships without duplicating their full specialized records.
 
 ## Unresolved threads
 
-Use unresolved world threads for persistent world-level questions or consequences that genuinely belong to world state.
+Use unresolved threads for genuine world-level questions, future consequences, or pending events.
 
-Character-creation decisions and unfinished player-character background or relationship details remain with their character-creation owners until they produce persistent world-state information.
+Unfinished character-creation choices remain with character creation until they create established world state.
 
-NPC/world identity boundaries are defined in `NPCS_AND_PARTY_MEMBERSHIP.md`. General state ownership and persistence are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+General ownership is defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`. Time operation is defined in `CORE_GAME_MECHANICS.md`.
