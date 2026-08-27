@@ -38,7 +38,9 @@ Record only mechanically qualifying reproductive checks and the continuity facts
 - **Base Conception Target:**
 - **Explicit effect modifiers:**
 - **Final Conception Target:**
-- **Player `1d100` result:**
+- **First player d10 result, tens digit:**
+- **Second player d10 result, ones digit:**
+- **Combined percentile result:** Treat `0` or a numbered `10` as digit `0`; `00` = `100`
 - **Outcome:** Conception / No conception / Blocked before conception roll
 - **Development route on success:** Live-bearing pregnancy / Fertilized-egg or clutch formation / Other established route
 - **Character knowledge:**
