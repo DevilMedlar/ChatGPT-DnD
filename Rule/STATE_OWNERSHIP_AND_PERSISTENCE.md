@@ -28,7 +28,7 @@ Fresh-start restrictions are defined in `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md
 
 - `Rule/` owns reusable repository-wide rules.
 - `PLAYABLE_CHARACTER_OPTIONS.md` owns global selectable species packages and character-option policy.
-- `REPRODUCTION_AND_LINEAGE.md` owns reproduction, conception, pregnancy or egg development, inheritance, birth or hatching, development, and later-generation rules.
+- `REPRODUCTION_AND_LINEAGE.md` owns reproduction, conception, pregnancy or egg development, birth or hatching, post-birth trait development, and later-generation rules.
 - `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns only explicit persistent rules or overrides scoped to that campaign.
 
 Do not store ordinary campaign facts in a local rule file. Editing a rule file does not itself create a Campaign Turn Step or increment `save_revision`.
@@ -117,6 +117,7 @@ Owns the temporary authoritative ledger for the current Campaign Turn:
 - numbered events and roll results
 - compact effective in-turn state
 - pending reproductive events
+- staged conception-check and mundane-detection cooldown changes
 - pending shop transactions
 - pending permanent transfers
 - Final Turn Review
@@ -133,23 +134,35 @@ Owns persistent core-PC state:
 - ability scores, statistics, features, spells, resources, and conditions
 - stable textual appearance canon
 - personal and relationship continuity
-- reproductive maturity, fertility, pregnancy or egg-production state, co-parent, conception clock, due or laying date, hatching date, offspring, and parent state
+- reproductive maturity, fertility, pregnancy or egg-production state, co-parent, conception clock, due or laying date, hatching date, and aggregate offspring or fertilized-egg count
+- current pair-specific conception-check cooldowns until their next eligible clocks pass
+- the current mundane-detection cooldown when the PC is the reproductive-state target
+- children and parent state after live birth or hatching
+
+The two core PCs share all learned information under `CORE_PARTY_AND_CHARACTER_AGENCY.md`; do not create separate secret-knowledge owners for them.
 
 Authoritative detailed inventory remains in `inventory.md`.
 
 ## `NPC-state.md`
 
-Owns persistent NPC and child master state:
+Owns persistent NPC and post-birth child master state:
 
 - stable IDs
 - identity, age, birth or hatching clock, species, appearance, personality, location, and status
-- relationships, attractions, knowledge, secrets, obligations, and party membership
+- relationships, attractions, revealed information, known beliefs, known contradictions, and known unanswered questions
+- party membership
 - mechanics and conditions
 - master personal possessions
-- reproductive maturity, fertility, pregnancy or egg-production state, co-parent, dates, and offspring
+- reproductive maturity, fertility, pregnancy or egg-production state, co-parent, dates, and aggregate offspring or fertilized-egg count
+- current pair-specific conception-check cooldowns until their next eligible clocks pass
+- the current mundane-detection cooldown when the NPC is the reproductive-state target
 - biological parents, adoptive parents, guardians, and children as separate relationships
-- hybrid mechanical package, visible traits, delayed traits, developmental milestones, adult-size/lifespan result, and adult fertility
-- NPC-specific quests, shops, stock, services, and continuity
+- after live birth or hatching: biological sex, visible traits, delayed or potential traits, later resolved mechanical traits, developmental milestones, and adult fertility
+- NPC-specific quests, shops, stock, services, and continuity revealed to the core PCs
+
+Do not create an individual child NPC record before live birth or hatching. Before then, the female parent's state owns the aggregate pregnancy or clutch.
+
+Do not store an untold hidden answer or unrevealed secret. When the core PCs know only that a question exists, store the known question rather than its answer.
 
 For a current party NPC, `inventory.md` expands active item bookkeeping while `NPC-state.md` remains the master ownership list.
 
@@ -157,7 +170,7 @@ For a current party NPC, `inventory.md` expands active item bookkeeping while `N
 
 Owns campaign-local recurring Base Prices and routine/basic classification.
 
-It does not own item mechanics, vendor quantities, Final Price, or inventory.
+It does not own item mechanics, vendor quantities, Final Unit Price, Final Transaction Price, or inventory.
 
 ## `inventory.md`
 
@@ -168,11 +181,13 @@ Owns detailed active mechanical bookkeeping for core-PC possessions and the carr
 Owns persistent world context:
 
 - calendar name, seasons, named-date mapping, and planar/time-zone context
-- scheduled events, appointments, deadlines, restocks, due dates, laying dates, hatching dates, and developmental milestones
-- locations, factions, quests, clues, discoveries, known secrets, unresolved threads, and world consequences
+- scheduled events, appointments, deadlines, restocks, due dates, laying dates, hatching dates, and established developmental milestones
+- locations, factions, quests, clues, discoveries, unresolved questions known to the core PCs, and world consequences
 - lightweight references to persistent NPCs by stable ID
 
 It does not own the authoritative current clock. That belongs in `active_game.json` plus the live `turn_save.md` overlay.
+
+It does not store untold answers, hidden GM solutions, secret perpetrators, or undiscovered facts. Unknown matters are stored only as questions after the core PCs become aware that the question exists.
 
 ## `session_log.md`
 
@@ -183,6 +198,8 @@ Owns append-first chronological completed history:
 - start clock, end clock, elapsed time, and chronology-critical events when applicable
 
 It does not accumulate intermediate revision-0 checkpoints or unfinished Turn events.
+
+An unsuccessful conception or detection check normally needs no permanent historical entry, but its active 24-hour cooldown remains in current character or NPC state until it expires.
 
 ## `art/art_log.md`
 
@@ -213,7 +230,9 @@ Preserve an earlier mutable value in history only when it matters to continuity.
 
 Update current-state fields in place during approved reconciliation. Do not leave stale current values beside new values.
 
-Examples include HP, current clock, location, currency, item quantity, conditions, relationship state, pregnancy or egg state, due dates, quest status, party membership, and shop stock.
+Examples include HP, current clock, location, currency, item quantity, conditions, relationship state, pregnancy or egg state, due dates, quest status, party membership, shop stock, conception cooldowns, and detection cooldowns.
+
+An expired reproductive cooldown may be removed once the campaign clock has passed its next eligible clock.
 
 # Turn staging and duplicate prevention
 
@@ -228,6 +247,7 @@ During Final Turn Review:
 5. transfer a fact to multiple files only when an established master/detail or required mirror relationship exists
 6. organize real changes by destination file
 7. include the approved End Clock as one transfer to `active_game.json`
+8. include current reproductive cooldowns when they remain active after the End Clock
 
 # Corrections and legitimate removal
 
@@ -244,7 +264,7 @@ During an active Turn or Final Review:
 
 Do not invent a retcon for convenience.
 
-Current state may legitimately be removed when play establishes loss, sale, use, consumption, destruction, transfer, death, completed pregnancy, laid eggs, hatched eggs, resolved conditions, expired effects, or another real state transition.
+Current state may legitimately be removed when play establishes loss, sale, use, consumption, destruction, transfer, death, completed pregnancy, laid eggs, hatched eggs, resolved conditions, expired effects, an expired cooldown, or another real state transition.
 
 If conflicting current facts cannot be resolved from existing authority, use `RULE_AUTHORITY_AND_HIERARCHY.md` and obtain the player's direction.
 
@@ -252,16 +272,16 @@ If conflicting current facts cannot be resolved from existing authority, use `RU
 
 Typical approved destinations include:
 
-- `character_sheet.md` for core-PC mechanics, appearance, relationships, reproductive and parent state
-- `NPC-state.md` for NPC/child master state, family links, mechanics, possessions, shops, and reproductive state
+- `character_sheet.md` for core-PC mechanics, appearance, relationships, reproductive state, active reproductive cooldowns, and parent state
+- `NPC-state.md` for NPC and post-birth child master state, family links, mechanics, possessions, shops, reproductive state, active reproductive cooldowns, and later development
 - `inventory.md` for active item and currency bookkeeping
 - `routine_item_prices.md` for recurring Base Prices
-- `world_state.md` for calendar context, schedules, quests, locations, clues, and consequences
+- `world_state.md` for calendar context, schedules, quests, locations, clues, unresolved questions, and consequences
 - `session_log.md` for completed chronology
 - `art/art_log.md` for verified visual references
 - `active_game.json` for completed Turn number, scene, location, clock, advancement, revision, and sync note
 
-An unsuccessful conception or detection check normally needs no permanent transfer unless it changes a lasting investigation, treatment, decision, or relationship state.
+An unsuccessful conception or detection check normally needs no historical transfer, but any still-active 24-hour cooldown must transfer to the current state owner.
 
 # Master/detail synchronization
 
@@ -273,7 +293,10 @@ Examples:
 - PC Level/XP: `active_game.json.character_advancement` and human-readable mirrors in `character_sheet.md`
 - routine item Base Price: `routine_item_prices.md` and every current vendor mirror
 - a shop transaction: vendor stock, buyer currency, acquired inventory, item snapshot, stack result, and NPC ownership when applicable
-- a scheduled birth or hatching: parent/child state and the corresponding `world_state.md` scheduled milestone
+- a conception check: both participants' still-active pair cooldown records
+- a failed mundane detection check: the target's still-active detection cooldown
+- a scheduled birth or hatching: parent state and the corresponding `world_state.md` scheduled milestone
+- after birth or hatching: each child's `NPC-state.md` record and the parents' child references
 
 # Persistence discipline
 
