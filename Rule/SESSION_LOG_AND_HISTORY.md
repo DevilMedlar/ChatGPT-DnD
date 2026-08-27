@@ -4,51 +4,65 @@
 
 `session_log.md` is chronological and append-first.
 
-Character creation does **not** create a series of save-revision checkpoints. The entire pre-game character-creation and backstory phase remains `save_revision: 0`.
+The full pre-game character-creation and backstory phase remains `save_revision: 0` and does not create a series of checkpoint entries.
 
-When character creation is fully complete and the player confirms the transition into the Campaign Turn 1 starting baseline, append one character-creation completion entry for `save_revision: 1`.
+When character creation is complete and the player confirms the Campaign Turn 1 baseline, append one revision-1 completion entry.
 
-Each completed Campaign Turn should then be appended as a new checkpoint rather than replacing older checkpoints.
+Each completed Campaign Turn then receives one new checkpoint rather than replacing an older entry.
 
-Every completed log entry should identify its entry type and completed `save_revision`. Campaign Turn checkpoints should also identify their completed Campaign Turn number.
+Every completed entry identifies:
+
+- entry type
+- completed `save_revision`
+- Campaign Turn number when applicable
+- relevant clock or clock range
 
 ## Character-creation completion entry
 
-Do not append intermediate entries merely because individual character choices, backstory details, relationship facts, equipment choices, or other creation details were finalized during revision 0.
+Do not append intermediate entries for individual character choices.
 
-At the end of character creation, append one compact entry that records:
+The single revision-1 entry records:
 
 - character creation completed
 - `save_revision: 1` established
-- revision 1 is the starting permanent baseline for Campaign Turn 1
-- both required core PCs are complete
-- any especially important starting canon needed to understand later history
+- both required core PCs completed
+- opening scene and location
+- opening campaign clock
+- especially important starting relationship, family, equipment, and world canon
 
-The full detailed current character and starting-state facts remain in their owning state files; the session log is not a duplicate character sheet.
+Detailed current state remains in its owning files. The session log is not a duplicate character sheet or inventory.
 
 ## Completed Campaign Turns
 
-For gameplay, record continuity-critical events such as:
+Record a compact chronology of continuity-critical results, including when applicable:
 
-- important rolls
-- meaningful choices
-- consequences
-- XP awards
-- scene transitions
-- discoveries and clues
-- relationship changes
+- Start Clock, End Clock, and elapsed time
+- material time jumps and scheduled events crossed
+- important rolls and choices
 - combat outcomes
+- scene and location transitions
+- discoveries, clues, quests, and consequences
+- relationship changes
+- conceptions, births, hatchings, family changes, or developmental milestones
+- NPC and party changes
 - important transactions or possession changes
-- other events needed to understand later campaign state
+- XP and advancement
+- other facts needed to understand later state
 
-The session log summarizes completed Campaign Turns and does not need every granular Step already preserved during the temporary Turn ledger.
+The session log does not repeat every granular Step preserved in the temporary Turn ledger.
 
-Campaign Turn 1 begins from `save_revision: 1`. Its completed permanent save therefore normally becomes `save_revision: 2`.
+Campaign Turn 1 begins from revision 1. Its completed permanent save normally becomes revision 2.
+
+## Clock chronology
+
+Use the approved completed clock from `active_game.json` and the verified Turn clock range.
+
+Do not reconstruct a clock from prose when the completed state provides the value. Do not omit a material time jump that affects deadlines, rests, durations, pregnancy, egg production, incubation, hatching, aging, or scheduled events.
 
 ## Corrections and preservation
 
-Do not rewrite or compress older chronological history merely for neatness.
+Do not rewrite or compress useful older chronology merely for neatness.
 
-When an older historical entry is factually wrong or explicitly corrected, preserve useful history whenever practical by marking it corrected or superseded rather than silently erasing why the current state changed.
+When an entry is factually wrong or explicitly corrected, preserve useful history where practical by marking it corrected or superseded instead of silently erasing why current state changed.
 
-Fresh-campaign isolation is defined in `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. General append-first and correction behavior is defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+Fresh-campaign isolation is governed by `CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Append-first and correction behavior is governed by `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
