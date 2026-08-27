@@ -16,7 +16,7 @@ This file is the repository-wide authority for:
 It works with only two other global reproduction files:
 
 - `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` owns the active global species whitelist.
-- `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` owns the reusable reproductive biology of every species or family on that whitelist.
+- `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` owns the reusable reproductive biology of every species on that whitelist.
 
 Ordinary D&D 5.5e rules remain the default for unrelated game mechanics. The homebrew rules here override ordinary D&D wherever reproduction or hybrid lineage is concerned.
 
@@ -24,11 +24,11 @@ All characters participating in adult or reproductive content must satisfy `ADUL
 
 ## Active global scope
 
-A species is globally selectable for this crossbreeding system only when it appears in `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`.
+A species is globally selectable for this crossbreeding system only when its standard canonical form appears in `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`.
 
-A species omitted from that whitelist is not restored merely because it appears in old chat context, a deleted file, Git history, an older sourcebook, or surviving background research.
+A species, subrace, variation, alternate lineage, or setting version omitted from that whitelist is not restored merely because it appears in old chat context, a deleted file, Git history, an older sourcebook, or surviving background research.
 
-A removed or new species may enter through:
+A removed or new species or variation may enter through:
 
 1. the player's newer explicit global instruction, or
 2. an applicable campaign-specific override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
@@ -99,9 +99,10 @@ Adoption creates a genuine family relationship but does not create biological an
 
 Use `Naturally compatible` for:
 
-- the same species
-- variants or lineages that share essentially the same reproductive biology
-- another pairing explicitly classified as naturally compatible by a current profile
+- the same standard species
+- another pairing explicitly classified as naturally compatible by a current approved profile or campaign rule
+
+A nonstandard variation is not automatically naturally compatible or globally selectable merely because it shares ancestry with a standard species.
 
 ### Cross-species compatible
 
@@ -162,7 +163,7 @@ Always evaluate the two reproductive directions separately when the sexes of the
 - male Species A + female Species B
 - male Species B + female Species A
 
-A pair may be biologically possible in both directions while producing different gestation, egg formation, neonatal expression, or developmental timing.
+A pair may be biologically possible in both directions while producing different gestation, egg production, neonatal expression, or developmental timing.
 
 The female contributor determines the initial development route. The male contributor remains a full biological parent but does not replace the female reproductive system.
 
@@ -183,7 +184,7 @@ The other parent's egg-laying ancestry does not force her to lay an egg.
 An egg-laying female:
 
 - receives the male fertilizing contribution internally
-- forms the fertilized egg according to her biology
+- produces the fertilized egg according to her biology
 - lays the egg
 - uses her species' normal incubation and hatching requirements
 
@@ -191,10 +192,10 @@ The other parent's live-bearing ancestry does not remove the egg stage.
 
 ### Examples
 
-- male Human + female True Dragon -> the female Dragon forms and lays a fertilized hybrid egg
+- male Human + female True Dragon -> the female Dragon produces and lays a fertilized hybrid egg
 - male True Dragon + female Elf -> the female Elf carries the hybrid and gives live birth
-- male Dragonborn + female Feline Beastfolk -> live pregnancy and live birth
-- male Human + female Lizardfolk -> fertilized egg formation, laying, incubation, and hatching
+- male Dragonborn + female Kitsune -> the female Kitsune carries the hybrid and gives live birth
+- male Human + female Lizardfolk -> the female Lizardfolk produces and lays a fertilized hybrid egg
 
 ## Physical size and mating
 
@@ -220,7 +221,7 @@ This rule preserves a plausible pregnancy or egg-laying pathway. It cannot repai
 
 A hybrid's final inherited form does not need to be fully expressed at birth or hatching.
 
-When a mature inherited feature would interfere with pregnancy, egg formation, laying, birth, or hatching, the feature may be:
+When a mature inherited feature would interfere with pregnancy, egg production, laying, birth, or hatching, the feature may be:
 
 - small
 - soft
@@ -263,7 +264,7 @@ Their reproduction follows these rules:
 - an assumed form does not create compatibility with a species that the natural Kitsune body could not physically mate with
 - shapechanging is not required for Kitsune reproduction
 
-This exception applies only to Kitsune and does not reopen the global roster to other shapechanger species.
+This exception applies only to the standard Kitsune profile and does not reopen the global roster to other shapechanger species or Kitsune variations.
 
 # Fertility and conception
 
@@ -306,7 +307,7 @@ A conception check occurs only when all of the following are true:
 2. both participants are reproductively mature adults
 3. the male is not Infertile, Temporarily Suppressed, or Unknown
 4. the female is not Infertile, Temporarily Suppressed, or Unknown
-5. the female is not already pregnant, forming a fertilized egg or clutch, or in another established state that blocks a new conception
+5. the female is not already pregnant, producing a fertilized egg or clutch, or in another established state that blocks a new conception
 6. physical mating occurs through a workable internal-fertilization pathway
 7. the male fertilizing contribution is transferred in a manner capable of reaching the female contribution
 8. no effective contraceptive, prevention method, or explicit blocking effect applies
@@ -400,7 +401,7 @@ It abstracts the ordinary biological chain required for the pregnancy or egg-dev
 On success:
 
 - a live-bearing female becomes pregnant
-- an egg-laying female begins forming the fertilized egg or clutch according to her profile
+- an egg-laying female begins producing the fertilized egg or clutch according to her profile
 - the female development rule determines the route
 - the two participants become the biological parents
 - the exact offspring count is unresolved until the multiple-offspring mechanic is used
@@ -417,7 +418,7 @@ When more than one male had a qualifying conception opportunity with the same fe
 
 1. resolve the opportunities in established chronological order
 2. the first successful conception check establishes the biological father
-3. after conception succeeds, do not make later conception checks for that female until the pregnancy, fertilized-egg formation, or clutch state ends
+3. after conception succeeds, do not make later conception checks for that female until the pregnancy, fertilized-egg production, or clutch state ends
 4. if the chronological order is genuinely unknown, the player physically rolls an impartial ordering or tie-breaker before the conception checks
 5. ChatGPT never chooses the father for narrative convenience
 
@@ -441,7 +442,7 @@ The player still rolls every die even when the characters should not yet know wh
 
 When appropriate, ChatGPT may request two sequential `d10` rolls without revealing their purpose or the Final Conception Target until the fiction permits discovery. The two physical rolls and the combined percentile result must still be recorded accurately.
 
-Character knowledge of pregnancy or fertilized-egg formation is separate from the actual biological state. Detection uses later mechanics.
+Character knowledge of pregnancy or fertilized-egg production is separate from the actual biological state. Detection uses later mechanics.
 
 ## Reproductive-state persistence
 
@@ -462,11 +463,11 @@ During an active Campaign Turn, record each conception check in `turn_save.md` w
 - second d10 result for the ones digit
 - combined percentile result
 - success or failure
-- live-bearing or egg-forming development route on success
+- live-bearing or egg-producing development route on success
 
 At approved permanent reconciliation:
 
-- a core PC's current fertility, pregnancy, egg-forming, co-parent, conception-date, and related personal reproductive state belongs in `character_sheet.md`
+- a core PC's current fertility, pregnancy, egg-producing, co-parent, conception-date, and related personal reproductive state belongs in `character_sheet.md`
 - an NPC's equivalent persistent reproductive state belongs in `NPC-state.md`
 - the campaign's in-world date and calendar facts belong in `world_state.md` when tracked
 - continuity-important successful conceptions belong in `session_log.md`
@@ -522,7 +523,7 @@ Success at one stage does not automatically prove the next.
 
 A campaign-specific rule may:
 
-- add or remove species locally
+- add or remove species or variations locally
 - change a species' reproductive profile locally
 - establish a special compatible or incompatible pairing
 - alter a development method
