@@ -51,6 +51,8 @@ Unless a profile or campaign-specific rule says otherwise:
 - prenatal or pre-laying size remains within the female partner's viable reproductive range
 - difficult inherited structures may develop after birth or hatching
 
+The True Dragon profile specifically overrides the generic size caveat: every reproductively mature standard True Dragon can reduce to a compatible true-dragon size or assume a functional Humanoid form for mating, so True Dragon size alone never makes an active-whitelist pairing conditional or incompatible.
+
 ## Shared profile terminology
 
 ### Internal Live-Bearing Humanoid
@@ -216,23 +218,27 @@ This reproductive profile file records the biological presence of those traits. 
 # True Dragon
 
 - **Canonical Entry:** True Dragon
-- **Form:** Standard only
-- **Creature Type:** Dragon
+- **Form:** Standard True Dragon; temporary reduced true-dragon or Humanoid form permitted for reproductive physical access
+- **Creature Type:** Dragon in every form for parentage, ancestry, and reproductive-profile purposes
 - **Profile Status:** Complete
 - **Compatibility Family:** Internal Egg-Laying Draconic
 - **Reproductive Mode:** Sexual, stable male/female
-- **Mating Method:** Physical male/female mating in the actual dragon body
-- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Mating Method:** Physical male/female mating after the True Dragon uses its innate reproductive-form accommodation when necessary
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer using functionally compatible anatomy
 - **Female Reproductive Role:** supplies the ovum-equivalent contribution, produces the fertilized egg, and lays it
 - **Fertilization Method:** Internal
-- **Development Method:** Egg-laying
-- **Carrier:** Female parent until laying; development continues through incubation
-- **Special Requirements:** safe physical mating access, viable egg production, and an incubation environment appropriate to standard True Dragon biology
-- **Hatching Constraints:** the egg and hatchling remain within the female's viable laying range; inherited humanoid, Kemonomimi, reptilian, or other traits may appear at hatching or develop later
+- **Development Method:** Egg-laying when the True Dragon is female; the female partner's profile controls development when the True Dragon is male
+- **Carrier:** Female parent; a female True Dragon carries the developing egg until laying
+- **Reproductive-Form Accommodation:** every reproductively mature standard True Dragon can safely reduce to a compatible true-dragon size or assume a physically functional Humanoid form for mating. This requires no roll, magic item, outside spell, or partner-provided transformation.
+- **Form Functionality:** the reduced or Humanoid form has the functional anatomy needed for the same male or female reproductive role the dragon possesses in its standard body
+- **Species Continuity:** changing size or form does not turn the dragon into another biological species, alter genetic parentage, change its fertility status, or replace its True Dragon ancestry
+- **Female Development Continuity:** a female True Dragon still produces and lays a fertilized egg even if conception occurred while she was reduced or in Humanoid form
+- **Male Directional Continuity:** a male True Dragon mating with a live-bearing female produces a live-carried hybrid; mating with an egg-laying female follows that female's egg-laying route
+- **Hatching Constraints:** the egg and hatchling remain within the female True Dragon's viable laying range; inherited humanoid, Kemonomimi, reptilian, or other traits may appear at hatching or develop later
 - **Naturally Compatible:** True Dragon + True Dragon
-- **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Conditional Size Rule:** an extreme size difference may require a non-magical safe physical accommodation; shapechanging is neither required nor automatically assumed
-- **Notes:** Only the standard True Dragon profile is globally active.
+- **Cross-Species Compatible:** every other active-whitelist species in both reproductive directions
+- **Size Rule:** adult size difference alone never makes a True Dragon pairing conditional or incompatible because the reproductive-form accommodation resolves physical access
+- **Notes:** This is the repository's homebrew standard for all reproductively mature standard True Dragons, even when a particular published stat block does not list a size-changing or Shapechange feature. The accommodation affects physical access only and does not change the carrying female's development method.
 
 # Kitsune
 
