@@ -1,36 +1,29 @@
 # NPC State
 
-This file is the authoritative master record for persistent NPCs in the campaign.
+This file is the authoritative master record for persistent NPCs and persistent children in the campaign.
 
-It owns NPC identity, appearance, mechanical state, personality, relationship and attraction state, knowledge, secrets, party membership, off-party location, master personal possessions, NPC-specific quest involvement, shops/services, shop stock, and NPC continuity.
+It owns NPC identity, appearance, mechanics, personality, relationships, knowledge, secrets, party membership, location, personal possessions, reproductive and parent state, biological and adoptive family links, shops, NPC-specific quest involvement, and continuity.
 
-`world_state.md` references NPCs where they matter to locations, factions, quests, clues, discoveries, or world consequences without duplicating their full records. `inventory.md` expands the possessions of NPCs currently traveling with the party. `turn_save.md` temporarily overlays unfinished Campaign Turn changes.
+- NPC rules: `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`
+- Relationships: `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`
+- Reproduction and lineage: `../Rule/REPRODUCTION_AND_LINEAGE.md`
+- Shops: `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`
+- State ownership: `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`
 
-Shared NPC ownership, advancement, and party-membership reconciliation are defined in `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Relationship semantics are defined in `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`. Vendor/shop behavior is defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Fresh-start isolation is defined in `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Persistence is defined in `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`. Adult-content boundaries are defined in `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
+`world_state.md` references persistent NPCs and scheduled milestones by stable ID. `inventory.md` expands the possessions of NPCs currently traveling with the party. `turn_save.md` temporarily overlays unfinished Campaign Turn changes.
 
 ## Stable NPC ID Convention
 
-Every persistent NPC receives one stable campaign-local ID when the NPC is first added to this file.
-
-- Use the form `NPC-0001`, `NPC-0002`, `NPC-0003`, and so on.
-- Assign the next unused numeric ID in sequence.
-- An NPC ID never changes because the NPC's name, title, role, location, relationship, party status, or life status changes.
-- Never reuse an old NPC ID for a different NPC, even if the original NPC later dies, disappears, is retired from active play, or has their record corrected.
-- Names and Markdown headings are human-readable display text; they are not the cross-file identity key.
-- Cross-file references to a persistent NPC must include the stable NPC ID. The current NPC name may be included beside it for readability.
-- If one NPC is ever found with multiple IDs, or two NPCs share one ID, stop and reconcile the identity conflict before completing another persistent save.
-
-## Relationship / Attraction Field Convention
-
-The shared meaning and separation of relationship status, partners, romantic interest, adult sexual interest, attraction, jealousy/rivalry, boundaries, consent/availability, disposition, trust, obligations, and related state are defined in `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`.
-
-The template below keeps explicit target-specific fields for the player-controlled PC and ChatGPT-controlled PC / co-protagonist where useful. NPCs below 18 follow `../Rule/ADULT_CONTENT_AND_CONSENT.md`.
+- Assign persistent NPC IDs in sequence: `NPC-0001`, `NPC-0002`, and so on.
+- A newborn or hatchling receives the next unused ID when its persistent record is created.
+- Never reuse or change an ID because a name, title, relationship, age, location, party state, or life status changes.
+- Cross-file references include the stable ID. A current name may accompany it for readability.
+- `NPC-####` is a template placeholder, not an actual NPC.
+- Reconcile any duplicate or conflicting ID before another permanent save.
 
 ## Current Party NPCs
 
 ## Important NPC Index
-
-When NPCs become persistent, list them here with their stable NPC ID, current name, and a short role or relevance note. Do not use a name-derived Markdown anchor as the NPC's identity.
 
 Example format only:
 
@@ -40,9 +33,7 @@ Example format only:
 
 ## NPC Record Template
 
-Use the sections below when an NPC becomes important enough to track persistently. Not every NPC needs every optional section. Populate what is relevant and established rather than inventing filler.
-
-`NPC-####` is a template placeholder only. Replace it with the next unused stable ID when the persistent record is first created.
+Populate only established and relevant fields. A minor NPC does not need invented filler or a complete combat block.
 
 ---
 
@@ -53,8 +44,11 @@ Use the sections below when an NPC becomes important enough to track persistentl
 - **NPC ID:** NPC-####
 - **Name:**
 - **Age:**
+- **Birth / hatching clock:**
 - **Gender / pronouns:**
+- **Biological reproductive role:** Male / Female / Not applicable / Unknown
 - **Species / ancestry:**
+- **Creature Type:**
 - **Role / occupation:**
 - **Faction / allegiance:**
 - **Status:** Alive / Dead / Missing / Unknown
@@ -62,11 +56,12 @@ Use the sections below when an NPC becomes important enough to track persistentl
 
 ### Appearance
 
-- **Height:**
+- **Height / Size:**
 - **Build:**
 - **Hair:**
 - **Eyes:**
-- **Skin / scales / fur / etc.:**
+- **Skin / scales / other covering:**
+- **Ears / tail / horns / wings / crest:**
 - **Distinctive features:**
 - **Typical clothing:**
 - **Visible equipment:**
@@ -74,104 +69,113 @@ Use the sections below when an NPC becomes important enough to track persistentl
 - **Other visual notes:**
 - **Reference art:** See `art/art_log.md` when established
 
-### Location / Party State
+For a hybrid child, distinguish traits visible now from traits scheduled to develop later.
 
-If the NPC is not currently traveling with the party, track where they can later be found when known:
+### Location / Party State
 
 - **Normal location:**
 - **Current known location:**
 - **Last seen:**
 - **Can normally be found at:**
-
-If the NPC is currently traveling with the party:
-
-- **Current known location:** With party
-- **In party:** Yes
-- **Joined:**
-- **Reason:**
-- **Expected duration:**
+- **Joined party clock:**
+- **Reason / expected duration:**
 - **Last non-party location:**
 
-When `In party: Yes`, do not duplicate moment-to-moment movement here. The last completed party location belongs in `active_game.json`; unfinished Campaign Turn movement and combat position belong in `turn_save.md` until Campaign Turn reconciliation.
+When `In party: Yes`, moment-to-moment movement belongs in `turn_save.md`; the completed party location belongs in `active_game.json`.
 
 ### Personality / Motivations
 
 - **Personality:**
 - **Values:**
 - **Goals:**
-- **Wants:**
-- **Needs:**
+- **Wants / needs:**
 - **Fears:**
-- **Likes:**
-- **Dislikes:**
+- **Likes / dislikes:**
 - **Habits / mannerisms:**
 - **Current priorities:**
 
 ### Relationship / Attraction Overview
 
 - **Relationship status:**
-- **Current partner(s):**
+- **Current partner(s) / stable IDs:**
 - **Romantic interest(s):**
-- **Sexual interest(s):** Explicitly adult NPCs only
+- **Adult sexual interest(s):** Explicitly adult NPCs only
 - **Attraction toward player-controlled PC:**
-- **Attraction toward ChatGPT-controlled PC / co-protagonist:**
+- **Attraction toward ChatGPT-controlled PC:**
 - **Other known attractions:**
 - **Jealousy / rivalry:**
 - **Established boundaries:**
 - **Consent / availability notes:**
+- **Disposition / trust / obligations toward core PCs:**
+- **Other important relationships:**
 
-#### Relationship with Player-Controlled PC
+### Family, Reproductive, and Lineage State
 
-- **Disposition:**
-- **Trust:**
-- **Respect / fear:**
-- **Attraction / romantic tension:**
-- **Relationship role:**
-- **Debts / favors:**
-- **Promises / obligations:**
-- **Important history:**
+Populate only established facts. A healthy reproductively mature adult defaults to `Fertile +0` under `REPRODUCTION_AND_LINEAGE.md`.
 
-#### Relationship with ChatGPT-Controlled PC / Co-Protagonist
+#### Parentage and Guardianship
 
-- **Disposition:**
-- **Trust:**
-- **Respect / fear:**
-- **Attraction / romantic tension:**
-- **Relationship role:**
-- **Debts / favors:**
-- **Promises / obligations:**
-- **Important history:**
+- **Biological mother / stable ID:**
+- **Biological father / stable ID:**
+- **Adoptive parent(s) / stable IDs:**
+- **Guardian(s) / stable IDs:**
+- **Children / offspring / stable IDs:**
+- **Other family links:**
 
-#### Other Important Relationships
+Biological and adoptive relationships remain distinct fields.
 
-Record other established partners, family, friends, rivals, employers, enemies, dependents, or other relationship ties when they matter.
+#### Current Reproductive State
+
+- **Reproductive maturity:** Mature / Not mature / Not established
+- **Fertility status / modifier:**
+- **Female development route, when applicable:** Live-bearing / Egg-laying / Not established
+- **Source-species schedule for a hybrid female:**
+- **Prevention / contraception state:**
+- **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
+- **Biological co-parent / stable ID:**
+- **Conception clock:**
+- **Compatibility:**
+- **Offspring / egg count:**
+- **Due date or laying date:**
+- **Hatching date:**
+- **Character knowledge:**
+- **Ongoing reproductive effects / treatment / notes:**
+
+#### Hybrid and Developmental State
+
+Use for a hybrid, child, hatchling, or developing lineage.
+
+- **Ancestry / biological parents:**
+- **Inherited four-slot mechanical package:**
+- **Current usable species traits:**
+- **Visible cosmetic traits:**
+- **Delayed traits:**
+- **Scheduled developmental milestones:**
+- **Adult size / lifespan result:**
+- **Adult fertility:** Not yet established / Fertile +0 / Other explicit state
+- **Stable-lineage status:** Individual hybrid / Campaign-local lineage / Global approved lineage
 
 ### Knowledge / Secrets
 
-Keep factual knowledge, beliefs, shared information, withheld information, and secrets separate when they differ.
-
 - **What the NPC knows:**
 - **What the NPC believes:**
-- **Information already shared with the party:**
-- **Information being withheld:**
-- **Secrets known:**
-- **Secrets personally held:**
+- **Information shared with the party:**
+- **Information withheld:**
+- **Secrets known / personally held:**
 - **False beliefs / misunderstandings:**
 
 ### Mechanical State
 
-Use when the NPC is mechanically relevant. A minor noncombat NPC does not need a complete combat block unless play establishes one.
-
-`Level` and `Class / archetype` are mutable mechanical state and are tracked here rather than duplicated in Identity.
+Use only when mechanically relevant.
 
 - **Level:**
 - **Class / archetype:**
-- **XP / advancement state:** If this NPC uses individual advancement
+- **XP / advancement:**
 - **HP / Max HP:**
 - **Temporary HP:**
-- **Armor Class:**
+- **Armor Class / calculation:**
 - **Initiative:**
-- **Speed:**
+- **Speed / special movement:**
 - **Proficiency Bonus:**
 - **Hit Dice / recovery resource:**
 - **Passive Perception:**
@@ -186,152 +190,75 @@ Use when the NPC is mechanically relevant. A minor noncombat NPC does not need a
 - **Wisdom:**
 - **Charisma:**
 
-#### Saving Throws
-
-- 
-
-#### Skills
-
-- 
+#### Saving Throws / Skills
 
 #### Attacks
 
-##### Attack Name
-
-- **Attack modifier:**
-- **Damage:**
-- **Damage type:**
-- **Range / reach:**
-- **Special effects:**
+For each attack record modifier, damage, damage type, range or reach, and special effects.
 
 #### Features / Abilities / Spells
 
-##### Feature or Ability Name
-
-- **Description:**
-- **Mechanical effect:**
-- **Activation:**
-- **Uses / charges:**
-- **Recharge:**
-- **Duration:**
-- **Requirements:**
-- **Stacking / exclusivity:**
+For each feature record its mechanics, activation, uses, recharge, duration, requirements, and stacking rules.
 
 #### Conditions / Ongoing Effects
 
-- 
-
 #### Resources
-
-- **Spell slots:**
-- **Class resources:**
-- **Limited-use abilities:**
-- **Other tracked resources:**
 
 ### Personal / Owned Items
 
-This is the NPC's **master ownership list**. It remains here whether the NPC is in the party or not.
-
-When the NPC is currently in the party, `inventory.md` expands mechanically relevant carried possessions for active bookkeeping. The ownership list here remains the master list of what belongs to the NPC.
+This is the NPC's master ownership list whether or not the NPC is currently in the party.
 
 #### Equipped
 
-- 
-
 #### Carried
-
-- 
 
 #### Stored / Elsewhere
 
-- 
-
 #### Important / Unique Items
 
-- 
+When the NPC is in the party, keep mechanically detailed active bookkeeping in `inventory.md` synchronized with this master list.
 
 ### Shop / Services
 
-Use this optional section for merchants, smiths, healers, trainers, innkeepers, enchanters, information brokers, or other service NPCs.
-
-This section owns the persistent business-level vendor state, current shop stock, and services for this NPC's business. Official-item sourcing, pricing, and transaction rules are defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Acquired-item mechanics and inventory snapshots are defined in `../Rule/INVENTORY_EQUIPMENT_AND_ITEMS.md`. Campaign Turn staging and reconciliation follow `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`. Recurring Base Prices for routine/basic repeat goods are owned by `routine_item_prices.md`.
-
-Shop stock is **business inventory**, not the NPC's personal ownership list and not current-party inventory.
+Use for persistent vendors or service providers.
 
 #### Business-Level State
 
-- **Business name:**
-- **Business type:**
+- **Business name / type:**
 - **Owner / operator:**
 - **Location:**
 - **Currency accepted:**
-- **Typical opening hours:**
-- **Restock behavior:**
-- **Special-order capability:**
-- **Buy-back policy:**
+- **Opening hours:**
+- **Restock behavior / next scheduled restock:**
+- **Special orders / buy-back policy:**
 - **Base markup / discount rules:**
-- **Current party discount / markup:**
-- **Reason for discount / markup:** Business / relationship cause such as shop policy, relationship, reputation, faction standing, or negotiation
+- **Current party modifier and reason:**
 
 #### Current Shop Stock
-
-For normal standard vendor stock, the **item name itself is the direct official link** to the freely viewable official item page.
 
 | Item | Base Price | Qty | Category | Key Mechanics | Short Description |
 |---|---:|---:|---|---|---|
 |  |  |  |  |  |  |
 
-For this table:
-
-- current availability and quantity are vendor-owned state here
-- routine/basic Base Price mirrors `routine_item_prices.md` when that item is classified there
-- non-routine official items may use the shared GM-established Base Price procedure
-- `Category` and `Key Mechanics` are compact storefront fields derived from the current official reference
-- `Short Description` is compact generated storefront text rather than an independent mechanical authority
-
-Full official-stock, pricing-factor, no-double-counting, external-reference, homebrew/custom-item boundary, and purchase-staging rules are defined in `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`.
-
 #### Services
 
-##### Service Name
-
-- **Price:**
-- **Time:**
-- **Effect:**
-- **Requirements:**
-- **Limitations:**
+For each service record price, time, effect, requirements, and limitations.
 
 ### Quest / Story Role
 
-Use this optional section for quest givers, mission contacts, targets, witnesses, missing persons, suspects, guides, faction representatives, villains, or other story-linked NPCs.
+- **Associated quests / missions:**
+- **Current involvement:**
+- **Objective / request:**
+- **Information provided / withheld:**
+- **Reward / conditions / deadline:**
+- **Consequences:**
 
-`NPC-state.md` records **this NPC's involvement**. `world_state.md` remains authoritative for the overall quest or mission state.
-
-#### Associated Quests / Missions
-
-- 
-
-#### Current Involvement
-
-- **Role:**
-- **Current objective:**
-- **What they asked the player-controlled PC / ChatGPT-controlled PC / co-protagonist to do:**
-- **Information provided:**
-- **Information withheld:**
-- **Reward promised:**
-- **Special conditions:**
-- **Deadline:**
-- **Consequences of success:**
-- **Consequences of failure:**
+`world_state.md` owns overall quest state; this section owns the NPC's involvement.
 
 ### Continuity History
 
-Keep a compact NPC-specific history of events that explain the NPC's current state, behavior, relationships, obligations, or role. Do not duplicate the entire `session_log.md`.
+Append compact NPC-specific changes that explain current state.
 
-- **Session / Campaign Turn:** Event or continuity change
-
-## Shared Rule Authority
-
-NPC party joins/leaves, possession reconciliation, stable cross-file references, and NPC advancement are governed by `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Relationship-state semantics are governed by `../Rule/RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md`. Shop/vendor behavior is governed by `../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`. Fresh-start isolation is governed by `../Rule/CANON_HISTORY_AND_CAMPAIGN_ISOLATION.md`. Append-first preservation and cross-file ownership are governed by `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`. Campaign Turn staging and save behavior are governed by `../Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
-
-This file contains only persistent NPC master state and the reusable NPC record schema.
+```text
+- Campaign Turn / clock: event or continuity change
+```
