@@ -7,12 +7,12 @@ This is the repository's only dedicated global reproduction file. It owns:
 - biological compatibility
 - fertility and conception
 - carrying-parent development
-- offspring count and biological sex
+- offspring count at conception
 - pregnancy, egg production, gestation, and incubation
 - detection of reproductive state
-- hybrid inheritance
 - birth and hatching
-- childhood development
+- biological sex and visible appearance at birth or hatching
+- post-birth hybrid trait development during aging
 - adult hybrid fertility and later generations
 - adoption separation
 - reproductive-state persistence
@@ -161,7 +161,7 @@ Prenatal or pre-laying development remains within the female parent's viable rep
 
 Inherited horns, scales, plates, wings, claws, fangs, tails, breath structures, or unusual adult size may remain small, soft, folded, flexible, dormant, or otherwise immature until after birth or hatching.
 
-Delayed expression changes timing, not inheritance.
+Delayed expression changes timing, not ancestry.
 
 # Fertility and conception
 
@@ -201,14 +201,28 @@ A conception check occurs only when:
 5. physical mating provides a valid internal-fertilization opportunity
 6. no fully effective prevention method or explicit block applies
 7. the canonical campaign clock is established
+8. the same pair has not already received a conception check during the preceding 24 in-world hours
 
 If any condition fails, do not roll.
 
 ## One check per pair per 24 hours
 
-Each distinct male/female pairing receives at most one conception check in the same 24 in-world hours.
+Each distinct male/female pairing receives at most one conception check during any 24 in-world hours.
 
 Multiple qualifying acts in that period are folded into one opportunity. They do not add rolls or modifiers unless an explicit effect says so.
+
+After every conception check, successful or unsuccessful, record for that exact pair:
+
+- the other participant
+- the check clock
+- the outcome
+- the next clock at which that pair may receive another conception check
+
+The next eligible clock is exactly 24 in-world hours after the recorded check.
+
+A failed check therefore remains current state until the pair becomes eligible again. Do not erase it merely because the Campaign Turn is saved or `turn_save.md` is reset.
+
+Store the current cooldown with both participants' reproductive state in `character_sheet.md` or `NPC-state.md`. Once the next eligible clock has passed, the expired entry may be removed or replaced by a later check for the same pair.
 
 Use the canonical `active_game.json.campaign_clock` plus the current `turn_save.md` clock overlay. Do not guess whether 24 hours passed.
 
@@ -259,15 +273,27 @@ Do not add or multiply the dice.
 
 ## Successful conception
 
-Success immediately establishes a viable biological state:
+Success immediately establishes:
 
-- a live-bearing female becomes pregnant
-- an egg-laying female begins producing a fertilized egg or clutch
-- the participants become the biological parents
-- offspring count, sex, and inheritance are resolved by the player-rolled rules below
-- no second hidden implantation or establishment roll occurs
+- a live-bearing female is pregnant, or an egg-laying female is producing a fertilized egg or clutch
+- the male and female participants are the biological parents
+- the offspring or fertilized-egg count under the female species' table below
+- the conception clock
+- the due date or laying date
+- the hatching date when applicable
+- the 24-hour pair cooldown record, even though further checks are already blocked by the pregnancy or egg-production state
 
-Character knowledge is separate from the actual state.
+Success does **not** establish at conception:
+
+- each offspring's biological sex
+- each offspring's exact visible appearance
+- each offspring's final mechanical inherited traits
+- the exact dependencies, settings, or later functionality of hybrid traits
+- an individual child NPC record
+
+Those individual details are resolved later under Birth, Hatching, and Aging.
+
+No second hidden implantation or establishment roll occurs.
 
 ## Multiple possible fathers
 
@@ -290,9 +316,9 @@ For a method with an established failure chance:
 
 Do not invent effectiveness percentages.
 
-# Offspring count and biological sex
+# Offspring or fertilized-egg count at conception
 
-Resolve these immediately after successful conception for mechanical truth, even if the characters do not yet know the results.
+Resolve only the number immediately after successful conception.
 
 ## Live-bearing count
 
@@ -331,15 +357,6 @@ Roll `1d4`. The result is the number of fertilized eggs: 1–4.
 The female species controls the count table. The male species does not change it unless an explicit effect says otherwise.
 
 Every established offspring is viable by default. Do not add a hidden viability roll.
-
-## Biological sex
-
-For each offspring, roll `1d20`:
-
-- odd result = male
-- even result = female
-
-A campaign-specific rule may replace this table, but ChatGPT never selects the result for narrative convenience.
 
 # Pregnancy, egg production, and incubation
 
@@ -394,13 +411,15 @@ A laid egg requires:
 - protection from breaking or violent impact
 - a stable environment appropriate to the female species
 - ordinary access to required warmth, moisture, air, and care
-- no prolonged extreme condition that its profile cannot tolerate
+- no prolonged extreme condition that its biology cannot tolerate
 
 Normal competent care succeeds automatically. Risk checks occur only when a real adverse condition is established.
 
-# Detection and character knowledge
+# Detection and shared core-PC knowledge
 
-The actual biological state exists from conception. Knowledge must be established separately.
+The actual biological state exists from conception. Detection establishes when the characters know it.
+
+The two core PCs share everything they learn under `CORE_PARTY_AND_CHARACTER_AGENCY.md`. If either core PC detects or learns the reproductive state, both core PCs know it.
 
 ## Live-bearing mundane detection
 
@@ -422,93 +441,52 @@ Use the female species' conception-to-laying interval.
 | Halfway onward | DC 10 Wisdom (Medicine) |
 | Three-quarters onward | The egg-producing character normally recognizes the state automatically unless an explicit effect masks it |
 
+## One mundane detection attempt per 24 hours
+
+After a mundane detection check fails, the same reproductive state cannot receive another mundane detection check until exactly 24 in-world hours later.
+
+This applies regardless of who would make the next check. A different examiner does not create another immediate attempt.
+
+Record with the female's reproductive state:
+
+- last mundane detection check clock
+- outcome
+- next eligible detection clock
+
+Do not erase that current cooldown merely because the Campaign Turn is saved or `turn_save.md` is reset. Once the next eligible clock has passed, the expired entry may be removed or replaced.
+
 ## Magical, item, and treatment detection
 
 A spell, item, examination, or treatment detects only what its established mechanics say it detects. Do not invent detection powers or certainty.
 
+A specific established magical, item, or treatment effect may bypass the mundane-attempt cooldown only when its own mechanics explicitly permit that result.
+
 The player physically rolls all required checks, even when the characters do not know the purpose of the roll.
 
-# Hybrid inheritance
+# Birth, hatching, and individual child records
 
-## Core principle
+## Healthy default
 
-A hybrid inherits ancestry from both biological parents, but it does not receive every mechanical trait from both species.
+When the due, laying, or hatching clock is reached and normal care conditions are satisfied:
 
-Class features, Background benefits, feats, trained skills, equipment, culture, language, religion, personality, profession, and social status are not genetic traits.
+- labor, laying, or hatching succeeds without a random complication roll
+- the parent and offspring are stable
+- no automatic damage, Exhaustion, permanent injury, or death occurs
 
-## Four-slot mechanical budget
+Laying creates persistent egg state and schedules but does not yet resolve the hatchling's biological sex, visible appearance, or individual child record. Those are resolved at hatching.
 
-Each hybrid receives a four-slot species-trait budget.
+## Biological sex at birth or hatching
 
-- a major trait costs 2 slots
-- a standard trait costs 1 slot
-- cosmetic expression costs 0 slots
-- at least 1 slot must come from each biological parent
-- no hybrid may inherit more than one 2-slot major trait without an explicit balancing override
+For each child at live birth or each hatchling when the egg hatches, roll `1d20`:
 
-### Two-slot major traits
+- odd result = male
+- even result = female
 
-Treat these as 2-slot traits:
+A campaign-specific rule may replace this table, but ChatGPT never selects the result for narrative convenience.
 
-- Human Versatile Origin feat
-- Dwarven Toughness
-- Gnomish Cunning
-- any Breath Weapon
-- Dragonborn Draconic Flight
-- Dragonkin Mature Flight
-- True Dragon Form Accommodation
-- True Dragon Developing Flight
-- Lizardfolk Natural Armor
+## Visible appearance at birth or hatching
 
-### One-slot standard traits
-
-All other species mechanics in `PLAYABLE_CHARACTER_OPTIONS.md` cost 1 slot unless an explicit rule reclassifies them.
-
-Examples include Darkvision, a skill proficiency, Fey Ancestry, Trance, Damage Resistance, Stonecunning, cantrips, natural weapons, gliding, Powerful Build, keen senses, movement increases, swimming, Hold Breath, and limited-use movement traits.
-
-## Dice-to-list procedure
-
-Whenever a roll must select one trait from a list:
-
-1. remove traits that cannot fit the remaining slots or would violate a cap
-2. sort the remaining traits alphabetically by trait name
-3. use the smallest die the player owns whose maximum can cover the list length: d4, d6, d8, d10, d12, then d20
-4. roll that die
-5. reroll any result greater than the list length
-6. the final result selects the trait at that numbered position
-
-ChatGPT shows the exact numbered list before the roll and never chooses between valid results.
-
-## Trait-selection procedure
-
-1. Build and show each parent's eligible mechanical trait list, separated into 1-slot and 2-slot traits.
-2. Exclude reproductive-baseline text, cosmetic notes, and anything not actually contained in the parent's approved species package.
-3. Select one mandatory 1-slot trait from the female parent using the Dice-to-list procedure.
-4. Select one mandatory 1-slot trait from the male parent using the Dice-to-list procedure.
-5. Two slots remain. Before each further selection, roll `1d20` for parent source:
-   - 1–10 = female parent's remaining pool
-   - 11–20 = male parent's remaining pool
-6. From the selected parent's traits that fit the remaining slots and all caps, use the Dice-to-list procedure.
-7. If the selected parent has no currently legal trait, use the other parent's currently legal pool rather than allowing ChatGPT to choose or wasting the roll.
-8. Remove each selected trait from its parent's pool unless a specific trait is explicitly repeatable.
-9. Continue until exactly four slots are filled.
-
-Every current approved species has at least one 1-slot trait, so the mandatory parent contributions never require a discretionary exception.
-
-## Trait caps and merging
-
-- At most one Breath Weapon.
-- At most one flight progression.
-- At most one Damage Resistance unless an explicit balanced feature says otherwise.
-- At most one natural Armor Class calculation.
-- At most one natural weapon of each body part.
-- Duplicate Darkvision uses the greater range and consumes only one slot.
-- Duplicate skill proficiency does not create Expertise; remove the duplicate from the eligible list before rolling.
-- Duplicate movement speeds use the greater value and do not add together.
-- A Humanoid or compact-form trait does not grant a monster stat block.
-- A trait with a character-level gate retains that gate.
-
-## Cosmetic and body-plan inheritance
+Resolve the newborn or hatchling's visible appearance only when that individual is born or hatches.
 
 For each meaningful visible category, roll `1d6`:
 
@@ -518,7 +496,7 @@ For each meaningful visible category, roll `1d6`:
 
 Possible categories include:
 
-- general body framework
+- general newborn body framework
 - skin, scales, or other covering
 - ears
 - tail
@@ -530,39 +508,24 @@ Possible categories include:
 
 Do not roll a category when neither parent has a meaningful difference.
 
-Cosmetic inheritance does not grant a mechanical trait unless that trait also occupies the required mechanical slots.
+Features that would make birth unsafe may be absent, soft, small, folded, dormant, or only faintly visible. Their later development is handled during aging.
 
-## Adult size and lifespan
+## Mechanical hybrid traits are deferred
 
-Roll `1d6` separately for adult size and lifespan:
+Do not determine a hybrid's final mechanical species-trait package at conception.
 
-- 1–2 = follows the female parent's range
-- 3–4 = blended midpoint or intermediate range
-- 5–6 = follows the male parent's range
+At birth or hatching, record ancestry, visible features, and potential delayed features. Exact mechanical inherited traits, their dependencies, damage types, skill choices, spellcasting settings, movement effects, Creature Type interactions, and other mechanical details remain **TBD after birth during aging**.
 
-Prenatal size still follows the female carrier's safe range.
+When a feature reaches a relevant developmental milestone:
 
-## Female hybrid development route
+1. identify the parent traits that could reasonably produce it
+2. use only a player-approved rule that exists at that time
+3. state every required roll before the player rolls
+4. record the resolved trait and its exact dependencies in the child's persistent record
+5. do not grant every mechanic from both parents
+6. do not let ChatGPT choose a result merely because it fits the narrative
 
-When a female hybrid reaches reproductive maturity:
-
-- if both parent species use the same route, she uses that route
-- if the routes differ, roll `1d20`
-  - 1–10 = female parent's route and schedule
-  - 11–20 = male parent's species' female route and schedule
-
-Record the selected source species and schedule. This roll is made once and becomes permanent personal biology.
-
-# Birth and hatching
-
-## Healthy default
-
-When the due, laying, or hatching clock is reached and normal care conditions are satisfied:
-
-- labor, laying, or hatching succeeds without a random complication roll
-- the parent and offspring are stable
-- no automatic damage, Exhaustion, permanent injury, or death occurs
-- each newborn or hatchling receives a persistent record
+Until the applicable post-birth aging rule is approved, ChatGPT may describe only established visible development and may not invent a new mechanical benefit.
 
 ## Risk checks
 
@@ -590,21 +553,24 @@ Do not invent catastrophic stakes after seeing the roll.
 
 ## Newborn or hatchling record
 
-Create a persistent NPC record containing:
+At birth or hatching, create one persistent NPC record for each individual containing:
 
 - stable NPC ID
 - name or temporary identifier
 - birth or hatching clock
 - biological sex
-- biological parents and stable IDs
+- biological mother and father with their stable references
 - adoptive parents or guardians, separately
 - ancestry
-- development route
-- inherited mechanical traits
+- development route used before birth or hatching
 - visible traits
-- delayed traits and milestones
+- delayed or potential traits
+- unresolved post-birth mechanical-trait status
 - health and current location
+- future developmental milestones as they become established
 - adult fertility and female route when later established
+
+No individual child NPC record is required before live birth or hatching. Before then, the parent record owns the aggregate pregnancy or clutch count and schedule.
 
 # Childhood and trait development
 
@@ -621,23 +587,23 @@ Create a persistent NPC record containing:
 
 Long-lived species may have different cultural expectations, but all active species can be physically mature by 18 under this homebrew.
 
-## Default delayed-trait milestones
+## Default visible-development milestones
 
-Use these when a more specific inherited trait does not define another schedule:
+These are descriptive timing guides. They do not automatically grant an undefined mechanical trait.
 
-| Trait | Visible / begins | Mechanically functional |
+| Trait | Visible / begins | Mechanical resolution |
 |---|---|---|
-| Ears, tail, harmless markings | Birth or hatching | Birth or infancy |
-| Darkvision or keen senses | Infancy | Age 1 |
-| Scales, natural armor, claws, fangs | Soft or small at birth | Age 6 |
-| Horns, crests, plates | Buds or soft structures at birth | Age 6 |
-| Gliding wings | Folded buds or small wings | Age 8 |
-| Breath Weapon | Internal structure develops in childhood | Age 10 |
-| Form Accommodation | Signs may appear in childhood | Age 12 |
-| Full flight | Wings mature through adolescence | Age 15 |
-| Full adult size and species maturity | Progressive | Age 18 |
+| Ears, tail, harmless markings | Birth or hatching | Resolve only if a mechanic later matters |
+| Darkvision or keen senses | Infancy | TBD through approved aging mechanics |
+| Scales, natural armor, claws, fangs | Soft or small at birth | TBD through approved aging mechanics |
+| Horns, crests, plates | Buds or soft structures at birth | TBD through approved aging mechanics |
+| Gliding wings | Folded buds or small wings | TBD through approved aging mechanics |
+| Breath structure | Develops in childhood | TBD through approved aging mechanics |
+| Form accommodation | Signs may appear in childhood | TBD through approved aging mechanics |
+| Full flight | Wings mature through adolescence | TBD through approved aging mechanics |
+| Full adult size and species maturity | Progressive | Resolve by physical adulthood |
 
-For a PC, both the age milestone and any character-level gate in the inherited trait must be satisfied.
+For a future PC, both the age milestone and any character-level gate eventually established for the trait must be satisfied.
 
 # Adult hybrid fertility and later generations
 
@@ -654,14 +620,25 @@ This is an explicit homebrew rule. Do not add hidden hybrid sterility.
 
 An explicit injury, condition, item, treatment, curse, blessing, feature, or campaign rule may alter an individual's fertility.
 
+## Female hybrid development route
+
+When a female hybrid reaches reproductive maturity:
+
+- if both parent species use the same route, she uses that route
+- if the routes differ, roll `1d20`
+  - 1–10 = her biological mother's species route and schedule
+  - 11–20 = her biological father's species' female route and schedule
+
+Record the selected source species and schedule. This roll is made once and becomes permanent personal biology.
+
 ## Later-generation inheritance
 
 When a hybrid becomes a biological parent:
 
-- use the hybrid's recorded four-slot trait package as that parent's mechanical trait pool
-- use the hybrid's recorded body plan and visible traits as that parent's cosmetic pool
+- use the hybrid's recorded ancestry, visible body plan, and resolved post-birth mechanical traits
 - use the hybrid female's recorded development route and source-species schedule when she is the female parent
-- apply the same conception and inheritance procedures
+- apply the same conception, count, birth or hatching, and aging procedures
+- do not invent missing mechanical inheritance rules
 
 ## Stable lineage status
 
@@ -672,7 +649,7 @@ The player may approve a stable lineage after defining:
 - a lineage name
 - standard body plan
 - standard Creature Type, Size, Speed, and lifespan
-- a balanced four-slot species package
+- a balanced playable species package
 - male and female reproductive roles
 - female development route and schedule
 - fertility and compatibility
@@ -686,25 +663,31 @@ Add the approved lineage to `PLAYABLE_CHARACTER_OPTIONS.md` globally or to a cam
 
 During an active Campaign Turn, `turn_save.md` owns:
 
-- conception opportunities and rolls
-- exact clock of each check
-- offspring-count and sex rolls
-- detection checks
+- conception opportunities and percentile rolls
+- exact clock and 24-hour next-eligible clock for each pair
+- offspring or fertilized-egg count rolls
+- detection checks and their 24-hour next-eligible clock
 - temporary pregnancy or egg-production state
 - due, laying, and hatching calculations
-- inheritance rolls
-- birth, hatching, or complication checks
+- laying, birth, hatching, or complication checks
+- biological-sex and visible-appearance rolls at birth or hatching
+- post-birth developmental rolls when an approved aging mechanic later exists
 - pending permanent transfers
 
 ## Permanent ownership
 
 At approved reconciliation:
 
-- core-PC reproductive and parent state belongs in `character_sheet.md`
-- persistent NPC and child state belongs in `NPC-state.md`
+- each participant's current conception-check cooldown belongs in that participant's reproductive state in `character_sheet.md` or `NPC-state.md`
+- the female's current mundane-detection cooldown belongs in her reproductive state
+- aggregate pregnancy or clutch count, parents, conception clock, route, due date, laying date, and hatching date belong in the female parent's state
+- no individual child record is created before live birth or hatching
+- at birth or hatching, each individual child's persistent record belongs in `NPC-state.md`
 - exact current completed time belongs in `active_game.json.campaign_clock`
-- calendar lore, deadlines, due dates, laying dates, hatching dates, and scheduled milestones belong in `world_state.md`
+- due dates, laying dates, hatching dates, and established developmental milestones belong in `world_state.md`
 - continuity-important conceptions, births, hatchings, and lineage changes belong in `session_log.md`
+
+An unsuccessful conception check normally needs no historical session-log entry, but its 24-hour current cooldown must remain in the participants' state until it expires.
 
 Do not store graphic scene detail merely to prove a mechanical event occurred.
 
@@ -712,4 +695,4 @@ Do not store graphic scene detail merely to prove a mechanical event occurred.
 
 ChatGPT states the exact roll and resolves only the player's supplied dice.
 
-ChatGPT never generates, chooses, substitutes, alters, or secretly rerolls a conception, offspring-count, sex, inheritance, detection, complication, or developmental result.
+ChatGPT never generates, chooses, substitutes, alters, or secretly rerolls a conception, offspring-count, sex, appearance, detection, complication, or developmental result.
