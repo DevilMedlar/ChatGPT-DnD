@@ -37,16 +37,14 @@ None established.
 
 ## Clues / Discoveries
 
-None established.
-
-## Known Secrets
-
-None established as player-known secrets.
+None established. DevilMedlar and Senpai share all information either of them learns.
 
 ## World Changes / Consequences
 
 None established.
 
-## Unresolved Threads
+## Unresolved Questions / Mysteries
 
-None established at the world-state level.
+None established.
+
+Only questions known to the core PCs belong here. Untold answers and undiscovered facts are not recorded.
