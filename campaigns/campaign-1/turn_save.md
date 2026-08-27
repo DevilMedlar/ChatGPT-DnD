@@ -32,11 +32,15 @@ None yet.
 
 None yet.
 
-For future qualifying events, record the exact clock, participants and stable IDs, compatibility, fertility and prevention state, player-rolled percentile dice, outcome, offspring-count and biological-sex rolls, development route, due/laying/hatching dates, character knowledge, and pending permanent destinations under `../../Rule/REPRODUCTION_AND_LINEAGE.md`.
+For future qualifying events, record the exact clock, participants and stable references, compatibility, fertility and prevention state, player-rolled percentile dice, outcome, the exact pair's next conception-eligible clock, offspring or fertilized-egg count on success, development route, due/laying/hatching dates, failed mundane-detection cooldowns, what the core PCs know, and pending permanent destinations under `../../Rule/REPRODUCTION_AND_LINEAGE.md`.
+
+Do not roll biological sex, visible appearance, or final mechanical hybrid traits at conception. Biological sex and visible appearance are resolved at live birth or hatching. Mechanical hybrid traits remain TBD after birth during aging.
 
 ## Pending Shop Transactions
 
 None yet.
+
+For a future purchase, calculate one item's Final Unit Price under `../../Rule/SHOPS_PRICING_AND_TRANSACTIONS.md`, round it to whole copper, and multiply it by quantity. A price cannot be negative; `0 CP` means free.
 
 ## Pending Permanent Transfers
 
