@@ -10,8 +10,7 @@
 - factions and organizations
 - overall quests, missions, goals, and investigations
 - clues and discoveries
-- player-known world secrets
-- unresolved world threads
+- unresolved questions and mysteries known to the core PCs
 - persistent world changes and consequences
 
 It does not own the authoritative current clock, current party location, complete NPC records, character state, inventory, or unfinished-Turn state.
@@ -116,25 +115,36 @@ A quest may track:
 - consequences
 - unresolved questions
 
-`NPC-state.md` may record an NPC's personal involvement, motives, promises, information, or reward offer, but not the overall quest authority.
+`NPC-state.md` may record an NPC's revealed personal involvement, motives, promises, information, or reward offer, but not the overall quest authority.
 
 ## Clues and discoveries
 
-World-level clues and discoveries may reference involved NPCs by stable ID. NPC knowledge, beliefs, lies, and misunderstandings remain in `NPC-state.md`.
+Record only facts, clues, and discoveries that have actually been told to, witnessed by, or discovered by the core PCs.
 
-## Known secrets
+The two core PCs share all learned information under `CORE_PARTY_AND_CHARACTER_AGENCY.md`, so a separate knowledge split between them is unnecessary.
 
-Do not reveal a secret merely because it exists in GM continuity.
+## Unresolved questions and mysteries
 
-The `Known Secrets` section contains only world secrets actually known to the player or player-controlled characters as established by the campaign's knowledge rules.
+Questions, mysteries, suspected connections, and missing information known to the core PCs belong in `world_state.md` as questions.
+
+Examples:
+
+- `Who hired the attackers?`
+- `Why was the northern gate left open?`
+- `Is the old map genuine?`
+
+Rules:
+
+- Record the question and the known clues that created it.
+- Do not record an untold answer, hidden GM solution, secret perpetrator, or undiscovered fact.
+- If neither core PC has been told or discovered something, it does not need a persistent record.
+- When the answer is revealed, record the discovered fact in the proper clue, discovery, quest, NPC, location, or consequence section and mark or remove the resolved question as appropriate.
 
 ## World changes and consequences
 
 Persistent consequences may reference affected locations, factions, NPCs, families, shops, schedules, quests, or relationships without duplicating their full specialized records.
 
-## Unresolved threads
-
-Use unresolved threads for genuine world-level questions, future consequences, or pending events.
+## Unfinished character creation
 
 Unfinished character-creation choices remain with character creation until they create established world state.
 
