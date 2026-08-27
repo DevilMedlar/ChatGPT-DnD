@@ -2,11 +2,11 @@
 
 This file is the temporary authoritative ledger for the current unfinished **Campaign Turn**.
 
-When this skeleton is copied into a numbered campaign, keep the explanatory text and labeled transaction/check templates in that campaign's copy as fill-out guidance. They are documentation, not staged Turn events, conception checks, or transactions.
+When this skeleton is copied into a numbered campaign, keep its explanatory text and labeled templates as fill-out guidance. A template is documentation, not an event, roll, transaction, or canonical state record.
 
-It carries only the live Campaign Turn record as canonical state. Detailed Campaign Turn terminology, roll-recording conventions, and end interpretation are defined in `../Rule/CAMPAIGN_TURNS_AND_STEPS.md`. Confirmation gates, reconciliation, verification, recovery, and reset rules are defined in `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`. Reproductive compatibility, fertility, conception targets, and reproductive-state persistence are defined in `../Rule/REPRODUCTION_AND_LINEAGE.md`.
+`../Rule/CAMPAIGN_TURNS_AND_STEPS.md` governs Campaign Turn operation. `../Rule/CORE_GAME_MECHANICS.md` governs campaign time. `../Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive checks and lifecycle events. `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md` governs final review, reconciliation, verification, recovery, and reset.
 
-The starting state is the current completed canonical campaign state at the recorded `Base save revision`; do not copy that entire state into this file. Record the steps, scene changes, other changes, pending reproductive checks, pending shop transactions, and compact effective in-turn values needed to continue or recover the Campaign Turn.
+The effective state during an unfinished Turn is the last completed permanent state at `Base save revision` plus this ledger's overlay.
 
 ## Active Campaign Turn
 
@@ -16,44 +16,85 @@ The starting state is the current completed canonical campaign state at the reco
 - **Current Scene:**
 - **Base save revision:**
 
+## Campaign Clock
+
+- **Start Clock:**
+- **Current In-Turn Clock:**
+- **Total Elapsed This Turn:**
+
+### Time Changes
+
+Record each material time change in order:
+
+```text
+- Step N: Start clock -> End clock; elapsed duration; activity or reason; scheduled events reached or crossed
+```
+
+Do not advance time for out-of-fiction discussion. Do not silently skip an appointment, deadline, effect expiration, biological milestone, laying date, hatching date, or other scheduled event crossed by a time jump.
+
 ## Turn Events
+
+Record numbered Steps, player decisions, rolls and results, narration with recovery value, scene changes, mechanical outcomes, and state deltas.
 
 ## Current In-Turn State
 
-## Pending Reproductive Checks
+Maintain a compact current overlay needed to continue or recover the Turn. Do not copy every permanent file here.
 
-Record only mechanically qualifying reproductive checks and the continuity facts needed for recovery. Do not record graphic scene detail merely to prove that a check occurred.
+## Pending Reproductive Events
+
+Record only qualifying mechanical and continuity facts. Do not store graphic scene detail merely to prove that an event occurred.
 
 ### Conception Check Template
 
-- **In-world date / approximate time:**
+- **In-world clock:**
 - **Female parent / stable ID:**
 - **Male parent / stable ID:**
-- **Compatibility category:** Naturally compatible / Cross-species compatible / Conditionally compatible
-- **Conditional requirements and whether satisfied:**
+- **Compatibility:** Naturally compatible / Cross-species compatible / Conditionally compatible
+- **Conditional requirements and status:**
 - **Male fertility status / modifier:**
 - **Female fertility status / modifier:**
-- **Prevention / contraception state:** None / Effective block / Chance-based method / Other established effect
-- **Prevention failure roll, if required:**
+- **Prevention / contraception:** None / Effective block / Chance-based method / Other established effect
+- **Prevention failure roll, when required:**
 - **Base Conception Target:**
 - **Explicit effect modifiers:**
 - **Final Conception Target:**
-- **First player d10 result, tens digit:**
-- **Second player d10 result, ones digit:**
-- **Combined percentile result:** Treat `0` or a numbered `10` as digit `0`; `00` = `100`
-- **Outcome:** Conception / No conception / Blocked before conception roll
-- **Development route on success:** Live-bearing pregnancy / Fertilized-egg or clutch formation / Other established route
+- **First player d10, tens digit:**
+- **Second player d10, ones digit:**
+- **Combined percentile result:** `00` = `100`
+- **Outcome:** Conception / No conception / Blocked before roll
+- **Female development route on success:** Live-bearing / Egg production and laying
+- **Offspring-count roll and result on success:**
+- **Biological-sex rolls and results on success:**
+- **Calculated due date or laying date:**
+- **Calculated hatching date, when applicable:**
 - **Character knowledge:**
-- **Pending permanent destination on success:** `character_sheet.md` / `NPC-state.md` / both parents' records as applicable
+- **Pending permanent destinations:**
 - **Notes:**
 
-Use at most one conception check per distinct male/female pairing during the same 24 in-world hours. After a successful conception, do not make later conception checks for that female until the resulting pregnancy, egg-forming, or other blocking reproductive state ends.
+Use at most one conception check per distinct male/female pairing in the same 24 in-world hours. After conception succeeds, do not make later conception checks for that female until the blocking pregnancy or egg-production state ends.
 
-An unsuccessful check normally creates no permanent transfer unless it changes an ongoing fertility investigation, treatment, relationship decision, or other lasting state.
+### Reproductive Lifecycle Event Template
+
+Use for detection, pregnancy or egg milestones, laying, incubation risks, birth, hatching, inheritance, developmental milestones, or adult fertility establishment.
+
+- **In-world clock:**
+- **Event type:**
+- **Parent / child / egg records and stable IDs:**
+- **Established trigger or milestone:**
+- **Required player roll, if any:**
+- **Player result and calculation:**
+- **Outcome:**
+- **Current character knowledge:**
+- **New or changed persistent state:**
+- **Pending permanent destinations:**
+- **Scheduled next milestone:**
+- **Notes:**
+
+A healthy ordinary milestone succeeds without a random complication roll. A risk roll requires a documented risk, stated DC, actor, and possible outcomes before the player rolls.
 
 ## Pending Shop Transactions
 
-When a shop purchase occurs during an active Campaign Turn, keep the transaction temporary here until Confirmation Gate 1. Use one compact record per transaction and preserve enough information to reconcile every connected side of the purchase.
+When a shop purchase occurs during an active Campaign Turn, keep the connected transaction temporary here until Confirmation Gate 1.
 
 ### Shop Transaction Template
 
@@ -65,22 +106,29 @@ When a shop purchase occurs during an active Campaign Turn, keep the transaction
 - **Base Price:**
 - **Base Price basis:** Routine recurring / GM-established
 - **Factors already included in Base Price:** None / list each distinct factor once
-- **Final Price modifiers applied:** None / list each distinct modifier once, including its amount or effect when known
+- **Final Price modifiers applied:** None / list each distinct modifier once
 - **Final Transaction Price:**
 - **Vendor stock before / after:**
 - **Buyer currency delta:**
 - **Inventory target / acquisition:**
-- **Acquisition mechanics snapshot:** Pending / compact staged mechanics / approved source for reconciliation
-- **Stack result:** New entry / Merge with compatible stack / Keep separate / Not applicable
+- **Acquisition mechanics snapshot:**
+- **Stack result:** New entry / Merge / Keep separate / Not applicable
 - **Notes:**
 
-A staged purchase is one connected transaction. Vendor quantity, buyer currency, inventory acquisition, and acquisition snapshot must reconcile together; do not permanently apply only one side. A pricing factor recorded as already included in Base Price must not also appear as a Final Price modifier for the same transaction. If the buyer is a current-party persistent NPC, include the required `NPC-state.md` master-ownership update in `Pending Permanent Transfers`.
+Vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and any required NPC master-ownership update reconcile as one transaction. Do not permanently apply only one side.
 
 ## Pending Permanent Transfers
+
+List only actual new or changed persistent state and required mirrors, organized by destination file.
 
 ## Final Turn Review
 
 - **Status:**
+- **Campaign Turn Start Clock:**
+- **Proposed End Clock:**
+- **Total Elapsed Time:**
+- **Material Time Changes:**
+- **Scheduled Events / Deadlines Reached or Crossed:**
 - **Final Turn State:**
 - **Exact Planned Permanent Transfers:**
 - **Player save confirmation:**
@@ -89,6 +137,7 @@ A staged purchase is one connected transaction. Vendor quantity, buyer currency,
 
 - **Status:**
 - **Completed save revision:**
+- **Verified completed clock:**
 - **Verification notes:**
 
 ## Reset Approval
