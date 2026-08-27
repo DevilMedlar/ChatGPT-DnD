@@ -2,13 +2,15 @@
 
 The player-controlled PC's, ChatGPT-controlled PC / co-protagonist's, and current party NPCs' carried equipment and resources are tracked below.
 
-This file owns detailed mechanical bookkeeping for party-carried possessions: quantities, equipped/carried/stored state, charges, ammunition, durability, attunement, active item effects, currencies, consumables, and similar active inventory state.
+This file owns detailed mechanical bookkeeping for party-carried possessions: quantities, equipped/carried/stored state, charges, ammunition, durability, attunement, active known item effects, currencies, consumables, and similar active inventory state.
 
 For NPCs, `NPC-state.md` remains the **master ownership list**. This file expands mechanically relevant possessions only while that NPC is currently traveling with the party.
 
 Shop stock does **not** belong here. Shop stock belongs in the relevant NPC's `NPC-state.md` record until a party member actually acquires an item.
 
 Inventory ownership and item mechanics are defined in `../Rule/INVENTORY_EQUIPMENT_AND_ITEMS.md`. NPC join/leave reconciliation is defined in `../Rule/NPCS_AND_PARTY_MEMBERSHIP.md`. Campaign Turn staging and persistence follow `../Rule/CAMPAIGN_TURNS_AND_STEPS.md`, `../Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md`, and `../Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
+
+The two core PCs share all item information either of them learns. Do not store untold hidden item properties. If an item is unidentified, record that status without recording its unknown mechanics.
 
 ## Player-Controlled PC
 
@@ -66,9 +68,11 @@ See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 - **Charges / uses:**
 - **Recharge:**
 - **Attunement / bonding:**
-- **Special effects:**
-- **Hidden / unidentified properties:** Preserve without revealing unless legitimately learned
+- **Identification state:** Identified / Unidentified
+- **Known special effects:**
 - **Notes:**
+
+If the item is unidentified, leave unknown properties unstated until revealed.
 
 ##### Carried
 
@@ -76,7 +80,8 @@ See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 
 - **Quantity:**
 - **Current state:**
-- **Mechanical effect:**
+- **Identification state:** Identified / Unidentified
+- **Known mechanical effect:**
 - **Charges / uses:**
 - **Durability / condition:**
 - **Notes:**
@@ -87,7 +92,7 @@ See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 
 - **Quantity / current uses:**
 - **Maximum uses:**
-- **Effect:**
+- **Known effect:**
 - **Consumed on use:** Yes / No
 - **Recharge / refill rule:**
 
@@ -106,7 +111,7 @@ See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 
 - **Quantity:**
 - **Condition:**
-- **Mechanical use:**
+- **Known mechanical use:**
 
 ##### Important / Quest Items
 
@@ -114,7 +119,8 @@ See the matching stable NPC ID in `NPC-state.md` for the master NPC record.
 
 - **Quantity:**
 - **Known purpose:**
-- **Mechanical effect:**
+- **Known mechanical effect:**
+- **Identification state:** Identified / Unidentified
 - **Current state:**
 
 ##### Expenditures / Resource History
@@ -129,7 +135,7 @@ This file must not be rewritten mid-Turn merely because an NPC joins, leaves, sp
 
 ## Item Detail Rule
 
-For meaningful items, preserve enough information to resolve their mechanics correctly when relevant, including:
+For meaningful items, preserve enough **revealed** information to resolve their mechanics correctly when relevant, including:
 
 - item name and type
 - quantity
@@ -142,19 +148,18 @@ For meaningful items, preserve enough information to resolve their mechanics cor
 - recharge or refill rules
 - durability / condition
 - attunement / bonding
-- granted abilities and their descriptions
-- triggered effects and proc chances
-- durations, saves, resistances, immunities, and stacking rules
-- curses or hidden properties
-- identified vs unidentified information
+- known granted abilities and descriptions
+- known triggered effects and proc chances
+- known durations, saves, resistances, immunities, and stacking rules
+- identified or unidentified status
 
-Do not expose a hidden or unidentified property merely because it is recorded for continuity.
+Do not store an unrevealed curse, unknown effect, hidden property, undiscovered command word, or other untold answer. Record only `Unidentified` until play reveals the mechanic.
 
 ## Acquired Official Item Snapshot Rule
 
-When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts needed to continue using that **owned campaign item** correctly. The snapshot belongs here rather than remaining dependent on a live external webpage.
+When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts the core PCs have learned and need to continue using that **owned campaign item** correctly. The known snapshot belongs here rather than remaining dependent on a live external webpage.
 
-Depending on the item, preserve the relevant combination of:
+Depending on the item, preserve the relevant known combination of:
 
 - item name and type
 - quantity
@@ -167,24 +172,27 @@ Depending on the item, preserve the relevant combination of:
 - recharge or refill rules
 - durability / condition
 - attunement / bonding
-- granted abilities, triggered effects, durations, saves, resistances, requirements, limitations, or other mechanics needed to use the item
+- known abilities, triggered effects, durations, saves, resistances, requirements, limitations, or other mechanics needed to use the item
+- identification state
 - the official acquisition reference when useful for provenance
 
-Preserve the useful mechanics, not a word-for-word copy of the entire external published page.
+Preserve useful known mechanics, not a word-for-word copy of the entire external published page.
 
-Once those mechanics are established in campaign inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
+If the item is unidentified, do not copy unknown mechanics into campaign state. Add mechanics only as they are revealed.
 
-If an external item reference has moved or become inaccessible before the acquisition snapshot can be resolved, handle that item case by case and establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
+Once known mechanics are established in campaign inventory, later changes to D&D Beyond or another external official reference do **not** silently rewrite the already-owned item. The owned item's recorded known mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
+
+If an external item reference has moved or become inaccessible before the known acquisition snapshot can be resolved, handle that item case by case and establish the required revealed mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
 
 During an active Campaign Turn, the acquisition and its snapshot remain staged in `turn_save.md` until approved reconciliation. If the buyer is a current-party persistent NPC, reconcile the NPC's master ownership list in `NPC-state.md` as part of the same completed save.
 
 ## Inventory Stack Compatibility
 
-A newly acquired copy may merge with an existing inventory quantity/stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
+A newly acquired copy may merge with an existing inventory quantity/stack only when the existing owned item and the new item have compatible established known mechanics **and** compatible relevant instance state.
 
-Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
+Sharing the same item name is not enough. Same-name items with different known mechanical snapshots, charges, condition, attunement, modifications, identification state, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
 
-Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
+Compatible copies may merge normally when no mechanically meaningful known difference requires separate tracking.
 
 ## Travel Resource Use
 
