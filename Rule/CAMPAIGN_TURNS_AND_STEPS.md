@@ -2,148 +2,181 @@
 
 ## Campaign Turn
 
-A **Campaign Turn** is the campaign's persistence/gameplay unit. It begins from one completed permanent save state and remains open until the whole connected gameplay unit is intentionally completed.
+A **Campaign Turn** is the repository's connected gameplay and persistence unit. It begins from one completed permanent save state and remains open until the whole connected gameplay unit is intentionally completed, reviewed, approved, reconciled, verified, and later reset.
 
 A Campaign Turn may contain any number of numbered Steps, including:
 
-- scene setup and narration
-- dialogue and decisions
-- exploration and movement
-- requested rolls and their results
-- initiative setup
-- multiple combat rounds
-- every creature's individual combat turn
-- attacks, damage, healing, conditions, item use, charges, ammunition, spell slots, class resources, and other changing state
-- combat ending
-- post-combat searching, dialogue, loot, clues, discoveries, movement, transactions, and other directly connected actions
+- narration, dialogue, decisions, exploration, and movement
+- time passage and scheduled events
+- requested player rolls and their results
+- initiative, Combat Rounds, and individual Combat Turns
+- attacks, damage, healing, conditions, spells, resources, ammunition, and item use
+- relationships, reproductive checks, pregnancy or egg milestones, birth, hatching, and development
+- shops, transactions, inventory, clues, quests, travel, rests, and consequences
 
-Ending a creature's normal D&D combat turn does **not** end the Campaign Turn. Ending a combat round does **not** end the Campaign Turn. Combat itself does **not automatically** end the Campaign Turn if the connected gameplay sequence continues.
+A creature's Combat Turn, a Combat Round, a combat encounter, a conversation, a rest, or a scene ending does not automatically end the Campaign Turn.
 
-During active combat, an unqualified phrase such as `end turn` means the current creature's **Combat Turn** ends. It does not trigger Campaign Turn reconciliation.
-
-ChatGPT, acting as GM/DM, determines when the connected gameplay unit has reached the end of the full Campaign Turn unless the player's newest explicit instruction clearly ends it sooner or later.
+During combat, an unqualified `end turn` ends the current creature's Combat Turn, not the Campaign Turn.
 
 ## Combat Turn and Combat Round
 
-A **Combat Turn** is one creature's activation within initiative order.
+A **Combat Turn** is one creature's activation in initiative order.
 
-A **Combat Round** is one initiative cycle through the active combatants.
+A **Combat Round** is one complete initiative cycle and consumes 6 seconds of campaign time regardless of the number of combatants.
 
-Combat Turns and Combat Rounds exist inside a Campaign Turn and never cause `turn_save.md` to reset merely because they end.
+Combat Turns and Combat Rounds exist inside a Campaign Turn and never reset `turn_save.md` merely because they end.
 
-## Live-state authority
+# Live-state authority
 
-Each campaign owns its own `turn_save.md`.
+`active_game.json` stores the last completed campaign header, including completed scene, location, clock, advancement, and revision.
 
-`active_game.json` represents the campaign's last completed permanent state header. `turn_save.md` stages the current unfinished Campaign Turn and overlays that completed state until the Turn is intentionally completed and saved.
+`turn_save.md` stores the unfinished Campaign Turn overlay, including:
 
-- `active_game.json.campaign_turn_number` is the last completed Campaign Turn number, not the active unfinished Turn number.
-- `active_game.json.current_scene_name` is the compact descriptive scene label at the last completed save or pre-game baseline.
-- Before revision 1 is established, `current_scene_name` may read `Character creation`; that pre-game label must be replaced by ChatGPT's GM-authored opening-scene label when revision 1 is created.
-- `active_game.json.current_location` is the last completed or pre-game-baseline location actually established in the fiction.
-- `active_game.json` does **not** store a live Campaign Turn Step.
-- `turn_save.md` owns the current/next Campaign Turn number, `Current Step`, and `Current Scene` for the unfinished Turn.
-- While a Campaign Turn is `in_progress`, its `Current Scene` and `Current Step` are the authoritative live gameplay position and temporarily overlay the completed scene label in `active_game.json`.
-- `current_scene_name` is a compact descriptive label, not a duplicate scene record and not a gameplay constraint; detailed location and world facts remain in their owning files.
+- current Turn number and status
+- Current Step and Current Scene
+- Base save revision
+- Start Clock and Current In-Turn Clock
+- time changes and elapsed time
+- events, rolls, compact live state, transactions, reproductive events, and pending transfers
 
-A scene name follows the fiction. It never obligates the player-controlled PC to remain in the named location, continue the named activity, follow a particular hook, or make a predetermined choice. ChatGPT may update the scene label whenever the actual situation changes.
-
-The effective state while a Campaign Turn is open is:
+The effective state is:
 
 `last completed permanent state + turn_save.md overlay`
 
-## Revision-1 starting baseline for Campaign Turn 1
+While a Turn is open, its Current Scene and Current In-Turn Clock are the authoritative live values.
 
-The entire character-creation and backstory phase occurs at `save_revision: 0` under `CHARACTER_CREATION.md`.
+A scene label describes the fiction. It never requires the player-controlled PC to remain there, follow a hook, or make a predetermined choice.
 
-Campaign Turn 1 does not begin directly from revision 0.
+# Revision-1 baseline for Campaign Turn 1
 
-After character creation is fully complete and the player confirms the final character-creation review, ChatGPT as GM/DM creates the opening narrative frame and the campaign establishes revision 1 as the starting permanent baseline for Campaign Turn 1.
+Character creation occurs at `save_revision: 0` under `CHARACTER_CREATION.md`.
+
+After the player confirms completion, revision 1 becomes the permanent starting baseline for Campaign Turn 1.
 
 Immediately before Campaign Turn 1 begins:
 
-- `active_game.json.campaign_turn_number` must be `0`
-- `active_game.json.character_created` must be `true`
-- `active_game.json.save_revision` must be `1`
-- `active_game.json.current_scene_name` must contain ChatGPT's descriptive opening-scene label rather than the pre-game `Character creation` label
-- `active_game.json.current_location` must contain the actual starting location established by the opening narration
-- `turn_save.md.Campaign Turn` must be `1`
-- `turn_save.md.Status` must be `ready`
-- `turn_save.md.Current Step` must be `0`
-- `turn_save.md.Current Scene` must match the revision-1 opening scene label
-- `turn_save.md.Base save revision` must be `1`
+- `active_game.json.campaign_turn_number` is `0`
+- `character_created` is `true`
+- `save_revision` is `1`
+- `current_scene_name` is the GM-authored opening scene label
+- `current_location` is the actual opening location
+- `campaign_clock` is the GM-established opening clock
+- `turn_save.md.Campaign Turn` is `1`
+- `turn_save.md.Status` is `ready`
+- `turn_save.md.Current Step` is `0`
+- `turn_save.md.Current Scene` matches the opening scene
+- `turn_save.md.Base save revision` is `1`
+- Start Clock and Current In-Turn Clock match `active_game.json.campaign_clock`
 
-The opening frame establishes where play begins but does not choose the player-controlled PC's first action or dialogue and does not itself create a Campaign Turn Step.
+The opening frame does not choose the player's first action and does not itself create a gameplay Step.
 
-Starting Campaign Turn 1 does not increment the revision. The completed permanent save for Campaign Turn 1 later advances `save_revision` from `1` to `2`.
+# Starting a Campaign Turn
 
-## Starting a Campaign Turn
+Before starting:
 
-If this is Campaign Turn 1, the revision-1 starting baseline above must already be complete and verified. Later Campaign Turns begin only after the prior Campaign Turn's completed permanent save and any required ledger reset have finished.
+1. read the current rules and required permanent state
+2. confirm `turn_save.md` is `ready`
+3. recover any older unfinished, frozen, reconciling, or saved-awaiting-reset Turn instead of starting another
+4. confirm Base save revision matches `active_game.json.save_revision`
+5. confirm the ready ledger's clock matches `active_game.json.campaign_clock`
+6. set the next Campaign Turn number
+7. set Status to `in_progress`
+8. set Current Step to `0`
+9. initialize Current Scene from the completed scene unless opening fiction changes it
+10. set Start Clock and Current In-Turn Clock to the completed clock
+11. set Total Elapsed This Turn to zero
 
-Before starting a Campaign Turn:
+Starting a Turn does not increment `save_revision`.
 
-1. read the current completed canonical campaign files required for the scene
-2. confirm `turn_save.md` is `ready` and no older Campaign Turn requires recovery, review, verification, or reset
-3. confirm `turn_save.md.Base save revision` matches the current `active_game.json.save_revision`
-4. use the current permanent files as the starting state rather than copying every starting value into `turn_save.md`
-5. set `Campaign Turn` to the next Campaign Turn number
-6. set `Status` to `in_progress`
-7. set `Current Step` to `0`
-8. for Campaign Turn 1, keep `Current Scene` equal to the revision-1 GM-authored opening scene unless the opening gameplay itself immediately changes the situation before Step 0 is recorded; for later Turns, initialize from the completed `active_game.json.current_scene_name` unless opening gameplay explicitly establishes a different scene
-9. keep `Base save revision` equal to the current `save_revision` in `active_game.json`
-
-## Recording Steps
-
-A Campaign Turn may contain as many numbered Steps as needed.
+# Recording Steps
 
 After each resolved Step:
 
-1. append the relevant action/event, roll calculation when applicable, immediate result, and state deltas to `Turn Events`
-2. update `Current Scene` whenever the effective scene changes
-3. update `Current In-Turn State` with the compact latest effective values needed to continue or recover the Campaign Turn
-4. update `Pending Permanent Transfers` when a result may need persistent reconciliation
-5. when a shop transaction occurs, update `Pending Shop Transactions` with the connected vendor-stock, currency, inventory, pricing, and acquisition-snapshot state needed for reconciliation
-6. do not repeatedly rewrite permanent campaign files for ordinary changing state inside the Campaign Turn
-7. do not increment `save_revision`
-8. stage every gameplay-caused persistent change in `turn_save.md` until save approval, including NPC party joins/leaves, permanent possession or shop changes, routine-item Base Price changes, and visual-continuity changes
+1. increment and record the Step number
+2. append the relevant action or event
+3. record every required player roll, calculation, and result
+4. update Current Scene when the situation changes
+5. update Current In-Turn State with compact effective values needed for continuation or recovery
+6. stage every gameplay-caused persistent change in Pending Permanent Transfers
+7. stage connected shop transactions together
+8. stage reproductive checks and lifecycle events with exact clock, rolls, results, dates, and destinations
+9. do not rewrite permanent campaign state for ordinary in-Turn changes
+10. do not increment `save_revision`
 
-`Current In-Turn State` is a maintained recovery snapshot, not a full copy of every permanent file and not a full state block repeated after every Step.
+Whenever repository writing is available, checkpoint `turn_save.md` after a resolved Step containing a roll, mechanical change, time change, scene/location change, discovery, relationship change, transaction, reproductive event, or other continuity-relevant result before the next player decision point.
 
-Whenever repository writing is available, persist `turn_save.md` after every resolved Step that contains a roll result, mechanical or resource-state change, scene/location change, discovery, relationship change, shop event, inventory change, combat-state change, or other continuity-relevant result before proceeding beyond the next player decision point.
+A purely narrative Step with no recovery value may wait until the next meaningful checkpoint.
 
-A purely narrative Step with no meaningful state or recovery value may be left uncommitted until the next continuity-relevant Step. Step checkpoint commits do **not** increment `save_revision` and are not completed campaign saves.
+# Recording time
 
-## Compact roll recording
+`CORE_GAME_MECHANICS.md` owns time arithmetic and common durations.
 
-When recording rolls in `turn_save.md`, keep the calculation on one line whenever practical while preserving enough information to reconstruct it.
+For every material time change:
+
+1. identify the Step and activity
+2. state the duration
+3. record Start Clock, End Clock, and elapsed duration
+4. update Current In-Turn Clock and Total Elapsed This Turn
+5. check `world_state.md` for every scheduled event or deadline reached or crossed
+6. resolve crossed events chronologically
+7. update Current In-Turn State and pending transfers as needed
+
+Do not advance time for out-of-fiction discussion.
+
+Do not silently skip a scheduled event, effect expiration, rest completion, conception-limit boundary, due date, laying date, hatching date, or developmental milestone.
+
+## Combat time
+
+- One Combat Round consumes 6 seconds.
+- Do not add 6 seconds for each combatant.
+- If combat ends partway through a round and exact timing matters, use the completed-round count plus an explicitly justified approximation rather than pretending each initiative turn is a separate 6 seconds.
+
+# Compact roll recording
+
+Keep calculations reconstructable and compact.
 
 General pattern:
 
-`**Actor rolls Roll Name:** dice/results + bonuses - penalties ×/÷ other effects = **final total**`
+`**Actor rolls Roll Name:** dice/results + bonuses - penalties = **final total**`
 
 Attack pattern:
 
-`**Attack — Attack Name:** dice/results + modifiers = **total** vs AC/target = **Hit/Miss**`
+`**Attack — Name:** dice/results + modifiers = **total** vs target = **Hit/Miss**`
 
-Damage/healing pattern:
+Damage or healing pattern:
 
-`**Damage/Healing — Source:** dice/results + modifiers ×/÷ effects = **final amount**`
+`**Damage/Healing — Source:** dice/results + modifiers and effects = **final amount**`
 
-Preserve the dice expression and individual die results when useful, especially for multiple dice, advantage/disadvantage, critical hits, resistance, vulnerability, rerolls, or other effects. Initiative order should record each combatant's final initiative total beside the name.
+Percentile pattern:
 
-## Ending a Campaign Turn
+`**Percentile — Purpose:** tens d10 result, ones d10 result = **combined result** vs target = **outcome**`
 
-A creature's Combat Turn, a Combat Round, a combat encounter ending, a conversation ending, a rest beginning, or a scene becoming quiet is not enough by itself to end a Campaign Turn.
+Preserve individual dice for multiple dice, Advantage/Disadvantage, critical hits, rerolls, resistance, vulnerability, and any result needed for later verification.
 
-When ChatGPT determines that the full Campaign Turn has ended:
+# Ending a Campaign Turn
 
-1. set `Status` to `ending_review`
-2. freeze the Turn ledger
+A quiet moment alone does not automatically end a Campaign Turn.
+
+When the full connected gameplay unit has ended:
+
+1. set Status to `ending_review`
+2. freeze the ledger
 3. stop adding new gameplay actions
-4. do **not** write permanent campaign files yet
-5. do **not** reset `turn_save.md`
+4. do not write permanent state yet
+5. do not reset the ledger
+6. prepare the proposed Final Turn State
+7. calculate the Exact Planned Permanent Transfers
 
-At this point `Current In-Turn State`, together with the final `Current Scene`, becomes the proposed **Final Turn State** for review.
+The Final Turn Review must include:
 
-Save approval, reconciliation, verification, recovery, and reset behavior are defined in `SAVES_VERIFICATION_AND_RECOVERY.md`.
+- Campaign Turn Start Clock
+- proposed End Clock
+- total elapsed time
+- material time-change reasons
+- scheduled events and deadlines reached or crossed
+- final scene and effective state
+- every real persistent transfer grouped by destination
+
+Unchanged permanent context is not a new transfer.
+
+Save approval, reconciliation, verification, recovery, and reset are governed by `SAVES_VERIFICATION_AND_RECOVERY.md`.
