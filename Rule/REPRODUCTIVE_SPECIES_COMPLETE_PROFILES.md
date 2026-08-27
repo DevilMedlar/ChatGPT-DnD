@@ -43,7 +43,7 @@ Unless a profile or campaign-specific rule says otherwise:
 - the same standard species is `Naturally compatible`
 - two different active-whitelist species are `Cross-species compatible`
 - a severe size or anatomy issue can make one reproductive direction `Conditionally compatible` until a real non-magical physical requirement is satisfied
-- the female partner determines live pregnancy or egg formation
+- the female partner determines live pregnancy or egg production
 - prenatal or pre-laying size remains within the female partner's viable reproductive range
 - difficult inherited structures may develop after birth or hatching
 
@@ -85,7 +85,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Birth Constraints:** the newborn remains within the Human female's viable delivery range; rigid or oversized non-Human traits may be developmentally delayed
 - **Naturally Compatible:** Human + Human
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Notes:** Human is the reference live-bearing profile.
+- **Notes:** Only the standard Human profile is globally active.
 
 # Elf
 
@@ -105,7 +105,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Birth Constraints:** inherited horns, scales, wings, large tails, or other difficult hybrid features may remain soft, small, folded, or dormant until after birth
 - **Naturally Compatible:** Elf + Elf
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Notes:** High Elf, Wood Elf, Sea Elf, Astral Elf, Eladrin, and other Elf variations are not included by this standard profile unless explicitly approved.
+- **Notes:** Only the standard Elf profile is globally active.
 
 # Dwarf
 
@@ -125,7 +125,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Birth Constraints:** prenatal size remains within the Dwarf female's viable range; greater inherited adult height, mass, wingspan, or frame develops later
 - **Naturally Compatible:** Dwarf + Dwarf
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Notes:** Duergar and other Dwarf variations are not included by this standard profile unless explicitly approved.
+- **Notes:** Only the standard Dwarf profile is globally active.
 
 # Gnome
 
@@ -145,7 +145,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Birth Constraints:** prenatal size remains within the Gnome female's viable range; larger inherited adult size and difficult structures develop after birth
 - **Naturally Compatible:** Gnome + Gnome
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Notes:** Rock Gnome, Forest Gnome, Deep Gnome, and other Gnome variations are not included by this standard profile unless explicitly approved.
+- **Notes:** Only the standard Gnome profile is globally active.
 
 # Dragonborn
 
@@ -166,7 +166,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Naturally Compatible:** Dragonborn + Dragonborn
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
 - **Directional Note:** a female Dragonborn lays a hybrid egg; a male Dragonborn mating with a live-bearing female produces a live-carried hybrid
-- **Notes:** Floral, Grim Hollow, setting-specific, and other Dragonborn variations are not included unless explicitly approved.
+- **Notes:** Only the standard Dragonborn profile is globally active.
 
 # Dragonkin
 
@@ -186,7 +186,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Hatching Constraints:** wings begin folded and immature; horns, claws, armor-like scales, tail strength, and adult body size develop progressively
 - **Naturally Compatible:** Dragonkin + Dragonkin
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
-- **Notes:** Dragonkin are a biological people, not a class, title, Dragonborn alias, generic dragon-descendant label, or temporary transformation. Alternate Dragonkin lineages are not included unless explicitly approved.
+- **Notes:** Dragonkin are a biological people, not a class, title, Dragonborn alias, generic dragon-descendant label, or temporary transformation. Only the standard Dragonkin profile is globally active.
 
 # True Dragon
 
@@ -207,7 +207,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Naturally Compatible:** True Dragon + True Dragon
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
 - **Conditional Size Rule:** an extreme size difference may require a non-magical safe physical accommodation; shapechanging is neither required nor automatically assumed
-- **Notes:** Chromatic, Metallic, Gem, Deep, Moonstone, color-based, and other named True Dragon variations are not included unless explicitly approved.
+- **Notes:** Only the standard True Dragon profile is globally active.
 
 # Kitsune
 
@@ -228,7 +228,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Naturally Compatible:** Kitsune + Kitsune
 - **Cross-Species Compatible:** every other active-whitelist species when the natural Kitsune body can physically mate through a workable internal-fertilization pathway
 - **Natural-Body Exception:** illusions, disguises, humanoid appearances, and assumed forms do not create reproductive anatomy or compatibility; shapechanging is not required for reproduction
-- **Notes:** One-tailed lineages, multi-tailed lineages, alternate creature types, and other Kitsune variations are not included unless explicitly approved. This exception applies only to standard Kitsune and does not admit other shapechanger species.
+- **Notes:** Only the standard Kitsune profile is globally active. This exception applies only to standard Kitsune and does not admit other shapechanger species.
 
 # Lizardfolk
 
@@ -249,7 +249,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Naturally Compatible:** Lizardfolk + Lizardfolk
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
 - **Directional Note:** a female Lizardfolk lays a hybrid egg; a male Lizardfolk mating with a live-bearing female produces a live-carried hybrid
-- **Notes:** Blackscale, Poison Dusk, Bakali, and other Lizardfolk variations are not included unless explicitly approved.
+- **Notes:** Only the standard Lizardfolk profile is globally active.
 
 ---
 
