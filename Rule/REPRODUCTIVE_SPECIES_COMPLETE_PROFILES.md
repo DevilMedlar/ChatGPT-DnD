@@ -14,7 +14,11 @@ It contains profiles only for:
 6. Dragonkin
 7. True Dragon
 8. Kitsune
-9. Lizardfolk
+9. Neko
+10. Usagi
+11. Inu
+12. Ookami
+13. Lizardfolk
 
 `REPRODUCTION_AND_LINEAGE.md` governs compatibility, directional development, carrying-parent rules, adoption, birth-safe hybrid development, fertility, conception, hybrid lineage status, and dice ownership.
 
@@ -53,9 +57,9 @@ Unless a profile or campaign-specific rule says otherwise:
 
 Physical mating transfers the male fertilizing contribution internally. The female supplies the ovum-equivalent contribution, carries the offspring, and gives live birth.
 
-### Internal Live-Bearing Mammalian
+### Internal Live-Bearing Kemonomimi
 
-The same internal live-bearing structure applies through the standard mammalian body of the species.
+The same internal live-bearing structure applies through a human-like body with species-specific animal ears and a matching tail.
 
 ### Internal Egg-Laying Draconic
 
@@ -64,6 +68,27 @@ Physical mating transfers the male fertilizing contribution internally. The fema
 ### Internal Egg-Laying Reptilian
 
 The same internal egg-laying structure applies through reptilian reproductive anatomy and incubation.
+
+## Kemonomimi body-plan authority
+
+For this repository, standard Kemonomimi have:
+
+- a fully human face, skin, eyes, torso, arms, hands, legs, and feet
+- animal ears on top of the head
+- a matching animal tail
+- no muzzle or snout
+- no full-body fur
+- no paws or otherwise fully animal limbs
+- human-like internal reproductive anatomy
+- live-bearing development
+
+Whether small human ears remain visible is cosmetic and does not create a separate species or variation.
+
+The animal ears and tail are real biological structures, not costumes. They can react involuntarily to emotion. Species-appropriate heightened senses, balance, speed, reflexes, tracking ability, and similar traits are heritable biological tendencies.
+
+Animal-like sounds, gestures, habits, and playful mannerisms are optional individual expressions. They do not dictate personality, class, intelligence, alignment, consent, or behavior.
+
+This reproductive profile file records the biological presence of those traits. Exact numerical D&D bonuses, advantage rules, DCs, speeds, or other ancestry mechanics require their own explicit mechanics and are not silently invented here.
 
 ---
 
@@ -203,7 +228,7 @@ The same internal egg-laying structure applies through reptilian reproductive an
 - **Development Method:** Egg-laying
 - **Carrier:** Female parent until laying; development continues through incubation
 - **Special Requirements:** safe physical mating access, viable egg production, and an incubation environment appropriate to standard True Dragon biology
-- **Hatching Constraints:** the egg and hatchling remain within the female's viable laying range; inherited humanoid, foxlike, reptilian, or other traits may appear at hatching or develop later
+- **Hatching Constraints:** the egg and hatchling remain within the female's viable laying range; inherited humanoid, Kemonomimi, reptilian, or other traits may appear at hatching or develop later
 - **Naturally Compatible:** True Dragon + True Dragon
 - **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
 - **Conditional Size Rule:** an extreme size difference may require a non-magical safe physical accommodation; shapechanging is neither required nor automatically assumed
@@ -212,23 +237,123 @@ The same internal egg-laying structure applies through reptilian reproductive an
 # Kitsune
 
 - **Canonical Entry:** Kitsune
-- **Form:** Standard natural foxfolk only
+- **Naming Basis:** Kitsunemimi / fox ears
+- **Form:** Standard fox-eared Kemonomimi only
 - **Creature Type:** Humanoid under the repository homebrew standard
 - **Profile Status:** Complete
-- **Compatibility Family:** Internal Live-Bearing Mammalian
+- **Compatibility Family:** Internal Live-Bearing Kemonomimi
+- **Body Plan:** fully human face, skin, eyes, torso, limbs, hands, and feet; fox ears and a fox tail or tails; no muzzle, snout, full-body fur, or paws
 - **Reproductive Mode:** Sexual, stable male/female
-- **Mating Method:** Physical male/female mating through the natural Kitsune body
-- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer using natural-body anatomy
-- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth using natural-body anatomy
+- **Mating Method:** Physical male/female mating through the standard natural Kemonomimi body
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
 - **Fertilization Method:** Internal
 - **Development Method:** Live-bearing
 - **Carrier:** Female parent
-- **Special Requirements:** reproductive compatibility is evaluated from the natural Kitsune body, never from a disguise or assumed appearance
-- **Birth Constraints:** ears, fur, tail, claws, fangs, and supernatural markings remain neonatal-safe and may mature gradually
+- **Special Requirements:** reproductive compatibility is evaluated from the natural fox-eared Kemonomimi body, never from a disguise or assumed appearance
+- **Birth Constraints:** fox ears and tail are neonatal-safe; additional-tail potential, sensory acuity, agility, and supernatural markings may develop gradually
+- **Typical Heritable Traits:** heightened hearing and smell, low-light vision, agility, expressive fox ears and tail
 - **Naturally Compatible:** Kitsune + Kitsune
 - **Cross-Species Compatible:** every other active-whitelist species when the natural Kitsune body can physically mate through a workable internal-fertilization pathway
-- **Natural-Body Exception:** illusions, disguises, humanoid appearances, and assumed forms do not create reproductive anatomy or compatibility; shapechanging is not required for reproduction
-- **Notes:** Only the standard Kitsune profile is globally active. This exception applies only to standard Kitsune and does not admit other shapechanger species.
+- **Natural-Body Exception:** illusions, disguises, alternate appearances, and assumed forms do not create reproductive anatomy or compatibility; shapechanging is not required for reproduction
+- **Behavior Note:** foxlike sounds, gestures, curiosity, playfulness, or tail mannerisms are optional individual traits, not mandatory personality
+- **Notes:** Only the standard Kitsune profile is globally active. Additional tails may develop with age without creating a separate reproductive species.
+
+# Neko
+
+- **Canonical Entry:** Neko
+- **Naming Basis:** Nekomimi / cat ears
+- **Form:** Standard cat-eared Kemonomimi only
+- **Creature Type:** Humanoid
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Kemonomimi
+- **Body Plan:** fully human face, skin, eyes, torso, limbs, hands, and feet; cat ears and a cat tail; no muzzle, snout, full-body fur, or paws
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating through human-like anatomy
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** functional human-like mating and internal-fertilization anatomy
+- **Birth Constraints:** cat ears and tail remain neonatal-safe; heightened senses, balance, and reflexes mature progressively
+- **Typical Heritable Traits:** directional hearing, low-light vision, exceptional balance, swift reflexes, expressive cat ears and tail
+- **Naturally Compatible:** Neko + Neko
+- **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
+- **Behavior Note:** purring, meowing, grooming gestures, curiosity, or feline mannerisms are optional individual expressions, not mandatory behavior
+- **Notes:** Neko are fixed-form human-bodied Kemonomimi, not full feline beastfolk and not shapechangers.
+
+# Usagi
+
+- **Canonical Entry:** Usagi
+- **Naming Basis:** Usagimimi / rabbit ears
+- **Form:** Standard rabbit-eared Kemonomimi only
+- **Creature Type:** Humanoid
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Kemonomimi
+- **Body Plan:** fully human face, skin, eyes, torso, limbs, hands, and feet; long rabbit ears and a rabbit tail; no muzzle, snout, full-body fur, or paws
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating through human-like anatomy
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** functional human-like mating and internal-fertilization anatomy
+- **Birth Constraints:** rabbit ears and tail remain neonatal-safe; hearing, jumping coordination, and burst speed mature progressively
+- **Typical Heritable Traits:** exceptional hearing, heightened alertness, powerful jumping ability, quick acceleration, expressive rabbit ears and tail
+- **Naturally Compatible:** Usagi + Usagi
+- **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
+- **Behavior Note:** nose movements, ear gestures, cautious alertness, hopping mannerisms, or playful behavior are optional individual expressions, not mandatory personality
+- **Notes:** Usagi are fixed-form human-bodied Kemonomimi, not full rabbit beastfolk and not shapechangers.
+
+# Inu
+
+- **Canonical Entry:** Inu
+- **Naming Basis:** Inumimi / dog ears
+- **Form:** Standard dog-eared Kemonomimi only
+- **Creature Type:** Humanoid
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Kemonomimi
+- **Body Plan:** fully human face, skin, eyes, torso, limbs, hands, and feet; dog ears and a dog tail; no muzzle, snout, full-body fur, or paws
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating through human-like anatomy
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** functional human-like mating and internal-fertilization anatomy
+- **Birth Constraints:** dog ears and tail remain neonatal-safe; smell, hearing, tracking ability, and endurance mature progressively
+- **Typical Heritable Traits:** heightened smell and hearing, tracking ability, sustained endurance, expressive dog ears and tail
+- **Naturally Compatible:** Inu + Inu
+- **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
+- **Behavior Note:** barking, panting, tail-wagging, affectionate gestures, or canine mannerisms are optional individual expressions, not mandatory personality
+- **Notes:** Inu are fixed-form human-bodied Kemonomimi, not full canine beastfolk and not shapechangers.
+
+# Ookami
+
+- **Canonical Entry:** Ookami
+- **Naming Basis:** Ookamimi / wolf ears
+- **Form:** Standard wolf-eared Kemonomimi only
+- **Creature Type:** Humanoid
+- **Profile Status:** Complete
+- **Compatibility Family:** Internal Live-Bearing Kemonomimi
+- **Body Plan:** fully human face, skin, eyes, torso, limbs, hands, and feet; wolf ears and a wolf tail; no muzzle, snout, full-body fur, or paws
+- **Reproductive Mode:** Sexual, stable male/female
+- **Mating Method:** Physical male/female mating through human-like anatomy
+- **Male Reproductive Role:** supplies the fertilizing biological contribution through internal transfer
+- **Female Reproductive Role:** supplies the ovum-equivalent contribution, carries the developing offspring, and gives live birth
+- **Fertilization Method:** Internal
+- **Development Method:** Live-bearing
+- **Carrier:** Female parent
+- **Special Requirements:** functional human-like mating and internal-fertilization anatomy
+- **Birth Constraints:** wolf ears and tail remain neonatal-safe; smell, hearing, low-light vision, tracking, and coordinated movement mature progressively
+- **Typical Heritable Traits:** heightened smell and hearing, low-light vision, tracking ability, coordinated movement, expressive wolf ears and tail
+- **Naturally Compatible:** Ookami + Ookami
+- **Cross-Species Compatible:** every other active-whitelist species unless a specific directional or physical condition prevents mating
+- **Behavior Note:** howling, guarded posture, group coordination, territorial gestures, or wolf-like mannerisms are optional individual expressions, not mandatory personality
+- **Notes:** Ookami are fixed-form human-bodied Kemonomimi, not full wolf beastfolk, werewolves, or shapechangers.
 
 # Lizardfolk
 
