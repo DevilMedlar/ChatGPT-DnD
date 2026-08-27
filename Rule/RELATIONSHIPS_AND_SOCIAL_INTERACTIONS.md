@@ -14,17 +14,17 @@ Consent requirements are defined in `ADULT_CONTENT_AND_CONSENT.md`.
 
 Relationship information is made of separate facts and must not be collapsed into one label.
 
-When relevant, track:
+When relevant and established or revealed, track:
 
 - **relationship status** such as single, dating, married, widowed, complicated, or another established state
 - **current partner(s)**
-- **romantic interest(s)**
-- **sexual interest(s)** for explicitly adult characters only
-- target-specific attraction toward relevant PCs or NPCs
-- **jealousy / rivalry**
+- **romantic interest(s)** known to the core PCs
+- **sexual interest(s)** known to the core PCs for explicitly adult characters only
+- revealed target-specific attraction toward relevant PCs or NPCs
+- **jealousy / rivalry** shown or told in play
 - **established boundaries**
 - **consent / availability notes**
-- target-specific disposition, trust, respect/fear, attraction/tension, relationship role, debts/favors, promises/obligations, and important history
+- revealed target-specific disposition, trust, respect/fear, attraction/tension, relationship role, debts/favors, promises/obligations, and important history
 
 `Single` does **not** imply romantic or sexual interest. `Married` does **not** automatically imply lack of attraction to everyone else.
 
@@ -34,7 +34,15 @@ For characters below 18, do not create current sexual-interest fields. Age-appro
 
 A concise historical sexual-history fact involving characters who were ages 14-17 may also be preserved as relationship/history continuity when it is permitted by the brief-historical-reference section of `ADULT_CONTENT_AND_CONSENT.md`. Such a historical continuity fact is not the same thing as a current sexual-interest field.
 
-Numbers may be used internally when helpful, but narration should remain natural rather than exposing every relationship as a meter.
+Do not store an NPC's untold private attraction, unrevealed relationship secret, undiscovered betrayal, or other hidden answer. If the core PCs know only that something is uncertain or being concealed, record the unresolved question in the appropriate NPC or `world_state.md` section without recording the answer.
+
+Numbers may be used for calculations when an established mechanic requires them, but narration should remain natural rather than exposing every relationship as a meter.
+
+## Core-PC information sharing
+
+The two core PCs share everything either of them learns and keep no secrets from one another under `CORE_PARTY_AND_CHARACTER_AGENCY.md`.
+
+Once a relationship fact is learned by either core PC, both know it. This shared knowledge does not override either character's separate agency, boundaries, consent, dialogue, or decisions.
 
 ## Relationship-informed behavior
 
@@ -54,10 +62,10 @@ The player-controlled PC's decisions remain controlled by the player under `CORE
 
 Core-PC relationship canon and lasting personal relationship continuity belong in `character_sheet.md`.
 
-Persistent NPC relationship and attraction state belongs in `NPC-state.md`.
+Persistent NPC relationship and attraction state that has been established or revealed to the core PCs belongs in `NPC-state.md`.
 
 Record relationship information in `world_state.md` only when it creates a persistent world-level consequence involving a location, faction, quest, organization, public status, or similar world state.
 
-Record romantic and relationship details whenever they are established through character agency or campaign canon and matter to continuity, subject to the age rules in `ADULT_CONTENT_AND_CONSENT.md`.
+Record romantic and relationship details whenever they are established through character agency or campaign canon, known to the core PCs, and matter to continuity, subject to the age rules in `ADULT_CONTENT_AND_CONSENT.md`.
 
 For ages 14-17, this may include established romantic relationship status and permitted concise historical sexual-history facts. Current sexual-interest fields and adult intimate, fertility, pregnancy, or reproductive state remain subject to the adult-only requirements in `ADULT_CONTENT_AND_CONSENT.md`.
