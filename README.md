@@ -111,7 +111,7 @@ New-Sheets/
 
 #### How New-Sheets becomes a campaign
 
-A new campaign copies the complete `New-Sheets/` folder skeleton into its own numbered folder, preserving the `Rules/` and `art/` subfolders, then fills out **its own copies**.
+A new campaign copies the complete `New-Sheets/` folder skeleton into its own numbered folder, preserving its `Rules/` and `art/` subfolders, then fills out **its own copies**.
 
 Normal mapping:
 
@@ -128,11 +128,11 @@ New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Cam
 New-Sheets/art/art_log.md                      -> campaigns/campaign-N/art/art_log.md
 ```
 
-The campaign's copied Markdown files keep useful instructions, examples, blank layouts, and clearly labeled record templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
+The campaign's copied Markdown files keep useful instructions, examples, tables, and clearly labeled record templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
 
 Those retained helper sections are **not canonical state**. A labeled `NPC Record Template` is not an NPC, a labeled `Shop Transaction Template` is not a pending transaction, and placeholder names/IDs or example rows are not established campaign facts.
 
-When copying the skeleton into its live destination, adjust campaign identifiers, placeholder character names, the `Campaign-N_Rules.md` filename/heading, starting values, and any destination-relative repository references as needed. This is initialization of the copy, not campaign canon.
+When copying the skeleton into its live destination, adjust campaign identifiers, placeholder character names, the `Campaign-N_Rules.md` filename/heading, starting values, destination-relative references, and any other required initialization values. This is initialization of the copy, not campaign canon.
 
 If copied guidance conflicts with the current files under `Rule/`, the current reusable rule library wins. The copied guidance explains how to fill the file; it is not a separate rule authority.
 
@@ -299,11 +299,11 @@ The exact Step recording, review, confirmation, permanent reconciliation, verifi
 
 The reproduction system is intentionally consolidated:
 
-- `Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive operation, compatibility, carrying-parent development, adoption, hybrid safety, and lineage.
-- `Rule/REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the active global species whitelist.
-- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the ten active reproductive profiles.
+- `Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive operation, compatibility, carrying-parent development, adoption, hybrid safety, fertility, conception, and lineage.
+- `Rule/REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the active global standard-species whitelist.
+- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the nine active standard reproductive profiles.
 
-Deleted catalogs, profile batches, repository history, or remembered chat context cannot independently restore a removed species.
+Deleted catalogs, profile batches, repository history, nonstandard variations, or remembered chat context cannot independently restore a removed species.
 
 ---
 
