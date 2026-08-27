@@ -2,538 +2,699 @@
 
 ## Purpose and authority
 
-This file is the repository-wide authority for:
+This is the repository's only dedicated global reproduction file. It owns:
 
-- biological reproduction
+- biological compatibility
 - fertility and conception
-- cross-species compatibility
 - carrying-parent development
+- offspring count and biological sex
+- pregnancy, egg production, gestation, and incubation
+- detection of reproductive state
+- hybrid inheritance
+- birth and hatching
+- childhood development
+- adult hybrid fertility and later generations
 - adoption separation
-- hybrid birth safety
-- lineage handling
 - reproductive-state persistence
 
-It works with only two other global reproduction files:
+`PLAYABLE_CHARACTER_OPTIONS.md` owns the thirteen approved standard species and their playable/species biology. `CORE_GAME_MECHANICS.md` owns the campaign clock and ordinary 5.5e mechanics. `DICE_ROLLS_AND_REROLLS.md` owns every random result.
 
-- `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` owns the active global species whitelist.
-- `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` owns the reusable reproductive biology of every species on that whitelist.
-
-Ordinary D&D 5.5e rules remain the default for unrelated game mechanics. The homebrew rules here override ordinary D&D wherever reproduction or hybrid lineage is concerned.
-
-All characters participating in adult or reproductive content must satisfy `ADULT_CONTENT_AND_CONSENT.md`.
+All adult or reproductive content remains governed by `ADULT_CONTENT_AND_CONSENT.md`.
 
 ## Active global scope
 
-A species is globally selectable for this crossbreeding system only when its standard canonical form appears in `REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md`.
+The globally approved reproductive species are exactly the thirteen standard species in `PLAYABLE_CHARACTER_OPTIONS.md`:
 
-A species, subrace, variation, alternate lineage, or setting version omitted from that whitelist is not restored merely because it appears in old chat context, a deleted file, Git history, an older sourcebook, or surviving background research.
+1. Human
+2. Elf
+3. Dwarf
+4. Gnome
+5. Dragonborn
+6. Dragonkin
+7. True Dragon
+8. Kitsune
+9. Neko
+10. Usagi
+11. Inu
+12. Ookami
+13. Lizardfolk
 
-A removed or new species or variation may enter through:
+An omitted species or nonstandard form is not restored by an official builder, sourcebook, deleted file, repository history, prior chat, or remembered context.
 
-1. the player's newer explicit global instruction, or
-2. an applicable campaign-specific override in `campaigns/campaign-N/Rules/Campaign-N_Rules.md`.
+A new or nonstandard species requires:
 
-A campaign-specific addition applies only to that campaign unless the player explicitly promotes it to the global whitelist.
+1. the player's explicit global approval and a complete entry in `PLAYABLE_CHARACTER_OPTIONS.md`, or
+2. an explicit campaign-specific override that defines its required biology.
 
 ## Global biological gate
 
-Every species on the active whitelist uses the following ordinary reproductive structure:
+Every active species has:
 
 - stable biological males
 - stable biological females
-- physical male/female mating as the reproductive act
+- physical male/female mating
 - a male fertilizing contribution
 - a female ovum-equivalent contribution
 - internal biological fertilization
-- a viable biological development route after fertilization
+- viable live-bearing or egg-laying development
 
-The active global roster does not include species whose normal reproduction depends on:
+The global roster excludes reproduction based on asexual replication, fission, budding, spores, broadcast spawning, temporary reproductive sexes, hermaphroditic dual-role systems, construction, summoning, magical creation, or a temporary assumed body required for reproduction.
 
-- asexual replication
-- budding, fission, or cloning
-- spores or seed-only propagation
-- broadcast spawning or external gamete release
-- communal fertilization without a physical male/female mating pair
-- hermaphroditic or dual-role reproduction
-- sequential or temporary reproductive-sex changes
-- construction, summoning, reincarnation, or individual magical creation
-- conversion or transformation of another creature into the species
-- a temporary assumed body required for reproduction
+## Required biological pairing
 
-A campaign-specific override may establish a different system locally, but it must define that system explicitly rather than silently borrowing these rules.
+Natural biological conception requires:
 
-## Required male/female pairing
+- one reproductively mature biological male
+- one reproductively mature biological female
+- functional reproductive anatomy
+- physical mating that provides internal fertilization
+- no active biological or preventative block
+- a viable development route through the female partner
 
-Ordinary biological conception under the global system requires:
-
-- one biologically male partner with functional anatomy capable of supplying the fertilizing contribution
-- one biologically female partner with functional anatomy capable of supplying the ovum-equivalent contribution
-- physical mating that can transfer the male contribution through a workable internal-fertilization pathway
-- a viable female development route for the fertilized offspring
-
-Therefore:
-
-- male + female may conceive when all compatibility and fertility requirements are satisfied
-- male + male does not naturally produce a biological child together under this system
-- female + female does not naturally produce a biological child together under this system
-
-Gender identity, pronouns, attraction, romance, marriage, family role, and parenthood remain separate from reproductive anatomy.
+Male + male and female + female do not naturally create a biological child together under this system. Romance, marriage, gender identity, and family role remain separate from reproductive anatomy.
 
 ## Adoption is separate
 
-Adoption does not require reproductive compatibility.
+Adoption does not require biological compatibility, fertility, different-sex parents, or any biological relationship.
 
-An individual, couple, or family may adopt when campaign circumstances and character agency allow it, including when the prospective parent or parents:
+Adoption creates real family and guardianship, but it does not change biological ancestry, conception, pregnancy, egg production, inherited traits, or genetic parentage.
 
-- are the same sex
-- are different species
-- are infertile
-- are reproductively incompatible
-- simply prefer adoption
+# Compatibility
 
-Adoption creates a genuine family relationship but does not create biological ancestry, pregnancy, genetic parentage, or inherited traits.
+## Naturally compatible
 
-## Compatibility categories
+The same approved standard species is `Naturally compatible`.
 
-### Naturally compatible
+## Cross-species compatible
 
-Use `Naturally compatible` for:
+Every two different active-roster species are `Cross-species compatible` in both reproductive directions.
 
-- the same standard species
-- another pairing explicitly classified as naturally compatible by a current approved profile or campaign rule
+This is a deliberate homebrew rule. No active-roster pair has a genetic species barrier.
 
-A nonstandard variation is not automatically naturally compatible or globally selectable merely because it shares ancestry with a standard species.
+## Conditionally compatible
 
-### Cross-species compatible
+`Conditionally compatible` is reserved for:
 
-Use `Cross-species compatible` when two biologically different active-whitelist species can physically mate, fertilize internally, and produce a viable developing hybrid.
+- a future approved species whose biology requires a real condition
+- an explicit campaign override
+- a temporary injury, condition, or physical circumstance that prevents an otherwise compatible act
 
-Different adult body plans, Creature Types, sizes, lifespans, live birth, or egg-laying do not automatically block this category.
+It is not the default for any current species pairing.
 
-### Conditionally compatible
+## Incompatible by ordinary biology
 
-Use `Conditionally compatible` when an otherwise valid pairing needs a specific non-magical biological or physical condition, such as:
+Use this only when an explicit current fact removes the required mating, fertilization, or development pathway.
 
-- safe accommodation for a major size difference
-- a particular physical position or access required by anatomy
-- a suitable incubation temperature or environment after an egg is laid
-- a profile-specific reproductive structure being present and functional
+Consent, attraction, intelligence, power, or narrative convenience cannot replace missing biology.
 
-The condition must solve a real biological requirement. Do not invent a decorative condition merely to force or dramatize a pairing.
+## Size and physical access
 
-### Incompatible by ordinary biology
+All active-roster species have mutually workable reproductive anatomy under this homebrew.
 
-Use `Incompatible by ordinary biology` when:
+- Human, Elf, Dwarf, Gnome, Dragonborn, Dragonkin, Kemonomimi, and Lizardfolk size differences do not require a compatibility penalty.
+- Every reproductively mature True Dragon can safely reduce to a compatible true-dragon size or assume functional Humanoid anatomy for mating.
+- True Dragon form accommodation needs no roll, item, outside spell, or partner-provided transformation.
+- The dragon remains biologically a True Dragon.
 
-- physical mating cannot provide a workable internal-fertilization path
-- the required reproductive anatomy is absent or nonfunctional
-- the fertilized offspring has no viable development route
-- a specific profile records an incompatibility that the current circumstances do not overcome
+Adult size therefore never lowers an active-roster pairing from Cross-species compatible.
 
-Consent, romance, intelligence, magical power, or narrative convenience do not erase biological incompatibility.
+## Directional development
 
-## Active-roster compatibility default
-
-Unless a specific profile or campaign rule says otherwise:
-
-- same-species pairings are `Naturally compatible`
-- different active-whitelist species are `Cross-species compatible`
-- a severe physical-size or anatomy issue may make the current reproductive direction `Conditionally compatible` until the stated physical requirement is satisfied
-
-Compatibility establishes biological possibility only. It does not create attraction, consent, mating, conception, pregnancy, or a guaranteed offspring.
-
-## Internal-fertilization compatibility
-
-All active-whitelist species use internal fertilization.
-
-A proposed pairing is biologically workable when:
-
-1. the male contribution can reach and fertilize the female contribution through physical mating
-2. both partners have functional anatomy for that transfer
-3. neither profile establishes a specific incompatibility
-4. the fertilized offspring can follow the female partner's development route
-5. carrier or egg-development constraints can be satisfied
-
-The two species do not need to share the same post-fertilization development method.
-
-## Directional compatibility
-
-Always evaluate the two reproductive directions separately when the sexes of the species are reversed:
+Always distinguish:
 
 - male Species A + female Species B
 - male Species B + female Species A
 
-A pair may be biologically possible in both directions while producing different gestation, egg production, neonatal expression, or developmental timing.
-
-The female contributor determines the initial development route. The male contributor remains a full biological parent but does not replace the female reproductive system.
-
-## Female development rule
+The female partner determines the development route.
 
 ### Live-bearing female
 
-A live-bearing female:
-
-- receives the male fertilizing contribution internally
-- carries the developing hybrid internally
-- gives live birth
-
-The other parent's egg-laying ancestry does not force her to lay an egg.
+A live-bearing female carries the developing offspring internally and gives live birth.
 
 ### Egg-laying female
 
-An egg-laying female:
+An egg-laying female produces and lays a fertilized egg or clutch, after which development continues through incubation and hatching.
 
-- receives the male fertilizing contribution internally
-- produces the fertilized egg according to her biology
-- lays the egg
-- uses her species' normal incubation and hatching requirements
+The other parent's route never replaces the female's route.
 
-The other parent's live-bearing ancestry does not remove the egg stage.
+## Female development table
 
-### Examples
+| Female species | Development route |
+|---|---|
+| Human | Live birth |
+| Elf | Live birth |
+| Dwarf | Live birth |
+| Gnome | Live birth |
+| Kitsune | Live birth |
+| Neko | Live birth |
+| Usagi | Live birth |
+| Inu | Live birth |
+| Ookami | Live birth |
+| Dragonborn | Egg production, laying, and incubation |
+| Dragonkin | Egg production, laying, and incubation |
+| True Dragon | Egg production, laying, and incubation |
+| Lizardfolk | Egg production, laying, and incubation |
 
-- male Human + female True Dragon -> the female Dragon produces and lays a fertilized hybrid egg
-- male True Dragon + female Elf -> the female Elf carries the hybrid and gives live birth
-- male Dragonborn + female Kitsune -> the female Kitsune carries the hybrid and gives live birth
-- male Human + female Lizardfolk -> the female Lizardfolk produces and lays a fertilized hybrid egg
+## Carrying-parent size and birth safety
 
-## Physical size and mating
+Prenatal or pre-laying development remains within the female parent's viable reproductive range rather than matching the offspring's eventual adult size.
 
-Adult size difference does not automatically make two active-whitelist species infertile.
-
-When size creates a real physical obstacle:
-
-- classify the current reproductive direction as `Conditionally compatible`
-- identify the non-magical physical accommodation required for safe mating
-- never assume shapechanging, magical resizing, or invented anatomy unless an applicable rule explicitly provides it
-
-If no safe physical mating pathway can exist in the current circumstances, the pairing is incompatible in that direction until circumstances genuinely change.
-
-## Carrying-parent size rule
-
-For an otherwise compatible pairing, prenatal or pre-laying development stays within the female parent's viable reproductive range rather than matching the offspring's eventual adult size.
-
-Larger inherited size, frame, wingspan, horns, tail, or musculature may develop after birth or hatching.
-
-This rule preserves a plausible pregnancy or egg-laying pathway. It cannot repair a pairing that lacks workable mating or fertilization in the first place.
-
-## Birth-safe hybrid development
-
-A hybrid's final inherited form does not need to be fully expressed at birth or hatching.
-
-When a mature inherited feature would interfere with pregnancy, egg production, laying, birth, or hatching, the feature may be:
-
-- small
-- soft
-- folded
-- flexible
-- vestigial
-- internal
-- developmentally dormant
-- absent from visible neonatal expression but genetically established
-
-Possible delayed traits include:
-
-- horns
-- rigid scales or plates
-- wings
-- claws and fangs
-- spines and crests
-- large tails
-- breath structures
-- unusual adult size or musculature
-
-For every delayed trait, later inheritance rules should distinguish:
-
-- the inherited trait
-- its appearance at birth or hatching
-- the stage when it begins developing
-- the stage when it becomes mechanically functional
+Inherited horns, scales, plates, wings, claws, fangs, tails, breath structures, or unusual adult size may remain small, soft, folded, flexible, dormant, or otherwise immature until after birth or hatching.
 
 Delayed expression changes timing, not inheritance.
 
-## Kitsune natural-body exception
-
-Kitsune are the one current approved exception to the general exclusion of shapechanger species.
-
-Their reproduction follows these rules:
-
-- reproductive anatomy is determined only by the stable natural Kitsune body
-- physical mating and internal fertilization occur through that natural body
-- a humanoid disguise, illusion, alternate appearance, or assumed form does not create reproductive anatomy
-- an assumed form does not create compatibility with a species that the natural Kitsune body could not physically mate with
-- shapechanging is not required for Kitsune reproduction
-
-This exception applies only to the standard Kitsune profile and does not reopen the global roster to other shapechanger species or Kitsune variations.
-
 # Fertility and conception
 
-## Default individual fertility
+## Default fertility
 
-A healthy, reproductively mature adult from an active-whitelist species defaults to:
+A healthy reproductively mature adult defaults to:
 
 - **Fertility Status:** `Fertile`
 - **Fertility Modifier:** `+0`
 
-Do not invent an age penalty, species penalty, hidden infertility, or reproductive disorder merely to affect an outcome.
+Do not invent hidden infertility, ancestry penalties, age penalties, timing modifiers, disease, or pregnancy.
 
-A character's established condition, injury, disease, item, treatment, curse, blessing, campaign rule, or explicit character-creation fact may change that default.
-
-Reproductive adulthood and the adult-content age rules must both be satisfied. A character being legally or culturally adult does not override an explicitly established lack of reproductive maturity.
+An explicit condition, injury, disease, item, treatment, curse, blessing, feature, or campaign rule may change the default.
 
 ## Fertility statuses
 
-Use these global statuses unless a more specific effect defines another value:
-
-| Fertility Status | Conception Modifier | Effect |
+| Status | Modifier | Effect |
 |---|---:|---|
-| High Fertility | +5 | Capable with an above-normal chance |
+| High Fertility | +5 | Conception remains possible with an increased target |
 | Fertile | +0 | Normal default |
-| Reduced Fertility | -5 | Capable with a reduced chance |
-| Very Low Fertility | -10 | Capable, but unlikely |
+| Reduced Fertility | -5 | Conception remains possible with a reduced target |
+| Very Low Fertility | -10 | Conception remains possible but is unlikely |
 | Infertile | No roll | Natural conception cannot occur while this status applies |
-| Temporarily Suppressed | No roll | Natural conception cannot occur until the suppression ends |
-| Unknown | No roll yet | Establish the relevant fact before resolving conception |
+| Temporarily Suppressed | No roll | Natural conception cannot occur until suppression ends |
+| Unknown | No roll yet | Establish the fact before resolving conception |
 
-Apply the male and female fertility modifiers separately and additively.
-
-A species on the whitelist receives no automatic fertility bonus or penalty merely because it is an Elf, Dragon, Gnome, Kitsune, or another listed ancestry. Species-specific modifiers require an explicit current rule or profile statement.
+Male and female modifiers stack additively.
 
 ## Conception opportunity
 
-A conception check occurs only when all of the following are true:
+A conception check occurs only when:
 
-1. the pairing is Naturally compatible, Cross-species compatible, or currently satisfies every required Conditional-compatibility condition
+1. the pairing is currently compatible
 2. both participants are reproductively mature adults
-3. the male is not Infertile, Temporarily Suppressed, or Unknown
-4. the female is not Infertile, Temporarily Suppressed, or Unknown
-5. the female is not already pregnant, producing a fertilized egg or clutch, or in another established state that blocks a new conception
-6. physical mating occurs through a workable internal-fertilization pathway
-7. the male fertilizing contribution is transferred in a manner capable of reaching the female contribution
-8. no effective contraceptive, prevention method, or explicit blocking effect applies
+3. neither participant has a no-roll fertility status
+4. the female is not already pregnant, producing a fertilized egg or clutch, or in another blocking state
+5. physical mating provides a valid internal-fertilization opportunity
+6. no fully effective prevention method or explicit block applies
+7. the canonical campaign clock is established
 
-If any required condition fails, do not roll.
+If any condition fails, do not roll.
 
-Romantic intent, desire for a child, or lack of desire for a child does not change biology by itself. Consent to mating is not automatically consent to pregnancy, and pregnancy intent is not required for a conception opportunity to exist.
+## One check per pair per 24 hours
 
-## One-check-per-24-hours rule
+Each distinct male/female pairing receives at most one conception check in the same 24 in-world hours.
 
-For each distinct male/female pairing, allow at most **one conception check during the same 24 in-world hours**.
+Multiple qualifying acts in that period are folded into one opportunity. They do not add rolls or modifiers unless an explicit effect says so.
 
-Multiple qualifying mating acts by the same pair during that period are folded into the same conception opportunity. They do not create extra rolls or an automatic modifier unless a specific feature or campaign rule explicitly says otherwise.
-
-A new qualifying opportunity may occur after the next 24-hour period begins, provided all requirements still apply.
-
-This rule prevents repeated-roll farming while keeping the system easy to track during play.
+Use the canonical `active_game.json.campaign_clock` plus the current `turn_save.md` clock overlay. Do not guess whether 24 hours passed.
 
 ## Base conception targets
 
-Use a percentile target based on the pairing's current compatibility category:
-
-| Compatibility Category | Base Conception Target |
+| Compatibility | Base target |
 |---|---:|
 | Naturally compatible | 20 |
 | Cross-species compatible | 15 |
-| Conditionally compatible, with all conditions satisfied | 10 |
-| Incompatible by ordinary biology | No roll |
-
-These are homebrew gameplay values, not claims about exact real-world or sourcebook fertility.
+| Conditionally compatible with every condition satisfied | 10 |
+| Incompatible | No roll |
 
 ## Conception formula
 
-Calculate:
+`Final Conception Target = Base Target + Male Fertility Modifier + Female Fertility Modifier + Explicit Effect Modifiers`
 
-`Final Conception Target = Base Conception Target + Male Fertility Modifier + Female Fertility Modifier + Explicit Effect Modifiers`
+- Modifiers stack additively.
+- Every modifier must have an explicit source.
+- Clamp an otherwise possible target to 1–95.
+- A truly guaranteed effect can override the clamp.
+- ChatGPT may not invent a modifier to steer the story.
 
-Rules:
+## Percentile roll with one d10
 
-- all modifiers stack additively
-- every modifier must come from an established status, item, feature, condition, treatment, campaign rule, or other explicit source
-- ChatGPT must not invent a modifier to steer the story
-- do not add a hidden timing, age, ancestry, health, or mood modifier
-- if no special modifier is established, use only the base target plus the two fertility modifiers
-- clamp an otherwise possible final target to a minimum of `1` and maximum of `95`
-- an explicit guaranteed-conception or guaranteed-prevention effect may override that clamp when its wording truly establishes certainty
+Use the player's d10 twice:
 
-## Percentile roll using one d10
-
-A physical 100-sided die is not required.
-
-Use the player's ordinary `d10` twice in sequence:
-
-1. the first `d10` roll is the tens digit
-2. the second `d10` roll is the ones digit
-3. if the die is numbered `0-9`, use `0` normally as a zero digit
-4. if the die is numbered `1-10`, treat a rolled `10` as the digit `0`
-5. combine the two digits into one percentile result
-6. `00` counts as `100`
+1. first roll = tens digit
+2. second roll = ones digit
+3. a `0`, or `10` on a die numbered 1–10, is digit zero
+4. combine the digits
+5. `00` = `100`
 
 Examples:
 
-- first roll `4`, second roll `7` -> `47`
-- first roll `0` or `10`, second roll `8` -> `8`
-- first roll `0` or `10`, second roll `0` or `10` -> `100`
+- `4`, then `7` = `47`
+- `0`, then `8` = `08`
+- `0`, then `0` = `100`
 
-Every result from `1` through `100` is equally likely. Do not add or multiply the two rolls.
+Do not add or multiply the dice.
 
-## Player-rolled conception check
+## Resolution
 
-When a conception opportunity exists:
+- Result equal to or below the Final Conception Target: conception succeeds.
+- Result above the target: no conception.
+- There are no critical effects on 1 or 100.
+- Failure causes no automatic injury, infertility, or relationship consequence.
+- ChatGPT never rolls, substitutes, changes, or secretly rerolls either die.
 
-1. ChatGPT states the compatibility category, visible modifiers, and Final Conception Target unless the purpose must remain hidden from the characters
-2. ChatGPT asks the player to roll the same `d10` twice, first for tens and then for ones
-3. combine the rolls according to the percentile rule above
-4. if the combined result is equal to or lower than the Final Conception Target, conception succeeds
-5. if the combined result is higher, conception does not occur from that opportunity
+## Successful conception
 
-There are no automatic critical effects on `1` or `100`.
-
-A failed conception check causes no automatic injury, complication, infertility, or relationship consequence.
-
-ChatGPT never generates, selects, changes, rerolls, or secretly substitutes either d10 result or the combined percentile result.
-
-## What a successful conception check means
-
-A successful check establishes a **viable conception state**.
-
-It abstracts the ordinary biological chain required for the pregnancy or egg-development state to begin. Do not add a separate hidden fertilization, implantation, or establishment roll unless a future explicit rule creates one.
-
-On success:
+Success immediately establishes a viable biological state:
 
 - a live-bearing female becomes pregnant
-- an egg-laying female begins producing the fertilized egg or clutch according to her profile
-- the female development rule determines the route
-- the two participants become the biological parents
-- the exact offspring count is unresolved until the multiple-offspring mechanic is used
-- exact inherited traits are unresolved until the hybrid-inheritance mechanic is used
-- pregnancy detection, gestation duration, laying date, hatching date, birth, and complications use later mechanics
+- an egg-laying female begins producing a fertilized egg or clutch
+- the participants become the biological parents
+- offspring count, sex, and inheritance are resolved by the player-rolled rules below
+- no second hidden implantation or establishment roll occurs
 
-Conception success does not automatically prove that the eventual adult hybrid will be fertile.
+Character knowledge is separate from the actual state.
 
 ## Multiple possible fathers
 
-The global default allows one biological male contributor and one biological female contributor per conception.
+Resolve qualifying opportunities in chronological order.
 
-When more than one male had a qualifying conception opportunity with the same female before conception is resolved:
-
-1. resolve the opportunities in established chronological order
-2. the first successful conception check establishes the biological father
-3. after conception succeeds, do not make later conception checks for that female until the pregnancy, fertilized-egg production, or clutch state ends
-4. if the chronological order is genuinely unknown, the player physically rolls an impartial ordering or tie-breaker before the conception checks
-5. ChatGPT never chooses the father for narrative convenience
-
-Multi-sire offspring, superfecundation, or more than two genetic contributors require an explicit global or campaign-specific override.
+- The first successful conception establishes the biological father.
+- Stop later checks after conception succeeds.
+- If chronology is genuinely unknown, the player rolls an impartial ordering before conception checks.
+- The default permits one male and one female genetic contributor.
+- Multi-sire reproduction requires an explicit override.
 
 ## Contraception and prevention
 
-An established fully effective prevention method blocks the conception opportunity and no conception roll occurs.
+A fully effective established method blocks the opportunity.
 
-A prevention method with a stated failure chance is resolved in this order:
+For a method with an established failure chance:
 
 1. the player rolls the method's failure check
-2. only if the method fails does the conception opportunity proceed
-3. the player then rolls the normal conception check
+2. only on failure does the conception check occur
 
-Do not invent reliability percentages for an item, spell, treatment, or method whose effectiveness has not been established.
+Do not invent effectiveness percentages.
 
-## Hidden purpose and character knowledge
+# Offspring count and biological sex
 
-The player still rolls every die even when the characters should not yet know why the roll matters.
+Resolve these immediately after successful conception for mechanical truth, even if the characters do not yet know the results.
 
-When appropriate, ChatGPT may request two sequential `d10` rolls without revealing their purpose or the Final Conception Target until the fiction permits discovery. The two physical rolls and the combined percentile result must still be recorded accurately.
+## Live-bearing count
 
-Character knowledge of pregnancy or fertilized-egg production is separate from the actual biological state. Detection uses later mechanics.
+For Human, Elf, Dwarf, Gnome, Kitsune, Neko, Usagi, Inu, or Ookami females, roll `1d20`:
 
-## Reproductive-state persistence
+| d20 | Offspring |
+|---:|---:|
+| 1–17 | 1 |
+| 18–19 | 2 |
+| 20 | 3 |
 
-During an active Campaign Turn, record each conception check in `turn_save.md` with enough detail to verify it:
+## Dragonborn or Dragonkin clutch
 
-- in-world date and approximate time
-- female parent and stable ID when applicable
-- male parent and stable ID when applicable
-- compatibility category
-- required conditional-compatibility facts, if any
-- male fertility status and modifier
-- female fertility status and modifier
-- prevention method or blocking effect, if any
-- Base Conception Target
-- explicit effect modifiers
-- Final Conception Target
-- first d10 result for the tens digit
-- second d10 result for the ones digit
-- combined percentile result
-- success or failure
-- live-bearing or egg-producing development route on success
+Roll `1d4`:
 
-At approved permanent reconciliation:
+| d4 | Fertilized eggs |
+|---:|---:|
+| 1–2 | 1 |
+| 3 | 2 |
+| 4 | 3 |
 
-- a core PC's current fertility, pregnancy, egg-producing, co-parent, conception-date, and related personal reproductive state belongs in `character_sheet.md`
-- an NPC's equivalent persistent reproductive state belongs in `NPC-state.md`
-- the campaign's in-world date and calendar facts belong in `world_state.md` when tracked
-- continuity-important successful conceptions belong in `session_log.md`
-- an unsuccessful check needs no permanent transfer unless it changes an ongoing fertility investigation, treatment, relationship decision, or other lasting state
+## True Dragon clutch
 
-Do not store graphic scene detail merely to prove a check occurred. Store the mechanical and continuity facts needed for recovery and future play.
+Roll `1d4`:
 
-## Hybrid ancestry and phenotype
+| d4 | Fertilized eggs |
+|---:|---:|
+| 1–2 | 1 |
+| 3 | 2 |
+| 4 | 3 |
 
-Gestation method does not determine the child's final ancestry balance or adult appearance.
+## Lizardfolk clutch
 
-A hybrid may inherit biologically appropriate traits from either parent regardless of which parent carried or laid the offspring.
+Roll `1d4`. The result is the number of fertilized eggs: 1–4.
 
-Biological inheritance may include:
+The female species controls the count table. The male species does not change it unless an explicit effect says otherwise.
 
-- body structure
-- size potential
-- coloration and markings
-- hair, fur, scales, horns, tails, wings, claws, or fangs
-- senses
-- movement modes
-- resistances, vulnerabilities, or innate biological abilities
-- lifespan and developmental timing when later rules define them
+Every established offspring is viable by default. Do not add a hidden viability roll.
 
-Culture, language, class, profession, religion, training, ideology, and social status are not genetically inherited merely because a biological parent possesses them.
+## Biological sex
 
-## Hybrid lineage status
+For each offspring, roll `1d20`:
 
-A hybrid label records ancestry. It does not automatically become a permanent selectable species.
+- odd result = male
+- even result = female
 
-A hybrid becomes a stable globally selectable lineage only when the player explicitly establishes that status and defines enough biology to answer:
+A campaign-specific rule may replace this table, but ChatGPT never selects the result for narrative convenience.
 
-- whether adult hybrids are fertile
-- which partners they can reproduce with
-- their normal male and female reproductive roles
-- whether they are live-bearing or egg-laying by sex and lineage
-- which inherited traits breed true
+# Pregnancy, egg production, and incubation
 
-Until then, resolve each hybrid from its established parents and personal biology.
+## Fixed schedule rule
 
-## Birth viability and adult fertility are separate
+Development schedules are fixed, not secretly randomized.
 
-Track these independently:
+Calculate each date from the exact conception clock. A campaign override or explicit effect may change a schedule, but ChatGPT does not add unexplained early or late variation.
 
-1. Can the parents physically mate and fertilize?
-2. Can a viable conception begin?
-3. Can the offspring complete gestation or egg development and be born or hatch?
-4. Is the resulting adult hybrid fertile?
+## Live-bearing schedules
 
-Success at one stage does not automatically prove the next.
+| Female species | Gestation |
+|---|---:|
+| Human | 40 weeks / 280 days |
+| Elf | 48 weeks / 336 days |
+| Dwarf | 44 weeks / 308 days |
+| Gnome | 36 weeks / 252 days |
+| Kitsune | 40 weeks / 280 days |
+| Neko | 40 weeks / 280 days |
+| Usagi | 40 weeks / 280 days |
+| Inu | 40 weeks / 280 days |
+| Ookami | 40 weeks / 280 days |
 
-## Campaign overrides
+## Egg-laying schedules
 
-A campaign-specific rule may:
+| Female species | Conception to laying | Incubation after laying | Total conception to hatching |
+|---|---:|---:|---:|
+| Dragonborn | 8 weeks / 56 days | 16 weeks / 112 days | 24 weeks / 168 days |
+| Dragonkin | 10 weeks / 70 days | 20 weeks / 140 days | 30 weeks / 210 days |
+| True Dragon | 12 weeks / 84 days | 40 weeks / 280 days | 52 weeks / 364 days |
+| Lizardfolk | 6 weeks / 42 days | 12 weeks / 84 days | 18 weeks / 126 days |
 
-- add or remove species or variations locally
-- change a species' reproductive profile locally
-- establish a special compatible or incompatible pairing
-- alter a development method
-- alter fertility statuses or conception targets
-- broaden or narrow the biological gate
+The conception time of day carries through to the calculated due, laying, and hatching times unless an explicit event changes it.
 
-The override must be explicit and applies only to that campaign. It does not silently rewrite the global whitelist or another campaign.
+Multiple offspring share the same scheduled date by default. Delivery or hatching may take several in-world minutes or hours, recorded through the campaign clock.
 
-## Dice ownership
+## Healthy-state default
 
-All fertility, conception, multiples, inheritance, mutation, detection, gestation, and developmental randomness follows `DICE_ROLLS_AND_REROLLS.md`.
+A healthy pregnancy or egg-development state does not automatically impose a game condition, ability penalty, Speed penalty, Exhaustion, or combat disadvantage.
 
-ChatGPT states what must be rolled and resolves only the player's supplied result. ChatGPT never invents a reproductive roll or chooses a number to fit the narrative.
+Mechanical effects arise only from:
+
+- an explicit rule
+- an established injury, illness, deprivation, or environmental risk
+- a spell, item, treatment, curse, blessing, or feature
+- a player-approved campaign rule
+
+## Incubation baseline
+
+A laid egg requires:
+
+- protection from breaking or violent impact
+- a stable environment appropriate to the female species
+- ordinary access to required warmth, moisture, air, and care
+- no prolonged extreme condition that its profile cannot tolerate
+
+Normal competent care succeeds automatically. Risk checks occur only when a real adverse condition is established.
+
+# Detection and character knowledge
+
+The actual biological state exists from conception. Knowledge must be established separately.
+
+## Live-bearing mundane detection
+
+| Time since conception | Mundane detection |
+|---|---|
+| Days 0–13 | No ordinary check can confirm |
+| Days 14–27 | DC 15 Wisdom (Medicine) |
+| Day 28 onward | DC 10 Wisdom (Medicine) |
+| Day 42 onward | The pregnant character normally recognizes the state automatically unless an explicit effect masks it |
+
+## Egg-producing mundane detection
+
+Use the female species' conception-to-laying interval.
+
+| Progress toward laying | Mundane detection |
+|---|---|
+| First quarter | No ordinary check can confirm |
+| After first quarter | DC 15 Wisdom (Medicine) |
+| Halfway onward | DC 10 Wisdom (Medicine) |
+| Three-quarters onward | The egg-producing character normally recognizes the state automatically unless an explicit effect masks it |
+
+## Magical, item, and treatment detection
+
+A spell, item, examination, or treatment detects only what its established mechanics say it detects. Do not invent detection powers or certainty.
+
+The player physically rolls all required checks, even when the characters do not know the purpose of the roll.
+
+# Hybrid inheritance
+
+## Core principle
+
+A hybrid inherits ancestry from both biological parents, but it does not receive every mechanical trait from both species.
+
+Class features, Background benefits, feats, trained skills, equipment, culture, language, religion, personality, profession, and social status are not genetic traits.
+
+## Four-slot mechanical budget
+
+Each hybrid receives a four-slot species-trait budget.
+
+- a major trait costs 2 slots
+- a standard trait costs 1 slot
+- cosmetic expression costs 0 slots
+- at least 1 slot must come from each biological parent
+- no hybrid may inherit more than one 2-slot major trait without an explicit balancing override
+
+### Two-slot major traits
+
+Treat these as 2-slot traits:
+
+- Human Versatile Origin feat
+- Dwarven Toughness
+- Gnomish Cunning
+- any Breath Weapon
+- Dragonborn Draconic Flight
+- Dragonkin Mature Flight
+- True Dragon Form Accommodation
+- True Dragon Developing Flight
+- Lizardfolk Natural Armor
+
+### One-slot standard traits
+
+All other species mechanics in `PLAYABLE_CHARACTER_OPTIONS.md` cost 1 slot unless an explicit rule reclassifies them.
+
+Examples include Darkvision, a skill proficiency, Fey Ancestry, Trance, Damage Resistance, Stonecunning, cantrips, natural weapons, gliding, Powerful Build, keen senses, movement increases, swimming, Hold Breath, and limited-use movement traits.
+
+## Trait-source procedure
+
+1. Build a list of each parent's eligible mechanical species traits.
+2. Exclude reproductive-baseline text and purely cosmetic notes.
+3. Reserve at least one 1-slot trait from each parent.
+4. For every remaining slot, roll `1d20`:
+   - 1–10 selects the female parent's pool
+   - 11–20 selects the male parent's pool
+5. If the selected pool contains multiple eligible traits, sort them alphabetically and use the smallest owned die that can cover the list. Reroll results above the list length.
+6. If the selected trait would break a cap or duplicate an existing trait, reroll within that pool.
+7. Stop when exactly four slots are filled.
+
+ChatGPT constructs and shows the eligible lists before dice are rolled. ChatGPT never chooses the inherited trait.
+
+## Trait caps and merging
+
+- At most one Breath Weapon.
+- At most one flight progression.
+- At most one Damage Resistance unless an explicit balanced feature says otherwise.
+- At most one natural Armor Class calculation.
+- At most one natural weapon of each body part.
+- Duplicate Darkvision uses the greater range and consumes only one slot.
+- Duplicate skill proficiency does not create Expertise; reroll or choose another eligible trait.
+- Duplicate movement speeds use the greater value and do not add together.
+- A Humanoid or compact-form trait does not grant a monster stat block.
+- A trait with a character-level gate retains that gate.
+
+## Cosmetic and body-plan inheritance
+
+For each meaningful visible category, roll `1d6`:
+
+- 1–2 = female-parent expression
+- 3–4 = blended expression
+- 5–6 = male-parent expression
+
+Possible categories include:
+
+- general body framework
+- skin, scales, or other covering
+- ears
+- tail
+- eyes and markings
+- horns, crest, or facial structure
+- visible wings
+- hands, feet, claws, or teeth
+- coloration
+
+Do not roll a category when neither parent has a meaningful difference.
+
+Cosmetic inheritance does not grant a mechanical trait unless that trait also occupies the required mechanical slots.
+
+## Adult size and lifespan
+
+Roll `1d6` separately for adult size and lifespan:
+
+- 1–2 = follows the female parent's range
+- 3–4 = blended midpoint or intermediate range
+- 5–6 = follows the male parent's range
+
+Prenatal size still follows the female carrier's safe range.
+
+## Female hybrid development route
+
+When a female hybrid reaches reproductive maturity:
+
+- if both parent species use the same route, she uses that route
+- if the routes differ, roll `1d20`
+  - 1–10 = female parent's route and schedule
+  - 11–20 = male parent's species' female route and schedule
+
+Record the selected source species and schedule. This roll is made once and becomes permanent personal biology.
+
+# Birth and hatching
+
+## Healthy default
+
+When the due, laying, or hatching clock is reached and normal care conditions are satisfied:
+
+- labor, laying, or hatching succeeds without a random complication roll
+- the parent and offspring are stable
+- no automatic damage, Exhaustion, permanent injury, or death occurs
+- each newborn or hatchling receives a persistent record
+
+## Risk checks
+
+A check occurs only when a documented risk exists.
+
+Before the player rolls, ChatGPT must state:
+
+- the exact risk
+- the actor making the check
+- the ability or skill
+- the DC
+- the possible success and failure outcomes
+
+Default risk DCs:
+
+| Risk | DC |
+|---|---:|
+| Minor | 10 |
+| Serious | 15 |
+| Severe | 20 |
+
+Use an appropriate Constitution saving throw, Wisdom (Medicine) check, or another explicitly justified check.
+
+Do not invent catastrophic stakes after seeing the roll.
+
+## Newborn or hatchling record
+
+Create a persistent NPC record containing:
+
+- stable NPC ID
+- name or temporary identifier
+- birth or hatching clock
+- biological sex
+- biological parents and stable IDs
+- adoptive parents or guardians, separately
+- ancestry
+- development route
+- inherited mechanical traits
+- visible traits
+- delayed traits and milestones
+- health and current location
+- adult fertility and female route when later established
+
+# Childhood and trait development
+
+## Universal stages
+
+| Stage | Age |
+|---|---|
+| Newborn / newly hatched | Birth to 1 month |
+| Infant | 1–12 months |
+| Early childhood | 1–5 years |
+| Childhood | 6–11 years |
+| Adolescence | 12–17 years |
+| Physical adulthood | 18+ |
+
+Long-lived species may have different cultural expectations, but all active species can be physically mature by 18 under this homebrew.
+
+## Default delayed-trait milestones
+
+Use these when a more specific inherited trait does not define another schedule:
+
+| Trait | Visible / begins | Mechanically functional |
+|---|---|---|
+| Ears, tail, harmless markings | Birth or hatching | Birth or infancy |
+| Darkvision or keen senses | Infancy | Age 1 |
+| Scales, natural armor, claws, fangs | Soft or small at birth | Age 6 |
+| Horns, crests, plates | Buds or soft structures at birth | Age 6 |
+| Gliding wings | Folded buds or small wings | Age 8 |
+| Breath Weapon | Internal structure develops in childhood | Age 10 |
+| Form Accommodation | Signs may appear in childhood | Age 12 |
+| Full flight | Wings mature through adolescence | Age 15 |
+| Full adult size and species maturity | Progressive | Age 18 |
+
+For a PC, both the age milestone and any character-level gate in the inherited trait must be satisfied.
+
+# Adult hybrid fertility and later generations
+
+## Fertile hybrid default
+
+Every viable hybrid produced by two active-roster species defaults at reproductive maturity to:
+
+- **Fertility Status:** `Fertile`
+- **Fertility Modifier:** `+0`
+- compatibility with every active-roster species
+- compatibility with other viable active-roster hybrids
+
+This is an explicit homebrew rule. Do not add hidden hybrid sterility.
+
+An explicit injury, condition, item, treatment, curse, blessing, feature, or campaign rule may alter an individual's fertility.
+
+## Later-generation inheritance
+
+When a hybrid becomes a biological parent:
+
+- use the hybrid's recorded four-slot trait package as that parent's mechanical trait pool
+- use the hybrid's recorded body plan and visible traits as that parent's cosmetic pool
+- use the hybrid female's recorded development route and source-species schedule when she is the female parent
+- apply the same conception and inheritance procedures
+
+## Stable lineage status
+
+A hybrid or later-generation family does not automatically become a globally selectable PC species.
+
+The player may approve a stable lineage after defining:
+
+- a lineage name
+- standard body plan
+- standard Creature Type, Size, Speed, and lifespan
+- a balanced four-slot species package
+- male and female reproductive roles
+- female development route and schedule
+- fertility and compatibility
+- which traits reliably breed true
+
+Add the approved lineage to `PLAYABLE_CHARACTER_OPTIONS.md` globally or to a campaign-local rule file.
+
+# Persistence
+
+## Temporary Turn ownership
+
+During an active Campaign Turn, `turn_save.md` owns:
+
+- conception opportunities and rolls
+- exact clock of each check
+- offspring-count and sex rolls
+- detection checks
+- temporary pregnancy or egg-production state
+- due, laying, and hatching calculations
+- inheritance rolls
+- birth, hatching, or complication checks
+- pending permanent transfers
+
+## Permanent ownership
+
+At approved reconciliation:
+
+- core-PC reproductive and parent state belongs in `character_sheet.md`
+- persistent NPC and child state belongs in `NPC-state.md`
+- exact current completed time belongs in `active_game.json.campaign_clock`
+- calendar lore, deadlines, due dates, laying dates, hatching dates, and scheduled milestones belong in `world_state.md`
+- continuity-important conceptions, births, hatchings, and lineage changes belong in `session_log.md`
+
+Do not store graphic scene detail merely to prove a mechanical event occurred.
+
+# Dice ownership
+
+ChatGPT states the exact roll and resolves only the player's supplied dice.
+
+ChatGPT never generates, chooses, substitutes, alters, or secretly rerolls a conception, offspring-count, sex, inheritance, detection, complication, or developmental result.
