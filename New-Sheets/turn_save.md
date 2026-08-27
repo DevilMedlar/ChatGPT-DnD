@@ -47,8 +47,8 @@ Record only qualifying mechanical and continuity facts. Do not store graphic sce
 ### Conception Check Template
 
 - **In-world clock:**
-- **Female parent / stable ID:**
-- **Male parent / stable ID:**
+- **Female parent / stable reference:**
+- **Male parent / stable reference:**
 - **Compatibility:** Naturally compatible / Cross-species compatible / Conditionally compatible
 - **Conditional requirements and status:**
 - **Male fertility status / modifier:**
@@ -62,33 +62,42 @@ Record only qualifying mechanical and continuity facts. Do not store graphic sce
 - **Second player d10, ones digit:**
 - **Combined percentile result:** `00` = `100`
 - **Outcome:** Conception / No conception / Blocked before roll
+- **Next conception-eligible clock for this exact pair:** Check clock + 24 hours
 - **Female development route on success:** Live-bearing / Egg production and laying
-- **Offspring-count roll and result on success:**
-- **Biological-sex rolls and results on success:**
+- **Offspring or fertilized-egg count roll and result on success:**
 - **Calculated due date or laying date:**
 - **Calculated hatching date, when applicable:**
-- **Character knowledge:**
-- **Pending permanent destinations:**
+- **What the core PCs know:**
+- **Pending permanent destinations:** Both participants' cooldown state; female parent state and world schedule on success
 - **Notes:**
 
-Use at most one conception check per distinct male/female pairing in the same 24 in-world hours. After conception succeeds, do not make later conception checks for that female until the blocking pregnancy or egg-production state ends.
+Use at most one conception check per exact male/female pairing during any 24 in-world hours. The cooldown survives the Campaign Turn save and ledger reset until its next eligible clock passes.
+
+Do **not** roll biological sex, visible appearance, or final mechanical hybrid traits at conception. Biological sex and visible appearance are resolved at live birth or hatching. Mechanical hybrid traits remain TBD after birth during aging.
+
+After conception succeeds, do not make later conception checks for that female until the blocking pregnancy or egg-production state ends.
 
 ### Reproductive Lifecycle Event Template
 
-Use for detection, pregnancy or egg milestones, laying, incubation risks, birth, hatching, inheritance, developmental milestones, or adult fertility establishment.
+Use for detection, pregnancy or egg milestones, laying, incubation risks, birth, hatching, visible appearance, developmental milestones, or adult fertility establishment.
 
 - **In-world clock:**
 - **Event type:**
-- **Parent / child / egg records and stable IDs:**
+- **Parent / child / egg records and stable references:**
 - **Established trigger or milestone:**
 - **Required player roll, if any:**
 - **Player result and calculation:**
 - **Outcome:**
-- **Current character knowledge:**
+- **Next eligible detection clock, after a failed mundane check:** Check clock + 24 hours
+- **What the core PCs know:**
 - **New or changed persistent state:**
 - **Pending permanent destinations:**
 - **Scheduled next milestone:**
 - **Notes:**
+
+After a failed mundane detection check, no further mundane detection check for that same reproductive state occurs until 24 in-world hours later, regardless of examiner. The cooldown survives save and reset until it expires.
+
+At live birth or hatching, resolve biological sex and visible appearance for each individual and create the persistent child record. Mechanical hybrid traits are not invented at conception or birth; they are resolved only later during aging under a player-approved mechanic.
 
 A healthy ordinary milestone succeeds without a random complication roll. A risk roll requires a documented risk, stated DC, actor, and possible outcomes before the player rolls.
 
@@ -103,17 +112,20 @@ When a shop purchase occurs during an active Campaign Turn, keep the connected t
 - **Official item reference:** If applicable
 - **Item:**
 - **Quantity:**
-- **Base Price:**
+- **Base Price for one item:**
 - **Base Price basis:** Routine recurring / GM-established
 - **Factors already included in Base Price:** None / list each distinct factor once
-- **Final Price modifiers applied:** None / list each distinct modifier once
-- **Final Transaction Price:**
+- **Final Unit Price modifiers applied:** None / list each distinct modifier once
+- **Final Unit Price after copper rounding:**
+- **Final Transaction Price:** Quantity × Final Unit Price
 - **Vendor stock before / after:**
 - **Buyer currency delta:**
 - **Inventory target / acquisition:**
 - **Acquisition mechanics snapshot:**
 - **Stack result:** New entry / Merge / Keep separate / Not applicable
 - **Notes:**
+
+Two identical items cost exactly twice the Final Unit Price, three cost three times that price, and so on. A Final Unit Price cannot be negative; `0 CP` means free.
 
 Vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and any required NPC master-ownership update reconcile as one transaction. Do not permanently apply only one side.
 
