@@ -2,7 +2,16 @@
 
 ## Purpose and authority
 
-This file is the repository-wide authority for **biological reproduction, cross-species compatibility, carrying-parent development, adoption separation, hybrid birth safety, and lineage handling**.
+This file is the repository-wide authority for:
+
+- biological reproduction
+- fertility and conception
+- cross-species compatibility
+- carrying-parent development
+- adoption separation
+- hybrid birth safety
+- lineage handling
+- reproductive-state persistence
 
 It works with only two other global reproduction files:
 
@@ -28,7 +37,7 @@ A campaign-specific addition applies only to that campaign unless the player exp
 
 ## Global biological gate
 
-Every species on the active whitelist must use the following ordinary reproductive structure:
+Every species on the active whitelist uses the following ordinary reproductive structure:
 
 - stable biological males
 - stable biological females
@@ -38,7 +47,7 @@ Every species on the active whitelist must use the following ordinary reproducti
 - internal biological fertilization
 - a viable biological development route after fertilization
 
-The active global roster does **not** include species whose normal reproduction depends on:
+The active global roster does not include species whose normal reproduction depends on:
 
 - asexual replication
 - budding, fission, or cloning
@@ -51,7 +60,7 @@ The active global roster does **not** include species whose normal reproduction 
 - conversion or transformation of another creature into the species
 - a temporary assumed body required for reproduction
 
-A future campaign-specific override may establish a different system locally, but it must define that system explicitly rather than silently borrowing these rules.
+A campaign-specific override may establish a different system locally, but it must define that system explicitly rather than silently borrowing these rules.
 
 ## Required male/female pairing
 
@@ -124,15 +133,13 @@ Consent, romance, intelligence, magical power, or narrative convenience do not e
 
 ## Active-roster compatibility default
 
-The ten species or families on the active global whitelist were selected for this homebrew crossbreeding game.
-
 Unless a specific profile or campaign rule says otherwise:
 
 - same-species pairings are `Naturally compatible`
 - different active-whitelist species are `Cross-species compatible`
-- a severe physical-size or anatomy issue may make the current direction `Conditionally compatible` until the stated physical requirement is satisfied
+- a severe physical-size or anatomy issue may make the current reproductive direction `Conditionally compatible` until the stated physical requirement is satisfied
 
-This compatibility establishes biological possibility only. It does not create attraction, consent, mating, conception, pregnancy, or a guaranteed offspring.
+Compatibility establishes biological possibility only. It does not create attraction, consent, mating, conception, pregnancy, or a guaranteed offspring.
 
 ## Internal-fertilization compatibility
 
@@ -258,6 +265,192 @@ Their reproduction follows these rules:
 
 This exception applies only to Kitsune and does not reopen the global roster to other shapechanger species.
 
+# Fertility and conception
+
+## Default individual fertility
+
+A healthy, reproductively mature adult from an active-whitelist species defaults to:
+
+- **Fertility Status:** `Fertile`
+- **Fertility Modifier:** `+0`
+
+Do not invent an age penalty, species penalty, hidden infertility, or reproductive disorder merely to affect an outcome.
+
+A character's established condition, injury, disease, item, treatment, curse, blessing, campaign rule, or explicit character-creation fact may change that default.
+
+Reproductive adulthood and the adult-content age rules must both be satisfied. A character being legally or culturally adult does not override an explicitly established lack of reproductive maturity.
+
+## Fertility statuses
+
+Use these global statuses unless a more specific effect defines another value:
+
+| Fertility Status | Conception Modifier | Effect |
+|---|---:|---|
+| High Fertility | +5 | Capable with an above-normal chance |
+| Fertile | +0 | Normal default |
+| Reduced Fertility | -5 | Capable with a reduced chance |
+| Very Low Fertility | -10 | Capable, but unlikely |
+| Infertile | No roll | Natural conception cannot occur while this status applies |
+| Temporarily Suppressed | No roll | Natural conception cannot occur until the suppression ends |
+| Unknown | No roll yet | Establish the relevant fact before resolving conception |
+
+Apply the male and female fertility modifiers separately and additively.
+
+A species on the whitelist receives no automatic fertility bonus or penalty merely because it is an Elf, Dragon, Gnome, Kitsune, or another listed ancestry. Species-specific modifiers require an explicit current rule or profile statement.
+
+## Conception opportunity
+
+A conception check occurs only when all of the following are true:
+
+1. the pairing is Naturally compatible, Cross-species compatible, or currently satisfies every required Conditional-compatibility condition
+2. both participants are reproductively mature adults
+3. the male is not Infertile, Temporarily Suppressed, or Unknown
+4. the female is not Infertile, Temporarily Suppressed, or Unknown
+5. the female is not already pregnant, forming a fertilized egg or clutch, or in another established state that blocks a new conception
+6. physical mating occurs through a workable internal-fertilization pathway
+7. the male fertilizing contribution is transferred in a manner capable of reaching the female contribution
+8. no effective contraceptive, prevention method, or explicit blocking effect applies
+
+If any required condition fails, do not roll.
+
+Romantic intent, desire for a child, or lack of desire for a child does not change biology by itself. Consent to mating is not automatically consent to pregnancy, and pregnancy intent is not required for a conception opportunity to exist.
+
+## One-check-per-24-hours rule
+
+For each distinct male/female pairing, allow at most **one conception check during the same 24 in-world hours**.
+
+Multiple qualifying mating acts by the same pair during that period are folded into the same conception opportunity. They do not create extra rolls or an automatic modifier unless a specific feature or campaign rule explicitly says otherwise.
+
+A new qualifying opportunity may occur after the next 24-hour period begins, provided all requirements still apply.
+
+This rule prevents repeated-roll farming while keeping the system easy to track during play.
+
+## Base conception targets
+
+Use a percentile target based on the pairing's current compatibility category:
+
+| Compatibility Category | Base Conception Target |
+|---|---:|
+| Naturally compatible | 20 |
+| Cross-species compatible | 15 |
+| Conditionally compatible, with all conditions satisfied | 10 |
+| Incompatible by ordinary biology | No roll |
+
+These are homebrew gameplay values, not claims about exact real-world or sourcebook fertility.
+
+## Conception formula
+
+Calculate:
+
+`Final Conception Target = Base Conception Target + Male Fertility Modifier + Female Fertility Modifier + Explicit Effect Modifiers`
+
+Rules:
+
+- all modifiers stack additively
+- every modifier must come from an established status, item, feature, condition, treatment, campaign rule, or other explicit source
+- ChatGPT must not invent a modifier to steer the story
+- do not add a hidden timing, age, ancestry, health, or mood modifier
+- if no special modifier is established, use only the base target plus the two fertility modifiers
+- clamp an otherwise possible final target to a minimum of `1` and maximum of `95`
+- an explicit guaranteed-conception or guaranteed-prevention effect may override that clamp when its wording truly establishes certainty
+
+## Player-rolled conception check
+
+When a conception opportunity exists:
+
+1. ChatGPT states the compatibility category, visible modifiers, and Final Conception Target unless the purpose must remain hidden from the characters
+2. ChatGPT asks the player to roll `1d100`
+3. percentile `00` counts as `100`
+4. if the result is equal to or lower than the Final Conception Target, conception succeeds
+5. if the result is higher, conception does not occur from that opportunity
+
+There are no automatic critical effects on `1` or `100`.
+
+A failed conception check causes no automatic injury, complication, infertility, or relationship consequence.
+
+ChatGPT never generates, selects, changes, rerolls, or secretly substitutes the result.
+
+## What a successful conception check means
+
+A successful check establishes a **viable conception state**.
+
+It abstracts the ordinary biological chain required for the pregnancy or egg-development state to begin. Do not add a separate hidden fertilization, implantation, or establishment roll unless a future explicit rule creates one.
+
+On success:
+
+- a live-bearing female becomes pregnant
+- an egg-laying female begins forming the fertilized egg or clutch according to her profile
+- the female development rule determines the route
+- the two participants become the biological parents
+- the exact offspring count is unresolved until the multiple-offspring mechanic is used
+- exact inherited traits are unresolved until the hybrid-inheritance mechanic is used
+- pregnancy detection, gestation duration, laying date, hatching date, birth, and complications use later mechanics
+
+Conception success does not automatically prove that the eventual adult hybrid will be fertile.
+
+## Multiple possible fathers
+
+The global default allows one biological male contributor and one biological female contributor per conception.
+
+When more than one male had a qualifying conception opportunity with the same female before conception is resolved:
+
+1. resolve the opportunities in established chronological order
+2. the first successful conception check establishes the biological father
+3. after conception succeeds, do not make later conception checks for that female until the pregnancy, fertilized-egg formation, or clutch state ends
+4. if the chronological order is genuinely unknown, the player physically rolls an impartial ordering or tie-breaker before the conception checks
+5. ChatGPT never chooses the father for narrative convenience
+
+Multi-sire offspring, superfecundation, or more than two genetic contributors require an explicit global or campaign-specific override.
+
+## Contraception and prevention
+
+An established fully effective prevention method blocks the conception opportunity and no conception roll occurs.
+
+A prevention method with a stated failure chance is resolved in this order:
+
+1. the player rolls the method's failure check
+2. only if the method fails does the conception opportunity proceed
+3. the player then rolls the normal conception check
+
+Do not invent reliability percentages for an item, spell, treatment, or method whose effectiveness has not been established.
+
+## Hidden purpose and character knowledge
+
+The player still rolls every die even when the characters should not yet know why the roll matters.
+
+When appropriate, ChatGPT may request `1d100` without revealing the purpose or Final Conception Target until the fiction permits discovery. The roll and mechanical result must still be recorded accurately.
+
+Character knowledge of pregnancy or fertilized-egg formation is separate from the actual biological state. Detection uses later mechanics.
+
+## Reproductive-state persistence
+
+During an active Campaign Turn, record each conception check in `turn_save.md` with enough detail to verify it:
+
+- in-world date and approximate time
+- female parent and stable ID when applicable
+- male parent and stable ID when applicable
+- compatibility category
+- required conditional-compatibility facts, if any
+- male fertility status and modifier
+- female fertility status and modifier
+- prevention method or blocking effect, if any
+- Base Conception Target
+- explicit effect modifiers
+- Final Conception Target
+- player-roll result
+- success or failure
+- live-bearing or egg-forming development route on success
+
+At approved permanent reconciliation:
+
+- a core PC's current fertility, pregnancy, egg-forming, co-parent, conception-date, and related personal reproductive state belongs in `character_sheet.md`
+- an NPC's equivalent persistent reproductive state belongs in `NPC-state.md`
+- the campaign's in-world date and calendar facts belong in `world_state.md` when tracked
+- continuity-important successful conceptions belong in `session_log.md`
+- an unsuccessful check needs no permanent transfer unless it changes an ongoing fertility investigation, treatment, relationship decision, or other lasting state
+
+Do not store graphic scene detail merely to prove a check occurred. Store the mechanical and continuity facts needed for recovery and future play.
+
 ## Hybrid ancestry and phenotype
 
 Gestation method does not determine the child's final ancestry balance or adult appearance.
@@ -296,23 +489,11 @@ Until then, resolve each hybrid from its established parents and personal biolog
 Track these independently:
 
 1. Can the parents physically mate and fertilize?
-2. Can the offspring develop and be born or hatch?
-3. Is the resulting adult hybrid fertile?
+2. Can a viable conception begin?
+3. Can the offspring complete gestation or egg development and be born or hatch?
+4. Is the resulting adult hybrid fertile?
 
-Success at one stage does not automatically prove the next. Do not invent adult hybrid fertility rules before they are established.
-
-## Randomness and dice ownership
-
-Compatibility is determined from biology and established facts, not random numbers.
-
-When later fertility, conception, multiples, inheritance, mutation, or developmental mechanics require dice:
-
-- ChatGPT states exactly what the player should roll
-- the player physically rolls every die
-- ChatGPT never generates, chooses, alters, or secretly substitutes a result
-- ChatGPT never selects a result because it better fits the narrative
-
-`DICE_ROLLS_AND_REROLLS.md` remains authoritative for all randomness.
+Success at one stage does not automatically prove the next.
 
 ## Campaign overrides
 
@@ -322,6 +503,13 @@ A campaign-specific rule may:
 - change a species' reproductive profile locally
 - establish a special compatible or incompatible pairing
 - alter a development method
+- alter fertility statuses or conception targets
 - broaden or narrow the biological gate
 
 The override must be explicit and applies only to that campaign. It does not silently rewrite the global whitelist or another campaign.
+
+## Dice ownership
+
+All fertility, conception, multiples, inheritance, mutation, detection, gestation, and developmental randomness follows `DICE_ROLLS_AND_REROLLS.md`.
+
+ChatGPT states what must be rolled and resolves only the player's supplied result. ChatGPT never invents a reproductive roll or chooses a number to fit the narrative.
