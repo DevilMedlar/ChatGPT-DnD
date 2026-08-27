@@ -10,7 +10,7 @@ Shop stock is business inventory and belongs in the relevant shop NPC's `NPC-sta
 
 ## Equipment and special-effect continuity
 
-Meaningful items may track:
+Meaningful items may track established and revealed facts such as:
 
 - item name and type
 - quantity
@@ -26,14 +26,15 @@ Meaningful items may track:
 - granted abilities and descriptions
 - triggered effects and proc chances
 - durations, saves, resistances, immunities, and stacking rules
-- curses or hidden properties
-- identified vs unidentified information
+- whether the item is identified or still unidentified
 
-Owned inventory must preserve enough established mechanical detail to resolve meaningful item effects correctly.
+Owned inventory must preserve enough **known** mechanical detail to resolve meaningful item effects correctly.
 
 Do not forget an item's established special effect merely because several scenes pass. Check `inventory.md`, `character_sheet.md`, `NPC-state.md`, and `world_state.md` as relevant before resolving an item-dependent effect.
 
-Hidden or unidentified properties must not be revealed merely because they are recorded for continuity.
+Do not store an untold hidden property, unknown curse, undiscovered command word, secret effect, or other unrevealed answer. If the core PCs know only that an item is unidentified, record `Unidentified` and leave the unknown mechanics unstated until they are revealed through play.
+
+The two core PCs share all item information either of them learns.
 
 ## NPC party inventory
 
@@ -49,9 +50,9 @@ Detailed party-membership behavior is defined in `NPCS_AND_PARTY_MEMBERSHIP.md`.
 
 ## Acquired official item snapshots
 
-When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts needed to continue using that **owned campaign item** correctly. The acquired item's mechanics snapshot belongs in campaign inventory rather than remaining dependent on a live external webpage.
+When a party member acquires a standard official item from a shop, preserve the mechanically relevant facts that have been established or revealed and are needed to continue using that **owned campaign item** correctly. The acquired item's known mechanics snapshot belongs in campaign inventory rather than remaining dependent on a live external webpage.
 
-Depending on the item, preserve the relevant combination of:
+Depending on the item, preserve the relevant known combination of:
 
 - item name and type
 - quantity
@@ -64,14 +65,17 @@ Depending on the item, preserve the relevant combination of:
 - recharge or refill rules
 - durability / condition
 - attunement / bonding
-- granted abilities, triggered effects, durations, saves, resistances, requirements, limitations, or other mechanics needed to use the item
+- granted abilities, triggered effects, durations, saves, resistances, requirements, limitations, or other revealed mechanics needed to use the item
+- identified or unidentified status
 - the official acquisition reference when useful for provenance
 
-Preserve the useful mechanics, not a word-for-word copy of the entire external published page.
+Preserve useful known mechanics, not a word-for-word copy of the entire external published page.
 
-Once those mechanics are established in campaign inventory, later changes to an external official reference do **not** silently rewrite the already-owned item. The owned item's recorded mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
+If the item is unidentified, do not snapshot mechanics the core PCs have not learned. Add those mechanics only when play reveals them.
 
-If an external reference has moved or become inaccessible before the acquisition snapshot can be resolved, establish the required mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
+Once known mechanics are established in campaign inventory, later changes to an external official reference do **not** silently rewrite the already-owned item. The owned item's recorded known mechanics remain authoritative until the campaign explicitly changes or updates that item through play or an approved rules change.
+
+If an external reference has moved or become inaccessible before the known acquisition snapshot can be resolved, establish the required revealed mechanics from an approved source or already-established campaign state before finalizing the owned-item snapshot.
 
 During an active Campaign Turn, the acquisition and its snapshot remain staged in `turn_save.md` until approved reconciliation. If the buyer is a current-party persistent NPC, reconcile the NPC's master ownership list in `NPC-state.md` as part of the same completed save.
 
@@ -79,9 +83,9 @@ During an active Campaign Turn, the acquisition and its snapshot remain staged i
 
 A newly acquired copy may merge with an existing inventory quantity or stack only when the existing owned item and the new item have compatible established mechanics **and** compatible relevant instance state.
 
-Sharing the same item name is not enough. Same-name items with different mechanical snapshots, charges, condition, attunement, modifications, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
+Sharing the same item name is not enough. Same-name items with different known mechanical snapshots, charges, condition, attunement, modifications, identification state, or another meaningful state difference must remain separate entries unless the campaign explicitly reconciles them to the same compatible state.
 
-Compatible copies may merge normally when no mechanically meaningful difference requires separate tracking.
+Compatible copies may merge normally when no mechanically meaningful known difference requires separate tracking.
 
 ## Travel resources
 
