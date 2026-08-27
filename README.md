@@ -19,7 +19,7 @@ Key authorities include:
 - `CORE_GAME_MECHANICS.md` for the 5.5e baseline and canonical campaign clock
 - `CHARACTER_CREATION.md` for the revision-0 character-creation workflow
 - `PLAYABLE_CHARACTER_OPTIONS.md` for approved PC species, their complete mechanics, core-class policy, backgrounds, feats, and homebrew completion gates
-- `REPRODUCTION_AND_LINEAGE.md` for compatibility, fertility, conception, pregnancy or egg development, offspring, inheritance, birth or hatching, growth, and later generations
+- `REPRODUCTION_AND_LINEAGE.md` for compatibility, fertility, conception, pregnancy or egg development, offspring count, birth or hatching, visible inheritance, aging, and later generations
 - `CAMPAIGN_TURNS_AND_STEPS.md` for unfinished-Turn staging
 - `SAVES_VERIFICATION_AND_RECOVERY.md` for confirmation, permanent reconciliation, verification, recovery, and reset
 - `STATE_OWNERSHIP_AND_PERSISTENCE.md` for file ownership
@@ -135,11 +135,11 @@ Within a numbered campaign:
 - `Rules/Campaign-N_Rules.md` owns local rule overrides
 - `active_game.json` owns the last completed campaign header, completed clock, completed scene/location, advancement, and save revision
 - `turn_save.md` owns the unfinished Campaign Turn overlay, including live clock, Steps, rolls, reproductive events, transactions, and pending transfers
-- `character_sheet.md` owns persistent core-PC state, species package, class mechanics, appearance, relationships, reproductive state, and parent state
-- `NPC-state.md` owns persistent NPC and child master records, stable IDs, family links, reproductive state, hybrid traits, possessions, shops, and continuity
+- `character_sheet.md` owns persistent core-PC state, species package, class mechanics, appearance, relationships, reproductive state, active reproductive cooldowns, and parent state
+- `NPC-state.md` owns persistent NPC and post-birth child master records, stable IDs, family links, reproductive state, active reproductive cooldowns, later hybrid traits, possessions, shops, and revealed continuity
 - `inventory.md` owns detailed active possession bookkeeping
 - `routine_item_prices.md` owns recurring routine Base Prices
-- `world_state.md` owns calendar lore, schedules, deadlines, due dates, laying dates, hatching dates, locations, factions, quests, clues, discoveries, and consequences
+- `world_state.md` owns calendar lore, schedules, deadlines, due dates, laying dates, hatching dates, locations, factions, quests, clues, discoveries, unresolved questions, and consequences
 - `session_log.md` owns completed chronological checkpoints
 - `art/art_log.md` owns verified visual-reference metadata
 
@@ -167,6 +167,12 @@ It also enables the twelve core 5.5e classes by reference to the current officia
 
 An unlisted species or incomplete homebrew option is not selectable merely because its name or concept was mentioned.
 
+# Core-PC knowledge
+
+The two required core PCs share everything either of them learns and keep no secrets from one another.
+
+`world_state.md` records only known clues, discoveries, and unresolved questions. Untold answers, hidden GM solutions, secret perpetrators, and undiscovered facts are not stored.
+
 # Reproduction and lineage
 
 `Rule/REPRODUCTION_AND_LINEAGE.md` is the only dedicated reproduction authority.
@@ -177,14 +183,29 @@ It establishes:
 - the female parent determines live birth versus egg production
 - True Dragons can use their innate size/form accommodation for physical access without changing ancestry or development route
 - fertility and conception use player-rolled percentile dice from one d10 rolled twice
-- one conception check per pair per 24 in-world hours
-- offspring count and biological sex are player-rolled
-- gestation, egg-production, laying, incubation, and detection schedules
-- a four-slot hybrid mechanical inheritance budget
-- cosmetic inheritance, delayed trait development, birth/hatching, childhood milestones, adult fertility, and later generations
+- one conception check per exact pair per 24 in-world hours
+- a conception-check cooldown remains in both participants' current state across save and reset until it expires
+- offspring or fertilized-egg count is player-rolled at conception
+- conception stores only parents, aggregate count, route, and due/laying/hatching schedules
+- biological sex and visible appearance are player-rolled only at live birth or hatching
+- individual child records begin at live birth or hatching, not at conception
+- exact mechanical hybrid traits and dependencies remain TBD after birth during aging
+- one failed mundane reproductive-state detection check is permitted per 24 in-world hours, with its cooldown stored in the target's state
 - biological and adoptive parentage remain distinct
 
 ChatGPT never manufactures reproductive dice results or chooses an outcome to fit the narrative.
+
+# Shop pricing
+
+For one item, percentages stack additively from that item's Base Price, distinct flat modifiers apply afterward, and only fractional copper is rounded.
+
+After one item's Final Unit Price is calculated and rounded:
+
+```text
+Final Transaction Price = Quantity × Final Unit Price
+```
+
+Two identical items cost exactly twice one item, three cost three times, and so on. A price cannot be negative; `0 CP` means free.
 
 # Campaign clock
 
@@ -233,7 +254,7 @@ Gameplay is staged through Campaign Turns. A Campaign Turn may contain many scen
 At the full Turn end:
 
 1. freeze and review the ledger
-2. show Final Turn State and Exact Planned Permanent Transfers, including clock
+2. show Final Turn State and Exact Planned Permanent Transfers, including clock and active cooldowns
 3. obtain save confirmation
 4. reconcile permanent state
 5. verify every affected file
