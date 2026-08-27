@@ -25,8 +25,6 @@ Every retained entry must have:
 
 The global whitelist does not include external spawners, asexual species, hermaphroditic or sequential-sex species, constructed or magically created peoples, transformation-dependent reproduction, or species whose reproductive anatomy remains unresolved.
 
-Kitsune are a specific approved natural-body exception described below and in their complete profile.
-
 ## Standard-entry rule
 
 The global whitelist contains only the **standard canonical form** of each listed species.
@@ -37,6 +35,32 @@ The global whitelist contains only the **standard canonical form** of each liste
 - A hybrid label describing parentage is handled by the hybrid rules unless the player explicitly establishes it as a stable selectable lineage.
 - A nonstandard form requires the player's explicit global approval or an applicable campaign-specific override.
 - Passing the biological gate does not automatically restore a species or variation the player removed from this whitelist.
+
+## Kemonomimi standard
+
+For this repository, **Kemonomimi** describes human-like biological species with animal ears and a matching tail.
+
+The standard Kemonomimi body plan has:
+
+- a fully human face, skin, eyes, torso, arms, hands, legs, and feet
+- a pair of animal ears on top of the head
+- a matching animal tail
+- no muzzle or snout
+- no full-body fur
+- no paws or otherwise fully animal limbs
+- human-like internal reproductive anatomy and live-bearing development
+
+Whether small human ears remain visible is cosmetic and does not create a separate species or variation.
+
+Kemonomimi commonly possess heritable heightened senses, balance, reflexes, speed, or tracking traits appropriate to their animal aspect. Their ears and tails can react involuntarily to emotion. Animal-like sounds, gestures, and mannerisms are optional individual behavior, not mandatory personality, class, or alignment.
+
+The repository naming map is:
+
+- **Kitsunemimi / fox ears -> Kitsune**
+- **Nekomimi / cat ears -> Neko**
+- **Usagimimi / rabbit ears -> Usagi**
+- **Inumimi / dog ears -> Inu**
+- **Ookamimi / wolf ears -> Ookami**
 
 ---
 
@@ -61,18 +85,27 @@ The global whitelist contains only the **standard canonical form** of each liste
 
 Dragonkin are a distinct fixed biological draconic people, not a class, temporary transformation, Dragonborn alias, or generic label for every dragon-descended creature.
 
-## Mammalian species
+## Kemonomimi species
 
-| Standard species / ancestry | Reproductive baseline |
-|---|---|
-| Kitsune | Physical male/female mating through the natural Kitsune body; internal fertilization; live birth |
+| Standard species / ancestry | Animal aspect | Typical heritable biological traits | Reproductive baseline |
+|---|---|---|---|
+| Kitsune | Fox ears and fox tail | Heightened hearing and smell, low-light vision, agility, expressive ears and tail | Physical male/female mating through the standard natural Kemonomimi body; internal fertilization; live birth |
+| Neko | Cat ears and cat tail | Directional hearing, low-light vision, balance, reflexes, expressive ears and tail | Physical male/female mating; internal fertilization; live birth |
+| Usagi | Rabbit ears and rabbit tail | Exceptional hearing, alertness, jumping ability, burst speed, expressive ears and tail | Physical male/female mating; internal fertilization; live birth |
+| Inu | Dog ears and dog tail | Heightened smell and hearing, tracking, endurance, expressive ears and tail | Physical male/female mating; internal fertilization; live birth |
+| Ookami | Wolf ears and wolf tail | Heightened smell and hearing, low-light vision, tracking, coordinated movement, expressive ears and tail | Physical male/female mating; internal fertilization; live birth |
 
 ### Kitsune natural-body limitation
 
-- Reproductive anatomy comes from the stable natural Kitsune body.
+- The standard Kitsune natural body is a human-bodied Kemonomimi form with fox ears and a fox tail or tails.
+- Reproductive anatomy comes from that stable natural Kemonomimi body.
 - Disguises, illusions, alternate appearances, and assumed forms do not create reproductive anatomy or compatibility.
 - Shapechanging is not required for Kitsune reproduction.
 - This exception does not restore any other removed shapechanger species.
+
+### Fixed-form Kemonomimi rule
+
+Neko, Usagi, Inu, and Ookami use their listed human-bodied Kemonomimi forms as their normal biological bodies. They do not require shapechanging to possess their ears, tail, senses, or reproductive anatomy.
 
 ## Reptilian species
 
@@ -84,7 +117,7 @@ Dragonkin are a distinct fixed biological draconic people, not a class, temporar
 
 # Whitelist count
 
-The active global whitelist contains **9 standard species entries**:
+The active global whitelist contains **13 standard species entries**:
 
 1. Human
 2. Elf
@@ -94,14 +127,19 @@ The active global whitelist contains **9 standard species entries**:
 6. Dragonkin
 7. True Dragon
 8. Kitsune
-9. Lizardfolk
+9. Neko
+10. Usagi
+11. Inu
+12. Ookami
+13. Lizardfolk
 
 ## Selection rules
 
-- Offer only these nine standard entries for ordinary global character and NPC reproductive-species selection.
+- Offer only these thirteen standard entries for ordinary global character and NPC reproductive-species selection.
 - Do not display or silently substitute subraces, variations, alternate lineages, or setting versions.
 - Consult `REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` for biology.
 - Consult `REPRODUCTION_AND_LINEAGE.md` for compatibility, directional development, birth safety, adoption, and hybrid handling.
+- Every active-whitelist species is cross-species compatible with every other active-whitelist species unless a specific directional physical condition temporarily makes the pairing conditional.
 - Do not offer a removed species or variation through an older profile, historical commit, deleted file, or remembered conversation.
 - Campaign-specific additions belong in that campaign's local rule file and do not change the global whitelist.
 
