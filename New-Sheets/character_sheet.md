@@ -10,6 +10,8 @@ This file stores the two required core PCs' persistent character state and synch
 
 Blank fields remain undecided until explicitly established.
 
+The two core PCs share everything they learn. Do not create separate secret-knowledge fields for them.
+
 ## Shared Relationship Canon
 
 ## Player-Controlled PC
@@ -110,16 +112,33 @@ Populate only established facts. A healthy mature adult defaults to `Fertile +0`
 - **Fertility status / modifier:**
 - **Prevention / contraception state:**
 - **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
-- **Biological co-parent / stable ID:**
+- **Biological co-parent / stable reference:**
 - **Conception clock:**
 - **Compatibility:**
 - **Development route:**
-- **Offspring / egg count:**
+- **Offspring / fertilized-egg count:**
 - **Due date or laying date:**
 - **Hatching date:**
-- **Character knowledge:**
-- **Children / offspring and stable IDs:**
+- **Individual sex / appearance / mechanical traits:** Not resolved until birth, hatching, or later aging as applicable
+- **Shared core-PC knowledge:**
+- **Children / offspring and stable IDs after birth or hatching:**
 - **Ongoing effects / treatment / notes:**
+
+#### Current Conception-Check Cooldowns
+
+Keep a failed or successful pair check here until its 24-hour next-eligible clock passes.
+
+| Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
+|---|---|---|---|
+|  |  |  |  |
+
+#### Current Mundane-Detection Cooldown
+
+Use when this character is the reproductive-state target.
+
+- **Last mundane detection check clock:**
+- **Outcome:**
+- **Next eligible detection clock:**
 
 ## ChatGPT-Controlled PC / Co-Protagonist
 
@@ -213,13 +232,26 @@ This section owns stable textual appearance canon, including species markers, un
 - **Fertility status / modifier:**
 - **Prevention / contraception state:**
 - **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
-- **Biological co-parent / stable ID:**
+- **Biological co-parent / stable reference:**
 - **Conception clock:**
 - **Compatibility:**
 - **Development route:**
-- **Offspring / egg count:**
+- **Offspring / fertilized-egg count:**
 - **Due date or laying date:**
 - **Hatching date:**
-- **Character knowledge:**
-- **Children / offspring and stable IDs:**
+- **Individual sex / appearance / mechanical traits:** Not resolved until birth, hatching, or later aging as applicable
+- **Shared core-PC knowledge:**
+- **Children / offspring and stable IDs after birth or hatching:**
 - **Ongoing effects / treatment / notes:**
+
+#### Current Conception-Check Cooldowns
+
+| Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
+|---|---|---|---|
+|  |  |  |  |
+
+#### Current Mundane-Detection Cooldown
+
+- **Last mundane detection check clock:**
+- **Outcome:**
+- **Next eligible detection clock:**
