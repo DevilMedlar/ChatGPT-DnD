@@ -11,7 +11,7 @@ A Campaign Turn may contain any number of numbered Steps, including:
 - requested player rolls and their results
 - initiative, Combat Rounds, and individual Combat Turns
 - attacks, damage, healing, conditions, spells, resources, ammunition, and item use
-- relationships, reproductive checks, pregnancy or egg milestones, birth, hatching, and development
+- relationships, reproductive checks, pregnancy or egg milestones, birth, hatching, and post-birth development
 - shops, transactions, inventory, clues, quests, travel, rests, and consequences
 
 A creature's Combat Turn, a Combat Round, a combat encounter, a conversation, a rest, or a scene ending does not automatically end the Campaign Turn.
@@ -98,10 +98,12 @@ After each resolved Step:
 4. update Current Scene when the situation changes
 5. update Current In-Turn State with compact effective values needed for continuation or recovery
 6. stage every gameplay-caused persistent change in Pending Permanent Transfers
-7. stage connected shop transactions together
-8. stage reproductive checks and lifecycle events with exact clock, rolls, results, dates, and destinations
-9. do not rewrite permanent campaign state for ordinary in-Turn changes
-10. do not increment `save_revision`
+7. stage connected shop transactions together, including Final Unit Price and `Quantity × Final Unit Price`
+8. stage reproductive checks and lifecycle events with exact clock, rolls, results, dates, destinations, and any 24-hour next-eligible clock
+9. at conception, stage only parents, pregnancy or clutch state, aggregate count, and schedules; do not stage biological sex, visible appearance, or final mechanical hybrid traits
+10. at live birth or hatching, stage biological sex, visible appearance, and the new child record; leave mechanical hybrid traits unresolved until aging under an approved rule
+11. do not rewrite permanent campaign state for ordinary in-Turn changes
+12. do not increment `save_revision`
 
 Whenever repository writing is available, checkpoint `turn_save.md` after a resolved Step containing a roll, mechanical change, time change, scene/location change, discovery, relationship change, transaction, reproductive event, or other continuity-relevant result before the next player decision point.
 
@@ -123,7 +125,7 @@ For every material time change:
 
 Do not advance time for out-of-fiction discussion.
 
-Do not silently skip a scheduled event, effect expiration, rest completion, conception-limit boundary, due date, laying date, hatching date, or developmental milestone.
+Do not silently skip a scheduled event, effect expiration, rest completion, conception or detection cooldown boundary, due date, laying date, hatching date, or developmental milestone.
 
 ## Combat time
 
@@ -174,6 +176,7 @@ The Final Turn Review must include:
 - total elapsed time
 - material time-change reasons
 - scheduled events and deadlines reached or crossed
+- every still-active conception or detection cooldown
 - final scene and effective state
 - every real persistent transfer grouped by destination
 
