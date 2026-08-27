@@ -3,6 +3,11 @@
   "campaign_turn_number": 0,
   "current_scene_name": "Character creation",
   "current_location": "",
+  "campaign_clock": {
+    "calendar": "Campaign Day",
+    "day": 1,
+    "time": "08:00:00"
+  },
   "character_created": false,
   "xp_mode": "cumulative",
   "character_advancement": {
@@ -18,5 +23,5 @@
     }
   },
   "save_revision": 0,
-  "last_sync_note": "Campaign initialized. Character creation is in progress."
+  "last_sync_note": "Campaign initialized. Character creation is in progress; the campaign clock is at Campaign Day 1, 08:00:00 and does not advance during out-of-fiction setup."
 }
