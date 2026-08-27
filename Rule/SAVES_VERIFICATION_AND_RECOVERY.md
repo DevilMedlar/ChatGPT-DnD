@@ -1,200 +1,265 @@
 # Saves, Verification, and Recovery
 
-Campaign Turn opening, Step recording, and end interpretation are defined in `CAMPAIGN_TURNS_AND_STEPS.md`. This file governs approval, permanent reconciliation, verification, reset, recovery, and save revisions.
+`CAMPAIGN_TURNS_AND_STEPS.md` governs Turn opening, Step recording, time staging, and Turn-end interpretation. This file governs save approval, permanent reconciliation, verification, recovery, reset, and revision numbering.
 
-## Confirmation Gate 1: save approval
+# Confirmation Gate 1: save approval
 
 Before any permanent Campaign Turn transfer:
 
-1. review every recorded Step and verify the proposed Final Turn State is fully consistent with the recorded actions, rolls, damage, healing, resource use, movement, scene changes, discoveries, transactions, and results
-2. resolve any missing, contradictory, uncertain, or unresolved state in the temporary ledger first
-3. determine the **Exact Planned Permanent Transfers** to the owning files
-4. show the player both the Final Turn State and Exact Planned Permanent Transfers
-5. ask: `Confirm Campaign Turn N save? Yes / No / Corrections`
+1. review every recorded Step
+2. verify actions, rolls, resources, scene changes, clock changes, scheduled events, transactions, reproductive events, and consequences
+3. resolve every missing, contradictory, uncertain, or unresolved temporary value
+4. calculate the proposed Final Turn State
+5. calculate the Exact Planned Permanent Transfers by destination file
+6. show both to the player
+7. ask:
+
+`Confirm Campaign Turn N save? Yes / No / Corrections`
+
+The review must include:
+
+- Start Clock
+- proposed End Clock
+- total elapsed time
+- material time-change reasons
+- scheduled events and deadlines reached or crossed
+- final scene and location
+- all real persistent changes
+
+## No
 
 If the player says **No**:
 
 - remain `ending_review`
-- change no permanent campaign files
-- do not reset the ledger
+- change no permanent files
+- preserve the entire ledger
+
+## Corrections
 
 If the player gives **Corrections**:
 
 - correct the temporary Turn record first
-- recalculate the Final Turn State and planned transfers
-- show the revised review again
-- ask for save confirmation again
+- recalculate clock-dependent values, schedules, Final Turn State, and planned transfers
+- show the corrected review
+- request confirmation again
+
+## Yes
 
 If the player says **Yes**:
 
-- record the approval
-- set `Status` to `reconciling`
+- record approval
+- set Status to `reconciling`
 - begin permanent reconciliation
 
-No permanent Campaign Turn save may begin without this confirmation.
+No permanent Campaign Turn save begins without Gate 1 approval.
 
-## Reconciliation after save approval
+# Permanent reconciliation
 
-After Confirmation Gate 1 is approved:
+After approval:
 
-1. transfer only the approved persistent, continuity-relevant, or historically important results to their proper permanent owners
-2. synchronize master/detail representations when one fact must exist in multiple bookkeeping locations, including current-party NPC possession changes in both `NPC-state.md` and `inventory.md`
-3. when PC advancement changed, synchronize the Level/XP mirrors in `character_sheet.md` with the approved `level`, `xp_current`, and `xp_next_level` values stored authoritatively in `active_game.json.character_advancement`
-4. when a shop purchase occurred, reconcile the connected transaction together: shop business stock, buyer currency, acquired inventory, acquisition snapshot, stack result, and any required NPC master-ownership update
-5. when a routine/basic recurring Base Price changed, update `routine_item_prices.md` and every currently stocked vendor row that mirrors that item's Base Price in the same completed save
-6. append the completed Campaign Turn checkpoint to `session_log.md`
-7. prepare `active_game.json` as the completed-state marker using the completed `campaign_turn_number`, approved final `Current Scene` as `current_scene_name`, completed location, and authoritative completed PC advancement state
-8. increment `save_revision` exactly once for the completed permanent save
-9. do **not** reset the Turn ledger as part of the permanent save
+1. transfer only approved new or changed persistent state and required mirrors
+2. update supporting state owners before the completed-state marker when writes are sequential
+3. synchronize PC Level/XP mirrors with `active_game.json.character_advancement`
+4. synchronize NPC master/detail possessions with `inventory.md`
+5. reconcile each shop transaction as one connected stock/currency/inventory/snapshot result
+6. synchronize routine Base Prices and vendor mirrors
+7. reconcile reproductive and family state:
+   - core-PC state to `character_sheet.md`
+   - NPC, child, egg, hybrid, biological-parent, adoptive-parent, and guardian state to `NPC-state.md`
+   - due, laying, hatching, and developmental schedules to `world_state.md`
+8. reconcile world, quest, clue, discovery, relationship, inventory, art, and other approved state
+9. append one completed Campaign Turn checkpoint to `session_log.md`, including clock range when material
+10. prepare `active_game.json` with:
+   - completed Campaign Turn number
+   - approved final scene
+   - completed location
+   - approved End Clock
+   - authoritative completed PC advancement
+   - incremented revision
+   - compact synchronization note
+11. increment `save_revision` exactly once
+12. preserve the complete Turn ledger; do not reset it during the permanent save
 
-Whenever tooling permits an atomic multi-file commit, commit the supporting permanent-state updates, `session_log.md`, and completed `active_game.json` revision together in one permanent-save commit. The complete temporary ledger remains intact.
+Whenever tooling permits an atomic multi-file commit, use one permanent-save commit for the supporting state, `session_log.md`, and `active_game.json`.
 
-If permanent files must be written sequentially, update supporting permanent files first and update `active_game.json` last.
+If writes must be sequential, update supporting owners first and `active_game.json` last.
 
-## Permanent save verification
+# Permanent save verification
 
-After permanent writes land, do not assume the save succeeded merely because the writes returned successfully.
-
-Read the affected permanent files again and compare them with the player-approved Final Turn State and Exact Planned Permanent Transfers.
+After writes land, reread every affected file and compare it against the player-approved review.
 
 Verify at minimum:
 
-- expected character-state changes landed correctly
-- when PC advancement changed, every `character_sheet.md` Level/XP mirror exactly matches the authoritative `active_game.json.character_advancement` values
-- expected inventory and resource changes landed correctly
-- when a shop purchase occurred, vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and stack result all match the approved transaction
-- when a routine/basic item is stocked or its recurring Base Price changes, the vendor row's Base Price exactly matches the authoritative current value in `routine_item_prices.md`
-- required NPC master/detail records agree when applicable
-- persistent NPC stable IDs are unique, unchanged, and agree across affected files
-- required world, quest, clue, discovery, and consequence changes landed correctly
-- `session_log.md` contains the completed Campaign Turn checkpoint
-- `active_game.json` contains the completed `campaign_turn_number`
-- `active_game.json.current_scene_name` matches the approved final `Current Scene`
-- `save_revision` advanced exactly once
-- every approved planned transfer is accounted for
-- no unrelated campaign state changed
-- no unresolved result remains stranded only in the temporary ledger
+## Campaign header and time
 
-If verification fails, keep the Turn ledger intact, do not request reset, and reconcile the permanent state until it matches the approved final state.
+- completed Campaign Turn number is correct
+- final scene and location are correct
+- `active_game.json.campaign_clock` exactly equals the approved End Clock
+- clock day rollover and time arithmetic are correct
+- `save_revision` advanced exactly once
+- `last_sync_note` describes the completed revision
+
+## Character and advancement
+
+- every approved core-PC change landed
+- Level/XP mirrors exactly match authoritative advancement
+- species/class resources, conditions, relationships, reproductive state, parent state, and offspring links agree
+
+## NPC, child, and family state
+
+- stable IDs remain unique and unchanged
+- biological parents, adoptive parents, guardians, children, and co-parents are correctly separated and cross-referenced
+- hybrid traits, developmental milestones, fertility, pregnancy, egg, birth, and hatching state match the approved results
+
+## Inventory and transactions
+
+- currency, quantities, charges, equipment, ammunition, consumables, and item snapshots are correct
+- vendor stock, buyer currency, acquired item, stack result, and NPC ownership reconcile
+- routine Base Price mirrors agree
+
+## World and chronology
+
+- locations, quests, clues, discoveries, schedules, due dates, laying dates, hatching dates, deadlines, and consequences landed
+- `session_log.md` contains the completed checkpoint with correct chronology
+- every scheduled event crossed by the Turn's time passage was handled
+
+## Completeness
+
+- every approved planned transfer is accounted for
+- no unrelated state changed
+- no persistent result remains stranded only in `turn_save.md`
+- no unchanged fact was duplicated as a new permanent record
+
+If verification fails:
+
+- preserve the full ledger
+- do not request reset
+- reconcile until permanent state matches the approved review
 
 When verification passes:
 
-1. set `Status` to `saved_awaiting_reset`
-2. preserve the full completed Turn ledger as a safety copy
-3. send the player a compact save-completion report confirming the completed Campaign Turn, save revision, important final state, and successful verification
-4. explicitly state that `turn_save.md` has **not** been reset
-5. ask: `Confirm reset for Campaign Turn N+1? Yes / No`
+1. set Status to `saved_awaiting_reset`
+2. preserve the completed ledger as a safety copy
+3. record the completed revision and verified completed clock
+4. send the player a compact save-completion report
+5. explicitly state that the ledger has not been reset
+6. ask:
 
-A checkpoint commit that only records the verified `saved_awaiting_reset` ledger state does not increment `save_revision`.
+`Confirm reset for Campaign Turn N+1? Yes / No`
 
-## Confirmation Gate 2: reset approval
+Moving the verified ledger to `saved_awaiting_reset` does not increment `save_revision`.
 
-A successful permanent save does **not** automatically erase its temporary source ledger.
+# Confirmation Gate 2: reset approval
+
+A completed save does not automatically erase its temporary source ledger.
+
+## No
 
 If the player says **No**:
 
 - remain `saved_awaiting_reset`
-- keep the completed Turn events, Final Turn State, planned transfers, and verification information intact
-- do not replay or resave the completed Campaign Turn
+- preserve events, clocks, Final Turn State, transfers, and verification
+- do not replay or resave the completed Turn
+
+## Yes
 
 If the player says **Yes**:
 
-1. reset the temporary ledger
-2. clear the completed Turn events and Current In-Turn State
-3. clear all actual staged shop-transaction records while preserving the copied, clearly labeled `Shop Transaction Template` and its fill-out guidance
-4. clear pending transfers, final review, save verification, and prior reset approval
-5. prepare the next Campaign Turn number
-6. set `Status` to `ready`
-7. set `Current Step` to `0`
-8. set `Current Scene` to `None yet.`
-9. set `Base save revision` to the newly completed `save_revision`
+1. clear completed Turn events and live in-turn state
+2. clear actual reproductive-event and shop-transaction records while preserving labeled templates and guidance
+3. clear pending transfers, Final Review, verification, and prior reset approval
+4. prepare the next Campaign Turn number
+5. set Status to `ready`
+6. set Current Step to `0`
+7. set Current Scene to `None yet.`
+8. set Base save revision to the completed revision
+9. set Start Clock and Current In-Turn Clock to the completed `active_game.json.campaign_clock`
+10. set Total Elapsed This Turn to zero
+11. clear actual time-change records
 
-A labeled `Shop Transaction Template` inside a campaign's copied `turn_save.md` is documentation, not a pending transaction. After reset, the `Pending Shop Transactions` section contains no actual staged transaction records even though the reusable template remains available for the next purchase.
+Reset is a cleanup checkpoint and does not increment `save_revision`.
 
-The reset is a cleanup/checkpoint operation. It does **not** increment `save_revision` because the permanent Campaign Turn save already completed.
+# Recovery by ledger status
 
-## Campaign Turn recovery by status
+Before play, read `turn_save.md` and recover by Status.
 
-Before beginning or continuing gameplay, read `turn_save.md` and use its status to determine recovery:
+## `ready`
 
-- `ready` — no unfinished Campaign Turn exists; the next Campaign Turn may begin.
-- `in_progress` — resume the active Campaign Turn from the last completed permanent state plus the temporary overlay. `Current Step` and `Current Scene` in `turn_save.md` are the live gameplay position. Never start another Campaign Turn first.
-- `ending_review` — the full Campaign Turn end was interpreted and the ledger is frozen. No permanent Campaign Turn write is authorized until the player confirms the final review.
-- `reconciling` — the player approved the final state and the permanent save may be partially or fully written. Check `active_game.json`, affected permanent files, and the approved Final Turn State before taking action. Never replay the Campaign Turn automatically.
-- `saved_awaiting_reset` — the permanent Campaign Turn save is complete and verified. Do not replay or resave it. Only the player's reset confirmation remains.
+No unfinished Turn exists. The next Turn may begin after revision and clock checks.
 
-Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-reset Campaign Turn ledger.
+## `in_progress`
 
-## Base save revision checks
+Resume from permanent state plus the temporary overlay. Current Step, Current Scene, and Current In-Turn Clock are authoritative. Never start another Turn first.
 
-Compare `Base save revision` with `active_game.json.save_revision` in context with the ledger status:
+## `ending_review`
 
-- `ready` before Campaign Turn 1 must use `Base save revision: 1` after character creation is complete
-- `in_progress` normally overlays the same base revision currently recorded in `active_game.json`
-- `reconciling` may temporarily coexist with a newer `active_game.json.save_revision` if the permanent save has already landed and is awaiting verification
-- `saved_awaiting_reset` intentionally references the older base revision while `active_game.json` already contains the newly completed revision
-- a base revision greater than the completed `active_game.json.save_revision` is inconsistent and must be reconciled before play continues
+The ledger is frozen. No permanent write is authorized until Gate 1 approval.
 
-## Save revision rule
+## `reconciling`
 
-`active_game.json.save_revision` is the campaign's single save-revision counter. No separate campaign phase or chat-session counter is used.
+The player approved the save and permanent writes may be partial. Read the approved review, `active_game.json`, and every affected owner. Never replay the Turn automatically.
 
-### Revision 0
+## `saved_awaiting_reset`
 
-`save_revision: 0` is the entire pre-game **character-creation and backstory phase**.
+The permanent save is complete and verified. Do not replay or resave it. Only Gate 2 remains.
 
-It begins when the campaign is initialized and remains `0` while the player and ChatGPT establish both required core PCs, their backstory, relationships, appearance, mechanics, starting equipment, starting resources, and other pre-game campaign facts.
+Never silently discard an unfinished, frozen, reconciling, or saved-awaiting-reset ledger.
 
-Canonical character-creation facts may be written to their proper state owners during this phase without incrementing the revision. Intermediate character-creation edits are revisions of the same pre-game baseline, not separate completed save revisions.
+# Base revision and clock checks
 
-Revision 0 does not require completed checkpoint entries in `session_log.md`, and no intermediate character-creation choice may increment `save_revision`.
+Interpret Base save revision with Status:
 
-Revision 0 ends only when character creation is fully complete, the required starting state is verified, and the player confirms the transition into the Campaign Turn 1 starting baseline under `CHARACTER_CREATION.md`.
+- a revision-1 ready ledger before Campaign Turn 1 uses Base save revision `1`
+- an in-progress ledger normally overlays the same revision currently in `active_game.json`
+- a reconciling ledger may coexist temporarily with a newer completed revision
+- a saved-awaiting-reset ledger intentionally references the older base revision until reset
+- a base revision greater than `active_game.json.save_revision` is inconsistent
 
-### Revision 1
+Clock checks:
 
-`save_revision: 1` is established exactly once when character creation is completed and confirmed.
+- a ready ledger's Start Clock and Current In-Turn Clock must match `active_game.json.campaign_clock`
+- an in-progress ledger's Start Clock must match the completed clock at Turn opening
+- Current In-Turn Clock must equal Start Clock plus recorded time changes
+- a reconciling or saved-awaiting-reset ledger may show an older Start Clock while `active_game.json` already stores the approved End Clock
+- clock inconsistencies must be reconciled before play continues
+
+# Save revision rule
+
+`active_game.json.save_revision` is the single save-revision counter.
+
+## Revision 0
+
+Revision 0 is the entire pre-game character-creation and backstory phase.
+
+Finalized pre-game facts may be persisted without intermediate revision increments or session-log checkpoints.
+
+## Revision 1
+
+Revision 1 is established exactly once after confirmed character creation and the GM-authored opening frame.
 
 At that transition:
 
-- `active_game.json.character_created` becomes `true`
-- `active_game.json.campaign_turn_number` remains `0`
-- `active_game.json.save_revision` becomes `1`
-- `turn_save.md` remains `Campaign Turn: 1` and `Status: ready`
-- `turn_save.md.Base save revision` becomes `1`
-- one character-creation completion / Campaign Turn 1 baseline entry is appended to `session_log.md`
+- `character_created` becomes `true`
+- `campaign_turn_number` remains `0`
+- scene, location, and opening clock become established
+- `save_revision` becomes `1`
+- `turn_save.md` remains ready for Campaign Turn 1 with matching scene, base revision, and clock
+- one completion entry is appended to `session_log.md`
 
-Revision 1 is the permanent starting baseline **from which Campaign Turn 1 begins**. Establishing revision 1 does not itself begin Campaign Turn 1 and does not create a Campaign Turn Step.
+Revision 1 does not itself begin Campaign Turn 1.
 
-### Completed Campaign Turn revisions
+## Completed Campaign Turns
 
-Starting a Campaign Turn never increments `save_revision`.
+Starting a Turn does not increment the revision.
 
-Each completed and approved Campaign Turn permanent save increments the revision exactly once from the Turn's base revision. Therefore, under the normal lifecycle:
+Each approved completed Campaign Turn increments it exactly once:
 
-- character creation and backstory: revision `0`
-- Campaign Turn 1 starting baseline: revision `1`
-- completed Campaign Turn 1 save: revision `2`
-- completed Campaign Turn 2 save: revision `3`
+- character creation: revision `0`
+- Campaign Turn 1 baseline: revision `1`
+- completed Campaign Turn 1: revision `2`
+- completed Campaign Turn 2: revision `3`
 - and so on
 
-For a completed Campaign Turn permanent save:
+Step checkpoints, review checkpoints, verification checkpoints, saved-awaiting-reset checkpoints, and reset operations do not increment it.
 
-1. determine all permanent campaign files that need real changes
-2. prepare the canonical state and history updates
-3. prepare `active_game.json` with the new completed authoritative state
-4. increment `save_revision` by exactly `1` only for the completed permanent save
-5. set `last_sync_note` to a compact description of what that completed revision represents
-6. if a required permanent-state update fails or remains unresolved, do not pretend the save completed and do not finalize the revision until the permanent state is reconciled
-
-Individual Campaign Turn Steps, status checkpoints, final-review checkpoints, `saved_awaiting_reset` checkpoints, Campaign Turn opening, and the later temporary-ledger reset do **not** increment `save_revision`.
-
-Whenever atomic Git tooling is available, one completed Campaign Turn revision should correspond to one permanent-state Git commit containing the synchronized supporting permanent files, `session_log.md`, and `active_game.json`. The temporary ledger is deliberately **not reset** in that commit.
-
-If the environment cannot make one atomic multi-file permanent save and must write files sequentially, update supporting permanent files first and `active_game.json` last. Then verify the completed state before moving the temporary ledger to `saved_awaiting_reset`.
-
-The later player-approved reset of `turn_save.md` is a separate cleanup/checkpoint operation and does not create another campaign save revision.
-
-A file does not need fictional changes merely to prove it was checked. If nothing substantive changed, preserve it.
-
-Character-creation revision behavior is defined in `CHARACTER_CREATION.md`. General state ownership, corrections, and legitimate removal are defined in `STATE_OWNERSHIP_AND_PERSISTENCE.md`.
+A file does not need fictional changes merely to prove it was checked. Preserve files with no substantive change.
