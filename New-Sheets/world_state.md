@@ -62,8 +62,16 @@ When established, a quest or mission may track:
 
 ## Clues / Discoveries
 
-## Known Secrets
+Record only facts and clues that have actually been told to, witnessed by, or discovered by the core PCs. The two core PCs share all learned information.
 
 ## World Changes / Consequences
 
-## Unresolved Threads
+## Unresolved Questions / Mysteries
+
+Record only questions, mysteries, suspected connections, or missing information that the core PCs know about.
+
+- Phrase each unresolved matter as a question.
+- Include only the known clues that created the question.
+- Do not record an untold answer, hidden GM solution, secret perpetrator, or undiscovered fact.
+- If neither core PC has been told or discovered something, it does not need a record.
+- When an answer is revealed, move the discovered fact to the proper section and mark or remove the resolved question.
