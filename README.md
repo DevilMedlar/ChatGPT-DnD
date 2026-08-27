@@ -1,159 +1,61 @@
 # ChatGPT-DnD
 
-A persistent, choice-driven adult fantasy tabletop RPG repository designed to be played through ChatGPT.
+A persistent, choice-driven adult fantasy tabletop RPG designed to be played through ChatGPT.
 
-The repository separates **reusable rules**, **campaign-specific rules**, **blank reusable campaign skeletons**, and **live campaign state** so campaigns can remain persistent while their copied sheets still carry the guidance needed to fill them out correctly.
+The repository separates reusable rules, campaign-specific rules, blank reusable campaign sheets, and live campaign state so play can continue from verified files rather than chat memory.
 
-The intended play style uses D&D-style d20 mechanics, player-rolled dice, persistent characters and NPCs, campaign continuity, relationships, combat, quests, inventory, shops, advancement, and optional generated scene art.
+The ordinary mechanics baseline is D&D 5.5e / SRD 5.2.1. Explicit repository homebrew overrides that baseline for the subjects it governs, including player-owned dice, Campaign Turns, playable species, cross-species reproduction, persistence, relationships, and pricing.
 
-All characters involved in adult content must be adults. Detailed content, consent, gameplay, persistence, and GM behavior requirements live in the categorized files under `Rule/`.
+All characters involved in adult content must satisfy `Rule/ADULT_CONTENT_AND_CONSENT.md`.
 
----
+# Repository model
 
-## Repository model
+## `Rule/`
 
-The repository has three top-level working areas, with a campaign-local rule layer inside each numbered campaign.
+The reusable repository-wide rule library.
 
-### `Rule/` — reusable game and persistence rules
+Key authorities include:
 
-`Rule/` is the central reusable rule library.
+- `CORE_GAME_MECHANICS.md` for the 5.5e baseline and canonical campaign clock
+- `CHARACTER_CREATION.md` for the revision-0 character-creation workflow
+- `PLAYABLE_CHARACTER_OPTIONS.md` for approved PC species, their complete mechanics, core-class policy, backgrounds, feats, and homebrew completion gates
+- `REPRODUCTION_AND_LINEAGE.md` for compatibility, fertility, conception, pregnancy or egg development, offspring, inheritance, birth or hatching, growth, and later generations
+- `CAMPAIGN_TURNS_AND_STEPS.md` for unfinished-Turn staging
+- `SAVES_VERIFICATION_AND_RECOVERY.md` for confirmation, permanent reconciliation, verification, recovery, and reset
+- `STATE_OWNERSHIP_AND_PERSISTENCE.md` for file ownership
+- `RULE_AUTHORITY_AND_HIERARCHY.md` for conflicts
 
-Rules are separated by subject instead of being repeated inside every campaign. ChatGPT should consult the relevant rule files when running or modifying a campaign.
+A numbered campaign does not duplicate unchanged global rules merely for convenience.
 
-Current rule categories include:
+## `campaigns/campaign-N/Rules/`
 
-- adult content and consent
-- advancement and XP
-- campaign setup, activation, and navigation
-- Campaign Turns and Steps
-- canon, history, and campaign isolation
-- character creation
-- combat, abilities, and ongoing effects
-- core game mechanics
-- core-party structure and character agency
-- dice rolls and rerolls
-- GM behavior and priority
-- images, visuals, and reference art
-- inventory, equipment, and items
-- NPCs and party membership
-- relationships and social interactions
-- reproduction and lineage
-- active reproductive-species selection
-- completed reproductive-species profiles
-- rule authority and hierarchy
-- saves, verification, and recovery
-- session logs and history
-- shops, pricing, and transactions
-- state ownership and persistence
-- world, quests, and continuity
-
-These files are the reusable operating brain of the repository. A numbered campaign should not duplicate unchanged reusable rules as campaign-specific rules merely for convenience.
-
-### `campaigns/campaign-N/Rules/` — persistent campaign-specific rules
-
-Each numbered campaign has its own local rule layer:
+Each campaign has one persistent local-rule delta:
 
 ```text
 campaigns/campaign-N/Rules/Campaign-N_Rules.md
 ```
 
-This file stores only persistent rules intentionally scoped to that campaign, such as:
+It stores only explicit rules or overrides scoped to that campaign. Ordinary character, NPC, family, inventory, clock, world, quest, shop, session, and art facts remain in their assigned state owners.
 
-- campaign-specific mechanical overrides
-- campaign-specific agency or behavior rules
-- exceptional campaign premises
-- campaign-specific operating rules
-- explicit player instructions that should remain rules for that campaign across future sessions
+A local rule never silently carries into another campaign.
 
-It is a **delta layer**, not another copy of `Rule/`.
+## `New-Sheets/`
 
-Do not store ordinary character, NPC, relationship, inventory, world, quest, shop, session, art, or other campaign facts there. Those facts remain in their assigned state files.
+The blank copy-ready campaign skeleton.
 
-Campaign-specific rules never automatically carry into another numbered campaign.
+Its Markdown files intentionally retain headings, empty tables, examples, instructions, and labeled templates. Those helpers are documentation, not campaign facts.
 
-### `New-Sheets/` — blank reusable campaign skeleton
+A new numbered campaign copies the complete skeleton and preserves its `Rules/` and `art/` subfolders.
 
-`New-Sheets/` contains the clean, campaign-neutral **copy-ready folder skeleton** used to create a fresh numbered campaign.
+## `campaigns/`
 
-It intentionally mirrors the normal live campaign structure, including the `Rules/` and `art/` subfolders. Its Markdown files contain:
+The isolated live campaign folders.
 
-- blank state fields
-- reusable headings and tables
-- record layouts
-- clearly labeled templates for repeated records
-- examples
-- inline guidance explaining how the campaign's copy should be filled out and maintained
-- references to the reusable rules that govern the file
+`campaigns/active_campaign.json` selects the current campaign and points to its `active_game.json`. It is not a duplicate save.
 
-They contain no established character names, populated campaign state, existing NPCs, relationships, story events, or other canon from a prior campaign.
-
-Current skeleton:
+# Current rule layout
 
 ```text
-New-Sheets/
-  active_game.json
-  character_sheet.md
-  NPC-state.md
-  inventory.md
-  routine_item_prices.md
-  world_state.md
-  session_log.md
-  turn_save.md
-  Rules/
-    Campaign-N_Rules.md
-  art/
-    art_log.md
-```
-
-`active_game.json` is the reusable initialization skeleton for the campaign-state header. Its core-PC advancement keys are placeholders that are replaced with actual established PC names during character creation.
-
-`Rules/Campaign-N_Rules.md` is a campaign-local rule template. `N` is replaced with the actual numbered campaign during initialization, and the file begins with no active campaign-specific rules unless the player establishes some.
-
-#### How New-Sheets becomes a campaign
-
-A new campaign copies the complete `New-Sheets/` folder skeleton into its own numbered folder, preserving its `Rules/` and `art/` subfolders, then fills out **its own copies**.
-
-Normal mapping:
-
-```text
-New-Sheets/active_game.json                    -> campaigns/campaign-N/active_game.json
-New-Sheets/character_sheet.md                  -> campaigns/campaign-N/character_sheet.md
-New-Sheets/NPC-state.md                        -> campaigns/campaign-N/NPC-state.md
-New-Sheets/inventory.md                        -> campaigns/campaign-N/inventory.md
-New-Sheets/routine_item_prices.md              -> campaigns/campaign-N/routine_item_prices.md
-New-Sheets/world_state.md                      -> campaigns/campaign-N/world_state.md
-New-Sheets/session_log.md                      -> campaigns/campaign-N/session_log.md
-New-Sheets/turn_save.md                        -> campaigns/campaign-N/turn_save.md
-New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Campaign-N_Rules.md
-New-Sheets/art/art_log.md                      -> campaigns/campaign-N/art/art_log.md
-```
-
-The campaign's copied Markdown files keep useful instructions, examples, tables, and clearly labeled record templates so future ChatGPT sessions can see how to fill out and maintain that campaign's records.
-
-Those retained helper sections are **not canonical state**. A labeled `NPC Record Template` is not an NPC, a labeled `Shop Transaction Template` is not a pending transaction, and placeholder names/IDs or example rows are not established campaign facts.
-
-When copying the skeleton into its live destination, adjust campaign identifiers, placeholder character names, the `Campaign-N_Rules.md` filename/heading, starting values, destination-relative references, and any other required initialization values. This is initialization of the copy, not campaign canon.
-
-If copied guidance conflicts with the current files under `Rule/`, the current reusable rule library wins. The copied guidance explains how to fill the file; it is not a separate rule authority.
-
-Later changes to `New-Sheets/` do not automatically rewrite existing campaigns.
-
-### `campaigns/` — live isolated campaign state
-
-Each numbered campaign owns its own canonical state inside its own folder.
-
-`campaigns/active_campaign.json` is the campaign selector. It identifies the campaign currently in play and points to that campaign's `active_game.json`.
-
-Campaigns are isolated. Character data, NPCs, relationships, inventory, quests, world state, story history, secrets, campaign-specific rules, and other canon do not automatically carry from one numbered campaign into another.
-
----
-
-## Current repository layout
-
-```text
-README.md
-LICENSE
-
 Rule/
   ADULT_CONTENT_AND_CONSENT.md
   ADVANCEMENT_AND_XP.md
@@ -169,17 +71,29 @@ Rule/
   IMAGES_VISUALS_AND_REFERENCE_ART.md
   INVENTORY_EQUIPMENT_AND_ITEMS.md
   NPCS_AND_PARTY_MEMBERSHIP.md
+  PLAYABLE_CHARACTER_OPTIONS.md
   RELATIONSHIPS_AND_SOCIAL_INTERACTIONS.md
   REPRODUCTION_AND_LINEAGE.md
-  REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md
-  REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md
   RULE_AUTHORITY_AND_HIERARCHY.md
   SAVES_VERIFICATION_AND_RECOVERY.md
   SESSION_LOG_AND_HISTORY.md
   SHOPS_PRICING_AND_TRANSACTIONS.md
   STATE_OWNERSHIP_AND_PERSISTENCE.md
   WORLD_QUESTS_AND_CONTINUITY.md
+```
 
+The character/reproduction system is intentionally consolidated into:
+
+```text
+PLAYABLE_CHARACTER_OPTIONS.md
+REPRODUCTION_AND_LINEAGE.md
+```
+
+There is no separate candidate catalog, reproductive profile index, numbered profile batch, or duplicate completed-profile authority.
+
+# Campaign skeleton
+
+```text
 New-Sheets/
   active_game.json
   character_sheet.md
@@ -193,135 +107,150 @@ New-Sheets/
     Campaign-N_Rules.md
   art/
     art_log.md
-
-campaigns/
-  active_campaign.json
-  campaign-1/
-    active_game.json
-    character_sheet.md
-    NPC-state.md
-    inventory.md
-    routine_item_prices.md
-    world_state.md
-    session_log.md
-    turn_save.md
-    Rules/
-      Campaign-1_Rules.md
-    art/
-      art_log.md
 ```
 
-Additional numbered campaigns follow the same campaign-folder pattern, including their own `Rules/Campaign-N_Rules.md`.
-
----
-
-## Source of truth
-
-When playing or editing a campaign, use the repository's current branch as the source of truth.
-
-In general:
-
-- `Rule/` owns reusable repository-wide rules and operating behavior.
-- `campaigns/campaign-N/Rules/Campaign-N_Rules.md` owns persistent rules and overrides intentionally scoped to that campaign.
-- `New-Sheets/` owns the reusable blank copy-ready campaign folder skeleton and its fill-out guidance.
-- `campaigns/active_campaign.json` selects the active campaign.
-- the selected campaign folder owns that campaign's actual canon and mutable state.
-- copied instructions, examples, placeholders, and explicitly labeled templates inside campaign files are guidance, not canon.
-- `active_game.json` owns the last completed campaign state header and advancement summary defined by the rules.
-- `turn_save.md` owns temporary state for the unfinished Campaign Turn.
-- `character_sheet.md` owns the core PCs' persistent character state and relationship continuity.
-- `NPC-state.md` owns persistent NPC master state.
-- `inventory.md` owns detailed current party inventory bookkeeping.
-- `routine_item_prices.md` owns recurring routine-item Base Price state.
-- `world_state.md` owns persistent world, location, faction, quest, clue, discovery, and consequence state.
-- `session_log.md` owns chronological completed-save history.
-- `art/art_log.md` owns verified visual-reference metadata while textual appearance canon remains in the appropriate state file.
-
-If rules conflict, use `Rule/RULE_AUTHORITY_AND_HIERARCHY.md`. If state ownership is unclear, use `Rule/STATE_OWNERSHIP_AND_PERSISTENCE.md` rather than guessing.
-
----
-
-## Continuing an existing campaign
-
-When the player asks to continue play, ChatGPT should first resolve the active campaign from `campaigns/active_campaign.json`.
-
-Then read the applicable reusable rules under `Rule/`, the active campaign's `Rules/Campaign-N_Rules.md`, and the current state required for the scene, including `active_game.json` and `turn_save.md` plus any relevant character, NPC, inventory, world, history, pricing, or visual-reference files.
-
-When reading a copied campaign sheet, distinguish its retained instructions/templates from its actual filled-in campaign state.
-
-If `turn_save.md` contains an unfinished Campaign Turn, recover and continue that Turn according to the Campaign Turn, save, verification, and recovery rules rather than starting a new one or silently discarding staged state.
-
-Do not reconstruct missing campaign canon or local rules from another campaign, previous chats, deleted material, or repository history unless the player explicitly requests a specific import permitted by the rules.
-
----
-
-## Starting a new campaign
-
-A new numbered campaign should be a fresh sibling folder under `campaigns/`, for example:
+Normal copy map:
 
 ```text
-campaigns/campaign-2/
+New-Sheets/active_game.json                    -> campaigns/campaign-N/active_game.json
+New-Sheets/character_sheet.md                  -> campaigns/campaign-N/character_sheet.md
+New-Sheets/NPC-state.md                        -> campaigns/campaign-N/NPC-state.md
+New-Sheets/inventory.md                        -> campaigns/campaign-N/inventory.md
+New-Sheets/routine_item_prices.md              -> campaigns/campaign-N/routine_item_prices.md
+New-Sheets/world_state.md                      -> campaigns/campaign-N/world_state.md
+New-Sheets/session_log.md                      -> campaigns/campaign-N/session_log.md
+New-Sheets/turn_save.md                        -> campaigns/campaign-N/turn_save.md
+New-Sheets/Rules/Campaign-N_Rules.md           -> campaigns/campaign-N/Rules/Campaign-N_Rules.md
+New-Sheets/art/art_log.md                       -> campaigns/campaign-N/art/art_log.md
 ```
 
-Copy the complete blank folder skeleton from `New-Sheets/` into the new campaign, preserving its `Rules/` and `art/` subfolders. Keep the useful fill-out guidance, examples, tables, and clearly labeled record templates in the new campaign's copies.
+Adjust campaign identifiers, names, headings, and relative references in the copied destination without inventing campaign canon.
 
-Then initialize campaign identifiers, placeholder character names, starting values, destination-relative references, and the copied campaign-local rules filename/heading according to `Rule/CAMPAIGN_SETUP_ACTIVATION_AND_NAVIGATION.md`.
+# Source of truth and state ownership
 
-Do not copy another campaign's populated files.
+Use the current branch as the source of truth.
 
-The copied local-rule template becomes, for example:
+Within a numbered campaign:
 
-```text
-campaigns/campaign-2/Rules/Campaign-2_Rules.md
+- `Rules/Campaign-N_Rules.md` owns local rule overrides
+- `active_game.json` owns the last completed campaign header, completed clock, completed scene/location, advancement, and save revision
+- `turn_save.md` owns the unfinished Campaign Turn overlay, including live clock, Steps, rolls, reproductive events, transactions, and pending transfers
+- `character_sheet.md` owns persistent core-PC state, species package, class mechanics, appearance, relationships, reproductive state, and parent state
+- `NPC-state.md` owns persistent NPC and child master records, stable IDs, family links, reproductive state, hybrid traits, possessions, shops, and continuity
+- `inventory.md` owns detailed active possession bookkeeping
+- `routine_item_prices.md` owns recurring routine Base Prices
+- `world_state.md` owns calendar lore, schedules, deadlines, due dates, laying dates, hatching dates, locations, factions, quests, clues, discoveries, and consequences
+- `session_log.md` owns completed chronological checkpoints
+- `art/art_log.md` owns verified visual-reference metadata
+
+Retained templates, placeholder IDs, and empty example rows are not canon.
+
+# Playable characters
+
+`Rule/PLAYABLE_CHARACTER_OPTIONS.md` currently provides thirteen standard species packages:
+
+1. Human
+2. Elf
+3. Dwarf
+4. Gnome
+5. Dragonborn
+6. Dragonkin
+7. True Dragon
+8. Kitsune
+9. Neko
+10. Usagi
+11. Inu
+12. Ookami
+13. Lizardfolk
+
+It also enables the twelve core 5.5e classes by reference to the current official rules and defines strict completion gates for homebrew classes, backgrounds, subclasses, and feats.
+
+An unlisted species or incomplete homebrew option is not selectable merely because its name or concept was mentioned.
+
+# Reproduction and lineage
+
+`Rule/REPRODUCTION_AND_LINEAGE.md` is the only dedicated reproduction authority.
+
+It establishes:
+
+- all thirteen active species are cross-species compatible in both directions
+- the female parent determines live birth versus egg production
+- True Dragons can use their innate size/form accommodation for physical access without changing ancestry or development route
+- fertility and conception use player-rolled percentile dice from one d10 rolled twice
+- one conception check per pair per 24 in-world hours
+- offspring count and biological sex are player-rolled
+- gestation, egg-production, laying, incubation, and detection schedules
+- a four-slot hybrid mechanical inheritance budget
+- cosmetic inheritance, delayed trait development, birth/hatching, childhood milestones, adult fertility, and later generations
+- biological and adoptive parentage remain distinct
+
+ChatGPT never manufactures reproductive dice results or chooses an outcome to fit the narrative.
+
+# Campaign clock
+
+Every campaign uses one canonical clock:
+
+```json
+"campaign_clock": {
+  "calendar": "Campaign Day",
+  "day": 1,
+  "time": "08:00:00"
+}
 ```
 
-Begin that file with no active campaign-specific rules unless the player explicitly establishes some. Do not copy another campaign's local rules into it.
+- `active_game.json` owns the completed clock.
+- `turn_save.md` owns the live unfinished-Turn clock.
+- `world_state.md` owns calendar lore and scheduled events.
+- substantial time never advances silently.
+- one Combat Round consumes 6 seconds, regardless of combatant count.
+- crossed deadlines and milestones must be resolved chronologically.
 
-Do not import existing characters, NPCs, relationships, items, locations, quests, secrets, story events, campaign-specific rules, or other campaign material merely because it exists in another numbered campaign.
+# Character creation and Campaign Turn 1
 
-Change `campaigns/active_campaign.json` only when the new campaign should become the active campaign.
+The full pre-game setup uses `save_revision: 0`.
 
----
+Character-creation discussion does not advance the in-world clock or create Campaign Turn Steps.
 
-## Core play loop
+After both core PCs are complete and the player confirms the final review, ChatGPT creates the opening frame and establishes revision 1 with:
 
-ChatGPT serves as GM/DM and also controls the required ChatGPT-controlled core PC / co-protagonist defined by the rules. The player controls the player-controlled core PC.
+- `character_created: true`
+- `campaign_turn_number: 0`
+- opening scene and location
+- opening campaign clock
+- synchronized character, inventory, advancement, world, and session state
+- `turn_save.md` still ready for Campaign Turn 1
 
-The player physically rolls the dice after ChatGPT establishes that a roll is required and states what should be rolled. ChatGPT resolves the supplied result using the applicable mechanics and campaign state.
+Campaign Turn 1 begins from revision 1. Its later approved completed save becomes revision 2.
 
-Gameplay is persisted through **Campaign Turns**. A Campaign Turn may include multiple scenes, decisions, rolls, conversations, combat rounds, individual combatant turns, transactions, discoveries, and consequences. Ending a normal D&D combat turn or combat round does not by itself finish the Campaign Turn.
+# Core play loop
 
-The exact Step recording, review, confirmation, permanent reconciliation, verification, and reset workflow is defined under `Rule/CAMPAIGN_TURNS_AND_STEPS.md` and `Rule/SAVES_VERIFICATION_AND_RECOVERY.md`.
+ChatGPT acts as GM/DM and controls the required ChatGPT-controlled PC / co-protagonist. The player controls the player-controlled PC.
 
----
+The player physically rolls every die after ChatGPT states the exact roll and stakes. ChatGPT resolves only the supplied result.
 
-## Reproduction rule structure
+Gameplay is staged through Campaign Turns. A Campaign Turn may contain many scenes, decisions, Combat Rounds, transactions, reproductive events, discoveries, and clock changes. Ending a Combat Turn or Combat Round does not end the Campaign Turn.
 
-The reproduction system is intentionally consolidated:
+At the full Turn end:
 
-- `Rule/REPRODUCTION_AND_LINEAGE.md` governs reproductive operation, compatibility, carrying-parent development, adoption, hybrid safety, fertility, conception, and lineage.
-- `Rule/REPRODUCTIVE_SPECIES_CANDIDATE_CATALOG.md` is the active global standard-species whitelist.
-- `Rule/REPRODUCTIVE_SPECIES_COMPLETE_PROFILES.md` stores the thirteen active standard reproductive profiles.
+1. freeze and review the ledger
+2. show Final Turn State and Exact Planned Permanent Transfers, including clock
+3. obtain save confirmation
+4. reconcile permanent state
+5. verify every affected file
+6. preserve the ledger
+7. obtain separate reset confirmation
 
-Deleted catalogs, profile batches, repository history, nonstandard variations, or remembered chat context cannot independently restore a removed species.
+# Images and reference art
 
----
+Optional generated scene art follows `Rule/IMAGES_VISUALS_AND_REFERENCE_ART.md`.
 
-## Images and reference art
+Generated image files are player-managed. The repository stores verified paths and metadata in the active campaign's `art/art_log.md`; textual appearance canon remains in the character, NPC, world, or item state owner.
 
-Scene images are optional and should follow the image-generation rules in `Rule/IMAGES_VISUALS_AND_REFERENCE_ART.md`.
-
-Generated image files themselves are player-managed. The repository may store verified paths and visual-reference metadata in the active campaign's `art/art_log.md`, while textual appearance canon remains in the state file that owns the character, NPC, location, or item.
-
----
-
-## Design principle
-
-This repository intentionally separates reusable authority, campaign-local authority, reusable skeletons, and campaign state:
+# Design principle
 
 > `Rule/` explains how every campaign works by default.  
-> `campaigns/campaign-N/Rules/` records only the persistent rule differences for that campaign.  
-> `New-Sheets/` provides the complete blank copy-ready folder skeleton and guidance used to create each campaign's working files.  
-> the copied files under `campaigns/campaign-N/` are filled out as that campaign's records while clearly labeled guidance/templates remain noncanonical helpers.
+> Campaign-local `Rules/` stores only deliberate differences.  
+> `New-Sheets/` provides the blank working skeleton and guidance.  
+> Each numbered campaign owns its isolated state and clock.
 
-Keeping those roles distinct makes it possible to improve the reusable game system, preserve special campaign rules without leaking them into other campaigns, create new campaigns from a complete working skeleton, and let ChatGPT resume persistent play from the repository instead of relying on chat memory alone.
+That separation lets the game evolve without relying on chat memory, mixing campaigns, duplicating authorities, or losing continuity.
