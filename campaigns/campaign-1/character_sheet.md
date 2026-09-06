@@ -44,7 +44,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Ironknuckle Gauntlets (Sap) and Javelins (Slow) are the confirmed starting Weapon Mastery selections. Remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. A desired performance goal is not a guaranteed outcome.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Ironknuckle Gauntlets (Sap) and Javelins (Slow) are the confirmed starting Weapon Mastery selections. Remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. A desired performance goal is not a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. The approved Foxguard starting acquisitions are recorded without a gameplay Step, clock advance, or completed campaign checkpoint.
 
 ### Background History
@@ -173,6 +173,11 @@ Starting funds: Barbarian gold option 75 GP + Soldier gold option 50 GP = 125 GP
 ### Appearance
 
 This section owns stable textual appearance canon, including species markers, until explicitly changed in fiction.
+
+- **Height:** 6 feet 4 inches (about 193 cm), standing height excluding horns
+- **Weight:** Approximately 245 pounds (about 111 kg), body weight without equipment
+- **Build:** Broad and muscular, with substantial shoulders and chest, a strong back, thick forearms, powerful thighs, and a solid, moderately tapered waist. Athletic definition rather than exaggerated bulk; a grounded, balanced brawler's stance.
+- **Selection context:** The player delegated this height-and-build choice during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Scale colors and coverage, face, eyes, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
 
 ### Personal / Relationship Continuity
 
