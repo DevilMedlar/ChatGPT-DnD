@@ -46,8 +46,8 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian, Soldier, the rolled ability allocation with +1 Strength/+1 Dexterity/+1 Constitution, Perception and Survival, dice-set proficiency, Foxguard loadout B, and Ironknuckle Gauntlets (Sap) / Javelins (Slow) remain established. The player subsequently requested voluntary horns/wings/tail, a power-increasing battle form, and Light/Medium armor, delegating the remaining design. The GM implemented the bounded Campaign-1 manifestation, Draconic Guard, and Draconic Awakening rules under that delegation, chose Light Leather Armor, and completed the remaining appearance. The player subsequently explicitly confirmed Awakening's numerical benefits and limits; these remain campaign homebrew, not official rules. Common, Draconic, Elvish, and Neutral Good are now confirmed. Optional personal details and the final two-PC review remain open. The later subclass is not selected. Performance goals never guarantee outcomes.
-- **Setup state:** Revision 0 remains open. The starting acquisitions and delegated design are recorded without a gameplay Step, clock advance, transformation activation, or completed campaign checkpoint.
+- **Approval status:** Barbarian, Soldier, the rolled ability allocation with +1 Strength/+1 Dexterity/+1 Constitution, Perception and Survival, dice-set proficiency, Foxguard loadout B, and Ironknuckle Gauntlets (Sap) / Javelins (Slow) remain established. The player subsequently requested voluntary horns/wings/tail, a power-increasing battle form, and Light/Medium armor, delegating the remaining design. The GM implemented the bounded Campaign-1 manifestation, Draconic Guard, and Draconic Awakening rules under that delegation, chose Light Leather Armor, and completed the remaining appearance. The player subsequently explicitly confirmed Awakening's numerical benefits and limits; these remain campaign homebrew, not official rules. Common, Draconic, Elvish, and Neutral Good are now confirmed. Optional personal details may remain undecided. The final two-PC review is approved for the revision-1 baseline; play is on hold. The later subclass is not selected. Performance goals never guarantee outcomes.
+- **Setup state:** Character creation is complete at save revision 1. The player approved the baseline with "yes but not starting yet". Campaign Turn 1 remains ready at Step 0; no gameplay Step, clock advance, transformation activation, or resource use occurred.
 
 ### Background History
 
@@ -291,7 +291,7 @@ Use when this character is the reproductive-state target.
 - **Languages:** Common, Draconic, Elvish; chosen, not rolled
 - **Alignment:** Chaotic Good
 - **Party role:** Support caster, perceptive lookout, negotiator, and lock-and-trap specialist; not a front-line tank
-- **Creation status:** Seren's current-level build is complete. Campaign-wide character creation remains open until Cutlor is complete and the player approves the final two-PC review.
+- **Creation status:** Both current-level core-PC builds are complete and approved for the revision-1 baseline. Campaign Turn 1 remains ready at Step 0; the player has explicitly deferred starting play.
 
 ### Background History
 
@@ -520,7 +520,7 @@ Only non-graphic adult mechanical state is recorded. Marriage alone does not cre
 - **Offspring / fertilized-egg count:** Not applicable; no current pregnancy or clutch
 - **Due date or laying date:** None
 - **Hatching date:** Not applicable
-- **Individual sex / appearance / mechanical traits:** Not applicable; no child record exists
+- **Individual sex / appearance /mechanical traits:** Not applicable; no child record exists
 - **Shared core-PC knowledge:** The established starting state above is shared; no hidden pregnancy or fertility modifier
 - **Children / offspring and stable IDs after birth or hatching:** None, consistent with Shared Relationship Canon
 - **Ongoing effects / treatment / notes:** None
@@ -574,3 +574,11 @@ Delegated draconic appearance and power-form update, revision 0: The player requ
 Language and alignment confirmation, revision 0: The player confirmed Common, Draconic, and Elvish and Neutral Good for Cutlor. These now replace the pending identity fields; the prior open-choice notes above are historical. All existing ability scores, class/species features, equipment, currency, HP, resources, and clock remain unchanged. Optional unestablished personal/reproductive details remain undecided. Final two-PC creation approval is still required before establishing revision 1; this confirmation did not begin play.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
+
+## Character Creation Completion
+
+The player approved the final two-PC review and Campaign Turn 1 baseline with "yes but not starting yet". Character creation is complete at save revision 1. Earlier revision-0 review notes above remain historical, not unresolved completion gates.
+
+All approved character choices, appearance, relationships, optional undecided fields, statistics, HP, inventory references, currency, and resource counters are unchanged by this approval. The prepared opening frame is stored in `world_state.md`, and the sole completed character-creation checkpoint is in `session_log.md`.
+
+Campaign Turn 1 remains ready at Step 0. Do not narrate the opening, begin a gameplay Step, make a roll, spend a resource, or advance time until the player explicitly asks to start play.

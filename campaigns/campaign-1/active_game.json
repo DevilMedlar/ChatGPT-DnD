@@ -1,14 +1,14 @@
 {
   "campaign": "campaign-1",
   "campaign_turn_number": 0,
-  "current_scene_name": "Character creation",
-  "current_location": "",
+  "current_scene_name": "Morning at Briarbridge",
+  "current_location": "Briarbridge, east market square",
   "campaign_clock": {
     "calendar": "Campaign Day",
     "day": 1,
     "time": "08:00:00"
   },
-  "character_created": false,
+  "character_created": true,
   "xp_mode": "cumulative",
   "character_advancement": {
     "Cutlor Ashvale": {
@@ -22,6 +22,6 @@
       "xp_next_level": 300
     }
   },
-  "save_revision": 0,
-  "last_sync_note": "Revision-0 setup: Cutlor's Common, Draconic, and Elvish languages and Neutral Good alignment are player-confirmed and recorded. Both current-level builds are ready for final creation review; optional unestablished personal details remain undecided. Scores, features, equipment, currency, HP, and resource counters are unchanged: Cutlor HP 16/16, Temporary HP 0, shield AC 19, Rage 2/2 inactive, Awakening 1/1 inactive, horns/wings/tail withdrawn, currency 20 GP 4 SP; Seren HP 11/11, AC 14, currency 35 GP. Both PCs remain Level 1 at 0 XP. Campaign Day 1, 08:00:00 is unchanged; Turn 1 ledger remains ready at Step 0 and base revision 0. No opening frame, gameplay Step, completed checkpoint, or revision-1 transition has been created."
+  "save_revision": 1,
+  "last_sync_note": "Character creation and the Campaign Turn 1 baseline approved by the player: yes but not starting yet. Revision 1 is established; Turn 1 remains ready at Step 0, not in progress. The static GM-authored opening frame is stored in world_state.md but has not been narrated or played. Wait for the player's explicit instruction to start play before presenting the opening or changing the Turn status. Clock remains Campaign Day 1, 08:00:00; no time, action, roll, resource use, purchase, or quest acceptance occurred. Both approved character builds, inventories, relationships, HP, currency, and unused resources are preserved. Cutlor: Level 1, 0 XP, HP 16/16, Temporary HP 0, AC 19 with shield, Rage 2/2 inactive, Awakening 1/1 inactive, horns/wings/tail withdrawn, 20 GP 4 SP. Seren: Level 1, 0 XP, HP 11/11, AC 14, 35 GP."
 }

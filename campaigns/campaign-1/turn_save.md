@@ -13,8 +13,9 @@ The effective state during an unfinished Turn is the last completed permanent st
 - **Campaign Turn:** 1
 - **Status:** ready
 - **Current Step:** 0
-- **Current Scene:** None yet.
-- **Base save revision:** 0
+- **Current Scene:** Morning at Briarbridge
+- **Base save revision:** 1
+- **Start hold:** The player approved character creation with "yes but not starting yet". Keep this Turn ready, not in progress. Do not narrate the prepared opening, create Step 1, roll, or advance the clock until the player explicitly asks to start play. The prepared baseline frame is in `world_state.md`.
 
 ## Campaign Clock
 
