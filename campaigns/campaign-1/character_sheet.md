@@ -144,7 +144,7 @@ Use when this character is the reproductive-state target.
 
 ### Identity
 
-- **Name:**
+- **Name:** Seren Ashvale
 - **Age:**
 - **Gender / pronouns:**
 - **Biological reproductive role:** Male / Female / Not established
