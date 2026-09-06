@@ -16,9 +16,10 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 - Cutlor and Seren Ashvale are married.
 - Mr. and Mrs. Ashvale married when they were 15 years old.
-- Cutlor and Seren have been Friends since they were 3.
+- Cutlor and Seren share a long-standing friendship. Their exact first-meeting age, date, circumstances, and total years acquainted remain undecided under the player's latest instruction. The earlier fixed "friends since age 3" entry is superseded, not a current timeline fact.
 - Mr. Ashvale owns Mrs. Ashvale, they have an owner and pet relationship.
 - Cutlor and Seren Ashvale do not have kids yet.
+- **Linked background:** Cutlor's local Soldier training and protective role developed alongside Seren's established market-lane Wayfarer life. See Cutlor's Background History and the additive connection in Seren's Background History. These histories establish no exact meeting date or new marriage date.
 
 ## Player-Controlled PC
 
@@ -31,7 +32,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Species / ancestry:** Dragonkin
 - **Class:** Barbarian; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player's latest confirmation
 - **Subclass:**
-- **Background:**
+- **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Remaining mechanical choices are not selected by this narrative.
 - **Level:** 1
 - **XP:** 0/300
 
@@ -43,10 +44,24 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. The Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above remain established. Exact ability scores, background, skill proficiencies, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above remain established. Exact ability scores and background increases, remaining proficiency choices, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
+
+#### Soldier: A Protector Close to Home
+
+Cutlor's reason for learning to fight was never a distant throne or the promise of a glorious war. It was the ordinary world he shared with Seren: crowded market lanes, thin purses, and people who sometimes mistook a performer earning her supper for someone they could push around. Across their years together, he became a steady presence at her side, watching an unruly crowd, making room when strangers pressed too close, and making sure she did not have to face a threatening situation alone.
+
+Wanting to protect her was not enough; he wanted to know how. Cutlor trained with a local militia, learning to keep his footing, judge a threat, endure hard exertion, and stand his ground without wasting every ounce of strength in the first rush. Local guard duties gave that training a practical purpose among the same market streets where Seren performed. His Soldier background comes from this training and service close to home, not years of distant warfare or an invented career that separated them.
+
+He gravitated toward close fighting: firm footing, physical pressure, and the reach of his own hands and claws. The open-hand gauntlets he wants now suit that preference, leaving his natural claws free rather than hiding them inside closed metal fingers. This is his fighting concept, not equipment already acquired or an extra mechanical benefit.
+
+Their partnership was never only about what happened when a fight started. Seren learned to notice the change in his attention when a situation turned wrong, and he learned to recognize when her easy conversation was buying them time to leave. She could soften a quarrel with a clever answer; he could make it clear that continuing it would not be easy. On quieter days, music accompanied his practice, and she offered practical care for the ordinary scrapes and fatigue that came with training. They learned to support one another without needing a crisis to prove that they mattered.
+
+At eighteen, Cutlor's protective purpose remains personal: give his wife room to sing, travel, and build a life without facing danger alone. His Barbarian fury can express that fierce determination, while his Soldier training explains the discipline behind it. Protectiveness does not dictate his future actions or force a loss of control; the player still decides when Cutlor fights, holds back, negotiates, or walks away with Seren beside him.
+
+**Chronology and scope:** This is the player-requested background connection, not a played encounter. It spans their established years together without fixing when they first met, how many years they have known each other, or the exact ages and dates of militia training and service. Their already-established marriage is unchanged. Militia name, hometown name, rank, named comrades, particular battles, and service duration remain undecided. No specific rescue, war trauma, combat result, extra XP, wages, debt, property, equipment, or present injury is created. Childhood friendship and mutual care are nonsexual; their current adult relationship preferences remain in Personal / Relationship Continuity.
 
 ### Ability Scores
 
@@ -186,6 +201,14 @@ Seren grew up around crowded market lanes, learning how to stretch a small purse
 Her friendship with Cutlor and their established marriage remain in Shared Relationship Canon. No new actions, dialogue, or personal choices are assigned to Cutlor by this build.
 
 For Seren, bardic magic is a way to steady a frightened voice, interrupt cruelty, and bring someone home alive. She wants to earn an honest reputation, collect songs worth remembering, and eventually establish a welcoming home with room for music and guests. These are Seren's stated hopes, not an imposed goal for Cutlor or an already-owned location. Her history and goals are shared with him; she has no separate secret backstory.
+
+#### Added Connection: Cutlor's Protection
+
+This addition connects Seren's existing Wayfarer history to Cutlor's player-requested Soldier history; it does not replace her upbringing, skills, personality, or ambitions. Across their shared years, his watchful presence became part of the familiar rhythm of her market-lane life. While she worked a crowd with a song or an answer, he watched for trouble that charm alone would not settle. His local militia training gave practical shape to the protection she had come to trust without sending him away into an unrelated military life.
+
+Seren wanted to contribute in return. Music accompanied some of his practice, and she cared about the fatigue and ordinary scrapes behind his growing confidence. Her wish to learn supportive magic became more personal: when he stood between her and danger, she wanted to have something useful to offer him besides worry. This motivation does not grant a new spell or rewrite the chronology of her existing training.
+
+In their present adult relationship, those years of dependable care help explain why she finds comfort in following his lead and being his cherished pet as well as his wife. She enjoys being looked after and praised, and she willingly cooperates within their established dynamic. Her musical ambitions and competence remain intact; protecting her gives her room to pursue them. The first meeting and exact length of their shared history remain undecided, and this adult preference is not backdated into childhood.
 
 ### Ability Scores
 
@@ -355,7 +378,7 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
-- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
+- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and a plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
 - **Visible gear:** Two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
