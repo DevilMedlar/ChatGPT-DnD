@@ -19,6 +19,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - Cutlor and Seren have been Friends since they were 3.
 - Cutlor and Seren first started having sexual intercourse at age 12.
 - Mr. Ashvale owns Mrs. Ashvale, they have an owner and pet relationship.
+- Cutlor and Seren Ashvale do not have kids yet.
 
 ## Player-Controlled PC
 
@@ -154,15 +155,15 @@ Use when this character is the reproductive-state target.
 ### Identity
 
 - **Name:** Seren Ashvale
-- **Age:**
-- **Gender / pronouns:**
-- **Biological reproductive role:** Male / Female / Not established
+- **Age:** 18
+- **Gender / pronouns:** She/Her
+- **Biological reproductive role:** Female
 - **Species / ancestry:** Exact standard package or approved campaign override
 - **Class:**
 - **Subclass:**
 - **Background:**
-- **Level:**
-- **XP:**
+- **Level:** 1
+- **XP:** 0/300
 
 ### Background History
 
