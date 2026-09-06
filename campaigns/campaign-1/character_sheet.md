@@ -356,6 +356,8 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - Calls Cutlor nicknames like Daddy, master, babe, baby, honey, or other terms of endirment.
 - Only calls Cutlor by name when mad at him, upset with him, or he is in trouble for something.
 - **Marriage:** Cutlor Ashvale is her husband, as established in Shared Relationship Canon. This build does not create an additional partner or rewrite his feelings or behavior.
+- **Pet relationship preference:** As an adult, Seren actively wants Cutlor to treat her as his cherished pet as well as his wife. She enjoys affectionate pet names, his guidance, and praise. This is her own expressed preference, not merely a relationship label assigned to her.
+- **Obedience and praise:** Within their mutually chosen adult dynamic, Seren willingly obeys Cutlor's directions and takes pride in being his "good girl." Show this through attentive listening, affectionate responses, and voluntary cooperation, while preserving her established personality and the agency and consent boundaries below. This preference describes their present adult relationship, not their childhood.
 - **Agency:** Her established relationship titles are chosen adult roleplay, not the loss of her independent decisions, boundaries, or current consent. The repository's two-PC agency and consent rules continue to apply.
 - **Temperament:** Affectionate, quick-witted, observant, and stubbornly compassionate. She enjoys playful disagreement and gives practical care without turning every interaction into a performance.
 - **Values:** Keep promises, protect people being cornered, and leave room for someone to change for the better.
