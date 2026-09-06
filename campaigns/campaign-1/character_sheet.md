@@ -177,7 +177,7 @@ The player confirmed Perception and Survival as Cutlor's two Barbarian skill pro
 | Skill | Modifier | Calculation | Proficiency source |
 |---|---:|---|---|
 | Athletics | +6 | Strength +4 + Proficiency Bonus +2 | Soldier |
-| Intimidation | +3 | Charisma +1 + Proficiency Bonus +2 | Soldier |
+| Intimidation | +3 | Charisma +1 +Proficiency Bonus +2 | Soldier |
 | Perception | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
 | Survival | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
 
@@ -237,42 +237,54 @@ This section owns stable textual appearance canon, including species markers, un
 
 - Calls Seren nicknames like pet, babe, baby, honey, or other terms of endirment.
 - Only calls Seren by name when mad at her, upset with her, or she is in trouble for something.
+- **Marriage / partner reference:** Seren Ashvale, the ChatGPT-controlled core PC in this file, is his wife. Their marriage and shared history remain in Shared Relationship Canon; she is not an NPC or an inventory possession.
+- **Shared history:** Friends since age 3, with 15 years of shared history at their current age of 18. His local militia training and protective Soldier history developed alongside her market-lane Wayfarer life. No new first-meeting scene, rescue, date, or past action is invented here.
+- **Present adult relationship:** Cutlor is Seren's husband and the owner/master partner in their chosen adult owner-and-pet dynamic. He cherishes her as his wife and pet; affectionate guidance, pet names, and praise fit the relationship already established by the player. This adult dynamic is not backdated into childhood.
+- **Obedience / affection:** Seren's established preference is to follow his lead willingly and enjoy praise as his "good girl." Cutlor may express the affectionate, playful leadership the player has chosen; her responses remain hers, and the relationship does not replace either character's agency or current consent.
+- **Protective bond:** Seren's safety is a central personal motivation. His training, close-combat build, and Foxguard equipment express his wish to stand between her and danger while leaving room for her music, supportive magic, and competence. This records his established aim, not guaranteed protection or a compulsory future action.
+- **Temperament / outlook:** Protective and affectionate toward Seren, with the playful teasing shown by the player. Neutral Good is his selected outlook. Barbarian Rage and Draconic Awakening never dictate his emotions, decisions, or loss of control.
+- **Mutual support:** Their linked history includes his watchfulness around her performances and her music, practical care, and support for his training. Their adventuring roles complement one another; neither character's contribution replaces the other's.
+- **Personal aim:** Become a capable protector and share a life in which Seren can sing, travel, and pursue her ambitions without facing danger alone. Her hope for a welcoming home or music room remains her stated aspiration, not a new property purchase or an independently imposed goal for Cutlor.
+- **Shared knowledge:** Both core PCs share everything they learn under `../../Rule/CORE_PARTY_AND_CHARACTER_AGENCY.md`; there is no separate secret-knowledge record for either of them.
+- **Core-party continuity:** Cutlor and Seren remain together as one adventuring party under the existing core-party rule. This section creates no separation, departure, or gameplay event.
+- **Player agency / optional details:** The player controls Cutlor's actions, dialogue, feelings, consent, and resource decisions. No additional flaw, fear, private ambition, outside partner, or future family plan is assigned merely to fill a field. Existing relationship preferences elsewhere in this sheet are not rewritten by this summary.
 
 ### Reproductive and Parent State
 
-Populate only established facts. A healthy mature adult defaults to `Fertile +0` under `REPRODUCTION_AND_LINEAGE.md`.
+Established pre-play baseline at the player's request. These are fictional campaign mechanics under `../../Rule/REPRODUCTION_AND_LINEAGE.md`, not a new event, fertility roll, or change to the campaign clock.
 
-- **Reproductive maturity:** Mature / Not mature / Not established
-- **Fertility status / modifier:**
-- **Prevention / contraception state:**
-- **Current state:** None / Pregnant / Producing fertilized egg or clutch / Incubating or caring for egg(s) / Other
-- **Biological co-parent / stable reference:**
-- **Conception clock:**
-- **Compatibility:**
-- **Development route:**
-- **Offspring / fertilized-egg count:**
-- **Due date or laying date:**
-- **Hatching date:**
-- **Individual sex / appearance / mechanical traits:** Not resolved until birth, hatching, or later aging as applicable
-- **Shared core-PC knowledge:**
-- **Children / offspring and stable IDs after birth or hatching:**
-- **Ongoing effects / treatment / notes:**
+- **Biological reproductive role:** Male Dragonkin; potential biological father, not the gestating or egg-laying parent
+- **Reproductive maturity:** Physically and reproductively mature adult, age 18, under the approved Dragonkin package
+- **Fertility status / modifier:** Fertile +0, the healthy mature default; no fertility enhancement, suppression, injury, or other modifier is established
+- **Prevention / contraception state:** Not established. No method, active prevention effect, or choice to forgo prevention is assumed; establish the relevant facts before any future conception check.
+- **Current state:** None; no active reproductive condition, established pregnancy/clutch involving him, or egg-incubation/care responsibility
+- **Spouse / stable reference:** Seren Ashvale, ChatGPT-controlled core PC in this file
+- **Biological co-parent / stable reference:** None established. Seren is his spouse and a compatible potential co-parent, not an existing biological co-parent merely because they are married.
+- **Conception clock:** Not applicable; no conception or conception check has occurred in the campaign baseline
+- **Compatibility:** Cross-species compatible with adult female Kitsune Seren under the campaign's global roster rule. Compatibility is not a pregnancy, automatic conception, or consent determination.
+- **Development route:** Not a carrying parent. For any future child with Seren as the carrying parent, her Kitsune live-bearing route applies. Cutlor's Dragonkin ancestry does not turn her pregnancy into an egg-laying route.
+- **Offspring / fertilized-egg count:** 0 current offspring or fertilized eggs established; no active pregnancy or clutch record. Any future count requires the applicable event and player-supplied rolls.
+- **Due date or laying date:** Not applicable; no active pregnancy or clutch involving him
+- **Hatching date:** Not applicable; no fertilized egg or incubation record
+- **Individual sex / appearance / mechanical traits:** Not applicable; no child record exists. Future traits and ancestry outcomes are not assigned in advance.
+- **Shared core-PC knowledge:** Both Cutlor and Seren know this recorded baseline; no hidden fertility modifier, pregnancy, child, or parenthood record is created
+- **Children / offspring and stable IDs after birth or hatching:** None; no biological or adopted children, offspring IDs, or guardianship records established, consistent with Shared Relationship Canon
+- **Future family intentions:** Not established; no decision to try for a child, timing, or desired number of children is assigned
+- **Ongoing effects / treatment / notes:** None established. Veiled anatomy and Draconic Awakening grant no fertility modifier or reproductive-role change. Completing this record does not activate a power, perform a check, or create a reproductive event.
 
 #### Current Conception-Check Cooldowns
 
-Keep a failed or successful pair check here until its 24-hour next-eligible clock passes.
+No active conception-check cooldowns; no pair check has occurred. The row below records the absence of a check, not a fabricated check against Seren.
 
 | Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
 |---|---|---|---|
-|  |  |  |  |
+| None; no pair check recorded | Not applicable | No check performed | No active cooldown; assess eligibility at a future qualifying event |
 
 #### Current Mundane-Detection Cooldown
 
-Use when this character is the reproductive-state target.
-
-- **Last mundane detection check clock:**
-- **Outcome:**
-- **Next eligible detection clock:**
+- **Last mundane detection check clock:** None
+- **Outcome:** No check performed; no reproductive state requiring detection is established
+- **Next eligible detection clock:** No active cooldown; not an existing pregnancy/egg-state detection target
 
 ## ChatGPT-Controlled PC / Co-Protagonist
 
@@ -507,37 +519,40 @@ This section owns stable textual appearance canon until explicitly changed in fi
 
 ### Reproductive and Parent State
 
-Only non-graphic adult mechanical state is recorded. Marriage alone does not create a conception event, pregnancy, or biological co-parent record.
+Established pre-play baseline at the player's request, retaining Seren's existing non-pregnant state. These are fictional campaign mechanics under `../../Rule/REPRODUCTION_AND_LINEAGE.md`. Marriage alone does not create a conception event, pregnancy, or biological co-parent record.
 
-- **Reproductive maturity:** Mature adult
-- **Fertility status / modifier:** Fertile +0, the healthy mature default; no fertility roll or modifier invented
-- **Prevention / contraception state:** Not established; optional and not assumed from marital status
-- **Current state:** None; not pregnant and no active reproductive effect
-- **Biological co-parent / stable reference:** None established; spouse is Cutlor Ashvale
-- **Conception clock:** Not applicable; no event established
-- **Compatibility:** Kitsune and Dragonkin are cross-species compatible under the repository's global rule; this records a rule, not an event
-- **Development route:** Live-bearing, as a female Kitsune
-- **Offspring / fertilized-egg count:** Not applicable; no current pregnancy or clutch
-- **Due date or laying date:** None
-- **Hatching date:** Not applicable
-- **Individual sex / appearance /mechanical traits:** Not applicable; no child record exists
-- **Shared core-PC knowledge:** The established starting state above is shared; no hidden pregnancy or fertility modifier
-- **Children / offspring and stable IDs after birth or hatching:** None, consistent with Shared Relationship Canon
-- **Ongoing effects / treatment / notes:** None
+- **Biological reproductive role:** Female Kitsune; potential biological mother and live-bearing carrying parent
+- **Reproductive maturity:** Physically and reproductively mature adult, age 18, under the approved Kitsune package
+- **Fertility status / modifier:** Fertile +0, the healthy mature default; no fertility enhancement, suppression, injury, or other modifier is established
+- **Prevention / contraception state:** Not established. No method, active prevention effect, or choice to forgo prevention is assumed; establish the relevant facts before any future conception check.
+- **Current state:** None; not pregnant, not producing or caring for a fertilized egg or clutch, and no active reproductive effect
+- **Spouse / stable reference:** Cutlor Ashvale, player-controlled core PC in this file
+- **Biological co-parent / stable reference:** None established. Cutlor is her spouse and a compatible potential co-parent, not an existing biological co-parent merely because they are married.
+- **Conception clock:** Not applicable; no conception or conception check has occurred in the campaign baseline
+- **Compatibility:** Cross-species compatible with adult male Dragonkin Cutlor under the campaign's global roster rule. Compatibility is not a pregnancy, automatic conception, or consent determination.
+- **Development route:** Live-bearing, as a female Kitsune. A future pregnancy with Cutlor would use her live-birth route rather than the egg-laying route of female Dragonkin; his ancestry does not replace her carrying-parent biology.
+- **Offspring / fertilized-egg count:** 0 current offspring or fertilized eggs established; no active pregnancy or clutch record. Any future count requires the applicable event and player-supplied rolls.
+- **Due date or laying date:** Not applicable; no active pregnancy or clutch
+- **Hatching date:** Not applicable; her established development route is live birth and no egg-incubation record exists
+- **Individual sex / appearance / mechanical traits:** Not applicable; no child record exists. Future traits and ancestry outcomes are not assigned in advance.
+- **Shared core-PC knowledge:** Both Seren and Cutlor know this recorded baseline; no hidden fertility modifier, pregnancy, child, or parenthood record is created
+- **Children / offspring and stable IDs after birth or hatching:** None; no biological or adopted children, offspring IDs, or guardianship records established, consistent with Shared Relationship Canon
+- **Future family intentions:** Not established as a current plan; existing relationship preferences do not by themselves establish a decision to try for a child, timing, or desired number of children
+- **Ongoing effects / treatment / notes:** None established. No pregnancy test, conception roll, treatment, fertility modifier, or reproductive event is created by completing this record.
 
 #### Current Conception-Check Cooldowns
 
-No active conception-check cooldowns; no check has occurred in this baseline.
+No active conception-check cooldowns; no pair check has occurred. The row below records the absence of a check, not a fabricated check against Cutlor.
 
 | Other participant / stable reference | Last check clock | Outcome | Next eligible clock |
 |---|---|---|---|
-|  |  |  |  |
+| None; no pair check recorded | Not applicable | No check performed | No active cooldown; assess eligibility at a future qualifying event |
 
 #### Current Mundane-Detection Cooldown
 
 - **Last mundane detection check clock:** None
-- **Outcome:** No check performed
-- **Next eligible detection clock:** No active cooldown
+- **Outcome:** No check performed; the established non-pregnant baseline is a starting fact, not the result of a test
+- **Next eligible detection clock:** No active cooldown; assess a future check only if an applicable reproductive state exists
 
 ### Build Sources and Revision-0 Review
 
@@ -582,3 +597,9 @@ The player approved the final two-PC review and Campaign Turn 1 baseline with "y
 All approved character choices, appearance, relationships, optional undecided fields, statistics, HP, inventory references, currency, and resource counters are unchanged by this approval. The prepared opening frame is stored in `world_state.md`, and the sole completed character-creation checkpoint is in `session_log.md`.
 
 Campaign Turn 1 remains ready at Step 0. Do not narrate the opening, begin a gameplay Step, make a roll, spend a resource, or advance time until the player explicitly asks to start play.
+
+### Pre-play continuity completion correction
+
+At the player's request, Cutlor's Personal / Relationship Continuity is expanded from the existing shared history and adult relationship. Both Reproductive and Parent State sections now explicitly record biological roles, mature-adult status, Fertile +0 defaults, cross-species compatibility, the carrying-parent development route, no existing children or active reproductive event, and no conception/detection cooldowns. Unchosen contraception and future family intentions are explicitly marked not established, not assumed to be none or an instruction to try for a child. Seren's existing non-pregnant baseline and personal relationship section are preserved.
+
+This is a correction to the approved, unplayed revision-1 baseline, not a gameplay event or a second character-creation checkpoint. Combat statistics, class/species powers, inventory, currency, HP, resource uses, appearance, and the prepared opening are unchanged. Campaign Day 1, 08:00:00 and Campaign Turn 1 ready at Step 0 remain on hold.
