@@ -14,7 +14,7 @@ The two core PCs share all item information either of them learns. Do not store 
 
 ## Player-Controlled PC
 
-**Owner:** Cutlor Ashvale. The player approved loadout B, Foxguard, during revision-0 character creation. Items are identified and serviceable. Only the Potion of Healing is magical; no attunement, curse, or additional hidden property is established.
+**Owner:** Cutlor Ashvale. The player approved loadout B, Foxguard, during revision-0 character creation and subsequently delegated a Light/Medium armor choice; fitted Light Leather Armor was selected. Items are identified and serviceable. Only the Potion of Healing is magical; no attunement, curse, or additional hidden property is established. Draconic Guard and Awakening are Cutlor's personal features, not enchantments on these items.
 
 ### Acquisition and Reconciliation
 
@@ -31,22 +31,24 @@ Starting funds use the gold alternatives instead of both preset equipment packag
 | [Dice Set](https://www.dndbeyond.com/equipment/449-dice) | 1 | 1 SP | 1 SP |
 | [Healer's Kit](https://www.dndbeyond.com/equipment/515-healers-kit) | 1 | 5 GP | 5 GP |
 | [Potion of Healing](https://www.dndbeyond.com/magic-items/8960641-potion-of-healing) | 1 | 50 GP | 50 GP |
-| **Total spent** | | | **94 GP 6 SP** |
+| [Leather Armor, fitted Foxguard styling](https://www.dndbeyond.com/equipment/10-leather) | 1 | 10 GP | 10 GP |
+| **Total spent** | | | **104 GP 6 SP** |
 
-Copper reconciliation: 12,500 CP starting funds - 9,460 CP purchases = 3,040 CP remaining, recorded as 30 GP and 4 SP. No discounts, markups, quantity adjustments, debt, wages, or transfers from Seren. No named vendor or gameplay transaction is invented.
+Copper reconciliation: 12,500 CP starting funds - 9,460 CP original Foxguard purchases - 1,000 CP added Leather Armor = 2,040 CP remaining, recorded as 20 GP and 4 SP. No discounts, markups, quantity adjustments, debt, wages, or transfers from Seren. No named vendor or gameplay transaction is invented.
 
 ### Equipped
 
-This is the selected starting loadout, not a narrated in-world action. Gauntlets and clothing are worn, the pouch is at the belt, and the shield is wielded in one hand; handedness remains unspecified.
+This is the selected starting loadout, not a narrated in-world action. Leather Armor, gauntlets, and clothing are worn, the pouch is at the belt, and the shield is wielded in one hand; handedness remains unspecified. Armor and clothing accommodate the chosen draconic anatomy under the local manifestation rule; no time or resource was spent putting them on during setup.
 
 | Item | Quantity / weight | State | Known mechanics / description |
 |---|---|---|---|
 | Ironknuckle Gauntlets | 1 pair / 2 lb. total | Worn; only an unoccupied hand can strike | Approved nonmagical Simple Melee weapon. Reach 5 feet; Strength attack +6; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. Open fingers leave natural claws usable. Not armor; no AC bonus. No Light property or free extra attack. Sap mastery is selected: a gauntlet hit gives the target Disadvantage on its next attack roll before the start of Cutlor's next turn. See `character_sheet.md` for the selected mastery and `Rules/Campaign-1_Rules.md` for the full local weapon mechanics. |
-| Watchman's Round Shield | 1 / 6 lb. | Wielded; occupies one hand | Standard Shield, wood faced with iron, not a custom defensive power. +2 AC with Barbarian shield training: 19 with Unarmored Defense, 17 without the shield. Don or doff using a Utilize action. It does not automatically protect Seren or allow its occupied hand to make claw/gauntlet attacks. |
-| Traveler's Clothes | 1 set / 4 lb. | Worn | Ordinary durable clothing fitted around existing Dragonkin anatomy. No armor bonus. Detailed colors, ornament, and styling remain open. |
+| Watchman's Round Shield | 1 / 6 lb. | Wielded; occupies one hand | Standard Shield, wood faced with iron, not a custom defensive power. +2 AC: Cutlor's Light-armor-compatible Draconic Guard gives 19 with the shield, 17 without it. His personal active Awakening would add +1, not an extra power on the shield. Don or doff using a Utilize action. It does not automatically protect Seren or allow its occupied hand to make claw/gauntlet attacks. |
+| Leather Armor, Foxguard styling | 1 / 10 lb. | Worn | Standard nonmagical Light armor: base AC 11 + Dexterity modifier, no Strength requirement or inherent Stealth Disadvantage; 1 minute to don or doff. Normally 14 base AC for Cutlor, or 16 with shield. His explicit personal Draconic Guard rule permits using 17 base AC instead, 19 with shield; do not add the two formulas. Charcoal-black sleeveless cuirass silhouette, small layered leather shoulder panels, copper-colored stitching, and fitted wing openings. Styling supplies no added armor pieces, weight, AC, resistance, or item power. |
+| Traveler's Clothes | 1 set / 4 lb. | Worn | Dark sleeveless tunic, charcoal trousers with a fitted tail opening, and sturdy brown boots. Existing ordinary clothing fitted to Dragonkin anatomy; no armor bonus or additional gear granted. |
 | Belt Pouch | 1 / 1 lb. empty | Worn; holds currency and dice | Holds up to 6 lb. within one-fifth of a cubic foot. Mundane, not extradimensional. |
 
-Natural claws are part of Cutlor's species, not purchased items. On each attack choose the applicable claw, gauntlet, or other weapon profile; do not add those profiles together. A hand holding the shield or a javelin cannot simultaneously make a gauntlet strike.
+Natural claws are part of Cutlor's species, not purchased items. On each attack choose the applicable claw, gauntlet, or other weapon profile; do not add those profiles together. A hand holding the shield or a javelin cannot simultaneously make a gauntlet strike. Awakening's once-per-own-turn damage bonus is a character feature recorded in `character_sheet.md`, not a permanent change to the weapon's intrinsic damage.
 
 ### Carried / Stored
 
@@ -67,17 +69,17 @@ No off-party storage is established. Explorer's Pack contents are itemized exact
 | Healer's Kit | 1 / 3 lb. | Packed, accessible | 10 uses. Utilize action and 1 use stabilize an Unconscious creature at 0 HP without a Medicine check. This kit alone restores no HP. |
 | Potion of Healing | 1 / 0.5 lb. | Securely carried, unopened | Common magical consumable; no attunement. Bonus Action to drink or administer to a creature within 5 feet. Restores 2d4 + 2 HP up to maximum; player rolls healing dice. Consumed on use. |
 
-Total equipment weight, counting each pack component once: 79.5 lb., before coins. This is carried weight, not the backpack's internal load. No holding bag, mount, grappling hook, maul, spare shield, or alternative gauntlet design was acquired.
+Total equipment weight, counting each pack component once: 89.5 lb. before coins, including the added 10 lb. Leather Armor. This is total worn/carried weight, not the backpack's internal load. No holding bag, mount, grappling hook, maul, spare shield, or alternative gauntlet design was acquired.
 
 ### Currency
 
 - **Platinum:** 0 PP
-- **Gold:** 30 GP
+- **Gold:** 20 GP
 - **Electrum:** 0 EP
 - **Silver:** 4 SP
 - **Copper:** 0 CP
 - **Other currency:** None
-- **Reconciliation:** 125 GP - 94 GP 6 SP = 30 GP 4 SP. Seren's 35 GP is unchanged and separately owned.
+- **Reconciliation:** 125 GP - 94 GP 6 SP original Foxguard - 10 GP Leather Armor = 20 GP 4 SP. Seren's 35 GP is unchanged and separately owned.
 
 ### Consumables / Charges
 
@@ -89,22 +91,24 @@ Total equipment weight, counting each pack component once: 79.5 lb., before coin
 - **Water:** 4 / 4 pints
 - **Thrown weapons:** 4 / 4 Javelins owned and carried; no separate ammunition stock
 - **Attunements / rechargeable items:** None
-- Class resources are recorded in `character_sheet.md`, not inventory charges. No resource was used during setup.
+- Class and personal transformation resources are recorded in `character_sheet.md`, not inventory charges. No resource was used during setup.
 
 ### Important / Quest Items
 
-None established. Foxguard is the loadout name; the shield and gauntlets have no unlisted power, enchantment, or quest role.
+None established. Foxguard is the loadout name; the shield, armor, and gauntlets have no unlisted power, enchantment, or quest role. Cutlor's personal form features do not transfer with these items.
 
 ### Expenditures
 
-Revision-0 Foxguard approval: spend 94 GP 6 SP from the chosen 125 GP starting-gold allowance for the exact acquisition table above. Every purchased item and the remaining 30 GP 4 SP are reconciled together. No gameplay Step, elapsed campaign time, merchant stock, or recurring-price entry is created.
+Revision-0 Foxguard approval: spend 94 GP 6 SP from the chosen 125 GP starting-gold allowance for the original Foxguard acquisitions, leaving 30 GP 4 SP at that step.
+
+Revision-0 delegated armor selection: spend 10 GP from the remaining 30 GP 4 SP on one fitted Leather Armor, leaving 20 GP 4 SP. Current acquisition totals, carried weight, character appearance, AC references, and remaining currency are synchronized. No gameplay Step, elapsed campaign time, merchant stock, sale, transfer, or recurring-price entry is created.
 
 ### Starting Equipment References
 
 - Barbarian gold option and weapon/shield training: `https://www.dndbeyond.com/sources/dnd/br-2024/character-classes`
 - Soldier gold option: `https://www.dndbeyond.com/sources/dnd/br-2024/character-origins`
 - Standard equipment mechanics and weights: direct item references above and `https://www.dndbeyond.com/sources/dnd/br-2024/equipment`
-- Ironknuckle Gauntlets: approved Campaign-1-only rule in `Rules/Campaign-1_Rules.md`
+- Ironknuckle Gauntlets and personal Draconic Guard / Awakening exceptions: Campaign-1-only rules in `Rules/Campaign-1_Rules.md`
 - Source/license attribution for SRD-derived mechanics remains in the character sheet.
 
 ## ChatGPT-Controlled PC / Co-Protagonist

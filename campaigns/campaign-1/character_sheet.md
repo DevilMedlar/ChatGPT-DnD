@@ -29,12 +29,14 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Age:** 18
 - **Gender / pronouns:** He/Him
 - **Biological reproductive role:** Male
-- **Species / ancestry:** Dragonkin
+- **Species / ancestry:** Dragonkin; standard package with the personal Campaign-1 Veiled Dragonkin / Draconic Awakening override in `Rules/Campaign-1_Rules.md`, not a second species or a True Dragon monster stat block
 - **Class:** Barbarian; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player's latest confirmation
-- **Subclass:**
-- **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Ability increases are finalized below; remaining mechanical choices are not selected by this narrative.
+- **Subclass:** Not available at Level 1; select at Barbarian Level 3
+- **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Ability increases, fixed skills, dice-set proficiency, Savage Attacker, and starting-gold choice are established below.
 - **Level:** 1
 - **XP:** 0/300
+- **Languages:** Not yet selected
+- **Alignment:** Not yet selected
 
 ### Player-Selected Build Direction
 
@@ -44,8 +46,8 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Ironknuckle Gauntlets (Sap) and Javelins (Slow) are the confirmed starting Weapon Mastery selections. Remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. A desired performance goal is not a guaranteed outcome.
-- **Setup state:** Revision 0 remains open. The approved Foxguard starting acquisitions are recorded without a gameplay Step, clock advance, or completed campaign checkpoint.
+- **Approval status:** Barbarian, Soldier, the rolled ability allocation with +1 Strength/+1 Dexterity/+1 Constitution, Perception and Survival, dice-set proficiency, Foxguard loadout B, and Ironknuckle Gauntlets (Sap) / Javelins (Slow) remain established. The player subsequently requested voluntary horns/wings/tail, a power-increasing battle form, and Light/Medium armor, delegating the remaining design. The GM implemented the bounded Campaign-1 manifestation, Draconic Guard, and Draconic Awakening rules under that delegation, chose Light Leather Armor, and completed the remaining appearance. Numerical limits are the GM's implementation, not separately player-specified values or official rules. Languages, alignment, optional personal details, and the final two-PC review remain open. The later subclass is not selected. Performance goals never guarantee outcomes.
+- **Setup state:** Revision 0 remains open. The starting acquisitions and delegated design are recorded without a gameplay Step, clock advance, transformation activation, or completed campaign checkpoint.
 
 ### Background History
 
@@ -78,17 +80,18 @@ Approved base allocation: Strength 17, Dexterity 15, Constitution 17, Intelligen
 
 ### Combat Statistics
 
-- **HP / Max HP:** 16 / 16; Level-1 Barbarian maximum die value 12 + Constitution modifier 4
+- **HP / Max HP:** 16 / 16; Level-1 Barbarian maximum die value 12 + Constitution modifier 4. Maximum HP is unchanged by appearance or Awakening.
 - **Hit Dice:** 1d12; 1 of 1 available; add Constitution modifier +4 when spent for healing under an applicable rule
-- **Temporary HP:** 0
-- **Armor Class / calculation:** 19 with the selected Foxguard shield wielded = Unarmored Defense 10 + Dexterity modifier 3 + Constitution modifier 4 + Shield 2. Without the shield, AC is 17. No body armor worn; Ironknuckle Gauntlets are weapons and add no AC.
+- **Temporary HP:** 0; Awakening has not been activated
+- **Armor Class / calculation:** 19 with Light Leather Armor and the Foxguard shield: personal Draconic Guard base 10 + Dexterity 3 + Constitution 4, plus Shield 2. Without the shield, AC is 17. This uses the explicit Campaign-1 Light-armor exception, not ordinary Unarmored Defense while armored; do not also add Leather's 11. While Draconic Awakening is active, add 1: AC 20 with shield or 18 without. Ironknuckle Gauntlets add no AC.
 - **Initiative:** +3
 - **Speed:** 30 feet, from Dragonkin
-- **Special movement:** No Fly Speed at Level 1; Dragonkin Wing-Assisted Descent remains governed by the species package
+- **Special movement:** No Fly Speed at Level 1. Wing-Assisted Descent requires movable manifested wings; the local rule permits manifestation as part of that Reaction.
 - **Proficiency Bonus:** +2
 - **Passive Perception:** 14 = 10 + Wisdom modifier 2 + Proficiency Bonus 2; Perception proficiency from Barbarian
 - **Saving Throw Proficiencies:** Strength, Constitution, from Barbarian
 - **Saving throw totals:** Strength +6; Dexterity +3; Constitution +6; Intelligence +0; Wisdom +2; Charisma +1
+- **Resistance / immunity:** No passive elemental Resistance or immunity. Active Rage supplies Bludgeoning, Piercing, and Slashing Resistance; Awakening does not duplicate it.
 
 #### Derived claw damage
 
@@ -98,21 +101,42 @@ The approved Dragonkin claws deal 1d6 Slashing plus the chosen attack ability mo
 
 - **Ironknuckle Gauntlet:** Strength attack +6 = +4 Strength +2 proficiency; reach 5 feet; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. The striking hand must not be occupied by a shield, another weapon, an object, or a grapple. Sap mastery is selected and usable on a qualifying gauntlet hit; see Weapon Mastery below.
 - **Javelin:** Strength attack +6; reach 5 feet or Thrown range 30/120 feet; 1d6 + 4 Piercing, or 1d6 + 6 with applicable Rage, including Strength-based throws. Four owned. Slow mastery is selected and usable on a qualifying damaging hit, including a thrown hit; see Weapon Mastery below.
+- **Awakened strike preview:** During an active Awakening, one qualifying Strength-based damaging hit on each of Cutlor's own turns may add Proficiency Bonus +2 beyond the normal Rage bonus. A claw, Ironknuckle, or Javelin hit can therefore deal 1d6 + 8 of its normal damage type for that one hit. Any other hit uses the ordinary applicable profile. No accuracy increase, extra attack, off-turn Awakening bonus, or doubled flat bonus on a critical hit is granted.
 - **Hand/action limits:** The shield occupies one hand; the other may make the applicable claw or gauntlet attack, wield a javelin, or perform another permitted task. Do not combine claw and gauntlet damage. Neither wearing two gauntlets nor owning four javelins grants an extra attack. Equipment possession does not grant any unselected mastery.
 
 ### Species Package
 
-Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its mechanics implicit.
+Authority: `../../Rule/PLAYABLE_CHARACTER_OPTIONS.md`, Dragonkin, with the personal manifestation, Draconic Guard, and Awakening overlay in `Rules/Campaign-1_Rules.md`. No Dragonborn or True Dragon package is added.
 
-- **Creature Type:**
-- **Size:**
-- **Typical lifespan:**
-- **Fixed species choices:**
-- **Species traits:**
-- **Species trait save DCs:**
-- **Species trait uses / recharge:**
-- **Level-gated traits:**
-- **Forms / limitations:**
+- **Creature Type:** Humanoid
+- **Size:** Medium in both appearances; no size increase from horns, wings, tail, or Awakening
+- **Typical lifespan:** About 200 years
+- **Fixed species choices:** None required by the base Dragonkin package; current appearance and form state are recorded below
+- **Darkvision:** 60 feet, using normal Darkvision rules; eye appearance adds no extra sense
+- **Draconic Claws:** Natural weapons, 1d6 Slashing plus Strength or Dexterity modifier; no Light property, separate mastery, or automatic additional attack
+- **Wing-Assisted Descent:** On a fall of at least 10 feet, while conscious and able to move manifested wings, use a Reaction to reduce falling damage by 5 times Proficiency Bonus, currently 10. Before landing, may also move horizontally up to Speed, currently 30 feet, with open space. Local manifestation can be included in that same Reaction; no fly or hover speed is created.
+- **Mature Flight:** At character level 5, Bonus Action to gain Fly Speed equal to Speed for 10 minutes, once per Long Rest, with wings manifested. Cannot be used in Medium or Heavy armor. Not yet usable at Level 1; ordinary appearance changes do not unlock it.
+- **Draconic Build:** Count as one size larger only for carrying capacity and weight pushed, dragged, or lifted; this is not a combat Size change, grapple-size increase, or universal Strength bonus
+- **Voluntary manifestation:** At-will Bonus Action to manifest or withdraw horns, wings, and/or tail; can be included in the Bonus Action entering Rage, and wings can be manifested during the descent Reaction. Full limits and equipment accommodation are in the local rule. Appearance alone grants no healing, Temporary HP, extra damage, or bonus AC.
+- **Draconic Guard:** In no armor or Light armor, may use base AC 10 + Dexterity modifier + Constitution modifier instead of the armor calculation; a wielded Shield adds +2 once. This is a local personal exception, not standard Barbarian armor stacking.
+- **Draconic Awakening:** Limited battle boost under the local rule, summarized with current resources below; not an official species or class feature
+- **Species trait save DCs:** None of the currently established species traits imposes a saving throw
+- **Species trait uses / recharge:** Appearance alone is at will; descent uses the Reaction allowance; Awakening is 1 / 1 per Long Rest; Mature Flight remains level-gated
+- **Forms / limitations:** Same Dragonkin identity, ability scores, HP maximum, Size, and equipment ownership in both appearances. Claws and fine scales remain when other appendages are withdrawn. Horns, wings, and tail give no independent attacks, extra hands, automatic cover, or unlisted powers.
+
+#### Current form and Draconic Awakening state
+
+- **Current appearance:** Ordinary / veiled; horns withdrawn, wings withdrawn, tail withdrawn
+- **Draconic Awakening:** Inactive; 1 / 1 use available, Long Rest recharge; no use has been spent
+- **Activation:** With the Bonus Action entering Rage, or a Bonus Action while already raging; requires at least 1 HP and the ability to act. Horns, wings, and tail manifest as part of activation. A newly started Rage still spends its own use.
+- **Duration / ending:** Up to 1 minute, ending earlier if Rage ends, Cutlor is Incapacitated or dies, he withdraws any of the three features, or he voluntarily ends Awakening on his turn. Folding wings is not withdrawal. Cosmetic features may stay manifested after the boost ends if the player chooses.
+- **One-time healing on activation:** Constitution modifier +4 HP to Cutlor, capped by his unchanged HP maximum of 16; no stored surplus, ongoing regeneration, or revival from 0 HP
+- **One-time Temporary HP on activation:** 6 = Proficiency Bonus 2 + Constitution modifier 4; do not stack with another Temporary HP pool. Remaining Temporary HP from this feature expire when it ends. No refresh from changing appearance.
+- **Extra damage:** +2, equal to current Proficiency Bonus, once on each of Cutlor's own turns after a qualifying Strength-based hit deals damage; same damage type, separate from ordinary Rage +2
+- **Extra defense:** +1 AC during Awakening; conditional totals 20 with shield, 18 without
+- **Active start / end clock:** None; no transformation or healing occurred during character creation
+- **Used empowered strike this turn:** Not applicable; no gameplay turn has begun
+- **Knowledge:** Cutlor and Seren know the established form's capabilities and limits; no hidden power or transformation history is invented
 
 ### Class and Advancement
 
@@ -120,10 +144,23 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 - **Class Hit Die:** d12
 - **Armor training:** Light armor, Medium armor, and Shields, from Barbarian; no Heavy armor training
 - **Weapon / tool proficiencies:** Simple and Martial weapons, from Barbarian; Dice set, from Soldier (player selected)
-- **Current class features:**
-- **Class resources / current uses:**
+- **Current class features:** Rage, Unarmored Defense, Weapon Mastery; the local Draconic traits are separately sourced above
+- **Class resources / current uses:** Rage 2 / 2, currently inactive; regain 1 expended use after a Short Rest and all uses after a Long Rest. Awakening uses are separate and do not recover on a Short Rest.
 - **Weapon Mastery choices:** Ironknuckle Gauntlets (Sap) and Javelins (Slow), confirmed by the player; both starting Barbarian 1 selections are used. These unlock only the named weapons' mastery properties, not mastery for natural claws.
 - **Next-level threshold:** 300 cumulative XP for Level 2
+- **Not yet active:** Danger Sense and Reckless Attack arrive at Barbarian 2; subclass and Primal Knowledge at Barbarian 3; Extra Attack at Barbarian 5. No future feature is granted by the new appearance.
+
+#### Rage and Unarmored Defense
+
+Rage takes a Bonus Action and cannot be entered in Heavy armor. While active, gain Resistance to Bludgeoning, Piercing, and Slashing damage, Advantage on Strength checks and Strength saving throws, and +2 damage when a Strength-based weapon attack or Unarmed Strike deals damage. No spellcasting or Concentration is allowed during Rage. Rage lasts until the end of the next turn and can be extended on subsequent turns by making an attack roll against an enemy, forcing an enemy to make a saving throw, or taking a Bonus Action to extend it, up to 10 minutes. It ends early if Cutlor dons Heavy armor or becomes Incapacitated. Damage taken alone does not extend this 2024 Rage. No Rage is active in the setup state.
+
+Ordinary Unarmored Defense uses base AC 10 + Dexterity + Constitution modifiers when wearing no armor and permits a Shield. The Campaign-1 Draconic Guard rule explicitly makes that calculation available in Light armor as well. Only one base-AC calculation is used.
+
+#### Soldier Origin Feat: Savage Attacker
+
+Soldier supplies Savage Attacker, not an additional discretionary feat. Once per turn when Cutlor hits a target with a weapon, he may have the player roll that weapon's damage dice twice and choose either roll. Add flat Strength, applicable Rage, and eligible Awakening bonuses once, not twice. This grants no additional attack or automatic success. No Savage Attacker roll has been made during setup.
+
+References: `https://www.dndbeyond.com/sources/dnd/br-2024/character-classes#Barbarian`; `https://www.dndbeyond.com/sources/dnd/br-2024/feats#SavageAttacker`. Current-level facts are recorded here; future progression remains subject to the adopted official rules.
 
 #### Weapon Mastery
 
@@ -148,27 +185,29 @@ Ordinary passive Perception is 14 (10 + Perception modifier 4). The player confi
 
 ### Spells
 
-Use when applicable.
+- **Spellcasting ability:** None; Barbarian 1 and this Dragonkin package grant no spellcasting
+- **Spell Attack Modifier:** Not applicable
+- **Spell Save DC:** Not applicable
+- **Spellcasting focus:** None
+- **Cantrips:** None
+- **Prepared / known spells:** None
+- **Spell slots:** None
 
-- **Spellcasting ability:**
-- **Spell Attack Modifier:**
-- **Spell Save DC:**
-- **Spellcasting focus:**
-- **Cantrips:**
-- **Prepared / known spells:**
-- **Spell slots:**
+The local transformation is a feature, not a spell, and requires no Concentration or spell slot.
 
 ### Equipment Summary
 
 The detailed authoritative inventory belongs in `inventory.md`.
 
-Approved starting loadout B, Foxguard: Ironknuckle Gauntlets worn, one Watchman's Round Shield wielded, four carried Javelins, Explorer's Pack, Traveler's Clothes, one Belt Pouch, one Dice Set, one Healer's Kit (10 / 10 uses), and one unused Potion of Healing. No body armor. The shield is mechanically standard; the gauntlets use `Rules/Campaign-1_Rules.md`.
+Approved starting loadout B, Foxguard, subsequently supplemented by the player's delegated Light-armor choice: fitted Leather Armor, Ironknuckle Gauntlets, one Watchman's Round Shield, four carried Javelins, Explorer's Pack, Traveler's Clothes, one Belt Pouch, one Dice Set, one Healer's Kit (10 / 10 uses), and one unused Potion of Healing. Leather, gauntlets, clothing, and pouch are worn; shield wielded. The armor and shield are mechanically standard items; Cutlor's personal Draconic Guard permits the alternate AC formula in Light armor. The gauntlets use `Rules/Campaign-1_Rules.md`.
 
 The Explorer's Pack is unpacked into one Backpack, one Bedroll, two full Oil flasks, ten days of Rations, one Rope, one Tinderbox, ten unused Torches, and one full Waterskin (4 pints). Bundle contents are counted once. No equipment was taken from Seren.
 
-Starting funds: Barbarian gold option 75 GP + Soldier gold option 50 GP = 125 GP, instead of their preset equipment grants. Purchases total 94 GP 6 SP; remaining currency is 30 GP 4 SP. No other currency, debt, or spending is established by this choice. Full quantities, weights, known uses, condition, and acquisition reconciliation are in `inventory.md`.
+Starting funds: Barbarian gold option 75 GP + Soldier gold option 50 GP = 125 GP, instead of their preset equipment grants. Initial Foxguard purchases were 94 GP 6 SP; the additional Leather Armor costs 10 GP. Total starting purchases are now 104 GP 6 SP and remaining currency is 20 GP 4 SP. Total equipment weight is 89.5 lb. before coins. No other currency, debt, or spending is established. Full quantities, weights, known uses, condition, and acquisition reconciliation are in `inventory.md`.
 
 ### Conditions / Ongoing Effects
+
+At full starting HP; no active Rage, Awakening, Temporary HP, spell, Concentration, or gameplay-applied condition. Cosmetic form is ordinary / veiled. No in-world transformation, healing, attack, rest, or equipment handling time has occurred during setup.
 
 ### Appearance
 
@@ -181,7 +220,18 @@ This section owns stable textual appearance canon, including species markers, un
 - **Scale color / finish:** Charcoal-black with a subtle copper sheen. Warm metallic highlights appear when light grazes the scales, without a bright polished-metal appearance.
 - **Face:** Mostly humanlike features, with a strong jaw, defined cheekbones, and subtle draconic contours rather than an extended snout.
 - **Eyes:** Deep emerald-green irises with subtly vertical pupils and otherwise humanlike eye structure. No magical glow or added sensory ability.
-- **Selection context:** The player delegated the height-and-build and eye choices and explicitly approved the subtle scales, charcoal-and-copper coloring, and mostly humanlike facial structure during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Exact scale distribution, underlying skin tone, hair, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
+- **Skin / scale distribution:** Warm medium-brown skin, with the finest charcoal-and-copper scale pattern concentrated near the temples, sides of the neck, collarbones, shoulders, outer forearms, and shins, fading to subtler traces elsewhere. The face and torso remain skinlike rather than plated; the established barely noticeable texture remains even in the manifested form.
+- **Hair / grooming:** Thick, slightly wavy black hair, short at the sides and longer on top, swept back with a few loose strands. It lies naturally between the horns when they are present. Clean-shaven face, humanlike ears, no added scars, tattoos, or jewelry.
+- **Horns when manifested:** One symmetrical pair of dark charcoal horns, about 8 inches along their curve, sweeping back from the upper sides of the head. Smooth near the tips with fine natural ridges at the bases, not a large crown or extra weapon.
+- **Wings when manifested:** One strong, articulated pair with dark supporting structures and copper-brown membranes, about 12 feet across when fully spread. They fold close along the back. Their appearance grants no early flight or extra combat space.
+- **Tail when manifested:** A long, tapering charcoal-scaled tail, about 4.5 feet long, with the same restrained copper sheen and no blade or weaponlike club. Expressive movement remains under the player's control; it is not an extra hand.
+- **Ordinary form:** Horns, wings, and tail are withdrawn and absent from view until the player chooses to manifest them. Fine scales, emerald eyes, and existing natural claws remain; this is not a disguise spell or another person's face.
+- **Manifested / awakened presentation:** The same person and body size with the chosen horns, wings, and tail present. Awakening does not replace him with a giant dragon, change his eye color, force an emotion, or override the player. Physical manifestation and the limited power boost are separately tracked.
+- **Current outfit / armor:** Fitted charcoal-black Leather Armor, with a sleeveless cuirass silhouette, small layered leather shoulder panels, and copper-colored stitching. Flexible fitted openings accommodate the wings; clothing has a matching tail opening. Under it are the existing dark sleeveless traveling tunic, charcoal trousers, and sturdy brown boots. These are styling of the purchased armor and Traveler's Clothes, not extra armor pieces or protective bonuses.
+- **Visible equipment:** Existing open-finger Ironknuckle Gauntlets, standard Watchman's Round Shield, belt pouch, and carried travel gear. No new weapon, cape, enchanted ornament, or unpriced keepsake is implied by the appearance.
+- **Voice:** Warm, resonant baritone; the player chooses his words, emotional delivery, and behavior
+- **Selection context:** Previously selected height, build, subtle scales, facial structure, and emerald eyes are retained. The player specified the draconic appendages, requested that they show only by choice, and delegated the remaining appearance and a Light/Medium armor choice. Remaining visual details and Light Leather Armor were chosen under that delegation. Mechanical exceptions are explicit in the local rules, not implied cosmetic benefits.
+- **Reference art:** None established; no generated portrait or repository image path is claimed
 
 ### Personal / Relationship Continuity
 
@@ -516,5 +566,7 @@ Gaming-set selection update, revision 0: The player confirmed dice as Cutlor's S
 Foxguard equipment update, revision 0: The player approved loadout B. Cutlor uses the 75 GP Barbarian and 50 GP Soldier starting-gold alternatives, spends 94 GP 6 SP on the exact Foxguard inventory, and retains 30 GP 4 SP. G2 Ironknuckle Gauntlets are approved as a Campaign-1-only weapon rule; their Sap mastery and the Javelins' Slow mastery were still unselected at this equipment step. Shield-wielding AC is 19, unshielded AC is 17, HP remains 16, and both gauntlet and Javelin attack modifiers are +6. Inventory acquisition, quantities, prices, condition, consumables, and equipment summaries reconcile. No appearance choices, extra attacks, new gameplay event, XP, clock change, or sexual/reproductive event is established by this equipment approval. Seren's character and possessions remain unchanged; final two-PC review is still pending.
 
 Weapon Mastery update, revision 0: The player accepted Ironknuckle Gauntlets (Sap) and Javelins (Slow) as Cutlor's two starting mastery selections. Their effects, limits, and Long Rest replacement rule are recorded above, and inventory mirrors are synchronized. No weapon has been used, no creature is affected, and no new equipment, expenditure, stat increase, gameplay Step, time advance, or completed checkpoint is created. Other unfinished character-creation fields remain open.
+
+Delegated draconic appearance and power-form update, revision 0: The player requested optional horns, wings, and tail, a battle boost covering healing/damage/HP protection/defense, and Light/Medium armor with the remaining design delegated. Appearance is completed without changing previously approved features. The GM's bounded personal homebrew is recorded in `Rules/Campaign-1_Rules.md`: at-will anatomy manifestation, Draconic Guard allowing the existing base-AC formula in Light armor, and Draconic Awakening once per Long Rest for up to 1 minute while raging, granting 4 HP healing and 6 Temporary HP on activation, +2 damage once on each own turn, and +1 AC. No power was activated. Baseline HP remains 16/16, Temporary HP 0, current AC 19 with shield; potential awakened AC 20. Rage is recorded at 2/2 and Awakening at 1/1. The standard current-level Dragonkin and Barbarian mechanics and Soldier feat are now explicitly recorded. Added Leather Armor costs 10 GP, making total purchases 104 GP 6 SP and remaining currency 20 GP 4 SP; equipment weight is 89.5 lb. before coins. No unrolled randomness, new biography, extra species package, permanent stat increase, Seren change, time advance, or gameplay Step occurred. Languages, alignment, optional personal fields, and final creation review remain open.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
