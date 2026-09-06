@@ -40,12 +40,12 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 - **Combat concept:** Strength-based close-combat Dragonkin Barbarian with a brawler/berserker-like fighting style, using open-hand gauntlets that do not interfere with his natural claws.
 - **Ability priorities:** Strength supplies the main melee attack and damage ability; Dexterity is secondary for agility, reflexes, stealth, and ranged accuracy; Constitution supports health, stamina, and durability. This supersedes the earlier Dexterity-primary direction. The player-approved rolled allocation is finalized in Ability Scores below.
-- **Gauntlet requirement:** Open-hand/open-finger construction must leave the claws usable. Materials, item classification, price, weight, damage, armor interaction, and any special properties remain to be established with the equipment choice; this preference alone grants no extra damage, AC, attack, or Weapon Mastery property.
+- **Gauntlet requirement:** Open-hand/open-finger construction leaves the claws usable. The player approved G2 Ironknuckle Gauntlets through loadout B, Foxguard. Their Campaign-1-only mechanics are in `Rules/Campaign-1_Rules.md`; ownership and acquisition cost are in `inventory.md`. They are weapons, not armor, and do not add damage to claw attacks or grant extra attacks.
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. The claw-compatible open-hand gauntlet concept and goals above remain established. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Weapon Mastery choices, equipment, appearance, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
-- **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Weapon Mastery selections, remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. Neither Sap nor Slow is selected by acquiring equipment. A desired performance goal is not a guaranteed outcome.
+- **Setup state:** Revision 0 remains open. The approved Foxguard starting acquisitions are recorded without a gameplay Step, clock advance, or completed campaign checkpoint.
 
 ### Background History
 
@@ -55,7 +55,7 @@ Cutlor's reason for learning to fight was never a distant throne or the promise 
 
 Wanting to protect her was not enough; he wanted to know how. Cutlor trained with a local militia, learning to keep his footing, judge a threat, endure hard exertion, and stand his ground without wasting every ounce of strength in the first rush. Local guard duties gave that training a practical purpose among the same market streets where Seren performed. His Soldier background comes from this training and service close to home, not years of distant warfare or an invented career that separated them.
 
-He gravitated toward close fighting: firm footing, physical pressure, and the reach of his own hands and claws. The open-hand gauntlets he wants now suit that preference, leaving his natural claws free rather than hiding them inside closed metal fingers. This is his fighting concept, not equipment already acquired or an extra mechanical benefit.
+He gravitated toward close fighting: firm footing, physical pressure, and the reach of his own hands and claws. The open-hand gauntlets he wants now suit that preference, leaving his natural claws free rather than hiding them inside closed metal fingers. This describes his historical fighting concept; the subsequently approved Foxguard starting equipment is recorded separately in `inventory.md`.
 
 Their partnership was never only about what happened when a fight started. Seren learned to notice the change in his attention when a situation turned wrong, and he learned to recognize when her easy conversation was buying them time to leave. She could soften a quarrel with a clever answer; he could make it clear that continuing it would not be easy. On quieter days, music accompanied his practice, and she offered practical care for the ordinary scrapes and fatigue that came with training. They learned to support one another without needing a crisis to prove that they mattered.
 
@@ -81,7 +81,7 @@ Approved base allocation: Strength 17, Dexterity 15, Constitution 17, Intelligen
 - **HP / Max HP:** 16 / 16; Level-1 Barbarian maximum die value 12 + Constitution modifier 4
 - **Hit Dice:** 1d12; 1 of 1 available; add Constitution modifier +4 when spent for healing under an applicable rule
 - **Temporary HP:** 0
-- **Armor Class / calculation:** 17 with Unarmored Defense = 10 + Dexterity modifier 3 + Constitution modifier 4, without a shield. Equipment selection remains open; this records the unarmored baseline, not an armor, shield, or gauntlet acquisition.
+- **Armor Class / calculation:** 19 with the selected Foxguard shield wielded = Unarmored Defense 10 + Dexterity modifier 3 + Constitution modifier 4 + Shield 2. Without the shield, AC is 17. No body armor worn; Ironknuckle Gauntlets are weapons and add no AC.
 - **Initiative:** +3
 - **Speed:** 30 feet, from Dragonkin
 - **Special movement:** No Fly Speed at Level 1; Dragonkin Wing-Assisted Descent remains governed by the species package
@@ -93,6 +93,12 @@ Approved base allocation: Strength 17, Dexterity 15, Constitution 17, Intelligen
 #### Derived claw damage
 
 The approved Dragonkin claws deal 1d6 Slashing plus the chosen attack ability modifier. Using Strength, current damage is 1d6 + 4 Slashing on a hit, or 1d6 + 6 while Rage is active and applicable, including the Level-1 Barbarian Rage bonus of +2. Using Dexterity instead gives 1d6 + 3 and does not qualify for the Strength-based Rage damage bonus. No gauntlet bonus, extra attack, or mastery property is granted by this calculation. Rage has not been activated during setup.
+
+#### Foxguard weapon attacks
+
+- **Ironknuckle Gauntlet:** Strength attack +6 = +4 Strength +2 proficiency; reach 5 feet; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. The striking hand must not be occupied by a shield, another weapon, an object, or a grapple. Sap is available as a mastery choice but not yet selected.
+- **Javelin:** Strength attack +6; reach 5 feet or Thrown range 30/120 feet; 1d6 + 4 Piercing, or 1d6 + 6 with applicable Rage, including Strength-based throws. Four owned. Slow is available as a mastery choice but not yet selected.
+- **Hand/action limits:** The shield occupies one hand; the other may make the applicable claw or gauntlet attack, wield a javelin, or perform another permitted task. Do not combine claw and gauntlet damage. Neither wearing two gauntlets nor owning four javelins grants an extra attack. Equipment possession does not grant any unselected mastery.
 
 ### Species Package
 
@@ -112,11 +118,11 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 
 - **Primary ability:** Strength for main melee attacks and damage; Dexterity secondary and Constitution for durability, as selected by the player
 - **Class Hit Die:** d12
-- **Armor training:**
-- **Weapon / tool proficiencies:** Dice set (Soldier; player selected). Full class weapon proficiencies still to be recorded.
+- **Armor training:** Light armor, Medium armor, and Shields, from Barbarian; no Heavy armor training
+- **Weapon / tool proficiencies:** Simple and Martial weapons, from Barbarian; Dice set, from Soldier (player selected)
 - **Current class features:**
 - **Class resources / current uses:**
-- **Weapon Mastery choices:**
+- **Weapon Mastery choices:** Not selected. Barbarian 1 permits two kinds of Simple or Martial Melee weapons; Ironknuckle Gauntlets and Javelins are eligible owned options. Sap and Slow remain inactive until their respective selections are confirmed.
 - **Next-level threshold:** 300 cumulative XP for Level 2
 
 ### Skills
@@ -130,7 +136,7 @@ The player confirmed Perception and Survival as Cutlor's two Barbarian skill pro
 | Perception | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
 | Survival | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
 
-Ordinary passive Perception is 14 (10 + Perception modifier 4). The player confirmed dice-set proficiency as the Soldier gaming-set choice. Animal Handling was not selected. Starting equipment remains undecided; this proficiency choice does not itself add a dice set to inventory. No gameplay Step or in-world time is consumed.
+Ordinary passive Perception is 14 (10 + Perception modifier 4). The player confirmed dice-set proficiency as the Soldier gaming-set choice. Animal Handling was not selected. The later Foxguard equipment selection supplies one owned dice set in `inventory.md`; the proficiency itself did not grant an extra copy. No gameplay Step or in-world time is consumed.
 
 ### Spells
 
@@ -147,6 +153,12 @@ Use when applicable.
 ### Equipment Summary
 
 The detailed authoritative inventory belongs in `inventory.md`.
+
+Approved starting loadout B, Foxguard: Ironknuckle Gauntlets worn, one Watchman's Round Shield wielded, four carried Javelins, Explorer's Pack, Traveler's Clothes, one Belt Pouch, one Dice Set, one Healer's Kit (10 / 10 uses), and one unused Potion of Healing. No body armor. The shield is mechanically standard; the gauntlets use `Rules/Campaign-1_Rules.md`.
+
+The Explorer's Pack is unpacked into one Backpack, one Bedroll, two full Oil flasks, ten days of Rations, one Rope, one Tinderbox, ten unused Torches, and one full Waterskin (4 pints). Bundle contents are counted once. No equipment was taken from Seren.
+
+Starting funds: Barbarian gold option 75 GP + Soldier gold option 50 GP = 125 GP, instead of their preset equipment grants. Purchases total 94 GP 6 SP; remaining currency is 30 GP 4 SP. No other currency, debt, or spending is established by this choice. Full quantities, weights, known uses, condition, and acquisition reconciliation are in `inventory.md`.
 
 ### Conditions / Ongoing Effects
 
@@ -483,5 +495,7 @@ Seren's kept-score total is 89; Wayfarer adds 3 for final scores 12 / 17 / 16 / 
 Skill selection update, revision 0: The player confirmed Perception and Survival as Cutlor's two Barbarian skill proficiencies. Each is +4 (Wisdom +2 and Proficiency Bonus +2), and his ordinary passive Perception is 14. Soldier's Athletics +6 and Intimidation +3 are unchanged. The Soldier gaming-set choice was still open at this checkpoint; its later confirmation is recorded below. No changes to Seren, equipment, XP, campaign clock, save revision, or Campaign Turn state are made by this skill selection.
 
 Gaming-set selection update, revision 0: The player confirmed dice as Cutlor's Soldier gaming-set proficiency. The proficiency is recorded in his Class and Advancement and Skills sections. No starting equipment package or dice-set acquisition is selected here. All ability scores, skill totals, Seren's state, inventory, XP, campaign clock, save revision, and Campaign Turn state remain unchanged.
+
+Foxguard equipment update, revision 0: The player approved loadout B. Cutlor uses the 75 GP Barbarian and 50 GP Soldier starting-gold alternatives, spends 94 GP 6 SP on the exact Foxguard inventory, and retains 30 GP 4 SP. G2 Ironknuckle Gauntlets are approved as a Campaign-1-only weapon rule; their Sap mastery and the Javelins' Slow mastery remain unselected. Shield-wielding AC is 19, unshielded AC is 17, HP remains 16, and both gauntlet and Javelin attack modifiers are +6. Inventory acquisition, quantities, prices, condition, consumables, and equipment summaries reconcile. No appearance choices, extra attacks, new gameplay event, XP, clock change, or sexual/reproductive event is established by this equipment approval. Seren's character and possessions remain unchanged; final two-PC review is still pending.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.

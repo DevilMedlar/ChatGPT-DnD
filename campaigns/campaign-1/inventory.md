@@ -14,17 +14,98 @@ The two core PCs share all item information either of them learns. Do not store 
 
 ## Player-Controlled PC
 
+**Owner:** Cutlor Ashvale. The player approved loadout B, Foxguard, during revision-0 character creation. Items are identified and serviceable. Only the Potion of Healing is magical; no attunement, curse, or additional hidden property is established.
+
+### Acquisition and Reconciliation
+
+Starting funds use the gold alternatives instead of both preset equipment packages: Barbarian option B, 75 GP, plus Soldier option B, 50 GP, for 125 GP total. Do not also grant their option-A equipment or currency. The following accepted starting prices are acquisition facts, not merchant stock or new recurring Base Prices.
+
+| Purchase | Quantity | Unit price | Total paid |
+|---|---:|---:|---:|
+| Ironknuckle Gauntlets, approved G2 | 1 pair | 15 GP per pair | 15 GP |
+| [Shield, styled as Watchman's Round Shield](https://www.dndbeyond.com/equipment/8-shield) | 1 | 10 GP | 10 GP |
+| [Javelin](https://www.dndbeyond.com/equipment/8-javelin) | 4 | 5 SP | 2 GP |
+| [Explorer's Pack](https://www.dndbeyond.com/equipment/522-explorers-pack) | 1 bundle | 10 GP | 10 GP |
+| [Traveler's Clothes](https://www.dndbeyond.com/equipment/541-travelers-clothes) | 1 set | 2 GP | 2 GP |
+| [Pouch](https://www.dndbeyond.com/equipment/403-pouch) | 1 | 5 SP | 5 SP |
+| [Dice Set](https://www.dndbeyond.com/equipment/449-dice) | 1 | 1 SP | 1 SP |
+| [Healer's Kit](https://www.dndbeyond.com/equipment/515-healers-kit) | 1 | 5 GP | 5 GP |
+| [Potion of Healing](https://www.dndbeyond.com/magic-items/8960641-potion-of-healing) | 1 | 50 GP | 50 GP |
+| **Total spent** | | | **94 GP 6 SP** |
+
+Copper reconciliation: 12,500 CP starting funds - 9,460 CP purchases = 3,040 CP remaining, recorded as 30 GP and 4 SP. No discounts, markups, quantity adjustments, debt, wages, or transfers from Seren. No named vendor or gameplay transaction is invented.
+
 ### Equipped
+
+This is the selected starting loadout, not a narrated in-world action. Gauntlets and clothing are worn, the pouch is at the belt, and the shield is wielded in one hand; handedness remains unspecified.
+
+| Item | Quantity / weight | State | Known mechanics / description |
+|---|---|---|---|
+| Ironknuckle Gauntlets | 1 pair / 2 lb. total | Worn; only an unoccupied hand can strike | Approved nonmagical Simple Melee weapon. Reach 5 feet; Strength attack +6; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. Open fingers leave natural claws usable. Not armor; no AC bonus. No Light property or free extra attack. Sap requires a separate mastery selection, not yet made. Full local mechanics in `Rules/Campaign-1_Rules.md`. |
+| Watchman's Round Shield | 1 / 6 lb. | Wielded; occupies one hand | Standard Shield, wood faced with iron, not a custom defensive power. +2 AC with Barbarian shield training: 19 with Unarmored Defense, 17 without the shield. Don or doff using a Utilize action. It does not automatically protect Seren or allow its occupied hand to make claw/gauntlet attacks. |
+| Traveler's Clothes | 1 set / 4 lb. | Worn | Ordinary durable clothing fitted around existing Dragonkin anatomy. No armor bonus. Detailed colors, ornament, and styling remain open. |
+| Belt Pouch | 1 / 1 lb. empty | Worn; holds currency and dice | Holds up to 6 lb. within one-fifth of a cubic foot. Mundane, not extradimensional. |
+
+Natural claws are part of Cutlor's species, not purchased items. On each attack choose the applicable claw, gauntlet, or other weapon profile; do not add those profiles together. A hand holding the shield or a javelin cannot simultaneously make a gauntlet strike.
 
 ### Carried / Stored
 
+No off-party storage is established. Explorer's Pack contents are itemized exactly once below: the bundle is not another object with duplicate contents or extra weight. The published complete bundle weight is 55 lb.
+
+| Item | Quantity / weight | State / source | Known use |
+|---|---|---|---|
+| Javelin | 4 / 2 lb. each | Secured to carried gear; none drawn or thrown | Simple Melee weapon, 5-foot melee reach, Thrown range 30/120 feet. Strength attack +6; 1d6 + 4 Piercing, or 1d6 + 6 with applicable Rage, including a Strength-based throw. Beyond 30 feet: Disadvantage; beyond 120 feet: out of range. Slow mastery requires its own selection, not yet made. Track each javelin when thrown, recovered, or lost; not duplicated as ammunition. |
+| [Backpack](https://www.dndbeyond.com/equipment/399-backpack) | 1 / 5 lb. empty | Carried, Explorer's Pack | Holds 30 lb. within 1 cubic foot. Pack the 10 ration portions, 2 Oil flasks, Tinderbox, and Healer's Kit inside: 26 lb. of contents; respect volume as well. Oversized gear is carried outside rather than exceeding capacity. |
+| [Bedroll](https://www.dndbeyond.com/equipment/420-bedroll) | 1 / 7 lb. | Secured outside pack, Explorer's Pack | Bedding for one Small or Medium creature. While inside, automatic success on saving throws against extreme cold; not universal Cold-damage resistance. |
+| [Oil](https://www.dndbeyond.com/equipment/393-oil) | 2 flasks / 1 lb. each | Sealed, Explorer's Pack | Each provides 6 hours of lamp/lantern fuel, 12 hours total. Cutlor owns no lantern in this loadout. Separate dousing/ignition uses follow the item rule; no oil is spent or automatically shared with Seren. |
+| Rations | 10 daily portions / 2 lb. each | Packed, Explorer's Pack | Ten person-days of travel food; not ten days for both PCs. |
+| [Rope](https://www.dndbeyond.com/equipment/415-rope) | 1 / 5 lb. | Coiled outside pack, Explorer's Pack | Ordinary climbing and securing gear. Use the official item rules for knots, breaking, binding, and escape; no automatic climb or grapple. |
+| [Tinderbox](https://www.dndbeyond.com/equipment/434-tinderbox) | 1 / 1 lb. | Packed, Explorer's Pack | Bonus Action to light exposed fuel, such as a torch; 1 minute for another fire. Does not create fuel. |
+| [Torch](https://www.dndbeyond.com/equipment/437-torch) | 10 / 1 lb. each | Bundled outside pack, all unlit, Explorer's Pack | Each burns for 1 hour, providing Bright Light for 20 feet and Dim Light for 20 more. Track each used torch. |
+| [Waterskin](https://www.dndbeyond.com/equipment/442-waterskin) | 1 / 5 lb. full | Carried outside pack, Explorer's Pack | Full at setup, 4 pints. Track drinking and refills; no purification effect. |
+| Dice Set | 1 / negligible weight | In belt pouch | Gaming equipment for Cutlor's Soldier proficiency; applicable Wisdom-based gaming checks +4. No bonus to unrelated dice results. |
+| Healer's Kit | 1 / 3 lb. | Packed, accessible | 10 uses. Utilize action and 1 use stabilize an Unconscious creature at 0 HP without a Medicine check. This kit alone restores no HP. |
+| Potion of Healing | 1 / 0.5 lb. | Securely carried, unopened | Common magical consumable; no attunement. Bonus Action to drink or administer to a creature within 5 feet. Restores 2d4 + 2 HP up to maximum; player rolls healing dice. Consumed on use. |
+
+Total equipment weight, counting each pack component once: 79.5 lb., before coins. This is carried weight, not the backpack's internal load. No holding bag, mount, grappling hook, maul, spare shield, or alternative gauntlet design was acquired.
+
 ### Currency
+
+- **Platinum:** 0 PP
+- **Gold:** 30 GP
+- **Electrum:** 0 EP
+- **Silver:** 4 SP
+- **Copper:** 0 CP
+- **Other currency:** None
+- **Reconciliation:** 125 GP - 94 GP 6 SP = 30 GP 4 SP. Seren's 35 GP is unchanged and separately owned.
 
 ### Consumables / Charges
 
+- **Healer's Kit:** 10 / 10 uses
+- **Potion of Healing:** 1 / 1 unopened potion
+- **Rations:** 10 / 10 daily portions
+- **Oil:** 2 / 2 full flasks, 12 potential lamp/lantern hours
+- **Torches:** 10 / 10 unused
+- **Water:** 4 / 4 pints
+- **Thrown weapons:** 4 / 4 Javelins owned and carried; no separate ammunition stock
+- **Attunements / rechargeable items:** None
+- Class resources are recorded in `character_sheet.md`, not inventory charges. No resource was used during setup.
+
 ### Important / Quest Items
 
+None established. Foxguard is the loadout name; the shield and gauntlets have no unlisted power, enchantment, or quest role.
+
 ### Expenditures
+
+Revision-0 Foxguard approval: spend 94 GP 6 SP from the chosen 125 GP starting-gold allowance for the exact acquisition table above. Every purchased item and the remaining 30 GP 4 SP are reconciled together. No gameplay Step, elapsed campaign time, merchant stock, or recurring-price entry is created.
+
+### Starting Equipment References
+
+- Barbarian gold option and weapon/shield training: `https://www.dndbeyond.com/sources/dnd/br-2024/character-classes`
+- Soldier gold option: `https://www.dndbeyond.com/sources/dnd/br-2024/character-origins`
+- Standard equipment mechanics and weights: direct item references above and `https://www.dndbeyond.com/sources/dnd/br-2024/equipment`
+- Ironknuckle Gauntlets: approved Campaign-1-only rule in `Rules/Campaign-1_Rules.md`
+- Source/license attribution for SRD-derived mechanics remains in the character sheet.
 
 ## ChatGPT-Controlled PC / Co-Protagonist
 
