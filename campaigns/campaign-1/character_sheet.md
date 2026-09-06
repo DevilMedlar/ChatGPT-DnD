@@ -16,7 +16,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 - Cutlor and Seren Ashvale are married.
 - Mr. and Mrs. Ashvale married when they were 15 years old.
-- Cutlor and Seren have been friends since they were 3, giving them 15 years of shared history at their current age of 18. The player reaffirmed this original timeline. The exact calendar date and circumstances of their first meeting remain undecided.
+- Cutlor and Seren have been friends since they were 3, giving them 15 years of shared history at their current age of 18. The exact calendar date and circumstances of their first meeting remain undecided.
 - Mr. Ashvale owns Mrs. Ashvale, they have an owner and pet relationship.
 - Cutlor and Seren Ashvale do not have kids yet.
 - **Linked background:** Cutlor's local Soldier training and protective role developed alongside Seren's established market-lane Wayfarer life. See Cutlor's Background History and the additive connection in Seren's Background History. These histories establish no exact meeting date or new marriage date.
