@@ -14,15 +14,21 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 ## Shared Relationship Canon
 
+- Cutlor and Seren Ashvale are married.
+- Mr. and Mrs. Ashvale married when they were 15 years old.
+- Cutlor and Seren have been Friends since they were 3.
+- Cutlor and Seren first started having sexual intercourse at age 12.
+- Mr. Ashvale owns Mrs. Ashvale, they have an owner and pet relationship.
+
 ## Player-Controlled PC
 
 ### Identity
 
-- **Name:** Cutlor
+- **Name:** Cutlor Ashvale
 - **Age:** 18
 - **Gender / pronouns:** He/Him
 - **Biological reproductive role:** Male
-- **Species / ancestry:** dragonkin
+- **Species / ancestry:** Dragonkin
 - **Class:**
 - **Subclass:**
 - **Background:**
@@ -103,6 +109,9 @@ The detailed authoritative inventory belongs in `inventory.md`.
 This section owns stable textual appearance canon, including species markers, until explicitly changed in fiction.
 
 ### Personal / Relationship Continuity
+
+- Calls Seren nicknames like pet, babe, baby, honey, or other terms of endirment.
+- Only calls Seren by name when mad at her, upset with her, or she is in trouble for something.
 
 ### Reproductive and Parent State
 
@@ -225,6 +234,9 @@ The detailed authoritative inventory belongs in `inventory.md`.
 This section owns stable textual appearance canon, including species markers, until explicitly changed in fiction.
 
 ### Personal / Relationship Continuity
+
+- Calls Cutlor nicknames like Daddy, master, babe, baby, honey, or other terms of endirment.
+- Only calls Cutlor by name when mad at him, upset with him, or he is in trouble for something.
 
 ### Reproductive and Parent State
 
