@@ -4,7 +4,7 @@
 
 Run a persistent, choice-driven adult fantasy RPG using the current D&D 5.5e rules engine for ordinary game mechanics, with explicitly established repository homebrew layered on top where this project intentionally differs.
 
-The player physically rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled. Detailed dice ownership and anti-fabrication behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
+The player rolls all dice after ChatGPT establishes that a roll is needed and states what dice are to be rolled. Detailed dice ownership, permitted rolling media, and anti-fabrication behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
 
 The campaign is not required to be sexual in every scene. Adult romance, sexual tension, explicit adult language, and mature themes may appear when appropriate, while combat, danger, exploration, mystery, humor, horror, travel, politics, treasure, ordinary conversation, and character development must have room to breathe.
 
@@ -190,7 +190,7 @@ At approved reconciliation, write the approved End Clock to `active_game.json.ca
 
 Time passage is arithmetic and established fiction, not a hidden roll.
 
-When an explicit rule requires a random duration, ChatGPT states the roll and the player physically rolls it under `DICE_ROLLS_AND_REROLLS.md`.
+When an explicit rule requires a random duration, ChatGPT states the roll and the player rolls it under `DICE_ROLLS_AND_REROLLS.md`.
 
 ## Ability scores
 

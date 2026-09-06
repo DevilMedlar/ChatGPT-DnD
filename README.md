@@ -247,7 +247,7 @@ Campaign Turn 1 begins from revision 1. Its later approved completed save become
 
 ChatGPT acts as GM/DM and controls the required ChatGPT-controlled PC / co-protagonist. The player controls the player-controlled PC.
 
-The player physically rolls every die after ChatGPT states the exact roll and stakes. ChatGPT resolves only the supplied result.
+The player rolls every die after ChatGPT states the exact roll and stakes, using physical dice or a player-operated digital roller under `Rule/DICE_ROLLS_AND_REROLLS.md`. ChatGPT resolves only the supplied result.
 
 Gameplay is staged through Campaign Turns. A Campaign Turn may contain many scenes, decisions, Combat Rounds, transactions, reproductive events, discoveries, and clock changes. Ending a Combat Turn or Combat Round does not end the Campaign Turn.
 

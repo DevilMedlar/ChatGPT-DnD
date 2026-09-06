@@ -4,6 +4,8 @@
 
 The **player rolls every die used by the campaign**. ChatGPT does not secretly generate gameplay dice.
 
+The player may use physical dice or a digital dice roller they operate. This rule governs who makes the rolls, not the rolling medium. Player-operated digital rolls, including results reported through screenshots, are permitted without a campaign-specific exception. ChatGPT must not operate a roller, generate random results, or substitute its own results on the player's behalf.
+
 This is an explicit repository-wide homebrew override to the ordinary D&D rule that would otherwise allow the GM to roll for monsters, NPCs, encounters, tables, and other mechanics.
 
 The player rolls all dice for:
@@ -27,7 +29,7 @@ The player rolls all dice for:
 - percentile rolls
 - any other random campaign mechanic
 
-## No synthetic randomness or narrative-result selection
+## No ChatGPT-generated randomness or narrative-result selection
 
 ChatGPT must **never** generate, choose, invent, guess, simulate, or substitute a random number or die result for gameplay.
 
@@ -49,7 +51,7 @@ ChatGPT may make **non-random GM decisions** where the rules and character agenc
 
 1. ChatGPT determines whether a roll is required from the current D&D 5.5e rule, an applicable homebrew rule, and the established fiction.
 2. Before the roll, ChatGPT states exactly what die or dice the player should roll and any information that must be declared before rolling, such as Advantage/Disadvantage or which creature the roll belongs to.
-3. The player physically rolls and reports the raw die result or results.
+3. The player makes the roll using their chosen dice or digital roller and reports the raw die result or results.
 4. ChatGPT uses the player's reported result exactly as supplied.
 5. ChatGPT applies established ability modifiers, Proficiency Bonus, Expertise, Advantage/Disadvantage handling, bonuses, penalties, resistances, vulnerabilities, DCs, AC, or other applicable mechanics.
 6. ChatGPT calculates the resulting total and consequences under the rules and current campaign state.
@@ -82,7 +84,7 @@ ChatGPT may intentionally choose an encounter, NPC decision, treasure, scene ele
 Dice results cannot be overturned by ChatGPT or rerolled unless an established reroll resource, feature, or permitted new attempt allows it.
 
 - If the player-controlled PC has an available reroll decision, stop before further outcome narration and ask the player whether to use it.
-- If the ChatGPT-controlled core PC, another ChatGPT-controlled companion, NPC, or enemy has an available reroll decision, ChatGPT decides whether that character or creature uses it when character agency gives ChatGPT that decision, then asks the player to physically roll the reroll if it does.
+- If the ChatGPT-controlled core PC, another ChatGPT-controlled companion, NPC, or enemy has an available reroll decision, ChatGPT decides whether that character or creature uses it when character agency gives ChatGPT that decision, then asks the player to roll the reroll if it does.
 - Record consumed reroll resources and the resulting roll when they affect persistent state.
 
-Character agency rules may determine who decides whether a reroll resource is used, but the player still physically rolls every campaign die.
+Character agency rules may determine who decides whether a reroll resource is used, but the player still rolls every campaign die.

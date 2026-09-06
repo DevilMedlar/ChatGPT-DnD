@@ -60,6 +60,6 @@ Neither core PC may override the other's agency merely because they are co-prota
 
 ## Dice ownership
 
-The player physically rolls every campaign die for both core PCs and all other creatures or random mechanics after ChatGPT establishes the required roll.
+The player rolls every campaign die for both core PCs and all other creatures or random mechanics after ChatGPT establishes the required roll.
 
-Detailed dice and reroll behavior is defined in `DICE_ROLLS_AND_REROLLS.md`.
+Detailed dice ownership, permitted rolling media, and reroll behavior are defined in `DICE_ROLLS_AND_REROLLS.md`.
