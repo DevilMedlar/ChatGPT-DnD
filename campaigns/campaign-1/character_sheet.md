@@ -35,8 +35,8 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Ability increases, fixed skills, dice-set proficiency, Savage Attacker, and starting-gold choice are established below.
 - **Level:** 1
 - **XP:** 0/300
-- **Languages:** Not yet selected
-- **Alignment:** Not yet selected
+- **Languages:** Common, Draconic, Elvish; player confirmed during revision-0 character creation
+- **Alignment:** Neutral Good; player confirmed, descriptive outlook rather than control of the player's decisions
 
 ### Player-Selected Build Direction
 
@@ -46,7 +46,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian, Soldier, the rolled ability allocation with +1 Strength/+1 Dexterity/+1 Constitution, Perception and Survival, dice-set proficiency, Foxguard loadout B, and Ironknuckle Gauntlets (Sap) / Javelins (Slow) remain established. The player subsequently requested voluntary horns/wings/tail, a power-increasing battle form, and Light/Medium armor, delegating the remaining design. The GM implemented the bounded Campaign-1 manifestation, Draconic Guard, and Draconic Awakening rules under that delegation, chose Light Leather Armor, and completed the remaining appearance. Numerical limits are the GM's implementation, not separately player-specified values or official rules. Languages, alignment, optional personal details, and the final two-PC review remain open. The later subclass is not selected. Performance goals never guarantee outcomes.
+- **Approval status:** Barbarian, Soldier, the rolled ability allocation with +1 Strength/+1 Dexterity/+1 Constitution, Perception and Survival, dice-set proficiency, Foxguard loadout B, and Ironknuckle Gauntlets (Sap) / Javelins (Slow) remain established. The player subsequently requested voluntary horns/wings/tail, a power-increasing battle form, and Light/Medium armor, delegating the remaining design. The GM implemented the bounded Campaign-1 manifestation, Draconic Guard, and Draconic Awakening rules under that delegation, chose Light Leather Armor, and completed the remaining appearance. The player subsequently explicitly confirmed Awakening's numerical benefits and limits; these remain campaign homebrew, not official rules. Common, Draconic, Elvish, and Neutral Good are now confirmed. Optional personal details and the final two-PC review remain open. The later subclass is not selected. Performance goals never guarantee outcomes.
 - **Setup state:** Revision 0 remains open. The starting acquisitions and delegated design are recorded without a gameplay Step, clock advance, transformation activation, or completed campaign checkpoint.
 
 ### Background History
@@ -299,7 +299,7 @@ Seren grew up around crowded market lanes, learning how to stretch a small purse
 
 Her friendship with Cutlor and their established marriage remain in Shared Relationship Canon. No new actions, dialogue, or personal choices are assigned to Cutlor by this build.
 
-For Seren, bardic magic is a way to steady a frightened voice, interrupt cruelty, and bring someone home alive. She wants to earn an honest reputation, collect songs worth remembering, and eventually establish a welcoming home with room for music and guests. These are Seren's stated hopes, not an imposed goal for Cutlor or an already-owned location. Her history and goals are shared with him; she has no separate secret backstory.
+For Seren, bardic magic is a way to steady a frightened voice, interrupt cruelty, and bring someone home alive. She wants to earn an honest reputation, collect songs worth remembering, and eventually establish a welcoming home with room for music and guests. These are Seren's stated hopes, not an imposed goal for Cutlor or an already-owned location.
 
 #### Added Connection: Cutlor's Protection
 
@@ -490,7 +490,6 @@ This section owns stable textual appearance canon until explicitly changed in fi
 
 - Calls Cutlor nicknames like Daddy, master, babe, baby, honey, or other terms of endirment.
 - Only calls Cutlor by name when mad at him, upset with him, or he is in trouble for something.
-- After witnessing an animal breeding farm at age 12, she has had a breeding fetish, which is why her and Cutlor first started having sex at 12 years old. 
 - **Marriage:** Cutlor Ashvale is her husband, as established in Shared Relationship Canon. This build does not create an additional partner or rewrite his feelings or behavior.
 - **Pet relationship preference:** As an adult, Seren actively wants Cutlor to treat her as his cherished pet as well as his wife. She enjoys affectionate pet names, his guidance, and praise. This is her own expressed preference, not merely a relationship label assigned to her.
 - **Obedience and praise:** Within their mutually chosen adult dynamic, Seren willingly obeys Cutlor's directions and takes pride in being his "good girl." Show this through attentive listening, affectionate responses, and voluntary cooperation, while preserving her established personality and the agency and consent boundaries below. This preference describes their present adult relationship, not their childhood.
@@ -571,5 +570,7 @@ Foxguard equipment update, revision 0: The player approved loadout B. Cutlor use
 Weapon Mastery update, revision 0: The player accepted Ironknuckle Gauntlets (Sap) and Javelins (Slow) as Cutlor's two starting mastery selections. Their effects, limits, and Long Rest replacement rule are recorded above, and inventory mirrors are synchronized. No weapon has been used, no creature is affected, and no new equipment, expenditure, stat increase, gameplay Step, time advance, or completed checkpoint is created. Other unfinished character-creation fields remain open.
 
 Delegated draconic appearance and power-form update, revision 0: The player requested optional horns, wings, and tail, a battle boost covering healing/damage/HP protection/defense, and Light/Medium armor with the remaining design delegated. Appearance is completed without changing previously approved features. The GM's bounded personal homebrew is recorded in `Rules/Campaign-1_Rules.md`: at-will anatomy manifestation, Draconic Guard allowing the existing base-AC formula in Light armor, and Draconic Awakening once per Long Rest for up to 1 minute while raging, granting 4 HP healing and 6 Temporary HP on activation, +2 damage once on each own turn, and +1 AC. No power was activated. Baseline HP remains 16/16, Temporary HP 0, current AC 19 with shield; potential awakened AC 20. Rage is recorded at 2/2 and Awakening at 1/1. The standard current-level Dragonkin and Barbarian mechanics and Soldier feat are now explicitly recorded. Added Leather Armor costs 10 GP, making total purchases 104 GP 6 SP and remaining currency 20 GP 4 SP; equipment weight is 89.5 lb. before coins. No unrolled randomness, new biography, extra species package, permanent stat increase, Seren change, time advance, or gameplay Step occurred. Languages, alignment, optional personal fields, and final creation review remain open.
+
+Language and alignment confirmation, revision 0: The player confirmed Common, Draconic, and Elvish and Neutral Good for Cutlor. These now replace the pending identity fields; the prior open-choice notes above are historical. All existing ability scores, class/species features, equipment, currency, HP, resources, and clock remain unchanged. Optional unestablished personal/reproductive details remain undecided. Final two-PC creation approval is still required before establishing revision 1; this confirmation did not begin play.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
