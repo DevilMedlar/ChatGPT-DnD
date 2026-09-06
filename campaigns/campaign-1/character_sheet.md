@@ -18,16 +18,16 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 ### Identity
 
-- **Name:**
-- **Age:**
-- **Gender / pronouns:**
-- **Biological reproductive role:** Male / Female / Not established
-- **Species / ancestry:** Exact standard package or approved campaign override
+- **Name:** Cutlor
+- **Age:** 18
+- **Gender / pronouns:** He/Him
+- **Biological reproductive role:** Male
+- **Species / ancestry:** dragonkin
 - **Class:**
 - **Subclass:**
 - **Background:**
-- **Level:**
-- **XP:**
+- **Level:** 1
+- **XP:** 0/300
 
 ### Background History
 
