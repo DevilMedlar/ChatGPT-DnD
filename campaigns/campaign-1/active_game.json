@@ -1,0 +1,27 @@
+{
+  "campaign": "campaign-1",
+  "campaign_turn_number": 0,
+  "current_scene_name": "Character creation",
+  "current_location": "",
+  "campaign_clock": {
+    "calendar": "Campaign Day",
+    "day": 1,
+    "time": "08:00:00"
+  },
+  "character_created": false,
+  "xp_mode": "cumulative",
+  "character_advancement": {
+    "PLAYER_CONTROLLED_PC_NAME": {
+      "level": 1,
+      "xp_current": 0,
+      "xp_next_level": 300
+    },
+    "CHATGPT_CONTROLLED_PC_NAME": {
+      "level": 1,
+      "xp_current": 0,
+      "xp_next_level": 300
+    }
+  },
+  "save_revision": 0,
+  "last_sync_note": "Campaign initialized. Character creation is in progress; the campaign clock is at Campaign Day 1, 08:00:00 and does not advance during out-of-fiction setup."
+}
