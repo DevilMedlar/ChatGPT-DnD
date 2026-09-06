@@ -29,7 +29,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Gender / pronouns:** He/Him
 - **Biological reproductive role:** Male
 - **Species / ancestry:** Dragonkin
-- **Class:** Fighter; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player
+- **Class:** Barbarian; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player's latest confirmation
 - **Subclass:**
 - **Background:**
 - **Level:** 1
@@ -37,13 +37,13 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 ### Player-Selected Build Direction
 
-- **Combat concept:** Strength-based close-combat Dragonkin Fighter with a brawler/berserker-like fighting style, using open-hand gauntlets that do not interfere with his natural claws.
+- **Combat concept:** Strength-based close-combat Dragonkin Barbarian with a brawler/berserker-like fighting style, using open-hand gauntlets that do not interfere with his natural claws.
 - **Ability priorities:** Strength supplies the main melee attack and damage ability; Dexterity is secondary for agility, reflexes, stealth, and ranged accuracy; Constitution supports health, stamina, and durability. This supersedes the earlier Dexterity-primary direction. Exact scores remain undecided.
 - **Gauntlet requirement:** Open-hand/open-finger construction must leave the claws usable. Materials, item classification, price, weight, damage, armor interaction, and any special properties remain to be established with the equipment choice; this preference alone grants no extra damage, AC, attack, or Weapon Mastery property.
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
-- **Berserker description:** A desired fighting style, not an automatic Barbarian level, Berserker subclass, Rage feature, damage resistance, or loss of player control.
-- **Approval status:** Fighter class, the Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above are established. Exact ability scores, background, Fighting Style, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. The Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above remain established. Exact ability scores, background, skill proficiencies, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
