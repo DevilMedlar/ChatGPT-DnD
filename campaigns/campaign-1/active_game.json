@@ -11,17 +11,17 @@
   "character_created": false,
   "xp_mode": "cumulative",
   "character_advancement": {
-    "PLAYER_CONTROLLED_PC_NAME": {
+    "Cutlor": {
       "level": 1,
       "xp_current": 0,
       "xp_next_level": 300
     },
-    "CHATGPT_CONTROLLED_PC_NAME": {
+    "Seren Ashvale": {
       "level": 1,
       "xp_current": 0,
       "xp_next_level": 300
     }
   },
   "save_revision": 0,
-  "last_sync_note": "Campaign initialized. Character creation is in progress; the campaign clock is at Campaign Day 1, 08:00:00 and does not advance during out-of-fiction setup."
+  "last_sync_note": "Revision-0 character creation remains in progress. Co-protagonist name established as Seren Ashvale; advancement keys synchronized with the character sheet names Cutlor and Seren Ashvale. Campaign clock remains Campaign Day 1, 08:00:00; no gameplay Steps or completed checkpoints created."
 }
