@@ -177,7 +177,9 @@ This section owns stable textual appearance canon, including species markers, un
 - **Height:** 6 feet 4 inches (about 193 cm), standing height excluding horns
 - **Weight:** Approximately 245 pounds (about 111 kg), body weight without equipment
 - **Build:** Broad and muscular, with substantial shoulders and chest, a strong back, thick forearms, powerful thighs, and a solid, moderately tapered waist. Athletic definition rather than exaggerated bulk; a grounded, balanced brawler's stance.
-- **Selection context:** The player delegated this height-and-build choice during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Scale colors and coverage, face, eyes, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
+- **Scales / texture:** Present but barely noticeable. Very fine, smooth, low-profile scales blend into the skin's surface rather than forming prominent ridges or armorlike plates. Their delicate pattern is easiest to notice close up or when light catches it.
+- **Scale color / finish:** Charcoal-black with a subtle copper sheen. Warm metallic highlights appear when light grazes the scales, without a bright polished-metal appearance.
+- **Selection context:** The player delegated the height-and-build choice and explicitly approved the subtle scales and charcoal-and-copper coloring during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Exact scale distribution, underlying skin tone, face, eyes, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
 
 ### Personal / Relationship Continuity
 
