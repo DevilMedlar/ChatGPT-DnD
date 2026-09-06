@@ -44,7 +44,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Weapon Mastery selections, remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. Neither Sap nor Slow is selected by acquiring equipment. A desired performance goal is not a guaranteed outcome.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. Dice-set proficiency is confirmed as the Soldier gaming-set choice. Foxguard loadout B, both starting-gold alternatives, its listed purchases, and the G2 Ironknuckle Gauntlets rule are approved. Ironknuckle Gauntlets (Sap) and Javelins (Slow) are the confirmed starting Weapon Mastery selections. Remaining appearance/identity details, later subclass selection, and other unfinished character-creation fields remain open. A desired performance goal is not a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. The approved Foxguard starting acquisitions are recorded without a gameplay Step, clock advance, or completed campaign checkpoint.
 
 ### Background History
@@ -96,8 +96,8 @@ The approved Dragonkin claws deal 1d6 Slashing plus the chosen attack ability mo
 
 #### Foxguard weapon attacks
 
-- **Ironknuckle Gauntlet:** Strength attack +6 = +4 Strength +2 proficiency; reach 5 feet; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. The striking hand must not be occupied by a shield, another weapon, an object, or a grapple. Sap is available as a mastery choice but not yet selected.
-- **Javelin:** Strength attack +6; reach 5 feet or Thrown range 30/120 feet; 1d6 + 4 Piercing, or 1d6 + 6 with applicable Rage, including Strength-based throws. Four owned. Slow is available as a mastery choice but not yet selected.
+- **Ironknuckle Gauntlet:** Strength attack +6 = +4 Strength +2 proficiency; reach 5 feet; 1d6 + 4 Bludgeoning, or 1d6 + 6 with applicable Rage. The striking hand must not be occupied by a shield, another weapon, an object, or a grapple. Sap mastery is selected and usable on a qualifying gauntlet hit; see Weapon Mastery below.
+- **Javelin:** Strength attack +6; reach 5 feet or Thrown range 30/120 feet; 1d6 + 4 Piercing, or 1d6 + 6 with applicable Rage, including Strength-based throws. Four owned. Slow mastery is selected and usable on a qualifying damaging hit, including a thrown hit; see Weapon Mastery below.
 - **Hand/action limits:** The shield occupies one hand; the other may make the applicable claw or gauntlet attack, wield a javelin, or perform another permitted task. Do not combine claw and gauntlet damage. Neither wearing two gauntlets nor owning four javelins grants an extra attack. Equipment possession does not grant any unselected mastery.
 
 ### Species Package
@@ -122,8 +122,16 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 - **Weapon / tool proficiencies:** Simple and Martial weapons, from Barbarian; Dice set, from Soldier (player selected)
 - **Current class features:**
 - **Class resources / current uses:**
-- **Weapon Mastery choices:** Not selected. Barbarian 1 permits two kinds of Simple or Martial Melee weapons; Ironknuckle Gauntlets and Javelins are eligible owned options. Sap and Slow remain inactive until their respective selections are confirmed.
+- **Weapon Mastery choices:** Ironknuckle Gauntlets (Sap) and Javelins (Slow), confirmed by the player; both starting Barbarian 1 selections are used. These unlock only the named weapons' mastery properties, not mastery for natural claws.
 - **Next-level threshold:** 300 cumulative XP for Level 2
+
+#### Weapon Mastery
+
+- **Ironknuckle Gauntlets / Sap:** Hitting a creature with the gauntlet gives that creature Disadvantage on its next attack roll before the start of Cutlor's next turn. No saving throw, extra action, charge, or Rage requirement. The approved local weapon rules remain in `Rules/Campaign-1_Rules.md`.
+- **Javelins / Slow:** When Cutlor hits a creature with a Javelin and deals damage, he can reduce its Speed by 10 feet until the start of his next turn. Works with melee or thrown Javelin attacks. Repeated hits with Slow weapons do not make this property's Speed reduction exceed 10 feet. No saving throw, extra action, charge, or Rage requirement.
+- **Changing selections:** After finishing a Long Rest, Cutlor may practice weapon drills and change one of his two chosen weapon kinds under the Barbarian rule. This choice establishes the starting pair; no rest or attack occurs during setup.
+- **Limits:** Neither mastery grants another attack, stacks gauntlet damage with claws, spends inventory, or overrides ordinary Advantage/Disadvantage rules. No creature is currently affected.
+- **References:** `https://www.dndbeyond.com/sources/dnd/br-2024/character-classes#Barbarian`; `https://www.dndbeyond.com/sources/dnd/br-2024/equipment#Sap`; `https://www.dndbeyond.com/sources/dnd/br-2024/equipment#Slow`.
 
 ### Skills
 
@@ -220,7 +228,7 @@ Use when this character is the reproductive-state target.
 - **Subclass:** Not available at Level 1; select at Bard Level 3
 - **Background:** Wayfarer, official 2024 version
 - **Level:** 1
-- **XP:** 0 / 300; cumulative XP; next level at 300 total XP
+- **XP:** 0 / 300; cumulative XP; next level at 300 XP
 - **Languages:** Common, Draconic, Elvish; chosen, not rolled
 - **Alignment:** Chaotic Good
 - **Party role:** Support caster, perceptive lookout, negotiator, and lock-and-trap specialist; not a front-line tank
@@ -496,6 +504,8 @@ Skill selection update, revision 0: The player confirmed Perception and Survival
 
 Gaming-set selection update, revision 0: The player confirmed dice as Cutlor's Soldier gaming-set proficiency. The proficiency is recorded in his Class and Advancement and Skills sections. No starting equipment package or dice-set acquisition is selected here. All ability scores, skill totals, Seren's state, inventory, XP, campaign clock, save revision, and Campaign Turn state remain unchanged.
 
-Foxguard equipment update, revision 0: The player approved loadout B. Cutlor uses the 75 GP Barbarian and 50 GP Soldier starting-gold alternatives, spends 94 GP 6 SP on the exact Foxguard inventory, and retains 30 GP 4 SP. G2 Ironknuckle Gauntlets are approved as a Campaign-1-only weapon rule; their Sap mastery and the Javelins' Slow mastery remain unselected. Shield-wielding AC is 19, unshielded AC is 17, HP remains 16, and both gauntlet and Javelin attack modifiers are +6. Inventory acquisition, quantities, prices, condition, consumables, and equipment summaries reconcile. No appearance choices, extra attacks, new gameplay event, XP, clock change, or sexual/reproductive event is established by this equipment approval. Seren's character and possessions remain unchanged; final two-PC review is still pending.
+Foxguard equipment update, revision 0: The player approved loadout B. Cutlor uses the 75 GP Barbarian and 50 GP Soldier starting-gold alternatives, spends 94 GP 6 SP on the exact Foxguard inventory, and retains 30 GP 4 SP. G2 Ironknuckle Gauntlets are approved as a Campaign-1-only weapon rule; their Sap mastery and the Javelins' Slow mastery were still unselected at this equipment step. Shield-wielding AC is 19, unshielded AC is 17, HP remains 16, and both gauntlet and Javelin attack modifiers are +6. Inventory acquisition, quantities, prices, condition, consumables, and equipment summaries reconcile. No appearance choices, extra attacks, new gameplay event, XP, clock change, or sexual/reproductive event is established by this equipment approval. Seren's character and possessions remain unchanged; final two-PC review is still pending.
+
+Weapon Mastery update, revision 0: The player accepted Ironknuckle Gauntlets (Sap) and Javelins (Slow) as Cutlor's two starting mastery selections. Their effects, limits, and Long Rest replacement rule are recorded above, and inventory mirrors are synchronized. No weapon has been used, no creature is affected, and no new equipment, expenditure, stat increase, gameplay Step, time advance, or completed checkpoint is created. Other unfinished character-creation fields remain open.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
