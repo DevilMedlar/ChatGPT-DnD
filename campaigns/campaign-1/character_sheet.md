@@ -29,11 +29,19 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Gender / pronouns:** He/Him
 - **Biological reproductive role:** Male
 - **Species / ancestry:** Dragonkin
-- **Class:**
+- **Class:** Fighter; Dexterity-focused, explicitly selected by the player
 - **Subclass:**
 - **Background:**
 - **Level:** 1
 - **XP:** 0/300
+
+### Player-Selected Build Direction
+
+- **Combat concept:** Dexterity-focused close-combat Fighter using unarmed attacks and/or fighting gauntlets.
+- **Offensive goal:** High damage to finish easier fights quickly.
+- **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
+- **Approval status:** Class, Dexterity focus, and the goals above are established. Exact ability scores, background, Fighting Style, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
 
@@ -75,7 +83,7 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 
 ### Class and Advancement
 
-- **Primary ability:**
+- **Primary ability:** Dexterity, selected by the player
 - **Class Hit Die:**
 - **Armor training:**
 - **Weapon / tool proficiencies:**
@@ -111,7 +119,7 @@ This section owns stable textual appearance canon, including species markers, un
 ### Personal / Relationship Continuity
 
 - Calls Seren nicknames like pet, babe, baby, honey, or other terms of endirment.
-- Only calls Seren by name when mad at her, upset with her, or she is in trouble for something.
+- Only calls Seren by name when mad at her, upset with her, or he is in trouble for something.
 
 ### Reproductive and Parent State
 
@@ -344,7 +352,7 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
-- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and a plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
+- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
 - **Visible gear:** Two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
