@@ -180,7 +180,8 @@ This section owns stable textual appearance canon, including species markers, un
 - **Scales / texture:** Present but barely noticeable. Very fine, smooth, low-profile scales blend into the skin's surface rather than forming prominent ridges or armorlike plates. Their delicate pattern is easiest to notice close up or when light catches it.
 - **Scale color / finish:** Charcoal-black with a subtle copper sheen. Warm metallic highlights appear when light grazes the scales, without a bright polished-metal appearance.
 - **Face:** Mostly humanlike features, with a strong jaw, defined cheekbones, and subtle draconic contours rather than an extended snout.
-- **Selection context:** The player delegated the height-and-build choice and explicitly approved the subtle scales, charcoal-and-copper coloring, and mostly humanlike facial structure during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Exact scale distribution, underlying skin tone, eyes, hair, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
+- **Eyes:** Deep emerald-green irises with subtly vertical pupils and otherwise humanlike eye structure. No magical glow or added sensory ability.
+- **Selection context:** The player delegated the height-and-build and eye choices and explicitly approved the subtle scales, charcoal-and-copper coloring, and mostly humanlike facial structure during revision-0 appearance creation. These are descriptive choices, not rolled results or additional mechanical bonuses; the standard Dragonkin Medium size is unchanged. Exact scale distribution, underlying skin tone, hair, horn/wings/tail details, and clothing styling remain undecided. No other personal choice, gameplay Step, or clock change is made here.
 
 ### Personal / Relationship Continuity
 
