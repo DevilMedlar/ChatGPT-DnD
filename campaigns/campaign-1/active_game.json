@@ -11,7 +11,7 @@
   "character_created": false,
   "xp_mode": "cumulative",
   "character_advancement": {
-    "Cutlor": {
+    "Cutlor Ashvale": {
       "level": 1,
       "xp_current": 0,
       "xp_next_level": 300
@@ -23,5 +23,5 @@
     }
   },
   "save_revision": 0,
-  "last_sync_note": "Revision-0 character creation remains in progress. Co-protagonist name established as Seren Ashvale; advancement keys synchronized with the character sheet names Cutlor and Seren Ashvale. Campaign clock remains Campaign Day 1, 08:00:00; no gameplay Steps or completed checkpoints created."
+  "last_sync_note": "Revision-0 setup: Seren Ashvale's Level-1 Kitsune Bard / Wayfarer build and starting inventory are complete; 0 XP, next level at 300 XP. Player advancement key synchronized to the established full name Cutlor Ashvale; his undecided build choices remain open. Both-PC final review is still pending. Clock remains Campaign Day 1, 08:00:00; no gameplay Step, completed checkpoint, or revision-1 transition created."
 }
