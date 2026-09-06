@@ -16,7 +16,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 - Cutlor and Seren Ashvale are married.
 - Mr. and Mrs. Ashvale married when they were 15 years old.
-- Cutlor and Seren share a long-standing friendship. Their exact first-meeting age, date, circumstances, and total years acquainted remain undecided under the player's latest instruction. The earlier fixed "friends since age 3" entry is superseded, not a current timeline fact.
+- Cutlor and Seren have been friends since they were 3, giving them 15 years of shared history at their current age of 18. The player reaffirmed this original timeline. The exact calendar date and circumstances of their first meeting remain undecided.
 - Mr. Ashvale owns Mrs. Ashvale, they have an owner and pet relationship.
 - Cutlor and Seren Ashvale do not have kids yet.
 - **Linked background:** Cutlor's local Soldier training and protective role developed alongside Seren's established market-lane Wayfarer life. See Cutlor's Background History and the additive connection in Seren's Background History. These histories establish no exact meeting date or new marriage date.
@@ -61,7 +61,7 @@ Their partnership was never only about what happened when a fight started. Seren
 
 At eighteen, Cutlor's protective purpose remains personal: give his wife room to sing, travel, and build a life without facing danger alone. His Barbarian fury can express that fierce determination, while his Soldier training explains the discipline behind it. Protectiveness does not dictate his future actions or force a loss of control; the player still decides when Cutlor fights, holds back, negotiates, or walks away with Seren beside him.
 
-**Chronology and scope:** This is the player-requested background connection, not a played encounter. It spans their established years together without fixing when they first met, how many years they have known each other, or the exact ages and dates of militia training and service. Their already-established marriage is unchanged. Militia name, hometown name, rank, named comrades, particular battles, and service duration remain undecided. No specific rescue, war trauma, combat result, extra XP, wages, debt, property, equipment, or present injury is created. Childhood friendship and mutual care are nonsexual; their current adult relationship preferences remain in Personal / Relationship Continuity.
+**Chronology and scope:** This is the player-requested background connection, not a played encounter. Their friendship began at age 3 and continues at age 18, giving them 15 years of shared history. The exact calendar date and circumstances of their first meeting, and the exact ages and dates of militia training and service, remain undecided. Their already-established marriage is unchanged. Militia name, hometown name, rank, named comrades, particular battles, and service duration remain undecided. No specific rescue, war trauma, combat result, extra XP, wages, debt, property, equipment, or present injury is created. Childhood friendship and mutual care are nonsexual; their current adult relationship preferences remain in Personal / Relationship Continuity.
 
 ### Ability Scores
 
@@ -208,7 +208,7 @@ This addition connects Seren's existing Wayfarer history to Cutlor's player-requ
 
 Seren wanted to contribute in return. Music accompanied some of his practice, and she cared about the fatigue and ordinary scrapes behind his growing confidence. Her wish to learn supportive magic became more personal: when he stood between her and danger, she wanted to have something useful to offer him besides worry. This motivation does not grant a new spell or rewrite the chronology of her existing training.
 
-In their present adult relationship, those years of dependable care help explain why she finds comfort in following his lead and being his cherished pet as well as his wife. She enjoys being looked after and praised, and she willingly cooperates within their established dynamic. Her musical ambitions and competence remain intact; protecting her gives her room to pursue them. The first meeting and exact length of their shared history remain undecided, and this adult preference is not backdated into childhood.
+In their present adult relationship, those years of dependable care help explain why she finds comfort in following his lead and being his cherished pet as well as his wife. She enjoys being looked after and praised, and she willingly cooperates within their established dynamic. Her musical ambitions and competence remain intact; protecting her gives her room to pursue them. Their friendship began at age 3, giving them 15 years of shared history by age 18. The exact date and circumstances of their first meeting remain undecided, and this adult preference is not backdated into childhood.
 
 ### Ability Scores
 
@@ -378,7 +378,7 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
-- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and a plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
+- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
 - **Visible gear:** Two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
