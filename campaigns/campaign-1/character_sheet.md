@@ -29,7 +29,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Gender / pronouns:** He/Him
 - **Biological reproductive role:** Male
 - **Species / ancestry:** Dragonkin
-- **Class:** Fighter; Dexterity-focused, explicitly selected by the player
+- **Class:** Fighter; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player
 - **Subclass:**
 - **Background:**
 - **Level:** 1
@@ -37,10 +37,13 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 ### Player-Selected Build Direction
 
-- **Combat concept:** Dexterity-focused close-combat Fighter using unarmed attacks and/or fighting gauntlets.
+- **Combat concept:** Strength-based close-combat Dragonkin Fighter with a brawler/berserker-like fighting style, using open-hand gauntlets that do not interfere with his natural claws.
+- **Ability priorities:** Strength supplies the main melee attack and damage ability; Dexterity is secondary for agility, reflexes, stealth, and ranged accuracy; Constitution supports health, stamina, and durability. This supersedes the earlier Dexterity-primary direction. Exact scores remain undecided.
+- **Gauntlet requirement:** Open-hand/open-finger construction must leave the claws usable. Materials, item classification, price, weight, damage, armor interaction, and any special properties remain to be established with the equipment choice; this preference alone grants no extra damage, AC, attack, or Weapon Mastery property.
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
-- **Approval status:** Class, Dexterity focus, and the goals above are established. Exact ability scores, background, Fighting Style, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Berserker description:** A desired fighting style, not an automatic Barbarian level, Berserker subclass, Rage feature, damage resistance, or loss of player control.
+- **Approval status:** Fighter class, the Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above are established. Exact ability scores, background, Fighting Style, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
@@ -83,7 +86,7 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 
 ### Class and Advancement
 
-- **Primary ability:** Dexterity, selected by the player
+- **Primary ability:** Strength for main melee attacks and damage; Dexterity secondary and Constitution for durability, as selected by the player
 - **Class Hit Die:**
 - **Armor training:**
 - **Weapon / tool proficiencies:**
@@ -352,7 +355,7 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
-- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and a plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
+- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
 - **Visible gear:** Two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
