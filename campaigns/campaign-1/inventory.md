@@ -42,11 +42,11 @@ The two core PCs share all item information either of them learns. Do not store 
 
 | Item | Quantity | State | Known mechanics / description |
 |---|---:|---|---|
-| Leather Armor | 1 | Worn | Light armor; AC 11 + Dexterity modifier, currently 13; no Strength requirement or inherent Stealth Disadvantage. Brown leather, mechanically ordinary. |
-| Dagger | 2 | Sheathed at belt; neither drawn by default | Simple Melee weapon; Finesse, Light, Thrown 20/60 feet; +4 attack; 1d4 + 2 Piercing on a normal hit; melee reach 5 feet. Nick is the weapon's mastery property but Seren has no feature enabling it. |
+| Leather Armor | 1 | Worn | Light armor; AC 11 + Dexterity modifier, currently 14; no Strength requirement or inherent Stealth Disadvantage. Brown leather, mechanically ordinary. |
+| Dagger | 2 | Sheathed at belt; neither drawn by default | Simple Melee weapon; Finesse, Light, Thrown 20/60 feet; +5 attack; 1d4 + 3 Piercing on a normal hit; melee reach 5 feet. Nick is the weapon's mastery property but Seren has no feature enabling it. |
 | Traveler's Clothes | 1 set | Worn | Cream blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf stitching. Cosmetic styling of the ordinary set; no bonuses. |
 | Pouch | 2 | Worn at belt | Each can hold up to 6 pounds within one-fifth of a cubic foot. One holds currency; the other holds the dice set and small tools as space permits. |
-| Lute, Hearthstring | 1 | Slung and carried; must be held when used as a focus | Mundane musical instrument. Seren is proficient; +5 on applicable Charisma instrument checks. Can serve as her Bard spellcasting focus for eligible Material components. No combat or magical bonus beyond ordinary focus use. |
+| Lute, Hearthstring | 1 | Slung and carried; must be held when used as a focus | Mundane musical instrument. Seren is proficient; +7 on applicable Charisma instrument checks. Can serve as her Bard spellcasting focus for eligible Material components. No combat or magical bonus beyond ordinary focus use. |
 
 ### Carried / Stored
 
@@ -55,7 +55,7 @@ No off-party storage or additional property is established. Bulky bedding and ot
 | Item | Quantity | State / source | Known use |
 |---|---:|---|---|
 | Dagger | 2 | Packed spares, Wayfarer | Same known mechanics as the belt daggers. Total owned across both locations: 4. Track each thrown, recovered, lost, or transferred dagger. |
-| Thieves' Tools | 1 set | Carried, Wayfarer | Seren has proficiency; +4 on relevant Dexterity tool checks. Ordinary lockpicking and trap disarming commonly use DC 15, but the actual task or item rule controls. Tool proficiency does not double the Proficiency Bonus when a skill also applies. |
+| Thieves' Tools | 1 set | Carried, Wayfarer | Seren has proficiency; +5 on relevant Dexterity tool checks. Ordinary lockpicking and trap disarming commonly use DC 15, but the actual task or item rule controls. Tool proficiency does not double the Proficiency Bonus when a skill also applies. |
 | Gaming Set, dice | 1 set | Carried, Wayfarer | Ordinary game dice; no gaming-set proficiency or special luck bonus. Not a source of fabricated campaign rolls. |
 | Backpack | 1 | Carried, Entertainer's Pack | Ordinary container; track capacity under the equipment rules. |
 | Bedroll | 2 | Secured to carried gear | One from Entertainer's Pack, one from Wayfarer; bedding only, no automatic rest or healing. |
@@ -89,7 +89,7 @@ No off-party storage or additional property is established. Bulky bedding and ot
 
 #### Known Oil mechanics
 
-As part of the Attack action, one attack can be replaced by throwing an Oil flask at a creature or object within 20 feet. The target makes a Dexterity save against DC 12 = 8 + Seren's Dexterity modifier 2 + Proficiency Bonus 2. On failure it is coated; Fire damage before the oil dries after 1 minute triggers the item's additional 5 Fire damage.
+As part of the Attack action, one attack can be replaced by throwing an Oil flask at a creature or object within 20 feet. The target makes a Dexterity save against DC 13 = 8 + Seren's Dexterity modifier 3 + Proficiency Bonus 2. On failure it is coated; Fire damage before the oil dries after 1 minute triggers the item's additional 5 Fire damage.
 
 A Utilize action can instead coat a level 5-foot-square space within 5 feet. If lit, it burns for 2 rounds (12 seconds), dealing 5 Fire damage to a creature entering or ending its turn there, at most once per turn. These are the item's game mechanics, not an action taken during setup.
 

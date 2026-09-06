@@ -32,19 +32,19 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Species / ancestry:** Dragonkin
 - **Class:** Barbarian; Strength-primary with Dexterity and Constitution emphases, explicitly selected by the player's latest confirmation
 - **Subclass:**
-- **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Remaining mechanical choices are not selected by this narrative.
+- **Background:** Soldier, official 2024 version; local militia training tied to protecting Seren. Ability increases are finalized below; remaining mechanical choices are not selected by this narrative.
 - **Level:** 1
 - **XP:** 0/300
 
 ### Player-Selected Build Direction
 
 - **Combat concept:** Strength-based close-combat Dragonkin Barbarian with a brawler/berserker-like fighting style, using open-hand gauntlets that do not interfere with his natural claws.
-- **Ability priorities:** Strength supplies the main melee attack and damage ability; Dexterity is secondary for agility, reflexes, stealth, and ranged accuracy; Constitution supports health, stamina, and durability. This supersedes the earlier Dexterity-primary direction. Exact scores remain undecided.
+- **Ability priorities:** Strength supplies the main melee attack and damage ability; Dexterity is secondary for agility, reflexes, stealth, and ranged accuracy; Constitution supports health, stamina, and durability. This supersedes the earlier Dexterity-primary direction. The player-approved rolled allocation is finalized in Ability Scores below.
 - **Gauntlet requirement:** Open-hand/open-finger construction must leave the claws usable. Materials, item classification, price, weight, damage, armor interaction, and any special properties remain to be established with the equipment choice; this preference alone grants no extra damage, AC, attack, or Weapon Mastery property.
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The Strength/Dexterity/Constitution priorities, claw-compatible open-hand gauntlet concept, and the goals above remain established. Exact ability scores and background increases, remaining proficiency choices, Weapon Mastery choices, equipment, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. The claw-compatible open-hand gauntlet concept and goals above remain established. Remaining proficiency choices, Weapon Mastery choices, equipment, appearance, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
@@ -65,25 +65,34 @@ At eighteen, Cutlor's protective purpose remains personal: give his wife room to
 
 ### Ability Scores
 
-- **Strength:**
-- **Dexterity:**
-- **Constitution:**
-- **Intelligence:**
-- **Wisdom:**
-- **Charisma:**
+Method: player-operated digital dice, 4d6 per score with the lowest die discarded, repeated six times. The player confirmed the screenshot already shows only the three kept dice in each marked group. Read left then right across each row: (6, 5, 6) = 17; (6, 3, 6) = 15; (6, 6, 5) = 17; (6, 4, 5) = 15; (3, 4, 4) = 11; (2, 6, 4) = 12. Kept-score total: 87. The discarded dice were not shown and are not invented. Source: the player's supplied roll screenshot and clarification in the character-creation conversation.
+
+Approved base allocation: Strength 17, Dexterity 15, Constitution 17, Intelligence 11, Wisdom 15, Charisma 12. Soldier increases: +1 Strength, +1 Dexterity, +1 Constitution. Species grants no ability-score increase. These are the approved starting scores, not an in-world improvement, additional roll, or level-up; the earlier standard-array proposals were not adopted.
+
+- **Strength:** 18 (+4); rolled 17 + Soldier 1
+- **Dexterity:** 16 (+3); rolled 15 + Soldier 1
+- **Constitution:** 18 (+4); rolled 17 + Soldier 1
+- **Intelligence:** 11 (+0); rolled 11
+- **Wisdom:** 15 (+2); rolled 15
+- **Charisma:** 12 (+1); rolled 12
 
 ### Combat Statistics
 
-- **HP / Max HP:**
-- **Hit Dice:**
-- **Temporary HP:**
-- **Armor Class / calculation:**
-- **Initiative:**
-- **Speed:**
-- **Special movement:**
-- **Proficiency Bonus:**
-- **Passive Perception:**
-- **Saving Throw Proficiencies:**
+- **HP / Max HP:** 16 / 16; Level-1 Barbarian maximum die value 12 + Constitution modifier 4
+- **Hit Dice:** 1d12; 1 of 1 available; add Constitution modifier +4 when spent for healing under an applicable rule
+- **Temporary HP:** 0
+- **Armor Class / calculation:** 17 with Unarmored Defense = 10 + Dexterity modifier 3 + Constitution modifier 4, without a shield. Equipment selection remains open; this records the unarmored baseline, not an armor, shield, or gauntlet acquisition.
+- **Initiative:** +3
+- **Speed:** 30 feet, from Dragonkin
+- **Special movement:** No Fly Speed at Level 1; Dragonkin Wing-Assisted Descent remains governed by the species package
+- **Proficiency Bonus:** +2
+- **Passive Perception:** Pending class skill choices; baseline 12 without Perception proficiency, or 14 if that proficiency is selected. No Perception proficiency is selected by this calculation.
+- **Saving Throw Proficiencies:** Strength, Constitution, from Barbarian
+- **Saving throw totals:** Strength +6; Dexterity +3; Constitution +6; Intelligence +0; Wisdom +2; Charisma +1
+
+#### Derived claw damage
+
+The approved Dragonkin claws deal 1d6 Slashing plus the chosen attack ability modifier. Using Strength, current damage is 1d6 + 4 Slashing on a hit, or 1d6 + 6 while Rage is active and applicable, including the Level-1 Barbarian Rage bonus of +2. Using Dexterity instead gives 1d6 + 3 and does not qualify for the Strength-based Rage damage bonus. No gauntlet bonus, extra attack, or mastery property is granted by this calculation. Rage has not been activated during setup.
 
 ### Species Package
 
@@ -102,15 +111,17 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 ### Class and Advancement
 
 - **Primary ability:** Strength for main melee attacks and damage; Dexterity secondary and Constitution for durability, as selected by the player
-- **Class Hit Die:**
+- **Class Hit Die:** d12
 - **Armor training:**
 - **Weapon / tool proficiencies:**
 - **Current class features:**
 - **Class resources / current uses:**
 - **Weapon Mastery choices:**
-- **Next-level threshold:**
+- **Next-level threshold:** 300 cumulative XP for Level 2
 
 ### Skills
+
+Fixed Soldier proficiencies calculate as Athletics +6 (Strength +4, proficiency +2) and Intimidation +3 (Charisma +1, proficiency +2). The two Barbarian skill selections and the Soldier gaming-set selection remain undecided. This update does not choose additional proficiencies or apply future Primal Knowledge or Expertise.
 
 ### Spells
 
@@ -212,37 +223,39 @@ In their present adult relationship, those years of dependable care help explain
 
 ### Ability Scores
 
-Method: the repository-default standard array, deliberately assigned without dice. Base scores are Strength 8, Dexterity 13, Constitution 14, Intelligence 10, Wisdom 12, Charisma 15. Wayfarer permits Dexterity, Wisdom, and Charisma increases; selected increases are +1 Dexterity and +2 Charisma. Species grants no ability-score increase.
+Method: player-operated digital dice, 4d6 per score with the lowest die discarded, repeated six times. The player supplied the kept dice for Seren after the agreed switch from standard array to rolling. Read left then right across each row: (6, 6, 6) = 18; (3, 4, 6) = 13; (5, 4, 5) = 14; (5, 5, 6) = 16; (6, 4, 6) = 16; (3, 5, 4) = 12. Kept-score total: 89. The discarded dice were not shown and are not invented. Source: the player's supplied Seren roll screenshot in the character-creation conversation.
 
-- **Strength:** 8 (-1)
-- **Dexterity:** 14 (+2)
-- **Constitution:** 14 (+2)
-- **Intelligence:** 10 (+0)
-- **Wisdom:** 12 (+1)
-- **Charisma:** 17 (+3)
+Approved base allocation: Strength 12, Dexterity 16, Constitution 16, Intelligence 13, Wisdom 14, Charisma 18. Wayfarer permits Dexterity, Wisdom, and Charisma increases; retained increases are +1 Dexterity and +2 Charisma. Species grants no ability-score increase. This approved revision-0 allocation replaces the earlier standard-array baseline; it is not a level-up or an in-world change to her history, appearance, or personality.
+
+- **Strength:** 12 (+1); rolled 12
+- **Dexterity:** 17 (+3); rolled 16 + Wayfarer 1
+- **Constitution:** 16 (+3); rolled 16
+- **Intelligence:** 13 (+1); rolled 13
+- **Wisdom:** 14 (+2); rolled 14
+- **Charisma:** 20 (+5); rolled 18 + Wayfarer 2
 
 ### Combat Statistics
 
-- **HP / Max HP:** 10 / 10; Level-1 Bard maximum die value 8 + Constitution modifier 2
-- **Hit Dice:** 1d8; 1 of 1 available; add Constitution modifier +2 when an applicable rule spends it for healing
+- **HP / Max HP:** 11 / 11; Level-1 Bard maximum die value 8 + Constitution modifier 3
+- **Hit Dice:** 1d8; 1 of 1 available; add Constitution modifier +3 when an applicable rule spends it for healing
 - **Temporary HP:** 0
-- **Armor Class / calculation:** 13 = Leather Armor 11 + Dexterity modifier 2; no shield. Unarmored AC 12.
-- **Initiative:** +2
+- **Armor Class / calculation:** 14 = Leather Armor 11 + Dexterity modifier 3; no shield. Unarmored AC 13.
+- **Initiative:** +3
 - **Speed:** 30 feet
 - **Special movement:** None
 - **Proficiency Bonus:** +2
-- **Passive Perception:** 13
+- **Passive Perception:** 14
 - **Saving Throw Proficiencies:** Dexterity, Charisma
-- **Saving throw totals:** Strength -1; Dexterity +4; Constitution +2; Intelligence +0; Wisdom +1; Charisma +5
+- **Saving throw totals:** Strength +1; Dexterity +5; Constitution +3; Intelligence +1; Wisdom +2; Charisma +7
 - **Death Saves:** 0 successes / 0 failures; not currently dying
 - **Resistances / immunities:** None
 - **Heroic Inspiration:** None
 
 #### Attacks and combat limits
 
-- **Dagger:** +4 to hit; 1d4 + 2 Piercing damage; melee reach 5 feet or thrown range 20/60 feet; Simple, Finesse, Light, Thrown. Four owned, with locations in `inventory.md`.
-- **Light-property extra attack:** After the qualifying Attack-action attack with a Light weapon on her turn, Seren may use her Bonus Action for one attack with a different Light weapon. For a dagger this is +4 to hit and 1d4 Piercing damage without her positive Dexterity damage modifier. She has neither the Two-Weapon Fighting style nor the Nick mastery benefit.
-- **Vicious Mockery:** Uses target's Wisdom save against DC 13, not Seren's spell attack roll; current damage 1d6 Psychic. See Spells.
+- **Dagger:** +5 to hit; 1d4 + 3 Piercing damage; melee reach 5 feet or thrown range 20/60 feet; Simple, Finesse, Light, Thrown. Four owned, with locations in `inventory.md`.
+- **Light-property extra attack:** After the qualifying Attack-action attack with a Light weapon on her turn, Seren may use her Bonus Action for one attack with a different Light weapon. For a dagger this is +5 to hit and 1d4 Piercing damage without her positive Dexterity damage modifier. She has neither the Two-Weapon Fighting style nor the Nick mastery benefit.
+- **Vicious Mockery:** Uses target's Wisdom save against DC 15, not Seren's spell attack roll; current damage 1d6 Psychic. See Spells.
 - **Action economy:** One normal Action, at most one Bonus Action on her turn, and the normal Reaction allowance. Bardic Inspiration, Fox Step, Healing Word, and a Light-property extra attack compete for the same Bonus Action.
 - **Tactical preference:** Stay near Cutlor rather than splitting the core party; use cover and support magic, preserve a healing option when practical, and use Fox Step to disengage instead of trading blows. These are Seren's intentions, not predetermined combat outcomes.
 
@@ -273,7 +286,7 @@ Exact authority: `../../Rule/PLAYABLE_CHARACTER_OPTIONS.md`, Kitsune and Kemonom
 - **Weapon proficiencies:** Simple weapons
 - **Tool proficiencies:** Lute, flute, and drum from Bard; Thieves' Tools from Wayfarer
 - **Current class features:** Bardic Inspiration, Spellcasting
-- **Class resources / current uses:** Bardic Inspiration 3 / 3, d6; Level-1 spell slots 2 / 2
+- **Class resources / current uses:** Bardic Inspiration 5 / 5, d6; Level-1 spell slots 2 / 2
 - **Weapon Mastery choices:** None; not granted by Bard 1
 - **Next-level threshold:** Level 2 at 300 cumulative XP
 - **Not yet available:** Expertise and Jack of All Trades arrive at Bard 2; subclass selection arrives at Bard 3. No later-level benefits are active.
@@ -282,7 +295,7 @@ Exact authority: `../../Rule/PLAYABLE_CHARACTER_OPTIONS.md`, Kitsune and Kemonom
 
 As a Bonus Action, grant one d6 Bardic Inspiration die to another creature within 60 feet that can see or hear Seren. It lasts up to 1 hour. After the recipient fails a D20 Test, it may roll that die and add it to the d20 result, potentially turning failure into success. The die is spent when rolled. A creature can hold only one Bardic Inspiration die at a time; Seren cannot grant this feature to herself.
 
-Current uses: 3 / 3, equal to Charisma modifier +3. All expended uses return after a Long Rest at this level. No dice have been granted or rolled during setup. The player physically rolls any later Inspiration die.
+Current uses: 5 / 5, equal to Charisma modifier +5. All expended uses return after a Long Rest at this level. No Bardic Inspiration dice have been granted or rolled during setup. The player rolls any later Inspiration die under `../../Rule/DICE_ROLLS_AND_REROLLS.md`.
 
 #### Wayfarer Background and Lucky Origin Feat
 
@@ -302,34 +315,34 @@ All totals include the current ability modifier and Proficiency Bonus only where
 
 | Skill | Modifier | Proficiency source |
 |---|---:|---|
-| Acrobatics | +2 | Not proficient |
-| Animal Handling | +1 | Not proficient |
-| Arcana | +0 | Not proficient |
-| Athletics | -1 | Not proficient |
-| Deception | +5 | Kitsune Fox Guile |
-| History | +0 | Not proficient |
-| Insight | +3 | Wayfarer |
-| Intimidation | +3 | Not proficient |
-| Investigation | +0 | Not proficient |
-| Medicine | +1 | Not proficient |
-| Nature | +0 | Not proficient |
-| Perception | +3 | Bard |
-| Performance | +5 | Bard |
-| Persuasion | +5 | Bard |
-| Religion | +0 | Not proficient |
-| Sleight of Hand | +2 | Not proficient |
-| Stealth | +4 | Wayfarer |
-| Survival | +1 | Not proficient; Advantage only for following a scent trail |
+| Acrobatics | +3 | Not proficient |
+| Animal Handling | +2 | Not proficient |
+| Arcana | +1 | Not proficient |
+| Athletics | +1 | Not proficient |
+| Deception | +7 | Kitsune Fox Guile |
+| History | +1 | Not proficient |
+| Insight | +4 | Wayfarer |
+| Intimidation | +5 | Not proficient |
+| Investigation | +1 | Not proficient |
+| Medicine | +2 | Not proficient |
+| Nature | +1 | Not proficient |
+| Perception | +4 | Bard |
+| Performance | +7 | Bard |
+| Persuasion | +7 | Bard |
+| Religion | +1 | Not proficient |
+| Sleight of Hand | +3 | Not proficient |
+| Stealth | +5 | Wayfarer |
+| Survival | +2 | Not proficient; Advantage only for following a scent trail |
 
-- **Thieves' Tools:** +4 on Dexterity checks to which this tool proficiency applies. Ordinary lockpicking or trap-disarming uses the applicable item/task DC; no blanket automatic success.
-- **Musical instruments:** +5 on Charisma checks using a proficient instrument. When both a relevant skill and tool proficiency apply, use the official tool rules; do not add Proficiency Bonus twice.
+- **Thieves' Tools:** +5 on Dexterity checks to which this tool proficiency applies. Ordinary lockpicking or trap-disarming uses the applicable item/task DC; no blanket automatic success.
+- **Musical instruments:** +7 on Charisma checks using a proficient instrument. When both a relevant skill and tool proficiency apply, use the official tool rules; do not add Proficiency Bonus twice.
 - **Gaming Set:** Owns a dice set from Wayfarer equipment but has no gaming-set proficiency.
 
 ### Spells
 
 - **Spellcasting ability:** Charisma
-- **Spell Attack Modifier:** +5 = Charisma +3 + Proficiency Bonus +2
-- **Spell Save DC:** 13 = 8 + Charisma +3 + Proficiency Bonus +2
+- **Spell Attack Modifier:** +7 = Charisma +5 + Proficiency Bonus +2
+- **Spell Save DC:** 15 = 8 + Charisma +5 + Proficiency Bonus +2
 - **Spellcasting focus:** Owned lute, nicknamed Hearthstring; a mundane musical instrument used as the Bard focus
 - **Cantrips:** Minor Illusion; Vicious Mockery
 - **Prepared Level-1 spells:** Detect Magic; Dissonant Whispers; Faerie Fire; Healing Word
@@ -345,12 +358,12 @@ These summaries preserve the relevant current mechanics; use the cited SRD for e
 
 | Spell | Casting / components | Range and duration | Current effect |
 |---|---|---|---|
-| Minor Illusion | Action; S, M (a bit of fleece, replaceable with Bard focus) | 30 feet; 1 minute; no Concentration | Create a sound or an image of an object no larger than a 5-foot Cube, not both. An image creates no sound, light, smell, or other sensory effect; physical interaction reveals its illusory nature. A Study action with Intelligence (Investigation) against DC 13 can discern the illusion, which becomes faint to that observer. Casting it again ends the previous instance. |
-| Vicious Mockery | Action; V | 60 feet; instantaneous damage | One creature Seren can see or hear makes a DC 13 Wisdom save. On failure: 1d6 Psychic damage and Disadvantage on its next attack roll before the end of its next turn. On success: no effect. Damage scales by character level to 2d6 at 5, 3d6 at 11, 4d6 at 17; current damage remains 1d6. |
+| Minor Illusion | Action; S, M (a bit of fleece, replaceable with Bard focus) | 30 feet; 1 minute; no Concentration | Create a sound or an image of an object no larger than a 5-foot Cube, not both. An image creates no sound, light, smell, or other sensory effect; physical interaction reveals its illusory nature. A Study action with Intelligence (Investigation) against DC 15 can discern the illusion, which becomes faint to that observer. Casting it again ends the previous instance. |
+| Vicious Mockery | Action; V | 60 feet; instantaneous damage | One creature Seren can see or hear makes a DC 15 Wisdom save. On failure: 1d6 Psychic damage and Disadvantage on its next attack roll before the end of its next turn. On success: no effect. Damage scales by character level to 2d6 at 5, 3d6 at 11, 4d6 at 17; current damage remains 1d6. |
 | Detect Magic | Action or Ritual; V, S | Self, senses magic within 30 feet; Concentration up to 10 minutes | Sense magical effects. A Magic action reveals an aura on a visible affected creature or object and a spell effect's school, if applicable. Blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or thin lead. Does not automatically identify exact item properties. |
-| Dissonant Whispers | Action; V | 60 feet; instantaneous | One visible creature makes a DC 13 Wisdom save. Failure: 3d6 Psychic damage and it immediately uses its Reaction, if available, to move as far away from Seren as it can by the safest route. Success: half damage only. Higher slots add 1d6 per slot level above 1; no such slots are currently available. |
-| Faerie Fire | Action; V | 60 feet; 20-foot Cube; Concentration up to 1 minute | Objects are outlined; creatures in the area are outlined on a failed DC 13 Dexterity save. Affected targets shed Dim Light for 10 feet and cannot benefit from Invisible. Attacks against them have Advantage if the attacker can see them. Allies in the area are not automatically exempt. Seren's chosen visual is violet light. |
-| Healing Word | Bonus Action; V | 60 feet; instantaneous | One creature Seren can see regains 2d4 + 3 HP, not exceeding its maximum. Higher slots add 2d4 healing per slot level above 1; current slots are Level 1 only. |
+| Dissonant Whispers | Action; V | 60 feet; instantaneous | One visible creature makes a DC 15 Wisdom save. Failure: 3d6 Psychic damage and it immediately uses its Reaction, if available, to move as far away from Seren as it can by the safest route. Success: half damage only. Higher slots add 1d6 per slot level above 1; no such slots are currently available. |
+| Faerie Fire | Action; V | 60 feet; 20-foot Cube; Concentration up to 1 minute | Objects are outlined; creatures in the area are outlined on a failed DC 15 Dexterity save. Affected targets shed Dim Light for 10 feet and cannot benefit from Invisible. Attacks against them have Advantage if the attacker can see them. Allies in the area are not automatically exempt. Seren's chosen visual is violet light. |
+| Healing Word | Bonus Action; V | 60 feet; instantaneous | One creature Seren can see regains 2d4 + 5 HP, not exceeding its maximum. Higher slots add 2d4 healing per slot level above 1; current slots are Level 1 only. |
 
 ### Equipment Summary
 
@@ -441,7 +454,11 @@ No active conception-check cooldowns; no check has occurred in this baseline.
 Verified against current repository rules and the following official references on 2026-09-06:
 
 - Species, form, maturity, and trait package: `../../Rule/PLAYABLE_CHARACTER_OPTIONS.md`
-- Standard-array default, derived statistics, and clock: `../../Rule/CORE_GAME_MECHANICS.md`
+- Ability generation policy, derived statistics, and clock: `../../Rule/CORE_GAME_MECHANICS.md`
+- Player-operated dice and screenshot results: `../../Rule/DICE_ROLLS_AND_REROLLS.md`
+- Rolled generation, background increases, modifiers, HP, saves, skills, and initiative: `https://www.dndbeyond.com/sources/dnd/br-2024/creating-a-character`
+- Barbarian and Bard derived mechanics: `https://www.dndbeyond.com/sources/dnd/br-2024/character-classes`
+- Soldier ability options and fixed skills: `https://www.dndbeyond.com/sources/dnd/br-2024/character-origins`
 - Class: SRD 5.2.1, pages 31-33, and `https://www.dndbeyond.com/classes/2190876-bard`
 - Wayfarer and Lucky: official D&D Beyond article, Backgrounds and Origin Feats in the 2024 Player's Handbook, `https://www.dndbeyond.com/posts/1785-the-backgrounds-and-origin-feats-in-the-2024`, especially its complete Wayfarer example and Lucky summary
 - Languages and equipment: SRD 5.2.1, pages 20 and 89-100
@@ -450,6 +467,8 @@ Verified against current repository rules and the following official references 
 
 Attribution: This work includes material from the System Reference Document 5.2.1 ("SRD 5.2.1") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
-Review: standard array and background increases reconcile; species and all current-level class features are recorded; six distinct skill proficiencies are accounted for; HP 10, AC 13, spell save DC 13, spell attack +5, and dagger attack +4 are calculated; starting inventory and 35 GP reconcile with class/background choices. No unrolled randomness, future-level feature, new local rule, or gameplay Step was added. Seren is complete at Level 1; Cutlor's undecided build fields remain untouched.
+Rolled-score update, revision 0: The player approved and requested a GitHub commit of both proposed rolled allocations. Cutlor's kept-score total is 87; Soldier adds 3 for final scores 18 / 16 / 18 / 11 / 15 / 12. His Level-1 HP is 16, unarmored shield-free AC is 17, initiative is +3, and Strength claw damage is 1d6 + 4 or 1d6 + 6 with applicable Rage. Perception proficiency, other remaining choices, and the rest of his build are still pending; these calculations do not complete his character creation.
+
+Seren's kept-score total is 89; Wayfarer adds 3 for final scores 12 / 17 / 16 / 13 / 14 / 20. HP 11, leather AC 14, initiative +3, passive Perception 14, spell save DC 15, spell attack +7, Bardic Inspiration 5 / 5 (d6), dagger attack +5, dagger damage 1d4 + 3, and Healing Word 2d4 + 5 reconcile. All saving throws, eighteen skills, proficient tool checks, affected spell DCs, and inventory-derived values are updated. Her species package, class level, chosen spells, two spell slots, Lucky and Fox Step uses, starting equipment, 35 GP, appearance, personality, and linked history are unchanged. No roll was generated by ChatGPT and no gameplay Step, time advance, completed checkpoint, or revision-1 transition was created.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
