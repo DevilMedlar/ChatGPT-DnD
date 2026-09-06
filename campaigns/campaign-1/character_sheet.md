@@ -157,7 +157,7 @@ This section owns stable textual appearance canon, including species markers, un
 ### Personal / Relationship Continuity
 
 - Calls Seren nicknames like pet, babe, baby, honey, or other terms of endirment.
-- Only calls Seren by name when mad at her, upset with her, or he is in trouble for something.
+- Only calls Seren by name when mad at her, upset with her, or she is in trouble for something.
 
 ### Reproductive and Parent State
 
