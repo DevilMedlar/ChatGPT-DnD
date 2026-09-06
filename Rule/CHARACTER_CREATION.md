@@ -28,6 +28,12 @@ At minimum, establish for each:
 - Background
 - Level and XP
 - Ability scores
+  - Strength: Measures physical power, lifting, and melee attack force.
+  - Dexterity: Measures agility, reflexes, stealth, and ranged accuracy.
+  - Constitution: Measures health, stamina, and hit points.
+  - Intelligence: Measures mental acuity, memory, and reasoning.
+  - Wisdom: Measures awareness, intuition, and willpower.
+  - Charisma: Measures force of personality, persuasion, and leadership.
 - Saving throw and skill proficiencies
 - Hit Points and Hit Dice
 - Armor Class
