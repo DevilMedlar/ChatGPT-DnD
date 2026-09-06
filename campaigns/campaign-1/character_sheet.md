@@ -44,7 +44,7 @@ The two core PCs share everything they learn. Do not create separate secret-know
 - **Offensive goal:** High damage to finish easier fights quickly.
 - **Defensive goal:** Enough durability to serve as a front-line tank in harder, longer battles.
 - **Berserker description:** A desired fighting style, not a selected Berserker subclass or loss of player control. Only features actually granted by the current Barbarian level apply; no future-level feature is granted by this description.
-- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. The claw-compatible open-hand gauntlet concept and goals above remain established. Remaining proficiency choices, Weapon Mastery choices, equipment, appearance, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
+- **Approval status:** Barbarian is the confirmed class and replaces the prior Fighter entry. Soldier is the selected background, with the player-requested linked history below. The rolled ability allocation and Soldier increases of +1 Strength, +1 Dexterity, and +1 Constitution are approved and saved. Perception and Survival are the confirmed Barbarian skill proficiencies. The claw-compatible open-hand gauntlet concept and goals above remain established. Soldier gaming-set proficiency, Weapon Mastery choices, equipment, appearance, subclass, and any campaign-specific gauntlet or unarmed rules remain undecided. Recommendations are not finalized choices. A desired performance goal is not a granted mechanic or a guaranteed outcome.
 - **Setup state:** Revision 0 remains open. No gameplay Step, clock advance, inventory acquisition, or campaign-rule change is created by recording these choices.
 
 ### Background History
@@ -86,7 +86,7 @@ Approved base allocation: Strength 17, Dexterity 15, Constitution 17, Intelligen
 - **Speed:** 30 feet, from Dragonkin
 - **Special movement:** No Fly Speed at Level 1; Dragonkin Wing-Assisted Descent remains governed by the species package
 - **Proficiency Bonus:** +2
-- **Passive Perception:** Pending class skill choices; baseline 12 without Perception proficiency, or 14 if that proficiency is selected. No Perception proficiency is selected by this calculation.
+- **Passive Perception:** 14 = 10 + Wisdom modifier 2 + Proficiency Bonus 2; Perception proficiency from Barbarian
 - **Saving Throw Proficiencies:** Strength, Constitution, from Barbarian
 - **Saving throw totals:** Strength +6; Dexterity +3; Constitution +6; Intelligence +0; Wisdom +2; Charisma +1
 
@@ -121,7 +121,16 @@ Record the exact package from `PLAYABLE_CHARACTER_OPTIONS.md`; do not leave its 
 
 ### Skills
 
-Fixed Soldier proficiencies calculate as Athletics +6 (Strength +4, proficiency +2) and Intimidation +3 (Charisma +1, proficiency +2). The two Barbarian skill selections and the Soldier gaming-set selection remain undecided. This update does not choose additional proficiencies or apply future Primal Knowledge or Expertise.
+The player confirmed Perception and Survival as Cutlor's two Barbarian skill proficiencies. Soldier supplies Athletics and Intimidation. These are the four established skill proficiencies at Level 1; no Expertise or future Primal Knowledge is active.
+
+| Skill | Modifier | Calculation | Proficiency source |
+|---|---:|---|---|
+| Athletics | +6 | Strength +4 + Proficiency Bonus +2 | Soldier |
+| Intimidation | +3 | Charisma +1 + Proficiency Bonus +2 | Soldier |
+| Perception | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
+| Survival | +4 | Wisdom +2 + Proficiency Bonus +2 | Barbarian; player selected |
+
+Ordinary passive Perception is 14 (10 + Perception modifier 4). The Soldier gaming-set selection remains undecided. Animal Handling was not selected. No equipment, extra proficiency, gameplay Step, or in-world time is granted or consumed by this revision-0 choice.
 
 ### Spells
 
@@ -374,7 +383,7 @@ Bard starting equipment A plus Wayfarer starting equipment A, with no starting p
 - Thieves' Tools, dice set, two Pouches, Traveler's Clothes
 - Entertainer's Pack fully unpacked into inventory entries; includes one Bedroll, plus the second Bedroll supplied by Wayfarer
 - Three Costumes, Backpack, Bell, Bullseye Lantern, Mirror, eight Oil flasks, nine days of Rations, Tinderbox, full Waterskin
-- Currency: 35 GP = 19 GP from Bard + 16 GP from Wayfarer; 0 PP, EP, SP, CP
+- Currency: 35 GP = 19 GP from Bard + 16 GP Wayfarer; 0 PP, EP, SP, CP
 - No magic items, attunements, ammunition, debts, stored property, or unpriced keepsakes established
 
 ### Conditions / Ongoing Effects
@@ -467,8 +476,10 @@ Verified against current repository rules and the following official references 
 
 Attribution: This work includes material from the System Reference Document 5.2.1 ("SRD 5.2.1") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
-Rolled-score update, revision 0: The player approved and requested a GitHub commit of both proposed rolled allocations. Cutlor's kept-score total is 87; Soldier adds 3 for final scores 18 / 16 / 18 / 11 / 15 / 12. His Level-1 HP is 16, unarmored shield-free AC is 17, initiative is +3, and Strength claw damage is 1d6 + 4 or 1d6 + 6 with applicable Rage. Perception proficiency, other remaining choices, and the rest of his build are still pending; these calculations do not complete his character creation.
+Rolled-score update, revision 0: The player approved and requested a GitHub commit of both proposed rolled allocations. Cutlor's kept-score total is 87; Soldier adds 3 for final scores 18 / 16 / 18 / 11 / 15 / 12. His Level-1 HP is 16, unarmored shield-free AC is 17, initiative is +3, and Strength claw damage is 1d6 + 4 or 1d6 + 6 with applicable Rage. These calculations did not complete his character creation; later confirmed skill selections are recorded below, while the remaining build choices stay open.
 
 Seren's kept-score total is 89; Wayfarer adds 3 for final scores 12 / 17 / 16 / 13 / 14 / 20. HP 11, leather AC 14, initiative +3, passive Perception 14, spell save DC 15, spell attack +7, Bardic Inspiration 5 / 5 (d6), dagger attack +5, dagger damage 1d4 + 3, and Healing Word 2d4 + 5 reconcile. All saving throws, eighteen skills, proficient tool checks, affected spell DCs, and inventory-derived values are updated. Her species package, class level, chosen spells, two spell slots, Lucky and Fox Step uses, starting equipment, 35 GP, appearance, personality, and linked history are unchanged. No roll was generated by ChatGPT and no gameplay Step, time advance, completed checkpoint, or revision-1 transition was created.
+
+Skill selection update, revision 0: The player confirmed Perception and Survival as Cutlor's two Barbarian skill proficiencies. Each is +4 (Wisdom +2 and Proficiency Bonus +2), and his ordinary passive Perception is 14. Soldier's Athletics +6 and Intimidation +3 are unchanged. The Soldier gaming-set choice and all other undecided build choices remain open. No changes to Seren, equipment, XP, campaign clock, save revision, or Campaign Turn state are made by this skill selection.
 
 Content correction: one shared-backstory entry involving sexual history of minors was omitted from this revision. The established childhood friendship, marriage, and other nonsexual continuity were preserved. No replacement sexual history was invented.
