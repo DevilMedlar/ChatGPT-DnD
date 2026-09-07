@@ -37,9 +37,37 @@ Do not advance time for out-of-fiction discussion. Do not silently skip an appoi
 
 Record numbered Steps, player decisions, rolls and results, narration with recovery value, scene changes, mechanical outcomes, and state deltas.
 
+### Pre-play reference-art intake — Step 0, out of fiction
+
+The player supplied the two repository images below and requested handling under the art rules. Both paths were verified on `main` and both images were visually inspected on 2026-09-07; downloaded bytes matched the listed Git blob SHAs. This is reference intake during the existing start hold, not a numbered gameplay Step or a played scene. Preserve these pending records when Turn 1 later starts.
+
+- Art: `campaigns/campaign-1/art/Seren.png` — Seren Ashvale, ChatGPT-controlled PC / co-protagonist. Verified blob `1a5b755ece0002ca04aeb0864308c4e18671b00a`.
+- Art: `campaigns/campaign-1/art/Cutlor_Awakened.png` — Cutlor Ashvale, player-controlled PC; manifested / awakened presentation reference only. Verified blob `fdccd041c5c20ef1e1760b369a0a23d4d5f2a7bb`.
+
+Provenance: player-supplied, manually added repository images. Original generator, prompt, and creation date are not independently established. Apply `../../Rule/IMAGES_VISUALS_AND_REFERENCE_ART.md` and the structure in `art/art_log.md` at the normal Turn Final Review; image existence does not finalize permanent reference metadata.
+
+**Seren — pending visual-reference notes**
+
+- Canonical matches: humanlike face, warm light-brown skin and freckles, amber/gold eyes, wavy copper-auburn hair with partly gathered styling, two rust-red fox ears with dark tips and pale interiors, one rust-red tail with an ivory tip, fitted leather collar with brass-colored hardware, cream lace bra, charcoal mini skirt, white thigh-high socks, brown boots, plum leaf-stitched cloak, belt gear, and wooden lute.
+- Inspiration only: pose, expression, warm lighting, distant town/landscape, exact lute ornament, cloak fastener, and photographic proportions. The background establishes no campaign location, scene, clock, or weather; the portrait does not verify numerical height/weight or unseen hair length.
+- Inaccuracies / limits: three dagger hilts are visible at the belt, whereas the inventory arrangement is two belt daggers and two packed daggers, four owned total. Leather Armor is not visibly worn in the portrait, but remains equipped in current state. An apparent human-ear/earring detail near the hair is noncanonical: written appearance specifies no separate visible human ears and no added jewelry. Her left-hand scar, second pouch, and other obscured details are not reliably verified here; omission does not remove them. Collar color and other colors remain governed by written canon under the warm lighting.
+- Existing text discrepancy: the character-sheet appearance owner describes the reference-matching bra/skirt/socks outfit, while the inventory's Traveler's Clothes description still says cream blouse and charcoal trousers. Reference comparison uses the character-sheet appearance authority. The image intake does not itself resolve this pre-existing text inconsistency or change the owned clothing set.
+
+**Cutlor — pending visual-reference notes**
+
+- Canonical matches: broad muscular humanlike build, strong jaw and clean-shaven face, warm medium-brown skin, black swept-back hair, green eyes, dark horns, a pair of copper-brown membraned wings, tapering dark/copper-toned tail, sleeveless dark leather armor with copper-colored stitching, open-finger metal-knuckle gauntlets, round shield, belt pouch, dark trousers, and brown boots.
+- Inspiration only: stance, expression, warm lighting, architectural background and banner, and exact leather-panel or metalwork detailing. No depicted heraldry, location, allegiance, equipment property, or additional possession is adopted.
+- Inaccuracies / limits: face/neck/arm scales are much more prominent and armorlike than the established barely noticeable, fine, smooth, low-profile charcoal scales with restrained copper sheen. Written subtle texture remains authoritative in both forms. Horn visibility and perspective do not supersede the symmetrical pair or written horn length, wing span, tail length, height, or weight. Natural claws and omitted travel gear remain established even where not clearly visible.
+- Form scope: the image illustrates an available manifested / awakened appearance; it is not an ordinary veiled-form portrait or evidence of a transformation, Rage, Awakening use, healing, Temporary HP, AC change, flight, or elapsed time. Current horns/wings/tail stay withdrawn and Awakening stays inactive.
+
+No image difference is adopted as new textual appearance or equipment canon by this intake.
+
 ## Current In-Turn State
 
 Maintain a compact current overlay needed to continue or recover the Turn. Do not copy every permanent file here.
+
+- **Pre-play art overlay:** The two verified reference images and their continuity notes above await the normal Turn Final Review and save confirmation. Keep Turn 1 ready at Step 0 and preserve the existing start hold.
+- **Gameplay state:** No Step, scene, clock, character appearance, equipment, HP, resource, XP, or currency change. Campaign Day 1, 08:00:00; base save revision 1. Cutlor remains veiled with horns/wings/tail withdrawn, Rage inactive and Awakening inactive.
 
 ## Pending Reproductive Events
 
@@ -133,6 +161,23 @@ Vendor quantity, buyer currency, acquired inventory, acquisition snapshot, and a
 ## Pending Permanent Transfers
 
 List only actual new or changed persistent state and required mirrors, organized by destination file.
+
+### `art/art_log.md`
+
+Pending new visual-reference metadata only; this file is currently blank of established references. At Final Review, re-read it and `character_sheet.md`, compare these proposals with current content, and remove anything already recorded or unchanged before showing Exact Planned Permanent Transfers.
+
+- **Player-Controlled PC references:** Set Primary reference to `campaigns/campaign-1/art/Cutlor_Awakened.png`, explicitly scoped to manifested / awakened presentation only. Other verified references: none; no ordinary veiled-form image supplied. Transfer the provenance, canonical matches, inspiration-only details, inaccuracies, and form-scope notes from this intake.
+- **ChatGPT-Controlled PC / Co-Protagonist references:** Set Primary reference to `campaigns/campaign-1/art/Seren.png`. Other verified references: none. Transfer the provenance, canonical matches, inspiration-only details, and inaccuracies/limits from this intake.
+- Retain the log's authority text and its other sections. These portraits create no NPC, location, or separate equipment-reference record.
+
+### `character_sheet.md`
+
+Pending reference-status consistency corrections only, in the same eventual approved save; no underlying textual appearance change.
+
+- Cutlor, Appearance — replace `- **Reference art:** None established; no generated portrait or repository image path is claimed` with `- **Reference art:** See [Art Continuity Log](art/art_log.md) for verified visual references, their form scope, and continuity notes. This section remains the textual appearance authority.`
+- Seren, Appearance — replace `- **Reference art:** None established; no generated image or repository art path exists for this build` with `- **Reference art:** See [Art Continuity Log](art/art_log.md) for verified visual references and continuity notes. This section remains the textual appearance authority.`
+
+Permanent transfers remain pending the normal Campaign Turn Final Review and player save confirmation. This intake neither requests nor records save/reset approval and does not increment the completed save revision.
 
 ## Final Turn Review
 
