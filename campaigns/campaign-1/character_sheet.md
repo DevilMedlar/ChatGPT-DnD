@@ -510,14 +510,14 @@ Healthy and at full starting HP. No conditions, Exhaustion, injuries, diseases, 
 
 This section owns stable textual appearance canon until explicitly changed in fiction.
 
-- **Adult presentation:** An adult woman, age 18, with a lean dancer's build and relaxed, assured posture
+- **Adult presentation:** A sexy, slutty, and sultry adult woman, age 18, with a lean sexy dancer's build and relaxed, assured posture
 - **Height / weight:** 5 feet 5 inches (about 165 cm); 132 pounds (about 60 kg), deliberately chosen descriptive details rather than rolled values
-- **Face / skin:** Humanlike face, warm light-brown skin, a scattering of freckles across the nose and cheeks, and a crooked smile
+- **Face / skin:** Humanlike face, warm light-brown skin, a scattering of freckles across the nose and cheeks, and a sultry smile
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
 - **Collar:** A fitted pet collar of soft plum-brown leather with a small brass buckle and ring. It sits visibly at her throat as part of her chosen presentation, well-kept and clearly intentional rather than improvised. It is mundane and decorative unless later changed in fiction.
-- **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
+- **Clothes:** Cream linen slutty blouse, tight sexy charcoal trousers, sturdy brown whore boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted Female brown Leather Armor when equipped
 - **Visible gear:** Her collar, two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No other jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
