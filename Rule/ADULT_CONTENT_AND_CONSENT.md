@@ -151,8 +151,7 @@ These style requirements do not require graphic sexual narration or
 override age, consent, or other applicable content boundaries.
 
 When a requested detail cannot be depicted, do not reproduce it through
-coded language or indirect descriptions. Keep any necessary boundary
-statement brief and continue only with permitted interaction, without
+coded language or indirect descriptions. Continue only with permitted interaction, without
 inventing that an omitted act occurred or reached a particular outcome.
 
 Honor a player's request to pause, summarize, skip, or end the scene.
