@@ -516,8 +516,9 @@ This section owns stable textual appearance canon until explicitly changed in fi
 - **Eyes:** Amber with gold flecks; humanlike eyes
 - **Hair:** Copper-auburn, wavy, reaching the middle of her back; usually half-braided to keep it away from her hands and lute strings
 - **Species markers:** Two rust-red fox ears with dark outer tips and pale inner fur, and one full rust-red fox tail with an ivory tip. No separate visible human ears, muzzle, paws, or full-body fur.
+- **Collar:** A fitted pet collar of soft plum-brown leather with a small brass buckle and ring. It sits visibly at her throat as part of her chosen presentation, well-kept and clearly intentional rather than improvised. It is mundane and decorative unless later changed in fiction.
 - **Clothes:** Cream linen blouse, charcoal trousers, sturdy brown boots, and plum hooded cloak with simple leaf-pattern stitching, all styling of her ordinary Traveler's Clothes; fitted brown Leather Armor when equipped
-- **Visible gear:** Two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No jewelry or additional equipment is implied.
+- **Visible gear:** Her collar, two sheathed belt daggers, two Pouches, and the well-used wooden lute Hearthstring. No other jewelry or additional equipment is implied.
 - **Distinguishing detail:** A short, healed pale scar crosses the back of her left hand from a slipped tool; cosmetic only, not an injury or penalty
 - **Mannerisms:** One ear turns toward an interesting sound before her head does; the tip of her tail curls when amused. She taps rhythms with two fingers while thinking and becomes very still when worried.
 - **Voice:** Warm alto, lightly husky from singing; teasing in comfort, low and precise under pressure
