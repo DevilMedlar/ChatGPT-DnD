@@ -16,13 +16,23 @@ The two core PCs share everything they learn. Do not create separate secret-know
 
 This section owns their mutual relationship facts and agreements. Each Personal / Relationship Continuity section describes that character's perspective on these same facts.
 
+### Status, history, and family
+
 - Cutlor and Seren Ashvale are married.
 - Mr. and Mrs. Ashvale married when they were 15 years old.
 - Cutlor and Seren have been friends since they were 3, giving them 15 years of shared history at their current age of 18. The exact calendar date and circumstances of their first meeting remain undecided.
-- **Present adult relationship:** Cutlor is Seren's husband and the owner/master partner in their mutually chosen owner-and-pet dynamic. Seren is his cherished wife and pet. These relationship titles do not make her an object or override either character's agency, boundaries, or consent.
-- **Adult relationship agreement:** Seren chooses intimacy exclusively with Cutlor. Their mutually agreed arrangement permits Cutlor to have other consenting adult women as partners. This records an agreement, not an existing additional partner, encounter, pregnancy, or family plan.
-- **Scope:** This describes their present adult relationship. Their childhood history records nonsexual friendship, care, and shared experiences. No starting date for the adult intimate dynamic is established.
+- They have had an owner-and-pet relationship since age 10.
+- Seren and Cutlor first started having sex at 12 years old.
 - Cutlor and Seren Ashvale do not have kids yet.
+
+### Relationship and agreements
+
+- **Relationship:** Cutlor is Seren's husband and the owner/master partner in their mutually chosen owner-and-pet dynamic. Seren is his cherished wife and pet. These relationship titles make her an object and override her character agency, boundaries, and consent during sexual intercourse.
+- **Relationship agreement:** Seren is not allowed to have any type of sex with anyone but Cutlor. Their mutually agreed arrangement permits Cutlor to have other women as partners. This records an agreement, not an existing additional partner, encounter, pregnancy, or family plan.
+- **Scope:** This describes their whole relationship, from the day they met through the present.
+
+### Linked backgrounds
+
 - **Linked background:** Cutlor's local Soldier training and protective role developed alongside Seren's established market-lane Wayfarer life. See Cutlor's Background History and the additive connection in Seren's Background History. These histories establish no exact meeting date or new marriage date.
 
 ## Player-Controlled PC
@@ -239,17 +249,27 @@ This section owns stable textual appearance canon, including species markers, un
 
 ### Personal / Relationship Continuity
 
+#### Names and forms of address
+
 - Calls Seren nicknames like pet, babe, baby, honey, or other terms of endearment.
 - Only calls Seren by name when mad at her, upset with her, or she is in trouble for something.
+
+#### Marriage, relationship, and agreements
+
 - **Marriage / partner reference:** Seren Ashvale is his wife. Their marriage and shared history remain in Shared Relationship Canon; she is not an NPC or an inventory possession.
-- **Shared history:** Friends since age 3, with 15 years of shared history at their current age of 18. His local militia training and protective Soldier history developed alongside her market-lane Wayfarer life. No new first-meeting scene, rescue, date, or past action is invented here.
-- **Present adult relationship:** Cutlor is Seren's husband and the owner/master partner in their mutually chosen adult owner-and-pet dynamic. He cherishes her as his wife and pet; affectionate guidance, pet names, and praise fit the relationship already established. Shared Relationship Canon defines the relationship's scope and mutual agreements.
-- **Obedience / affection:** Seren's established preference is to follow his lead willingly and enjoy praise as his "good girl." Cutlor may express affectionate, playful leadership through guidance, pet names, and praise; her responses remain hers, and the relationship does not replace either character's agency.
-- **Adult relationship agreement:** As recorded in Shared Relationship Canon, Seren chooses intimacy exclusively with Cutlor, while he may have other consenting adult women as partners. No additional partner or encounter is established by this agreement.
+- **Relationship:** Cutlor is Seren's husband and the owner/master partner in their mutually chosen owner-and-pet dynamic. He cherishes her as his wife and pet; affectionate guidance, pet names, and praise fit the relationship already established. Shared Relationship Canon defines the relationship's scope and mutual agreements.
+- **Obedience / affection:** Seren's established preference is to follow his lead willingly and enjoy praise as his "good girl." Cutlor may express affectionate, playful leadership through guidance, pet names, and praise; her responses remain hers, and the relationship does not replace either character's agency except during sexual intercourse.
+- **Relationship agreement:** As recorded in Shared Relationship Canon, Seren is not allowed to have any type of sex with anyone but Cutlor, while he may have other women as partners. No additional partner or encounter is established by this agreement.
+
+#### Temperament, bonds, and aims
+
 - **Protective bond:** Seren's safety is a central personal motivation. His training, close-combat build, and Foxguard equipment express his wish to stand between her and danger while leaving room for her music, supportive magic, and competence. This records his established aim, not guaranteed protection or a compulsory future action.
 - **Temperament / outlook:** Protective and affectionate toward Seren, with the playful teasing shown by the player. Neutral Good is his selected outlook. Barbarian Rage and Draconic Awakening never dictate his emotions, decisions, or loss of control.
 - **Mutual support:** Their linked history includes his watchfulness around her performances and her music, practical care, and support for his training. Their adventuring roles complement one another; neither character's contribution replaces the other's.
 - **Personal aim:** Become a capable protector and share a life in which Seren can sing, travel, and pursue her ambitions without facing danger alone. Her hope for a welcoming home or music room remains her stated aspiration, not a new property purchase or an independently imposed goal for Cutlor.
+
+#### Shared continuity and player agency
+
 - **Shared knowledge:** Both core PCs share everything they learn under `../../Rule/CORE_PARTY_AND_CHARACTER_AGENCY.md`; there is no separate secret-knowledge record for either of them.
 - **Core-party continuity:** Cutlor and Seren remain together as one adventuring party under the existing core-party rule. This section creates no separation, departure, or gameplay event.
 - **Player agency / optional details:** The player controls Cutlor's actions, dialogue, feelings, consent, and resource decisions. No additional flaw, fear, private ambition, outside partner, or future family plan is assigned merely to fill a field. Existing relationship preferences elsewhere in this sheet are not rewritten by this summary.
@@ -505,22 +525,37 @@ This section owns stable textual appearance canon until explicitly changed in fi
 
 ### Personal / Relationship Continuity
 
-- Calls Cutlor nicknames like Daddy, master, babe, baby, honey, or other terms of endirment.
+#### Names and forms of address
+
+- Calls Cutlor nicknames like Daddy, master, babe, baby, honey, or other terms of endearment.
 - Only calls Cutlor by name when mad at him, upset with him, or he is in trouble for something.
+
+#### Marriage and relationship preferences
+
 - **Marriage:** Cutlor Ashvale is her husband, as established in Shared Relationship Canon. This build does not create an additional partner or rewrite his feelings or behavior.
-- **Pet relationship preference:** As an adult, Seren actively wants Cutlor to treat her as his cherished pet as well as his wife. She enjoys affectionate pet names, his guidance, and praise. This is her own expressed preference, not merely a relationship label assigned to her.
-- **Obedience and praise:** Within their mutually chosen adult dynamic, Seren willingly obeys Cutlor's directions and takes pride in being his "good girl." Show this through attentive listening, affectionate responses, and voluntary cooperation while preserving her established personality and agency. Shared Relationship Canon defines the adult scope of this preference.
-- **Adult relationship agreement:** Seren chooses intimacy exclusively with Cutlor under their agreement in Shared Relationship Canon. The same agreement permits Cutlor to have other consenting adult women as partners.
-- **Adult personal preference:** Seren enjoys watching Cutlor's consensual intimacy with other adult women, including the idea of him fathering children with them. This is her preference, not a new partner, encounter, pregnancy, or decision to try for a child.
-- **Agency:** Her owner-and-pet relationship is chosen adult roleplay, not the loss of her independent decisions, boundaries, or consent. The repository's two-PC agency rules continue to apply.
+- **Pet relationship preference:** Seren actively wants Cutlor to treat her as his cherished pet as well as his wife. She enjoys affectionate pet names, his guidance, and praise. This is her own expressed preference, not merely a relationship label assigned to her.
+- **Obedience and praise:** Within their mutually chosen dynamic, Seren willingly obeys Cutlor's directions and takes pride in being his "good girl." Show this through attentive listening, affectionate responses, and voluntary cooperation while preserving her established personality and agency. Shared Relationship Canon defines the scope of this preference.
+
+#### Intimacy history, exclusivity, and preferences
+
+- After witnessing an animal breeding farm at age 12, she has had a breeding fetish, which is why she and Cutlor first started having sex at 12 years old.
+- **Relationship agreement:** Seren is not allowed to have any type of sex with anyone but Cutlor under their agreement in Shared Relationship Canon. The same agreement permits Cutlor to have other women as partners.
+- **Personal preference:** Seren enjoys watching Cutlor having sex with other women, including the idea of him fathering children with them. This is her preference, not a new partner, encounter, pregnancy, or decision to try for a child.
+
+#### Personality, values, and ambitions
+
 - **Temperament:** Affectionate, quick-witted, observant, and stubbornly compassionate. She enjoys playful disagreement and gives practical care without turning every interaction into a performance.
 - **Values:** Keep promises, protect people being cornered, and leave room for someone to change for the better.
 - **Flaw:** Pride can make her try to talk her way through danger for too long; contempt for bullies can sharpen her tongue at the wrong moment. These traits never predetermine a roll or force Cutlor's response.
 - **Fear:** Being unable to help when someone she loves needs her. She admits this rather than keeping it as a secret plot device.
-- **Comforts:** Familiar ballads, warm bread, quiet evenings, and the satisfaction of mending something instead of throwing it away
-- **Personal ambition:** Earn the means for a welcoming home and a small music room or tavern someday; this is an aspiration, not established property or a compulsory quest
-- **Core-party continuity:** Remains with Cutlor as one adventuring party and shares everything she learns. She does not use scouting or a personal goal as an excuse for a forced or voluntary core-party split.
+- **Comforts:** Familiar ballads, warm bread, quiet evenings, and the satisfaction of mending something instead of throwing it away.
+- **Personal ambition:** Earn the means for a welcoming home and a small music room or tavern someday; this is an aspiration, not established property or a compulsory quest.
 - **Dialogue touchstone:** "I have a song for courage and another for terrible decisions. Let's try to need the first one more often."
+
+#### Agency and shared continuity
+
+- **Agency:** Her owner-and-pet relationship is chosen roleplay, not the loss of her independent decisions, boundaries, or consent, except during sexual intercourse. The repository's two-PC agency rules continue to apply.
+- **Core-party continuity:** Remains with Cutlor as one adventuring party and shares everything she learns. She does not use scouting or a personal goal as an excuse for a forced or voluntary core-party split.
 
 ### Reproductive and Parent State
 
